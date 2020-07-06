@@ -12,13 +12,24 @@ class pokemonAPI extends RESTDataSource {
     return !isNaN(id) ? id : -1
   }
 
-  pokemonTypeReducer(pokemonTypes) {
+  pokemonTypesReducer(pokemonTypes) {
     const types = pokemonTypes.map((type) => ({
       id: this.getIdFromURL(type.type.url),
       name: type.type.name,
     }))
 
     return types
+  }
+
+  pokemonStatsReducer(pokemonStats) {
+    const stats = pokemonStats.map((stat) => ({
+      id: this.getIdFromURL(stat.stat.url),
+      name: stat.stat.name,
+      base: stat.base_stat,
+      effort: stat.effort,
+    }))
+
+    return stats
   }
 
   pokemonAbilitiesReducer(pokemonAbilities) {
@@ -80,7 +91,8 @@ class pokemonAPI extends RESTDataSource {
   }
 
   pokemonReducer(pokemon) {
-    const types = this.pokemonTypeReducer(pokemon.types)
+    const types = this.pokemonTypesReducer(pokemon.types)
+    const stats = this.pokemonStatsReducer(pokemon.stats)
     const abilities = this.pokemonAbilitiesReducer(pokemon.abilities)
     const versions = this.pokemonVersionsReducer(pokemon.game_indices)
     const moves = this.pokemonMovesReducer(pokemon.moves)
@@ -92,6 +104,7 @@ class pokemonAPI extends RESTDataSource {
       height: pokemon.height,
       weight: pokemon.weight,
       types: types,
+      stats: stats,
       abilities: abilities,
       versions: versions,
       moves: moves,

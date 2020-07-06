@@ -48,6 +48,7 @@ typeDefs = gql`
     height: Int
     weight: Int
     types: [Type]
+    stats: [Stat]
     abilities: [Ability]
     versions: [Version]
     moves: [Move]
@@ -57,6 +58,13 @@ typeDefs = gql`
   type Type {
     id: ID!
     name: String!
+  }
+
+  type Stat {
+    id: ID!
+    name: String
+    base: Int
+    effort: Int
   }
 
   type Ability {
