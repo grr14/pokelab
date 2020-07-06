@@ -43,9 +43,9 @@ query getPokemonById($id:ID!){
       id
       name
     }
-	moves{
+    moves{
       id
-	  name
+      name
       details {
         level
         method
