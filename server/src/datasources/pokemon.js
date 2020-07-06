@@ -91,24 +91,17 @@ class pokemonAPI extends RESTDataSource {
   }
 
   pokemonReducer(pokemon) {
-    const types = this.pokemonTypesReducer(pokemon.types)
-    const stats = this.pokemonStatsReducer(pokemon.stats)
-    const abilities = this.pokemonAbilitiesReducer(pokemon.abilities)
-    const versions = this.pokemonVersionsReducer(pokemon.game_indices)
-    const moves = this.pokemonMovesReducer(pokemon.moves)
-    const pictures = this.pokemonPicturesReducer(pokemon.sprites)
-
     return {
       id: pokemon.id,
       name: pokemon.name,
       height: pokemon.height,
       weight: pokemon.weight,
-      types: types,
-      stats: stats,
-      abilities: abilities,
-      versions: versions,
-      moves: moves,
-      pictures: pictures,
+      types: this.pokemonTypesReducer(pokemon.types),
+      stats: this.pokemonStatsReducer(pokemon.stats),
+      abilities: this.pokemonAbilitiesReducer(pokemon.abilities),
+      versions: this.pokemonVersionsReducer(pokemon.game_indices),
+      moves: this.pokemonMovesReducer(pokemon.moves),
+      pictures: this.pokemonPicturesReducer(pokemon.sprites),
     }
   }
 
