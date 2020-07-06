@@ -50,6 +50,7 @@ typeDefs = gql`
     types: [Type]
     abilities: [Ability]
     versions: [Version]
+    moves: [Move]
     pictures: [Picture]
   }
 
@@ -67,6 +68,18 @@ typeDefs = gql`
   type Version {
     id: ID!
     name: String
+  }
+
+  type Move {
+    id: ID!
+    name: String!
+    details: [MoveDetails]
+  }
+
+  type MoveDetails {
+    level: Int!
+    method: String
+    version: Version
   }
 
   type Picture {

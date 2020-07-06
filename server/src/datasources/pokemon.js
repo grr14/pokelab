@@ -44,6 +44,29 @@ class pokemonAPI extends RESTDataSource {
     return versions
   }
 
+  pokemonMoveDetailsReducer(pokemonMoveDetails) {
+    const details = pokemonMoveDetails.map((detail) => ({
+      level: detail.level_learned_at,
+      method: detail.move_learn_method.name,
+      version: {
+        id: this.getIdFromURL(detail.version_group.url),
+        name: detail.version_group.name,
+      },
+    }))
+
+    return details
+  }
+
+  pokemonMovesReducer(pokemonMoves) {
+    const moves = pokemonMoves.map((move) => ({
+      id: this.getIdFromURL(move.move.url),
+      name: move.move.name,
+      details: this.pokemonMoveDetailsReducer(move.version_group_details),
+    }))
+
+    return moves
+  }
+
   pokemonPicturesReducer(pokemonPictures) {
     const pictures = new Array()
     for (const [key, value] of Object.entries(pokemonPictures)) {
@@ -60,6 +83,7 @@ class pokemonAPI extends RESTDataSource {
     const types = this.pokemonTypeReducer(pokemon.types)
     const abilities = this.pokemonAbilitiesReducer(pokemon.abilities)
     const versions = this.pokemonVersionsReducer(pokemon.game_indices)
+    const moves = this.pokemonMovesReducer(pokemon.moves)
     const pictures = this.pokemonPicturesReducer(pokemon.sprites)
 
     return {
@@ -70,6 +94,7 @@ class pokemonAPI extends RESTDataSource {
       types: types,
       abilities: abilities,
       versions: versions,
+      moves: moves,
       pictures: pictures,
     }
   }
@@ -79,7 +104,7 @@ class pokemonAPI extends RESTDataSource {
     if (response == null) {
       console.log("NIQUE TOUT")
     } else {
-      console.log(response)
+      // console.log(response)
     }
     return this.pokemonReducer(response)
   }
