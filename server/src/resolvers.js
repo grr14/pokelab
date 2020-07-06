@@ -1,5 +1,4 @@
 const fetch = require("node-fetch")
-const pokemonAPI = require("./datasources/pokemon")
 
 module.exports = {
   Query: {
