@@ -6,6 +6,9 @@ const pokemonAPI = require("./datasources/pokemon")
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  dataSources: () => ({
+    pokemonAPI: new pokemonAPI(),
+  }),
 })
 
 // The `listen` method launches a web server.
