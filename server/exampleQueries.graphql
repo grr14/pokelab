@@ -1,0 +1,121 @@
+query getPokemonById($id:ID!){
+  pokemon(id:$id) {
+    id
+    name
+    height
+    weight
+    types {
+      id
+      name
+    }
+    stats {
+      id
+      name
+      base
+      effort
+    }
+    abilities {
+      id
+      name
+      isHidden
+    }
+    versions {
+      id
+      name
+    }
+    moves{
+      id
+      name
+      details {
+        level
+        method
+        version{
+          id
+       	  name
+        }
+      }
+    }
+    pictures {
+      name
+      url
+    }
+  }
+}
+
+query getTypeById($id: ID!) {
+  getType(id: $id) {
+    id
+    name
+    weakTo {
+      id
+      name
+    }
+    resistantTo {
+      id
+      name
+    }
+    strongAgainst {
+      id
+      name
+    }
+    weakAgainst {
+      id
+      name
+    }
+    cannotDoDamageTo {
+      id
+      name
+    }
+    cannotTakeDamageFrom {
+      id
+      name
+    }
+    appearedIn{
+      id
+      name
+    }
+  }
+}
+
+query getMoveById($id: ID!) {
+  getMove(id: $id) {
+    id
+    name
+    flavorText
+    appearedIn {
+      id
+      name
+    }
+    class {
+      id
+      name
+    }
+    type {
+      id
+      name
+    }
+    power
+    pp
+    accuracy
+    priority
+    statsChanges {
+      id
+      name
+      changeValue
+    }
+    metadata {
+      statusChange
+      statusChangeChance
+      critRate
+      drain
+      flinchChance
+      healing
+      maxHits
+      maxTurns
+      minHits
+      minTurns
+      category
+      targetStatsChange
+    }
+  }
+}

@@ -7,7 +7,7 @@ The server is written in javascript using the [Apollo Data Graph Platform](https
 
 ## How to use
 
-First, download/git clone the whole folder server in the repertory of your choice.
+First, download/``git clone`` the whole folder server in the repertory of your choice.
 Install the packages with `npm install`.
 You can then start the server with `npm start`
 Once the server is started, open your browser and go to the following adress : `http://localhost:4000/`.
