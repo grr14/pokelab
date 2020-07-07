@@ -1,5 +1,4 @@
 const { RESTDataSource } = require("apollo-datasource-rest")
-const { getIdFromURL, isEmptyArray } = require("../utils.js")
 
 class pokemonAPI extends RESTDataSource {
   constructor() {
@@ -7,9 +6,15 @@ class pokemonAPI extends RESTDataSource {
     this.baseURL = "https://pokeapi.co/api/v2/"
   }
 
+  getIdFromURL(url) {
+    const url_ = url.slice(0, -1) // removing the last character of the url (it's always "/")
+    const id = url_.substring(url_.lastIndexOf("/") + 1)
+    return !isNaN(id) ? id : -1
+  }
+
   pokemonTypesReducer(pokemonTypes) {
     const types = pokemonTypes.map((type) => ({
-      id: getIdFromURL(type.type.url),
+      id: this.getIdFromURL(type.type.url),
       name: type.type.name,
     }))
 
@@ -18,7 +23,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonStatsReducer(pokemonStats) {
     const stats = pokemonStats.map((stat) => ({
-      id: getIdFromURL(stat.stat.url),
+      id: this.getIdFromURL(stat.stat.url),
       name: stat.stat.name,
       base: stat.base_stat,
       effort: stat.effort,
@@ -29,7 +34,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonAbilitiesReducer(pokemonAbilities) {
     const abilities = pokemonAbilities.map((ability) => ({
-      id: getIdFromURL(ability.ability.url),
+      id: this.getIdFromURL(ability.ability.url),
       name: ability.ability.name,
       isHidden: ability.is_hidden,
     }))
@@ -38,12 +43,12 @@ class pokemonAPI extends RESTDataSource {
   }
 
   pokemonVersionsReducer(pokemonVersions) {
-    if (isEmptyArray(pokemonVersions)) {
+    if (Array.isArray(pokemonVersions) && !pokemonVersions.length) {
       return [{ id: -1, name: "Not available" }] // this field seems to be missing for some generations
     }
 
     const versions = pokemonVersions.map((version) => ({
-      id: getIdFromURL(version.version.url),
+      id: this.getIdFromURL(version.version.url),
       name: version.version.name,
     }))
 
@@ -55,7 +60,7 @@ class pokemonAPI extends RESTDataSource {
       level: detail.level_learned_at,
       method: detail.move_learn_method.name,
       version: {
-        id: getIdFromURL(detail.version_group.url),
+        id: this.getIdFromURL(detail.version_group.url),
         name: detail.version_group.name,
       },
     }))
@@ -65,7 +70,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonMovesReducer(pokemonMoves) {
     const moves = pokemonMoves.map((move) => ({
-      id: getIdFromURL(move.move.url),
+      id: this.getIdFromURL(move.move.url),
       name: move.move.name,
       details: this.pokemonMoveDetailsReducer(move.version_group_details),
     }))
@@ -112,12 +117,12 @@ class pokemonAPI extends RESTDataSource {
   }
 
   typeDamageRelation(type) {
-    if (isEmptyArray(type)) {
+    if (Array.isArray(type) && !type.length) {
       return [{ id: -1, name: "Not available" }]
     }
 
     const relation = type.map((element) => ({
-      id: getIdFromURL(element.url),
+      id: this.getIdFromURL(element.url),
       name: element.name,
     }))
     return relation
@@ -125,7 +130,7 @@ class pokemonAPI extends RESTDataSource {
 
   typeVersion(type) {
     return {
-      id: getIdFromURL(type.url),
+      id: this.getIdFromURL(type.url),
       name: type.name,
     }
   }
@@ -165,7 +170,10 @@ class pokemonAPI extends RESTDataSource {
   }
 
   moveFlavorText(move) {
-    if (isEmptyArray(move.flavor_text_entries)) {
+    if (
+      Array.isArray(move.flavor_text_entries) &&
+      !move.flavor_text_entries.length
+    ) {
       return "No flavor text available."
     }
 
@@ -178,7 +186,7 @@ class pokemonAPI extends RESTDataSource {
       return true
     }) // sometimes another language than english appears first..
 
-    return isEmptyArray(englishFlavorTextes)
+    return Array.isArray(englishFlavorTextes) && !englishFlavorTextes.length
       ? "No flavor text available"
       : englishFlavorTextes[0].flavor_text
   }
@@ -201,12 +209,12 @@ class pokemonAPI extends RESTDataSource {
   }
 
   moveStatsChange(move) {
-    if (isEmptyArray(move)) {
+    if (Array.isArray(move) && !move.length) {
       return [{ id: -1, name: "No stat changes", changeValue: 0 }]
     }
 
     const statsChanges = move.map((stat) => ({
-      id: getIdFromURL(stat.stat.url),
+      id: this.getIdFromURL(stat.stat.url),
       name: stat.stat.name,
       changeValue: stat.change != null ? stat.change : 0,
     }))
@@ -220,18 +228,18 @@ class pokemonAPI extends RESTDataSource {
       name: move.name,
       flavorText: this.moveFlavorText(move),
       appearedIn: {
-        id: getIdFromURL(move.generation.url),
+        id: this.getIdFromURL(move.generation.url),
         name: move.generation.name,
       },
       class: {
-        id: getIdFromURL(move.damage_class.url),
+        id: this.getIdFromURL(move.damage_class.url),
         name: move.damage_class.name,
       },
       type: {
-        id: getIdFromURL(move.type.url),
+        id: this.getIdFromURL(move.type.url),
         name: move.type.name,
       },
-      power: move.power != null ? move.power : 0,
+      power: move.power,
       pp: move.pp,
       accuracy: move.accuracy != null ? move.accuracy : 200,
       priority: move.priority,
