@@ -3,7 +3,7 @@ const { RESTDataSource } = require("apollo-datasource-rest")
 class pokemonAPI extends RESTDataSource {
   constructor() {
     super()
-    this.baseURL = "https://pokeapi.co/api/v2/pokemon/"
+    this.baseURL = "https://pokeapi.co/api/v2/"
   }
 
   getIdFromURL(url) {
@@ -96,6 +96,7 @@ class pokemonAPI extends RESTDataSource {
       name: pokemon.name,
       height: pokemon.height,
       weight: pokemon.weight,
+      baseExperience: pokemon.base_experience,
       types: this.pokemonTypesReducer(pokemon.types),
       stats: this.pokemonStatsReducer(pokemon.stats),
       abilities: this.pokemonAbilitiesReducer(pokemon.abilities),
@@ -106,13 +107,67 @@ class pokemonAPI extends RESTDataSource {
   }
 
   async getPokemonById(id) {
-    const response = await this.get(`${id}`)
+    const response = await this.get(`pokemon/${id}`)
     if (response == null) {
       console.log("NIQUE TOUT")
     } else {
       // console.log(response)
     }
     return this.pokemonReducer(response)
+  }
+
+  typeDamageRelation(type) {
+    if (Array.isArray(type) && !type.length) {
+      return [{ id: -1, name: "Not available" }]
+    }
+
+    const relation = type.map((element) => ({
+      id: this.getIdFromURL(element.url),
+      name: element.name,
+    }))
+    return relation
+  }
+
+  typeVersion(type) {
+    console.log(type)
+    return {
+      id: this.getIdFromURL(type.url),
+      name: type.name,
+    }
+  }
+
+  typeReducer(type) {
+    return {
+      id: type.id,
+      name: type.name,
+      weakTo: this.typeDamageRelation(type.damage_relations.double_damage_from),
+      resistantTo: this.typeDamageRelation(
+        type.damage_relations.half_damage_from
+      ),
+      strongAgainst: this.typeDamageRelation(
+        type.damage_relations.double_damage_to
+      ),
+      weakAgainst: this.typeDamageRelation(
+        type.damage_relations.half_damage_to
+      ),
+      cannotDoDamageTo: this.typeDamageRelation(
+        type.damage_relations.no_damage_to
+      ),
+      cannotTakeDamageFrom: this.typeDamageRelation(
+        type.damage_relations.no_damage_from
+      ),
+      appearedIn: this.typeVersion(type.generation),
+    }
+  }
+
+  async getTypeById(id) {
+    const response = await this.get(`type/${id}`)
+    if (response == null) {
+      console.log("sapristi")
+    } else {
+      //console.log(response)
+    }
+    return this.typeReducer(response)
   }
 }
 

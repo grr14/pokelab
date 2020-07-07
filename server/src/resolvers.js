@@ -1,9 +1,10 @@
-const fetch = require("node-fetch")
-
 module.exports = {
   Query: {
-    pokemon: async (_, { id }, { dataSources }, __) => {
+    getPokemon: async (_, { id }, { dataSources }, __) => {
       return dataSources.pokemonAPI.getPokemonById(id)
+    },
+    getType: async (_, { id }, { dataSources }, __) => {
+      return dataSources.pokemonAPI.getTypeById(id)
     },
   },
 }

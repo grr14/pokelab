@@ -2,7 +2,8 @@ const { gql } = require("apollo-server")
 
 typeDefs = gql`
   type Query {
-    pokemon(id: ID!): Pokemon
+    getPokemon(id: ID!): Pokemon
+    getType(id: ID!): Type
   }
 
   type Pokemon {
@@ -10,6 +11,7 @@ typeDefs = gql`
     name: String!
     height: Int
     weight: Int
+    baseExperience: Int
     types: [Type]
     stats: [Stat]
     abilities: [Ability]
@@ -21,6 +23,13 @@ typeDefs = gql`
   type Type {
     id: ID!
     name: String!
+    weakTo: [Type]
+    resistantTo: [Type]
+    strongAgainst: [Type]
+    weakAgainst: [Type]
+    cannotDoDamageTo: [Type]
+    cannotTakeDamageFrom: [Type]
+    appearedIn: Version
   }
 
   type Stat {
