@@ -6,5 +6,8 @@ module.exports = {
     getType: async (_, { id }, { dataSources }, __) => {
       return dataSources.pokemonAPI.getTypeById(id)
     },
+    getMove: async (_, { id }, { dataSources }, __) => {
+      return dataSources.pokemonAPI.getMoveById(id)
+    },
   },
 }

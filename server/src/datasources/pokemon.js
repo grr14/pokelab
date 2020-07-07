@@ -129,7 +129,6 @@ class pokemonAPI extends RESTDataSource {
   }
 
   typeVersion(type) {
-    console.log(type)
     return {
       id: this.getIdFromURL(type.url),
       name: type.name,
@@ -168,6 +167,95 @@ class pokemonAPI extends RESTDataSource {
       //console.log(response)
     }
     return this.typeReducer(response)
+  }
+
+  moveFlavorText(move) {
+    if (
+      Array.isArray(move.flavor_text_entries) &&
+      !move.flavor_text_entries.length
+    ) {
+      return "No flavor text available."
+    }
+
+    const englishFlavorTextes = move.flavor_text_entries.filter(function (
+      text
+    ) {
+      if (text.language.name !== "en") {
+        return false
+      }
+      return true
+    }) // sometimes another language than english appears first..
+
+    return Array.isArray(englishFlavorTextes) && !englishFlavorTextes.length
+      ? "No flavor text available"
+      : englishFlavorTextes[0].flavor_text
+  }
+
+  moveMetadata(move) {
+    return {
+      statusChange: move.meta.ailment.name,
+      statusChangeChance: move.meta.ailment_chance,
+      critRate: move.meta.crit_rate,
+      drain: move.meta.drain,
+      flinchChance: move.meta.flinch_chance,
+      healing: move.meta.healing,
+      maxHits: move.meta.max_hits != null ? move.meta.max_hits : 1,
+      maxTurns: move.meta.max_turns != null ? move.meta.max_turns : 1,
+      minHits: move.meta.min_hits != null ? move.meta.min_hits : 1,
+      minTurns: move.meta.min_turns != null ? move.meta.min_turns : 1,
+      category: move.meta.category.name,
+      targetStatsChange: move.meta.stat_chance,
+    }
+  }
+
+  moveStatsChange(move) {
+    if (Array.isArray(move) && !move.length) {
+      return [{ id: -1, name: "No stat changes", changeValue: 0 }]
+    }
+
+    const statsChanges = move.map((stat) => ({
+      id: this.getIdFromURL(stat.stat.url),
+      name: stat.stat.name,
+      changeValue: stat.change != null ? stat.change : 0,
+    }))
+
+    return statsChanges
+  }
+
+  moveReducer(move) {
+    return {
+      id: move.id,
+      name: move.name,
+      flavorText: this.moveFlavorText(move),
+      appearedIn: {
+        id: this.getIdFromURL(move.generation.url),
+        name: move.generation.name,
+      },
+      class: {
+        id: this.getIdFromURL(move.damage_class.url),
+        name: move.damage_class.name,
+      },
+      type: {
+        id: this.getIdFromURL(move.type.url),
+        name: move.type.name,
+      },
+      power: move.power,
+      pp: move.pp,
+      accuracy: move.accuracy != null ? move.accuracy : 200,
+      priority: move.priority,
+      statsChanges: this.moveStatsChange(move.stat_changes),
+      metadata: this.moveMetadata(move),
+    }
+  }
+
+  async getMoveById(id) {
+    const response = await this.get(`move/${id}`)
+    if (response == null) {
+      console.log("crotte")
+    } else {
+      //console.log(response)
+    }
+    return this.moveReducer(response)
   }
 }
 

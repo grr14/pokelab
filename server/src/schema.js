@@ -4,6 +4,7 @@ typeDefs = gql`
   type Query {
     getPokemon(id: ID!): Pokemon
     getType(id: ID!): Type
+    getMove(id: ID!): Move
   }
 
   type Pokemon {
@@ -34,9 +35,10 @@ typeDefs = gql`
 
   type Stat {
     id: ID!
-    name: String
+    name: String!
     base: Int
     effort: Int
+    changeValue: Int
   }
 
   type Ability {
@@ -54,12 +56,42 @@ typeDefs = gql`
     id: ID!
     name: String!
     details: [MoveDetails]
+    flavorText: String
+    appearedIn: Version
+    class: MoveClass
+    type: Type
+    power: Int
+    pp: Int
+    accuracy: Int
+    priority: Int
+    statsChanges: [Stat]
+    metadata: MoveMetadata
   }
 
   type MoveDetails {
     level: Int!
     method: String
     version: Version
+  }
+
+  type MoveClass {
+    id: ID!
+    name: String
+  }
+
+  type MoveMetadata {
+    statusChange: String
+    statusChangeChance: Int
+    critRate: Int
+    drain: Int
+    flinchChance: Int
+    healing: Int
+    maxHits: Int
+    maxTurns: Int
+    minHits: Int
+    minTurns: Int
+    category: String
+    targetStatsChange: Int
   }
 
   type Picture {
