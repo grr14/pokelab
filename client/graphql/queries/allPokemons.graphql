@@ -1,0 +1,43 @@
+query getAllPokemon($first: Int, $last: Int) {
+  getAllPokemons(first: $first, last: $last) {
+    id
+    name
+    height
+    weight
+    types {
+      id
+      name
+    }
+    stats {
+      id
+      name
+      base
+      effort
+    }
+    abilities {
+      id
+      name
+      isHidden
+    }
+    versions {
+      id
+      name
+    }
+    moves {
+      id
+      name
+      details {
+        level
+        method
+        version {
+          id
+          name
+        }
+      }
+    }
+    pictures {
+      name
+      url
+    }
+  }
+}

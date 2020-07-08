@@ -5,6 +5,8 @@ import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 
 import * as GetPokemonTypes from "../graphql/queries/__generated__/getPokemonById"
+import * as GetAllPokemonsTypes from "../graphql/queries/__generated__/getAllPokemon"
+import { FieldsOnCorrectTypeRule } from "graphql"
 
 const cache = new InMemoryCache()
 const link = new HttpLink({
@@ -42,8 +44,59 @@ const GET_POKE = gql`
   }
 `
 
+const GET_ALL = gql`
+  query getAllPokemon($first: Int, $last: Int) {
+    getAllPokemons(first: $first, last: $last) {
+      id
+      name
+      pictures {
+        name
+        url
+      }
+    }
+  }
+`
+
 interface PokemonProps {
   id: number
+}
+
+interface AllPokemonProps {
+  first: number
+  last: number
+}
+
+const GetAllPokemon: React.FC<AllPokemonProps> = ({ first, last }) => {
+  const { data, loading, error } = useQuery<
+    GetAllPokemonsTypes.getAllPokemon,
+    GetAllPokemonsTypes.getAllPokemonVariables
+  >(GET_ALL, {
+    variables: {
+      first: first,
+      last: last,
+    },
+  })
+
+  if (loading) return <p>Loading</p>
+  if (error) return <p>ERROR: {error.message}</p>
+  if (!data) return <p>Not found</p>
+  return (
+    <ul>
+      {data.getAllPokemons.map((pokemon) => (
+        <li key={pokemon.id}>
+          <img
+            style={{ height: "175px", width: "175px" }}
+            src={pokemon.pictures[4].url}
+          />
+          <p>
+            {pokemon.id}
+            {" -- "}
+            {pokemon.name}
+          </p>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 const Pokemon: React.FC<PokemonProps> = ({ id }) => {
@@ -76,8 +129,14 @@ const Pokemon: React.FC<PokemonProps> = ({ id }) => {
 
 export default function Home() {
   return (
-    <div>
-      <Pokemon id={6} />
+    <div className="container">
+      <header>
+        <h1>POKELAB</h1>
+      </header>
+      <GetAllPokemon first={152} last={303} />
+      <footer>
+        2020 - in puissant <a href="https://github.com/grr14/pokelab">github</a>
+      </footer>
     </div>
   )
 }
