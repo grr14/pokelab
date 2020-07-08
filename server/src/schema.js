@@ -2,13 +2,13 @@ const { gql } = require("apollo-server")
 
 typeDefs = gql`
   type Query {
-    getPokemon(id: ID!): Pokemon
-    getType(id: ID!): Type
-    getMove(id: ID!): Move
+    getPokemon(id: Int): Pokemon
+    getType(id: Int): Type
+    getMove(id: Int): Move
   }
 
   type Pokemon {
-    id: ID!
+    id: Int
     name: String!
     height: Int
     weight: Int
@@ -22,7 +22,7 @@ typeDefs = gql`
   }
 
   type Type {
-    id: ID!
+    id: Int
     name: String!
     weakTo: [Type]
     resistantTo: [Type]
@@ -34,7 +34,7 @@ typeDefs = gql`
   }
 
   type Stat {
-    id: ID!
+    id: Int
     name: String!
     base: Int
     effort: Int
@@ -42,18 +42,18 @@ typeDefs = gql`
   }
 
   type Ability {
-    id: ID!
+    id: Int
     name: String!
     isHidden: Boolean
   }
 
   type Version {
-    id: ID!
+    id: Int
     name: String
   }
 
   type Move {
-    id: ID!
+    id: Int
     name: String!
     details: [MoveDetails]
     flavorText: String
@@ -75,7 +75,7 @@ typeDefs = gql`
   }
 
   type MoveClass {
-    id: ID!
+    id: Int
     name: String
   }
 
