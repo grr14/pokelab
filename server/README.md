@@ -18,7 +18,7 @@ This will open the graphql playground, where you can test all your queries.
 Here's the query to get the maximum information about a pokemon, given its Id (the pokemon number on the global pokedex).
 
 ```
-query getPokemonById($id:ID!){
+query getPokemonById($id:Int!){
   getPokemon(id:$id) {
     id
     name

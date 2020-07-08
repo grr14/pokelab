@@ -3,6 +3,7 @@ const { gql } = require("apollo-server")
 typeDefs = gql`
   type Query {
     getPokemon(id: Int): Pokemon
+    getAllPokemons(first: Int, last: Int): [Pokemon]
     getType(id: Int): Type
     getMove(id: Int): Move
   }

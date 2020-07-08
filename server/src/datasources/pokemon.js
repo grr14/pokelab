@@ -1,4 +1,5 @@
 const { RESTDataSource } = require("apollo-datasource-rest")
+const { getIdFromURL, isEmptyArray } = require("../utils.js")
 
 class pokemonAPI extends RESTDataSource {
   constructor() {
@@ -6,15 +7,9 @@ class pokemonAPI extends RESTDataSource {
     this.baseURL = "https://pokeapi.co/api/v2/"
   }
 
-  getIdFromURL(url) {
-    const url_ = url.slice(0, -1) // removing the last character of the url (it's always "/")
-    const id = url_.substring(url_.lastIndexOf("/") + 1)
-    return !isNaN(id) ? id : -1
-  }
-
   pokemonTypesReducer(pokemonTypes) {
     const types = pokemonTypes.map((type) => ({
-      id: this.getIdFromURL(type.type.url),
+      id: getIdFromURL(type.type.url),
       name: type.type.name,
     }))
 
@@ -23,7 +18,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonStatsReducer(pokemonStats) {
     const stats = pokemonStats.map((stat) => ({
-      id: this.getIdFromURL(stat.stat.url),
+      id: getIdFromURL(stat.stat.url),
       name: stat.stat.name,
       base: stat.base_stat,
       effort: stat.effort,
@@ -34,7 +29,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonAbilitiesReducer(pokemonAbilities) {
     const abilities = pokemonAbilities.map((ability) => ({
-      id: this.getIdFromURL(ability.ability.url),
+      id: getIdFromURL(ability.ability.url),
       name: ability.ability.name,
       isHidden: ability.is_hidden,
     }))
@@ -43,12 +38,12 @@ class pokemonAPI extends RESTDataSource {
   }
 
   pokemonVersionsReducer(pokemonVersions) {
-    if (Array.isArray(pokemonVersions) && !pokemonVersions.length) {
+    if (isEmptyArray(pokemonVersions)) {
       return [{ id: -1, name: "Not available" }] // this field seems to be missing for some generations
     }
 
     const versions = pokemonVersions.map((version) => ({
-      id: this.getIdFromURL(version.version.url),
+      id: getIdFromURL(version.version.url),
       name: version.version.name,
     }))
 
@@ -60,7 +55,7 @@ class pokemonAPI extends RESTDataSource {
       level: detail.level_learned_at,
       method: detail.move_learn_method.name,
       version: {
-        id: this.getIdFromURL(detail.version_group.url),
+        id: getIdFromURL(detail.version_group.url),
         name: detail.version_group.name,
       },
     }))
@@ -70,7 +65,7 @@ class pokemonAPI extends RESTDataSource {
 
   pokemonMovesReducer(pokemonMoves) {
     const moves = pokemonMoves.map((move) => ({
-      id: this.getIdFromURL(move.move.url),
+      id: getIdFromURL(move.move.url),
       name: move.move.name,
       details: this.pokemonMoveDetailsReducer(move.version_group_details),
     }))
@@ -109,20 +104,32 @@ class pokemonAPI extends RESTDataSource {
   async getPokemonById(id) {
     const response = await this.get(`pokemon/${id}`)
     if (response == null) {
-      console.log("NIQUE TOUT")
-    } else {
-      // console.log(response)
+      return null
     }
     return this.pokemonReducer(response)
   }
 
+  async getAllPokemonsUpTo(first, last) {
+    if (first > last) {
+      ;[first, last] = [last, first]
+    }
+
+    const pokemonArray = new Array()
+
+    for (let i = first; i <= last; i++) {
+      const pokemon = this.getPokemonById(i)
+      pokemonArray.push(pokemon)
+    }
+    return pokemonArray
+  }
+
   typeDamageRelation(type) {
-    if (Array.isArray(type) && !type.length) {
+    if (isEmptyArray(type)) {
       return [{ id: -1, name: "Not available" }]
     }
 
     const relation = type.map((element) => ({
-      id: this.getIdFromURL(element.url),
+      id: getIdFromURL(element.url),
       name: element.name,
     }))
     return relation
@@ -130,7 +137,7 @@ class pokemonAPI extends RESTDataSource {
 
   typeVersion(type) {
     return {
-      id: this.getIdFromURL(type.url),
+      id: getIdFromURL(type.url),
       name: type.name,
     }
   }
@@ -162,18 +169,13 @@ class pokemonAPI extends RESTDataSource {
   async getTypeById(id) {
     const response = await this.get(`type/${id}`)
     if (response == null) {
-      console.log("sapristi")
-    } else {
-      //console.log(response)
+      return null
     }
     return this.typeReducer(response)
   }
 
   moveFlavorText(move) {
-    if (
-      Array.isArray(move.flavor_text_entries) &&
-      !move.flavor_text_entries.length
-    ) {
+    if (isEmptyArray(move.flavor_text_entries)) {
       return "No flavor text available."
     }
 
@@ -186,7 +188,7 @@ class pokemonAPI extends RESTDataSource {
       return true
     }) // sometimes another language than english appears first..
 
-    return Array.isArray(englishFlavorTextes) && !englishFlavorTextes.length
+    return isEmptyArray(englishFlavorTextes)
       ? "No flavor text available"
       : englishFlavorTextes[0].flavor_text
   }
@@ -209,12 +211,12 @@ class pokemonAPI extends RESTDataSource {
   }
 
   moveStatsChange(move) {
-    if (Array.isArray(move) && !move.length) {
+    if (isEmptyArray(move)) {
       return [{ id: -1, name: "No stat changes", changeValue: 0 }]
     }
 
     const statsChanges = move.map((stat) => ({
-      id: this.getIdFromURL(stat.stat.url),
+      id: getIdFromURL(stat.stat.url),
       name: stat.stat.name,
       changeValue: stat.change != null ? stat.change : 0,
     }))
@@ -228,15 +230,15 @@ class pokemonAPI extends RESTDataSource {
       name: move.name,
       flavorText: this.moveFlavorText(move),
       appearedIn: {
-        id: this.getIdFromURL(move.generation.url),
+        id: getIdFromURL(move.generation.url),
         name: move.generation.name,
       },
       class: {
-        id: this.getIdFromURL(move.damage_class.url),
+        id: getIdFromURL(move.damage_class.url),
         name: move.damage_class.name,
       },
       type: {
-        id: this.getIdFromURL(move.type.url),
+        id: getIdFromURL(move.type.url),
         name: move.type.name,
       },
       power: move.power,
@@ -251,9 +253,7 @@ class pokemonAPI extends RESTDataSource {
   async getMoveById(id) {
     const response = await this.get(`move/${id}`)
     if (response == null) {
-      console.log("crotte")
-    } else {
-      //console.log(response)
+      return null
     }
     return this.moveReducer(response)
   }
