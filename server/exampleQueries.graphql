@@ -1,5 +1,5 @@
 query getPokemonById($id:ID!){
-  pokemon(id:$id) {
+  getPokemon(id:$id) {
     id
     name
     height

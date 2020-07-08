@@ -19,7 +19,7 @@ Here's the query to get the maximum information about a pokemon, given its Id (t
 
 ```
 query getPokemonById($id:ID!){
-  pokemon(id:$id) {
+  getPokemon(id:$id) {
     id
     name
     height
