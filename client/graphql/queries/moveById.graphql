@@ -1,0 +1,42 @@
+query getMoveById($id: Int!) {
+  getMove(id: $id) {
+    id
+    name
+    flavorText
+    appearedIn {
+      id
+      name
+    }
+    class {
+      id
+      name
+    }
+    type {
+      id
+      name
+    }
+    power
+    pp
+    accuracy
+    priority
+    statsChanges {
+      id
+      name
+      changeValue
+    }
+    metadata {
+      statusChange
+      statusChangeChance
+      critRate
+      drain
+      flinchChance
+      healing
+      maxHits
+      maxTurns
+      minHits
+      minTurns
+      category
+      targetStatsChange
+    }
+  }
+}

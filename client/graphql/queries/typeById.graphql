@@ -1,0 +1,34 @@
+query getTypeById($id: Int!) {
+  getType(id: $id) {
+    id
+    name
+    weakTo {
+      id
+      name
+    }
+    resistantTo {
+      id
+      name
+    }
+    strongAgainst {
+      id
+      name
+    }
+    weakAgainst {
+      id
+      name
+    }
+    cannotDoDamageTo {
+      id
+      name
+    }
+    cannotTakeDamageFrom {
+      id
+      name
+    }
+    appearedIn{
+      id
+      name
+    }
+  }
+}

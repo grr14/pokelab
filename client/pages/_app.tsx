@@ -1,6 +1,6 @@
 import React from "react"
 import { AppProps } from "next/app"
-import { ApolloProvider, useQuery } from "@apollo/react-hooks"
+import { ApolloProvider } from "@apollo/react-hooks"
 import withApollo from "../common/apollo"
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 
