@@ -3,7 +3,7 @@ import StyledMainGrid from "./MainGrid"
 
 const StyledMainContent = styled.div`
   background-color: red;
-  padding: 1%;
+  padding: 0 1%;
   flex: 1;
 `
 
