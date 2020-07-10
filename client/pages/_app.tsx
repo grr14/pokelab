@@ -1,8 +1,14 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
+import { ThemeProvider } from "emotion-theming"
+
 import React from "react"
 import { AppProps } from "next/app"
 import { ApolloProvider } from "@apollo/react-hooks"
 import withApollo from "../common/apollo"
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
+import GlobalStyle from "../common/globalStyle"
+import lightTheme from "../common/theme"
 
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
@@ -15,7 +21,10 @@ const PokelabApp: React.FC<Props> = ({
 }) => {
   return (
     <ApolloProvider client={apolloClient}>
-      <Component {...pageProps} />
+      <ThemeProvider theme={lightTheme}>
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </ThemeProvider>
     </ApolloProvider>
   )
 }
