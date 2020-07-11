@@ -6,6 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import Link from "next/link"
+import Loading from "./Loading"
 
 import {
   getPokemonById,
@@ -31,7 +32,12 @@ const GET_POKEMON = gql`
 import styled from "@emotion/styled"
 import FavoriteIcon from "./FavoriteIcon"
 
-const StyledCard = styled(Card)`
+type StyledCardProps = {
+  loading?: boolean
+  error?: boolean
+}
+
+const StyledCard = styled(Card)<StyledCardProps>`
   width: 100%;
 
   display: flex;
@@ -41,12 +47,10 @@ const StyledCard = styled(Card)`
   transition: background-color 0.2s ease-in;
 
   &:hover {
-    background-color: yellow;
-    cursor: pointer;
-
-    -webkit-box-shadow: 0px 0px 15px 11px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 15px 11px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px 11px rgba(0, 0, 0, 0.75);
+    background-color: ${(props) => (props.loading ? "white" : "yellow")};
+    cursor: ${(props) => (props.loading ? "default" : "pointer")};
+    box-shadow: ${(props) =>
+      props.loading ? "none" : "0px 0px 15px 11px rgba(0, 0, 0, 0.75)"};
   }
 `
 
@@ -62,8 +66,18 @@ const PokemonCard: React.FC<CardProps> = ({ id }) => {
     variables: { id: id },
   })
 
-  if (loading) return <p>LOADING</p>
-  if (error) return <p>ERROR</p>
+  if (loading)
+    return (
+      <StyledCard
+        loading={loading}
+        style={{
+          height: "260px",
+        }}
+      >
+        <Loading />
+      </StyledCard>
+    )
+  if (error) return <p>error</p>
   if (!data) return <p>Not found</p>
 
   return (
