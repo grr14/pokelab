@@ -9,3 +9,7 @@ export const only_midsize_device = `@media (min-width: ${BREAKPOINTS[1]}px) and 
 export const only_notebooks = `@media (min-width: ${BREAKPOINTS[2]}px) and (max-width: ${BREAKPOINTS[3]}px)`
 
 export const only_big_screens = `@media (min-width: ${BREAKPOINTS[3]}px) and (max-width: ${BREAKPOINTS[8]}px)`
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export const LAST_POKEMON_ID = 807

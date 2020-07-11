@@ -29,7 +29,6 @@ const GET_POKEMON = gql`
 `
 
 import styled from "@emotion/styled"
-import { isAbsolute } from "path"
 import FavoriteIcon from "./FavoriteIcon"
 
 const StyledCard = styled(Card)`
