@@ -13,25 +13,21 @@ const CardContainer = styled.div`
 
   display: flex;
 
-  padding-left: 10px;
+  position: relative;
 
   ${only_phones} {
     padding: 0 10px;
-    padding-right: 10px;
   }
   ${only_midsize_device} {
     &:nth-child(2n) {
-      padding-right: 10px;
     }
   }
   ${only_notebooks} {
     &:nth-child(3n) {
-      padding-right: 10px;
     }
   }
   ${only_big_screens} {
     &:nth-child(4n) {
-      padding-right: 10px;
     }
   }
 `

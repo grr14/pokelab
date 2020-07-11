@@ -7,6 +7,7 @@ const StyledMainGrid = styled.div`
   width: 100%;
   max-width: 100%;
   row-gap: 10px;
+  column-gap: 10px;
   padding: 10px 0;
 
   ${mq[0]} {

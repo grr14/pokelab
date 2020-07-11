@@ -1,13 +1,13 @@
 import Header from "../components/Header"
 import MainContainer from "../components/Container"
-import MainContent from "../components/MainContent"
+import MainPageContent from "../components/MainPageContent"
 import React from "react"
 
 export default function Home() {
   return (
     <MainContainer>
       <Header />
-      <MainContent />
+      <MainPageContent />
       <footer>2020 grr</footer>
     </MainContainer>
   )
