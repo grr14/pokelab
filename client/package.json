@@ -21,6 +21,7 @@
     "material-ui-icons": "^1.0.0-beta.36",
     "next": "9.4.4",
     "react": "16.13.1",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "16.13.1",
     "subscriptions-transport-ws": "^0.9.16"
   },
@@ -28,6 +29,7 @@
     "@types/graphql": "^14.5.0",
     "@types/node": "^14.0.19",
     "@types/react": "^16.9.41",
+    "@zeit/next-css": "^1.0.1",
     "apollo": "^2.28.3",
     "typescript": "^3.9.6"
   }
