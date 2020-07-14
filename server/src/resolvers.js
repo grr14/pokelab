@@ -12,5 +12,7 @@ module.exports = {
     getMove: async (_, { id }, { dataSources }, __) => {
       return dataSources.pokemonAPI.getMoveById(id)
     },
+    pokemon: async (_, { id }, { dataSources }, __) =>
+      dataSources.pokemonDB.findPokemon({ id }),
   },
 }
