@@ -17,12 +17,11 @@ module.exports = {
 
 module.exports.createStore = () => {
   const db = new Sequelize({
-    database: "dl0r555gq11tv",
-    username: "ewwqzhqyeifqfn",
-    password:
-      "9e9c048a8e32af9a917026b426b00fa8f7117894ccf30e2a47801b7691b61bfb",
-    host: "ec2-54-217-206-236.eu-west-1.compute.amazonaws.com",
-    port: 5432,
+    database: "pokemon",
+    username: "admin",
+    password: "fba6FkB3ucaKX",
+    host: "rg225961-001.dbaas.ovh.net",
+    port: 35614,
     dialect: "postgres",
     dialectOptions: {
       ssl: {
@@ -68,13 +67,16 @@ module.exports.createStore = () => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    order: {
+    ordre: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     is_default: {
       type: DataTypes.INTEGER,
       allowNull: false,
+    },
+    picture: {
+      type: DataTypes.STRING,
     },
   })
 
@@ -137,16 +139,6 @@ module.exports.createStore = () => {
       allowNull: false,
     },
   })
-
-  db.getQueryInterface()
-    .showAllSchemas()
-    .then((tableObj) => {
-      console.log("// Tables in database", "==========================")
-      console.log(tableObj)
-    })
-    .catch((err) => {
-      console.log("showAllSchemas ERROR", err)
-    })
 
   return { db, pokemon, region, language, language_names }
 }

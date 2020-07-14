@@ -13,6 +13,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({
+    pokemonAPI: new pokemonAPI(),
     pokemonDB: new pokemonDB({ store }),
   }),
   engine: {

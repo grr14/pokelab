@@ -30,8 +30,9 @@ typeDefs = gql`
     height: Int
     weight: Int
     base_experience: Int
-    order: Int
+    ordre: Int
     is_default: Int
+    picture: String
   }
 
   type Type {

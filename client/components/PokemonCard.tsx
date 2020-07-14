@@ -18,13 +18,10 @@ import { useQuery } from "@apollo/react-hooks"
 
 const GET_POKEMON = gql`
   query getPokemonById($id: Int!) {
-    getPokemon(id: $id) {
+    pokemon(id: $id) {
       id
-      name
-      pictures {
-        name
-        url
-      }
+      identifier
+      picture
     }
   }
 `
@@ -59,10 +56,7 @@ interface CardProps {
 }
 
 const PokemonCard: React.FC<CardProps> = ({ id }) => {
-  const { data, loading, error } = useQuery<
-    getPokemonById,
-    getPokemonByIdVariables
-  >(GET_POKEMON, {
+  const { data, loading, error } = useQuery(GET_POKEMON, {
     variables: { id: id },
   })
 
@@ -84,13 +78,13 @@ const PokemonCard: React.FC<CardProps> = ({ id }) => {
     <StyledCard raised={true}>
       <FavoriteIcon />
       <img
-        src={data.getPokemon.pictures[4].url}
-        style={{ height: "220px", width: "220px" }}
+        src={data.pokemon.picture}
+        style={{ paddingTop: "5px", height: "200px", width: "200px" }}
       />
-      <Link href="/pokemon/[pid]" as={`/pokemon/${data.getPokemon.id}`}>
+      <Link href="/pokemon/[pid]" as={`/pokemon/${data.pokemon.id}`}>
         <a>
           <Typography gutterBottom variant="h5" component="h2">
-            {data.getPokemon.id} - {data.getPokemon.name}
+            {data.pokemon.id} - {data.pokemon.identifier}
           </Typography>
         </a>
       </Link>
