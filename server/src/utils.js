@@ -42,44 +42,6 @@ module.exports.createStore = () => {
     console.error("Unable to connect to the database:", error)
   }
 
-  const pokemon = db.define("pokemon", {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-    },
-    identifier: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    species_id: {
-      type: DataTypes.INTEGER,
-    },
-    height: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    weight: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    base_experience: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    ordre: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    is_default: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    picture: {
-      type: DataTypes.STRING,
-    },
-  })
-
   const region = db.define("regions", {
     id: {
       type: DataTypes.INTEGER,
@@ -140,5 +102,66 @@ module.exports.createStore = () => {
     },
   })
 
-  return { db, pokemon, region, language, language_names }
+  const pokemon = db.define("pokemon", {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    identifier: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    species_id: {
+      type: DataTypes.INTEGER,
+    },
+    height: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    weight: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    base_experience: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    ordre: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    is_default: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    type_1: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    type_2: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    picture: {
+      type: DataTypes.STRING,
+    },
+  })
+
+  const sprites = db.define("pokemon_sprites", {
+    pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    description: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    sprite_url: {
+      type: DataTypes.STRING,
+    },
+  })
+  sprites.removeAttribute("id")
+
+  return { db, pokemon, sprites /*region, language, language_names*/ }
 }

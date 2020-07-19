@@ -7,6 +7,7 @@ typeDefs = gql`
     getType(id: Int): Type
     getMove(id: Int): Move
     pokemon(id: Int): Pokemondb
+    pokemonSprites(id: Int): [Sprite]
   }
 
   type Pokemon {
@@ -25,14 +26,22 @@ typeDefs = gql`
 
   type Pokemondb {
     id: Int!
-    identifier: String
+    identifier: String!
     species_id: Int
     height: Int
     weight: Int
     base_experience: Int
     ordre: Int
     is_default: Int
+    type_1: Int
+    type_2: Int
     picture: String
+  }
+
+  type Sprite {
+    pokemon_id: Int!
+    description: String!
+    sprite_url: String
   }
 
   type Type {
