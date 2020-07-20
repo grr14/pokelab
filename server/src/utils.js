@@ -1,3 +1,4 @@
+require("dotenv").config()
 const { Sequelize, DataTypes } = require("sequelize")
 
 function getIdFromURL(url) {
@@ -17,11 +18,11 @@ module.exports = {
 
 module.exports.createStore = () => {
   const db = new Sequelize({
-    database: "pokemon",
-    username: "admin",
-    password: "fba6FkB3ucaKX",
-    host: "rg225961-001.dbaas.ovh.net",
-    port: 35614,
+    database: process.env.DB_NAME,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
     dialect: "postgres",
     dialectOptions: {
       ssl: {
@@ -36,7 +37,7 @@ module.exports.createStore = () => {
   })
 
   try {
-    const auth = db.authenticate()
+    db.authenticate()
     console.log("Connection has been established successfully.")
   } catch (error) {
     console.error("Unable to connect to the database:", error)
