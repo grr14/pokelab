@@ -1,18 +1,19 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import React, { Component, useState } from "react"
-import AwesomeSlider from "react-awesome-slider"
 import { extractImages } from "../common/utils"
 import { getPokemonById_getPokemon_pictures as picturesType } from "../graphql/queries/__generated__/getPokemonById"
-
+import Slider from "react-animated-slider"
+import { mq } from "../common/constants"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 
 const GET_POKEMON = gql`
-  query getPokemonById($id: Int!) {
-    getPokemon(id: $id) {
-      pictures {
-        name
-        url
-      }
+  query getPokemonSpritesById($id: Int!) {
+    pokemonSprites(id: $id) {
+      pokemon_id
+      description
+      sprite_url
     }
   }
 `
@@ -29,11 +30,8 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id }) => {
   if (loading) return <p>Carousel loading </p>
   if (error) return <p>Error</p>
 
-  let urls = new Array<string>()
-
-  urls = data?.getPokemon?.pictures
-    ?.map((picture) => picture.url)
-    .filter((url) => url != null)
+  const urls = data?.pokemonSprites?.map((sprite) => sprite.sprite_url)
+  const descriptions = data?.pokemonSprites?.map((sprite) => sprite.description)
 
   console.log(`url=${urls}`)
 
@@ -42,14 +40,28 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id }) => {
     for (let i = 0; i < urls.length; i++) {
       divArray.push(
         <div>
-          <img style={{ height: "300px", width: "300px" }} src={urls[i]} />
+          <img style={{ height: "350px", width: "350px" }} src={urls[i]} />
+          <p
+            css={{
+              position: "absolute",
+              fontSize: "2em",
+              [mq[0]]: {
+                bottom: "0px",
+              },
+              [mq[1]]: {
+                bottom: "15%",
+              },
+            }}
+          >
+            {descriptions[i]}
+          </p>
         </div>
       )
     }
-    return <AwesomeSlider>{divArray}</AwesomeSlider>
+    return divArray
   }
 
-  return <div>{buildCarousel()}</div>
+  return <Slider>{buildCarousel()}</Slider>
 }
 
 export default PokemonImagesCarousel

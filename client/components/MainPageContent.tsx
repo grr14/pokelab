@@ -24,7 +24,7 @@ const MainPageContent: React.FC = () => {
 
   return (
     <StyledMainContent>
-      <StyledMainGrid>{displayPokemons(1, 151)}</StyledMainGrid>
+      <StyledMainGrid>{displayPokemons(252, 386)}</StyledMainGrid>
     </StyledMainContent>
   )
 }

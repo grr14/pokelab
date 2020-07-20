@@ -1,5 +1,7 @@
 import styled from "@emotion/styled"
 
+import DetailedPokemonGrid from "./DetailedPokemonGrid"
+import MovesContainer from "./MovesContainer"
 import PokemonImagesCarousel from "./PokemonImagesCarousel"
 
 import {
@@ -60,7 +62,7 @@ const StyledContainer = styled.main`
   flex: 1;
   display: flex;
   background-color: lightcoral;
-  padding: 3%;
+  padding: 2%;
 `
 
 interface Props {
@@ -89,20 +91,14 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
 
   return (
     <StyledContainer>
-      <div
-        style={{
-          flex: 1,
-          backgroundColor: "lightcyan",
-          border: "solid 2px black",
-          display: "grid",
-          gridTemplateColumns: "50% 50%",
-          gridTemplateRows: "66.6% 33.3%",
-        }}
-      >
+      <DetailedPokemonGrid>
         <div
           style={{
             backgroundColor: "white",
-            background: "none",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "center",
+            justifyContent: "space-evenly",
           }}
         >
           {<PokemonImagesCarousel id={id} />}
@@ -114,17 +110,8 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
         >
           2
         </div>
-        <div
-          style={{
-            backgroundColor: "pink",
-            gridColumnStart: 1,
-            gridColumnEnd: "span 2",
-            gridRowStart: 2,
-          }}
-        >
-          3
-        </div>
-      </div>
+        <div style={{}}>3</div>
+      </DetailedPokemonGrid>
     </StyledContainer>
   )
 }
