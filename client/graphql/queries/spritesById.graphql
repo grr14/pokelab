@@ -1,0 +1,7 @@
+query getPokemonSpritesById($id: Int!) {
+  pokemonSprites(id: $id) {
+    pokemon_id
+    description
+    sprite_url
+  }
+}

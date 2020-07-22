@@ -1,8 +1,13 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
+
+import { mq } from "../common/constants"
 
 import DetailedPokemonGrid from "./DetailedPokemonGrid"
 import MovesContainer from "./MovesContainer"
 import PokemonImagesCarousel from "./PokemonImagesCarousel"
+import PokemonDetailedInfos from "./PokemonDetailedInfos"
 
 import {
   getPokemonById,
@@ -14,46 +19,18 @@ import { useQuery } from "@apollo/react-hooks"
 
 const GET_POKEMON = gql`
   query getPokemonById($id: Int!) {
-    getPokemon(id: $id) {
+    pokemon(id: $id) {
       id
-      name
+      identifier
+      species_id
       height
       weight
-      types {
-        id
-        name
-      }
-      stats {
-        id
-        name
-        base
-        effort
-      }
-      abilities {
-        id
-        name
-        isHidden
-      }
-      versions {
-        id
-        name
-      }
-      moves {
-        id
-        name
-        details {
-          level
-          method
-          version {
-            id
-            name
-          }
-        }
-      }
-      pictures {
-        name
-        url
-      }
+      base_experience
+      ordre
+      is_default
+      type_1
+      type_2
+      picture
     }
   }
 `
@@ -79,21 +56,14 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
 
   console.log(`id=${id}`)
 
-  /**if (!loading) {
-    console.log(`data=${data}`)
-    with_empty_urls = data?.getPokemon?.pictures
-      ?.map((picture) => picture.url)
-      .filter((el) => el != null)
-    console.log(`url=${with_empty_urls}`)
-  }
-*/
   if (loading) return <p>loading</p>
+  if (error) return <p>error</p>
 
   return (
     <StyledContainer>
       <DetailedPokemonGrid>
         <div
-          style={{
+          css={{
             backgroundColor: "white",
             display: "flex",
             flexDirection: "column",
@@ -101,16 +71,24 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
             justifyContent: "space-evenly",
           }}
         >
-          {<PokemonImagesCarousel id={id} />}
+          {<PokemonImagesCarousel id={id} picture={data.pokemon.picture} />}
         </div>
         <div
-          style={{
+          css={{
             backgroundColor: "red",
+            display: "flex",
+            flexDirection: "column",
+            [mq[1]]: {
+              gridColumnStart: "2",
+              gridRowStart: "1",
+              gridRowEnd: "span 2",
+              paddingBottom: "2%",
+            },
           }}
         >
-          2
+          <PokemonDetailedInfos pokemon={data.pokemon} />
         </div>
-        <div style={{}}>3</div>
+        <MovesContainer></MovesContainer>
       </DetailedPokemonGrid>
     </StyledContainer>
   )

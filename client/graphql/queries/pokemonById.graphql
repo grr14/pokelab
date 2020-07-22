@@ -1,43 +1,15 @@
-query getPokemonById($id: Int!){
-  getPokemon(id:$id) {
+query getPokemonById($id:Int!) {
+  pokemon(id: $id) {
     id
-    name
+    identifier
+    species_id
     height
     weight
-    types {
-      id
-      name
-    }
-    stats {
-      id
-      name
-      base
-      effort
-    }
-    abilities {
-      id
-      name
-      isHidden
-    }
-    versions {
-      id
-      name
-    }
-    moves{
-      id
-      name
-      details {
-        level
-        method
-        version{
-          id
-       	  name
-        }
-      }
-    }
-    pictures {
-      name
-      url
-    }
+    base_experience
+    ordre
+    is_default
+    type_1
+    type_2
+    picture
   }
 }

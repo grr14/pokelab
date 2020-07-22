@@ -13,3 +13,26 @@ export const only_big_screens = `@media (min-width: ${BREAKPOINTS[3]}px) and (ma
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
 export const LAST_POKEMON_ID = 807
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export enum TYPES {
+  NORMAL = 1,
+  FIGHTING,
+  FLYING,
+  POISON,
+  GROUND,
+  ROCK,
+  BUG,
+  GHOST,
+  STEEL,
+  FIRE,
+  WATER,
+  GRASS,
+  ELECTRIC,
+  PSYCHIC,
+  ICE,
+  DRAGON,
+  DARK,
+  FAIRY,
+}

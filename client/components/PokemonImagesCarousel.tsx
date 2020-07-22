@@ -1,14 +1,16 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import React, { Component, useState } from "react"
-import { extractImages } from "../common/utils"
-import { getPokemonById_getPokemon_pictures as picturesType } from "../graphql/queries/__generated__/getPokemonById"
+import React from "react"
 import Slider from "react-animated-slider"
 import { mq } from "../common/constants"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
+import {
+  getPokemonSpritesById,
+  getPokemonSpritesByIdVariables,
+} from "../graphql/queries/__generated__/getPokemonSpritesById"
 
-const GET_POKEMON = gql`
+const GET_SPRITES = gql`
   query getPokemonSpritesById($id: Int!) {
     pokemonSprites(id: $id) {
       pokemon_id
@@ -20,10 +22,14 @@ const GET_POKEMON = gql`
 
 interface Props {
   id: number
+  picture?: string
 }
 
-const PokemonImagesCarousel: React.FC<Props> = ({ id }) => {
-  const { data, loading, error } = useQuery(GET_POKEMON, {
+const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
+  const { data, loading, error } = useQuery<
+    getPokemonSpritesById,
+    getPokemonSpritesByIdVariables
+  >(GET_SPRITES, {
     variables: { id: id },
   })
 
@@ -33,8 +39,7 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id }) => {
   const urls = data?.pokemonSprites?.map((sprite) => sprite.sprite_url)
   const descriptions = data?.pokemonSprites?.map((sprite) => sprite.description)
 
-  console.log(`url=${urls}`)
-
+  console.log(picture)
   const buildCarousel = () => {
     const divArray = []
     for (let i = 0; i < urls.length; i++) {
@@ -58,6 +63,15 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id }) => {
         </div>
       )
     }
+
+    if (picture != null) {
+      divArray.unshift(
+        <div>
+          <img style={{ height: "350px", width: "350px" }} src={picture} />
+        </div>
+      )
+    }
+
     return divArray
   }
 

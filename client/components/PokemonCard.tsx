@@ -1,9 +1,5 @@
 import Card from "@material-ui/core/Card"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import CardActions from "@material-ui/core/CardActions"
-import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
-import Button from "@material-ui/core/Button"
+
 import Typography from "@material-ui/core/Typography"
 import Link from "next/link"
 import Loading from "./Loading"
@@ -56,7 +52,10 @@ interface CardProps {
 }
 
 const PokemonCard: React.FC<CardProps> = ({ id }) => {
-  const { data, loading, error } = useQuery(GET_POKEMON, {
+  const { data, loading, error } = useQuery<
+    getPokemonById,
+    getPokemonByIdVariables
+  >(GET_POKEMON, {
     variables: { id: id },
   })
 
