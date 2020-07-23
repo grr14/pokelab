@@ -1568,1687 +1568,1687 @@ VALUES
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(387, 'turtwig', 387, 4, 102, 64, 500, 1,             ,             , 'null');
+	(387, 'turtwig', 387, 4, 102, 64, 500, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(388, 'grotle', 388, 11, 970, 142, 501, 1,             ,             , 'null');
+	(388, 'grotle', 388, 11, 970, 142, 501, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(389, 'torterra', 389, 22, 3100, 236, 502, 1,             ,             , 'null');
+	(389, 'torterra', 389, 22, 3100, 236, 502, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(390, 'chimchar', 390, 5, 62, 62, 503, 1,             ,             , 'null');
+	(390, 'chimchar', 390, 5, 62, 62, 503, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(391, 'monferno', 391, 9, 220, 142, 504, 1,             ,             , 'null');
+	(391, 'monferno', 391, 9, 220, 142, 504, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(392, 'infernape', 392, 12, 550, 240, 505, 1,             ,             , 'null');
+	(392, 'infernape', 392, 12, 550, 240, 505, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(393, 'piplup', 393, 4, 52, 63, 506, 1,             ,             , 'null');
+	(393, 'piplup', 393, 4, 52, 63, 506, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(394, 'prinplup', 394, 8, 230, 142, 507, 1,             ,             , 'null');
+	(394, 'prinplup', 394, 8, 230, 142, 507, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(395, 'empoleon', 395, 17, 845, 239, 508, 1,             ,             , 'null');
+	(395, 'empoleon', 395, 17, 845, 239, 508, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(396, 'starly', 396, 3, 20, 49, 509, 1,             ,             , 'null');
+	(396, 'starly', 396, 3, 20, 49, 509, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(397, 'staravia', 397, 6, 155, 119, 510, 1,             ,             , 'null');
+	(397, 'staravia', 397, 6, 155, 119, 510, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(398, 'staraptor', 398, 12, 249, 218, 511, 1,             ,             , 'null');
+	(398, 'staraptor', 398, 12, 249, 218, 511, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(399, 'bidoof', 399, 5, 200, 50, 512, 1,             ,             , 'null');
+	(399, 'bidoof', 399, 5, 200, 50, 512, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(400, 'bibarel', 400, 10, 315, 144, 513, 1,             ,             , 'null');
+	(400, 'bibarel', 400, 10, 315, 144, 513, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(401, 'kricketot', 401, 3, 22, 39, 514, 1,             ,             , 'null');
+	(401, 'kricketot', 401, 3, 22, 39, 514, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(402, 'kricketune', 402, 10, 255, 134, 515, 1,             ,             , 'null');
+	(402, 'kricketune', 402, 10, 255, 134, 515, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(403, 'shinx', 403, 5, 95, 53, 516, 1,             ,             , 'null');
+	(403, 'shinx', 403, 5, 95, 53, 516, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(404, 'luxio', 404, 9, 305, 127, 517, 1,             ,             , 'null');
+	(404, 'luxio', 404, 9, 305, 127, 517, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(405, 'luxray', 405, 14, 420, 235, 518, 1,             ,             , 'null');
+	(405, 'luxray', 405, 14, 420, 235, 518, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(406, 'budew', 406, 2, 12, 56, 405, 1,             ,             , 'null');
+	(406, 'budew', 406, 2, 12, 56, 405, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(407, 'roserade', 407, 9, 145, 232, 407, 1,             ,             , 'null');
+	(407, 'roserade', 407, 9, 145, 232, 407, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(408, 'cranidos', 408, 9, 315, 70, 519, 1,             ,             , 'null');
+	(408, 'cranidos', 408, 9, 315, 70, 519, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(409, 'rampardos', 409, 16, 1025, 173, 520, 1,             ,             , 'null');
+	(409, 'rampardos', 409, 16, 1025, 173, 520, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(410, 'shieldon', 410, 5, 570, 70, 521, 1,             ,             , 'null');
+	(410, 'shieldon', 410, 5, 570, 70, 521, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(411, 'bastiodon', 411, 13, 1495, 173, 522, 1,             ,             , 'null');
+	(411, 'bastiodon', 411, 13, 1495, 173, 522, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(412, 'burmy', 412, 2, 34, 45, 523, 1,             ,             , 'null');
+	(412, 'burmy', 412, 2, 34, 45, 523, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(413, 'wormadam-plant', 413, 5, 65, 148, 524, 1,             ,             , 'null');
+	(413, 'wormadam-plant', 413, 5, 65, 148, 524, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(414, 'mothim', 414, 9, 233, 148, 527, 1,             ,             , 'null');
+	(414, 'mothim', 414, 9, 233, 148, 527, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(415, 'combee', 415, 3, 55, 49, 528, 1,             ,             , 'null');
+	(415, 'combee', 415, 3, 55, 49, 528, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(416, 'vespiquen', 416, 12, 385, 166, 529, 1,             ,             , 'null');
+	(416, 'vespiquen', 416, 12, 385, 166, 529, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(417, 'pachirisu', 417, 4, 39, 142, 530, 1,             ,             , 'null');
+	(417, 'pachirisu', 417, 4, 39, 142, 530, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(418, 'buizel', 418, 7, 295, 66, 531, 1,             ,             , 'null');
+	(418, 'buizel', 418, 7, 295, 66, 531, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(419, 'floatzel', 419, 11, 335, 173, 532, 1,             ,             , 'null');
+	(419, 'floatzel', 419, 11, 335, 173, 532, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(420, 'cherubi', 420, 4, 33, 55, 533, 1,             ,             , 'null');
+	(420, 'cherubi', 420, 4, 33, 55, 533, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(421, 'cherrim', 421, 5, 93, 158, 534, 1,             ,             , 'null');
+	(421, 'cherrim', 421, 5, 93, 158, 534, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(422, 'shellos', 422, 3, 63, 65, 535, 1,             ,             , 'null');
+	(422, 'shellos', 422, 3, 63, 65, 535, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(423, 'gastrodon', 423, 9, 299, 166, 536, 1,             ,             , 'null');
+	(423, 'gastrodon', 423, 9, 299, 166, 536, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(424, 'ambipom', 424, 12, 203, 169, 271, 1,             ,             , 'null');
+	(424, 'ambipom', 424, 12, 203, 169, 271, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(425, 'drifloon', 425, 4, 12, 70, 537, 1,             ,             , 'null');
+	(425, 'drifloon', 425, 4, 12, 70, 537, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(426, 'drifblim', 426, 12, 150, 174, 538, 1,             ,             , 'null');
+	(426, 'drifblim', 426, 12, 150, 174, 538, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(427, 'buneary', 427, 4, 55, 70, 539, 1,             ,             , 'null');
+	(427, 'buneary', 427, 4, 55, 70, 539, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(428, 'lopunny', 428, 12, 333, 168, 540, 1,             ,             , 'null');
+	(428, 'lopunny', 428, 12, 333, 168, 540, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(429, 'mismagius', 429, 9, 44, 173, 281, 1,             ,             , 'null');
+	(429, 'mismagius', 429, 9, 44, 173, 281, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(430, 'honchkrow', 430, 9, 273, 177, 279, 1,             ,             , 'null');
+	(430, 'honchkrow', 430, 9, 273, 177, 279, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(431, 'glameow', 431, 5, 39, 62, 542, 1,             ,             , 'null');
+	(431, 'glameow', 431, 5, 39, 62, 542, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(432, 'purugly', 432, 10, 438, 158, 543, 1,             ,             , 'null');
+	(432, 'purugly', 432, 10, 438, 158, 543, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(433, 'chingling', 433, 2, 6, 57, 458, 1,             ,             , 'null');
+	(433, 'chingling', 433, 2, 6, 57, 458, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(434, 'stunky', 434, 4, 192, 66, 544, 1,             ,             , 'null');
+	(434, 'stunky', 434, 4, 192, 66, 544, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(435, 'skuntank', 435, 10, 380, 168, 545, 1,             ,             , 'null');
+	(435, 'skuntank', 435, 10, 380, 168, 545, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(436, 'bronzor', 436, 5, 605, 60, 546, 1,             ,             , 'null');
+	(436, 'bronzor', 436, 5, 605, 60, 546, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(437, 'bronzong', 437, 13, 1870, 175, 547, 1,             ,             , 'null');
+	(437, 'bronzong', 437, 13, 1870, 175, 547, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(438, 'bonsly', 438, 5, 150, 58, 265, 1,             ,             , 'null');
+	(438, 'bonsly', 438, 5, 150, 58, 265, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(439, 'mime-jr', 439, 6, 130, 62, 183, 1,             ,             , 'null');
+	(439, 'mime-jr', 439, 6, 130, 62, 183, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(440, 'happiny', 440, 6, 244, 110, 169, 1,             ,             , 'null');
+	(440, 'happiny', 440, 6, 244, 110, 169, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(441, 'chatot', 441, 5, 19, 144, 548, 1,             ,             , 'null');
+	(441, 'chatot', 441, 5, 19, 144, 548, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(442, 'spiritomb', 442, 10, 1080, 170, 549, 1,             ,             , 'null');
+	(442, 'spiritomb', 442, 10, 1080, 170, 549, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(443, 'gible', 443, 7, 205, 60, 550, 1,             ,             , 'null');
+	(443, 'gible', 443, 7, 205, 60, 550, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(444, 'gabite', 444, 14, 560, 144, 551, 1,             ,             , 'null');
+	(444, 'gabite', 444, 14, 560, 144, 551, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(445, 'garchomp', 445, 19, 950, 270, 552, 1,             ,             , 'null');
+	(445, 'garchomp', 445, 19, 950, 270, 552, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(446, 'munchlax', 446, 6, 1050, 78, 222, 1,             ,             , 'null');
+	(446, 'munchlax', 446, 6, 1050, 78, 222, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(447, 'riolu', 447, 7, 202, 57, 554, 1,             ,             , 'null');
+	(447, 'riolu', 447, 7, 202, 57, 554, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(448, 'lucario', 448, 12, 540, 184, 555, 1,             ,             , 'null');
+	(448, 'lucario', 448, 12, 540, 184, 555, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(449, 'hippopotas', 449, 8, 495, 66, 557, 1,             ,             , 'null');
+	(449, 'hippopotas', 449, 8, 495, 66, 557, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(450, 'hippowdon', 450, 20, 3000, 184, 558, 1,             ,             , 'null');
+	(450, 'hippowdon', 450, 20, 3000, 184, 558, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(451, 'skorupi', 451, 8, 120, 66, 559, 1,             ,             , 'null');
+	(451, 'skorupi', 451, 8, 120, 66, 559, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(452, 'drapion', 452, 13, 615, 175, 560, 1,             ,             , 'null');
+	(452, 'drapion', 452, 13, 615, 175, 560, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(453, 'croagunk', 453, 7, 230, 60, 561, 1,             ,             , 'null');
+	(453, 'croagunk', 453, 7, 230, 60, 561, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(454, 'toxicroak', 454, 13, 444, 172, 562, 1,             ,             , 'null');
+	(454, 'toxicroak', 454, 13, 444, 172, 562, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(455, 'carnivine', 455, 14, 270, 159, 563, 1,             ,             , 'null');
+	(455, 'carnivine', 455, 14, 270, 159, 563, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(456, 'finneon', 456, 4, 70, 66, 564, 1,             ,             , 'null');
+	(456, 'finneon', 456, 4, 70, 66, 564, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(457, 'lumineon', 457, 12, 240, 161, 565, 1,             ,             , 'null');
+	(457, 'lumineon', 457, 12, 240, 161, 565, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(458, 'mantyke', 458, 10, 650, 69, 310, 1,             ,             , 'null');
+	(458, 'mantyke', 458, 10, 650, 69, 310, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(459, 'snover', 459, 10, 505, 67, 566, 1,             ,             , 'null');
+	(459, 'snover', 459, 10, 505, 67, 566, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(460, 'abomasnow', 460, 22, 1355, 173, 567, 1,             ,             , 'null');
+	(460, 'abomasnow', 460, 22, 1355, 173, 567, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(461, 'weavile', 461, 11, 340, 179, 298, 1,             ,             , 'null');
+	(461, 'weavile', 461, 11, 340, 179, 298, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(462, 'magnezone', 462, 12, 1800, 241, 126, 1,             ,             , 'null');
+	(462, 'magnezone', 462, 12, 1800, 241, 126, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(463, 'lickilicky', 463, 17, 1400, 180, 163, 1,             ,             , 'null');
+	(463, 'lickilicky', 463, 17, 1400, 180, 163, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(464, 'rhyperior', 464, 24, 2828, 241, 168, 1,             ,             , 'null');
+	(464, 'rhyperior', 464, 24, 2828, 241, 168, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(465, 'tangrowth', 465, 20, 1286, 187, 173, 1,             ,             , 'null');
+	(465, 'tangrowth', 465, 20, 1286, 187, 173, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(466, 'electivire', 466, 18, 1386, 243, 192, 1,             ,             , 'null');
+	(466, 'electivire', 466, 18, 1386, 243, 192, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(467, 'magmortar', 467, 16, 680, 243, 195, 1,             ,             , 'null');
+	(467, 'magmortar', 467, 16, 680, 243, 195, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(468, 'togekiss', 468, 15, 380, 245, 255, 1,             ,             , 'null');
+	(468, 'togekiss', 468, 15, 380, 245, 255, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(469, 'yanmega', 469, 19, 515, 180, 275, 1,             ,             , 'null');
+	(469, 'yanmega', 469, 19, 515, 180, 275, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(470, 'leafeon', 470, 10, 255, 184, 210, 1,             ,             , 'null');
+	(470, 'leafeon', 470, 10, 255, 184, 210, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(471, 'glaceon', 471, 8, 259, 184, 211, 1,             ,             , 'null');
+	(471, 'glaceon', 471, 8, 259, 184, 211, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(472, 'gliscor', 472, 20, 425, 179, 290, 1,             ,             , 'null');
+	(472, 'gliscor', 472, 20, 425, 179, 290, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(473, 'mamoswine', 473, 25, 2910, 239, 305, 1,             ,             , 'null');
+	(473, 'mamoswine', 473, 25, 2910, 239, 305, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(474, 'porygon-z', 474, 9, 340, 241, 215, 1,             ,             , 'null');
+	(474, 'porygon-z', 474, 9, 340, 241, 215, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(475, 'gallade', 475, 16, 520, 233, 366, 1,             ,             , 'null');
+	(475, 'gallade', 475, 16, 520, 233, 366, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(476, 'probopass', 476, 14, 3400, 184, 384, 1,             ,             , 'null');
+	(476, 'probopass', 476, 14, 3400, 184, 384, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(477, 'dusknoir', 477, 22, 1066, 236, 456, 1,             ,             , 'null');
+	(477, 'dusknoir', 477, 22, 1066, 236, 456, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(478, 'froslass', 478, 13, 266, 168, 465, 1,             ,             , 'null');
+	(478, 'froslass', 478, 13, 266, 168, 465, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(479, 'rotom', 479, 3, 3, 154, 569, 1,             ,             , 'null');
+	(479, 'rotom', 479, 3, 3, 154, 569, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(480, 'uxie', 480, 3, 3, 261, 575, 1,             ,             , 'null');
+	(480, 'uxie', 480, 3, 3, 261, 575, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(481, 'mesprit', 481, 3, 3, 261, 576, 1,             ,             , 'null');
+	(481, 'mesprit', 481, 3, 3, 261, 576, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(482, 'azelf', 482, 3, 3, 261, 577, 1,             ,             , 'null');
+	(482, 'azelf', 482, 3, 3, 261, 577, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(483, 'dialga', 483, 54, 6830, 306, 578, 1,             ,             , 'null');
+	(483, 'dialga', 483, 54, 6830, 306, 578, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(484, 'palkia', 484, 42, 3360, 306, 579, 1,             ,             , 'null');
+	(484, 'palkia', 484, 42, 3360, 306, 579, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(485, 'heatran', 485, 17, 4300, 270, 580, 1,             ,             , 'null');
+	(485, 'heatran', 485, 17, 4300, 270, 580, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(486, 'regigigas', 486, 37, 4200, 302, 581, 1,             ,             , 'null');
+	(486, 'regigigas', 486, 37, 4200, 302, 581, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(487, 'giratina-altered', 487, 45, 7500, 306, 582, 1,             ,             , 'null');
+	(487, 'giratina-altered', 487, 45, 7500, 306, 582, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(488, 'cresselia', 488, 15, 856, 270, 584, 1,             ,             , 'null');
+	(488, 'cresselia', 488, 15, 856, 270, 584, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(489, 'phione', 489, 4, 31, 216, 585, 1,             ,             , 'null');
+	(489, 'phione', 489, 4, 31, 216, 585, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(490, 'manaphy', 490, 3, 14, 270, 586, 1,             ,             , 'null');
+	(490, 'manaphy', 490, 3, 14, 270, 586, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(491, 'darkrai', 491, 15, 505, 270, 587, 1,             ,             , 'null');
+	(491, 'darkrai', 491, 15, 505, 270, 587, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(492, 'shaymin-land', 492, 2, 21, 270, 588, 1,             ,             , 'null');
+	(492, 'shaymin-land', 492, 2, 21, 270, 588, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(493, 'arceus', 493, 32, 3200, 324, 590, 1,             ,             , 'null');
+	(493, 'arceus', 493, 32, 3200, 324, 590, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(494, 'victini', 494, 4, 40, 270, 591, 1,             ,             , 'null');
+	(494, 'victini', 494, 4, 40, 270, 591, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(495, 'snivy', 495, 6, 81, 62, 592, 1,             ,             , 'null');
+	(495, 'snivy', 495, 6, 81, 62, 592, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(496, 'servine', 496, 8, 160, 145, 593, 1,             ,             , 'null');
+	(496, 'servine', 496, 8, 160, 145, 593, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(497, 'serperior', 497, 33, 630, 238, 594, 1,             ,             , 'null');
+	(497, 'serperior', 497, 33, 630, 238, 594, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(498, 'tepig', 498, 5, 99, 62, 595, 1,             ,             , 'null');
+	(498, 'tepig', 498, 5, 99, 62, 595, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(499, 'pignite', 499, 10, 555, 146, 596, 1,             ,             , 'null');
+	(499, 'pignite', 499, 10, 555, 146, 596, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(500, 'emboar', 500, 16, 1500, 238, 597, 1,             ,             , 'null');
+	(500, 'emboar', 500, 16, 1500, 238, 597, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(501, 'oshawott', 501, 5, 59, 62, 598, 1,             ,             , 'null');
+	(501, 'oshawott', 501, 5, 59, 62, 598, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(502, 'dewott', 502, 8, 245, 145, 599, 1,             ,             , 'null');
+	(502, 'dewott', 502, 8, 245, 145, 599, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(503, 'samurott', 503, 15, 946, 238, 600, 1,             ,             , 'null');
+	(503, 'samurott', 503, 15, 946, 238, 600, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(504, 'patrat', 504, 5, 116, 51, 601, 1,             ,             , 'null');
+	(504, 'patrat', 504, 5, 116, 51, 601, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(505, 'watchog', 505, 11, 270, 147, 602, 1,             ,             , 'null');
+	(505, 'watchog', 505, 11, 270, 147, 602, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(506, 'lillipup', 506, 4, 41, 55, 603, 1,             ,             , 'null');
+	(506, 'lillipup', 506, 4, 41, 55, 603, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(507, 'herdier', 507, 9, 147, 130, 604, 1,             ,             , 'null');
+	(507, 'herdier', 507, 9, 147, 130, 604, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(508, 'stoutland', 508, 12, 610, 225, 605, 1,             ,             , 'null');
+	(508, 'stoutland', 508, 12, 610, 225, 605, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(509, 'purrloin', 509, 4, 101, 56, 606, 1,             ,             , 'null');
+	(509, 'purrloin', 509, 4, 101, 56, 606, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(510, 'liepard', 510, 11, 375, 156, 607, 1,             ,             , 'null');
+	(510, 'liepard', 510, 11, 375, 156, 607, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(511, 'pansage', 511, 6, 105, 63, 608, 1,             ,             , 'null');
+	(511, 'pansage', 511, 6, 105, 63, 608, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(512, 'simisage', 512, 11, 305, 174, 609, 1,             ,             , 'null');
+	(512, 'simisage', 512, 11, 305, 174, 609, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(513, 'pansear', 513, 6, 110, 63, 610, 1,             ,             , 'null');
+	(513, 'pansear', 513, 6, 110, 63, 610, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(514, 'simisear', 514, 10, 280, 174, 611, 1,             ,             , 'null');
+	(514, 'simisear', 514, 10, 280, 174, 611, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(515, 'panpour', 515, 6, 135, 63, 612, 1,             ,             , 'null');
+	(515, 'panpour', 515, 6, 135, 63, 612, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(516, 'simipour', 516, 10, 290, 174, 613, 1,             ,             , 'null');
+	(516, 'simipour', 516, 10, 290, 174, 613, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(517, 'munna', 517, 6, 233, 58, 614, 1,             ,             , 'null');
+	(517, 'munna', 517, 6, 233, 58, 614, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(518, 'musharna', 518, 11, 605, 170, 615, 1,             ,             , 'null');
+	(518, 'musharna', 518, 11, 605, 170, 615, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(519, 'pidove', 519, 3, 21, 53, 616, 1,             ,             , 'null');
+	(519, 'pidove', 519, 3, 21, 53, 616, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(520, 'tranquill', 520, 6, 150, 125, 617, 1,             ,             , 'null');
+	(520, 'tranquill', 520, 6, 150, 125, 617, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(521, 'unfezant', 521, 12, 290, 220, 618, 1,             ,             , 'null');
+	(521, 'unfezant', 521, 12, 290, 220, 618, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(522, 'blitzle', 522, 8, 298, 59, 619, 1,             ,             , 'null');
+	(522, 'blitzle', 522, 8, 298, 59, 619, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(523, 'zebstrika', 523, 16, 795, 174, 620, 1,             ,             , 'null');
+	(523, 'zebstrika', 523, 16, 795, 174, 620, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(524, 'roggenrola', 524, 4, 180, 56, 621, 1,             ,             , 'null');
+	(524, 'roggenrola', 524, 4, 180, 56, 621, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(525, 'boldore', 525, 9, 1020, 137, 622, 1,             ,             , 'null');
+	(525, 'boldore', 525, 9, 1020, 137, 622, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(526, 'gigalith', 526, 17, 2600, 232, 623, 1,             ,             , 'null');
+	(526, 'gigalith', 526, 17, 2600, 232, 623, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(527, 'woobat', 527, 4, 21, 65, 624, 1,             ,             , 'null');
+	(527, 'woobat', 527, 4, 21, 65, 624, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(528, 'swoobat', 528, 9, 105, 149, 625, 1,             ,             , 'null');
+	(528, 'swoobat', 528, 9, 105, 149, 625, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(529, 'drilbur', 529, 3, 85, 66, 626, 1,             ,             , 'null');
+	(529, 'drilbur', 529, 3, 85, 66, 626, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(530, 'excadrill', 530, 7, 404, 178, 627, 1,             ,             , 'null');
+	(530, 'excadrill', 530, 7, 404, 178, 627, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(531, 'audino', 531, 11, 310, 390, 628, 1,             ,             , 'null');
+	(531, 'audino', 531, 11, 310, 390, 628, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(532, 'timburr', 532, 6, 125, 61, 630, 1,             ,             , 'null');
+	(532, 'timburr', 532, 6, 125, 61, 630, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(533, 'gurdurr', 533, 12, 400, 142, 631, 1,             ,             , 'null');
+	(533, 'gurdurr', 533, 12, 400, 142, 631, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(534, 'conkeldurr', 534, 14, 870, 227, 632, 1,             ,             , 'null');
+	(534, 'conkeldurr', 534, 14, 870, 227, 632, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(535, 'tympole', 535, 5, 45, 59, 633, 1,             ,             , 'null');
+	(535, 'tympole', 535, 5, 45, 59, 633, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(536, 'palpitoad', 536, 8, 170, 134, 634, 1,             ,             , 'null');
+	(536, 'palpitoad', 536, 8, 170, 134, 634, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(537, 'seismitoad', 537, 15, 620, 229, 635, 1,             ,             , 'null');
+	(537, 'seismitoad', 537, 15, 620, 229, 635, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(538, 'throh', 538, 13, 555, 163, 636, 1,             ,             , 'null');
+	(538, 'throh', 538, 13, 555, 163, 636, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(539, 'sawk', 539, 14, 510, 163, 637, 1,             ,             , 'null');
+	(539, 'sawk', 539, 14, 510, 163, 637, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(540, 'sewaddle', 540, 3, 25, 62, 638, 1,             ,             , 'null');
+	(540, 'sewaddle', 540, 3, 25, 62, 638, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(541, 'swadloon', 541, 5, 73, 133, 639, 1,             ,             , 'null');
+	(541, 'swadloon', 541, 5, 73, 133, 639, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(542, 'leavanny', 542, 12, 205, 225, 640, 1,             ,             , 'null');
+	(542, 'leavanny', 542, 12, 205, 225, 640, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(543, 'venipede', 543, 4, 53, 52, 641, 1,             ,             , 'null');
+	(543, 'venipede', 543, 4, 53, 52, 641, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(544, 'whirlipede', 544, 12, 585, 126, 642, 1,             ,             , 'null');
+	(544, 'whirlipede', 544, 12, 585, 126, 642, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(545, 'scolipede', 545, 25, 2005, 218, 643, 1,             ,             , 'null');
+	(545, 'scolipede', 545, 25, 2005, 218, 643, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(546, 'cottonee', 546, 3, 6, 56, 644, 1,             ,             , 'null');
+	(546, 'cottonee', 546, 3, 6, 56, 644, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(547, 'whimsicott', 547, 7, 66, 168, 645, 1,             ,             , 'null');
+	(547, 'whimsicott', 547, 7, 66, 168, 645, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(548, 'petilil', 548, 5, 66, 56, 646, 1,             ,             , 'null');
+	(548, 'petilil', 548, 5, 66, 56, 646, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(549, 'lilligant', 549, 11, 163, 168, 647, 1,             ,             , 'null');
+	(549, 'lilligant', 549, 11, 163, 168, 647, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(550, 'basculin-red-striped', 550, 10, 180, 161, 648, 1,             ,             , 'null');
+	(550, 'basculin-red-striped', 550, 10, 180, 161, 648, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(551, 'sandile', 551, 7, 152, 58, 650, 1,             ,             , 'null');
+	(551, 'sandile', 551, 7, 152, 58, 650, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(552, 'krokorok', 552, 10, 334, 123, 651, 1,             ,             , 'null');
+	(552, 'krokorok', 552, 10, 334, 123, 651, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(553, 'krookodile', 553, 15, 963, 234, 652, 1,             ,             , 'null');
+	(553, 'krookodile', 553, 15, 963, 234, 652, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(554, 'darumaka', 554, 6, 375, 63, 653, 1,             ,             , 'null');
+	(554, 'darumaka', 554, 6, 375, 63, 653, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(555, 'darmanitan-standard', 555, 13, 929, 168, 654, 1,             ,             , 'null');
+	(555, 'darmanitan-standard', 555, 13, 929, 168, 654, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(556, 'maractus', 556, 10, 280, 161, 656, 1,             ,             , 'null');
+	(556, 'maractus', 556, 10, 280, 161, 656, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(557, 'dwebble', 557, 3, 145, 65, 657, 1,             ,             , 'null');
+	(557, 'dwebble', 557, 3, 145, 65, 657, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(558, 'crustle', 558, 14, 2000, 170, 658, 1,             ,             , 'null');
+	(558, 'crustle', 558, 14, 2000, 170, 658, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(559, 'scraggy', 559, 6, 118, 70, 659, 1,             ,             , 'null');
+	(559, 'scraggy', 559, 6, 118, 70, 659, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(560, 'scrafty', 560, 11, 300, 171, 660, 1,             ,             , 'null');
+	(560, 'scrafty', 560, 11, 300, 171, 660, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(561, 'sigilyph', 561, 14, 140, 172, 661, 1,             ,             , 'null');
+	(561, 'sigilyph', 561, 14, 140, 172, 661, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(562, 'yamask', 562, 5, 15, 61, 662, 1,             ,             , 'null');
+	(562, 'yamask', 562, 5, 15, 61, 662, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(563, 'cofagrigus', 563, 17, 765, 169, 663, 1,             ,             , 'null');
+	(563, 'cofagrigus', 563, 17, 765, 169, 663, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(564, 'tirtouga', 564, 7, 165, 71, 664, 1,             ,             , 'null');
+	(564, 'tirtouga', 564, 7, 165, 71, 664, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(565, 'carracosta', 565, 12, 810, 173, 665, 1,             ,             , 'null');
+	(565, 'carracosta', 565, 12, 810, 173, 665, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(566, 'archen', 566, 5, 95, 71, 666, 1,             ,             , 'null');
+	(566, 'archen', 566, 5, 95, 71, 666, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(567, 'archeops', 567, 14, 320, 177, 667, 1,             ,             , 'null');
+	(567, 'archeops', 567, 14, 320, 177, 667, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(568, 'trubbish', 568, 6, 310, 66, 668, 1,             ,             , 'null');
+	(568, 'trubbish', 568, 6, 310, 66, 668, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(569, 'garbodor', 569, 19, 1073, 166, 669, 1,             ,             , 'null');
+	(569, 'garbodor', 569, 19, 1073, 166, 669, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(570, 'zorua', 570, 7, 125, 66, 670, 1,             ,             , 'null');
+	(570, 'zorua', 570, 7, 125, 66, 670, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(571, 'zoroark', 571, 16, 811, 179, 671, 1,             ,             , 'null');
+	(571, 'zoroark', 571, 16, 811, 179, 671, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(572, 'minccino', 572, 4, 58, 60, 672, 1,             ,             , 'null');
+	(572, 'minccino', 572, 4, 58, 60, 672, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(573, 'cinccino', 573, 5, 75, 165, 673, 1,             ,             , 'null');
+	(573, 'cinccino', 573, 5, 75, 165, 673, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(574, 'gothita', 574, 4, 58, 58, 674, 1,             ,             , 'null');
+	(574, 'gothita', 574, 4, 58, 58, 674, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(575, 'gothorita', 575, 7, 180, 137, 675, 1,             ,             , 'null');
+	(575, 'gothorita', 575, 7, 180, 137, 675, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(576, 'gothitelle', 576, 15, 440, 221, 676, 1,             ,             , 'null');
+	(576, 'gothitelle', 576, 15, 440, 221, 676, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(577, 'solosis', 577, 3, 10, 58, 677, 1,             ,             , 'null');
+	(577, 'solosis', 577, 3, 10, 58, 677, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(578, 'duosion', 578, 6, 80, 130, 678, 1,             ,             , 'null');
+	(578, 'duosion', 578, 6, 80, 130, 678, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(579, 'reuniclus', 579, 10, 201, 221, 679, 1,             ,             , 'null');
+	(579, 'reuniclus', 579, 10, 201, 221, 679, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(580, 'ducklett', 580, 5, 55, 61, 680, 1,             ,             , 'null');
+	(580, 'ducklett', 580, 5, 55, 61, 680, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(581, 'swanna', 581, 13, 242, 166, 681, 1,             ,             , 'null');
+	(581, 'swanna', 581, 13, 242, 166, 681, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(582, 'vanillite', 582, 4, 57, 61, 682, 1,             ,             , 'null');
+	(582, 'vanillite', 582, 4, 57, 61, 682, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(583, 'vanillish', 583, 11, 410, 138, 683, 1,             ,             , 'null');
+	(583, 'vanillish', 583, 11, 410, 138, 683, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(584, 'vanilluxe', 584, 13, 575, 241, 684, 1,             ,             , 'null');
+	(584, 'vanilluxe', 584, 13, 575, 241, 684, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(585, 'deerling', 585, 6, 195, 67, 685, 1,             ,             , 'null');
+	(585, 'deerling', 585, 6, 195, 67, 685, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(586, 'sawsbuck', 586, 19, 925, 166, 686, 1,             ,             , 'null');
+	(586, 'sawsbuck', 586, 19, 925, 166, 686, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(587, 'emolga', 587, 4, 50, 150, 687, 1,             ,             , 'null');
+	(587, 'emolga', 587, 4, 50, 150, 687, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(588, 'karrablast', 588, 5, 59, 63, 688, 1,             ,             , 'null');
+	(588, 'karrablast', 588, 5, 59, 63, 688, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(589, 'escavalier', 589, 10, 330, 173, 689, 1,             ,             , 'null');
+	(589, 'escavalier', 589, 10, 330, 173, 689, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(590, 'foongus', 590, 2, 10, 59, 690, 1,             ,             , 'null');
+	(590, 'foongus', 590, 2, 10, 59, 690, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(591, 'amoonguss', 591, 6, 105, 162, 691, 1,             ,             , 'null');
+	(591, 'amoonguss', 591, 6, 105, 162, 691, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(592, 'frillish', 592, 12, 330, 67, 692, 1,             ,             , 'null');
+	(592, 'frillish', 592, 12, 330, 67, 692, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(593, 'jellicent', 593, 22, 1350, 168, 693, 1,             ,             , 'null');
+	(593, 'jellicent', 593, 22, 1350, 168, 693, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(594, 'alomomola', 594, 12, 316, 165, 694, 1,             ,             , 'null');
+	(594, 'alomomola', 594, 12, 316, 165, 694, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(595, 'joltik', 595, 1, 6, 64, 695, 1,             ,             , 'null');
+	(595, 'joltik', 595, 1, 6, 64, 695, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(596, 'galvantula', 596, 8, 143, 165, 696, 1,             ,             , 'null');
+	(596, 'galvantula', 596, 8, 143, 165, 696, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(597, 'ferroseed', 597, 6, 188, 61, 697, 1,             ,             , 'null');
+	(597, 'ferroseed', 597, 6, 188, 61, 697, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(598, 'ferrothorn', 598, 10, 1100, 171, 698, 1,             ,             , 'null');
+	(598, 'ferrothorn', 598, 10, 1100, 171, 698, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(599, 'klink', 599, 3, 210, 60, 699, 1,             ,             , 'null');
+	(599, 'klink', 599, 3, 210, 60, 699, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(600, 'klang', 600, 6, 510, 154, 700, 1,             ,             , 'null');
+	(600, 'klang', 600, 6, 510, 154, 700, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(601, 'klinklang', 601, 6, 810, 234, 701, 1,             ,             , 'null');
+	(601, 'klinklang', 601, 6, 810, 234, 701, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(602, 'tynamo', 602, 2, 3, 55, 702, 1,             ,             , 'null');
+	(602, 'tynamo', 602, 2, 3, 55, 702, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(603, 'eelektrik', 603, 12, 220, 142, 703, 1,             ,             , 'null');
+	(603, 'eelektrik', 603, 12, 220, 142, 703, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(604, 'eelektross', 604, 21, 805, 232, 704, 1,             ,             , 'null');
+	(604, 'eelektross', 604, 21, 805, 232, 704, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(605, 'elgyem', 605, 5, 90, 67, 705, 1,             ,             , 'null');
+	(605, 'elgyem', 605, 5, 90, 67, 705, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(606, 'beheeyem', 606, 10, 345, 170, 706, 1,             ,             , 'null');
+	(606, 'beheeyem', 606, 10, 345, 170, 706, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(607, 'litwick', 607, 3, 31, 55, 707, 1,             ,             , 'null');
+	(607, 'litwick', 607, 3, 31, 55, 707, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(608, 'lampent', 608, 6, 130, 130, 708, 1,             ,             , 'null');
+	(608, 'lampent', 608, 6, 130, 130, 708, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(609, 'chandelure', 609, 10, 343, 234, 709, 1,             ,             , 'null');
+	(609, 'chandelure', 609, 10, 343, 234, 709, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(610, 'axew', 610, 6, 180, 64, 710, 1,             ,             , 'null');
+	(610, 'axew', 610, 6, 180, 64, 710, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(611, 'fraxure', 611, 10, 360, 144, 711, 1,             ,             , 'null');
+	(611, 'fraxure', 611, 10, 360, 144, 711, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(612, 'haxorus', 612, 18, 1055, 243, 712, 1,             ,             , 'null');
+	(612, 'haxorus', 612, 18, 1055, 243, 712, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(613, 'cubchoo', 613, 5, 85, 61, 713, 1,             ,             , 'null');
+	(613, 'cubchoo', 613, 5, 85, 61, 713, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(614, 'beartic', 614, 26, 2600, 177, 714, 1,             ,             , 'null');
+	(614, 'beartic', 614, 26, 2600, 177, 714, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(615, 'cryogonal', 615, 11, 1480, 180, 715, 1,             ,             , 'null');
+	(615, 'cryogonal', 615, 11, 1480, 180, 715, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(616, 'shelmet', 616, 4, 77, 61, 716, 1,             ,             , 'null');
+	(616, 'shelmet', 616, 4, 77, 61, 716, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(617, 'accelgor', 617, 8, 253, 173, 717, 1,             ,             , 'null');
+	(617, 'accelgor', 617, 8, 253, 173, 717, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(618, 'stunfisk', 618, 7, 110, 165, 718, 1,             ,             , 'null');
+	(618, 'stunfisk', 618, 7, 110, 165, 718, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(619, 'mienfoo', 619, 9, 200, 70, 719, 1,             ,             , 'null');
+	(619, 'mienfoo', 619, 9, 200, 70, 719, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(620, 'mienshao', 620, 14, 355, 179, 720, 1,             ,             , 'null');
+	(620, 'mienshao', 620, 14, 355, 179, 720, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(621, 'druddigon', 621, 16, 1390, 170, 721, 1,             ,             , 'null');
+	(621, 'druddigon', 621, 16, 1390, 170, 721, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(622, 'golett', 622, 10, 920, 61, 722, 1,             ,             , 'null');
+	(622, 'golett', 622, 10, 920, 61, 722, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(623, 'golurk', 623, 28, 3300, 169, 723, 1,             ,             , 'null');
+	(623, 'golurk', 623, 28, 3300, 169, 723, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(624, 'pawniard', 624, 5, 102, 68, 724, 1,             ,             , 'null');
+	(624, 'pawniard', 624, 5, 102, 68, 724, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(625, 'bisharp', 625, 16, 700, 172, 725, 1,             ,             , 'null');
+	(625, 'bisharp', 625, 16, 700, 172, 725, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(626, 'bouffalant', 626, 16, 946, 172, 726, 1,             ,             , 'null');
+	(626, 'bouffalant', 626, 16, 946, 172, 726, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(627, 'rufflet', 627, 5, 105, 70, 727, 1,             ,             , 'null');
+	(627, 'rufflet', 627, 5, 105, 70, 727, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(628, 'braviary', 628, 15, 410, 179, 728, 1,             ,             , 'null');
+	(628, 'braviary', 628, 15, 410, 179, 728, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(629, 'vullaby', 629, 5, 90, 74, 729, 1,             ,             , 'null');
+	(629, 'vullaby', 629, 5, 90, 74, 729, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(630, 'mandibuzz', 630, 12, 395, 179, 730, 1,             ,             , 'null');
+	(630, 'mandibuzz', 630, 12, 395, 179, 730, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(631, 'heatmor', 631, 14, 580, 169, 731, 1,             ,             , 'null');
+	(631, 'heatmor', 631, 14, 580, 169, 731, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(632, 'durant', 632, 3, 330, 169, 732, 1,             ,             , 'null');
+	(632, 'durant', 632, 3, 330, 169, 732, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(633, 'deino', 633, 8, 173, 60, 733, 1,             ,             , 'null');
+	(633, 'deino', 633, 8, 173, 60, 733, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(634, 'zweilous', 634, 14, 500, 147, 734, 1,             ,             , 'null');
+	(634, 'zweilous', 634, 14, 500, 147, 734, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(635, 'hydreigon', 635, 18, 1600, 270, 735, 1,             ,             , 'null');
+	(635, 'hydreigon', 635, 18, 1600, 270, 735, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(636, 'larvesta', 636, 11, 288, 72, 736, 1,             ,             , 'null');
+	(636, 'larvesta', 636, 11, 288, 72, 736, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(637, 'volcarona', 637, 16, 460, 248, 737, 1,             ,             , 'null');
+	(637, 'volcarona', 637, 16, 460, 248, 737, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(638, 'cobalion', 638, 21, 2500, 261, 738, 1,             ,             , 'null');
+	(638, 'cobalion', 638, 21, 2500, 261, 738, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(639, 'terrakion', 639, 19, 2600, 261, 739, 1,             ,             , 'null');
+	(639, 'terrakion', 639, 19, 2600, 261, 739, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(640, 'virizion', 640, 20, 2000, 261, 740, 1,             ,             , 'null');
+	(640, 'virizion', 640, 20, 2000, 261, 740, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(641, 'tornadus-incarnate', 641, 15, 630, 261, 741, 1,             ,             , 'null');
+	(641, 'tornadus-incarnate', 641, 15, 630, 261, 741, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(642, 'thundurus-incarnate', 642, 15, 610, 261, 743, 1,             ,             , 'null');
+	(642, 'thundurus-incarnate', 642, 15, 610, 261, 743, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(643, 'reshiram', 643, 32, 3300, 306, 745, 1,             ,             , 'null');
+	(643, 'reshiram', 643, 32, 3300, 306, 745, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(644, 'zekrom', 644, 29, 3450, 306, 746, 1,             ,             , 'null');
+	(644, 'zekrom', 644, 29, 3450, 306, 746, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(645, 'landorus-incarnate', 645, 15, 680, 270, 747, 1,             ,             , 'null');
+	(645, 'landorus-incarnate', 645, 15, 680, 270, 747, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(646, 'kyurem', 646, 30, 3250, 297, 749, 1,             ,             , 'null');
+	(646, 'kyurem', 646, 30, 3250, 297, 749, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(647, 'keldeo-ordinary', 647, 14, 485, 261, 752, 1,             ,             , 'null');
+	(647, 'keldeo-ordinary', 647, 14, 485, 261, 752, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(648, 'meloetta-aria', 648, 6, 65, 270, 754, 1,             ,             , 'null');
+	(648, 'meloetta-aria', 648, 6, 65, 270, 754, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(649, 'genesect', 649, 15, 825, 270, 756, 1,             ,             , 'null');
+	(649, 'genesect', 649, 15, 825, 270, 756, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(650, 'chespin', 650, 4, 90, 63, 757, 1,             ,             , 'null');
+	(650, 'chespin', 650, 4, 90, 63, 757, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(651, 'quilladin', 651, 7, 290, 142, 758, 1,             ,             , 'null');
+	(651, 'quilladin', 651, 7, 290, 142, 758, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(652, 'chesnaught', 652, 16, 900, 239, 759, 1,             ,             , 'null');
+	(652, 'chesnaught', 652, 16, 900, 239, 759, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(653, 'fennekin', 653, 4, 94, 61, 760, 1,             ,             , 'null');
+	(653, 'fennekin', 653, 4, 94, 61, 760, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(654, 'braixen', 654, 10, 145, 143, 761, 1,             ,             , 'null');
+	(654, 'braixen', 654, 10, 145, 143, 761, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(655, 'delphox', 655, 15, 390, 240, 762, 1,             ,             , 'null');
+	(655, 'delphox', 655, 15, 390, 240, 762, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(656, 'froakie', 656, 3, 70, 63, 763, 1,             ,             , 'null');
+	(656, 'froakie', 656, 3, 70, 63, 763, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(657, 'frogadier', 657, 6, 109, 142, 764, 1,             ,             , 'null');
+	(657, 'frogadier', 657, 6, 109, 142, 764, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(658, 'greninja', 658, 15, 400, 239, 765, 1,             ,             , 'null');
+	(658, 'greninja', 658, 15, 400, 239, 765, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(659, 'bunnelby', 659, 4, 50, 47, 768, 1,             ,             , 'null');
+	(659, 'bunnelby', 659, 4, 50, 47, 768, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(660, 'diggersby', 660, 10, 424, 148, 769, 1,             ,             , 'null');
+	(660, 'diggersby', 660, 10, 424, 148, 769, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(661, 'fletchling', 661, 3, 17, 56, 770, 1,             ,             , 'null');
+	(661, 'fletchling', 661, 3, 17, 56, 770, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(662, 'fletchinder', 662, 7, 160, 134, 771, 1,             ,             , 'null');
+	(662, 'fletchinder', 662, 7, 160, 134, 771, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(663, 'talonflame', 663, 12, 245, 175, 772, 1,             ,             , 'null');
+	(663, 'talonflame', 663, 12, 245, 175, 772, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(664, 'scatterbug', 664, 3, 25, 40, 773, 1,             ,             , 'null');
+	(664, 'scatterbug', 664, 3, 25, 40, 773, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(665, 'spewpa', 665, 3, 84, 75, 774, 1,             ,             , 'null');
+	(665, 'spewpa', 665, 3, 84, 75, 774, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(666, 'vivillon', 666, 12, 170, 185, 775, 1,             ,             , 'null');
+	(666, 'vivillon', 666, 12, 170, 185, 775, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(667, 'litleo', 667, 6, 135, 74, 776, 1,             ,             , 'null');
+	(667, 'litleo', 667, 6, 135, 74, 776, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(668, 'pyroar', 668, 15, 815, 177, 777, 1,             ,             , 'null');
+	(668, 'pyroar', 668, 15, 815, 177, 777, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(669, 'flabebe', 669, 1, 1, 61, 778, 1,             ,             , 'null');
+	(669, 'flabebe', 669, 1, 1, 61, 778, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(670, 'floette', 670, 2, 9, 130, 779, 1,             ,             , 'null');
+	(670, 'floette', 670, 2, 9, 130, 779, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(671, 'florges', 671, 11, 100, 248, 781, 1,             ,             , 'null');
+	(671, 'florges', 671, 11, 100, 248, 781, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(672, 'skiddo', 672, 9, 310, 70, 782, 1,             ,             , 'null');
+	(672, 'skiddo', 672, 9, 310, 70, 782, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(673, 'gogoat', 673, 17, 910, 186, 783, 1,             ,             , 'null');
+	(673, 'gogoat', 673, 17, 910, 186, 783, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(674, 'pancham', 674, 6, 80, 70, 784, 1,             ,             , 'null');
+	(674, 'pancham', 674, 6, 80, 70, 784, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(675, 'pangoro', 675, 21, 1360, 173, 785, 1,             ,             , 'null');
+	(675, 'pangoro', 675, 21, 1360, 173, 785, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(676, 'furfrou', 676, 12, 280, 165, 786, 1,             ,             , 'null');
+	(676, 'furfrou', 676, 12, 280, 165, 786, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(677, 'espurr', 677, 3, 35, 71, 787, 1,             ,             , 'null');
+	(677, 'espurr', 677, 3, 35, 71, 787, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(678, 'meowstic-male', 678, 6, 85, 163, 788, 1,             ,             , 'null');
+	(678, 'meowstic-male', 678, 6, 85, 163, 788, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(679, 'honedge', 679, 8, 20, 65, 790, 1,             ,             , 'null');
+	(679, 'honedge', 679, 8, 20, 65, 790, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(680, 'doublade', 680, 8, 45, 157, 791, 1,             ,             , 'null');
+	(680, 'doublade', 680, 8, 45, 157, 791, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(681, 'aegislash-shield', 681, 17, 530, 234, 792, 1,             ,             , 'null');
+	(681, 'aegislash-shield', 681, 17, 530, 234, 792, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(682, 'spritzee', 682, 2, 5, 68, 794, 1,             ,             , 'null');
+	(682, 'spritzee', 682, 2, 5, 68, 794, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(683, 'aromatisse', 683, 8, 155, 162, 795, 1,             ,             , 'null');
+	(683, 'aromatisse', 683, 8, 155, 162, 795, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(684, 'swirlix', 684, 4, 35, 68, 796, 1,             ,             , 'null');
+	(684, 'swirlix', 684, 4, 35, 68, 796, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(685, 'slurpuff', 685, 8, 50, 168, 797, 1,             ,             , 'null');
+	(685, 'slurpuff', 685, 8, 50, 168, 797, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(686, 'inkay', 686, 4, 35, 58, 798, 1,             ,             , 'null');
+	(686, 'inkay', 686, 4, 35, 58, 798, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(687, 'malamar', 687, 15, 470, 169, 799, 1,             ,             , 'null');
+	(687, 'malamar', 687, 15, 470, 169, 799, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(688, 'binacle', 688, 5, 310, 61, 800, 1,             ,             , 'null');
+	(688, 'binacle', 688, 5, 310, 61, 800, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(689, 'barbaracle', 689, 13, 960, 175, 801, 1,             ,             , 'null');
+	(689, 'barbaracle', 689, 13, 960, 175, 801, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(690, 'skrelp', 690, 5, 73, 64, 802, 1,             ,             , 'null');
+	(690, 'skrelp', 690, 5, 73, 64, 802, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(691, 'dragalge', 691, 18, 815, 173, 803, 1,             ,             , 'null');
+	(691, 'dragalge', 691, 18, 815, 173, 803, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(692, 'clauncher', 692, 5, 83, 66, 804, 1,             ,             , 'null');
+	(692, 'clauncher', 692, 5, 83, 66, 804, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(693, 'clawitzer', 693, 13, 353, 100, 805, 1,             ,             , 'null');
+	(693, 'clawitzer', 693, 13, 353, 100, 805, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(694, 'helioptile', 694, 5, 60, 58, 806, 1,             ,             , 'null');
+	(694, 'helioptile', 694, 5, 60, 58, 806, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(695, 'heliolisk', 695, 10, 210, 168, 807, 1,             ,             , 'null');
+	(695, 'heliolisk', 695, 10, 210, 168, 807, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(696, 'tyrunt', 696, 8, 260, 72, 808, 1,             ,             , 'null');
+	(696, 'tyrunt', 696, 8, 260, 72, 808, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(697, 'tyrantrum', 697, 25, 2700, 182, 809, 1,             ,             , 'null');
+	(697, 'tyrantrum', 697, 25, 2700, 182, 809, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(698, 'amaura', 698, 13, 252, 72, 810, 1,             ,             , 'null');
+	(698, 'amaura', 698, 13, 252, 72, 810, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(699, 'aurorus', 699, 27, 2250, 104, 811, 1,             ,             , 'null');
+	(699, 'aurorus', 699, 27, 2250, 104, 811, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(700, 'sylveon', 700, 10, 235, 184, 212, 1,             ,             , 'null');
+	(700, 'sylveon', 700, 10, 235, 184, 212, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(701, 'hawlucha', 701, 8, 215, 175, 812, 1,             ,             , 'null');
+	(701, 'hawlucha', 701, 8, 215, 175, 812, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(702, 'dedenne', 702, 2, 22, 151, 813, 1,             ,             , 'null');
+	(702, 'dedenne', 702, 2, 22, 151, 813, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(703, 'carbink', 703, 3, 57, 100, 814, 1,             ,             , 'null');
+	(703, 'carbink', 703, 3, 57, 100, 814, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(704, 'goomy', 704, 3, 28, 60, 815, 1,             ,             , 'null');
+	(704, 'goomy', 704, 3, 28, 60, 815, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(705, 'sliggoo', 705, 8, 175, 158, 816, 1,             ,             , 'null');
+	(705, 'sliggoo', 705, 8, 175, 158, 816, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(706, 'goodra', 706, 20, 1505, 270, 817, 1,             ,             , 'null');
+	(706, 'goodra', 706, 20, 1505, 270, 817, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(707, 'klefki', 707, 2, 30, 165, 818, 1,             ,             , 'null');
+	(707, 'klefki', 707, 2, 30, 165, 818, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(708, 'phantump', 708, 4, 70, 62, 819, 1,             ,             , 'null');
+	(708, 'phantump', 708, 4, 70, 62, 819, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(709, 'trevenant', 709, 15, 710, 166, 820, 1,             ,             , 'null');
+	(709, 'trevenant', 709, 15, 710, 166, 820, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(710, 'pumpkaboo-average', 710, 4, 50, 67, 821, 1,             ,             , 'null');
+	(710, 'pumpkaboo-average', 710, 4, 50, 67, 821, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(711, 'gourgeist-average', 711, 9, 125, 173, 825, 1,             ,             , 'null');
+	(711, 'gourgeist-average', 711, 9, 125, 173, 825, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(712, 'bergmite', 712, 10, 995, 61, 829, 1,             ,             , 'null');
+	(712, 'bergmite', 712, 10, 995, 61, 829, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(713, 'avalugg', 713, 20, 5050, 180, 830, 1,             ,             , 'null');
+	(713, 'avalugg', 713, 20, 5050, 180, 830, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(714, 'noibat', 714, 5, 80, 49, 831, 1,             ,             , 'null');
+	(714, 'noibat', 714, 5, 80, 49, 831, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(715, 'noivern', 715, 15, 850, 187, 832, 1,             ,             , 'null');
+	(715, 'noivern', 715, 15, 850, 187, 832, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(716, 'xerneas', 716, 30, 2150, 306, 833, 1,             ,             , 'null');
+	(716, 'xerneas', 716, 30, 2150, 306, 833, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(717, 'yveltal', 717, 58, 2030, 306, 834, 1,             ,             , 'null');
+	(717, 'yveltal', 717, 58, 2030, 306, 834, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(718, 'zygarde', 718, 50, 3050, 270, 835, 1,             ,             , 'null');
+	(718, 'zygarde', 718, 50, 3050, 270, 835, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(719, 'diancie', 719, 7, 88, 270, 839, 1,             ,             , 'null');
+	(719, 'diancie', 719, 7, 88, 270, 839, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(720, 'hoopa', 720, 5, 90, 270, 841, 1,             ,             , 'null');
+	(720, 'hoopa', 720, 5, 90, 270, 841, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(721, 'volcanion', 721, 17, 1950, 270, 843, 1,             ,             , 'null');
+	(721, 'volcanion', 721, 17, 1950, 270, 843, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(722, 'rowlet', 722, 3, 15, 64, 844, 1,             ,             , 'null');
+	(722, 'rowlet', 722, 3, 15, 64, 844, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(723, 'dartrix', 723, 7, 160, 147, 845, 1,             ,             , 'null');
+	(723, 'dartrix', 723, 7, 160, 147, 845, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(724, 'decidueye', 724, 16, 366, 239, 846, 1,             ,             , 'null');
+	(724, 'decidueye', 724, 16, 366, 239, 846, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(725, 'litten', 725, 4, 43, 64, 847, 1,             ,             , 'null');
+	(725, 'litten', 725, 4, 43, 64, 847, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(726, 'torracat', 726, 7, 250, 147, 848, 1,             ,             , 'null');
+	(726, 'torracat', 726, 7, 250, 147, 848, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(727, 'incineroar', 727, 18, 830, 239, 849, 1,             ,             , 'null');
+	(727, 'incineroar', 727, 18, 830, 239, 849, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(728, 'popplio', 728, 4, 75, 64, 850, 1,             ,             , 'null');
+	(728, 'popplio', 728, 4, 75, 64, 850, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(729, 'brionne', 729, 6, 175, 147, 851, 1,             ,             , 'null');
+	(729, 'brionne', 729, 6, 175, 147, 851, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(730, 'primarina', 730, 18, 440, 239, 852, 1,             ,             , 'null');
+	(730, 'primarina', 730, 18, 440, 239, 852, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(731, 'pikipek', 731, 3, 12, 53, 853, 1,             ,             , 'null');
+	(731, 'pikipek', 731, 3, 12, 53, 853, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(732, 'trumbeak', 732, 6, 148, 124, 854, 1,             ,             , 'null');
+	(732, 'trumbeak', 732, 6, 148, 124, 854, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(733, 'toucannon', 733, 11, 260, 218, 855, 1,             ,             , 'null');
+	(733, 'toucannon', 733, 11, 260, 218, 855, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(734, 'yungoos', 734, 4, 60, 51, 856, 1,             ,             , 'null');
+	(734, 'yungoos', 734, 4, 60, 51, 856, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(735, 'gumshoos', 735, 7, 142, 146, 857, 1,             ,             , 'null');
+	(735, 'gumshoos', 735, 7, 142, 146, 857, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(736, 'grubbin', 736, 4, 44, 60, 859, 1,             ,             , 'null');
+	(736, 'grubbin', 736, 4, 44, 60, 859, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(737, 'charjabug', 737, 5, 105, 140, 860, 1,             ,             , 'null');
+	(737, 'charjabug', 737, 5, 105, 140, 860, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(738, 'vikavolt', 738, 15, 450, 225, 861, 1,             ,             , 'null');
+	(738, 'vikavolt', 738, 15, 450, 225, 861, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(739, 'crabrawler', 739, 6, 70, 68, 863, 1,             ,             , 'null');
+	(739, 'crabrawler', 739, 6, 70, 68, 863, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(740, 'crabominable', 740, 17, 1800, 167, 864, 1,             ,             , 'null');
+	(740, 'crabominable', 740, 17, 1800, 167, 864, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(741, 'oricorio-baile', 741, 6, 34, 167, 865, 1,             ,             , 'null');
+	(741, 'oricorio-baile', 741, 6, 34, 167, 865, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(742, 'cutiefly', 742, 1, 2, 61, 869, 1,             ,             , 'null');
+	(742, 'cutiefly', 742, 1, 2, 61, 869, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(743, 'ribombee', 743, 2, 5, 162, 870, 1,             ,             , 'null');
+	(743, 'ribombee', 743, 2, 5, 162, 870, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(744, 'rockruff', 744, 5, 92, 56, 872, 1,             ,             , 'null');
+	(744, 'rockruff', 744, 5, 92, 56, 872, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(745, 'lycanroc-midday', 745, 8, 250, 170, 874, 1,             ,             , 'null');
+	(745, 'lycanroc-midday', 745, 8, 250, 170, 874, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(746, 'wishiwashi-solo', 746, 2, 3, 61, 877, 1,             ,             , 'null');
+	(746, 'wishiwashi-solo', 746, 2, 3, 61, 877, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(747, 'mareanie', 747, 4, 80, 61, 879, 1,             ,             , 'null');
+	(747, 'mareanie', 747, 4, 80, 61, 879, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(748, 'toxapex', 748, 7, 145, 173, 880, 1,             ,             , 'null');
+	(748, 'toxapex', 748, 7, 145, 173, 880, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(749, 'mudbray', 749, 10, 1100, 77, 881, 1,             ,             , 'null');
+	(749, 'mudbray', 749, 10, 1100, 77, 881, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(750, 'mudsdale', 750, 25, 9200, 175, 882, 1,             ,             , 'null');
+	(750, 'mudsdale', 750, 25, 9200, 175, 882, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(751, 'dewpider', 751, 3, 40, 54, 883, 1,             ,             , 'null');
+	(751, 'dewpider', 751, 3, 40, 54, 883, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(752, 'araquanid', 752, 18, 820, 159, 884, 1,             ,             , 'null');
+	(752, 'araquanid', 752, 18, 820, 159, 884, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(753, 'fomantis', 753, 3, 15, 50, 886, 1,             ,             , 'null');
+	(753, 'fomantis', 753, 3, 15, 50, 886, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(754, 'lurantis', 754, 9, 185, 168, 887, 1,             ,             , 'null');
+	(754, 'lurantis', 754, 9, 185, 168, 887, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(755, 'morelull', 755, 2, 15, 57, 889, 1,             ,             , 'null');
+	(755, 'morelull', 755, 2, 15, 57, 889, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(756, 'shiinotic', 756, 10, 115, 142, 890, 1,             ,             , 'null');
+	(756, 'shiinotic', 756, 10, 115, 142, 890, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(757, 'salandit', 757, 6, 48, 64, 891, 1,             ,             , 'null');
+	(757, 'salandit', 757, 6, 48, 64, 891, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(758, 'salazzle', 758, 12, 222, 168, 892, 1,             ,             , 'null');
+	(758, 'salazzle', 758, 12, 222, 168, 892, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(759, 'stufful', 759, 5, 68, 68, 894, 1,             ,             , 'null');
+	(759, 'stufful', 759, 5, 68, 68, 894, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(760, 'bewear', 760, 21, 1350, 175, 895, 1,             ,             , 'null');
+	(760, 'bewear', 760, 21, 1350, 175, 895, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(761, 'bounsweet', 761, 3, 32, 42, 896, 1,             ,             , 'null');
+	(761, 'bounsweet', 761, 3, 32, 42, 896, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(762, 'steenee', 762, 7, 82, 102, 897, 1,             ,             , 'null');
+	(762, 'steenee', 762, 7, 82, 102, 897, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(763, 'tsareena', 763, 12, 214, 230, 898, 1,             ,             , 'null');
+	(763, 'tsareena', 763, 12, 214, 230, 898, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(764, 'comfey', 764, 1, 3, 170, 899, 1,             ,             , 'null');
+	(764, 'comfey', 764, 1, 3, 170, 899, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(765, 'oranguru', 765, 15, 760, 172, 900, 1,             ,             , 'null');
+	(765, 'oranguru', 765, 15, 760, 172, 900, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(766, 'passimian', 766, 20, 828, 172, 901, 1,             ,             , 'null');
+	(766, 'passimian', 766, 20, 828, 172, 901, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(767, 'wimpod', 767, 5, 120, 46, 902, 1,             ,             , 'null');
+	(767, 'wimpod', 767, 5, 120, 46, 902, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(768, 'golisopod', 768, 20, 1080, 186, 903, 1,             ,             , 'null');
+	(768, 'golisopod', 768, 20, 1080, 186, 903, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(769, 'sandygast', 769, 5, 700, 64, 904, 1,             ,             , 'null');
+	(769, 'sandygast', 769, 5, 700, 64, 904, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(770, 'palossand', 770, 13, 2500, 168, 905, 1,             ,             , 'null');
+	(770, 'palossand', 770, 13, 2500, 168, 905, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(771, 'pyukumuku', 771, 3, 12, 144, 906, 1,             ,             , 'null');
+	(771, 'pyukumuku', 771, 3, 12, 144, 906, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(772, 'type-null', 772, 19, 1205, 107, 907, 1,             ,             , 'null');
+	(772, 'type-null', 772, 19, 1205, 107, 907, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(773, 'silvally', 773, 23, 1005, 257, 908, 1,             ,             , 'null');
+	(773, 'silvally', 773, 23, 1005, 257, 908, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(774, 'minior-red-meteor', 774, 3, 400, 154, 909, 1,             ,             , 'null');
+	(774, 'minior-red-meteor', 774, 3, 400, 154, 909, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(775, 'komala', 775, 4, 199, 168, 923, 1,             ,             , 'null');
+	(775, 'komala', 775, 4, 199, 168, 923, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(776, 'turtonator', 776, 20, 2120, 170, 924, 1,             ,             , 'null');
+	(776, 'turtonator', 776, 20, 2120, 170, 924, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(777, 'togedemaru', 777, 3, 33, 152, 925, 1,             ,             , 'null');
+	(777, 'togedemaru', 777, 3, 33, 152, 925, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(778, 'mimikyu-disguised', 778, 2, 7, 167, 927, 1,             ,             , 'null');
+	(778, 'mimikyu-disguised', 778, 2, 7, 167, 927, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(779, 'bruxish', 779, 9, 190, 166, 931, 1,             ,             , 'null');
+	(779, 'bruxish', 779, 9, 190, 166, 931, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(780, 'drampa', 780, 30, 1850, 170, 932, 1,             ,             , 'null');
+	(780, 'drampa', 780, 30, 1850, 170, 932, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(781, 'dhelmise', 781, 39, 2100, 181, 933, 1,             ,             , 'null');
+	(781, 'dhelmise', 781, 39, 2100, 181, 933, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(782, 'jangmo-o', 782, 6, 297, 60, 934, 1,             ,             , 'null');
+	(782, 'jangmo-o', 782, 6, 297, 60, 934, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(783, 'hakamo-o', 783, 12, 470, 147, 935, 1,             ,             , 'null');
+	(783, 'hakamo-o', 783, 12, 470, 147, 935, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(784, 'kommo-o', 784, 16, 782, 270, 936, 1,             ,             , 'null');
+	(784, 'kommo-o', 784, 16, 782, 270, 936, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(785, 'tapu-koko', 785, 18, 205, 257, 938, 1,             ,             , 'null');
+	(785, 'tapu-koko', 785, 18, 205, 257, 938, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(786, 'tapu-lele', 786, 12, 186, 257, 939, 1,             ,             , 'null');
+	(786, 'tapu-lele', 786, 12, 186, 257, 939, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(787, 'tapu-bulu', 787, 19, 455, 257, 940, 1,             ,             , 'null');
+	(787, 'tapu-bulu', 787, 19, 455, 257, 940, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(788, 'tapu-fini', 788, 13, 212, 257, 941, 1,             ,             , 'null');
+	(788, 'tapu-fini', 788, 13, 212, 257, 941, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(789, 'cosmog', 789, 2, 1, 40, 942, 1,             ,             , 'null');
+	(789, 'cosmog', 789, 2, 1, 40, 942, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(790, 'cosmoem', 790, 1, 9999, 140, 943, 1,             ,             , 'null');
+	(790, 'cosmoem', 790, 1, 9999, 140, 943, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(791, 'solgaleo', 791, 34, 2300, 306, 944, 1,             ,             , 'null');
+	(791, 'solgaleo', 791, 34, 2300, 306, 944, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(792, 'lunala', 792, 40, 1200, 306, 945, 1,             ,             , 'null');
+	(792, 'lunala', 792, 40, 1200, 306, 945, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(793, 'nihilego', 793, 12, 555, 257, 946, 1,             ,             , 'null');
+	(793, 'nihilego', 793, 12, 555, 257, 946, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(794, 'buzzwole', 794, 24, 3336, 257, 947, 1,             ,             , 'null');
+	(794, 'buzzwole', 794, 24, 3336, 257, 947, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(795, 'pheromosa', 795, 18, 250, 257, 948, 1,             ,             , 'null');
+	(795, 'pheromosa', 795, 18, 250, 257, 948, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(796, 'xurkitree', 796, 38, 1000, 257, 949, 1,             ,             , 'null');
+	(796, 'xurkitree', 796, 38, 1000, 257, 949, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(797, 'celesteela', 797, 92, 9999, 257, 950, 1,             ,             , 'null');
+	(797, 'celesteela', 797, 92, 9999, 257, 950, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(798, 'kartana', 798, 3, 1, 257, 951, 1,             ,             , 'null');
+	(798, 'kartana', 798, 3, 1, 257, 951, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(799, 'guzzlord', 799, 55, 8880, 257, 952, 1,             ,             , 'null');
+	(799, 'guzzlord', 799, 55, 8880, 257, 952, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(800, 'necrozma', 800, 24, 2300, 270, 953, 1,             ,             , 'null');
+	(800, 'necrozma', 800, 24, 2300, 270, 953, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(801, 'magearna', 801, 10, 805, 270, 957, 1,             ,             , 'null');
+	(801, 'magearna', 801, 10, 805, 270, 957, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(802, 'marshadow', 802, 7, 222, 270, 959, 1,             ,             , 'null');
+	(802, 'marshadow', 802, 7, 222, 270, 959, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(803, 'poipole', 803, 6, 18, 189, 960, 1,             ,             , 'null');
+	(803, 'poipole', 803, 6, 18, 189, 960, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(804, 'naganadel', 804, 36, 1500, 243, 961, 1,             ,             , 'null');
+	(804, 'naganadel', 804, 36, 1500, 243, 961, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(805, 'stakataka', 805, 55, 8200, 257, 962, 1,             ,             , 'null');
+	(805, 'stakataka', 805, 55, 8200, 257, 962, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(806, 'blacephalon', 806, 18, 130, 257, 963, 1,             ,             , 'null');
+	(806, 'blacephalon', 806, 18, 130, 257, 963, 1,              ,              , 'null');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES
-	(807, 'zeraora', 807, 15, 445, 270, 964, 1,             ,             , 'null');
+	(807, 'zeraora', 807, 15, 445, 270, 964, 1,              ,              , 'null');
 
 
 -- Table: types
@@ -3336,4870 +3336,6 @@ INSERT INTO types
 VALUES
 	(18, 'fairy', 6, NULL);
 
--- Table: pokemon_types
-DROP TABLE IF EXISTS pokemon_types
-CASCADE;
-CREATE TABLE pokemon_types
-(
-	pokemon_id INTEGER NOT NULL,
-	type_id INTEGER NOT NULL,
-	slot INTEGER NOT NULL,
-	PRIMARY KEY (pokemon_id, slot),
-	FOREIGN KEY(pokemon_id) REFERENCES pokemon (id),
-	FOREIGN KEY(type_id) REFERENCES types (id)
-);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(1, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(1, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(2, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(2, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(3, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(3, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(4, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(5, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(6, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(6, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(7, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(8, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(9, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(10, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(11, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(12, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(12, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(13, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(13, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(14, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(14, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(15, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(15, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(16, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(16, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(17, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(17, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(18, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(18, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(19, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(20, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(21, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(21, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(22, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(22, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(23, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(24, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(25, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(26, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(27, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(28, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(29, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(30, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(31, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(31, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(32, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(33, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(34, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(34, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(35, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(36, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(37, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(38, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(39, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(39, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(40, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(40, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(41, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(41, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(42, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(42, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(43, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(43, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(44, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(44, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(45, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(45, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(46, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(46, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(47, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(47, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(48, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(48, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(49, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(49, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(50, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(51, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(52, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(53, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(54, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(55, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(56, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(57, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(58, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(59, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(60, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(61, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(62, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(62, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(63, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(64, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(65, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(66, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(67, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(68, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(69, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(69, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(70, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(70, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(71, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(71, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(72, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(72, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(73, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(73, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(74, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(74, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(75, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(75, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(76, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(76, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(77, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(78, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(79, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(79, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(80, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(80, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(81, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(81, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(82, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(82, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(83, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(83, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(84, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(84, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(85, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(85, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(86, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(87, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(87, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(88, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(89, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(90, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(91, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(91, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(92, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(92, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(93, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(93, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(94, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(94, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(95, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(95, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(96, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(97, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(98, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(99, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(100, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(101, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(102, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(102, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(103, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(103, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(104, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(105, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(106, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(107, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(108, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(109, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(110, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(111, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(111, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(112, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(112, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(113, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(114, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(115, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(116, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(117, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(118, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(119, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(120, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(121, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(121, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(122, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(122, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(123, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(123, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(124, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(124, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(125, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(126, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(127, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(128, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(129, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(130, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(130, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(131, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(131, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(132, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(133, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(134, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(135, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(136, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(137, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(138, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(138, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(139, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(139, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(140, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(140, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(141, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(141, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(142, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(142, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(143, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(144, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(144, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(145, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(145, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(146, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(146, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(147, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(148, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(149, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(149, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(150, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(151, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(152, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(153, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(154, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(155, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(156, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(157, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(158, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(159, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(160, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(161, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(162, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(163, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(163, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(164, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(164, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(165, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(165, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(166, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(166, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(167, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(167, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(168, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(168, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(169, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(169, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(170, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(170, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(171, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(171, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(172, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(173, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(174, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(174, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(175, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(176, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(176, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(177, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(177, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(178, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(178, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(179, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(180, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(181, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(182, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(183, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(183, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(184, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(184, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(185, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(186, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(187, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(187, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(188, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(188, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(189, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(189, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(190, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(191, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(192, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(193, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(193, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(194, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(194, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(195, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(195, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(196, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(197, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(198, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(198, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(199, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(199, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(200, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(201, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(202, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(203, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(203, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(204, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(205, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(205, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(206, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(207, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(207, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(208, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(208, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(209, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(210, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(211, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(211, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(212, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(212, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(213, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(213, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(214, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(214, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(215, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(215, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(216, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(217, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(218, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(219, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(219, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(220, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(220, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(221, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(221, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(222, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(222, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(223, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(224, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(225, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(225, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(226, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(226, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(227, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(227, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(228, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(228, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(229, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(229, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(230, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(230, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(231, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(232, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(233, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(234, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(235, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(236, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(237, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(238, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(238, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(239, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(240, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(241, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(242, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(243, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(244, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(245, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(246, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(246, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(247, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(247, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(248, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(248, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(249, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(249, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(250, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(250, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(251, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(251, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(252, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(253, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(254, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(255, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(256, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(256, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(257, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(257, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(258, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(259, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(259, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(260, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(260, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(261, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(262, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(263, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(264, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(265, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(266, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(267, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(267, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(268, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(269, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(269, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(270, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(270, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(271, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(271, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(272, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(272, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(273, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(274, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(274, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(275, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(275, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(276, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(276, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(277, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(277, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(278, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(278, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(279, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(279, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(280, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(280, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(281, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(281, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(282, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(282, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(283, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(283, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(284, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(284, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(285, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(286, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(286, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(287, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(288, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(289, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(290, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(290, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(291, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(291, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(292, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(292, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(293, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(294, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(295, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(296, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(297, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(298, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(298, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(299, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(300, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(301, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(302, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(302, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(303, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(303, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(304, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(304, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(305, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(305, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(306, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(306, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(307, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(307, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(308, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(308, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(309, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(310, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(311, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(312, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(313, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(314, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(315, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(315, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(316, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(317, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(318, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(318, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(319, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(319, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(320, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(321, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(322, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(322, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(323, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(323, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(324, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(325, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(326, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(327, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(328, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(329, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(329, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(330, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(330, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(331, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(332, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(332, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(333, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(333, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(334, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(334, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(335, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(336, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(337, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(337, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(338, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(338, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(339, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(339, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(340, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(340, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(341, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(342, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(342, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(343, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(343, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(344, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(344, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(345, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(345, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(346, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(346, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(347, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(347, 7, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(348, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(348, 7, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(349, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(350, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(351, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(352, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(353, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(354, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(355, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(356, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(357, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(357, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(358, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(359, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(360, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(361, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(362, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(363, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(363, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(364, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(364, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(365, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(365, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(366, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(367, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(368, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(369, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(369, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(370, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(371, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(372, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(373, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(373, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(374, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(374, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(375, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(375, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(376, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(376, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(377, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(378, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(379, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(380, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(380, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(381, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(381, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(382, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(383, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(384, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(384, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(385, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(385, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(386, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(387, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(388, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(389, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(389, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(390, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(391, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(391, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(392, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(392, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(393, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(394, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(395, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(395, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(396, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(396, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(397, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(397, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(398, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(398, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(399, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(400, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(400, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(401, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(402, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(403, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(404, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(405, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(406, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(406, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(407, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(407, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(408, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(409, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(410, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(410, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(411, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(411, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(412, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(413, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(413, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(414, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(414, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(415, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(415, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(416, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(416, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(417, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(418, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(419, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(420, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(421, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(422, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(423, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(423, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(424, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(425, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(425, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(426, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(426, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(427, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(428, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(429, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(430, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(430, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(431, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(432, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(433, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(434, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(434, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(435, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(435, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(436, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(436, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(437, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(437, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(438, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(439, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(439, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(440, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(441, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(441, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(442, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(442, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(443, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(443, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(444, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(444, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(445, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(445, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(446, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(447, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(448, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(448, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(449, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(450, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(451, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(451, 7, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(452, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(452, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(453, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(453, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(454, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(454, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(455, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(456, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(457, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(458, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(458, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(459, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(459, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(460, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(460, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(461, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(461, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(462, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(462, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(463, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(464, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(464, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(465, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(466, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(467, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(468, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(468, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(469, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(469, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(470, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(471, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(472, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(472, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(473, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(473, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(474, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(475, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(475, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(476, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(476, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(477, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(478, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(478, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(479, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(479, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(480, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(481, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(482, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(483, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(483, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(484, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(484, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(485, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(485, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(486, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(487, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(487, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(488, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(489, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(490, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(491, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(492, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(493, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(494, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(494, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(495, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(496, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(497, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(498, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(499, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(499, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(500, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(500, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(501, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(502, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(503, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(504, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(505, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(506, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(507, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(508, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(509, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(510, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(511, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(512, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(513, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(514, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(515, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(516, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(517, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(518, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(519, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(519, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(520, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(520, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(521, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(521, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(522, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(523, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(524, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(525, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(526, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(527, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(527, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(528, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(528, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(529, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(530, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(530, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(531, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(532, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(533, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(534, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(535, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(536, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(536, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(537, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(537, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(538, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(539, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(540, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(540, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(541, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(541, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(542, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(542, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(543, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(543, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(544, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(544, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(545, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(545, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(546, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(546, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(547, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(547, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(548, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(549, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(550, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(551, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(551, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(552, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(552, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(553, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(553, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(554, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(555, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(556, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(557, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(557, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(558, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(558, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(559, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(559, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(560, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(560, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(561, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(561, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(562, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(563, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(564, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(564, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(565, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(565, 6, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(566, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(566, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(567, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(567, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(568, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(569, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(570, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(571, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(572, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(573, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(574, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(575, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(576, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(577, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(578, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(579, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(580, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(580, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(581, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(581, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(582, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(583, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(584, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(585, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(585, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(586, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(586, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(587, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(587, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(588, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(589, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(589, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(590, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(590, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(591, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(591, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(592, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(592, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(593, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(593, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(594, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(595, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(595, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(596, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(596, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(597, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(597, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(598, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(598, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(599, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(600, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(601, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(602, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(603, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(604, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(605, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(606, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(607, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(607, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(608, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(608, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(609, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(609, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(610, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(611, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(612, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(613, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(614, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(615, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(616, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(617, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(618, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(618, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(619, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(620, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(621, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(622, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(622, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(623, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(623, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(624, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(624, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(625, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(625, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(626, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(627, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(627, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(628, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(628, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(629, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(629, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(630, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(630, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(631, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(632, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(632, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(633, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(633, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(634, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(634, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(635, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(635, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(636, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(636, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(637, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(637, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(638, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(638, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(639, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(639, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(640, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(640, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(641, 3, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(642, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(642, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(643, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(643, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(644, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(644, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(645, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(645, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(646, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(646, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(647, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(647, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(648, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(648, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(649, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(649, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(650, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(651, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(652, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(652, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(653, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(654, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(655, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(655, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(656, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(657, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(658, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(658, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(659, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(660, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(660, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(661, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(661, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(662, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(662, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(663, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(663, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(664, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(665, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(666, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(666, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(667, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(667, 1, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(668, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(668, 1, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(669, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(670, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(671, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(672, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(673, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(674, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(675, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(675, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(676, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(677, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(678, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(679, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(679, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(680, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(680, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(681, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(681, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(682, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(683, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(684, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(685, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(686, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(686, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(687, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(687, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(688, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(688, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(689, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(689, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(690, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(690, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(691, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(691, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(692, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(693, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(694, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(694, 1, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(695, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(695, 1, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(696, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(696, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(697, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(697, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(698, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(698, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(699, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(699, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(700, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(701, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(701, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(702, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(702, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(703, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(703, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(704, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(705, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(706, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(707, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(707, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(708, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(708, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(709, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(709, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(710, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(710, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(711, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(711, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(712, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(713, 15, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(714, 3, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(714, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(715, 3, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(715, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(716, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(717, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(717, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(718, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(718, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(719, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(719, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(720, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(720, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(721, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(721, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(722, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(722, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(723, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(723, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(724, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(724, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(725, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(726, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(727, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(727, 17, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(728, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(729, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(730, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(730, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(731, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(731, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(732, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(732, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(733, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(733, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(734, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(735, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(736, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(737, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(737, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(738, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(738, 13, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(739, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(740, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(740, 15, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(741, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(741, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(742, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(742, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(743, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(743, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(744, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(745, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(746, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(747, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(747, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(748, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(748, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(749, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(750, 5, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(751, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(751, 7, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(752, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(752, 7, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(753, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(754, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(755, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(755, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(756, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(756, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(757, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(757, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(758, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(758, 10, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(759, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(759, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(760, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(760, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(761, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(762, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(763, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(764, 18, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(765, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(765, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(766, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(767, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(767, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(768, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(768, 11, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(769, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(769, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(770, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(770, 5, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(771, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(772, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(773, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(774, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(774, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(775, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(776, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(776, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(777, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(777, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(778, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(778, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(779, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(779, 14, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(780, 1, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(780, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(781, 8, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(781, 12, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(782, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(783, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(783, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(784, 16, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(784, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(785, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(785, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(786, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(786, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(787, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(787, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(788, 11, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(788, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(789, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(790, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(791, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(791, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(792, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(792, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(793, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(793, 4, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(794, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(794, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(795, 7, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(795, 2, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(796, 13, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(797, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(797, 3, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(798, 12, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(798, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(799, 17, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(799, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(800, 14, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(801, 9, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(801, 18, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(802, 2, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(802, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(803, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(804, 4, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(804, 16, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(805, 6, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(805, 9, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(806, 10, 1);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(806, 8, 2);
-INSERT INTO pokemon_types
-	(pokemon_id, type_id, slot)
-VALUES
-	(807, 13, 1);
-
-COMMIT TRANSACTION;
-PRAGMA foreign_keys = on;
-
 DROP TABLE IF EXISTS pokemon_sprites;
 CREATE TABLE pokemon_sprites
 (
@@ -8224,3 +3360,1990 @@ INSERT INTO pokemon_sprites
 	(pokemon_id, description, sprite_url)
 VALUES
 	(1, 'back_golden', 'https://i.imgur.com/VZ39Lz0.png');
+
+
+DROP TABLE IF EXISTS pokemon_abilities CASCADE;
+CREATE TABLE pokemon_abilities (
+	pokemon_id INTEGER NOT NULL, 
+	ability_id INTEGER NOT NULL, 
+	is_hidden INTEGER NOT NULL, 
+	slot INTEGER NOT NULL, 
+	PRIMARY KEY (pokemon_id), 
+	FOREIGN KEY(pokemon_id) REFERENCES pokemon (id), 
+	FOREIGN KEY(ability_id) REFERENCES abilities (id), 
+	CHECK (is_hidden IN (0, 1))
+);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (1, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (1, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (2, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (2, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (3, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (3, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (4, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (4, 94, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (5, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (5, 94, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (6, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (6, 94, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (7, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (7, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (8, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (8, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (9, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (9, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (10, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (10, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (11, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (12, 14, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (12, 110, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (13, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (13, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (14, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (15, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (15, 97, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (16, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (16, 77, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (16, 145, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (17, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (17, 77, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (17, 145, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (18, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (18, 77, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (18, 145, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (19, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (19, 62, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (19, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (20, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (20, 62, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (20, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (21, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (21, 97, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (22, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (22, 97, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (23, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (23, 61, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (23, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (24, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (24, 61, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (24, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (25, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (25, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (26, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (26, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (27, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (27, 146, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (28, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (28, 146, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (29, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (29, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (29, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (30, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (30, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (30, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (31, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (31, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (31, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (32, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (32, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (32, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (33, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (33, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (33, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (34, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (34, 79, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (34, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (35, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (35, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (35, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (36, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (36, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (36, 109, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (37, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (37, 70, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (38, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (38, 70, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (39, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (39, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (39, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (40, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (40, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (40, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (41, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (41, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (42, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (42, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (43, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (43, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (44, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (44, 1, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (45, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (45, 27, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (46, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (46, 87, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (46, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (47, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (47, 87, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (47, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (48, 14, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (48, 110, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (48, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (49, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (49, 110, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (49, 147, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (50, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (50, 71, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (50, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (51, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (51, 71, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (51, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (52, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (52, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (52, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (53, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (53, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (53, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (54, 6, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (54, 13, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (54, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (55, 6, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (55, 13, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (55, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (56, 72, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (56, 83, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (56, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (57, 72, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (57, 83, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (57, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (58, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (58, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (58, 154, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (59, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (59, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (59, 154, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (60, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (60, 6, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (60, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (61, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (61, 6, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (61, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (62, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (62, 6, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (62, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (63, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (63, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (63, 98, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (64, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (64, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (64, 98, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (65, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (65, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (65, 98, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (66, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (66, 99, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (66, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (67, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (67, 99, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (67, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (68, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (68, 99, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (68, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (69, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (69, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (70, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (70, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (71, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (71, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (72, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (72, 64, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (72, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (73, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (73, 64, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (73, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (74, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (74, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (74, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (75, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (75, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (75, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (76, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (76, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (76, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (77, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (77, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (77, 49, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (78, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (78, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (78, 49, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (79, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (79, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (79, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (80, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (80, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (80, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (81, 42, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (81, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (81, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (82, 42, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (82, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (82, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (83, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (83, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (83, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (84, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (84, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (84, 77, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (85, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (85, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (85, 77, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (86, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (86, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (86, 115, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (87, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (87, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (87, 115, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (88, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (88, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (88, 143, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (89, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (89, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (89, 143, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (90, 75, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (90, 92, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (90, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (91, 75, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (91, 92, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (91, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (92, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (93, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (94, 130, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (95, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (95, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (95, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (96, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (96, 108, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (96, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (97, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (97, 108, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (97, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (98, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (98, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (98, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (99, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (99, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (99, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (100, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (100, 9, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (100, 106, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (101, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (101, 9, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (101, 106, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (102, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (102, 139, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (103, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (103, 139, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (104, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (104, 31, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (104, 4, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (105, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (105, 31, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (105, 4, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (106, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (106, 120, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (106, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (107, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (107, 89, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (107, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (108, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (108, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (108, 13, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (109, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (110, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (111, 31, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (111, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (111, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (112, 31, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (112, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (112, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (113, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (113, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (113, 131, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (114, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (114, 102, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (114, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (115, 48, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (115, 113, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (115, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (116, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (116, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (116, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (117, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (117, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (117, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (118, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (118, 41, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (118, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (119, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (119, 41, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (119, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (120, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (120, 30, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (120, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (121, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (121, 30, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (121, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (122, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (122, 111, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (122, 101, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (123, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (123, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (123, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (124, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (124, 108, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (124, 87, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (125, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (125, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (126, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (126, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (127, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (127, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (127, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (128, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (128, 83, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (128, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (129, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (129, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (130, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (130, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (131, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (131, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (131, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (132, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (132, 150, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (133, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (133, 91, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (133, 107, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (134, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (134, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (135, 10, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (135, 95, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (136, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (136, 62, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (137, 36, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (137, 88, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (137, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (138, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (138, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (138, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (139, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (139, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (139, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (140, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (140, 4, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (140, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (141, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (141, 4, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (141, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (142, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (142, 46, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (142, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (143, 17, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (143, 47, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (143, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (144, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (144, 81, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (145, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (145, 9, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (146, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (146, 49, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (147, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (147, 63, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (148, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (148, 63, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (149, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (149, 136, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (150, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (150, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (151, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (152, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (152, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (153, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (153, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (154, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (154, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (155, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (155, 18, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (156, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (156, 18, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (157, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (157, 18, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (158, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (158, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (159, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (159, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (160, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (160, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (161, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (161, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (161, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (162, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (162, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (162, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (163, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (163, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (163, 110, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (164, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (164, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (164, 110, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (165, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (165, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (165, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (166, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (166, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (166, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (167, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (167, 15, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (167, 97, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (168, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (168, 15, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (168, 97, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (169, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (169, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (170, 10, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (170, 35, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (170, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (171, 10, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (171, 35, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (171, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (172, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (172, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (173, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (173, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (173, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (174, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (174, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (174, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (175, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (175, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (175, 105, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (176, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (176, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (176, 105, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (177, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (177, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (177, 156, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (178, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (178, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (178, 156, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (179, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (179, 57, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (180, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (180, 57, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (181, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (181, 57, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (182, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (182, 131, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (183, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (183, 37, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (183, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (184, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (184, 37, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (184, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (185, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (185, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (185, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (186, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (186, 6, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (186, 2, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (187, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (187, 102, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (187, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (188, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (188, 102, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (188, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (189, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (189, 102, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (189, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (190, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (190, 53, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (190, 92, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (191, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (191, 94, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (191, 48, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (192, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (192, 94, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (192, 48, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (193, 3, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (193, 14, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (193, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (194, 6, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (194, 11, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (194, 109, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (195, 6, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (195, 11, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (195, 109, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (196, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (196, 156, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (197, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (197, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (198, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (198, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (198, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (199, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (199, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (199, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (200, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (201, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (202, 23, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (202, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (203, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (203, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (203, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (204, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (204, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (205, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (205, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (206, 32, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (206, 50, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (206, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (207, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (207, 8, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (207, 17, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (208, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (208, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (208, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (209, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (209, 50, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (209, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (210, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (210, 95, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (210, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (211, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (211, 33, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (211, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (212, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (212, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (212, 135, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (213, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (213, 82, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (213, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (214, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (214, 62, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (214, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (215, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (215, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (215, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (216, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (216, 95, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (216, 118, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (217, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (217, 95, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (217, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (218, 40, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (218, 49, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (218, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (219, 40, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (219, 49, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (219, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (220, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (220, 81, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (220, 47, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (221, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (221, 81, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (221, 47, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (222, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (222, 30, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (222, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (223, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (223, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (223, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (224, 21, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (224, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (224, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (225, 72, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (225, 55, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (225, 15, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (226, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (226, 11, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (226, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (227, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (227, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (227, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (228, 48, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (228, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (228, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (229, 48, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (229, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (229, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (230, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (230, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (230, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (231, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (231, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (232, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (232, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (233, 36, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (233, 88, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (233, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (234, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (234, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (234, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (235, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (235, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (235, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (236, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (236, 80, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (236, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (237, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (237, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (237, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (238, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (238, 108, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (238, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (239, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (239, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (240, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (240, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (241, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (241, 113, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (241, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (242, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (242, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (242, 131, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (243, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (243, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (244, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (244, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (245, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (245, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (246, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (246, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (247, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (248, 45, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (248, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (249, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (249, 136, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (250, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (250, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (251, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (252, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (252, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (253, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (253, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (254, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (254, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (255, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (255, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (256, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (256, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (257, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (257, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (258, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (258, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (259, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (259, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (260, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (260, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (261, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (261, 95, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (261, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (262, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (262, 95, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (262, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (263, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (263, 82, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (263, 95, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (264, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (264, 82, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (264, 95, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (265, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (265, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (266, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (267, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (267, 79, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (268, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (269, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (269, 14, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (270, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (270, 44, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (270, 20, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (271, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (271, 44, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (271, 20, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (272, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (272, 44, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (272, 20, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (273, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (273, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (273, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (274, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (274, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (274, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (275, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (275, 48, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (275, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (276, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (276, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (277, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (277, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (278, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (278, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (278, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (279, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (279, 2, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (279, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (280, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (280, 36, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (280, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (281, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (281, 36, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (281, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (282, 28, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (282, 36, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (282, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (283, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (283, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (284, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (284, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (285, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (285, 90, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (285, 95, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (286, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (286, 90, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (286, 101, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (287, 54, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (288, 72, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (289, 54, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (290, 14, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (290, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (291, 3, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (291, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (292, 25, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (293, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (293, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (294, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (294, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (295, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (295, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (296, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (296, 62, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (296, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (297, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (297, 62, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (297, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (298, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (298, 37, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (298, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (299, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (299, 42, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (299, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (300, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (300, 96, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (300, 147, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (301, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (301, 96, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (301, 147, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (302, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (302, 100, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (302, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (303, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (303, 22, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (303, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (304, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (304, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (304, 134, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (305, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (305, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (305, 134, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (306, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (306, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (306, 134, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (307, 74, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (307, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (308, 74, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (308, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (309, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (309, 31, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (309, 58, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (310, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (310, 31, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (310, 58, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (311, 57, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (311, 31, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (312, 58, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (312, 10, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (313, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (313, 68, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (313, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (314, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (314, 110, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (314, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (315, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (315, 38, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (315, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (316, 64, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (316, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (316, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (317, 64, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (317, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (317, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (318, 24, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (318, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (319, 24, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (319, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (320, 41, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (320, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (320, 46, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (321, 41, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (321, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (321, 46, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (322, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (322, 86, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (322, 20, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (323, 40, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (323, 116, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (323, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (324, 73, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (324, 70, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (324, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (325, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (325, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (325, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (326, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (326, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (326, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (327, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (327, 77, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (327, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (328, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (328, 71, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (328, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (329, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (330, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (331, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (331, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (332, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (332, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (333, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (333, 13, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (334, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (334, 13, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (335, 17, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (335, 137, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (336, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (336, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (337, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (338, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (339, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (339, 107, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (339, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (340, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (340, 107, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (340, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (341, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (341, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (341, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (342, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (342, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (342, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (343, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (344, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (345, 21, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (345, 114, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (346, 21, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (346, 114, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (347, 4, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (347, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (348, 4, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (348, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (349, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (349, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (349, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (350, 63, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (350, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (350, 56, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (351, 59, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (352, 16, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (352, 168, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (353, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (353, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (353, 130, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (354, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (354, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (354, 130, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (355, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (355, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (356, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (356, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (357, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (357, 94, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (357, 139, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (358, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (359, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (359, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (359, 154, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (360, 23, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (360, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (361, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (361, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (361, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (362, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (362, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (362, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (363, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (363, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (363, 12, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (364, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (364, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (364, 12, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (365, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (365, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (365, 12, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (366, 75, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (366, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (367, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (367, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (368, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (368, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (369, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (369, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (369, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (370, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (370, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (371, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (371, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (372, 69, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (372, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (373, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (373, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (374, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (374, 135, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (375, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (375, 135, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (376, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (376, 135, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (377, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (377, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (378, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (378, 115, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (379, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (379, 135, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (380, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (381, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (382, 2, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (383, 70, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (384, 76, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (385, 32, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (386, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (387, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (387, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (388, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (388, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (389, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (389, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (390, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (390, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (391, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (391, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (392, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (392, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (393, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (393, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (394, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (394, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (395, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (395, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (396, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (396, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (397, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (397, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (398, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (398, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (399, 86, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (399, 109, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (399, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (400, 86, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (400, 109, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (400, 141, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (401, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (401, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (402, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (402, 101, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (403, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (403, 22, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (403, 62, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (404, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (404, 22, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (404, 62, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (405, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (405, 22, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (405, 62, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (406, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (406, 38, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (406, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (407, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (407, 38, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (407, 101, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (408, 104, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (408, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (409, 104, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (409, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (410, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (410, 43, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (411, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (411, 43, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (412, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (412, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (413, 107, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (413, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (414, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (414, 110, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (415, 118, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (415, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (416, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (416, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (417, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (417, 53, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (417, 10, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (418, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (418, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (419, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (419, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (420, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (421, 122, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (422, 60, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (422, 114, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (422, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (423, 60, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (423, 114, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (423, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (424, 101, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (424, 53, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (424, 92, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (425, 106, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (425, 84, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (425, 138, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (426, 106, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (426, 84, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (426, 138, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (427, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (427, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (427, 7, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (428, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (428, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (428, 7, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (429, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (430, 15, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (430, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (430, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (431, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (431, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (431, 51, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (432, 47, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (432, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (432, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (433, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (434, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (434, 106, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (434, 51, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (435, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (435, 106, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (435, 51, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (436, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (436, 85, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (436, 134, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (437, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (437, 85, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (437, 134, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (438, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (438, 69, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (438, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (439, 43, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (439, 111, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (439, 101, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (440, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (440, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (440, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (441, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (441, 77, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (441, 145, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (442, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (442, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (443, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (443, 24, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (444, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (444, 24, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (445, 8, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (445, 24, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (446, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (446, 47, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (446, 82, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (447, 80, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (447, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (447, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (448, 80, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (448, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (448, 154, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (449, 45, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (449, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (450, 45, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (450, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (451, 4, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (451, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (451, 51, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (452, 4, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (452, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (452, 51, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (453, 107, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (453, 87, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (453, 143, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (454, 107, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (454, 87, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (454, 143, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (455, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (456, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (456, 114, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (456, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (457, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (457, 114, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (457, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (458, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (458, 11, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (458, 41, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (459, 117, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (459, 43, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (460, 117, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (460, 43, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (461, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (461, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (462, 42, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (462, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (462, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (463, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (463, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (463, 13, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (464, 31, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (464, 116, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (464, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (465, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (465, 102, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (465, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (466, 78, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (466, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (467, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (467, 72, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (468, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (468, 32, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (468, 105, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (469, 3, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (469, 110, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (469, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (470, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (470, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (471, 81, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (471, 115, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (472, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (472, 8, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (472, 90, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (473, 12, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (473, 81, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (473, 47, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (474, 91, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (474, 88, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (474, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (475, 80, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (475, 154, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (476, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (476, 42, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (476, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (477, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (477, 119, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (478, 81, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (478, 130, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (479, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (480, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (481, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (482, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (483, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (483, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (484, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (484, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (485, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (485, 49, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (486, 112, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (487, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (487, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (488, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (489, 93, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (490, 93, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (491, 123, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (492, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (493, 121, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (494, 162, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (495, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (495, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (496, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (496, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (497, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (497, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (498, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (498, 47, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (499, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (499, 47, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (500, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (500, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (501, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (501, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (502, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (502, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (503, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (503, 75, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (504, 50, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (504, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (504, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (505, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (505, 51, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (505, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (506, 72, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (506, 53, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (506, 50, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (507, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (507, 146, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (507, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (508, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (508, 146, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (508, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (509, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (509, 84, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (509, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (510, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (510, 84, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (510, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (511, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (511, 65, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (512, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (512, 65, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (513, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (513, 66, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (514, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (514, 66, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (515, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (515, 67, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (516, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (516, 67, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (517, 108, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (517, 28, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (517, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (518, 108, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (518, 28, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (518, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (519, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (519, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (519, 79, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (520, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (520, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (520, 79, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (521, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (521, 105, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (521, 79, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (522, 31, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (522, 78, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (522, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (523, 31, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (523, 78, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (523, 157, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (524, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (524, 133, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (524, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (525, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (525, 133, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (525, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (526, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (526, 45, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (526, 159, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (527, 109, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (527, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (527, 86, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (528, 109, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (528, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (528, 86, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (529, 146, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (529, 159, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (529, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (530, 146, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (530, 159, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (530, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (531, 131, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (531, 144, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (531, 103, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (532, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (532, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (532, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (533, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (533, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (533, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (534, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (534, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (534, 89, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (535, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (535, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (535, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (536, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (536, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (536, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (537, 33, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (537, 143, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (537, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (538, 62, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (538, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (538, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (539, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (539, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (539, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (540, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (540, 34, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (540, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (541, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (541, 34, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (541, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (542, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (542, 34, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (542, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (543, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (543, 68, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (543, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (544, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (544, 68, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (544, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (545, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (545, 68, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (545, 3, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (546, 158, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (546, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (546, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (547, 158, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (547, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (547, 34, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (548, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (548, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (548, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (549, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (549, 20, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (549, 102, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (550, 120, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (550, 91, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (550, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (551, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (551, 153, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (551, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (552, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (552, 153, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (552, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (553, 22, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (553, 153, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (553, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (554, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (554, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (555, 125, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (555, 161, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (556, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (556, 34, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (556, 114, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (557, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (557, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (557, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (558, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (558, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (558, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (559, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (559, 153, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (559, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (560, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (560, 153, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (560, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (561, 147, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (561, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (561, 110, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (562, 152, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (563, 152, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (564, 116, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (564, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (564, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (565, 116, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (565, 5, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (565, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (566, 129, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (567, 129, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (568, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (568, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (568, 106, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (569, 1, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (569, 133, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (569, 106, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (570, 149, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (571, 149, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (572, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (572, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (572, 92, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (573, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (573, 101, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (573, 92, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (574, 119, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (574, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (574, 23, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (575, 119, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (575, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (575, 23, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (576, 119, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (576, 172, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (576, 23, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (577, 142, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (577, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (577, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (578, 142, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (578, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (578, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (579, 142, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (579, 98, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (579, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (580, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (580, 145, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (580, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (581, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (581, 145, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (581, 93, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (582, 115, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (582, 81, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (582, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (583, 115, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (583, 81, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (583, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (584, 115, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (584, 117, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (584, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (585, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (585, 157, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (585, 32, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (586, 34, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (586, 157, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (586, 32, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (587, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (587, 78, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (588, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (588, 61, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (588, 99, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (589, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (589, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (589, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (590, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (590, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (591, 27, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (591, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (592, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (592, 130, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (592, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (593, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (593, 130, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (593, 6, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (594, 131, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (594, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (594, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (595, 14, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (595, 127, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (595, 68, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (596, 14, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (596, 127, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (596, 68, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (597, 160, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (598, 160, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (598, 107, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (599, 57, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (599, 58, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (599, 29, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (600, 57, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (600, 58, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (600, 29, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (601, 57, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (601, 58, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (601, 29, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (602, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (603, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (604, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (605, 140, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (605, 28, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (605, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (606, 140, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (606, 28, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (606, 148, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (607, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (607, 49, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (607, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (608, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (608, 49, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (608, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (609, 18, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (609, 49, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (609, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (610, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (610, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (610, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (611, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (611, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (611, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (612, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (612, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (612, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (613, 81, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (613, 202, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (613, 155, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (614, 81, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (614, 202, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (614, 33, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (615, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (616, 93, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (616, 75, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (616, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (617, 93, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (617, 60, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (617, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (618, 9, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (618, 7, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (618, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (619, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (619, 144, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (619, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (620, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (620, 144, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (620, 120, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (621, 24, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (621, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (621, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (622, 89, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (622, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (622, 99, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (623, 89, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (623, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (623, 99, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (624, 128, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (624, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (624, 46, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (625, 128, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (625, 39, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (625, 46, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (626, 120, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (626, 157, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (626, 43, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (627, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (627, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (627, 55, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (628, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (628, 125, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (628, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (629, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (629, 142, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (629, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (630, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (630, 142, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (630, 133, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (631, 82, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (631, 18, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (631, 73, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (632, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (632, 55, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (632, 54, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (633, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (634, 55, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (635, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (636, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (636, 68, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (637, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (637, 68, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (638, 154, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (639, 154, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (640, 154, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (641, 158, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (641, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (642, 158, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (642, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (643, 163, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (644, 164, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (645, 159, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (645, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (646, 46, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (647, 154, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (648, 32, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (649, 88, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (650, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (650, 171, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (651, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (651, 171, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (652, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (652, 171, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (653, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (653, 170, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (654, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (654, 170, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (655, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (655, 170, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (656, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (656, 168, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (657, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (657, 168, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (658, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (658, 168, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (659, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (659, 167, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (659, 37, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (660, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (660, 167, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (660, 37, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (661, 145, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (661, 177, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (662, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (662, 177, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (663, 49, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (663, 177, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (664, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (664, 14, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (664, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (665, 61, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (665, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (666, 19, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (666, 14, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (666, 132, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (667, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (667, 127, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (667, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (668, 79, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (668, 127, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (668, 153, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (669, 166, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (669, 180, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (670, 166, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (670, 180, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (671, 166, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (671, 180, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (672, 157, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (672, 179, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (673, 157, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (673, 179, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (674, 89, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (674, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (674, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (675, 89, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (675, 104, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (675, 113, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (676, 169, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (677, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (677, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (677, 20, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (678, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (678, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (678, 158, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (679, 99, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (680, 99, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (681, 176, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (682, 131, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (682, 165, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (683, 131, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (683, 165, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (684, 175, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (684, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (685, 175, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (685, 84, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (686, 126, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (686, 21, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (686, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (687, 126, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (687, 21, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (687, 151, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (688, 181, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (688, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (688, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (689, 181, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (689, 97, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (689, 124, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (690, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (690, 143, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (690, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (691, 38, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (691, 143, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (691, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (692, 178, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (693, 178, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (694, 87, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (694, 8, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (694, 94, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (695, 87, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (695, 8, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (695, 94, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (696, 173, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (696, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (697, 173, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (697, 69, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (698, 174, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (698, 117, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (699, 174, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (699, 117, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (700, 56, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (700, 182, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (701, 7, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (701, 84, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (701, 104, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (702, 167, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (702, 53, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (702, 57, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (703, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (703, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (704, 157, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (704, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (704, 183, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (705, 157, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (705, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (705, 183, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (706, 157, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (706, 93, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (706, 183, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (707, 158, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (707, 170, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (708, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (708, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (708, 139, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (709, 30, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (709, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (709, 139, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (710, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (710, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (710, 15, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (711, 53, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (711, 119, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (711, 15, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (712, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (712, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (712, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (713, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (713, 115, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (713, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (714, 119, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (714, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (714, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (715, 119, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (715, 151, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (715, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (716, 187, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (717, 186, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (718, 188, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (719, 29, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (720, 170, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (721, 11, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (722, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (722, 203, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (723, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (723, 203, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (724, 65, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (724, 203, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (725, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (725, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (726, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (726, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (727, 66, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (727, 22, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (728, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (728, 204, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (729, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (729, 204, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (730, 67, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (730, 204, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (731, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (731, 92, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (731, 53, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (732, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (732, 92, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (732, 53, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (733, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (733, 92, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (733, 125, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (734, 198, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (734, 173, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (734, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (735, 198, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (735, 173, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (735, 91, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (736, 68, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (737, 217, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (738, 26, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (739, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (739, 89, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (739, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (740, 52, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (740, 89, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (740, 83, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (741, 216, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (742, 118, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (742, 19, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (742, 175, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (743, 118, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (743, 19, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (743, 175, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (744, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (744, 72, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (744, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (745, 51, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (745, 146, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (745, 80, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (746, 208, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (747, 196, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (747, 7, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (747, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (748, 196, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (748, 7, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (748, 144, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (749, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (749, 192, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (749, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (750, 20, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (750, 192, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (750, 39, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (751, 199, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (751, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (752, 199, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (752, 11, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (753, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (753, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (754, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (754, 126, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (755, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (755, 27, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (755, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (756, 35, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (756, 27, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (756, 44, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (757, 212, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (757, 12, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (758, 212, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (758, 12, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (759, 218, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (759, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (759, 56, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (760, 218, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (760, 103, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (760, 127, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (761, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (761, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (761, 175, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (762, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (762, 12, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (762, 175, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (763, 102, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (763, 214, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (763, 175, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (764, 166, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (764, 205, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (764, 30, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (765, 39, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (765, 140, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (765, 180, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (766, 222, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (766, 128, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (767, 193, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (768, 194, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (769, 195, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (769, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (770, 195, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (770, 8, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (771, 215, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (771, 109, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (772, 4, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (773, 225, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (774, 197, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (775, 213, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (776, 75, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (777, 160, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (777, 31, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (777, 5, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (778, 209, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (779, 219, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (779, 173, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (779, 147, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (780, 201, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (780, 157, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (780, 13, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (781, 200, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (782, 171, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (782, 43, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (782, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (783, 171, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (783, 43, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (783, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (784, 171, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (784, 43, 0, 2);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (784, 142, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (785, 226, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (785, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (786, 227, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (786, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (787, 229, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (787, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (788, 228, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (788, 140, 1, 3);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (789, 109, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (790, 5, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (791, 230, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (792, 231, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (793, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (794, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (795, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (796, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (797, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (798, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (799, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (800, 232, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (801, 220, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (802, 101, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (803, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (804, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (805, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (806, 224, 0, 1);
+INSERT INTO pokemon_abilities (pokemon_id, ability_id, is_hidden, slot) VALUES (807, 10, 0, 1);
+
+DROP TABLE IF EXISTS abilities;
+CREATE TABLE abilities
+(
+	id INTEGER NOT NULL,
+	identifier VARCHAR(79) NOT NULL,
+	generation_id INTEGER NOT NULL,
+	effect VARCHAR(500) NOT NULL,
+	flavor_text_1 VARCHAR(200) NOT NULL,
+	flavor_text_2 VARCHAR(200),
+	flavor_text_3 VARCHAR(200),
+	flavor_text_4 VARCHAR(200),
+	text_changed_in_version VARCHAR(10) NOT NULL,
+	PRIMARY KEY(id)
+);
+
+INSERT INTO abilities
+	(id,identifier,generation_id,effect, flavor_text_1,flavor_text_2,flavor_text_3,flavor_text_4, text_changed_in_version)
+VALUES(1, 'stench', 3,E'This Pokémon\'s damaging moves have a 10% chance to make the target flinch with each hit if they do not already cause flinching as a secondary effect.<br>This ability does not stack with a held item.<br>Overworld: The wild encounter rate is halved while this Pokémon is first in the party.' ,'Helps repel wild POKéMON.', 'The stench helps keep wild Pokémon away.', 'The stench may cause the target to flinch.', 'By releasing stench when attacking, this Pokémon may cause the target to flinch.', '5,8,11,17');
+INSERT INTO abilities
+	(id,identifier,generation_id,effect, flavor_text_1,flavor_text_2,flavor_text_3,flavor_text_4, text_changed_in_version)
+VALUES(34,'chlorophyll',3,E'This Pokémon\'s Speed is doubled during strong sunlight.<br>This bonus does not count as a stat modifier.','Raises SPEED in sunshine.',E'Boosts the Pokémon\'s Speed in sunshine.',E'Boosts the Pokémon\'s Speed stat in sunshine.',E'Boosts the Pokémon\'s Speed stat in harsh sunlight.','5,8,15,18');
+INSERT INTO abilities
+	(id,identifier,generation_id,effect, flavor_text_1,flavor_text_2,flavor_text_3,flavor_text_4, text_changed_in_version)
+VALUES(65,'overgrow',3,'When this Pokémon has 1/3 or less of its HP remaining, its grass-type moves inflict 1.5× as much regular damage.','Ups GRASS moves in a pinch.','Powers up Grass-type moves in a pinch.','Powers up Grass-type moves when the Pokémon is in trouble.',E'Powers up Grass-type moves when the Pokémon\'s HP is low.','5,8,15,18');
+INSERT INTO abilities
+	(id,identifier,generation_id,effect, flavor_text_1,flavor_text_2,flavor_text_3,flavor_text_4, text_changed_in_version)
+VALUES (85,'heatproof',4,'This Pokémon takes half as much damage from fire-type moves and burns.','Weakens the power of Fire-type moves.','The heatproof body of the Pokémon halves the damage from Fire-type moves that hit it.',NULL,NULL,'8,17');
+
+
+
+
+
+
+
+
+
+
+/* select pokemon_abilities.pokemon_id,pokemon.identifier,pokemon_abilities.ability_id,abilities.identifier, abilities.effect
+from pokemon, pokemon_abilities, abilities
+where (pokemon.id = 1 and
+	   pokemon.id = pokemon_abilities.pokemon_id and
+	   pokemon_abilities.ability_id = abilities.id); */

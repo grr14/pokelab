@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { Sequelize, DataTypes } = require("sequelize")
+const { Sequelize, DataTypes, STRING } = require("sequelize")
 
 function getIdFromURL(url) {
   const url_ = url.slice(0, -1) // removing the last character of the url (it's always "/")
@@ -11,9 +11,14 @@ function isEmptyArray(array) {
   return Array.isArray(array) && !array.length ? true : false
 }
 
+function parse(str, separator) {
+  return str.split(separator)
+}
+
 module.exports = {
   getIdFromURL: getIdFromURL,
   isEmptyArray: isEmptyArray,
+  parse: parse,
 }
 
 module.exports.createStore = () => {
@@ -50,54 +55,6 @@ module.exports.createStore = () => {
       primaryKey: true,
     },
     identifier: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-  })
-
-  const language = db.define("languages", {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-    },
-    iso639: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    iso3166: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    identifier: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    official: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    ordre: {
-      type: DataTypes.INTEGER,
-    },
-  })
-
-  const language_names = db.define("language_names", {
-    language_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      references: "language",
-      referencesKey: "id",
-    },
-    local_language_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      references: "language",
-      referencesKey: "id",
-    },
-    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -164,5 +121,62 @@ module.exports.createStore = () => {
   })
   sprites.removeAttribute("id")
 
-  return { db, pokemon, sprites /*region, language, language_names*/ }
+  const abilities = db.define("abilities", {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    identifier: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    generation_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    effect: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    flavor_text_1: {
+      type: DataTypes.STRING,
+    },
+    flavor_text_2: {
+      type: DataTypes.STRING,
+    },
+    flavor_text_3: {
+      type: DataTypes.STRING,
+    },
+    flavor_text_4: {
+      type: DataTypes.STRING,
+    },
+    text_changed_in_version: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  })
+
+  const pokemon_abilities = db.define("pokemon_abilities", {
+    pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    ability_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    is_hidden: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    slot: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  })
+
+  return { db, pokemon, sprites, abilities, pokemon_abilities /*region,*/ }
 }
