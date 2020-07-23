@@ -1,4 +1,4 @@
-query getPokemonById($id:Int!) {
+query getPokemonById($id: Int!) {
   pokemon(id: $id) {
     id
     identifier
@@ -10,6 +10,10 @@ query getPokemonById($id:Int!) {
     is_default
     type_1
     type_2
+    abilities {
+      id
+      identifier
+    }
     picture
   }
 }

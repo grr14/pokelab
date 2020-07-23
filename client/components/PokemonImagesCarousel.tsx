@@ -39,12 +39,11 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
   const urls = data?.pokemonSprites?.map((sprite) => sprite.sprite_url)
   const descriptions = data?.pokemonSprites?.map((sprite) => sprite.description)
 
-  console.log(picture)
   const buildCarousel = () => {
     const divArray = []
     for (let i = 0; i < urls.length; i++) {
       divArray.push(
-        <div>
+        <div key={i + 1}>
           <img style={{ height: "350px", width: "350px" }} src={urls[i]} />
           <p
             css={{
@@ -66,7 +65,7 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
 
     if (picture != null) {
       divArray.unshift(
-        <div>
+        <div key={0}>
           <img style={{ height: "350px", width: "350px" }} src={picture} />
         </div>
       )

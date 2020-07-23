@@ -7,6 +7,12 @@
 // GraphQL query operation: getPokemonById
 // ====================================================
 
+export interface getPokemonById_pokemon_abilities {
+  __typename: "Ability";
+  id: number;
+  identifier: string;
+}
+
 export interface getPokemonById_pokemon {
   __typename: "Pokemon";
   id: number;
@@ -19,6 +25,7 @@ export interface getPokemonById_pokemon {
   is_default: number | null;
   type_1: number | null;
   type_2: number | null;
+  abilities: (getPokemonById_pokemon_abilities | null)[] | null;
   picture: string | null;
 }
 

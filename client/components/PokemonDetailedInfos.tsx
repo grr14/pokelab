@@ -16,6 +16,14 @@ interface Props {
 }
 
 const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
+  const ability_list = (
+    <List>
+      {pokemon?.abilities?.map((ability, idx) => (
+        <ListItem key={idx}>{ability.identifier}</ListItem>
+      ))}
+    </List>
+  )
+
   return (
     <div
       css={{
@@ -77,6 +85,24 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
                 </ListItem>
               )}
             </List>
+          </ListItem>
+          <Divider />
+
+          <ListItem>
+            <ListItemAvatar>
+              <Avatar>
+                <img
+                  css={{ maxHeight: "100%", maxWidth: "100%" }}
+                  src="/images/pokeball.svg"
+                />
+              </Avatar>
+            </ListItemAvatar>
+
+            <Box textAlign="right" css={{ paddingRight: 5 }}>
+              <Typography variant="body1">Abilities :</Typography>
+            </Box>
+
+            {ability_list}
           </ListItem>
           <Divider />
 

@@ -30,6 +30,10 @@ const GET_POKEMON = gql`
       is_default
       type_1
       type_2
+      abilities {
+        id
+        identifier
+      }
       picture
     }
   }
@@ -53,8 +57,6 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
   >(GET_POKEMON, {
     variables: { id: id },
   })
-
-  console.log(`id=${id}`)
 
   if (loading) return <p>loading</p>
   if (error) return <p>error</p>
