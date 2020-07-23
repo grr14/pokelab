@@ -13,23 +13,24 @@ CREATE TABLE pokemon
 	is_default INTEGER NOT NULL,
 	type_1 INTEGER NOT NULL,
 	type_2 INTEGER,
+	abilities VARCHAR(20),
 	picture VARCHAR(100),
 	PRIMARY KEY (id),
 	-- FOREIGN KEY(species_id) REFERENCES pokemon_species (id), 
 	CHECK (is_default IN (0, 1))
 );
 INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1, type_2, picture)
+	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1, type_2,abilities, picture)
 VALUES
-	(1, 'bulbasaur', 1, 7, 69, 64, 1, 1, 12, 4, 'https://i.imgur.com/AC2fTGA.jpg');
+	(1, 'bulbasaur', 1, 7, 69, 64, 1, 1, 12, 4, '65,34','https://i.imgur.com/AC2fTGA.jpg');
 INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
+	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2,abilities, picture)
 VALUES
-	(2, 'ivysaur', 2, 10, 130, 142, 2, 1, 12, 4, 'https://i.imgur.com/zMhNq2e.jpg');
+	(2, 'ivysaur', 2, 10, 130, 142, 2, 1, 12, 4,'65,34', 'https://i.imgur.com/zMhNq2e.jpg');
 INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
+	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2,abilities, picture)
 VALUES
-	(3, 'venusaur', 3, 20, 1000, 236, 3, 1, 12, 4, 'https://i.imgur.com/gTFqKHD.jpg');
+	(3, 'venusaur', 3, 20, 1000, 236, 3, 1, 12, 4, '65,34','https://i.imgur.com/gTFqKHD.jpg');
 INSERT INTO pokemon
 	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
 VALUES

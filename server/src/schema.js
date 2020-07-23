@@ -19,6 +19,7 @@ typeDefs = gql`
     is_default: Int
     type_1: Int
     type_2: Int
+    abilities: [Ability]
     picture: String
   }
 
@@ -31,7 +32,7 @@ typeDefs = gql`
   type Ability {
     id: Int!
     identifier: String!
-    effect: String!
+    effect: String
     flavor_textes: [FlavorText]
   }
 

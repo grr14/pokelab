@@ -8,9 +8,27 @@ class pokemonDB extends DataSource {
   }
 
   async findPokemon({ id }) {
-    const pokemon = await this.store.pokemon.findOne({ where: { id: id } })
+    let pokemon = await this.store.pokemon.findOne({ where: { id: id } })
 
-    return pokemon
+    const abilities_id = parse(pokemon.dataValues.abilities, ",")
+    const abilities = new Array()
+
+    await Promise.all(
+      abilities_id.map(async (ability_id) => {
+        let ability = await this.store.abilities.findOne({
+          attributes: ["id", "identifier"],
+          where: { id: ability_id },
+        })
+        return abilities.push(ability)
+      })
+    )
+
+    const ability_array = abilities.map((ability) => ({
+      id: ability.dataValues.id,
+      identifier: ability.dataValues.identifier,
+    }))
+
+    return { ...pokemon.dataValues, abilities: ability_array }
   }
 
   async getPokemonSprites({ id }) {

@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { Sequelize, DataTypes, STRING } = require("sequelize")
+const { Sequelize, DataTypes } = require("sequelize")
 
 function getIdFromURL(url) {
   const url_ = url.slice(0, -1) // removing the last character of the url (it's always "/")
@@ -100,6 +100,9 @@ module.exports.createStore = () => {
     type_2: {
       type: DataTypes.INTEGER,
       allowNull: false,
+    },
+    abilities: {
+      type: DataTypes.STRING,
     },
     picture: {
       type: DataTypes.STRING,
