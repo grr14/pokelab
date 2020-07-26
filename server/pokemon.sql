@@ -19,3238 +19,814 @@ CREATE TABLE pokemon
 	-- FOREIGN KEY(species_id) REFERENCES pokemon_species (id), 
 	CHECK (is_default IN (0, 1))
 );
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1, type_2,abilities, picture)
-VALUES
-	(1, 'bulbasaur', 1, 7, 69, 64, 1, 1, 12, 4, '65,34','https://i.imgur.com/AC2fTGA.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2,abilities, picture)
-VALUES
-	(2, 'ivysaur', 2, 10, 130, 142, 2, 1, 12, 4,'65,34', 'https://i.imgur.com/zMhNq2e.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2,abilities, picture)
-VALUES
-	(3, 'venusaur', 3, 20, 1000, 236, 3, 1, 12, 4, '65,34','https://i.imgur.com/gTFqKHD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(4, 'charmander', 4, 6, 85, 62, 5, 1, 10, null, 'https://i.imgur.com/ijpe5sW.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(5, 'charmeleon', 5, 11, 190, 142, 6, 1, 10, null, 'https://i.imgur.com/f7X1kC3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(6, 'charizard', 6, 17, 905, 240, 7, 1, 10, null, 'https://i.imgur.com/Lsf1vta.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(7, 'squirtle', 7, 5, 90, 63, 10, 1, 11, null, 'https://i.imgur.com/48bYjC2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(8, 'wartortle', 8, 10, 225, 142, 11, 1, 11, null, 'https://i.imgur.com/8GhwLbp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(9, 'blastoise', 9, 16, 855, 239, 12, 1, 11, null, 'https://i.imgur.com/uAUZH1q.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(10, 'caterpie', 10, 3, 29, 39, 14, 1, 7, null, 'https://i.imgur.com/LLIlmBS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(11, 'metapod', 11, 7, 99, 72, 15, 1, 7, null, 'https://i.imgur.com/ec5wEjk.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(12, 'butterfree', 12, 11, 320, 178, 16, 1, 7, null, 'https://i.imgur.com/xhj4Egw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(13, 'weedle', 13, 3, 32, 39, 17, 1, 7, 4, 'https://i.imgur.com/lizwwTH.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(14, 'kakuna', 14, 6, 100, 72, 18, 1, 7, 4, 'https://i.imgur.com/qEjBqD9.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(15, 'beedrill', 15, 10, 295, 178, 19, 1, 7, 4, 'https://i.imgur.com/wZ5U3Wv.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(16, 'pidgey', 16, 3, 18, 50, 21, 1, 1, 3, 'https://i.imgur.com/fc3ZrV4.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(17, 'pidgeotto', 17, 11, 300, 122, 22, 1, 1, 3, 'https://i.imgur.com/8bmu48X.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(18, 'pidgeot', 18, 15, 395, 216, 23, 1, 1, 3, 'https://i.imgur.com/VspZHYz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(19, 'rattata', 19, 3, 35, 51, 25, 1, 1, null, 'https://i.imgur.com/gUzOx6s.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(20, 'raticate', 20, 7, 185, 145, 27, 1, 1, null, 'https://i.imgur.com/cS0lMda.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(21, 'spearow', 21, 3, 20, 52, 30, 1, 1, 3, 'https://i.imgur.com/a6l9rm7.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(22, 'fearow', 22, 12, 380, 155, 31, 1, 1, 3, 'https://i.imgur.com/2Qy8hwP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(23, 'ekans', 23, 20, 69, 58, 32, 1, 4, null, 'https://i.imgur.com/AwUxfY1.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(24, 'arbok', 24, 35, 650, 157, 33, 1, 4, null, 'https://i.imgur.com/e0fcrod.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(25, 'pikachu', 25, 4, 60, 112, 35, 1, 13, null, 'https://i.imgur.com/LMvX3zC.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(26, 'raichu', 26, 8, 300, 218, 49, 1, 13, null, 'https://i.imgur.com/thjkDSg.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(27, 'sandshrew', 27, 6, 120, 60, 51, 1, 5, null, 'https://i.imgur.com/PO69vIb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(28, 'sandslash', 28, 10, 295, 158, 53, 1, 5, null, 'https://i.imgur.com/3XfBEuB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(29, 'nidoran-f', 29, 4, 70, 55, 55, 1, 4, null, 'https://i.imgur.com/RZh08KT.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(30, 'nidorina', 30, 8, 200, 128, 56, 1, 4, null, 'https://i.imgur.com/BEbUiAe.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(31, 'nidoqueen', 31, 13, 600, 227, 57, 1, 4, 5, 'https://i.imgur.com/LCFuwn2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(32, 'nidoran-m', 32, 5, 90, 55, 58, 1, 4, null, 'https://i.imgur.com/6A5SeKp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(33, 'nidorino', 33, 9, 195, 128, 59, 1, 4, null, 'https://i.imgur.com/ywqlthV.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(34, 'nidoking', 34, 14, 620, 227, 60, 1, 4, 5, 'https://i.imgur.com/kgZ7ETM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(35, 'clefairy', 35, 6, 75, 113, 62, 1, 18, null, 'https://i.imgur.com/pSyVoxK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(36, 'clefable', 36, 13, 400, 217, 63, 1, 18, null, 'https://i.imgur.com/1gCxuNn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(37, 'vulpix', 37, 6, 99, 60, 64, 1, 10, null, 'https://i.imgur.com/9y8Sxpo.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(38, 'ninetales', 38, 11, 199, 177, 66, 1, 10, null, 'https://i.imgur.com/GVtEYcD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(39, 'jigglypuff', 39, 5, 55, 95, 69, 1, 1, 18, 'https://i.imgur.com/T7raEfY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(40, 'wigglytuff', 40, 10, 120, 196, 70, 1, 1, 18, 'https://i.imgur.com/q9OdNYn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(41, 'zubat', 41, 8, 75, 49, 71, 1, 4, 3, 'https://i.imgur.com/RsQeBo0.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(42, 'golbat', 42, 16, 550, 159, 72, 1, 4, 3, 'https://i.imgur.com/lojCqnw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(43, 'oddish', 43, 5, 54, 64, 74, 1, 12, 4, 'https://i.imgur.com/USfQEGN.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(44, 'gloom', 44, 8, 86, 138, 75, 1, 12, 4, 'https://i.imgur.com/26bh3Ei.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(45, 'vileplume', 45, 12, 186, 221, 76, 1, 12, 4, 'https://i.imgur.com/LEDxhVm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(46, 'paras', 46, 3, 54, 57, 78, 1, 7, 12, 'https://i.imgur.com/p4aTBhN.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(47, 'parasect', 47, 10, 295, 142, 79, 1, 7, 12, 'https://i.imgur.com/xZqlYVB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(48, 'venonat', 48, 10, 300, 61, 80, 1, 7, 4, 'https://i.imgur.com/pIYnSEY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(49, 'venomoth', 49, 15, 125, 158, 81, 1, 7, 4, 'https://i.imgur.com/YU3xemy.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(50, 'diglett', 50, 2, 8, 53, 82, 1, 5, null, 'https://i.imgur.com/iNcsUzy.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(51, 'dugtrio', 51, 7, 333, 149, 84, 1, 5, null, 'https://i.imgur.com/EeGsT5b.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(52, 'meowth', 52, 4, 42, 58, 86, 1, 1, null, 'https://i.imgur.com/HjYq1tC.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(53, 'persian', 53, 10, 320, 154, 88, 1, 1, null, 'https://i.imgur.com/jJyfC4f.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(54, 'psyduck', 54, 8, 196, 64, 90, 1, 11, null, 'https://i.imgur.com/b0n9ccR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(55, 'golduck', 55, 17, 766, 175, 91, 1, 11, null, 'https://i.imgur.com/gXysg8U.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(56, 'mankey', 56, 5, 280, 61, 92, 1, 2, null, 'https://i.imgur.com/hDpIAZZ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(57, 'primeape', 57, 10, 320, 159, 93, 1, 2, null, 'https://i.imgur.com/lNetyrR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(58, 'growlithe', 58, 7, 190, 70, 94, 1, 10, null, 'https://i.imgur.com/xles7PM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(59, 'arcanine', 59, 19, 1550, 194, 95, 1, 10, null, 'https://i.imgur.com/x7NrcVh.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(60, 'poliwag', 60, 6, 124, 60, 96, 1, 11, null, 'https://i.imgur.com/59cc2v3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(61, 'poliwhirl', 61, 10, 200, 135, 97, 1, 11, null, 'https://i.imgur.com/rh6XwnK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(62, 'poliwrath', 62, 13, 540, 230, 98, 1, 11, 2, 'https://i.imgur.com/WS8Hvmp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(63, 'abra', 63, 9, 195, 62, 100, 1, 14, null, 'https://i.imgur.com/7r8Yc43.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(64, 'kadabra', 64, 13, 565, 140, 101, 1, 14, null, 'https://i.imgur.com/fThNWv7.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(65, 'alakazam', 65, 15, 480, 225, 102, 1, 14, null, 'https://i.imgur.com/VDYW1rn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(66, 'machop', 66, 8, 195, 61, 104, 1, 2, null, 'https://i.imgur.com/JoPIaLn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(67, 'machoke', 67, 15, 705, 142, 105, 1, 2, null, 'https://i.imgur.com/ZM3deCi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(68, 'machamp', 68, 16, 1300, 227, 106, 1, 2, null, 'https://i.imgur.com/h6MNKhz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(69, 'bellsprout', 69, 7, 40, 60, 107, 1, 12, 4, 'https://i.imgur.com/wmpNwck.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(70, 'weepinbell', 70, 10, 64, 137, 108, 1, 12, 4, 'https://i.imgur.com/2sVY3gp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(71, 'victreebel', 71, 17, 155, 221, 109, 1, 12, 4, 'https://i.imgur.com/GhvwZ2m.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(72, 'tentacool', 72, 9, 455, 67, 110, 1, 11, 4, 'https://i.imgur.com/zGWFXMS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(73, 'tentacruel', 73, 16, 550, 180, 111, 1, 11, 4, 'https://i.imgur.com/dYUaOAg.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(74, 'geodude', 74, 4, 200, 60, 112, 1, 6, 5, 'https://i.imgur.com/fLFVZQH.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(75, 'graveler', 75, 10, 1050, 137, 114, 1, 6, 5, 'https://i.imgur.com/vJ9xp40.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(76, 'golem', 76, 14, 3000, 223, 116, 1, 6, 5, 'https://i.imgur.com/Shj8rUM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(77, 'ponyta', 77, 10, 300, 82, 118, 1, 10, null, 'https://i.imgur.com/aSGlDvL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(78, 'rapidash', 78, 17, 950, 175, 119, 1, 10, null, 'https://i.imgur.com/ZvPGlxf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(79, 'slowpoke', 79, 12, 360, 63, 120, 1, 11, 14, 'https://i.imgur.com/EvyuPqb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(80, 'slowbro', 80, 16, 785, 172, 121, 1, 11, 14, 'https://i.imgur.com/3a27JWi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(81, 'magnemite', 81, 3, 60, 65, 124, 1, 13, 9, 'https://i.imgur.com/nzqrWDT.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(82, 'magneton', 82, 10, 600, 163, 125, 1, 13, 9, 'https://i.imgur.com/p4wUgaN.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(83, 'farfetchd', 83, 8, 150, 132, 127, 1, 1, 3, 'https://i.imgur.com/w85X8wL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(84, 'doduo', 84, 14, 392, 62, 128, 1, 1, 3, 'https://i.imgur.com/9okePJi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(85, 'dodrio', 85, 18, 852, 165, 129, 1, 1, 3, 'https://i.imgur.com/nZXMjbm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(86, 'seel', 86, 11, 900, 65, 130, 1, 11, null, 'https://i.imgur.com/RUSPUXY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(87, 'dewgong', 87, 17, 1200, 166, 131, 1, 11, 15, 'https://i.imgur.com/57ilpDB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(88, 'grimer', 88, 9, 300, 65, 132, 1, 4, null, 'https://i.imgur.com/zn27q6B.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(89, 'muk', 89, 12, 300, 175, 134, 1, 4, null, 'https://i.imgur.com/9OINeLz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(90, 'shellder', 90, 3, 40, 61, 136, 1, 11, null, 'https://i.imgur.com/8czj7ES.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(91, 'cloyster', 91, 15, 1325, 184, 137, 1, 11, 15, 'https://i.imgur.com/c3DN8xc.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(92, 'gastly', 92, 13, 1, 62, 138, 1, 8, 4, 'https://i.imgur.com/D0Hfdqx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(93, 'haunter', 93, 16, 1, 142, 139, 1, 8, 4, 'https://i.imgur.com/PflcGvJ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(94, 'gengar', 94, 15, 405, 225, 140, 1, 8, 4, 'https://i.imgur.com/9JPDvUo.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(95, 'onix', 95, 88, 2100, 77, 142, 1, 6, 5, 'https://i.imgur.com/HSdYOMf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(96, 'drowzee', 96, 10, 324, 66, 145, 1, 14, null, 'https://i.imgur.com/gW3CbDp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(97, 'hypno', 97, 16, 756, 169, 146, 1, 14, null, 'https://i.imgur.com/AMwb1zx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(98, 'krabby', 98, 4, 65, 65, 147, 1, 11, null, 'https://i.imgur.com/4hbk8Ox.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(99, 'kingler', 99, 13, 600, 166, 148, 1, 11, null, 'https://i.imgur.com/Eseqaxx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(100, 'voltorb', 100, 5, 104, 66, 149, 1, 13, null, 'https://i.imgur.com/t3QjhKR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(101, 'electrode', 101, 12, 666, 172, 150, 1, 13, null, 'https://i.imgur.com/95DVrPu.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(102, 'exeggcute', 102, 4, 25, 65, 151, 1, 12, 14, 'https://i.imgur.com/TD8VkL0.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(103, 'exeggutor', 103, 20, 1200, 186, 152, 1, 12, 14, 'https://i.imgur.com/4j6dMEO.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(104, 'cubone', 104, 4, 65, 64, 154, 1, 5, null, 'https://i.imgur.com/ZsZ9oK2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(105, 'marowak', 105, 10, 450, 149, 155, 1, 5, null, 'https://i.imgur.com/F8ncxoe.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(106, 'hitmonlee', 106, 15, 498, 159, 159, 1, 2, null, 'https://i.imgur.com/lqcewnk.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(107, 'hitmonchan', 107, 14, 502, 159, 160, 1, 2, null, 'https://i.imgur.com/J1ErsTY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(108, 'lickitung', 108, 12, 655, 77, 162, 1, 1, null, 'https://i.imgur.com/aFKViTL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(109, 'koffing', 109, 6, 10, 68, 164, 1, 4, null, 'https://i.imgur.com/1psPOrs.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(110, 'weezing', 110, 12, 95, 172, 165, 1, 4, null, 'https://i.imgur.com/l2Ey3Pl.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(111, 'rhyhorn', 111, 10, 1150, 69, 166, 1, 5, 3, 'https://i.imgur.com/QH4mkk2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(112, 'rhydon', 112, 19, 1200, 170, 167, 1, 5, 6, 'https://i.imgur.com/eTUYbXJ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(113, 'chansey', 113, 11, 346, 395, 170, 1, 1, null, 'https://i.imgur.com/FAAgewf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(114, 'tangela', 114, 10, 350, 87, 172, 1, 12, null, 'https://i.imgur.com/prXjyzG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(115, 'kangaskhan', 115, 22, 800, 172, 174, 1, 1, null, 'https://i.imgur.com/VgEJHvM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(116, 'horsea', 116, 4, 80, 59, 176, 1, 11, null, 'https://i.imgur.com/bmlwm2M.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(117, 'seadra', 117, 12, 250, 154, 177, 1, 11, null, 'https://i.imgur.com/N6xnGO9.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(118, 'goldeen', 118, 6, 150, 64, 179, 1, 11, null, 'https://i.imgur.com/lNQ2Anx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(119, 'seaking', 119, 13, 390, 158, 180, 1, 11, null, 'https://i.imgur.com/YptzUtL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(120, 'staryu', 120, 8, 345, 68, 181, 1, 11, null, 'https://i.imgur.com/kpRvCcP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(121, 'starmie', 121, 11, 800, 182, 182, 1, 11, 14, 'https://i.imgur.com/hYCXL8u.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(122, 'mr-mime', 122, 13, 545, 161, 184, 1, 14, 18, 'https://i.imgur.com/x8YJNOM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(123, 'scyther', 123, 15, 560, 100, 185, 1, 7, 3, 'https://i.imgur.com/vHot0mf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(124, 'jynx', 124, 14, 406, 159, 189, 1, 15, 14, 'https://i.imgur.com/SKdeZib.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(125, 'electabuzz', 125, 11, 300, 172, 191, 1, 13, null, 'https://i.imgur.com/IGyYILm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(126, 'magmar', 126, 13, 445, 173, 194, 1, 10, null, 'https://i.imgur.com/06mlHmZ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(127, 'pinsir', 127, 15, 550, 175, 196, 1, 7, null, 'https://i.imgur.com/aW5JsEd.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(128, 'tauros', 128, 14, 884, 172, 198, 1, 1, null, 'https://i.imgur.com/MnkJB5A.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(129, 'magikarp', 129, 9, 100, 40, 199, 1, 11, null, 'https://i.imgur.com/aduK7nf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(130, 'gyarados', 130, 65, 2350, 189, 200, 1, 11, 3, 'https://i.imgur.com/7Sb5vTz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(131, 'lapras', 131, 25, 2200, 187, 202, 1, 11, 15, 'https://i.imgur.com/WpMKFCh.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(132, 'ditto', 132, 3, 40, 101, 203, 1, 1, null, 'https://i.imgur.com/cTI2L2N.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(133, 'eevee', 133, 3, 65, 65, 204, 1, 1, null, 'https://i.imgur.com/qYArzRQ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(134, 'vaporeon', 134, 10, 290, 184, 205, 1, 11, null, 'https://i.imgur.com/5UaQofP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(135, 'jolteon', 135, 8, 245, 184, 206, 1, 13, null, 'https://i.imgur.com/qrfQ7yi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(136, 'flareon', 136, 9, 250, 184, 207, 1, 10, null, 'https://i.imgur.com/ZTZdR4P.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(137, 'porygon', 137, 8, 365, 79, 213, 1, 1, null, 'https://i.imgur.com/UzgsZqF.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(138, 'omanyte', 138, 4, 75, 71, 216, 1, 6, 11, 'https://i.imgur.com/jFZCyIF.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(139, 'omastar', 139, 10, 350, 173, 217, 1, 6, 11, 'https://i.imgur.com/ViAZVO6.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(140, 'kabuto', 140, 5, 115, 71, 218, 1, 6, 11, 'https://i.imgur.com/dlVDpzz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(141, 'kabutops', 141, 13, 405, 173, 219, 1, 6, 11, 'https://i.imgur.com/i6Gixlh.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(142, 'aerodactyl', 142, 18, 590, 180, 220, 1, 6, 3, 'https://i.imgur.com/NcPNfei.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(143, 'snorlax', 143, 21, 4600, 189, 223, 1, 1, null, 'https://i.imgur.com/ls3lbOc.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(144, 'articuno', 144, 17, 554, 261, 224, 1, 15, 3, 'https://i.imgur.com/swFJNgh.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(145, 'zapdos', 145, 16, 526, 261, 225, 1, 13, 3, 'https://i.imgur.com/tR5mdCD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(146, 'moltres', 146, 20, 600, 261, 226, 1, 10, 3, 'https://i.imgur.com/8xebAB0.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(147, 'dratini', 147, 18, 33, 60, 227, 1, 16, null, 'https://i.imgur.com/bfeH7Rx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(148, 'dragonair', 148, 40, 165, 147, 228, 1, 16, null, 'https://i.imgur.com/qEWesSC.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(149, 'dragonite', 149, 22, 2100, 270, 229, 1, 16, 3, 'https://i.imgur.com/ORfuvMg.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(150, 'mewtwo', 150, 20, 1220, 306, 230, 1, 14, null, 'https://i.imgur.com/1ftENMb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(151, 'mew', 151, 4, 40, 270, 233, 1, 14, null, 'https://i.imgur.com/t9aznIK.jpg');
------------------------------------------------------------------------------------------------------------------------------------------------------------------,,------------------------------------
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(152, 'chikorita', 152, 9, 64, 64, 234, 1, 12 , null , 'https://i.imgur.com/sgmYD3U.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(153, 'bayleef', 153, 12, 158, 142, 235, 1, 12 , null , 'https://i.imgur.com/c7GEwCv.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(154, 'meganium', 154, 18, 1005, 236, 236, 1, 12 , null, 'https://i.imgur.com/p0puglV.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(155, 'cyndaquil', 155, 5, 79, 62, 237, 1, 10 , null , 'https://i.imgur.com/XzKGl1j.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(156, 'quilava', 156, 9, 190, 142, 238, 1, 10 , null , 'https://i.imgur.com/XpuEYF2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(157, 'typhlosion', 157, 17, 795, 240, 239, 1, 10 , null , 'https://i.imgur.com/U430FW7.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(158, 'totodile', 158, 6, 95, 63, 240, 1, 11 , null , 'https://i.imgur.com/9zPgDs0.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(159, 'croconaw', 159, 11, 250, 142, 241, 1, 11 , null , 'https://i.imgur.com/Lad913A.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(160, 'feraligatr', 160, 23, 888, 239, 242, 1, 11 , null , 'https://i.imgur.com/paqc6yL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(161, 'sentret', 161, 8, 60, 43, 243, 1, 1 , null , 'https://i.imgur.com/FwafCGE.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(162, 'furret', 162, 18, 325, 145, 244, 1, 1 , null , 'https://i.imgur.com/02nSLAO.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(163, 'hoothoot', 163, 7, 212, 52, 245, 1, 1 , 3 , 'https://i.imgur.com/OK1safW.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(164, 'noctowl', 164, 16, 408, 158, 246, 1, 1 , 3 , 'https://i.imgur.com/93mRIag.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(165, 'ledyba', 165, 10, 108, 53, 247, 1, 7 , 3 , 'https://i.imgur.com/dCXGLHB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(166, 'ledian', 166, 14, 356, 137, 248, 1, 7 , 3 , 'https://i.imgur.com/5OlOTx1.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(167, 'spinarak', 167, 5, 85, 50, 249, 1, 7, 4 , 'https://i.imgur.com/NSNjEwm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(168, 'ariados', 168, 11, 335, 140, 250, 1, 7 , 4 , 'https://i.imgur.com/HkZMCoN.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(169, 'crobat', 169, 18, 750, 241, 73, 1, 4 , 3 , 'https://i.imgur.com/blzOJlE.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(170, 'chinchou', 170, 5, 120, 66, 251, 1, 11 , 13 , 'https://i.imgur.com/8buooZ3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(171, 'lanturn', 171, 12, 225, 161, 252, 1, 11 , 13 , 'https://i.imgur.com/iqgOL6x.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(172, 'pichu', 172, 3, 20, 41, 34, 1, 13 , null , 'https://i.imgur.com/FB5BP6d.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(173, 'cleffa', 173, 3, 30, 44, 61, 1, 18 , null , 'https://i.imgur.com/h5RaNeI.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(174, 'igglybuff', 174, 3, 10, 42, 68, 1, 1 , 18 , 'https://i.imgur.com/G64muBR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(175, 'togepi', 175, 3, 15, 49, 253, 1, 18 , null , 'https://i.imgur.com/RFAt2EY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(176, 'togetic', 176, 6, 32, 142, 254, 1, 18, 3 , 'https://i.imgur.com/fCMs83w.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(177, 'natu', 177, 2, 20, 64, 256, 1, 14 , 3 , 'https://i.imgur.com/HjkgdMa.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(178, 'xatu', 178, 15, 150, 165, 257, 1, 14 , 3 , 'https://i.imgur.com/xyAIc7F.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(179, 'mareep', 179, 6, 78, 56, 258, 1, 13 , null , 'https://i.imgur.com/v8bNA9L.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(180, 'flaaffy', 180, 8, 133, 128, 259, 1, 13 , null , 'https://i.imgur.com/mnsUZRS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(181, 'ampharos', 181, 14, 615, 230, 260, 1, 13 , null , 'https://i.imgur.com/eW8rJCY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(182, 'bellossom', 182, 4, 58, 221, 77, 1, 12 , null , 'https://i.imgur.com/qeYqvKn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(183, 'marill', 183, 4, 85, 88, 263, 1, 11 , 18 , 'https://i.imgur.com/iBd4cN3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(184, 'azumarill', 184, 8, 285, 189, 264, 1, 11 , 18 , 'https://i.imgur.com/ibh6uDQ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(185, 'sudowoodo', 185, 12, 380, 144, 266, 1, 6 , null , 'https://i.imgur.com/lCJjc91.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(186, 'politoed', 186, 11, 339, 225, 99, 1, 11 , null , 'https://i.imgur.com/Eb6ScQl.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(187, 'hoppip', 187, 4, 5, 50, 267, 1, 12 , 3 , 'https://i.imgur.com/b9Fo7T8.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(188, 'skiploom', 188, 6, 10, 119, 268, 1, 12 , 3 , 'https://i.imgur.com/QxSUb4s.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(189, 'jumpluff', 189, 8, 30, 207, 269, 1, 12 , 3 , 'https://i.imgur.com/jR8bXNZ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(190, 'aipom', 190, 8, 115, 72, 270, 1, 1 , null , 'https://i.imgur.com/5xTLkux.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(191, 'sunkern', 191, 3, 18, 36, 272, 1, 12 , null , 'https://i.imgur.com/SUUKTtH.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(192, 'sunflora', 192, 8, 85, 149, 273, 1, 12 , null , 'https://i.imgur.com/Yy6BqDM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(193, 'yanma', 193, 12, 380, 78, 274, 1, 7 , 3 , 'https://i.imgur.com/gBVcOxF.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(194, 'wooper', 194, 4, 85, 42, 276, 1, 11, 5 , 'https://i.imgur.com/qJeLzvG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(195, 'quagsire', 195, 14, 750, 151, 277, 1, 11 , 5 , 'https://i.imgur.com/3Aygw2m.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(196, 'espeon', 196, 9, 265, 184, 208, 1, 14 , null , 'https://i.imgur.com/bFKPOpE.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(197, 'umbreon', 197, 10, 270, 184, 209, 1, 17 , null , 'https://i.imgur.com/94Y993Q.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(198, 'murkrow', 198, 5, 21, 81, 278, 1, 17 , 3 , 'https://i.imgur.com/nvskAIX.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(199, 'slowking', 199, 20, 795, 172, 123, 1, 11 , 14 , 'https://i.imgur.com/8OyNWbM.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(200, 'misdreavus', 200, 7, 10, 87, 280, 1, 8 , null , 'https://i.imgur.com/tq67IBR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(201, 'unown', 201, 5, 50, 118, 282, 1, 14 , null , 'https://i.imgur.com/7jg2o4D.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(202, 'wobbuffet', 202, 13, 285, 142, 284, 1, 14 , null , 'https://i.imgur.com/okWpfFZ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(203, 'girafarig', 203, 15, 415, 159, 285, 1, 1 , 14 , 'https://i.imgur.com/cLZCEi0.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(204, 'pineco', 204, 6, 72, 58, 286, 1, 7, null , 'https://i.imgur.com/hym9W9L.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(205, 'forretress', 205, 12, 1258, 163, 287, 1, 7 , 9 , 'https://i.imgur.com/BfI5c1U.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(206, 'dunsparce', 206, 15, 140, 145, 288, 1, 1 , null , 'https://i.imgur.com/tptmfus.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(207, 'gligar', 207, 11, 648, 86, 289, 1, 5 , 3 , 'https://i.imgur.com/Xd0Op9Z.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(208, 'steelix', 208, 92, 4000, 179, 143, 1, 9 , 5 , 'https://i.imgur.com/ccX3dSF.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(209, 'snubbull', 209, 6, 78, 60, 291, 1, 18 , null , 'https://i.imgur.com/MHqZrVc.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(210, 'granbull', 210, 14, 487, 158, 292, 1, 18, null , 'https://i.imgur.com/KrDidmR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(211, 'qwilfish', 211, 5, 39, 88, 293, 1, 11 , 4 , 'https://i.imgur.com/1x6ixry.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(212, 'scizor', 212, 18, 1180, 175, 186, 1, 7 , 9 , 'https://i.imgur.com/wkKFGww.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(213, 'shuckle', 213, 6, 205, 177, 294, 1, 7 , 6 , 'https://i.imgur.com/FuUDz4m.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(214, 'heracross', 214, 15, 540, 175, 295, 1, 7, 2, 'https://i.imgur.com/MqK3j46.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(215, 'sneasel', 215, 9, 280, 86, 297, 1, 17, 15 , 'https://i.imgur.com/oZSPDFP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(216, 'teddiursa', 216, 6, 88, 66, 299, 1, 1 , null , 'https://i.imgur.com/t97o9Pi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(217, 'ursaring', 217, 18, 1258, 175, 300, 1, 1 , null , 'https://i.imgur.com/Tc3EoKq.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(218, 'slugma', 218, 7, 350, 50, 301, 1, 10 , null , 'https://i.imgur.com/cPQqSPq.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(219, 'magcargo', 219, 8, 550, 151, 302, 1, 10, 6, 'https://i.imgur.com/RFm2D3t.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(220, 'swinub', 220, 4, 65, 50, 303, 1, 15 , 5 , 'https://i.imgur.com/n1RZj7H.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(221, 'piloswine', 221, 11, 558, 158, 304, 1, 15 , 5 , 'https://i.imgur.com/lu4vL81.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(222, 'corsola', 222, 6, 50, 144, 306, 1, 11, 6 , 'https://i.imgur.com/hjAo5l3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(223, 'remoraid', 223, 6, 120, 60, 307, 1, 11 , null , 'https://i.imgur.com/UMAAh8r.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(224, 'octillery', 224, 9, 285, 168, 308, 1, 11 , null , 'https://i.imgur.com/cWXIL1f.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(225, 'delibird', 225, 9, 160, 116, 309, 1, 15 , 3 , 'https://i.imgur.com/t42uspk.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(226, 'mantine', 226, 21, 2200, 170, 311, 1, 11 , 3, 'https://i.imgur.com/cilw1JG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(227, 'skarmory', 227, 17, 505, 163, 312, 1, 9 , 3 , 'https://i.imgur.com/v5XGTTD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(228, 'houndour', 228, 6, 108, 66, 313, 1, 17 , 10 , 'https://i.imgur.com/ProLCOT.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(229, 'houndoom', 229, 14, 350, 175, 314, 1, 17 , 10 , 'https://i.imgur.com/tPNaABY.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(230, 'kingdra', 230, 18, 1520, 243, 178, 1, 11 , 16 , 'https://i.imgur.com/SUwAy9T.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(231, 'phanpy', 231, 5, 335, 66, 316, 1, 5, null, 'https://i.imgur.com/LCdC2Uq.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(232, 'donphan', 232, 11, 1200, 175, 317, 1, 5 , null , 'https://i.imgur.com/6Xh5ABn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(233, 'porygon2', 233, 6, 325, 180, 214, 1, 1 , null , 'https://i.imgur.com/pn1oBuL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(234, 'stantler', 234, 14, 712, 163, 318, 1, 1 , null , 'https://i.imgur.com/j9CXhdP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(235, 'smeargle', 235, 12, 580, 88, 319, 1, 1 , null , 'https://i.imgur.com/e5hKAk2.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(236, 'tyrogue', 236, 7, 210, 42, 158, 1, 2 , null , 'https://i.imgur.com/lIZkoML.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(237, 'hitmontop', 237, 14, 480, 159, 161, 1, 2 , null , 'https://i.imgur.com/dsBqVtG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(238, 'smoochum', 238, 4, 60, 61, 188, 1, 15 , 14 , 'https://i.imgur.com/rs1H93C.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(239, 'elekid', 239, 6, 235, 72, 190, 1, 13 , null , 'https://i.imgur.com/MFqbqnH.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(240, 'magby', 240, 7, 214, 73, 193, 1, 10 , null , 'https://i.imgur.com/cWtsJMS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(241, 'miltank', 241, 12, 755, 172, 320, 1, 1, null , 'https://i.imgur.com/fp84xqR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(242, 'blissey', 242, 15, 468, 608, 171, 1, 1 , null , 'https://i.imgur.com/t5iEfIp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(243, 'raikou', 243, 19, 1780, 261, 321, 1, 13 , null , 'https://i.imgur.com/lyXMM1q.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(244, 'entei', 244, 21, 1980, 261, 322, 1, 10 , null , 'https://i.imgur.com/DXsEPbv.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(245, 'suicune', 245, 20, 1870, 261, 323, 1, 11 , null , 'https://i.imgur.com/iZw50ec.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(246, 'larvitar', 246, 6, 720, 60, 324, 1, 6, 5 , 'https://i.imgur.com/OhaI0HK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(247, 'pupitar', 247, 12, 1520, 144, 325, 1, 6 , 5 , 'https://i.imgur.com/7l4aAJb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(248, 'tyranitar', 248, 20, 2020, 270, 326, 1, 6, 17, 'https://i.imgur.com/CBmGxFx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(249, 'lugia', 249, 52, 2160, 306, 328, 1, 14, 3 , 'https://i.imgur.com/M4aezrQ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(250, 'ho-oh', 250, 38, 1990, 306, 329, 1, 10 , 3 , 'https://i.imgur.com/M5jNuql.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(251, 'celebi', 251, 6, 50, 270, 330, 1, 14 , 12 , 'https://i.imgur.com/pX3hdvm.jpg');
---------------------------------------------------------------------------------------------------------------------------------------------------------------------,,------------------------------------
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(252, 'treecko', 252, 5, 50, 62, 331, 1, 12 , null , 'https://i.imgur.com/fPgc1Mw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(253, 'grovyle', 253, 9, 216, 142, 332, 1, 12  , null  , 'https://i.imgur.com/muWTCel.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(254, 'sceptile', 254, 17, 522, 239, 333, 1, 12 , null  , 'https://i.imgur.com/TY01XGb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(255, 'torchic', 255, 4, 25, 62, 335, 1, 10  , null , 'https://i.imgur.com/5rMZVBB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(256, 'combusken', 256, 9, 195, 142, 336, 1, 10 , 2  , 'https://i.imgur.com/GorCXCB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(257, 'blaziken', 257, 19, 520, 239, 337, 1, 10 , 2 , 'https://i.imgur.com/4p2fGGb.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(258, 'mudkip', 258, 4, 76, 62, 339, 1, 11 , null  , 'https://i.imgur.com/ymHD8LQ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(259, 'marshtomp', 259, 7, 280, 142, 340, 1, 11 , 5  , 'https://i.imgur.com/6gH46ZS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(260, 'swampert', 260, 15, 819, 241, 341, 1, 11  , 5  , 'https://i.imgur.com/WnSJ9bB.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(261, 'poochyena', 261, 5, 136, 56, 343, 1, 17 , null  , 'https://i.imgur.com/PkvEKks.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(262, 'mightyena', 262, 10, 370, 147, 344, 1, 17  , null  , 'https://i.imgur.com/8tSKuVz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(263, 'zigzagoon', 263, 4, 175, 56, 345, 1, 1 , null  , 'https://i.imgur.com/ZXFsElf.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(264, 'linoone', 264, 5, 325, 147, 346, 1, 1  , null  , 'https://i.imgur.com/BZQUbYn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(265, 'wurmple', 265, 3, 36, 56, 347, 1, 7  , null  , 'https://i.imgur.com/haBgivl.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(266, 'silcoon', 266, 6, 100, 72, 348, 1, 7 , null  , 'https://i.imgur.com/SAaUl31.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(267, 'beautifly', 267, 10, 284, 178, 349, 1, 7  , 3  , 'https://i.imgur.com/5OOQics.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(268, 'cascoon', 268, 7, 115, 72, 350, 1, 7 , null  , 'https://i.imgur.com/eWqVRAC.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(269, 'dustox', 269, 12, 316, 173, 351, 1, 7  , 4  , 'https://i.imgur.com/Um0uqST.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(270, 'lotad', 270, 5, 26, 44, 352, 1, 11 , 12  , 'https://i.imgur.com/MBWzczi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(271, 'lombre', 271, 12, 325, 119, 353, 1, 11 , 12  , 'https://i.imgur.com/zvX0U7t.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(272, 'ludicolo', 272, 15, 550, 216, 354, 1, 11 , 12  , 'https://i.imgur.com/LjG5b6d.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(273, 'seedot', 273, 5, 40, 44, 355, 1, 12 , null  , 'https://i.imgur.com/3QcBLhP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(274, 'nuzleaf', 274, 10, 280, 119, 356, 1, 12, 17 , 'https://i.imgur.com/ggD6aeK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(275, 'shiftry', 275, 13, 596, 216, 357, 1, 12  , 17  , 'https://i.imgur.com/PVC5jTp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(276, 'taillow', 276, 3, 23, 54, 358, 1, 1  , 3  , 'https://i.imgur.com/IlaHz05.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(277, 'swellow', 277, 7, 198, 159, 359, 1, 1 , 3  , 'https://i.imgur.com/m7RcThg.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(278, 'wingull', 278, 6, 95, 54, 360, 1, 11 , 3  , 'https://i.imgur.com/Ld9e4ik.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(279, 'pelipper', 279, 12, 280, 154, 361, 1, 11  , 3  , 'https://i.imgur.com/PmrKTgm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(280, 'ralts', 280, 4, 66, 40, 362, 1, 14  , 18  , 'https://i.imgur.com/7hTqtT3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(281, 'kirlia', 281, 8, 202, 97, 363, 1, 14  , 18  , 'https://i.imgur.com/WuioKT3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(282, 'gardevoir', 282, 16, 484, 233, 364, 1, 14 , 18 , 'https://i.imgur.com/jmqBMgU.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(283, 'surskit', 283, 5, 17, 54, 368, 1, 7 , 11  , 'https://i.imgur.com/XPqconP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(284, 'masquerain', 284, 8, 36, 159, 369, 1, 7 , 3 , 'https://i.imgur.com/HK3TCFj.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(285, 'shroomish', 285, 4, 45, 59, 370, 1, 12 , null  , 'https://i.imgur.com/pVQUYQI.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(286, 'breloom', 286, 12, 392, 161, 371, 1, 12  , 2  , 'https://i.imgur.com/5oQPYmn.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(287, 'slakoth', 287, 8, 240, 56, 372, 1, 1  , null  , 'https://i.imgur.com/WT5D7q5.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(288, 'vigoroth', 288, 14, 465, 154, 373, 1, 1 , null  , 'https://i.imgur.com/OPZ2h1B.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(289, 'slaking', 289, 20, 1305, 252, 374, 1, 1 , null , 'https://i.imgur.com/hrlS1Zk.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(290, 'nincada', 290, 5, 55, 53, 375, 1, 7 , 5  , 'https://i.imgur.com/cnPHboz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(291, 'ninjask', 291, 8, 120, 160, 376, 1, 7 , 3  , 'https://i.imgur.com/Npimx84.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(292, 'shedinja', 292, 8, 12, 83, 377, 1, 7  , 8  , 'https://i.imgur.com/LyRbySd.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(293, 'whismur', 293, 6, 163, 48, 378, 1, 1 , null  , 'https://i.imgur.com/KhloBJw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(294, 'loudred', 294, 10, 405, 126, 379, 1, 1  , null  , 'https://i.imgur.com/MYKi2u6.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(295, 'exploud', 295, 15, 840, 221, 380, 1, 1 , null , 'https://i.imgur.com/aCjg8Xd.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(296, 'makuhita', 296, 10, 864, 47, 381, 1, 2  , null  , 'https://i.imgur.com/jpUdWiS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(297, 'hariyama', 297, 23, 2538, 166, 382, 1, 2 , null , 'https://i.imgur.com/xtNIeRD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(298, 'azurill', 298, 2, 20, 38, 262, 1, 1, 18 , 'https://i.imgur.com/zIwqsMw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(299, 'nosepass', 299, 10, 970, 75, 383, 1, 6 , null  , 'https://i.imgur.com/IG6l78a.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(300, 'skitty', 300, 6, 110, 52, 385, 1, 1  , null  , 'https://i.imgur.com/sYRWSvP.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(301, 'delcatty', 301, 11, 326, 140, 386, 1, 1, null  , 'https://i.imgur.com/WptCDaL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(302, 'sableye', 302, 5, 110, 133, 387, 1, 17 , 8  , 'https://i.imgur.com/37zYzVu.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(303, 'mawile', 303, 6, 115, 133, 389, 1, 9 , 18  , 'https://i.imgur.com/6zxrhXq.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(304, 'aron', 304, 4, 600, 66, 391, 1, 9  , 6  , 'https://i.imgur.com/HOI9840.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(305, 'lairon', 305, 9, 1200, 151, 392, 1, 9 , 6  , 'https://i.imgur.com/nE09V3I.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(306, 'aggron', 306, 21, 3600, 239, 393, 1, 9  , 6  , 'https://i.imgur.com/9hunFzV.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(307, 'meditite', 307, 6, 112, 56, 395, 1, 2  , 14  , 'https://i.imgur.com/EdJoIOZ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(308, 'medicham', 308, 13, 315, 144, 396, 1, 2  , 14  , 'https://i.imgur.com/c1qPGZU.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(309, 'electrike', 309, 6, 152, 59, 398, 1, 13 , null , 'https://i.imgur.com/Cwsl7ZC.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(310, 'manectric', 310, 15, 402, 166, 399, 1, 13 , null , 'https://i.imgur.com/cMCwGQ9.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(311, 'plusle', 311, 4, 42, 142, 401, 1, 13  , null  , 'https://i.imgur.com/uZgUjq8.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(312, 'minun', 312, 4, 42, 142, 402, 1, 13  , null  , 'https://i.imgur.com/n7BG5U7.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(313, 'volbeat', 313, 7, 177, 151, 403, 1, 7 , null  , 'https://i.imgur.com/L9DaOBR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(314, 'illumise', 314, 6, 177, 151, 404, 1, 7 , null  , 'https://i.imgur.com/X1r2v3a.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(315, 'roselia', 315, 3, 20, 140, 406, 1, 12  , 4  , 'https://i.imgur.com/jOxXzBW.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(316, 'gulpin', 316, 4, 103, 60, 408, 1, 4  , null  , 'https://i.imgur.com/iJejJdS.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(317, 'swalot', 317, 17, 800, 163, 409, 1, 4 , null  , 'https://i.imgur.com/mfuO8RR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(318, 'carvanha', 318, 8, 208, 61, 410, 1, 11 , 17  , 'https://i.imgur.com/FbTL17D.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(319, 'sharpedo', 319, 18, 888, 161, 411, 1, 11 , 17  , 'https://i.imgur.com/HcGir7W.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(320, 'wailmer', 320, 20, 1300, 80, 413, 1, 11, null , 'https://i.imgur.com/8ZZp7sR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(321, 'wailord', 321, 145, 3980, 175, 414, 1, 11 , null  , 'https://i.imgur.com/iQJGhVX.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(322, 'numel', 322, 7, 240, 61, 415, 1, 10 , 5 , 'https://i.imgur.com/vfkW7UO.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(323, 'camerupt', 323, 19, 2200, 161, 416, 1, 10 , 5  , 'https://i.imgur.com/vfm2sLp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(324, 'torkoal', 324, 5, 804, 165, 418, 1, 10 , null  , 'https://i.imgur.com/704TRX6.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(325, 'spoink', 325, 7, 306, 66, 419, 1, 14 , null  , 'https://i.imgur.com/GlzEcBi.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(326, 'grumpig', 326, 9, 715, 165, 420, 1, 14 , null  , 'https://i.imgur.com/eyZRx1I.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(327, 'spinda', 327, 11, 50, 126, 421, 1, 1 , null  , 'https://i.imgur.com/cKgfTsF.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(328, 'trapinch', 328, 7, 150, 58, 422, 1, 5 , null  , 'https://i.imgur.com/W47kOGL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(329, 'vibrava', 329, 11, 153, 119, 423, 1, 5  , null  , 'https://i.imgur.com/zrEn9nj.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(330, 'flygon', 330, 20, 820, 234, 424, 1, 5 , 16  , 'https://i.imgur.com/XDjQfq1.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(331, 'cacnea', 331, 4, 513, 67, 425, 1, 12  , null  , 'https://i.imgur.com/dxtotkG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(332, 'cacturne', 332, 13, 774, 166, 426, 1, 12 , 17  , 'https://i.imgur.com/SMS6aex.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(333, 'swablu', 333, 4, 12, 62, 427, 1, 1 , 3  , 'https://i.imgur.com/owJ3HE8.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(334, 'altaria', 334, 11, 206, 172, 428, 1, 16 , 3  , 'https://i.imgur.com/YDNEASN.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(335, 'zangoose', 335, 13, 403, 160, 430, 1, 1 , null  , 'https://i.imgur.com/3ebsj4W.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(336, 'seviper', 336, 27, 525, 160, 431, 1, 4 , null  , 'https://i.imgur.com/pS42Vho.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(337, 'lunatone', 337, 10, 1680, 161, 432, 1, 6 , 14 , 'https://i.imgur.com/0T0qpQK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(338, 'solrock', 338, 12, 1540, 161, 433, 1, 6 , 14  , 'https://i.imgur.com/qitRA2N.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(339, 'barboach', 339, 4, 19, 58, 434, 1, 11  , 5  , 'https://i.imgur.com/ZGe2P6D.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(340, 'whiscash', 340, 9, 236, 164, 435, 1, 11 , 5  , 'https://i.imgur.com/Mrwkcpp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(341, 'corphish', 341, 6, 115, 62, 436, 1, 11 , null  , 'https://i.imgur.com/Oqzeisu.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(342, 'crawdaunt', 342, 11, 328, 164, 437, 1, 11 , 17  , 'https://i.imgur.com/9UueRTu.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(343, 'baltoy', 343, 5, 215, 60, 438, 1, 5  , 14  , 'https://i.imgur.com/qpc6R5l.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(344, 'claydol', 344, 15, 1080, 175, 439, 1, 5  , 14  , 'https://i.imgur.com/CfIhNEG.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(345, 'lileep', 345, 10, 238, 71, 440, 1, 6  , 12  , 'https://i.imgur.com/svVrE1x.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(346, 'cradily', 346, 15, 604, 173, 441, 1, 6  , 12  , 'https://i.imgur.com/wAJqpYw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(347, 'anorith', 347, 7, 125, 71, 442, 1, 6 , 7 , 'https://i.imgur.com/aBHrpnU.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(348, 'armaldo', 348, 15, 682, 173, 443, 1, 6 , 7  , 'https://i.imgur.com/xIfrTNK.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(349, 'feebas', 349, 6, 74, 40, 444, 1, 11 , null  , 'https://i.imgur.com/LyqxXxc.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(350, 'milotic', 350, 62, 1620, 189, 445, 1, 11 , null  , 'https://i.imgur.com/r94ZyHt.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(351, 'castform', 351, 3, 8, 147, 446, 1, 1  , null  , 'https://i.imgur.com/S7EUOkD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(352, 'kecleon', 352, 10, 220, 154, 450, 1, 1 , null  , 'https://i.imgur.com/MT8wKrR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(353, 'shuppet', 353, 6, 23, 59, 451, 1, 8 , null  , 'https://i.imgur.com/5EeKUqh.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(354, 'banette', 354, 11, 125, 159, 452, 1, 8 , null  , 'https://i.imgur.com/S3bmXcR.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(355, 'duskull', 355, 8, 150, 59, 454, 1, 8 , null  , 'https://i.imgur.com/9wH8naW.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(356, 'dusclops', 356, 16, 306, 159, 455, 1, 8  , null  , 'https://i.imgur.com/hPBpfU9.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(357, 'tropius', 357, 20, 1000, 161, 457, 1, 12 , 3 , 'https://i.imgur.com/QuS5We8.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(358, 'chimecho', 358, 6, 10, 159, 459, 1, 14 , null  , 'https://i.imgur.com/vUoX6JW.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(359, 'absol', 359, 12, 470, 163, 460, 1, 17  , null  , 'https://i.imgur.com/WlDf3Jx.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(360, 'wynaut', 360, 6, 140, 52, 283, 1, 14 , null  , 'https://i.imgur.com/eTkExLJ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(361, 'snorunt', 361, 7, 168, 60, 462, 1, 15  , null  , 'https://i.imgur.com/WTegvJX.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(362, 'glalie', 362, 15, 2565, 168, 463, 1, 15 , null , 'https://i.imgur.com/jCUqf6i.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(363, 'spheal', 363, 8, 395, 58, 466, 1, 15 , 11  , 'https://i.imgur.com/SuhkHxp.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(364, 'sealeo', 364, 11, 876, 144, 467, 1, 15 , 11  , 'https://i.imgur.com/TcN0LSQ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(365, 'walrein', 365, 14, 1506, 239, 468, 1, 15  , 11 , 'https://i.imgur.com/AmnVY31.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(366, 'clamperl', 366, 4, 525, 69, 469, 1, 11 , null , 'https://i.imgur.com/dGbSDlD.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(367, 'huntail', 367, 17, 270, 170, 470, 1, 11 , null , 'https://i.imgur.com/am4Q5lm.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(368, 'gorebyss', 368, 18, 226, 170, 471, 1, 11  , null  , 'https://i.imgur.com/UrfGf0Q.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(369, 'relicanth', 369, 10, 234, 170, 472, 1, 11 , 6  , 'https://i.imgur.com/tOdkB1G.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(370, 'luvdisc', 370, 6, 87, 116, 473, 1, 11 , null  , 'https://i.imgur.com/GmT7fFr.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(371, 'bagon', 371, 6, 421, 60, 474, 1, 16  , null  , 'https://i.imgur.com/wPFLkTJ.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(372, 'shelgon', 372, 11, 1105, 147, 475, 1, 16 , null , 'https://i.imgur.com/XCztMvL.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(373, 'salamence', 373, 15, 1026, 270, 476, 1, 16 , 3  , 'https://i.imgur.com/1OyBPPs.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(374, 'beldum', 374, 6, 952, 60, 478, 1, 9 , 14 , 'https://i.imgur.com/W3Qr55d.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(375, 'metang', 375, 12, 2025, 147, 479, 1, 9 , 14 , 'https://i.imgur.com/ZcD83z1.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(376, 'metagross', 376, 16, 5500, 270, 480, 1, 9 , 14  , 'https://i.imgur.com/VOvlce3.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(377, 'regirock', 377, 17, 2300, 261, 482, 1, 6  , null , 'https://i.imgur.com/xgZGlHc.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(378, 'regice', 378, 18, 1750, 261, 483, 1, 15  , null, 'https://i.imgur.com/bPUjnxw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(379, 'registeel', 379, 19, 2050, 261, 484, 1, 9 , null , 'https://i.imgur.com/bPUjnxw.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(380, 'latias', 380, 14, 400, 270, 485, 1, 16 , 14, 'https://i.imgur.com/OvwUo2q.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(381, 'latios', 381, 20, 600, 270, 487, 1, 16 , 14 , 'https://i.imgur.com/sy1eLIe.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(382, 'kyogre', 382, 45, 3520, 302, 489, 1, 11  , null , 'https://i.imgur.com/IZlyi0c.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(383, 'groudon', 383, 35, 9500, 302, 491, 1, 5  , null  , 'https://i.imgur.com/R3GcaOz.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(384, 'rayquaza', 384, 70, 2065, 306, 493, 1, 16 , 3  , 'https://i.imgur.com/6cJHaYr.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(385, 'jirachi', 385, 3, 11, 270, 495, 1, 9 , 14  , 'https://i.imgur.com/Nw8R3az.jpg');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(386, 'deoxys', 386, 17, 608, 270, 496, 1, 14  , null  , 'https://i.imgur.com/UyVcPBR.jpg');
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(387, 'turtwig', 387, 4, 102, 64, 500, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(388, 'grotle', 388, 11, 970, 142, 501, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(389, 'torterra', 389, 22, 3100, 236, 502, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(390, 'chimchar', 390, 5, 62, 62, 503, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(391, 'monferno', 391, 9, 220, 142, 504, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(392, 'infernape', 392, 12, 550, 240, 505, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(393, 'piplup', 393, 4, 52, 63, 506, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(394, 'prinplup', 394, 8, 230, 142, 507, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(395, 'empoleon', 395, 17, 845, 239, 508, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(396, 'starly', 396, 3, 20, 49, 509, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(397, 'staravia', 397, 6, 155, 119, 510, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(398, 'staraptor', 398, 12, 249, 218, 511, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(399, 'bidoof', 399, 5, 200, 50, 512, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(400, 'bibarel', 400, 10, 315, 144, 513, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(401, 'kricketot', 401, 3, 22, 39, 514, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(402, 'kricketune', 402, 10, 255, 134, 515, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(403, 'shinx', 403, 5, 95, 53, 516, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(404, 'luxio', 404, 9, 305, 127, 517, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(405, 'luxray', 405, 14, 420, 235, 518, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(406, 'budew', 406, 2, 12, 56, 405, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(407, 'roserade', 407, 9, 145, 232, 407, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(408, 'cranidos', 408, 9, 315, 70, 519, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(409, 'rampardos', 409, 16, 1025, 173, 520, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(410, 'shieldon', 410, 5, 570, 70, 521, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(411, 'bastiodon', 411, 13, 1495, 173, 522, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(412, 'burmy', 412, 2, 34, 45, 523, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(413, 'wormadam-plant', 413, 5, 65, 148, 524, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(414, 'mothim', 414, 9, 233, 148, 527, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(415, 'combee', 415, 3, 55, 49, 528, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(416, 'vespiquen', 416, 12, 385, 166, 529, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(417, 'pachirisu', 417, 4, 39, 142, 530, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(418, 'buizel', 418, 7, 295, 66, 531, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(419, 'floatzel', 419, 11, 335, 173, 532, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(420, 'cherubi', 420, 4, 33, 55, 533, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(421, 'cherrim', 421, 5, 93, 158, 534, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(422, 'shellos', 422, 3, 63, 65, 535, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(423, 'gastrodon', 423, 9, 299, 166, 536, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(424, 'ambipom', 424, 12, 203, 169, 271, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(425, 'drifloon', 425, 4, 12, 70, 537, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(426, 'drifblim', 426, 12, 150, 174, 538, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(427, 'buneary', 427, 4, 55, 70, 539, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(428, 'lopunny', 428, 12, 333, 168, 540, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(429, 'mismagius', 429, 9, 44, 173, 281, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(430, 'honchkrow', 430, 9, 273, 177, 279, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(431, 'glameow', 431, 5, 39, 62, 542, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(432, 'purugly', 432, 10, 438, 158, 543, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(433, 'chingling', 433, 2, 6, 57, 458, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(434, 'stunky', 434, 4, 192, 66, 544, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(435, 'skuntank', 435, 10, 380, 168, 545, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(436, 'bronzor', 436, 5, 605, 60, 546, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(437, 'bronzong', 437, 13, 1870, 175, 547, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(438, 'bonsly', 438, 5, 150, 58, 265, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(439, 'mime-jr', 439, 6, 130, 62, 183, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(440, 'happiny', 440, 6, 244, 110, 169, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(441, 'chatot', 441, 5, 19, 144, 548, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(442, 'spiritomb', 442, 10, 1080, 170, 549, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(443, 'gible', 443, 7, 205, 60, 550, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(444, 'gabite', 444, 14, 560, 144, 551, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(445, 'garchomp', 445, 19, 950, 270, 552, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(446, 'munchlax', 446, 6, 1050, 78, 222, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(447, 'riolu', 447, 7, 202, 57, 554, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(448, 'lucario', 448, 12, 540, 184, 555, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(449, 'hippopotas', 449, 8, 495, 66, 557, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(450, 'hippowdon', 450, 20, 3000, 184, 558, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(451, 'skorupi', 451, 8, 120, 66, 559, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(452, 'drapion', 452, 13, 615, 175, 560, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(453, 'croagunk', 453, 7, 230, 60, 561, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(454, 'toxicroak', 454, 13, 444, 172, 562, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(455, 'carnivine', 455, 14, 270, 159, 563, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(456, 'finneon', 456, 4, 70, 66, 564, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(457, 'lumineon', 457, 12, 240, 161, 565, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(458, 'mantyke', 458, 10, 650, 69, 310, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(459, 'snover', 459, 10, 505, 67, 566, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(460, 'abomasnow', 460, 22, 1355, 173, 567, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(461, 'weavile', 461, 11, 340, 179, 298, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(462, 'magnezone', 462, 12, 1800, 241, 126, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(463, 'lickilicky', 463, 17, 1400, 180, 163, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(464, 'rhyperior', 464, 24, 2828, 241, 168, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(465, 'tangrowth', 465, 20, 1286, 187, 173, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(466, 'electivire', 466, 18, 1386, 243, 192, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(467, 'magmortar', 467, 16, 680, 243, 195, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(468, 'togekiss', 468, 15, 380, 245, 255, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(469, 'yanmega', 469, 19, 515, 180, 275, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(470, 'leafeon', 470, 10, 255, 184, 210, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(471, 'glaceon', 471, 8, 259, 184, 211, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(472, 'gliscor', 472, 20, 425, 179, 290, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(473, 'mamoswine', 473, 25, 2910, 239, 305, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(474, 'porygon-z', 474, 9, 340, 241, 215, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(475, 'gallade', 475, 16, 520, 233, 366, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(476, 'probopass', 476, 14, 3400, 184, 384, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(477, 'dusknoir', 477, 22, 1066, 236, 456, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(478, 'froslass', 478, 13, 266, 168, 465, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(479, 'rotom', 479, 3, 3, 154, 569, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(480, 'uxie', 480, 3, 3, 261, 575, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(481, 'mesprit', 481, 3, 3, 261, 576, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(482, 'azelf', 482, 3, 3, 261, 577, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(483, 'dialga', 483, 54, 6830, 306, 578, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(484, 'palkia', 484, 42, 3360, 306, 579, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(485, 'heatran', 485, 17, 4300, 270, 580, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(486, 'regigigas', 486, 37, 4200, 302, 581, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(487, 'giratina-altered', 487, 45, 7500, 306, 582, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(488, 'cresselia', 488, 15, 856, 270, 584, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(489, 'phione', 489, 4, 31, 216, 585, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(490, 'manaphy', 490, 3, 14, 270, 586, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(491, 'darkrai', 491, 15, 505, 270, 587, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(492, 'shaymin-land', 492, 2, 21, 270, 588, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(493, 'arceus', 493, 32, 3200, 324, 590, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(494, 'victini', 494, 4, 40, 270, 591, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(495, 'snivy', 495, 6, 81, 62, 592, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(496, 'servine', 496, 8, 160, 145, 593, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(497, 'serperior', 497, 33, 630, 238, 594, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(498, 'tepig', 498, 5, 99, 62, 595, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(499, 'pignite', 499, 10, 555, 146, 596, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(500, 'emboar', 500, 16, 1500, 238, 597, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(501, 'oshawott', 501, 5, 59, 62, 598, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(502, 'dewott', 502, 8, 245, 145, 599, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(503, 'samurott', 503, 15, 946, 238, 600, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(504, 'patrat', 504, 5, 116, 51, 601, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(505, 'watchog', 505, 11, 270, 147, 602, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(506, 'lillipup', 506, 4, 41, 55, 603, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(507, 'herdier', 507, 9, 147, 130, 604, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(508, 'stoutland', 508, 12, 610, 225, 605, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(509, 'purrloin', 509, 4, 101, 56, 606, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(510, 'liepard', 510, 11, 375, 156, 607, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(511, 'pansage', 511, 6, 105, 63, 608, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(512, 'simisage', 512, 11, 305, 174, 609, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(513, 'pansear', 513, 6, 110, 63, 610, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(514, 'simisear', 514, 10, 280, 174, 611, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(515, 'panpour', 515, 6, 135, 63, 612, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(516, 'simipour', 516, 10, 290, 174, 613, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(517, 'munna', 517, 6, 233, 58, 614, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(518, 'musharna', 518, 11, 605, 170, 615, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(519, 'pidove', 519, 3, 21, 53, 616, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(520, 'tranquill', 520, 6, 150, 125, 617, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(521, 'unfezant', 521, 12, 290, 220, 618, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(522, 'blitzle', 522, 8, 298, 59, 619, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(523, 'zebstrika', 523, 16, 795, 174, 620, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(524, 'roggenrola', 524, 4, 180, 56, 621, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(525, 'boldore', 525, 9, 1020, 137, 622, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(526, 'gigalith', 526, 17, 2600, 232, 623, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(527, 'woobat', 527, 4, 21, 65, 624, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(528, 'swoobat', 528, 9, 105, 149, 625, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(529, 'drilbur', 529, 3, 85, 66, 626, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(530, 'excadrill', 530, 7, 404, 178, 627, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(531, 'audino', 531, 11, 310, 390, 628, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(532, 'timburr', 532, 6, 125, 61, 630, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(533, 'gurdurr', 533, 12, 400, 142, 631, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(534, 'conkeldurr', 534, 14, 870, 227, 632, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(535, 'tympole', 535, 5, 45, 59, 633, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(536, 'palpitoad', 536, 8, 170, 134, 634, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(537, 'seismitoad', 537, 15, 620, 229, 635, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(538, 'throh', 538, 13, 555, 163, 636, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(539, 'sawk', 539, 14, 510, 163, 637, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(540, 'sewaddle', 540, 3, 25, 62, 638, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(541, 'swadloon', 541, 5, 73, 133, 639, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(542, 'leavanny', 542, 12, 205, 225, 640, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(543, 'venipede', 543, 4, 53, 52, 641, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(544, 'whirlipede', 544, 12, 585, 126, 642, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(545, 'scolipede', 545, 25, 2005, 218, 643, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(546, 'cottonee', 546, 3, 6, 56, 644, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(547, 'whimsicott', 547, 7, 66, 168, 645, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(548, 'petilil', 548, 5, 66, 56, 646, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(549, 'lilligant', 549, 11, 163, 168, 647, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(550, 'basculin-red-striped', 550, 10, 180, 161, 648, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(551, 'sandile', 551, 7, 152, 58, 650, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(552, 'krokorok', 552, 10, 334, 123, 651, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(553, 'krookodile', 553, 15, 963, 234, 652, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(554, 'darumaka', 554, 6, 375, 63, 653, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(555, 'darmanitan-standard', 555, 13, 929, 168, 654, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(556, 'maractus', 556, 10, 280, 161, 656, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(557, 'dwebble', 557, 3, 145, 65, 657, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(558, 'crustle', 558, 14, 2000, 170, 658, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(559, 'scraggy', 559, 6, 118, 70, 659, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(560, 'scrafty', 560, 11, 300, 171, 660, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(561, 'sigilyph', 561, 14, 140, 172, 661, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(562, 'yamask', 562, 5, 15, 61, 662, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(563, 'cofagrigus', 563, 17, 765, 169, 663, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(564, 'tirtouga', 564, 7, 165, 71, 664, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(565, 'carracosta', 565, 12, 810, 173, 665, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(566, 'archen', 566, 5, 95, 71, 666, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(567, 'archeops', 567, 14, 320, 177, 667, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(568, 'trubbish', 568, 6, 310, 66, 668, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(569, 'garbodor', 569, 19, 1073, 166, 669, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(570, 'zorua', 570, 7, 125, 66, 670, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(571, 'zoroark', 571, 16, 811, 179, 671, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(572, 'minccino', 572, 4, 58, 60, 672, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(573, 'cinccino', 573, 5, 75, 165, 673, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(574, 'gothita', 574, 4, 58, 58, 674, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(575, 'gothorita', 575, 7, 180, 137, 675, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(576, 'gothitelle', 576, 15, 440, 221, 676, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(577, 'solosis', 577, 3, 10, 58, 677, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(578, 'duosion', 578, 6, 80, 130, 678, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(579, 'reuniclus', 579, 10, 201, 221, 679, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(580, 'ducklett', 580, 5, 55, 61, 680, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(581, 'swanna', 581, 13, 242, 166, 681, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(582, 'vanillite', 582, 4, 57, 61, 682, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(583, 'vanillish', 583, 11, 410, 138, 683, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(584, 'vanilluxe', 584, 13, 575, 241, 684, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(585, 'deerling', 585, 6, 195, 67, 685, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(586, 'sawsbuck', 586, 19, 925, 166, 686, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(587, 'emolga', 587, 4, 50, 150, 687, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(588, 'karrablast', 588, 5, 59, 63, 688, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(589, 'escavalier', 589, 10, 330, 173, 689, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(590, 'foongus', 590, 2, 10, 59, 690, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(591, 'amoonguss', 591, 6, 105, 162, 691, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(592, 'frillish', 592, 12, 330, 67, 692, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(593, 'jellicent', 593, 22, 1350, 168, 693, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(594, 'alomomola', 594, 12, 316, 165, 694, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(595, 'joltik', 595, 1, 6, 64, 695, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(596, 'galvantula', 596, 8, 143, 165, 696, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(597, 'ferroseed', 597, 6, 188, 61, 697, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(598, 'ferrothorn', 598, 10, 1100, 171, 698, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(599, 'klink', 599, 3, 210, 60, 699, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(600, 'klang', 600, 6, 510, 154, 700, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(601, 'klinklang', 601, 6, 810, 234, 701, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(602, 'tynamo', 602, 2, 3, 55, 702, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(603, 'eelektrik', 603, 12, 220, 142, 703, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(604, 'eelektross', 604, 21, 805, 232, 704, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(605, 'elgyem', 605, 5, 90, 67, 705, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(606, 'beheeyem', 606, 10, 345, 170, 706, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(607, 'litwick', 607, 3, 31, 55, 707, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(608, 'lampent', 608, 6, 130, 130, 708, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(609, 'chandelure', 609, 10, 343, 234, 709, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(610, 'axew', 610, 6, 180, 64, 710, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(611, 'fraxure', 611, 10, 360, 144, 711, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(612, 'haxorus', 612, 18, 1055, 243, 712, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(613, 'cubchoo', 613, 5, 85, 61, 713, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(614, 'beartic', 614, 26, 2600, 177, 714, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(615, 'cryogonal', 615, 11, 1480, 180, 715, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(616, 'shelmet', 616, 4, 77, 61, 716, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(617, 'accelgor', 617, 8, 253, 173, 717, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(618, 'stunfisk', 618, 7, 110, 165, 718, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(619, 'mienfoo', 619, 9, 200, 70, 719, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(620, 'mienshao', 620, 14, 355, 179, 720, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(621, 'druddigon', 621, 16, 1390, 170, 721, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(622, 'golett', 622, 10, 920, 61, 722, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(623, 'golurk', 623, 28, 3300, 169, 723, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(624, 'pawniard', 624, 5, 102, 68, 724, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(625, 'bisharp', 625, 16, 700, 172, 725, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(626, 'bouffalant', 626, 16, 946, 172, 726, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(627, 'rufflet', 627, 5, 105, 70, 727, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(628, 'braviary', 628, 15, 410, 179, 728, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(629, 'vullaby', 629, 5, 90, 74, 729, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(630, 'mandibuzz', 630, 12, 395, 179, 730, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(631, 'heatmor', 631, 14, 580, 169, 731, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(632, 'durant', 632, 3, 330, 169, 732, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(633, 'deino', 633, 8, 173, 60, 733, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(634, 'zweilous', 634, 14, 500, 147, 734, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(635, 'hydreigon', 635, 18, 1600, 270, 735, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(636, 'larvesta', 636, 11, 288, 72, 736, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(637, 'volcarona', 637, 16, 460, 248, 737, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(638, 'cobalion', 638, 21, 2500, 261, 738, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(639, 'terrakion', 639, 19, 2600, 261, 739, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(640, 'virizion', 640, 20, 2000, 261, 740, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(641, 'tornadus-incarnate', 641, 15, 630, 261, 741, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(642, 'thundurus-incarnate', 642, 15, 610, 261, 743, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(643, 'reshiram', 643, 32, 3300, 306, 745, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(644, 'zekrom', 644, 29, 3450, 306, 746, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(645, 'landorus-incarnate', 645, 15, 680, 270, 747, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(646, 'kyurem', 646, 30, 3250, 297, 749, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(647, 'keldeo-ordinary', 647, 14, 485, 261, 752, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(648, 'meloetta-aria', 648, 6, 65, 270, 754, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(649, 'genesect', 649, 15, 825, 270, 756, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(650, 'chespin', 650, 4, 90, 63, 757, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(651, 'quilladin', 651, 7, 290, 142, 758, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(652, 'chesnaught', 652, 16, 900, 239, 759, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(653, 'fennekin', 653, 4, 94, 61, 760, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(654, 'braixen', 654, 10, 145, 143, 761, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(655, 'delphox', 655, 15, 390, 240, 762, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(656, 'froakie', 656, 3, 70, 63, 763, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(657, 'frogadier', 657, 6, 109, 142, 764, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(658, 'greninja', 658, 15, 400, 239, 765, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(659, 'bunnelby', 659, 4, 50, 47, 768, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(660, 'diggersby', 660, 10, 424, 148, 769, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(661, 'fletchling', 661, 3, 17, 56, 770, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(662, 'fletchinder', 662, 7, 160, 134, 771, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(663, 'talonflame', 663, 12, 245, 175, 772, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(664, 'scatterbug', 664, 3, 25, 40, 773, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(665, 'spewpa', 665, 3, 84, 75, 774, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(666, 'vivillon', 666, 12, 170, 185, 775, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(667, 'litleo', 667, 6, 135, 74, 776, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(668, 'pyroar', 668, 15, 815, 177, 777, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(669, 'flabebe', 669, 1, 1, 61, 778, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(670, 'floette', 670, 2, 9, 130, 779, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(671, 'florges', 671, 11, 100, 248, 781, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(672, 'skiddo', 672, 9, 310, 70, 782, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(673, 'gogoat', 673, 17, 910, 186, 783, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(674, 'pancham', 674, 6, 80, 70, 784, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(675, 'pangoro', 675, 21, 1360, 173, 785, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(676, 'furfrou', 676, 12, 280, 165, 786, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(677, 'espurr', 677, 3, 35, 71, 787, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(678, 'meowstic-male', 678, 6, 85, 163, 788, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(679, 'honedge', 679, 8, 20, 65, 790, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(680, 'doublade', 680, 8, 45, 157, 791, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(681, 'aegislash-shield', 681, 17, 530, 234, 792, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(682, 'spritzee', 682, 2, 5, 68, 794, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(683, 'aromatisse', 683, 8, 155, 162, 795, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(684, 'swirlix', 684, 4, 35, 68, 796, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(685, 'slurpuff', 685, 8, 50, 168, 797, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(686, 'inkay', 686, 4, 35, 58, 798, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(687, 'malamar', 687, 15, 470, 169, 799, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(688, 'binacle', 688, 5, 310, 61, 800, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(689, 'barbaracle', 689, 13, 960, 175, 801, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(690, 'skrelp', 690, 5, 73, 64, 802, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(691, 'dragalge', 691, 18, 815, 173, 803, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(692, 'clauncher', 692, 5, 83, 66, 804, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(693, 'clawitzer', 693, 13, 353, 100, 805, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(694, 'helioptile', 694, 5, 60, 58, 806, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(695, 'heliolisk', 695, 10, 210, 168, 807, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(696, 'tyrunt', 696, 8, 260, 72, 808, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(697, 'tyrantrum', 697, 25, 2700, 182, 809, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(698, 'amaura', 698, 13, 252, 72, 810, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(699, 'aurorus', 699, 27, 2250, 104, 811, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(700, 'sylveon', 700, 10, 235, 184, 212, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(701, 'hawlucha', 701, 8, 215, 175, 812, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(702, 'dedenne', 702, 2, 22, 151, 813, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(703, 'carbink', 703, 3, 57, 100, 814, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(704, 'goomy', 704, 3, 28, 60, 815, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(705, 'sliggoo', 705, 8, 175, 158, 816, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(706, 'goodra', 706, 20, 1505, 270, 817, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(707, 'klefki', 707, 2, 30, 165, 818, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(708, 'phantump', 708, 4, 70, 62, 819, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(709, 'trevenant', 709, 15, 710, 166, 820, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(710, 'pumpkaboo-average', 710, 4, 50, 67, 821, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(711, 'gourgeist-average', 711, 9, 125, 173, 825, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(712, 'bergmite', 712, 10, 995, 61, 829, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(713, 'avalugg', 713, 20, 5050, 180, 830, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(714, 'noibat', 714, 5, 80, 49, 831, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(715, 'noivern', 715, 15, 850, 187, 832, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(716, 'xerneas', 716, 30, 2150, 306, 833, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(717, 'yveltal', 717, 58, 2030, 306, 834, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(718, 'zygarde', 718, 50, 3050, 270, 835, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(719, 'diancie', 719, 7, 88, 270, 839, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(720, 'hoopa', 720, 5, 90, 270, 841, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(721, 'volcanion', 721, 17, 1950, 270, 843, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(722, 'rowlet', 722, 3, 15, 64, 844, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(723, 'dartrix', 723, 7, 160, 147, 845, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(724, 'decidueye', 724, 16, 366, 239, 846, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(725, 'litten', 725, 4, 43, 64, 847, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(726, 'torracat', 726, 7, 250, 147, 848, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(727, 'incineroar', 727, 18, 830, 239, 849, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(728, 'popplio', 728, 4, 75, 64, 850, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(729, 'brionne', 729, 6, 175, 147, 851, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(730, 'primarina', 730, 18, 440, 239, 852, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(731, 'pikipek', 731, 3, 12, 53, 853, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(732, 'trumbeak', 732, 6, 148, 124, 854, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(733, 'toucannon', 733, 11, 260, 218, 855, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(734, 'yungoos', 734, 4, 60, 51, 856, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(735, 'gumshoos', 735, 7, 142, 146, 857, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(736, 'grubbin', 736, 4, 44, 60, 859, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(737, 'charjabug', 737, 5, 105, 140, 860, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(738, 'vikavolt', 738, 15, 450, 225, 861, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(739, 'crabrawler', 739, 6, 70, 68, 863, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(740, 'crabominable', 740, 17, 1800, 167, 864, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(741, 'oricorio-baile', 741, 6, 34, 167, 865, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(742, 'cutiefly', 742, 1, 2, 61, 869, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(743, 'ribombee', 743, 2, 5, 162, 870, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(744, 'rockruff', 744, 5, 92, 56, 872, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(745, 'lycanroc-midday', 745, 8, 250, 170, 874, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(746, 'wishiwashi-solo', 746, 2, 3, 61, 877, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(747, 'mareanie', 747, 4, 80, 61, 879, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(748, 'toxapex', 748, 7, 145, 173, 880, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(749, 'mudbray', 749, 10, 1100, 77, 881, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(750, 'mudsdale', 750, 25, 9200, 175, 882, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(751, 'dewpider', 751, 3, 40, 54, 883, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(752, 'araquanid', 752, 18, 820, 159, 884, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(753, 'fomantis', 753, 3, 15, 50, 886, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(754, 'lurantis', 754, 9, 185, 168, 887, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(755, 'morelull', 755, 2, 15, 57, 889, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(756, 'shiinotic', 756, 10, 115, 142, 890, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(757, 'salandit', 757, 6, 48, 64, 891, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(758, 'salazzle', 758, 12, 222, 168, 892, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(759, 'stufful', 759, 5, 68, 68, 894, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(760, 'bewear', 760, 21, 1350, 175, 895, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(761, 'bounsweet', 761, 3, 32, 42, 896, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(762, 'steenee', 762, 7, 82, 102, 897, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(763, 'tsareena', 763, 12, 214, 230, 898, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(764, 'comfey', 764, 1, 3, 170, 899, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(765, 'oranguru', 765, 15, 760, 172, 900, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(766, 'passimian', 766, 20, 828, 172, 901, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(767, 'wimpod', 767, 5, 120, 46, 902, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(768, 'golisopod', 768, 20, 1080, 186, 903, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(769, 'sandygast', 769, 5, 700, 64, 904, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(770, 'palossand', 770, 13, 2500, 168, 905, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(771, 'pyukumuku', 771, 3, 12, 144, 906, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(772, 'type-null', 772, 19, 1205, 107, 907, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(773, 'silvally', 773, 23, 1005, 257, 908, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(774, 'minior-red-meteor', 774, 3, 400, 154, 909, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(775, 'komala', 775, 4, 199, 168, 923, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(776, 'turtonator', 776, 20, 2120, 170, 924, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(777, 'togedemaru', 777, 3, 33, 152, 925, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(778, 'mimikyu-disguised', 778, 2, 7, 167, 927, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(779, 'bruxish', 779, 9, 190, 166, 931, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(780, 'drampa', 780, 30, 1850, 170, 932, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(781, 'dhelmise', 781, 39, 2100, 181, 933, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(782, 'jangmo-o', 782, 6, 297, 60, 934, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(783, 'hakamo-o', 783, 12, 470, 147, 935, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(784, 'kommo-o', 784, 16, 782, 270, 936, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(785, 'tapu-koko', 785, 18, 205, 257, 938, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(786, 'tapu-lele', 786, 12, 186, 257, 939, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(787, 'tapu-bulu', 787, 19, 455, 257, 940, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(788, 'tapu-fini', 788, 13, 212, 257, 941, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(789, 'cosmog', 789, 2, 1, 40, 942, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(790, 'cosmoem', 790, 1, 9999, 140, 943, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(791, 'solgaleo', 791, 34, 2300, 306, 944, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(792, 'lunala', 792, 40, 1200, 306, 945, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(793, 'nihilego', 793, 12, 555, 257, 946, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(794, 'buzzwole', 794, 24, 3336, 257, 947, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(795, 'pheromosa', 795, 18, 250, 257, 948, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(796, 'xurkitree', 796, 38, 1000, 257, 949, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(797, 'celesteela', 797, 92, 9999, 257, 950, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(798, 'kartana', 798, 3, 1, 257, 951, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(799, 'guzzlord', 799, 55, 8880, 257, 952, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(800, 'necrozma', 800, 24, 2300, 270, 953, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(801, 'magearna', 801, 10, 805, 270, 957, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(802, 'marshadow', 802, 7, 222, 270, 959, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(803, 'poipole', 803, 6, 18, 189, 960, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(804, 'naganadel', 804, 36, 1500, 243, 961, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(805, 'stakataka', 805, 55, 8200, 257, 962, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(806, 'blacephalon', 806, 18, 130, 257, 963, 1,              ,              , 'null');
-INSERT INTO pokemon
-	(id, identifier, species_id, height, weight, base_experience, ordre, is_default,type_1,type_2, picture)
-VALUES
-	(807, 'zeraora', 807, 15, 445, 270, 964, 1,              ,              , 'null');
 
+INSERT INTO pokemon VALUES (1, 'bulbasaur', 1, 7, 69, 64, 1, 1, 12, 4, '65,34', 'http://www.pokelab.xyz/images/1.jpg');
+INSERT INTO pokemon VALUES (2, 'ivysaur', 2, 10, 130, 142, 2, 1, 12, 4, '65,34', 'http://www.pokelab.xyz/images/2.jpg');
+INSERT INTO pokemon VALUES (3, 'venusaur', 3, 20, 1000, 236, 3, 1, 12, 4, '65,34', 'http://www.pokelab.xyz/images/3.jpg');
+INSERT INTO pokemon VALUES (4, 'charmander', 4, 6, 85, 62, 5, 1, 10, NULL, '66,94', 'http://www.pokelab.xyz/images/4.jpg');
+INSERT INTO pokemon VALUES (5, 'charmeleon', 5, 11, 190, 142, 6, 1, 10, NULL, '66,94', 'http://www.pokelab.xyz/images/5.jpg');
+INSERT INTO pokemon VALUES (6, 'charizard', 6, 17, 905, 240, 7, 1, 10, 3, '66,94', 'http://www.pokelab.xyz/images/6.jpg');
+INSERT INTO pokemon VALUES (7, 'squirtle', 7, 5, 90, 63, 10, 1, 11, NULL, '67,44', 'http://www.pokelab.xyz/images/7.jpg');
+INSERT INTO pokemon VALUES (8, 'wartortle', 8, 10, 225, 142, 11, 1, 11, NULL, '67,44', 'http://www.pokelab.xyz/images/8.jpg');
+INSERT INTO pokemon VALUES (9, 'blastoise', 9, 16, 855, 239, 12, 1, 11, NULL, '67,44', 'http://www.pokelab.xyz/images/9.jpg');
+INSERT INTO pokemon VALUES (10, 'caterpie', 10, 3, 29, 39, 14, 1, 7, NULL, '19,50', 'http://www.pokelab.xyz/images/10.jpg');
+INSERT INTO pokemon VALUES (11, 'metapod', 11, 7, 99, 72, 15, 1, 7, NULL, '61', 'http://www.pokelab.xyz/images/11.jpg');
+INSERT INTO pokemon VALUES (12, 'butterfree', 12, 11, 320, 178, 16, 1, 7, 3, '14,110', 'http://www.pokelab.xyz/images/12.jpg');
+INSERT INTO pokemon VALUES (13, 'weedle', 13, 3, 32, 39, 17, 1, 7, 4, '19,50', 'http://www.pokelab.xyz/images/13.jpg');
+INSERT INTO pokemon VALUES (14, 'kakuna', 14, 6, 100, 72, 18, 1, 7, 4, '61', 'http://www.pokelab.xyz/images/14.jpg');
+INSERT INTO pokemon VALUES (15, 'beedrill', 15, 10, 295, 178, 19, 1, 7, 4, '68,97', 'http://www.pokelab.xyz/images/15.jpg');
+INSERT INTO pokemon VALUES (16, 'pidgey', 16, 3, 18, 50, 21, 1, 1, 3, '51,77,145', 'http://www.pokelab.xyz/images/16.jpg');
+INSERT INTO pokemon VALUES (17, 'pidgeotto', 17, 11, 300, 122, 22, 1, 1, 3, '51,77,145', 'http://www.pokelab.xyz/images/17.jpg');
+INSERT INTO pokemon VALUES (18, 'pidgeot', 18, 15, 395, 216, 23, 1, 1, 3, '51,77,145', 'http://www.pokelab.xyz/images/18.jpg');
+INSERT INTO pokemon VALUES (19, 'rattata', 19, 3, 35, 51, 25, 1, 1, NULL, '50,62,55', 'http://www.pokelab.xyz/images/19.jpg');
+INSERT INTO pokemon VALUES (20, 'raticate', 20, 7, 185, 145, 27, 1, 1, NULL, '50,62,55', 'http://www.pokelab.xyz/images/20.jpg');
+INSERT INTO pokemon VALUES (21, 'spearow', 21, 3, 20, 52, 30, 1, 1, 3, '51,97', 'http://www.pokelab.xyz/images/21.jpg');
+INSERT INTO pokemon VALUES (22, 'fearow', 22, 12, 380, 155, 31, 1, 1, 3, '51,97', 'http://www.pokelab.xyz/images/22.jpg');
+INSERT INTO pokemon VALUES (23, 'ekans', 23, 20, 69, 58, 32, 1, 4, NULL, '22,61,127', 'http://www.pokelab.xyz/images/23.jpg');
+INSERT INTO pokemon VALUES (24, 'arbok', 24, 35, 650, 157, 33, 1, 4, NULL, '22,61,127', 'http://www.pokelab.xyz/images/24.jpg');
+INSERT INTO pokemon VALUES (25, 'pikachu', 25, 4, 60, 112, 35, 1, 13, NULL, '9,31', 'http://www.pokelab.xyz/images/25.jpg');
+INSERT INTO pokemon VALUES (26, 'raichu', 26, 8, 300, 218, 49, 1, 13, NULL, '9,31', 'http://www.pokelab.xyz/images/26.jpg');
+INSERT INTO pokemon VALUES (27, 'sandshrew', 27, 6, 120, 60, 51, 1, 5, NULL, '8,146', 'http://www.pokelab.xyz/images/27.jpg');
+INSERT INTO pokemon VALUES (28, 'sandslash', 28, 10, 295, 158, 53, 1, 5, NULL, '8,146', 'http://www.pokelab.xyz/images/28.jpg');
+INSERT INTO pokemon VALUES (29, 'nidoran-f', 29, 4, 70, 55, 55, 1, 4, NULL, '38,79,55', 'http://www.pokelab.xyz/images/29.jpg');
+INSERT INTO pokemon VALUES (30, 'nidorina', 30, 8, 200, 128, 56, 1, 4, NULL, '38,79,55', 'http://www.pokelab.xyz/images/30.jpg');
+INSERT INTO pokemon VALUES (31, 'nidoqueen', 31, 13, 600, 227, 57, 1, 4, 5, '38,79,125', 'http://www.pokelab.xyz/images/31.jpg');
+INSERT INTO pokemon VALUES (32, 'nidoran-m', 32, 5, 90, 55, 58, 1, 4, NULL, '38,79,55', 'http://www.pokelab.xyz/images/32.jpg');
+INSERT INTO pokemon VALUES (33, 'nidorino', 33, 9, 195, 128, 59, 1, 4, NULL, '38,79,55', 'http://www.pokelab.xyz/images/33.jpg');
+INSERT INTO pokemon VALUES (34, 'nidoking', 34, 14, 620, 227, 60, 1, 4, 5, '38,79,125', 'http://www.pokelab.xyz/images/34.jpg');
+INSERT INTO pokemon VALUES (35, 'clefairy', 35, 6, 75, 113, 62, 1, 18, NULL, '56,98,132', 'http://www.pokelab.xyz/images/35.jpg');
+INSERT INTO pokemon VALUES (36, 'clefable', 36, 13, 400, 217, 63, 1, 18, NULL, '56,98,109', 'http://www.pokelab.xyz/images/36.jpg');
+INSERT INTO pokemon VALUES (37, 'vulpix', 37, 6, 99, 60, 64, 1, 10, NULL, '18,70', 'http://www.pokelab.xyz/images/37.jpg');
+INSERT INTO pokemon VALUES (38, 'ninetales', 38, 11, 199, 177, 66, 1, 10, NULL, '18,70', 'http://www.pokelab.xyz/images/38.jpg');
+INSERT INTO pokemon VALUES (39, 'jigglypuff', 39, 5, 55, 95, 69, 1, 1, 18, '56,172,132', 'http://www.pokelab.xyz/images/39.jpg');
+INSERT INTO pokemon VALUES (40, 'wigglytuff', 40, 10, 120, 196, 70, 1, 1, 18, '56,172,119', 'http://www.pokelab.xyz/images/40.jpg');
+INSERT INTO pokemon VALUES (41, 'zubat', 41, 8, 75, 49, 71, 1, 4, 3, '39,151', 'http://www.pokelab.xyz/images/41.jpg');
+INSERT INTO pokemon VALUES (42, 'golbat', 42, 16, 550, 159, 72, 1, 4, 3, '39,151', 'http://www.pokelab.xyz/images/42.jpg');
+INSERT INTO pokemon VALUES (43, 'oddish', 43, 5, 54, 64, 74, 1, 12, 4, '34,50', 'http://www.pokelab.xyz/images/43.jpg');
+INSERT INTO pokemon VALUES (44, 'gloom', 44, 8, 86, 138, 75, 1, 12, 4, '34,1', 'http://www.pokelab.xyz/images/44.jpg');
+INSERT INTO pokemon VALUES (45, 'vileplume', 45, 12, 186, 221, 76, 1, 12, 4, '34,27', 'http://www.pokelab.xyz/images/45.jpg');
+INSERT INTO pokemon VALUES (46, 'paras', 46, 3, 54, 57, 78, 1, 7, 12, '27,87,6', 'http://www.pokelab.xyz/images/46.jpg');
+INSERT INTO pokemon VALUES (47, 'parasect', 47, 10, 295, 142, 79, 1, 7, 12, '27,87,6', 'http://www.pokelab.xyz/images/47.jpg');
+INSERT INTO pokemon VALUES (48, 'venonat', 48, 10, 300, 61, 80, 1, 7, 4, '14,110,50', 'http://www.pokelab.xyz/images/48.jpg');
+INSERT INTO pokemon VALUES (49, 'venomoth', 49, 15, 125, 158, 81, 1, 7, 4, '19,110,147', 'http://www.pokelab.xyz/images/49.jpg');
+INSERT INTO pokemon VALUES (50, 'diglett', 50, 2, 8, 53, 82, 1, 5, NULL, '8,71,159', 'http://www.pokelab.xyz/images/50.jpg');
+INSERT INTO pokemon VALUES (51, 'dugtrio', 51, 7, 333, 149, 84, 1, 5, NULL, '8,71,159', 'http://www.pokelab.xyz/images/51.jpg');
+INSERT INTO pokemon VALUES (52, 'meowth', 52, 4, 42, 58, 86, 1, 1, NULL, '53,101,127', 'http://www.pokelab.xyz/images/52.jpg');
+INSERT INTO pokemon VALUES (53, 'persian', 53, 10, 320, 154, 88, 1, 1, NULL, '7,101,127', 'http://www.pokelab.xyz/images/53.jpg');
+INSERT INTO pokemon VALUES (54, 'psyduck', 54, 8, 196, 64, 90, 1, 11, NULL, '6,13,33', 'http://www.pokelab.xyz/images/54.jpg');
+INSERT INTO pokemon VALUES (55, 'golduck', 55, 17, 766, 175, 91, 1, 11, NULL, '6,13,33', 'http://www.pokelab.xyz/images/55.jpg');
+INSERT INTO pokemon VALUES (56, 'mankey', 56, 5, 280, 61, 92, 1, 2, NULL, '72,83,128', 'http://www.pokelab.xyz/images/56.jpg');
+INSERT INTO pokemon VALUES (57, 'primeape', 57, 10, 320, 159, 93, 1, 2, NULL, '72,83,128', 'http://www.pokelab.xyz/images/57.jpg');
+INSERT INTO pokemon VALUES (58, 'growlithe', 58, 7, 190, 70, 94, 1, 10, NULL, '22,18,154', 'http://www.pokelab.xyz/images/58.jpg');
+INSERT INTO pokemon VALUES (59, 'arcanine', 59, 19, 1550, 194, 95, 1, 10, NULL, '22,18,154', 'http://www.pokelab.xyz/images/59.jpg');
+INSERT INTO pokemon VALUES (60, 'poliwag', 60, 6, 124, 60, 96, 1, 11, NULL, '11,6,33', 'http://www.pokelab.xyz/images/60.jpg');
+INSERT INTO pokemon VALUES (61, 'poliwhirl', 61, 10, 200, 135, 97, 1, 11, NULL, '11,6,33', 'http://www.pokelab.xyz/images/61.jpg');
+INSERT INTO pokemon VALUES (62, 'poliwrath', 62, 13, 540, 230, 98, 1, 11, 2, '11,6,33', 'http://www.pokelab.xyz/images/62.jpg');
+INSERT INTO pokemon VALUES (63, 'abra', 63, 9, 195, 62, 100, 1, 14, NULL, '28,39,98', 'http://www.pokelab.xyz/images/63.jpg');
+INSERT INTO pokemon VALUES (64, 'kadabra', 64, 13, 565, 140, 101, 1, 14, NULL, '28,39,98', 'http://www.pokelab.xyz/images/64.jpg');
+INSERT INTO pokemon VALUES (65, 'alakazam', 65, 15, 480, 225, 102, 1, 14, NULL, '28,39,98', 'http://www.pokelab.xyz/images/65.jpg');
+INSERT INTO pokemon VALUES (66, 'machop', 66, 8, 195, 61, 104, 1, 2, NULL, '62,99,80', 'http://www.pokelab.xyz/images/66.jpg');
+INSERT INTO pokemon VALUES (67, 'machoke', 67, 15, 705, 142, 105, 1, 2, NULL, '62,99,80', 'http://www.pokelab.xyz/images/67.jpg');
+INSERT INTO pokemon VALUES (68, 'machamp', 68, 16, 1300, 227, 106, 1, 2, NULL, '62,99,80', 'http://www.pokelab.xyz/images/68.jpg');
+INSERT INTO pokemon VALUES (69, 'bellsprout', 69, 7, 40, 60, 107, 1, 12, 4, '34,82', 'http://www.pokelab.xyz/images/69.jpg');
+INSERT INTO pokemon VALUES (70, 'weepinbell', 70, 10, 64, 137, 108, 1, 12, 4, '34,82', 'http://www.pokelab.xyz/images/70.jpg');
+INSERT INTO pokemon VALUES (71, 'victreebel', 71, 17, 155, 221, 109, 1, 12, 4, '34,82', 'http://www.pokelab.xyz/images/71.jpg');
+INSERT INTO pokemon VALUES (72, 'tentacool', 72, 9, 455, 67, 110, 1, 11, 4, '29,64,44', 'http://www.pokelab.xyz/images/72.jpg');
+INSERT INTO pokemon VALUES (73, 'tentacruel', 73, 16, 550, 180, 111, 1, 11, 4, '29,64,44', 'http://www.pokelab.xyz/images/73.jpg');
+INSERT INTO pokemon VALUES (74, 'geodude', 74, 4, 200, 60, 112, 1, 6, 5, '69,5,8', 'http://www.pokelab.xyz/images/74.jpg');
+INSERT INTO pokemon VALUES (75, 'graveler', 75, 10, 1050, 137, 114, 1, 6, 5, '69,5,8', 'http://www.pokelab.xyz/images/75.jpg');
+INSERT INTO pokemon VALUES (76, 'golem', 76, 14, 3000, 223, 116, 1, 6, 5, '69,5,8', 'http://www.pokelab.xyz/images/76.jpg');
+INSERT INTO pokemon VALUES (77, 'ponyta', 77, 10, 300, 82, 118, 1, 10, NULL, '50,18,49', 'http://www.pokelab.xyz/images/77.jpg');
+INSERT INTO pokemon VALUES (78, 'rapidash', 78, 17, 950, 175, 119, 1, 10, NULL, '50,18,49', 'http://www.pokelab.xyz/images/78.jpg');
+INSERT INTO pokemon VALUES (79, 'slowpoke', 79, 12, 360, 63, 120, 1, 11, 14, '12,20,144', 'http://www.pokelab.xyz/images/79.jpg');
+INSERT INTO pokemon VALUES (80, 'slowbro', 80, 16, 785, 172, 121, 1, 11, 14, '12,20,144', 'http://www.pokelab.xyz/images/80.jpg');
+INSERT INTO pokemon VALUES (81, 'magnemite', 81, 3, 60, 65, 124, 1, 13, 9, '42,5,148', 'http://www.pokelab.xyz/images/81.jpg');
+INSERT INTO pokemon VALUES (82, 'magneton', 82, 10, 600, 163, 125, 1, 13, 9, '42,5,148', 'http://www.pokelab.xyz/images/82.jpg');
+INSERT INTO pokemon VALUES (83, 'farfetchd', 83, 8, 150, 132, 127, 1, 1, 3, '51,39,128', 'http://www.pokelab.xyz/images/83.jpg');
+INSERT INTO pokemon VALUES (84, 'doduo', 84, 14, 392, 62, 128, 1, 1, 3, '50,48,77', 'http://www.pokelab.xyz/images/84.jpg');
+INSERT INTO pokemon VALUES (85, 'dodrio', 85, 18, 852, 165, 129, 1, 1, 3, '50,48,77', 'http://www.pokelab.xyz/images/85.jpg');
+INSERT INTO pokemon VALUES (86, 'seel', 86, 11, 900, 65, 130, 1, 11, NULL, '47,93,115', 'http://www.pokelab.xyz/images/86.jpg');
+INSERT INTO pokemon VALUES (87, 'dewgong', 87, 17, 1200, 166, 131, 1, 11, 15, '47,93,115', 'http://www.pokelab.xyz/images/87.jpg');
+INSERT INTO pokemon VALUES (88, 'grimer', 88, 9, 300, 65, 132, 1, 4, NULL, '1,60,143', 'http://www.pokelab.xyz/images/88.jpg');
+INSERT INTO pokemon VALUES (89, 'muk', 89, 12, 300, 175, 134, 1, 4, NULL, '1,60,143', 'http://www.pokelab.xyz/images/89.jpg');
+INSERT INTO pokemon VALUES (90, 'shellder', 90, 3, 40, 61, 136, 1, 11, NULL, '75,92,142', 'http://www.pokelab.xyz/images/90.jpg');
+INSERT INTO pokemon VALUES (91, 'cloyster', 91, 15, 1325, 184, 137, 1, 11, 15, '75,92,142', 'http://www.pokelab.xyz/images/91.jpg');
+INSERT INTO pokemon VALUES (92, 'gastly', 92, 13, 1, 62, 138, 1, 8, 4, '26', 'http://www.pokelab.xyz/images/92.jpg');
+INSERT INTO pokemon VALUES (93, 'haunter', 93, 16, 1, 142, 139, 1, 8, 4, '26', 'http://www.pokelab.xyz/images/93.jpg');
+INSERT INTO pokemon VALUES (94, 'gengar', 94, 15, 405, 225, 140, 1, 8, 4, '130', 'http://www.pokelab.xyz/images/94.jpg');
+INSERT INTO pokemon VALUES (95, 'onix', 95, 88, 2100, 77, 142, 1, 6, 5, '69,5,133', 'http://www.pokelab.xyz/images/95.jpg');
+INSERT INTO pokemon VALUES (96, 'drowzee', 96, 10, 324, 66, 145, 1, 14, NULL, '15,108,39', 'http://www.pokelab.xyz/images/96.jpg');
+INSERT INTO pokemon VALUES (97, 'hypno', 97, 16, 756, 169, 146, 1, 14, NULL, '15,108,39', 'http://www.pokelab.xyz/images/97.jpg');
+INSERT INTO pokemon VALUES (98, 'krabby', 98, 4, 65, 65, 147, 1, 11, NULL, '52,75,125', 'http://www.pokelab.xyz/images/98.jpg');
+INSERT INTO pokemon VALUES (99, 'kingler', 99, 13, 600, 166, 148, 1, 11, NULL, '52,75,125', 'http://www.pokelab.xyz/images/99.jpg');
+INSERT INTO pokemon VALUES (100, 'voltorb', 100, 5, 104, 66, 149, 1, 13, NULL, '43,9,106', 'http://www.pokelab.xyz/images/100.jpg');
+INSERT INTO pokemon VALUES (101, 'electrode', 101, 12, 666, 172, 150, 1, 13, NULL, '43,9,106', 'http://www.pokelab.xyz/images/101.jpg');
+INSERT INTO pokemon VALUES (102, 'exeggcute', 102, 4, 25, 65, 151, 1, 12, 14, '34,139', 'http://www.pokelab.xyz/images/102.jpg');
+INSERT INTO pokemon VALUES (103, 'exeggutor', 103, 20, 1200, 186, 152, 1, 12, 14, '34,139', 'http://www.pokelab.xyz/images/103.jpg');
+INSERT INTO pokemon VALUES (104, 'cubone', 104, 4, 65, 64, 154, 1, 5, NULL, '69,31,4', 'http://www.pokelab.xyz/images/104.jpg');
+INSERT INTO pokemon VALUES (105, 'marowak', 105, 10, 450, 149, 155, 1, 5, NULL, '69,31,4', 'http://www.pokelab.xyz/images/105.jpg');
+INSERT INTO pokemon VALUES (106, 'hitmonlee', 106, 15, 498, 159, 159, 1, 2, NULL, '7,120,84', 'http://www.pokelab.xyz/images/106.jpg');
+INSERT INTO pokemon VALUES (107, 'hitmonchan', 107, 14, 502, 159, 160, 1, 2, NULL, '51,89,39', 'http://www.pokelab.xyz/images/107.jpg');
+INSERT INTO pokemon VALUES (108, 'lickitung', 108, 12, 655, 77, 162, 1, 1, NULL, '20,12,13', 'http://www.pokelab.xyz/images/108.jpg');
+INSERT INTO pokemon VALUES (109, 'koffing', 109, 6, 10, 68, 164, 1, 4, NULL, '26', 'http://www.pokelab.xyz/images/109.jpg');
+INSERT INTO pokemon VALUES (110, 'weezing', 110, 12, 95, 172, 165, 1, 4, NULL, '26', 'http://www.pokelab.xyz/images/110.jpg');
+INSERT INTO pokemon VALUES (111, 'rhyhorn', 111, 10, 1150, 69, 166, 1, 5, 6, '31,69,120', 'http://www.pokelab.xyz/images/111.jpg');
+INSERT INTO pokemon VALUES (112, 'rhydon', 112, 19, 1200, 170, 167, 1, 5, 6, '31,69,120', 'http://www.pokelab.xyz/images/112.jpg');
+INSERT INTO pokemon VALUES (113, 'chansey', 113, 11, 346, 395, 170, 1, 1, NULL, '30,32,131', 'http://www.pokelab.xyz/images/113.jpg');
+INSERT INTO pokemon VALUES (114, 'tangela', 114, 10, 350, 87, 172, 1, 12, NULL, '34,102,144', 'http://www.pokelab.xyz/images/114.jpg');
+INSERT INTO pokemon VALUES (115, 'kangaskhan', 115, 22, 800, 172, 174, 1, 1, NULL, '48,113,39', 'http://www.pokelab.xyz/images/115.jpg');
+INSERT INTO pokemon VALUES (116, 'horsea', 116, 4, 80, 59, 176, 1, 11, NULL, '33,97,6', 'http://www.pokelab.xyz/images/116.jpg');
+INSERT INTO pokemon VALUES (117, 'seadra', 117, 12, 250, 154, 177, 1, 11, NULL, '38,97,6', 'http://www.pokelab.xyz/images/117.jpg');
+INSERT INTO pokemon VALUES (118, 'goldeen', 118, 6, 150, 64, 179, 1, 11, NULL, '33,41,31', 'http://www.pokelab.xyz/images/118.jpg');
+INSERT INTO pokemon VALUES (119, 'seaking', 119, 13, 390, 158, 180, 1, 11, NULL, '33,41,31', 'http://www.pokelab.xyz/images/119.jpg');
+INSERT INTO pokemon VALUES (120, 'staryu', 120, 8, 345, 68, 181, 1, 11, NULL, '35,30,148', 'http://www.pokelab.xyz/images/120.jpg');
+INSERT INTO pokemon VALUES (121, 'starmie', 121, 11, 800, 182, 182, 1, 11, 14, '35,30,148', 'http://www.pokelab.xyz/images/121.jpg');
+INSERT INTO pokemon VALUES (122, 'mr-mime', 122, 13, 545, 161, 184, 1, 14, 18, '43,111,101', 'http://www.pokelab.xyz/images/122.jpg');
+INSERT INTO pokemon VALUES (123, 'scyther', 123, 15, 560, 100, 185, 1, 7, 3, '68,101,80', 'http://www.pokelab.xyz/images/123.jpg');
+INSERT INTO pokemon VALUES (124, 'jynx', 124, 14, 406, 159, 189, 1, 15, 14, '12,108,87', 'http://www.pokelab.xyz/images/124.jpg');
+INSERT INTO pokemon VALUES (125, 'electabuzz', 125, 11, 300, 172, 191, 1, 13, NULL, '9,72', 'http://www.pokelab.xyz/images/125.jpg');
+INSERT INTO pokemon VALUES (126, 'magmar', 126, 13, 445, 173, 194, 1, 10, NULL, '49,72', 'http://www.pokelab.xyz/images/126.jpg');
+INSERT INTO pokemon VALUES (127, 'pinsir', 127, 15, 550, 175, 196, 1, 7, NULL, '52,104,153', 'http://www.pokelab.xyz/images/127.jpg');
+INSERT INTO pokemon VALUES (128, 'tauros', 128, 14, 884, 172, 198, 1, 1, NULL, '22,83,125', 'http://www.pokelab.xyz/images/128.jpg');
+INSERT INTO pokemon VALUES (129, 'magikarp', 129, 9, 100, 40, 199, 1, 11, NULL, '33,155', 'http://www.pokelab.xyz/images/129.jpg');
+INSERT INTO pokemon VALUES (130, 'gyarados', 130, 65, 2350, 189, 200, 1, 11, 3, '22,153', 'http://www.pokelab.xyz/images/130.jpg');
+INSERT INTO pokemon VALUES (131, 'lapras', 131, 25, 2200, 187, 202, 1, 11, 15, '11,75,93', 'http://www.pokelab.xyz/images/131.jpg');
+INSERT INTO pokemon VALUES (132, 'ditto', 132, 3, 40, 101, 203, 1, 1, NULL, '7,150', 'http://www.pokelab.xyz/images/132.jpg');
+INSERT INTO pokemon VALUES (133, 'eevee', 133, 3, 65, 65, 204, 1, 1, NULL, '50,91,107', 'http://www.pokelab.xyz/images/133.jpg');
+INSERT INTO pokemon VALUES (134, 'vaporeon', 134, 10, 290, 184, 205, 1, 11, NULL, '11,93', 'http://www.pokelab.xyz/images/134.jpg');
+INSERT INTO pokemon VALUES (135, 'jolteon', 135, 8, 245, 184, 206, 1, 13, NULL, '10,95', 'http://www.pokelab.xyz/images/135.jpg');
+INSERT INTO pokemon VALUES (136, 'flareon', 136, 9, 250, 184, 207, 1, 10, NULL, '18,62', 'http://www.pokelab.xyz/images/136.jpg');
+INSERT INTO pokemon VALUES (137, 'porygon', 137, 8, 365, 79, 213, 1, 1, NULL, '36,88,148', 'http://www.pokelab.xyz/images/137.jpg');
+INSERT INTO pokemon VALUES (138, 'omanyte', 138, 4, 75, 71, 216, 1, 6, 11, '33,75,133', 'http://www.pokelab.xyz/images/138.jpg');
+INSERT INTO pokemon VALUES (139, 'omastar', 139, 10, 350, 173, 217, 1, 6, 11, '33,75,133', 'http://www.pokelab.xyz/images/139.jpg');
+INSERT INTO pokemon VALUES (140, 'kabuto', 140, 5, 115, 71, 218, 1, 6, 11, '33,4,133', 'http://www.pokelab.xyz/images/140.jpg');
+INSERT INTO pokemon VALUES (141, 'kabutops', 141, 13, 405, 173, 219, 1, 6, 11, '33,4,133', 'http://www.pokelab.xyz/images/141.jpg');
+INSERT INTO pokemon VALUES (142, 'aerodactyl', 142, 18, 590, 180, 220, 1, 6, 3, '69,46,127', 'http://www.pokelab.xyz/images/142.jpg');
+INSERT INTO pokemon VALUES (143, 'snorlax', 143, 21, 4600, 189, 223, 1, 1, NULL, '17,47,82', 'http://www.pokelab.xyz/images/143.jpg');
+INSERT INTO pokemon VALUES (144, 'articuno', 144, 17, 554, 261, 224, 1, 15, 3, '46,81', 'http://www.pokelab.xyz/images/144.jpg');
+INSERT INTO pokemon VALUES (145, 'zapdos', 145, 16, 526, 261, 225, 1, 13, 3, '46,9', 'http://www.pokelab.xyz/images/145.jpg');
+INSERT INTO pokemon VALUES (146, 'moltres', 146, 20, 600, 261, 226, 1, 10, 3, '46,49', 'http://www.pokelab.xyz/images/146.jpg');
+INSERT INTO pokemon VALUES (147, 'dratini', 147, 18, 33, 60, 227, 1, 16, NULL, '61,63', 'http://www.pokelab.xyz/images/147.jpg');
+INSERT INTO pokemon VALUES (148, 'dragonair', 148, 40, 165, 147, 228, 1, 16, NULL, '61,63', 'http://www.pokelab.xyz/images/148.jpg');
+INSERT INTO pokemon VALUES (149, 'dragonite', 149, 22, 2100, 270, 229, 1, 16, 3, '39,136', 'http://www.pokelab.xyz/images/149.jpg');
+INSERT INTO pokemon VALUES (150, 'mewtwo', 150, 20, 1220, 306, 230, 1, 14, NULL, '46,127', 'http://www.pokelab.xyz/images/150.jpg');
+INSERT INTO pokemon VALUES (151, 'mew', 151, 4, 40, 270, 233, 1, 14, NULL, '28', 'http://www.pokelab.xyz/images/151.jpg');
+INSERT INTO pokemon VALUES (152, 'chikorita', 152, 9, 64, 64, 234, 1, 12, NULL, '65,102', 'http://www.pokelab.xyz/images/152.jpg');
+INSERT INTO pokemon VALUES (153, 'bayleef', 153, 12, 158, 142, 235, 1, 12, NULL, '65,102', 'http://www.pokelab.xyz/images/153.jpg');
+INSERT INTO pokemon VALUES (154, 'meganium', 154, 18, 1005, 236, 236, 1, 12, NULL, '65,102', 'http://www.pokelab.xyz/images/154.jpg');
+INSERT INTO pokemon VALUES (155, 'cyndaquil', 155, 5, 79, 62, 237, 1, 10, NULL, '66,18', 'http://www.pokelab.xyz/images/155.jpg');
+INSERT INTO pokemon VALUES (156, 'quilava', 156, 9, 190, 142, 238, 1, 10, NULL, '66,18', 'http://www.pokelab.xyz/images/156.jpg');
+INSERT INTO pokemon VALUES (157, 'typhlosion', 157, 17, 795, 240, 239, 1, 10, NULL, '66,18', 'http://www.pokelab.xyz/images/157.jpg');
+INSERT INTO pokemon VALUES (158, 'totodile', 158, 6, 95, 63, 240, 1, 11, NULL, '67,125', 'http://www.pokelab.xyz/images/158.jpg');
+INSERT INTO pokemon VALUES (159, 'croconaw', 159, 11, 250, 142, 241, 1, 11, NULL, '67,125', 'http://www.pokelab.xyz/images/159.jpg');
+INSERT INTO pokemon VALUES (160, 'feraligatr', 160, 23, 888, 239, 242, 1, 11, NULL, '67,125', 'http://www.pokelab.xyz/images/160.jpg');
+INSERT INTO pokemon VALUES (161, 'sentret', 161, 8, 60, 43, 243, 1, 1, NULL, '50,51,119', 'http://www.pokelab.xyz/images/161.jpg');
+INSERT INTO pokemon VALUES (162, 'furret', 162, 18, 325, 145, 244, 1, 1, NULL, '50,51,119', 'http://www.pokelab.xyz/images/162.jpg');
+INSERT INTO pokemon VALUES (163, 'hoothoot', 163, 7, 212, 52, 245, 1, 1, 3, '15,51,110', 'http://www.pokelab.xyz/images/163.jpg');
+INSERT INTO pokemon VALUES (164, 'noctowl', 164, 16, 408, 158, 246, 1, 1, 3, '15,51,110', 'http://www.pokelab.xyz/images/164.jpg');
+INSERT INTO pokemon VALUES (165, 'ledyba', 165, 10, 108, 53, 247, 1, 7, 3, '68,48,155', 'http://www.pokelab.xyz/images/165.jpg');
+INSERT INTO pokemon VALUES (166, 'ledian', 166, 14, 356, 137, 248, 1, 7, 3, '68,48,89', 'http://www.pokelab.xyz/images/166.jpg');
+INSERT INTO pokemon VALUES (167, 'spinarak', 167, 5, 85, 50, 249, 1, 7, 4, '68,15,97', 'http://www.pokelab.xyz/images/167.jpg');
+INSERT INTO pokemon VALUES (168, 'ariados', 168, 11, 335, 140, 250, 1, 7, 4, '68,15,97', 'http://www.pokelab.xyz/images/168.jpg');
+INSERT INTO pokemon VALUES (169, 'crobat', 169, 18, 750, 241, 73, 1, 4, 3, '39,151', 'http://www.pokelab.xyz/images/169.jpg');
+INSERT INTO pokemon VALUES (170, 'chinchou', 170, 5, 120, 66, 251, 1, 11, 13, '10,35,11', 'http://www.pokelab.xyz/images/170.jpg');
+INSERT INTO pokemon VALUES (171, 'lanturn', 171, 12, 225, 161, 252, 1, 11, 13, '10,35,11', 'http://www.pokelab.xyz/images/171.jpg');
+INSERT INTO pokemon VALUES (172, 'pichu', 172, 3, 20, 41, 34, 1, 13, NULL, '9,31', 'http://www.pokelab.xyz/images/172.jpg');
+INSERT INTO pokemon VALUES (173, 'cleffa', 173, 3, 30, 44, 61, 1, 18, NULL, '56,98,132', 'http://www.pokelab.xyz/images/173.jpg');
+INSERT INTO pokemon VALUES (174, 'igglybuff', 174, 3, 10, 42, 68, 1, 1, 18, '56,172,132', 'http://www.pokelab.xyz/images/174.jpg');
+INSERT INTO pokemon VALUES (175, 'togepi', 175, 3, 15, 49, 253, 1, 18, NULL, '55,32,105', 'http://www.pokelab.xyz/images/175.jpg');
+INSERT INTO pokemon VALUES (176, 'togetic', 176, 6, 32, 142, 254, 1, 18, 3, '55,32,105', 'http://www.pokelab.xyz/images/176.jpg');
+INSERT INTO pokemon VALUES (177, 'natu', 177, 2, 20, 64, 256, 1, 14, 3, '28,48,156', 'http://www.pokelab.xyz/images/177.jpg');
+INSERT INTO pokemon VALUES (178, 'xatu', 178, 15, 150, 165, 257, 1, 14, 3, '28,48,156', 'http://www.pokelab.xyz/images/178.jpg');
+INSERT INTO pokemon VALUES (179, 'mareep', 179, 6, 78, 56, 258, 1, 13, NULL, '9,57', 'http://www.pokelab.xyz/images/179.jpg');
+INSERT INTO pokemon VALUES (180, 'flaaffy', 180, 8, 133, 128, 259, 1, 13, NULL, '9,57', 'http://www.pokelab.xyz/images/180.jpg');
+INSERT INTO pokemon VALUES (181, 'ampharos', 181, 14, 615, 230, 260, 1, 13, NULL, '9,57', 'http://www.pokelab.xyz/images/181.jpg');
+INSERT INTO pokemon VALUES (182, 'bellossom', 182, 4, 58, 221, 77, 1, 12, NULL, '34,131', 'http://www.pokelab.xyz/images/182.jpg');
+INSERT INTO pokemon VALUES (183, 'marill', 183, 4, 85, 88, 263, 1, 11, 18, '47,37,157', 'http://www.pokelab.xyz/images/183.jpg');
+INSERT INTO pokemon VALUES (184, 'azumarill', 184, 8, 285, 189, 264, 1, 11, 18, '47,37,157', 'http://www.pokelab.xyz/images/184.jpg');
+INSERT INTO pokemon VALUES (185, 'sudowoodo', 185, 12, 380, 144, 266, 1, 6, NULL, '5,69,155', 'http://www.pokelab.xyz/images/185.jpg');
+INSERT INTO pokemon VALUES (186, 'politoed', 186, 11, 339, 225, 99, 1, 11, NULL, '11,6,2', 'http://www.pokelab.xyz/images/186.jpg');
+INSERT INTO pokemon VALUES (187, 'hoppip', 187, 4, 5, 50, 267, 1, 12, 3, '34,102,151', 'http://www.pokelab.xyz/images/187.jpg');
+INSERT INTO pokemon VALUES (188, 'skiploom', 188, 6, 10, 119, 268, 1, 12, 3, '34,102,151', 'http://www.pokelab.xyz/images/188.jpg');
+INSERT INTO pokemon VALUES (189, 'jumpluff', 189, 8, 30, 207, 269, 1, 12, 3, '34,102,151', 'http://www.pokelab.xyz/images/189.jpg');
+INSERT INTO pokemon VALUES (190, 'aipom', 190, 8, 115, 72, 270, 1, 1, NULL, '50,53,92', 'http://www.pokelab.xyz/images/190.jpg');
+INSERT INTO pokemon VALUES (191, 'sunkern', 191, 3, 18, 36, 272, 1, 12, NULL, '34,94,48', 'http://www.pokelab.xyz/images/191.jpg');
+INSERT INTO pokemon VALUES (192, 'sunflora', 192, 8, 85, 149, 273, 1, 12, NULL, '34,94,48', 'http://www.pokelab.xyz/images/192.jpg');
+INSERT INTO pokemon VALUES (193, 'yanma', 193, 12, 380, 78, 274, 1, 7, 3, '3,14,119', 'http://www.pokelab.xyz/images/193.jpg');
+INSERT INTO pokemon VALUES (194, 'wooper', 194, 4, 85, 42, 276, 1, 11, 5, '6,11,109', 'http://www.pokelab.xyz/images/194.jpg');
+INSERT INTO pokemon VALUES (195, 'quagsire', 195, 14, 750, 151, 277, 1, 11, 5, '6,11,109', 'http://www.pokelab.xyz/images/195.jpg');
+INSERT INTO pokemon VALUES (196, 'espeon', 196, 9, 265, 184, 208, 1, 14, NULL, '28,156', 'http://www.pokelab.xyz/images/196.jpg');
+INSERT INTO pokemon VALUES (197, 'umbreon', 197, 10, 270, 184, 209, 1, 17, NULL, '28,39', 'http://www.pokelab.xyz/images/197.jpg');
+INSERT INTO pokemon VALUES (198, 'murkrow', 198, 5, 21, 81, 278, 1, 17, 3, '15,105,158', 'http://www.pokelab.xyz/images/198.jpg');
+INSERT INTO pokemon VALUES (199, 'slowking', 199, 20, 795, 172, 123, 1, 11, 14, '12,20,144', 'http://www.pokelab.xyz/images/199.jpg');
+INSERT INTO pokemon VALUES (200, 'misdreavus', 200, 7, 10, 87, 280, 1, 8, NULL, '26', 'http://www.pokelab.xyz/images/200.jpg');
+INSERT INTO pokemon VALUES (201, 'unown', 201, 5, 50, 118, 282, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/201.jpg');
+INSERT INTO pokemon VALUES (202, 'wobbuffet', 202, 13, 285, 142, 284, 1, 14, NULL, '23,140', 'http://www.pokelab.xyz/images/202.jpg');
+INSERT INTO pokemon VALUES (203, 'girafarig', 203, 15, 415, 159, 285, 1, 1, 14, '39,48,157', 'http://www.pokelab.xyz/images/203.jpg');
+INSERT INTO pokemon VALUES (204, 'pineco', 204, 6, 72, 58, 286, 1, 7, NULL, '5,142', 'http://www.pokelab.xyz/images/204.jpg');
+INSERT INTO pokemon VALUES (205, 'forretress', 205, 12, 1258, 163, 287, 1, 7, 9, '5,142', 'http://www.pokelab.xyz/images/205.jpg');
+INSERT INTO pokemon VALUES (206, 'dunsparce', 206, 15, 140, 145, 288, 1, 1, NULL, '32,50,155', 'http://www.pokelab.xyz/images/206.jpg');
+INSERT INTO pokemon VALUES (207, 'gligar', 207, 11, 648, 86, 289, 1, 5, 3, '52,8,17', 'http://www.pokelab.xyz/images/207.jpg');
+INSERT INTO pokemon VALUES (208, 'steelix', 208, 92, 4000, 179, 143, 1, 9, 5, '69,5,125', 'http://www.pokelab.xyz/images/208.jpg');
+INSERT INTO pokemon VALUES (209, 'snubbull', 209, 6, 78, 60, 291, 1, 18, NULL, '22,50,155', 'http://www.pokelab.xyz/images/209.jpg');
+INSERT INTO pokemon VALUES (210, 'granbull', 210, 14, 487, 158, 292, 1, 18, NULL, '22,95,155', 'http://www.pokelab.xyz/images/210.jpg');
+INSERT INTO pokemon VALUES (211, 'qwilfish', 211, 5, 39, 88, 293, 1, 11, 4, '38,33,22', 'http://www.pokelab.xyz/images/211.jpg');
+INSERT INTO pokemon VALUES (212, 'scizor', 212, 18, 1180, 175, 186, 1, 7, 9, '68,101,135', 'http://www.pokelab.xyz/images/212.jpg');
+INSERT INTO pokemon VALUES (213, 'shuckle', 213, 6, 205, 177, 294, 1, 7, 6, '5,82,126', 'http://www.pokelab.xyz/images/213.jpg');
+INSERT INTO pokemon VALUES (214, 'heracross', 214, 15, 540, 175, 295, 1, 7, 2, '68,62,153', 'http://www.pokelab.xyz/images/214.jpg');
+INSERT INTO pokemon VALUES (215, 'sneasel', 215, 9, 280, 86, 297, 1, 17, 15, '39,51,124', 'http://www.pokelab.xyz/images/215.jpg');
+INSERT INTO pokemon VALUES (216, 'teddiursa', 216, 6, 88, 66, 299, 1, 1, NULL, '53,95,118', 'http://www.pokelab.xyz/images/216.jpg');
+INSERT INTO pokemon VALUES (217, 'ursaring', 217, 18, 1258, 175, 300, 1, 1, NULL, '62,95,127', 'http://www.pokelab.xyz/images/217.jpg');
+INSERT INTO pokemon VALUES (218, 'slugma', 218, 7, 350, 50, 301, 1, 10, NULL, '40,49,133', 'http://www.pokelab.xyz/images/218.jpg');
+INSERT INTO pokemon VALUES (219, 'magcargo', 219, 8, 550, 151, 302, 1, 10, 6, '40,49,133', 'http://www.pokelab.xyz/images/219.jpg');
+INSERT INTO pokemon VALUES (220, 'swinub', 220, 4, 65, 50, 303, 1, 15, 5, '12,81,47', 'http://www.pokelab.xyz/images/220.jpg');
+INSERT INTO pokemon VALUES (221, 'piloswine', 221, 11, 558, 158, 304, 1, 15, 5, '12,81,47', 'http://www.pokelab.xyz/images/221.jpg');
+INSERT INTO pokemon VALUES (222, 'corsola', 222, 6, 50, 144, 306, 1, 11, 6, '55,30,144', 'http://www.pokelab.xyz/images/222.jpg');
+INSERT INTO pokemon VALUES (223, 'remoraid', 223, 6, 120, 60, 307, 1, 11, NULL, '55,97,141', 'http://www.pokelab.xyz/images/223.jpg');
+INSERT INTO pokemon VALUES (224, 'octillery', 224, 9, 285, 168, 308, 1, 11, NULL, '21,97,141', 'http://www.pokelab.xyz/images/224.jpg');
+INSERT INTO pokemon VALUES (225, 'delibird', 225, 9, 160, 116, 309, 1, 15, 3, '72,55,15', 'http://www.pokelab.xyz/images/225.jpg');
+INSERT INTO pokemon VALUES (226, 'mantine', 226, 21, 2200, 170, 311, 1, 11, 3, '33,11,41', 'http://www.pokelab.xyz/images/226.jpg');
+INSERT INTO pokemon VALUES (227, 'skarmory', 227, 17, 505, 163, 312, 1, 9, 3, '51,5,133', 'http://www.pokelab.xyz/images/227.jpg');
+INSERT INTO pokemon VALUES (228, 'houndour', 228, 6, 108, 66, 313, 1, 17, 10, '48,18,127', 'http://www.pokelab.xyz/images/228.jpg');
+INSERT INTO pokemon VALUES (229, 'houndoom', 229, 14, 350, 175, 314, 1, 17, 10, '48,18,127', 'http://www.pokelab.xyz/images/229.jpg');
+INSERT INTO pokemon VALUES (230, 'kingdra', 230, 18, 1520, 243, 178, 1, 11, 16, '33,97,6', 'http://www.pokelab.xyz/images/230.jpg');
+INSERT INTO pokemon VALUES (231, 'phanpy', 231, 5, 335, 66, 316, 1, 5, NULL, '53,8', 'http://www.pokelab.xyz/images/231.jpg');
+INSERT INTO pokemon VALUES (232, 'donphan', 232, 11, 1200, 175, 317, 1, 5, NULL, '5,8', 'http://www.pokelab.xyz/images/232.jpg');
+INSERT INTO pokemon VALUES (233, 'porygon2', 233, 6, 325, 180, 214, 1, 1, NULL, '36,88,148', 'http://www.pokelab.xyz/images/233.jpg');
+INSERT INTO pokemon VALUES (234, 'stantler', 234, 14, 712, 163, 318, 1, 1, NULL, '22,119,157', 'http://www.pokelab.xyz/images/234.jpg');
+INSERT INTO pokemon VALUES (235, 'smeargle', 235, 12, 580, 88, 319, 1, 1, NULL, '20,101,141', 'http://www.pokelab.xyz/images/235.jpg');
+INSERT INTO pokemon VALUES (236, 'tyrogue', 236, 7, 210, 42, 158, 1, 2, NULL, '62,80,72', 'http://www.pokelab.xyz/images/236.jpg');
+INSERT INTO pokemon VALUES (237, 'hitmontop', 237, 14, 480, 159, 161, 1, 2, NULL, '22,101,80', 'http://www.pokelab.xyz/images/237.jpg');
+INSERT INTO pokemon VALUES (238, 'smoochum', 238, 4, 60, 61, 188, 1, 15, 14, '12,108,93', 'http://www.pokelab.xyz/images/238.jpg');
+INSERT INTO pokemon VALUES (239, 'elekid', 239, 6, 235, 72, 190, 1, 13, NULL, '9,72', 'http://www.pokelab.xyz/images/239.jpg');
+INSERT INTO pokemon VALUES (240, 'magby', 240, 7, 214, 73, 193, 1, 10, NULL, '49,72', 'http://www.pokelab.xyz/images/240.jpg');
+INSERT INTO pokemon VALUES (241, 'miltank', 241, 12, 755, 172, 320, 1, 1, NULL, '47,113,157', 'http://www.pokelab.xyz/images/241.jpg');
+INSERT INTO pokemon VALUES (242, 'blissey', 242, 15, 468, 608, 171, 1, 1, NULL, '30,32,131', 'http://www.pokelab.xyz/images/242.jpg');
+INSERT INTO pokemon VALUES (243, 'raikou', 243, 19, 1780, 261, 321, 1, 13, NULL, '46,39', 'http://www.pokelab.xyz/images/243.jpg');
+INSERT INTO pokemon VALUES (244, 'entei', 244, 21, 1980, 261, 322, 1, 10, NULL, '46,39', 'http://www.pokelab.xyz/images/244.jpg');
+INSERT INTO pokemon VALUES (245, 'suicune', 245, 20, 1870, 261, 323, 1, 11, NULL, '46,39', 'http://www.pokelab.xyz/images/245.jpg');
+INSERT INTO pokemon VALUES (246, 'larvitar', 246, 6, 720, 60, 324, 1, 6, 5, '62,8', 'http://www.pokelab.xyz/images/246.jpg');
+INSERT INTO pokemon VALUES (247, 'pupitar', 247, 12, 1520, 144, 325, 1, 6, 5, '61', 'http://www.pokelab.xyz/images/247.jpg');
+INSERT INTO pokemon VALUES (248, 'tyranitar', 248, 20, 2020, 270, 326, 1, 6, 17, '45,127', 'http://www.pokelab.xyz/images/248.jpg');
+INSERT INTO pokemon VALUES (249, 'lugia', 249, 52, 2160, 306, 328, 1, 14, 3, '46,136', 'http://www.pokelab.xyz/images/249.jpg');
+INSERT INTO pokemon VALUES (250, 'ho-oh', 250, 38, 1990, 306, 329, 1, 10, 3, '46,144', 'http://www.pokelab.xyz/images/250.jpg');
+INSERT INTO pokemon VALUES (251, 'celebi', 251, 6, 50, 270, 330, 1, 14, 12, '30', 'http://www.pokelab.xyz/images/251.jpg');
+INSERT INTO pokemon VALUES (252, 'treecko', 252, 5, 50, 62, 331, 1, 12, NULL, '65,84', 'http://www.pokelab.xyz/images/252.jpg');
+INSERT INTO pokemon VALUES (253, 'grovyle', 253, 9, 216, 142, 332, 1, 12, NULL, '65,84', 'http://www.pokelab.xyz/images/253.jpg');
+INSERT INTO pokemon VALUES (254, 'sceptile', 254, 17, 522, 239, 333, 1, 12, NULL, '65,84', 'http://www.pokelab.xyz/images/254.jpg');
+INSERT INTO pokemon VALUES (255, 'torchic', 255, 4, 25, 62, 335, 1, 10, NULL, '66,3', 'http://www.pokelab.xyz/images/255.jpg');
+INSERT INTO pokemon VALUES (256, 'combusken', 256, 9, 195, 142, 336, 1, 10, 2, '66,3', 'http://www.pokelab.xyz/images/256.jpg');
+INSERT INTO pokemon VALUES (257, 'blaziken', 257, 19, 520, 239, 337, 1, 10, 2, '66,3', 'http://www.pokelab.xyz/images/257.jpg');
+INSERT INTO pokemon VALUES (258, 'mudkip', 258, 4, 76, 62, 339, 1, 11, NULL, '67,6', 'http://www.pokelab.xyz/images/258.jpg');
+INSERT INTO pokemon VALUES (259, 'marshtomp', 259, 7, 280, 142, 340, 1, 11, 5, '67,6', 'http://www.pokelab.xyz/images/259.jpg');
+INSERT INTO pokemon VALUES (260, 'swampert', 260, 15, 819, 241, 341, 1, 11, 5, '67,6', 'http://www.pokelab.xyz/images/260.jpg');
+INSERT INTO pokemon VALUES (261, 'poochyena', 261, 5, 136, 56, 343, 1, 17, NULL, '50,95,155', 'http://www.pokelab.xyz/images/261.jpg');
+INSERT INTO pokemon VALUES (262, 'mightyena', 262, 10, 370, 147, 344, 1, 17, NULL, '22,95,153', 'http://www.pokelab.xyz/images/262.jpg');
+INSERT INTO pokemon VALUES (263, 'zigzagoon', 263, 4, 175, 56, 345, 1, 1, NULL, '53,82,95', 'http://www.pokelab.xyz/images/263.jpg');
+INSERT INTO pokemon VALUES (264, 'linoone', 264, 5, 325, 147, 346, 1, 1, NULL, '53,82,95', 'http://www.pokelab.xyz/images/264.jpg');
+INSERT INTO pokemon VALUES (265, 'wurmple', 265, 3, 36, 56, 347, 1, 7, NULL, '19,50', 'http://www.pokelab.xyz/images/265.jpg');
+INSERT INTO pokemon VALUES (266, 'silcoon', 266, 6, 100, 72, 348, 1, 7, NULL, '61', 'http://www.pokelab.xyz/images/266.jpg');
+INSERT INTO pokemon VALUES (267, 'beautifly', 267, 10, 284, 178, 349, 1, 7, 3, '68,79', 'http://www.pokelab.xyz/images/267.jpg');
+INSERT INTO pokemon VALUES (268, 'cascoon', 268, 7, 115, 72, 350, 1, 7, NULL, '61', 'http://www.pokelab.xyz/images/268.jpg');
+INSERT INTO pokemon VALUES (269, 'dustox', 269, 12, 316, 173, 351, 1, 7, 4, '19,14', 'http://www.pokelab.xyz/images/269.jpg');
+INSERT INTO pokemon VALUES (270, 'lotad', 270, 5, 26, 44, 352, 1, 11, 12, '33,44,20', 'http://www.pokelab.xyz/images/270.jpg');
+INSERT INTO pokemon VALUES (271, 'lombre', 271, 12, 325, 119, 353, 1, 11, 12, '33,44,20', 'http://www.pokelab.xyz/images/271.jpg');
+INSERT INTO pokemon VALUES (272, 'ludicolo', 272, 15, 550, 216, 354, 1, 11, 12, '33,44,20', 'http://www.pokelab.xyz/images/272.jpg');
+INSERT INTO pokemon VALUES (273, 'seedot', 273, 5, 40, 44, 355, 1, 12, NULL, '34,48,124', 'http://www.pokelab.xyz/images/273.jpg');
+INSERT INTO pokemon VALUES (274, 'nuzleaf', 274, 10, 280, 119, 356, 1, 12, 17, '34,48,124', 'http://www.pokelab.xyz/images/274.jpg');
+INSERT INTO pokemon VALUES (275, 'shiftry', 275, 13, 596, 216, 357, 1, 12, 17, '34,48,124', 'http://www.pokelab.xyz/images/275.jpg');
+INSERT INTO pokemon VALUES (276, 'taillow', 276, 3, 23, 54, 358, 1, 1, 3, '62,113', 'http://www.pokelab.xyz/images/276.jpg');
+INSERT INTO pokemon VALUES (277, 'swellow', 277, 7, 198, 159, 359, 1, 1, 3, '62,113', 'http://www.pokelab.xyz/images/277.jpg');
+INSERT INTO pokemon VALUES (278, 'wingull', 278, 6, 95, 54, 360, 1, 11, 3, '51,93,44', 'http://www.pokelab.xyz/images/278.jpg');
+INSERT INTO pokemon VALUES (279, 'pelipper', 279, 12, 280, 154, 361, 1, 11, 3, '51,2,44', 'http://www.pokelab.xyz/images/279.jpg');
+INSERT INTO pokemon VALUES (280, 'ralts', 280, 4, 66, 40, 362, 1, 14, 18, '28,36,140', 'http://www.pokelab.xyz/images/280.jpg');
+INSERT INTO pokemon VALUES (281, 'kirlia', 281, 8, 202, 97, 363, 1, 14, 18, '28,36,140', 'http://www.pokelab.xyz/images/281.jpg');
+INSERT INTO pokemon VALUES (282, 'gardevoir', 282, 16, 484, 233, 364, 1, 14, 18, '28,36,140', 'http://www.pokelab.xyz/images/282.jpg');
+INSERT INTO pokemon VALUES (283, 'surskit', 283, 5, 17, 54, 368, 1, 7, 11, '33,44', 'http://www.pokelab.xyz/images/283.jpg');
+INSERT INTO pokemon VALUES (284, 'masquerain', 284, 8, 36, 159, 369, 1, 7, 3, '22,127', 'http://www.pokelab.xyz/images/284.jpg');
+INSERT INTO pokemon VALUES (285, 'shroomish', 285, 4, 45, 59, 370, 1, 12, NULL, '27,90,95', 'http://www.pokelab.xyz/images/285.jpg');
+INSERT INTO pokemon VALUES (286, 'breloom', 286, 12, 392, 161, 371, 1, 12, 2, '27,90,101', 'http://www.pokelab.xyz/images/286.jpg');
+INSERT INTO pokemon VALUES (287, 'slakoth', 287, 8, 240, 56, 372, 1, 1, NULL, '54', 'http://www.pokelab.xyz/images/287.jpg');
+INSERT INTO pokemon VALUES (288, 'vigoroth', 288, 14, 465, 154, 373, 1, 1, NULL, '72', 'http://www.pokelab.xyz/images/288.jpg');
+INSERT INTO pokemon VALUES (289, 'slaking', 289, 20, 1305, 252, 374, 1, 1, NULL, '54', 'http://www.pokelab.xyz/images/289.jpg');
+INSERT INTO pokemon VALUES (290, 'nincada', 290, 5, 55, 53, 375, 1, 7, 5, '14,50', 'http://www.pokelab.xyz/images/290.jpg');
+INSERT INTO pokemon VALUES (291, 'ninjask', 291, 8, 120, 160, 376, 1, 7, 3, '3,151', 'http://www.pokelab.xyz/images/291.jpg');
+INSERT INTO pokemon VALUES (292, 'shedinja', 292, 8, 12, 83, 377, 1, 7, 8, '25', 'http://www.pokelab.xyz/images/292.jpg');
+INSERT INTO pokemon VALUES (293, 'whismur', 293, 6, 163, 48, 378, 1, 1, NULL, '43,155', 'http://www.pokelab.xyz/images/293.jpg');
+INSERT INTO pokemon VALUES (294, 'loudred', 294, 10, 405, 126, 379, 1, 1, NULL, '43,113', 'http://www.pokelab.xyz/images/294.jpg');
+INSERT INTO pokemon VALUES (295, 'exploud', 295, 15, 840, 221, 380, 1, 1, NULL, '43,113', 'http://www.pokelab.xyz/images/295.jpg');
+INSERT INTO pokemon VALUES (296, 'makuhita', 296, 10, 864, 47, 381, 1, 2, NULL, '47,62,125', 'http://www.pokelab.xyz/images/296.jpg');
+INSERT INTO pokemon VALUES (297, 'hariyama', 297, 23, 2538, 166, 382, 1, 2, NULL, '47,62,125', 'http://www.pokelab.xyz/images/297.jpg');
+INSERT INTO pokemon VALUES (298, 'azurill', 298, 2, 20, 38, 262, 1, 1, 18, '47,37,157', 'http://www.pokelab.xyz/images/298.jpg');
+INSERT INTO pokemon VALUES (299, 'nosepass', 299, 10, 970, 75, 383, 1, 6, NULL, '5,42,159', 'http://www.pokelab.xyz/images/299.jpg');
+INSERT INTO pokemon VALUES (300, 'skitty', 300, 6, 110, 52, 385, 1, 1, NULL, '56,96,147', 'http://www.pokelab.xyz/images/300.jpg');
+INSERT INTO pokemon VALUES (301, 'delcatty', 301, 11, 326, 140, 386, 1, 1, NULL, '56,96,147', 'http://www.pokelab.xyz/images/301.jpg');
+INSERT INTO pokemon VALUES (302, 'sableye', 302, 5, 110, 133, 387, 1, 17, 8, '51,100,158', 'http://www.pokelab.xyz/images/302.jpg');
+INSERT INTO pokemon VALUES (303, 'mawile', 303, 6, 115, 133, 389, 1, 9, 18, '52,22,125', 'http://www.pokelab.xyz/images/303.jpg');
+INSERT INTO pokemon VALUES (304, 'aron', 304, 4, 600, 66, 391, 1, 9, 6, '5,69,134', 'http://www.pokelab.xyz/images/304.jpg');
+INSERT INTO pokemon VALUES (305, 'lairon', 305, 9, 1200, 151, 392, 1, 9, 6, '5,69,134', 'http://www.pokelab.xyz/images/305.jpg');
+INSERT INTO pokemon VALUES (306, 'aggron', 306, 21, 3600, 239, 393, 1, 9, 6, '5,69,134', 'http://www.pokelab.xyz/images/306.jpg');
+INSERT INTO pokemon VALUES (307, 'meditite', 307, 6, 112, 56, 395, 1, 2, 14, '74,140', 'http://www.pokelab.xyz/images/307.jpg');
+INSERT INTO pokemon VALUES (308, 'medicham', 308, 13, 315, 144, 396, 1, 2, 14, '74,140', 'http://www.pokelab.xyz/images/308.jpg');
+INSERT INTO pokemon VALUES (309, 'electrike', 309, 6, 152, 59, 398, 1, 13, NULL, '9,31,58', 'http://www.pokelab.xyz/images/309.jpg');
+INSERT INTO pokemon VALUES (310, 'manectric', 310, 15, 402, 166, 399, 1, 13, NULL, '9,31,58', 'http://www.pokelab.xyz/images/310.jpg');
+INSERT INTO pokemon VALUES (311, 'plusle', 311, 4, 42, 142, 401, 1, 13, NULL, '57,31', 'http://www.pokelab.xyz/images/311.jpg');
+INSERT INTO pokemon VALUES (312, 'minun', 312, 4, 42, 142, 402, 1, 13, NULL, '58,10', 'http://www.pokelab.xyz/images/312.jpg');
+INSERT INTO pokemon VALUES (313, 'volbeat', 313, 7, 177, 151, 403, 1, 7, NULL, '35,68,158', 'http://www.pokelab.xyz/images/313.jpg');
+INSERT INTO pokemon VALUES (314, 'illumise', 314, 6, 177, 151, 404, 1, 7, NULL, '12,110,158', 'http://www.pokelab.xyz/images/314.jpg');
+INSERT INTO pokemon VALUES (315, 'roselia', 315, 3, 20, 140, 406, 1, 12, 4, '30,38,102', 'http://www.pokelab.xyz/images/315.jpg');
+INSERT INTO pokemon VALUES (316, 'gulpin', 316, 4, 103, 60, 408, 1, 4, NULL, '64,60,82', 'http://www.pokelab.xyz/images/316.jpg');
+INSERT INTO pokemon VALUES (317, 'swalot', 317, 17, 800, 163, 409, 1, 4, NULL, '64,60,82', 'http://www.pokelab.xyz/images/317.jpg');
+INSERT INTO pokemon VALUES (318, 'carvanha', 318, 8, 208, 61, 410, 1, 11, 17, '24,3', 'http://www.pokelab.xyz/images/318.jpg');
+INSERT INTO pokemon VALUES (319, 'sharpedo', 319, 18, 888, 161, 411, 1, 11, 17, '24,3', 'http://www.pokelab.xyz/images/319.jpg');
+INSERT INTO pokemon VALUES (320, 'wailmer', 320, 20, 1300, 80, 413, 1, 11, NULL, '41,12,46', 'http://www.pokelab.xyz/images/320.jpg');
+INSERT INTO pokemon VALUES (321, 'wailord', 321, 145, 3980, 175, 414, 1, 11, NULL, '41,12,46', 'http://www.pokelab.xyz/images/321.jpg');
+INSERT INTO pokemon VALUES (322, 'numel', 322, 7, 240, 61, 415, 1, 10, 5, '12,86,20', 'http://www.pokelab.xyz/images/322.jpg');
+INSERT INTO pokemon VALUES (323, 'camerupt', 323, 19, 2200, 161, 416, 1, 10, 5, '40,116,83', 'http://www.pokelab.xyz/images/323.jpg');
+INSERT INTO pokemon VALUES (324, 'torkoal', 324, 5, 804, 165, 418, 1, 10, NULL, '73,70,75', 'http://www.pokelab.xyz/images/324.jpg');
+INSERT INTO pokemon VALUES (325, 'spoink', 325, 7, 306, 66, 419, 1, 14, NULL, '47,20,82', 'http://www.pokelab.xyz/images/325.jpg');
+INSERT INTO pokemon VALUES (326, 'grumpig', 326, 9, 715, 165, 420, 1, 14, NULL, '47,20,82', 'http://www.pokelab.xyz/images/326.jpg');
+INSERT INTO pokemon VALUES (327, 'spinda', 327, 11, 50, 126, 421, 1, 1, NULL, '20,77,126', 'http://www.pokelab.xyz/images/327.jpg');
+INSERT INTO pokemon VALUES (328, 'trapinch', 328, 7, 150, 58, 422, 1, 5, NULL, '52,71,125', 'http://www.pokelab.xyz/images/328.jpg');
+INSERT INTO pokemon VALUES (329, 'vibrava', 329, 11, 153, 119, 423, 1, 5, 16, '26', 'http://www.pokelab.xyz/images/329.jpg');
+INSERT INTO pokemon VALUES (330, 'flygon', 330, 20, 820, 234, 424, 1, 5, 16, '26', 'http://www.pokelab.xyz/images/330.jpg');
+INSERT INTO pokemon VALUES (331, 'cacnea', 331, 4, 513, 67, 425, 1, 12, NULL, '8,11', 'http://www.pokelab.xyz/images/331.jpg');
+INSERT INTO pokemon VALUES (332, 'cacturne', 332, 13, 774, 166, 426, 1, 12, 17, '8,11', 'http://www.pokelab.xyz/images/332.jpg');
+INSERT INTO pokemon VALUES (333, 'swablu', 333, 4, 12, 62, 427, 1, 1, 3, '30,13', 'http://www.pokelab.xyz/images/333.jpg');
+INSERT INTO pokemon VALUES (334, 'altaria', 334, 11, 206, 172, 428, 1, 16, 3, '30,13', 'http://www.pokelab.xyz/images/334.jpg');
+INSERT INTO pokemon VALUES (335, 'zangoose', 335, 13, 403, 160, 430, 1, 1, NULL, '17,137', 'http://www.pokelab.xyz/images/335.jpg');
+INSERT INTO pokemon VALUES (336, 'seviper', 336, 27, 525, 160, 431, 1, 4, NULL, '61,151', 'http://www.pokelab.xyz/images/336.jpg');
+INSERT INTO pokemon VALUES (337, 'lunatone', 337, 10, 1680, 161, 432, 1, 6, 14, '26', 'http://www.pokelab.xyz/images/337.jpg');
+INSERT INTO pokemon VALUES (338, 'solrock', 338, 12, 1540, 161, 433, 1, 6, 14, '26', 'http://www.pokelab.xyz/images/338.jpg');
+INSERT INTO pokemon VALUES (339, 'barboach', 339, 4, 19, 58, 434, 1, 11, 5, '12,107,93', 'http://www.pokelab.xyz/images/339.jpg');
+INSERT INTO pokemon VALUES (340, 'whiscash', 340, 9, 236, 164, 435, 1, 11, 5, '12,107,93', 'http://www.pokelab.xyz/images/340.jpg');
+INSERT INTO pokemon VALUES (341, 'corphish', 341, 6, 115, 62, 436, 1, 11, NULL, '52,75,91', 'http://www.pokelab.xyz/images/341.jpg');
+INSERT INTO pokemon VALUES (342, 'crawdaunt', 342, 11, 328, 164, 437, 1, 11, 17, '52,75,91', 'http://www.pokelab.xyz/images/342.jpg');
+INSERT INTO pokemon VALUES (343, 'baltoy', 343, 5, 215, 60, 438, 1, 5, 14, '26', 'http://www.pokelab.xyz/images/343.jpg');
+INSERT INTO pokemon VALUES (344, 'claydol', 344, 15, 1080, 175, 439, 1, 5, 14, '26', 'http://www.pokelab.xyz/images/344.jpg');
+INSERT INTO pokemon VALUES (345, 'lileep', 345, 10, 238, 71, 440, 1, 6, 12, '21,114', 'http://www.pokelab.xyz/images/345.jpg');
+INSERT INTO pokemon VALUES (346, 'cradily', 346, 15, 604, 173, 441, 1, 6, 12, '21,114', 'http://www.pokelab.xyz/images/346.jpg');
+INSERT INTO pokemon VALUES (347, 'anorith', 347, 7, 125, 71, 442, 1, 6, 7, '4,33', 'http://www.pokelab.xyz/images/347.jpg');
+INSERT INTO pokemon VALUES (348, 'armaldo', 348, 15, 682, 173, 443, 1, 6, 7, '4,33', 'http://www.pokelab.xyz/images/348.jpg');
+INSERT INTO pokemon VALUES (349, 'feebas', 349, 6, 74, 40, 444, 1, 11, NULL, '33,12,91', 'http://www.pokelab.xyz/images/349.jpg');
+INSERT INTO pokemon VALUES (350, 'milotic', 350, 62, 1620, 189, 445, 1, 11, NULL, '63,172,56', 'http://www.pokelab.xyz/images/350.jpg');
+INSERT INTO pokemon VALUES (351, 'castform', 351, 3, 8, 147, 446, 1, 1, NULL, '59', 'http://www.pokelab.xyz/images/351.jpg');
+INSERT INTO pokemon VALUES (352, 'kecleon', 352, 10, 220, 154, 450, 1, 1, NULL, '16,168', 'http://www.pokelab.xyz/images/352.jpg');
+INSERT INTO pokemon VALUES (353, 'shuppet', 353, 6, 23, 59, 451, 1, 8, NULL, '15,119,130', 'http://www.pokelab.xyz/images/353.jpg');
+INSERT INTO pokemon VALUES (354, 'banette', 354, 11, 125, 159, 452, 1, 8, NULL, '15,119,130', 'http://www.pokelab.xyz/images/354.jpg');
+INSERT INTO pokemon VALUES (355, 'duskull', 355, 8, 150, 59, 454, 1, 8, NULL, '26,119', 'http://www.pokelab.xyz/images/355.jpg');
+INSERT INTO pokemon VALUES (356, 'dusclops', 356, 16, 306, 159, 455, 1, 8, NULL, '46,119', 'http://www.pokelab.xyz/images/356.jpg');
+INSERT INTO pokemon VALUES (357, 'tropius', 357, 20, 1000, 161, 457, 1, 12, 3, '34,94,139', 'http://www.pokelab.xyz/images/357.jpg');
+INSERT INTO pokemon VALUES (358, 'chimecho', 358, 6, 10, 159, 459, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/358.jpg');
+INSERT INTO pokemon VALUES (359, 'absol', 359, 12, 470, 163, 460, 1, 17, NULL, '46,105,154', 'http://www.pokelab.xyz/images/359.jpg');
+INSERT INTO pokemon VALUES (360, 'wynaut', 360, 6, 140, 52, 283, 1, 14, NULL, '23,140', 'http://www.pokelab.xyz/images/360.jpg');
+INSERT INTO pokemon VALUES (361, 'snorunt', 361, 7, 168, 60, 462, 1, 15, NULL, '39,115,141', 'http://www.pokelab.xyz/images/361.jpg');
+INSERT INTO pokemon VALUES (362, 'glalie', 362, 15, 2565, 168, 463, 1, 15, NULL, '39,115,141', 'http://www.pokelab.xyz/images/362.jpg');
+INSERT INTO pokemon VALUES (363, 'spheal', 363, 8, 395, 58, 466, 1, 15, 11, '47,115,12', 'http://www.pokelab.xyz/images/363.jpg');
+INSERT INTO pokemon VALUES (364, 'sealeo', 364, 11, 876, 144, 467, 1, 15, 11, '47,115,12', 'http://www.pokelab.xyz/images/364.jpg');
+INSERT INTO pokemon VALUES (365, 'walrein', 365, 14, 1506, 239, 468, 1, 15, 11, '47,115,12', 'http://www.pokelab.xyz/images/365.jpg');
+INSERT INTO pokemon VALUES (366, 'clamperl', 366, 4, 525, 69, 469, 1, 11, NULL, '75,155', 'http://www.pokelab.xyz/images/366.jpg');
+INSERT INTO pokemon VALUES (367, 'huntail', 367, 17, 270, 170, 470, 1, 11, NULL, '33,41', 'http://www.pokelab.xyz/images/367.jpg');
+INSERT INTO pokemon VALUES (368, 'gorebyss', 368, 18, 226, 170, 471, 1, 11, NULL, '33,93', 'http://www.pokelab.xyz/images/368.jpg');
+INSERT INTO pokemon VALUES (369, 'relicanth', 369, 10, 234, 170, 472, 1, 11, 6, '33,69,5', 'http://www.pokelab.xyz/images/369.jpg');
+INSERT INTO pokemon VALUES (370, 'luvdisc', 370, 6, 87, 116, 473, 1, 11, NULL, '33,93', 'http://www.pokelab.xyz/images/370.jpg');
+INSERT INTO pokemon VALUES (371, 'bagon', 371, 6, 421, 60, 474, 1, 16, NULL, '69,125', 'http://www.pokelab.xyz/images/371.jpg');
+INSERT INTO pokemon VALUES (372, 'shelgon', 372, 11, 1105, 147, 475, 1, 16, NULL, '69,142', 'http://www.pokelab.xyz/images/372.jpg');
+INSERT INTO pokemon VALUES (373, 'salamence', 373, 15, 1026, 270, 476, 1, 16, 3, '22,153', 'http://www.pokelab.xyz/images/373.jpg');
+INSERT INTO pokemon VALUES (374, 'beldum', 374, 6, 952, 60, 478, 1, 9, 14, '29,135', 'http://www.pokelab.xyz/images/374.jpg');
+INSERT INTO pokemon VALUES (375, 'metang', 375, 12, 2025, 147, 479, 1, 9, 14, '29,135', 'http://www.pokelab.xyz/images/375.jpg');
+INSERT INTO pokemon VALUES (376, 'metagross', 376, 16, 5500, 270, 480, 1, 9, 14, '29,135', 'http://www.pokelab.xyz/images/376.jpg');
+INSERT INTO pokemon VALUES (377, 'regirock', 377, 17, 2300, 261, 482, 1, 6, NULL, '29,5', 'http://www.pokelab.xyz/images/377.jpg');
+INSERT INTO pokemon VALUES (378, 'regice', 378, 18, 1750, 261, 483, 1, 15, NULL, '29,115', 'http://www.pokelab.xyz/images/378.jpg');
+INSERT INTO pokemon VALUES (379, 'registeel', 379, 19, 2050, 261, 484, 1, 9, NULL, '29,135', 'http://www.pokelab.xyz/images/379.jpg');
+INSERT INTO pokemon VALUES (380, 'latias', 380, 14, 400, 270, 485, 1, 16, 14, '26', 'http://www.pokelab.xyz/images/380.jpg');
+INSERT INTO pokemon VALUES (381, 'latios', 381, 20, 600, 270, 487, 1, 16, 14, '26', 'http://www.pokelab.xyz/images/381.jpg');
+INSERT INTO pokemon VALUES (382, 'kyogre', 382, 45, 3520, 302, 489, 1, 11, NULL, '2', 'http://www.pokelab.xyz/images/382.jpg');
+INSERT INTO pokemon VALUES (383, 'groudon', 383, 35, 9500, 302, 491, 1, 5, NULL, '70', 'http://www.pokelab.xyz/images/383.jpg');
+INSERT INTO pokemon VALUES (384, 'rayquaza', 384, 70, 2065, 306, 493, 1, 16, 3, '76', 'http://www.pokelab.xyz/images/384.jpg');
+INSERT INTO pokemon VALUES (385, 'jirachi', 385, 3, 11, 270, 495, 1, 9, 14, '32', 'http://www.pokelab.xyz/images/385.jpg');
+INSERT INTO pokemon VALUES (386, 'deoxys-normal', 386, 17, 608, 270, 496, 1, 14, NULL, '46', 'http://www.pokelab.xyz/images/386.jpg');
+INSERT INTO pokemon VALUES (387, 'turtwig', 387, 4, 102, 64, 500, 1, 12, NULL, '65,75', 'http://www.pokelab.xyz/images/387.jpg');
+INSERT INTO pokemon VALUES (388, 'grotle', 388, 11, 970, 142, 501, 1, 12, NULL, '65,75', 'http://www.pokelab.xyz/images/388.jpg');
+INSERT INTO pokemon VALUES (389, 'torterra', 389, 22, 3100, 236, 502, 1, 12, 5, '65,75', 'http://www.pokelab.xyz/images/389.jpg');
+INSERT INTO pokemon VALUES (390, 'chimchar', 390, 5, 62, 62, 503, 1, 10, NULL, '66,89', 'http://www.pokelab.xyz/images/390.jpg');
+INSERT INTO pokemon VALUES (391, 'monferno', 391, 9, 220, 142, 504, 1, 10, 2, '66,89', 'http://www.pokelab.xyz/images/391.jpg');
+INSERT INTO pokemon VALUES (392, 'infernape', 392, 12, 550, 240, 505, 1, 10, 2, '66,89', 'http://www.pokelab.xyz/images/392.jpg');
+INSERT INTO pokemon VALUES (393, 'piplup', 393, 4, 52, 63, 506, 1, 11, NULL, '67,128', 'http://www.pokelab.xyz/images/393.jpg');
+INSERT INTO pokemon VALUES (394, 'prinplup', 394, 8, 230, 142, 507, 1, 11, NULL, '67,128', 'http://www.pokelab.xyz/images/394.jpg');
+INSERT INTO pokemon VALUES (395, 'empoleon', 395, 17, 845, 239, 508, 1, 11, 9, '67,128', 'http://www.pokelab.xyz/images/395.jpg');
+INSERT INTO pokemon VALUES (396, 'starly', 396, 3, 20, 49, 509, 1, 1, 3, '51,120', 'http://www.pokelab.xyz/images/396.jpg');
+INSERT INTO pokemon VALUES (397, 'staravia', 397, 6, 155, 119, 510, 1, 1, 3, '22,120', 'http://www.pokelab.xyz/images/397.jpg');
+INSERT INTO pokemon VALUES (398, 'staraptor', 398, 12, 249, 218, 511, 1, 1, 3, '22,120', 'http://www.pokelab.xyz/images/398.jpg');
+INSERT INTO pokemon VALUES (399, 'bidoof', 399, 5, 200, 50, 512, 1, 1, NULL, '86,109,141', 'http://www.pokelab.xyz/images/399.jpg');
+INSERT INTO pokemon VALUES (400, 'bibarel', 400, 10, 315, 144, 513, 1, 1, 11, '86,109,141', 'http://www.pokelab.xyz/images/400.jpg');
+INSERT INTO pokemon VALUES (401, 'kricketot', 401, 3, 22, 39, 514, 1, 7, NULL, '61,50', 'http://www.pokelab.xyz/images/401.jpg');
+INSERT INTO pokemon VALUES (402, 'kricketune', 402, 10, 255, 134, 515, 1, 7, NULL, '68,101', 'http://www.pokelab.xyz/images/402.jpg');
+INSERT INTO pokemon VALUES (403, 'shinx', 403, 5, 95, 53, 516, 1, 13, NULL, '79,22,62', 'http://www.pokelab.xyz/images/403.jpg');
+INSERT INTO pokemon VALUES (404, 'luxio', 404, 9, 305, 127, 517, 1, 13, NULL, '79,22,62', 'http://www.pokelab.xyz/images/404.jpg');
+INSERT INTO pokemon VALUES (405, 'luxray', 405, 14, 420, 235, 518, 1, 13, NULL, '79,22,62', 'http://www.pokelab.xyz/images/405.jpg');
+INSERT INTO pokemon VALUES (406, 'budew', 406, 2, 12, 56, 405, 1, 12, 4, '30,38,102', 'http://www.pokelab.xyz/images/406.jpg');
+INSERT INTO pokemon VALUES (407, 'roserade', 407, 9, 145, 232, 407, 1, 12, 4, '30,38,101', 'http://www.pokelab.xyz/images/407.jpg');
+INSERT INTO pokemon VALUES (408, 'cranidos', 408, 9, 315, 70, 519, 1, 6, NULL, '104,125', 'http://www.pokelab.xyz/images/408.jpg');
+INSERT INTO pokemon VALUES (409, 'rampardos', 409, 16, 1025, 173, 520, 1, 6, NULL, '104,125', 'http://www.pokelab.xyz/images/409.jpg');
+INSERT INTO pokemon VALUES (410, 'shieldon', 410, 5, 570, 70, 521, 1, 6, 9, '5,43', 'http://www.pokelab.xyz/images/410.jpg');
+INSERT INTO pokemon VALUES (411, 'bastiodon', 411, 13, 1495, 173, 522, 1, 6, 9, '5,43', 'http://www.pokelab.xyz/images/411.jpg');
+INSERT INTO pokemon VALUES (412, 'burmy', 412, 2, 34, 45, 523, 1, 7, NULL, '61,142', 'http://www.pokelab.xyz/images/412.jpg');
+INSERT INTO pokemon VALUES (413, 'wormadam-plant', 413, 5, 65, 148, 524, 1, 7, 12, '107,142', 'http://www.pokelab.xyz/images/413.jpg');
+INSERT INTO pokemon VALUES (414, 'mothim', 414, 9, 233, 148, 527, 1, 7, 3, '68,110', 'http://www.pokelab.xyz/images/414.jpg');
+INSERT INTO pokemon VALUES (415, 'combee', 415, 3, 55, 49, 528, 1, 7, 3, '118,55', 'http://www.pokelab.xyz/images/415.jpg');
+INSERT INTO pokemon VALUES (416, 'vespiquen', 416, 12, 385, 166, 529, 1, 7, 3, '46,127', 'http://www.pokelab.xyz/images/416.jpg');
+INSERT INTO pokemon VALUES (417, 'pachirisu', 417, 4, 39, 142, 530, 1, 13, NULL, '50,53,10', 'http://www.pokelab.xyz/images/417.jpg');
+INSERT INTO pokemon VALUES (418, 'buizel', 418, 7, 295, 66, 531, 1, 11, NULL, '33,41', 'http://www.pokelab.xyz/images/418.jpg');
+INSERT INTO pokemon VALUES (419, 'floatzel', 419, 11, 335, 173, 532, 1, 11, NULL, '33,41', 'http://www.pokelab.xyz/images/419.jpg');
+INSERT INTO pokemon VALUES (420, 'cherubi', 420, 4, 33, 55, 533, 1, 12, NULL, '34', 'http://www.pokelab.xyz/images/420.jpg');
+INSERT INTO pokemon VALUES (421, 'cherrim', 421, 5, 93, 158, 534, 1, 12, NULL, '122', 'http://www.pokelab.xyz/images/421.jpg');
+INSERT INTO pokemon VALUES (422, 'shellos', 422, 3, 63, 65, 535, 1, 11, NULL, '60,114,159', 'http://www.pokelab.xyz/images/422.jpg');
+INSERT INTO pokemon VALUES (423, 'gastrodon', 423, 9, 299, 166, 536, 1, 11, 5, '60,114,159', 'http://www.pokelab.xyz/images/423.jpg');
+INSERT INTO pokemon VALUES (424, 'ambipom', 424, 12, 203, 169, 271, 1, 1, NULL, '101,53,92', 'http://www.pokelab.xyz/images/424.jpg');
+INSERT INTO pokemon VALUES (425, 'drifloon', 425, 4, 12, 70, 537, 1, 8, 3, '106,84,138', 'http://www.pokelab.xyz/images/425.jpg');
+INSERT INTO pokemon VALUES (426, 'drifblim', 426, 12, 150, 174, 538, 1, 8, 3, '106,84,138', 'http://www.pokelab.xyz/images/426.jpg');
+INSERT INTO pokemon VALUES (427, 'buneary', 427, 4, 55, 70, 539, 1, 1, NULL, '50,103,7', 'http://www.pokelab.xyz/images/427.jpg');
+INSERT INTO pokemon VALUES (428, 'lopunny', 428, 12, 333, 168, 540, 1, 1, NULL, '56,103,7', 'http://www.pokelab.xyz/images/428.jpg');
+INSERT INTO pokemon VALUES (429, 'mismagius', 429, 9, 44, 173, 281, 1, 8, NULL, '26', 'http://www.pokelab.xyz/images/429.jpg');
+INSERT INTO pokemon VALUES (430, 'honchkrow', 430, 9, 273, 177, 279, 1, 17, 3, '15,105,153', 'http://www.pokelab.xyz/images/430.jpg');
+INSERT INTO pokemon VALUES (431, 'glameow', 431, 5, 39, 62, 542, 1, 1, NULL, '7,20,51', 'http://www.pokelab.xyz/images/431.jpg');
+INSERT INTO pokemon VALUES (432, 'purugly', 432, 10, 438, 158, 543, 1, 1, NULL, '47,20,128', 'http://www.pokelab.xyz/images/432.jpg');
+INSERT INTO pokemon VALUES (433, 'chingling', 433, 2, 6, 57, 458, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/433.jpg');
+INSERT INTO pokemon VALUES (434, 'stunky', 434, 4, 192, 66, 544, 1, 4, 17, '1,106,51', 'http://www.pokelab.xyz/images/434.jpg');
+INSERT INTO pokemon VALUES (435, 'skuntank', 435, 10, 380, 168, 545, 1, 4, 17, '1,106,51', 'http://www.pokelab.xyz/images/435.jpg');
+INSERT INTO pokemon VALUES (436, 'bronzor', 436, 5, 605, 60, 546, 1, 9, 14, '26,85,134', 'http://www.pokelab.xyz/images/436.jpg');
+INSERT INTO pokemon VALUES (437, 'bronzong', 437, 13, 1870, 175, 547, 1, 9, 14, '26,85,134', 'http://www.pokelab.xyz/images/437.jpg');
+INSERT INTO pokemon VALUES (438, 'bonsly', 438, 5, 150, 58, 265, 1, 6, NULL, '5,69,155', 'http://www.pokelab.xyz/images/438.jpg');
+INSERT INTO pokemon VALUES (439, 'mime-jr', 439, 6, 130, 62, 183, 1, 14, 18, '43,111,101', 'http://www.pokelab.xyz/images/439.jpg');
+INSERT INTO pokemon VALUES (440, 'happiny', 440, 6, 244, 110, 169, 1, 1, NULL, '30,32,132', 'http://www.pokelab.xyz/images/440.jpg');
+INSERT INTO pokemon VALUES (441, 'chatot', 441, 5, 19, 144, 548, 1, 1, 3, '51,77,145', 'http://www.pokelab.xyz/images/441.jpg');
+INSERT INTO pokemon VALUES (442, 'spiritomb', 442, 10, 1080, 170, 549, 1, 8, 17, '46,151', 'http://www.pokelab.xyz/images/442.jpg');
+INSERT INTO pokemon VALUES (443, 'gible', 443, 7, 205, 60, 550, 1, 16, 5, '8,24', 'http://www.pokelab.xyz/images/443.jpg');
+INSERT INTO pokemon VALUES (444, 'gabite', 444, 14, 560, 144, 551, 1, 16, 5, '8,24', 'http://www.pokelab.xyz/images/444.jpg');
+INSERT INTO pokemon VALUES (445, 'garchomp', 445, 19, 950, 270, 552, 1, 16, 5, '8,24', 'http://www.pokelab.xyz/images/445.jpg');
+INSERT INTO pokemon VALUES (446, 'munchlax', 446, 6, 1050, 78, 222, 1, 1, NULL, '53,47,82', 'http://www.pokelab.xyz/images/446.jpg');
+INSERT INTO pokemon VALUES (447, 'riolu', 447, 7, 202, 57, 554, 1, 2, NULL, '80,39,158', 'http://www.pokelab.xyz/images/447.jpg');
+INSERT INTO pokemon VALUES (448, 'lucario', 448, 12, 540, 184, 555, 1, 2, 9, '80,39,154', 'http://www.pokelab.xyz/images/448.jpg');
+INSERT INTO pokemon VALUES (449, 'hippopotas', 449, 8, 495, 66, 557, 1, 5, NULL, '45,159', 'http://www.pokelab.xyz/images/449.jpg');
+INSERT INTO pokemon VALUES (450, 'hippowdon', 450, 20, 3000, 184, 558, 1, 5, NULL, '45,159', 'http://www.pokelab.xyz/images/450.jpg');
+INSERT INTO pokemon VALUES (451, 'skorupi', 451, 8, 120, 66, 559, 1, 4, 7, '4,97,51', 'http://www.pokelab.xyz/images/451.jpg');
+INSERT INTO pokemon VALUES (452, 'drapion', 452, 13, 615, 175, 560, 1, 4, 17, '4,97,51', 'http://www.pokelab.xyz/images/452.jpg');
+INSERT INTO pokemon VALUES (453, 'croagunk', 453, 7, 230, 60, 561, 1, 4, 2, '107,87,143', 'http://www.pokelab.xyz/images/453.jpg');
+INSERT INTO pokemon VALUES (454, 'toxicroak', 454, 13, 444, 172, 562, 1, 4, 2, '107,87,143', 'http://www.pokelab.xyz/images/454.jpg');
+INSERT INTO pokemon VALUES (455, 'carnivine', 455, 14, 270, 159, 563, 1, 12, NULL, '26', 'http://www.pokelab.xyz/images/455.jpg');
+INSERT INTO pokemon VALUES (456, 'finneon', 456, 4, 70, 66, 564, 1, 11, NULL, '33,114,41', 'http://www.pokelab.xyz/images/456.jpg');
+INSERT INTO pokemon VALUES (457, 'lumineon', 457, 12, 240, 161, 565, 1, 11, NULL, '33,114,41', 'http://www.pokelab.xyz/images/457.jpg');
+INSERT INTO pokemon VALUES (458, 'mantyke', 458, 10, 650, 69, 310, 1, 11, 3, '33,11,41', 'http://www.pokelab.xyz/images/458.jpg');
+INSERT INTO pokemon VALUES (459, 'snover', 459, 10, 505, 67, 566, 1, 12, 15, '117,43', 'http://www.pokelab.xyz/images/459.jpg');
+INSERT INTO pokemon VALUES (460, 'abomasnow', 460, 22, 1355, 173, 567, 1, 12, 15, '117,43', 'http://www.pokelab.xyz/images/460.jpg');
+INSERT INTO pokemon VALUES (461, 'weavile', 461, 11, 340, 179, 298, 1, 17, 15, '46,124', 'http://www.pokelab.xyz/images/461.jpg');
+INSERT INTO pokemon VALUES (462, 'magnezone', 462, 12, 1800, 241, 126, 1, 13, 9, '42,5,148', 'http://www.pokelab.xyz/images/462.jpg');
+INSERT INTO pokemon VALUES (463, 'lickilicky', 463, 17, 1400, 180, 163, 1, 1, NULL, '20,12,13', 'http://www.pokelab.xyz/images/463.jpg');
+INSERT INTO pokemon VALUES (464, 'rhyperior', 464, 24, 2828, 241, 168, 1, 5, 6, '31,116,120', 'http://www.pokelab.xyz/images/464.jpg');
+INSERT INTO pokemon VALUES (465, 'tangrowth', 465, 20, 1286, 187, 173, 1, 12, NULL, '34,102,144', 'http://www.pokelab.xyz/images/465.jpg');
+INSERT INTO pokemon VALUES (466, 'electivire', 466, 18, 1386, 243, 192, 1, 13, NULL, '78,72', 'http://www.pokelab.xyz/images/466.jpg');
+INSERT INTO pokemon VALUES (467, 'magmortar', 467, 16, 680, 243, 195, 1, 10, NULL, '49,72', 'http://www.pokelab.xyz/images/467.jpg');
+INSERT INTO pokemon VALUES (468, 'togekiss', 468, 15, 380, 245, 255, 1, 18, 3, '55,32,105', 'http://www.pokelab.xyz/images/468.jpg');
+INSERT INTO pokemon VALUES (469, 'yanmega', 469, 19, 515, 180, 275, 1, 7, 3, '3,110,119', 'http://www.pokelab.xyz/images/469.jpg');
+INSERT INTO pokemon VALUES (470, 'leafeon', 470, 10, 255, 184, 210, 1, 12, NULL, '102,34', 'http://www.pokelab.xyz/images/470.jpg');
+INSERT INTO pokemon VALUES (471, 'glaceon', 471, 8, 259, 184, 211, 1, 15, NULL, '81,115', 'http://www.pokelab.xyz/images/471.jpg');
+INSERT INTO pokemon VALUES (472, 'gliscor', 472, 20, 425, 179, 290, 1, 5, 3, '52,8,90', 'http://www.pokelab.xyz/images/472.jpg');
+INSERT INTO pokemon VALUES (473, 'mamoswine', 473, 25, 2910, 239, 305, 1, 15, 5, '12,81,47', 'http://www.pokelab.xyz/images/473.jpg');
+INSERT INTO pokemon VALUES (474, 'porygon-z', 474, 9, 340, 241, 215, 1, 1, NULL, '91,88,148', 'http://www.pokelab.xyz/images/474.jpg');
+INSERT INTO pokemon VALUES (475, 'gallade', 475, 16, 520, 233, 366, 1, 14, 2, '80,154', 'http://www.pokelab.xyz/images/475.jpg');
+INSERT INTO pokemon VALUES (476, 'probopass', 476, 14, 3400, 184, 384, 1, 6, 9, '5,42,159', 'http://www.pokelab.xyz/images/476.jpg');
+INSERT INTO pokemon VALUES (477, 'dusknoir', 477, 22, 1066, 236, 456, 1, 8, NULL, '46,119', 'http://www.pokelab.xyz/images/477.jpg');
+INSERT INTO pokemon VALUES (478, 'froslass', 478, 13, 266, 168, 465, 1, 15, 8, '81,130', 'http://www.pokelab.xyz/images/478.jpg');
+INSERT INTO pokemon VALUES (479, 'rotom', 479, 3, 3, 154, 569, 1, 13, 8, '26', 'http://www.pokelab.xyz/images/479.jpg');
+INSERT INTO pokemon VALUES (480, 'uxie', 480, 3, 3, 261, 575, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/480.jpg');
+INSERT INTO pokemon VALUES (481, 'mesprit', 481, 3, 3, 261, 576, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/481.jpg');
+INSERT INTO pokemon VALUES (482, 'azelf', 482, 3, 3, 261, 577, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/482.jpg');
+INSERT INTO pokemon VALUES (483, 'dialga', 483, 54, 6830, 306, 578, 1, 9, 16, '46,140', 'http://www.pokelab.xyz/images/483.jpg');
+INSERT INTO pokemon VALUES (484, 'palkia', 484, 42, 3360, 306, 579, 1, 11, 16, '46,140', 'http://www.pokelab.xyz/images/484.jpg');
+INSERT INTO pokemon VALUES (485, 'heatran', 485, 17, 4300, 270, 580, 1, 10, 9, '18,49', 'http://www.pokelab.xyz/images/485.jpg');
+INSERT INTO pokemon VALUES (486, 'regigigas', 486, 37, 4200, 302, 581, 1, 1, NULL, '112', 'http://www.pokelab.xyz/images/486.jpg');
+INSERT INTO pokemon VALUES (487, 'giratina-altered', 487, 45, 7500, 306, 582, 1, 8, 16, '46,140', 'http://www.pokelab.xyz/images/487.jpg');
+INSERT INTO pokemon VALUES (488, 'cresselia', 488, 15, 856, 270, 584, 1, 14, NULL, '26', 'http://www.pokelab.xyz/images/488.jpg');
+INSERT INTO pokemon VALUES (489, 'phione', 489, 4, 31, 216, 585, 1, 11, NULL, '93', 'http://www.pokelab.xyz/images/489.jpg');
+INSERT INTO pokemon VALUES (490, 'manaphy', 490, 3, 14, 270, 586, 1, 11, NULL, '93', 'http://www.pokelab.xyz/images/490.jpg');
+INSERT INTO pokemon VALUES (491, 'darkrai', 491, 15, 505, 270, 587, 1, 17, NULL, '123', 'http://www.pokelab.xyz/images/491.jpg');
+INSERT INTO pokemon VALUES (492, 'shaymin-land', 492, 2, 21, 270, 588, 1, 12, NULL, '30', 'http://www.pokelab.xyz/images/492.jpg');
+INSERT INTO pokemon VALUES (493, 'arceus', 493, 32, 3200, 324, 590, 1, 1, NULL, '121', 'http://www.pokelab.xyz/images/493.jpg');
+INSERT INTO pokemon VALUES (494, 'victini', 494, 4, 40, 270, 591, 1, 14, 10, '162', 'http://www.pokelab.xyz/images/494.jpg');
+INSERT INTO pokemon VALUES (495, 'snivy', 495, 6, 81, 62, 592, 1, 12, NULL, '65,126', 'http://www.pokelab.xyz/images/495.jpg');
+INSERT INTO pokemon VALUES (496, 'servine', 496, 8, 160, 145, 593, 1, 12, NULL, '65,126', 'http://www.pokelab.xyz/images/496.jpg');
+INSERT INTO pokemon VALUES (497, 'serperior', 497, 33, 630, 238, 594, 1, 12, NULL, '65,126', 'http://www.pokelab.xyz/images/497.jpg');
+INSERT INTO pokemon VALUES (498, 'tepig', 498, 5, 99, 62, 595, 1, 10, NULL, '66,47', 'http://www.pokelab.xyz/images/498.jpg');
+INSERT INTO pokemon VALUES (499, 'pignite', 499, 10, 555, 146, 596, 1, 10, 2, '66,47', 'http://www.pokelab.xyz/images/499.jpg');
+INSERT INTO pokemon VALUES (500, 'emboar', 500, 16, 1500, 238, 597, 1, 10, 2, '66,120', 'http://www.pokelab.xyz/images/500.jpg');
+INSERT INTO pokemon VALUES (501, 'oshawott', 501, 5, 59, 62, 598, 1, 11, NULL, '67,75', 'http://www.pokelab.xyz/images/501.jpg');
+INSERT INTO pokemon VALUES (502, 'dewott', 502, 8, 245, 145, 599, 1, 11, NULL, '67,75', 'http://www.pokelab.xyz/images/502.jpg');
+INSERT INTO pokemon VALUES (503, 'samurott', 503, 15, 946, 238, 600, 1, 11, NULL, '67,75', 'http://www.pokelab.xyz/images/503.jpg');
+INSERT INTO pokemon VALUES (504, 'patrat', 504, 5, 116, 51, 601, 1, 1, NULL, '50,51,148', 'http://www.pokelab.xyz/images/504.jpg');
+INSERT INTO pokemon VALUES (505, 'watchog', 505, 11, 270, 147, 602, 1, 1, NULL, '35,51,148', 'http://www.pokelab.xyz/images/505.jpg');
+INSERT INTO pokemon VALUES (506, 'lillipup', 506, 4, 41, 55, 603, 1, 1, NULL, '72,53,50', 'http://www.pokelab.xyz/images/506.jpg');
+INSERT INTO pokemon VALUES (507, 'herdier', 507, 9, 147, 130, 604, 1, 1, NULL, '22,146,113', 'http://www.pokelab.xyz/images/507.jpg');
+INSERT INTO pokemon VALUES (508, 'stoutland', 508, 12, 610, 225, 605, 1, 1, NULL, '22,146,113', 'http://www.pokelab.xyz/images/508.jpg');
+INSERT INTO pokemon VALUES (509, 'purrloin', 509, 4, 101, 56, 606, 1, 17, NULL, '7,84,158', 'http://www.pokelab.xyz/images/509.jpg');
+INSERT INTO pokemon VALUES (510, 'liepard', 510, 11, 375, 156, 607, 1, 17, NULL, '7,84,158', 'http://www.pokelab.xyz/images/510.jpg');
+INSERT INTO pokemon VALUES (511, 'pansage', 511, 6, 105, 63, 608, 1, 12, NULL, '82,65', 'http://www.pokelab.xyz/images/511.jpg');
+INSERT INTO pokemon VALUES (512, 'simisage', 512, 11, 305, 174, 609, 1, 12, NULL, '82,65', 'http://www.pokelab.xyz/images/512.jpg');
+INSERT INTO pokemon VALUES (513, 'pansear', 513, 6, 110, 63, 610, 1, 10, NULL, '82,66', 'http://www.pokelab.xyz/images/513.jpg');
+INSERT INTO pokemon VALUES (514, 'simisear', 514, 10, 280, 174, 611, 1, 10, NULL, '82,66', 'http://www.pokelab.xyz/images/514.jpg');
+INSERT INTO pokemon VALUES (515, 'panpour', 515, 6, 135, 63, 612, 1, 11, NULL, '82,67', 'http://www.pokelab.xyz/images/515.jpg');
+INSERT INTO pokemon VALUES (516, 'simipour', 516, 10, 290, 174, 613, 1, 11, NULL, '82,67', 'http://www.pokelab.xyz/images/516.jpg');
+INSERT INTO pokemon VALUES (517, 'munna', 517, 6, 233, 58, 614, 1, 14, NULL, '108,28,140', 'http://www.pokelab.xyz/images/517.jpg');
+INSERT INTO pokemon VALUES (518, 'musharna', 518, 11, 605, 170, 615, 1, 14, NULL, '108,28,140', 'http://www.pokelab.xyz/images/518.jpg');
+INSERT INTO pokemon VALUES (519, 'pidove', 519, 3, 21, 53, 616, 1, 1, 3, '145,105,79', 'http://www.pokelab.xyz/images/519.jpg');
+INSERT INTO pokemon VALUES (520, 'tranquill', 520, 6, 150, 125, 617, 1, 1, 3, '145,105,79', 'http://www.pokelab.xyz/images/520.jpg');
+INSERT INTO pokemon VALUES (521, 'unfezant', 521, 12, 290, 220, 618, 1, 1, 3, '145,105,79', 'http://www.pokelab.xyz/images/521.jpg');
+INSERT INTO pokemon VALUES (522, 'blitzle', 522, 8, 298, 59, 619, 1, 13, NULL, '31,78,157', 'http://www.pokelab.xyz/images/522.jpg');
+INSERT INTO pokemon VALUES (523, 'zebstrika', 523, 16, 795, 174, 620, 1, 13, NULL, '31,78,157', 'http://www.pokelab.xyz/images/523.jpg');
+INSERT INTO pokemon VALUES (524, 'roggenrola', 524, 4, 180, 56, 621, 1, 6, NULL, '5,133,159', 'http://www.pokelab.xyz/images/524.jpg');
+INSERT INTO pokemon VALUES (525, 'boldore', 525, 9, 1020, 137, 622, 1, 6, NULL, '5,133,159', 'http://www.pokelab.xyz/images/525.jpg');
+INSERT INTO pokemon VALUES (526, 'gigalith', 526, 17, 2600, 232, 623, 1, 6, NULL, '5,45,159', 'http://www.pokelab.xyz/images/526.jpg');
+INSERT INTO pokemon VALUES (527, 'woobat', 527, 4, 21, 65, 624, 1, 14, 3, '109,103,86', 'http://www.pokelab.xyz/images/527.jpg');
+INSERT INTO pokemon VALUES (528, 'swoobat', 528, 9, 105, 149, 625, 1, 14, 3, '109,103,86', 'http://www.pokelab.xyz/images/528.jpg');
+INSERT INTO pokemon VALUES (529, 'drilbur', 529, 3, 85, 66, 626, 1, 5, NULL, '146,159,104', 'http://www.pokelab.xyz/images/529.jpg');
+INSERT INTO pokemon VALUES (530, 'excadrill', 530, 7, 404, 178, 627, 1, 5, 9, '146,159,104', 'http://www.pokelab.xyz/images/530.jpg');
+INSERT INTO pokemon VALUES (531, 'audino', 531, 11, 310, 390, 628, 1, 1, NULL, '131,144,103', 'http://www.pokelab.xyz/images/531.jpg');
+INSERT INTO pokemon VALUES (532, 'timburr', 532, 6, 125, 61, 630, 1, 2, NULL, '62,125,89', 'http://www.pokelab.xyz/images/532.jpg');
+INSERT INTO pokemon VALUES (533, 'gurdurr', 533, 12, 400, 142, 631, 1, 2, NULL, '62,125,89', 'http://www.pokelab.xyz/images/533.jpg');
+INSERT INTO pokemon VALUES (534, 'conkeldurr', 534, 14, 870, 227, 632, 1, 2, NULL, '62,125,89', 'http://www.pokelab.xyz/images/534.jpg');
+INSERT INTO pokemon VALUES (535, 'tympole', 535, 5, 45, 59, 633, 1, 11, NULL, '33,93,11', 'http://www.pokelab.xyz/images/535.jpg');
+INSERT INTO pokemon VALUES (536, 'palpitoad', 536, 8, 170, 134, 634, 1, 11, 5, '33,93,11', 'http://www.pokelab.xyz/images/536.jpg');
+INSERT INTO pokemon VALUES (537, 'seismitoad', 537, 15, 620, 229, 635, 1, 11, 5, '33,143,11', 'http://www.pokelab.xyz/images/537.jpg');
+INSERT INTO pokemon VALUES (538, 'throh', 538, 13, 555, 163, 636, 1, 2, NULL, '62,39,104', 'http://www.pokelab.xyz/images/538.jpg');
+INSERT INTO pokemon VALUES (539, 'sawk', 539, 14, 510, 163, 637, 1, 2, NULL, '5,39,104', 'http://www.pokelab.xyz/images/539.jpg');
+INSERT INTO pokemon VALUES (540, 'sewaddle', 540, 3, 25, 62, 638, 1, 7, 12, '68,34,142', 'http://www.pokelab.xyz/images/540.jpg');
+INSERT INTO pokemon VALUES (541, 'swadloon', 541, 5, 73, 133, 639, 1, 7, 12, '102,34,142', 'http://www.pokelab.xyz/images/541.jpg');
+INSERT INTO pokemon VALUES (542, 'leavanny', 542, 12, 205, 225, 640, 1, 7, 12, '68,34,142', 'http://www.pokelab.xyz/images/542.jpg');
+INSERT INTO pokemon VALUES (543, 'venipede', 543, 4, 53, 52, 641, 1, 7, 4, '38,68,3', 'http://www.pokelab.xyz/images/543.jpg');
+INSERT INTO pokemon VALUES (544, 'whirlipede', 544, 12, 585, 126, 642, 1, 7, 4, '38,68,3', 'http://www.pokelab.xyz/images/544.jpg');
+INSERT INTO pokemon VALUES (545, 'scolipede', 545, 25, 2005, 218, 643, 1, 7, 4, '38,68,3', 'http://www.pokelab.xyz/images/545.jpg');
+INSERT INTO pokemon VALUES (546, 'cottonee', 546, 3, 6, 56, 644, 1, 12, 18, '158,151,34', 'http://www.pokelab.xyz/images/546.jpg');
+INSERT INTO pokemon VALUES (547, 'whimsicott', 547, 7, 66, 168, 645, 1, 12, 18, '158,151,34', 'http://www.pokelab.xyz/images/547.jpg');
+INSERT INTO pokemon VALUES (548, 'petilil', 548, 5, 66, 56, 646, 1, 12, NULL, '34,20,102', 'http://www.pokelab.xyz/images/548.jpg');
+INSERT INTO pokemon VALUES (549, 'lilligant', 549, 11, 163, 168, 647, 1, 12, NULL, '34,20,102', 'http://www.pokelab.xyz/images/549.jpg');
+INSERT INTO pokemon VALUES (550, 'basculin-red-striped', 550, 10, 180, 161, 648, 1, 11, NULL, '120,91,104', 'http://www.pokelab.xyz/images/550.jpg');
+INSERT INTO pokemon VALUES (551, 'sandile', 551, 7, 152, 58, 650, 1, 5, 17, '22,153,83', 'http://www.pokelab.xyz/images/551.jpg');
+INSERT INTO pokemon VALUES (552, 'krokorok', 552, 10, 334, 123, 651, 1, 5, 17, '22,153,83', 'http://www.pokelab.xyz/images/552.jpg');
+INSERT INTO pokemon VALUES (553, 'krookodile', 553, 15, 963, 234, 652, 1, 5, 17, '22,153,83', 'http://www.pokelab.xyz/images/553.jpg');
+INSERT INTO pokemon VALUES (554, 'darumaka', 554, 6, 375, 63, 653, 1, 10, NULL, '55,39', 'http://www.pokelab.xyz/images/554.jpg');
+INSERT INTO pokemon VALUES (555, 'darmanitan-standard', 555, 13, 929, 168, 654, 1, 10, NULL, '125,161', 'http://www.pokelab.xyz/images/555.jpg');
+INSERT INTO pokemon VALUES (556, 'maractus', 556, 10, 280, 161, 656, 1, 12, NULL, '11,34,114', 'http://www.pokelab.xyz/images/556.jpg');
+INSERT INTO pokemon VALUES (557, 'dwebble', 557, 3, 145, 65, 657, 1, 7, 6, '5,75,133', 'http://www.pokelab.xyz/images/557.jpg');
+INSERT INTO pokemon VALUES (558, 'crustle', 558, 14, 2000, 170, 658, 1, 7, 6, '5,75,133', 'http://www.pokelab.xyz/images/558.jpg');
+INSERT INTO pokemon VALUES (559, 'scraggy', 559, 6, 118, 70, 659, 1, 17, 2, '61,153,22', 'http://www.pokelab.xyz/images/559.jpg');
+INSERT INTO pokemon VALUES (560, 'scrafty', 560, 11, 300, 171, 660, 1, 17, 2, '61,153,22', 'http://www.pokelab.xyz/images/560.jpg');
+INSERT INTO pokemon VALUES (561, 'sigilyph', 561, 14, 140, 172, 661, 1, 14, 3, '147,98,110', 'http://www.pokelab.xyz/images/561.jpg');
+INSERT INTO pokemon VALUES (562, 'yamask', 562, 5, 15, 61, 662, 1, 8, NULL, '152', 'http://www.pokelab.xyz/images/562.jpg');
+INSERT INTO pokemon VALUES (563, 'cofagrigus', 563, 17, 765, 169, 663, 1, 8, NULL, '152', 'http://www.pokelab.xyz/images/563.jpg');
+INSERT INTO pokemon VALUES (564, 'tirtouga', 564, 7, 165, 71, 664, 1, 11, 6, '116,5,33', 'http://www.pokelab.xyz/images/564.jpg');
+INSERT INTO pokemon VALUES (565, 'carracosta', 565, 12, 810, 173, 665, 1, 11, 6, '116,5,33', 'http://www.pokelab.xyz/images/565.jpg');
+INSERT INTO pokemon VALUES (566, 'archen', 566, 5, 95, 71, 666, 1, 6, 3, '129', 'http://www.pokelab.xyz/images/566.jpg');
+INSERT INTO pokemon VALUES (567, 'archeops', 567, 14, 320, 177, 667, 1, 6, 3, '129', 'http://www.pokelab.xyz/images/567.jpg');
+INSERT INTO pokemon VALUES (568, 'trubbish', 568, 6, 310, 66, 668, 1, 4, NULL, '1,60,106', 'http://www.pokelab.xyz/images/568.jpg');
+INSERT INTO pokemon VALUES (569, 'garbodor', 569, 19, 1073, 166, 669, 1, 4, NULL, '1,133,106', 'http://www.pokelab.xyz/images/569.jpg');
+INSERT INTO pokemon VALUES (570, 'zorua', 570, 7, 125, 66, 670, 1, 17, NULL, '149', 'http://www.pokelab.xyz/images/570.jpg');
+INSERT INTO pokemon VALUES (571, 'zoroark', 571, 16, 811, 179, 671, 1, 17, NULL, '149', 'http://www.pokelab.xyz/images/571.jpg');
+INSERT INTO pokemon VALUES (572, 'minccino', 572, 4, 58, 60, 672, 1, 1, NULL, '56,101,92', 'http://www.pokelab.xyz/images/572.jpg');
+INSERT INTO pokemon VALUES (573, 'cinccino', 573, 5, 75, 165, 673, 1, 1, NULL, '56,101,92', 'http://www.pokelab.xyz/images/573.jpg');
+INSERT INTO pokemon VALUES (574, 'gothita', 574, 4, 58, 58, 674, 1, 14, NULL, '119,172,23', 'http://www.pokelab.xyz/images/574.jpg');
+INSERT INTO pokemon VALUES (575, 'gothorita', 575, 7, 180, 137, 675, 1, 14, NULL, '119,172,23', 'http://www.pokelab.xyz/images/575.jpg');
+INSERT INTO pokemon VALUES (576, 'gothitelle', 576, 15, 440, 221, 676, 1, 14, NULL, '119,172,23', 'http://www.pokelab.xyz/images/576.jpg');
+INSERT INTO pokemon VALUES (577, 'solosis', 577, 3, 10, 58, 677, 1, 14, NULL, '142,98,144', 'http://www.pokelab.xyz/images/577.jpg');
+INSERT INTO pokemon VALUES (578, 'duosion', 578, 6, 80, 130, 678, 1, 14, NULL, '142,98,144', 'http://www.pokelab.xyz/images/578.jpg');
+INSERT INTO pokemon VALUES (579, 'reuniclus', 579, 10, 201, 221, 679, 1, 14, NULL, '142,98,144', 'http://www.pokelab.xyz/images/579.jpg');
+INSERT INTO pokemon VALUES (580, 'ducklett', 580, 5, 55, 61, 680, 1, 11, 3, '51,145,93', 'http://www.pokelab.xyz/images/580.jpg');
+INSERT INTO pokemon VALUES (581, 'swanna', 581, 13, 242, 166, 681, 1, 11, 3, '51,145,93', 'http://www.pokelab.xyz/images/581.jpg');
+INSERT INTO pokemon VALUES (582, 'vanillite', 582, 4, 57, 61, 682, 1, 15, NULL, '115,81,133', 'http://www.pokelab.xyz/images/582.jpg');
+INSERT INTO pokemon VALUES (583, 'vanillish', 583, 11, 410, 138, 683, 1, 15, NULL, '115,81,133', 'http://www.pokelab.xyz/images/583.jpg');
+INSERT INTO pokemon VALUES (584, 'vanilluxe', 584, 13, 575, 241, 684, 1, 15, NULL, '115,117,133', 'http://www.pokelab.xyz/images/584.jpg');
+INSERT INTO pokemon VALUES (585, 'deerling', 585, 6, 195, 67, 685, 1, 1, 12, '34,157,32', 'http://www.pokelab.xyz/images/585.jpg');
+INSERT INTO pokemon VALUES (586, 'sawsbuck', 586, 19, 925, 166, 686, 1, 1, 12, '34,157,32', 'http://www.pokelab.xyz/images/586.jpg');
+INSERT INTO pokemon VALUES (587, 'emolga', 587, 4, 50, 150, 687, 1, 13, 3, '9,78', 'http://www.pokelab.xyz/images/587.jpg');
+INSERT INTO pokemon VALUES (588, 'karrablast', 588, 5, 59, 63, 688, 1, 7, NULL, '68,61,99', 'http://www.pokelab.xyz/images/588.jpg');
+INSERT INTO pokemon VALUES (589, 'escavalier', 589, 10, 330, 173, 689, 1, 7, 9, '68,75,142', 'http://www.pokelab.xyz/images/589.jpg');
+INSERT INTO pokemon VALUES (590, 'foongus', 590, 2, 10, 59, 690, 1, 12, 4, '27,144', 'http://www.pokelab.xyz/images/590.jpg');
+INSERT INTO pokemon VALUES (591, 'amoonguss', 591, 6, 105, 162, 691, 1, 12, 4, '27,144', 'http://www.pokelab.xyz/images/591.jpg');
+INSERT INTO pokemon VALUES (592, 'frillish', 592, 12, 330, 67, 692, 1, 11, 8, '11,130,6', 'http://www.pokelab.xyz/images/592.jpg');
+INSERT INTO pokemon VALUES (593, 'jellicent', 593, 22, 1350, 168, 693, 1, 11, 8, '11,130,6', 'http://www.pokelab.xyz/images/593.jpg');
+INSERT INTO pokemon VALUES (594, 'alomomola', 594, 12, 316, 165, 694, 1, 11, NULL, '131,93,144', 'http://www.pokelab.xyz/images/594.jpg');
+INSERT INTO pokemon VALUES (595, 'joltik', 595, 1, 6, 64, 695, 1, 7, 13, '14,127,68', 'http://www.pokelab.xyz/images/595.jpg');
+INSERT INTO pokemon VALUES (596, 'galvantula', 596, 8, 143, 165, 696, 1, 7, 13, '14,127,68', 'http://www.pokelab.xyz/images/596.jpg');
+INSERT INTO pokemon VALUES (597, 'ferroseed', 597, 6, 188, 61, 697, 1, 12, 9, '160', 'http://www.pokelab.xyz/images/597.jpg');
+INSERT INTO pokemon VALUES (598, 'ferrothorn', 598, 10, 1100, 171, 698, 1, 12, 9, '160,107', 'http://www.pokelab.xyz/images/598.jpg');
+INSERT INTO pokemon VALUES (599, 'klink', 599, 3, 210, 60, 699, 1, 9, NULL, '57,58,29', 'http://www.pokelab.xyz/images/599.jpg');
+INSERT INTO pokemon VALUES (600, 'klang', 600, 6, 510, 154, 700, 1, 9, NULL, '57,58,29', 'http://www.pokelab.xyz/images/600.jpg');
+INSERT INTO pokemon VALUES (601, 'klinklang', 601, 6, 810, 234, 701, 1, 9, NULL, '57,58,29', 'http://www.pokelab.xyz/images/601.jpg');
+INSERT INTO pokemon VALUES (602, 'tynamo', 602, 2, 3, 55, 702, 1, 13, NULL, '26', 'http://www.pokelab.xyz/images/602.jpg');
+INSERT INTO pokemon VALUES (603, 'eelektrik', 603, 12, 220, 142, 703, 1, 13, NULL, '26', 'http://www.pokelab.xyz/images/603.jpg');
+INSERT INTO pokemon VALUES (604, 'eelektross', 604, 21, 805, 232, 704, 1, 13, NULL, '26', 'http://www.pokelab.xyz/images/604.jpg');
+INSERT INTO pokemon VALUES (605, 'elgyem', 605, 5, 90, 67, 705, 1, 14, NULL, '140,28,148', 'http://www.pokelab.xyz/images/605.jpg');
+INSERT INTO pokemon VALUES (606, 'beheeyem', 606, 10, 345, 170, 706, 1, 14, NULL, '140,28,148', 'http://www.pokelab.xyz/images/606.jpg');
+INSERT INTO pokemon VALUES (607, 'litwick', 607, 3, 31, 55, 707, 1, 8, 10, '18,49,151', 'http://www.pokelab.xyz/images/607.jpg');
+INSERT INTO pokemon VALUES (608, 'lampent', 608, 6, 130, 130, 708, 1, 8, 10, '18,49,151', 'http://www.pokelab.xyz/images/608.jpg');
+INSERT INTO pokemon VALUES (609, 'chandelure', 609, 10, 343, 234, 709, 1, 8, 10, '18,49,151', 'http://www.pokelab.xyz/images/609.jpg');
+INSERT INTO pokemon VALUES (610, 'axew', 610, 6, 180, 64, 710, 1, 16, NULL, '79,104,127', 'http://www.pokelab.xyz/images/610.jpg');
+INSERT INTO pokemon VALUES (611, 'fraxure', 611, 10, 360, 144, 711, 1, 16, NULL, '79,104,127', 'http://www.pokelab.xyz/images/611.jpg');
+INSERT INTO pokemon VALUES (612, 'haxorus', 612, 18, 1055, 243, 712, 1, 16, NULL, '79,104,127', 'http://www.pokelab.xyz/images/612.jpg');
+INSERT INTO pokemon VALUES (613, 'cubchoo', 613, 5, 85, 61, 713, 1, 15, NULL, '81,202,155', 'http://www.pokelab.xyz/images/613.jpg');
+INSERT INTO pokemon VALUES (614, 'beartic', 614, 26, 2600, 177, 714, 1, 15, NULL, '81,202,33', 'http://www.pokelab.xyz/images/614.jpg');
+INSERT INTO pokemon VALUES (615, 'cryogonal', 615, 11, 1480, 180, 715, 1, 15, NULL, '26', 'http://www.pokelab.xyz/images/615.jpg');
+INSERT INTO pokemon VALUES (616, 'shelmet', 616, 4, 77, 61, 716, 1, 7, NULL, '93,75,142', 'http://www.pokelab.xyz/images/616.jpg');
+INSERT INTO pokemon VALUES (617, 'accelgor', 617, 8, 253, 173, 717, 1, 7, NULL, '93,60,84', 'http://www.pokelab.xyz/images/617.jpg');
+INSERT INTO pokemon VALUES (618, 'stunfisk', 618, 7, 110, 165, 718, 1, 5, 13, '9,7,8', 'http://www.pokelab.xyz/images/618.jpg');
+INSERT INTO pokemon VALUES (619, 'mienfoo', 619, 9, 200, 70, 719, 1, 2, NULL, '39,144,120', 'http://www.pokelab.xyz/images/619.jpg');
+INSERT INTO pokemon VALUES (620, 'mienshao', 620, 14, 355, 179, 720, 1, 2, NULL, '39,144,120', 'http://www.pokelab.xyz/images/620.jpg');
+INSERT INTO pokemon VALUES (621, 'druddigon', 621, 16, 1390, 170, 721, 1, 16, NULL, '24,125,104', 'http://www.pokelab.xyz/images/621.jpg');
+INSERT INTO pokemon VALUES (622, 'golett', 622, 10, 920, 61, 722, 1, 5, 8, '89,103,99', 'http://www.pokelab.xyz/images/622.jpg');
+INSERT INTO pokemon VALUES (623, 'golurk', 623, 28, 3300, 169, 723, 1, 5, 8, '89,103,99', 'http://www.pokelab.xyz/images/623.jpg');
+INSERT INTO pokemon VALUES (624, 'pawniard', 624, 5, 102, 68, 724, 1, 17, 9, '128,39,46', 'http://www.pokelab.xyz/images/624.jpg');
+INSERT INTO pokemon VALUES (625, 'bisharp', 625, 16, 700, 172, 725, 1, 17, 9, '128,39,46', 'http://www.pokelab.xyz/images/625.jpg');
+INSERT INTO pokemon VALUES (626, 'bouffalant', 626, 16, 946, 172, 726, 1, 1, NULL, '120,157,43', 'http://www.pokelab.xyz/images/626.jpg');
+INSERT INTO pokemon VALUES (627, 'rufflet', 627, 5, 105, 70, 727, 1, 1, 3, '51,125,55', 'http://www.pokelab.xyz/images/627.jpg');
+INSERT INTO pokemon VALUES (628, 'braviary', 628, 15, 410, 179, 728, 1, 1, 3, '51,125,128', 'http://www.pokelab.xyz/images/628.jpg');
+INSERT INTO pokemon VALUES (629, 'vullaby', 629, 5, 90, 74, 729, 1, 17, 3, '145,142,133', 'http://www.pokelab.xyz/images/629.jpg');
+INSERT INTO pokemon VALUES (630, 'mandibuzz', 630, 12, 395, 179, 730, 1, 17, 3, '145,142,133', 'http://www.pokelab.xyz/images/630.jpg');
+INSERT INTO pokemon VALUES (631, 'heatmor', 631, 14, 580, 169, 731, 1, 10, NULL, '82,18,73', 'http://www.pokelab.xyz/images/631.jpg');
+INSERT INTO pokemon VALUES (632, 'durant', 632, 3, 330, 169, 732, 1, 7, 9, '68,55,54', 'http://www.pokelab.xyz/images/632.jpg');
+INSERT INTO pokemon VALUES (633, 'deino', 633, 8, 173, 60, 733, 1, 17, 16, '55', 'http://www.pokelab.xyz/images/633.jpg');
+INSERT INTO pokemon VALUES (634, 'zweilous', 634, 14, 500, 147, 734, 1, 17, 16, '55', 'http://www.pokelab.xyz/images/634.jpg');
+INSERT INTO pokemon VALUES (635, 'hydreigon', 635, 18, 1600, 270, 735, 1, 17, 16, '26', 'http://www.pokelab.xyz/images/635.jpg');
+INSERT INTO pokemon VALUES (636, 'larvesta', 636, 11, 288, 72, 736, 1, 7, 10, '49,68', 'http://www.pokelab.xyz/images/636.jpg');
+INSERT INTO pokemon VALUES (637, 'volcarona', 637, 16, 460, 248, 737, 1, 7, 10, '49,68', 'http://www.pokelab.xyz/images/637.jpg');
+INSERT INTO pokemon VALUES (638, 'cobalion', 638, 21, 2500, 261, 738, 1, 9, 2, '154', 'http://www.pokelab.xyz/images/638.jpg');
+INSERT INTO pokemon VALUES (639, 'terrakion', 639, 19, 2600, 261, 739, 1, 6, 2, '154', 'http://www.pokelab.xyz/images/639.jpg');
+INSERT INTO pokemon VALUES (640, 'virizion', 640, 20, 2000, 261, 740, 1, 12, 2, '154', 'http://www.pokelab.xyz/images/640.jpg');
+INSERT INTO pokemon VALUES (641, 'tornadus-incarnate', 641, 15, 630, 261, 741, 1, 3, NULL, '158,128', 'http://www.pokelab.xyz/images/641.jpg');
+INSERT INTO pokemon VALUES (642, 'thundurus-incarnate', 642, 15, 610, 261, 743, 1, 13, 3, '158,128', 'http://www.pokelab.xyz/images/642.jpg');
+INSERT INTO pokemon VALUES (643, 'reshiram', 643, 32, 3300, 306, 745, 1, 16, 10, '163', 'http://www.pokelab.xyz/images/643.jpg');
+INSERT INTO pokemon VALUES (644, 'zekrom', 644, 29, 3450, 306, 746, 1, 16, 13, '164', 'http://www.pokelab.xyz/images/644.jpg');
+INSERT INTO pokemon VALUES (645, 'landorus-incarnate', 645, 15, 680, 270, 747, 1, 5, 3, '159,125', 'http://www.pokelab.xyz/images/645.jpg');
+INSERT INTO pokemon VALUES (646, 'kyurem', 646, 30, 3250, 297, 749, 1, 16, 15, '46', 'http://www.pokelab.xyz/images/646.jpg');
+INSERT INTO pokemon VALUES (647, 'keldeo-ordinary', 647, 14, 485, 261, 752, 1, 11, 2, '154', 'http://www.pokelab.xyz/images/647.jpg');
+INSERT INTO pokemon VALUES (648, 'meloetta-aria', 648, 6, 65, 270, 754, 1, 1, 14, '32', 'http://www.pokelab.xyz/images/648.jpg');
+INSERT INTO pokemon VALUES (649, 'genesect', 649, 15, 825, 270, 756, 1, 7, 9, '88', 'http://www.pokelab.xyz/images/649.jpg');
+INSERT INTO pokemon VALUES (650, 'chespin', 650, 4, 90, 63, 757, 1, 12, NULL, '65,171', 'http://www.pokelab.xyz/images/650.jpg');
+INSERT INTO pokemon VALUES (651, 'quilladin', 651, 7, 290, 142, 758, 1, 12, NULL, '65,171', 'http://www.pokelab.xyz/images/651.jpg');
+INSERT INTO pokemon VALUES (652, 'chesnaught', 652, 16, 900, 239, 759, 1, 12, 2, '65,171', 'http://www.pokelab.xyz/images/652.jpg');
+INSERT INTO pokemon VALUES (653, 'fennekin', 653, 4, 94, 61, 760, 1, 10, NULL, '66,170', 'http://www.pokelab.xyz/images/653.jpg');
+INSERT INTO pokemon VALUES (654, 'braixen', 654, 10, 145, 143, 761, 1, 10, NULL, '66,170', 'http://www.pokelab.xyz/images/654.jpg');
+INSERT INTO pokemon VALUES (655, 'delphox', 655, 15, 390, 240, 762, 1, 10, 14, '66,170', 'http://www.pokelab.xyz/images/655.jpg');
+INSERT INTO pokemon VALUES (656, 'froakie', 656, 3, 70, 63, 763, 1, 11, NULL, '67,168', 'http://www.pokelab.xyz/images/656.jpg');
+INSERT INTO pokemon VALUES (657, 'frogadier', 657, 6, 109, 142, 764, 1, 11, NULL, '67,168', 'http://www.pokelab.xyz/images/657.jpg');
+INSERT INTO pokemon VALUES (658, 'greninja', 658, 15, 400, 239, 765, 1, 11, 17, '67,168', 'http://www.pokelab.xyz/images/658.jpg');
+INSERT INTO pokemon VALUES (659, 'bunnelby', 659, 4, 50, 47, 768, 1, 1, NULL, '53,167,37', 'http://www.pokelab.xyz/images/659.jpg');
+INSERT INTO pokemon VALUES (660, 'diggersby', 660, 10, 424, 148, 769, 1, 1, 5, '53,167,37', 'http://www.pokelab.xyz/images/660.jpg');
+INSERT INTO pokemon VALUES (661, 'fletchling', 661, 3, 17, 56, 770, 1, 1, 3, '145,177', 'http://www.pokelab.xyz/images/661.jpg');
+INSERT INTO pokemon VALUES (662, 'fletchinder', 662, 7, 160, 134, 771, 1, 10, 3, '49,177', 'http://www.pokelab.xyz/images/662.jpg');
+INSERT INTO pokemon VALUES (663, 'talonflame', 663, 12, 245, 175, 772, 1, 10, 3, '49,177', 'http://www.pokelab.xyz/images/663.jpg');
+INSERT INTO pokemon VALUES (664, 'scatterbug', 664, 3, 25, 40, 773, 1, 7, NULL, '19,14,132', 'http://www.pokelab.xyz/images/664.jpg');
+INSERT INTO pokemon VALUES (665, 'spewpa', 665, 3, 84, 75, 774, 1, 7, NULL, '61,132', 'http://www.pokelab.xyz/images/665.jpg');
+INSERT INTO pokemon VALUES (666, 'vivillon', 666, 12, 170, 185, 775, 1, 7, 3, '19,14,132', 'http://www.pokelab.xyz/images/666.jpg');
+INSERT INTO pokemon VALUES (667, 'litleo', 667, 6, 135, 74, 776, 1, 10, 1, '79,127,153', 'http://www.pokelab.xyz/images/667.jpg');
+INSERT INTO pokemon VALUES (668, 'pyroar', 668, 15, 815, 177, 777, 1, 10, 1, '79,127,153', 'http://www.pokelab.xyz/images/668.png');
+INSERT INTO pokemon VALUES (669, 'flabebe', 669, 1, 1, 61, 778, 1, 18, NULL, '166,180', 'http://www.pokelab.xyz/images/669.jpg');
+INSERT INTO pokemon VALUES (670, 'floette', 670, 2, 9, 130, 779, 1, 18, NULL, '166,180', 'http://www.pokelab.xyz/images/670.jpg');
+INSERT INTO pokemon VALUES (671, 'florges', 671, 11, 100, 248, 781, 1, 18, NULL, '166,180', 'http://www.pokelab.xyz/images/671.jpg');
+INSERT INTO pokemon VALUES (672, 'skiddo', 672, 9, 310, 70, 782, 1, 12, NULL, '157,179', 'http://www.pokelab.xyz/images/672.jpg');
+INSERT INTO pokemon VALUES (673, 'gogoat', 673, 17, 910, 186, 783, 1, 12, NULL, '157,179', 'http://www.pokelab.xyz/images/673.jpg');
+INSERT INTO pokemon VALUES (674, 'pancham', 674, 6, 80, 70, 784, 1, 2, NULL, '89,104,113', 'http://www.pokelab.xyz/images/674.jpg');
+INSERT INTO pokemon VALUES (675, 'pangoro', 675, 21, 1360, 173, 785, 1, 2, 17, '89,104,113', 'http://www.pokelab.xyz/images/675.jpg');
+INSERT INTO pokemon VALUES (676, 'furfrou', 676, 12, 280, 165, 786, 1, 1, NULL, '169', 'http://www.pokelab.xyz/images/676.jpg');
+INSERT INTO pokemon VALUES (677, 'espurr', 677, 3, 35, 71, 787, 1, 14, NULL, '51,151,20', 'http://www.pokelab.xyz/images/677.jpg');
+INSERT INTO pokemon VALUES (678, 'meowstic-male', 678, 6, 85, 163, 788, 1, 14, NULL, '51,151,158', 'http://www.pokelab.xyz/images/678.jpg');
+INSERT INTO pokemon VALUES (679, 'honedge', 679, 8, 20, 65, 790, 1, 9, 8, '99', 'http://www.pokelab.xyz/images/679.jpg');
+INSERT INTO pokemon VALUES (680, 'doublade', 680, 8, 45, 157, 791, 1, 9, 8, '99', 'http://www.pokelab.xyz/images/680.jpg');
+INSERT INTO pokemon VALUES (681, 'aegislash-shield', 681, 17, 530, 234, 792, 1, 9, 8, '176', 'http://www.pokelab.xyz/images/681.jpg');
+INSERT INTO pokemon VALUES (682, 'spritzee', 682, 2, 5, 68, 794, 1, 18, NULL, '131,165', 'http://www.pokelab.xyz/images/682.jpg');
+INSERT INTO pokemon VALUES (683, 'aromatisse', 683, 8, 155, 162, 795, 1, 18, NULL, '131,165', 'http://www.pokelab.xyz/images/683.jpg');
+INSERT INTO pokemon VALUES (684, 'swirlix', 684, 4, 35, 68, 796, 1, 18, NULL, '175,84', 'http://www.pokelab.xyz/images/684.jpg');
+INSERT INTO pokemon VALUES (685, 'slurpuff', 685, 8, 50, 168, 797, 1, 18, NULL, '175,84', 'http://www.pokelab.xyz/images/685.jpg');
+INSERT INTO pokemon VALUES (686, 'inkay', 686, 4, 35, 58, 798, 1, 17, 14, '126,21,151', 'http://www.pokelab.xyz/images/686.jpg');
+INSERT INTO pokemon VALUES (687, 'malamar', 687, 15, 470, 169, 799, 1, 17, 14, '126,21,151', 'http://www.pokelab.xyz/images/687.jpg');
+INSERT INTO pokemon VALUES (688, 'binacle', 688, 5, 310, 61, 800, 1, 6, 11, '181,97,124', 'http://www.pokelab.xyz/images/688.jpg');
+INSERT INTO pokemon VALUES (689, 'barbaracle', 689, 13, 960, 175, 801, 1, 6, 11, '181,97,124', 'http://www.pokelab.xyz/images/689.jpg');
+INSERT INTO pokemon VALUES (690, 'skrelp', 690, 5, 73, 64, 802, 1, 4, 11, '38,143,91', 'http://www.pokelab.xyz/images/690.jpg');
+INSERT INTO pokemon VALUES (691, 'dragalge', 691, 18, 815, 173, 803, 1, 4, 16, '38,143,91', 'http://www.pokelab.xyz/images/691.jpg');
+INSERT INTO pokemon VALUES (692, 'clauncher', 692, 5, 83, 66, 804, 1, 11, NULL, '178', 'http://www.pokelab.xyz/images/692.jpg');
+INSERT INTO pokemon VALUES (693, 'clawitzer', 693, 13, 353, 100, 805, 1, 11, NULL, '178', 'http://www.pokelab.xyz/images/693.jpg');
+INSERT INTO pokemon VALUES (694, 'helioptile', 694, 5, 60, 58, 806, 1, 13, 1, '87,8,94', 'http://www.pokelab.xyz/images/694.jpg');
+INSERT INTO pokemon VALUES (695, 'heliolisk', 695, 10, 210, 168, 807, 1, 13, 1, '87,8,94', 'http://www.pokelab.xyz/images/695.jpg');
+INSERT INTO pokemon VALUES (696, 'tyrunt', 696, 8, 260, 72, 808, 1, 6, 16, '173,5', 'http://www.pokelab.xyz/images/696.jpg');
+INSERT INTO pokemon VALUES (697, 'tyrantrum', 697, 25, 2700, 182, 809, 1, 6, 16, '173,69', 'http://www.pokelab.xyz/images/697.jpg');
+INSERT INTO pokemon VALUES (698, 'amaura', 698, 13, 252, 72, 810, 1, 6, 15, '174,117', 'http://www.pokelab.xyz/images/698.jpg');
+INSERT INTO pokemon VALUES (699, 'aurorus', 699, 27, 2250, 104, 811, 1, 6, 15, '174,117', 'http://www.pokelab.xyz/images/699.jpg');
+INSERT INTO pokemon VALUES (700, 'sylveon', 700, 10, 235, 184, 212, 1, 18, NULL, '56,182', 'http://www.pokelab.xyz/images/700.jpg');
+INSERT INTO pokemon VALUES (701, 'hawlucha', 701, 8, 215, 175, 812, 1, 2, 3, '7,84,104', 'http://www.pokelab.xyz/images/701.jpg');
+INSERT INTO pokemon VALUES (702, 'dedenne', 702, 2, 22, 151, 813, 1, 13, 18, '167,53,57', 'http://www.pokelab.xyz/images/702.jpg');
+INSERT INTO pokemon VALUES (703, 'carbink', 703, 3, 57, 100, 814, 1, 6, 18, '29,5', 'http://www.pokelab.xyz/images/703.jpg');
+INSERT INTO pokemon VALUES (704, 'goomy', 704, 3, 28, 60, 815, 1, 16, NULL, '157,93,183', 'http://www.pokelab.xyz/images/704.jpg');
+INSERT INTO pokemon VALUES (705, 'sliggoo', 705, 8, 175, 158, 816, 1, 16, NULL, '157,93,183', 'http://www.pokelab.xyz/images/705.jpg');
+INSERT INTO pokemon VALUES (706, 'goodra', 706, 20, 1505, 270, 817, 1, 16, NULL, '157,93,183', 'http://www.pokelab.xyz/images/706.jpg');
+INSERT INTO pokemon VALUES (707, 'klefki', 707, 2, 30, 165, 818, 1, 9, 18, '158,170', 'http://www.pokelab.xyz/images/707.jpg');
+INSERT INTO pokemon VALUES (708, 'phantump', 708, 4, 70, 62, 819, 1, 8, 12, '30,119,139', 'http://www.pokelab.xyz/images/708.jpg');
+INSERT INTO pokemon VALUES (709, 'trevenant', 709, 15, 710, 166, 820, 1, 8, 12, '30,119,139', 'http://www.pokelab.xyz/images/709.jpg');
+INSERT INTO pokemon VALUES (710, 'pumpkaboo-average', 710, 4, 50, 67, 821, 1, 8, 12, '53,119,15', 'http://www.pokelab.xyz/images/710.jpg');
+INSERT INTO pokemon VALUES (711, 'gourgeist-average', 711, 9, 125, 173, 825, 1, 8, 12, '53,119,15', 'http://www.pokelab.xyz/images/711.jpg');
+INSERT INTO pokemon VALUES (712, 'bergmite', 712, 10, 995, 61, 829, 1, 15, NULL, '20,115,5', 'http://www.pokelab.xyz/images/712.jpg');
+INSERT INTO pokemon VALUES (713, 'avalugg', 713, 20, 5050, 180, 830, 1, 15, NULL, '20,115,5', 'http://www.pokelab.xyz/images/713.jpg');
+INSERT INTO pokemon VALUES (714, 'noibat', 714, 5, 80, 49, 831, 1, 3, 16, '119,151,140', 'http://www.pokelab.xyz/images/714.jpg');
+INSERT INTO pokemon VALUES (715, 'noivern', 715, 15, 850, 187, 832, 1, 3, 16, '119,151,140', 'http://www.pokelab.xyz/images/715.jpg');
+INSERT INTO pokemon VALUES (716, 'xerneas', 716, 30, 2150, 306, 833, 1, 18, NULL, '187', 'http://www.pokelab.xyz/images/716.jpg');
+INSERT INTO pokemon VALUES (717, 'yveltal', 717, 58, 2030, 306, 834, 1, 17, 3, '186', 'http://www.pokelab.xyz/images/717.jpg');
+INSERT INTO pokemon VALUES (718, 'zygarde', 718, 50, 3050, 270, 835, 1, 16, 5, '188', 'http://www.pokelab.xyz/images/718.jpg');
+INSERT INTO pokemon VALUES (719, 'diancie', 719, 7, 88, 270, 839, 1, 6, 18, '29', 'http://www.pokelab.xyz/images/719.jpg');
+INSERT INTO pokemon VALUES (720, 'hoopa', 720, 5, 90, 270, 841, 1, 14, 8, '170', 'http://www.pokelab.xyz/images/720.jpg');
+INSERT INTO pokemon VALUES (721, 'volcanion', 721, 17, 1950, 270, 843, 1, 10, 11, '11', 'http://www.pokelab.xyz/images/721.jpg');
+INSERT INTO pokemon VALUES (722, 'rowlet', 722, 3, 15, 64, 844, 1, 12, 3, '65,203', 'http://www.pokelab.xyz/images/722.jpg');
+INSERT INTO pokemon VALUES (723, 'dartrix', 723, 7, 160, 147, 845, 1, 12, 3, '65,203', 'http://www.pokelab.xyz/images/723.jpg');
+INSERT INTO pokemon VALUES (724, 'decidueye', 724, 16, 366, 239, 846, 1, 12, 8, '65,203', 'http://www.pokelab.xyz/images/724.jpg');
+INSERT INTO pokemon VALUES (725, 'litten', 725, 4, 43, 64, 847, 1, 10, NULL, '66,22', 'http://www.pokelab.xyz/images/725.jpg');
+INSERT INTO pokemon VALUES (726, 'torracat', 726, 7, 250, 147, 848, 1, 10, NULL, '66,22', 'http://www.pokelab.xyz/images/726.jpg');
+INSERT INTO pokemon VALUES (727, 'incineroar', 727, 18, 830, 239, 849, 1, 10, 17, '66,22', 'http://www.pokelab.xyz/images/727.jpg');
+INSERT INTO pokemon VALUES (728, 'popplio', 728, 4, 75, 64, 850, 1, 11, NULL, '67,204', 'http://www.pokelab.xyz/images/728.jpg');
+INSERT INTO pokemon VALUES (729, 'brionne', 729, 6, 175, 147, 851, 1, 11, NULL, '67,204', 'http://www.pokelab.xyz/images/729.jpg');
+INSERT INTO pokemon VALUES (730, 'primarina', 730, 18, 440, 239, 852, 1, 11, 18, '67,204', 'http://www.pokelab.xyz/images/730.jpg');
+INSERT INTO pokemon VALUES (731, 'pikipek', 731, 3, 12, 53, 853, 1, 1, 3, '51,92,53', 'http://www.pokelab.xyz/images/731.jpg');
+INSERT INTO pokemon VALUES (732, 'trumbeak', 732, 6, 148, 124, 854, 1, 1, 3, '51,92,53', 'http://www.pokelab.xyz/images/732.jpg');
+INSERT INTO pokemon VALUES (733, 'toucannon', 733, 11, 260, 218, 855, 1, 1, 3, '51,92,125', 'http://www.pokelab.xyz/images/733.jpg');
+INSERT INTO pokemon VALUES (734, 'yungoos', 734, 4, 60, 51, 856, 1, 1, NULL, '198,173,91', 'http://www.pokelab.xyz/images/734.jpg');
+INSERT INTO pokemon VALUES (735, 'gumshoos', 735, 7, 142, 146, 857, 1, 1, NULL, '198,173,91', 'http://www.pokelab.xyz/images/735.jpg');
+INSERT INTO pokemon VALUES (736, 'grubbin', 736, 4, 44, 60, 859, 1, 7, NULL, '68', 'http://www.pokelab.xyz/images/736.jpg');
+INSERT INTO pokemon VALUES (737, 'charjabug', 737, 5, 105, 140, 860, 1, 7, 13, '217', 'http://www.pokelab.xyz/images/737.jpg');
+INSERT INTO pokemon VALUES (738, 'vikavolt', 738, 15, 450, 225, 861, 1, 7, 13, '26', 'http://www.pokelab.xyz/images/738.jpg');
+INSERT INTO pokemon VALUES (739, 'crabrawler', 739, 6, 70, 68, 863, 1, 2, NULL, '52,89,83', 'http://www.pokelab.xyz/images/739.jpg');
+INSERT INTO pokemon VALUES (740, 'crabominable', 740, 17, 1800, 167, 864, 1, 2, 15, '52,89,83', 'http://www.pokelab.xyz/images/740.jpg');
+INSERT INTO pokemon VALUES (741, 'oricorio-baile', 741, 6, 34, 167, 865, 1, 10, 3, '216', 'http://www.pokelab.xyz/images/741.jpg');
+INSERT INTO pokemon VALUES (742, 'cutiefly', 742, 1, 2, 61, 869, 1, 7, 18, '118,19,175', 'http://www.pokelab.xyz/images/742.jpg');
+INSERT INTO pokemon VALUES (743, 'ribombee', 743, 2, 5, 162, 870, 1, 7, 18, '118,19,175', 'http://www.pokelab.xyz/images/743.jpg');
+INSERT INTO pokemon VALUES (744, 'rockruff', 744, 5, 92, 56, 872, 1, 6, NULL, '51,72,80', 'http://www.pokelab.xyz/images/744.jpg');
+INSERT INTO pokemon VALUES (745, 'lycanroc-midday', 745, 8, 250, 170, 874, 1, 6, NULL, '51,146,80', 'http://www.pokelab.xyz/images/745.jpg');
+INSERT INTO pokemon VALUES (746, 'wishiwashi-solo', 746, 2, 3, 61, 877, 1, 11, NULL, '208', 'http://www.pokelab.xyz/images/746.jpg');
+INSERT INTO pokemon VALUES (747, 'mareanie', 747, 4, 80, 61, 879, 1, 4, 11, '196,7,144', 'http://www.pokelab.xyz/images/747.jpg');
+INSERT INTO pokemon VALUES (748, 'toxapex', 748, 7, 145, 173, 880, 1, 4, 11, '196,7,144', 'http://www.pokelab.xyz/images/748.jpg');
+INSERT INTO pokemon VALUES (749, 'mudbray', 749, 10, 1100, 77, 881, 1, 5, NULL, '20,192,39', 'http://www.pokelab.xyz/images/749.jpg');
+INSERT INTO pokemon VALUES (750, 'mudsdale', 750, 25, 9200, 175, 882, 1, 5, NULL, '20,192,39', 'http://www.pokelab.xyz/images/750.jpg');
+INSERT INTO pokemon VALUES (751, 'dewpider', 751, 3, 40, 54, 883, 1, 11, 7, '199,11', 'http://www.pokelab.xyz/images/751.jpg');
+INSERT INTO pokemon VALUES (752, 'araquanid', 752, 18, 820, 159, 884, 1, 11, 7, '199,11', 'http://www.pokelab.xyz/images/752.jpg');
+INSERT INTO pokemon VALUES (753, 'fomantis', 753, 3, 15, 50, 886, 1, 12, NULL, '102,126', 'http://www.pokelab.xyz/images/753.jpg');
+INSERT INTO pokemon VALUES (754, 'lurantis', 754, 9, 185, 168, 887, 1, 12, NULL, '102,126', 'http://www.pokelab.xyz/images/754.jpg');
+INSERT INTO pokemon VALUES (755, 'morelull', 755, 2, 15, 57, 889, 1, 12, 18, '35,27,44', 'http://www.pokelab.xyz/images/755.jpg');
+INSERT INTO pokemon VALUES (756, 'shiinotic', 756, 10, 115, 142, 890, 1, 12, 18, '35,27,44', 'http://www.pokelab.xyz/images/756.jpg');
+INSERT INTO pokemon VALUES (757, 'salandit', 757, 6, 48, 64, 891, 1, 4, 10, '212,12', 'http://www.pokelab.xyz/images/757.jpg');
+INSERT INTO pokemon VALUES (758, 'salazzle', 758, 12, 222, 168, 892, 1, 4, 10, '212,12', 'http://www.pokelab.xyz/images/758.jpg');
+INSERT INTO pokemon VALUES (759, 'stufful', 759, 5, 68, 68, 894, 1, 1, 2, '218,103,56', 'http://www.pokelab.xyz/images/759.jpg');
+INSERT INTO pokemon VALUES (760, 'bewear', 760, 21, 1350, 175, 895, 1, 1, 2, '218,103,127', 'http://www.pokelab.xyz/images/760.jpg');
+INSERT INTO pokemon VALUES (761, 'bounsweet', 761, 3, 32, 42, 896, 1, 12, NULL, '102,12,175', 'http://www.pokelab.xyz/images/761.jpg');
+INSERT INTO pokemon VALUES (762, 'steenee', 762, 7, 82, 102, 897, 1, 12, NULL, '102,12,175', 'http://www.pokelab.xyz/images/762.jpg');
+INSERT INTO pokemon VALUES (763, 'tsareena', 763, 12, 214, 230, 898, 1, 12, NULL, '102,214,175', 'http://www.pokelab.xyz/images/763.jpg');
+INSERT INTO pokemon VALUES (764, 'comfey', 764, 1, 3, 170, 899, 1, 18, NULL, '166,205,30', 'http://www.pokelab.xyz/images/764.jpg');
+INSERT INTO pokemon VALUES (765, 'oranguru', 765, 15, 760, 172, 900, 1, 1, 14, '39,140,180', 'http://www.pokelab.xyz/images/765.jpg');
+INSERT INTO pokemon VALUES (766, 'passimian', 766, 20, 828, 172, 901, 1, 2, NULL, '222,128', 'http://www.pokelab.xyz/images/766.jpg');
+INSERT INTO pokemon VALUES (767, 'wimpod', 767, 5, 120, 46, 902, 1, 7, 11, '193', 'http://www.pokelab.xyz/images/767.jpg');
+INSERT INTO pokemon VALUES (768, 'golisopod', 768, 20, 1080, 186, 903, 1, 7, 11, '194', 'http://www.pokelab.xyz/images/768.jpg');
+INSERT INTO pokemon VALUES (769, 'sandygast', 769, 5, 700, 64, 904, 1, 8, 5, '195,8', 'http://www.pokelab.xyz/images/769.jpg');
+INSERT INTO pokemon VALUES (770, 'palossand', 770, 13, 2500, 168, 905, 1, 8, 5, '195,8', 'http://www.pokelab.xyz/images/770.jpg');
+INSERT INTO pokemon VALUES (771, 'pyukumuku', 771, 3, 12, 144, 906, 1, 11, NULL, '215,109', 'http://www.pokelab.xyz/images/771.jpg');
+INSERT INTO pokemon VALUES (772, 'type-null', 772, 19, 1205, 107, 907, 1, 1, NULL, '4', 'http://www.pokelab.xyz/images/772.jpg');
+INSERT INTO pokemon VALUES (773, 'silvally', 773, 23, 1005, 257, 908, 1, 1, NULL, '225', 'http://www.pokelab.xyz/images/773.jpg');
+INSERT INTO pokemon VALUES (774, 'minior-red-meteor', 774, 3, 400, 154, 909, 1, 6, 3, '197', 'http://www.pokelab.xyz/images/774.jpg');
+INSERT INTO pokemon VALUES (775, 'komala', 775, 4, 199, 168, 923, 1, 1, NULL, '213', 'http://www.pokelab.xyz/images/775.jpg');
+INSERT INTO pokemon VALUES (776, 'turtonator', 776, 20, 2120, 170, 924, 1, 10, 16, '75', 'http://www.pokelab.xyz/images/776.jpg');
+INSERT INTO pokemon VALUES (777, 'togedemaru', 777, 3, 33, 152, 925, 1, 13, 9, '160,31,5', 'http://www.pokelab.xyz/images/777.jpg');
+INSERT INTO pokemon VALUES (778, 'mimikyu-disguised', 778, 2, 7, 167, 927, 1, 8, 18, '209', 'http://www.pokelab.xyz/images/778.jpg');
+INSERT INTO pokemon VALUES (779, 'bruxish', 779, 9, 190, 166, 931, 1, 11, 14, '219,173,147', 'http://www.pokelab.xyz/images/779.jpg');
+INSERT INTO pokemon VALUES (780, 'drampa', 780, 30, 1850, 170, 932, 1, 1, 16, '201,157,13', 'http://www.pokelab.xyz/images/780.jpg');
+INSERT INTO pokemon VALUES (781, 'dhelmise', 781, 39, 2100, 181, 933, 1, 8, 12, '200', 'http://www.pokelab.xyz/images/781.jpg');
+INSERT INTO pokemon VALUES (782, 'jangmo-o', 782, 6, 297, 60, 934, 1, 16, NULL, '171,43,142', 'http://www.pokelab.xyz/images/782.jpg');
+INSERT INTO pokemon VALUES (783, 'hakamo-o', 783, 12, 470, 147, 935, 1, 16, 2, '171,43,142', 'http://www.pokelab.xyz/images/783.jpg');
+INSERT INTO pokemon VALUES (784, 'kommo-o', 784, 16, 782, 270, 936, 1, 16, 2, '171,43,142', 'http://www.pokelab.xyz/images/784.jpg');
+INSERT INTO pokemon VALUES (785, 'tapu-koko', 785, 18, 205, 257, 938, 1, 13, 18, '226,140', 'http://www.pokelab.xyz/images/785.jpg');
+INSERT INTO pokemon VALUES (786, 'tapu-lele', 786, 12, 186, 257, 939, 1, 14, 18, '227,140', 'http://www.pokelab.xyz/images/786.jpg');
+INSERT INTO pokemon VALUES (787, 'tapu-bulu', 787, 19, 455, 257, 940, 1, 12, 18, '229,140', 'http://www.pokelab.xyz/images/787.jpg');
+INSERT INTO pokemon VALUES (788, 'tapu-fini', 788, 13, 212, 257, 941, 1, 11, 18, '228,140', 'http://www.pokelab.xyz/images/788.jpg');
+INSERT INTO pokemon VALUES (789, 'cosmog', 789, 2, 1, 40, 942, 1, 14, NULL, '109', 'http://www.pokelab.xyz/images/789.jpg');
+INSERT INTO pokemon VALUES (790, 'cosmoem', 790, 1, 9999, 140, 943, 1, 14, NULL, '5', 'http://www.pokelab.xyz/images/790.jpg');
+INSERT INTO pokemon VALUES (791, 'solgaleo', 791, 34, 2300, 306, 944, 1, 14, 9, '230', 'http://www.pokelab.xyz/images/791.jpg');
+INSERT INTO pokemon VALUES (792, 'lunala', 792, 40, 1200, 306, 945, 1, 14, 8, '231', 'http://www.pokelab.xyz/images/792.jpg');
+INSERT INTO pokemon VALUES (793, 'nihilego', 793, 12, 555, 257, 946, 1, 6, 4, '224', 'http://www.pokelab.xyz/images/793.jpg');
+INSERT INTO pokemon VALUES (794, 'buzzwole', 794, 24, 3336, 257, 947, 1, 7, 2, '224', 'http://www.pokelab.xyz/images/794.jpg');
+INSERT INTO pokemon VALUES (795, 'pheromosa', 795, 18, 250, 257, 948, 1, 7, 2, '224', 'http://www.pokelab.xyz/images/795.jpg');
+INSERT INTO pokemon VALUES (796, 'xurkitree', 796, 38, 1000, 257, 949, 1, 13, NULL, '224', 'http://www.pokelab.xyz/images/796.jpg');
+INSERT INTO pokemon VALUES (797, 'celesteela', 797, 92, 9999, 257, 950, 1, 9, 3, '224', 'http://www.pokelab.xyz/images/797.jpg');
+INSERT INTO pokemon VALUES (798, 'kartana', 798, 3, 1, 257, 951, 1, 12, 9, '224', 'http://www.pokelab.xyz/images/798.jpg');
+INSERT INTO pokemon VALUES (799, 'guzzlord', 799, 55, 8880, 257, 952, 1, 17, 16, '224', 'http://www.pokelab.xyz/images/799.jpg');
+INSERT INTO pokemon VALUES (800, 'necrozma', 800, 24, 2300, 270, 953, 1, 14, NULL, '232', 'http://www.pokelab.xyz/images/800.jpg');
+INSERT INTO pokemon VALUES (801, 'magearna', 801, 10, 805, 270, 957, 1, 9, 18, '220', 'http://www.pokelab.xyz/images/801.jpg');
+INSERT INTO pokemon VALUES (802, 'marshadow', 802, 7, 222, 270, 959, 1, 2, 8, '101', 'http://www.pokelab.xyz/images/802.jpg');
+INSERT INTO pokemon VALUES (803, 'poipole', 803, 6, 18, 189, 960, 1, 4, NULL, '224', 'http://www.pokelab.xyz/images/803.jpg');
+INSERT INTO pokemon VALUES (804, 'naganadel', 804, 36, 1500, 243, 961, 1, 4, 16, '224', 'http://www.pokelab.xyz/images/804.jpg');
+INSERT INTO pokemon VALUES (805, 'stakataka', 805, 55, 8200, 257, 962, 1, 6, 9, '224', 'http://www.pokelab.xyz/images/805.jpg');
+INSERT INTO pokemon VALUES (806, 'blacephalon', 806, 18, 130, 257, 963, 1, 10, 8, '224', 'http://www.pokelab.xyz/images/806.jpg');
+INSERT INTO pokemon VALUES (807, 'zeraora', 807, 15, 445, 270, 964, 1, 13, NULL, '10', 'http://www.pokelab.xyz/images/807.jpg');
 
 -- Table: types
 DROP TABLE IF EXISTS types;
@@ -3342,25 +918,2607 @@ CREATE TABLE pokemon_sprites
 (
 	pokemon_id INTEGER NOT NULL,
 	description VARCHAR(79) NOT NULL,
-	sprite_url VARCHAR(79)
+	sprite_url VARCHAR(79),
+	PRIMARY KEY (pokemon_id, description),
+	FOREIGN KEY (pokemon_id) REFERENCES pokemon (id)
 );
 
-INSERT INTO pokemon_sprites
-	(pokemon_id, description, sprite_url)
-VALUES
-	(1, 'front', 'https://i.imgur.com/9CJcjiA.png');
-INSERT INTO pokemon_sprites
-	(pokemon_id, description, sprite_url)
-VALUES
-	(1, 'back', 'https://i.imgur.com/UcbM7Gn.png');
-INSERT INTO pokemon_sprites
-	(pokemon_id, description, sprite_url)
-VALUES
-	(1, 'front_golden', 'https://i.imgur.com/vta5Qwl.png');
-INSERT INTO pokemon_sprites
-	(pokemon_id, description, sprite_url)
-VALUES
-	(1, 'back_golden', 'https://i.imgur.com/VZ39Lz0.png');
+INSERT INTO pokemon_sprites VALUES (1, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/1.png');
+INSERT INTO pokemon_sprites VALUES (2, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/2.png');
+INSERT INTO pokemon_sprites VALUES (3, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/3.png');
+INSERT INTO pokemon_sprites VALUES (4, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/4.png');
+INSERT INTO pokemon_sprites VALUES (5, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/5.png');
+INSERT INTO pokemon_sprites VALUES (6, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/6.png');
+INSERT INTO pokemon_sprites VALUES (7, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/7.png');
+INSERT INTO pokemon_sprites VALUES (8, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/8.png');
+INSERT INTO pokemon_sprites VALUES (9, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/9.png');
+INSERT INTO pokemon_sprites VALUES (10, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/10.png');
+INSERT INTO pokemon_sprites VALUES (11, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/11.png');
+INSERT INTO pokemon_sprites VALUES (12, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/12.png');
+INSERT INTO pokemon_sprites VALUES (13, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/13.png');
+INSERT INTO pokemon_sprites VALUES (14, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/14.png');
+INSERT INTO pokemon_sprites VALUES (15, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/15.png');
+INSERT INTO pokemon_sprites VALUES (16, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/16.png');
+INSERT INTO pokemon_sprites VALUES (17, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/17.png');
+INSERT INTO pokemon_sprites VALUES (18, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/18.png');
+INSERT INTO pokemon_sprites VALUES (19, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/19.png');
+INSERT INTO pokemon_sprites VALUES (20, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/20.png');
+INSERT INTO pokemon_sprites VALUES (21, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/21.png');
+INSERT INTO pokemon_sprites VALUES (22, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/22.png');
+INSERT INTO pokemon_sprites VALUES (23, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/23.png');
+INSERT INTO pokemon_sprites VALUES (24, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/24.png');
+INSERT INTO pokemon_sprites VALUES (25, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/25.png');
+INSERT INTO pokemon_sprites VALUES (26, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/26.png');
+INSERT INTO pokemon_sprites VALUES (27, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/27.png');
+INSERT INTO pokemon_sprites VALUES (28, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/28.png');
+INSERT INTO pokemon_sprites VALUES (29, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/29.png');
+INSERT INTO pokemon_sprites VALUES (30, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/30.png');
+INSERT INTO pokemon_sprites VALUES (31, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/31.png');
+INSERT INTO pokemon_sprites VALUES (32, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/32.png');
+INSERT INTO pokemon_sprites VALUES (33, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/33.png');
+INSERT INTO pokemon_sprites VALUES (34, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/34.png');
+INSERT INTO pokemon_sprites VALUES (35, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/35.png');
+INSERT INTO pokemon_sprites VALUES (36, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/36.png');
+INSERT INTO pokemon_sprites VALUES (37, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/37.png');
+INSERT INTO pokemon_sprites VALUES (38, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/38.png');
+INSERT INTO pokemon_sprites VALUES (39, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/39.png');
+INSERT INTO pokemon_sprites VALUES (40, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/40.png');
+INSERT INTO pokemon_sprites VALUES (41, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/41.png');
+INSERT INTO pokemon_sprites VALUES (42, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/42.png');
+INSERT INTO pokemon_sprites VALUES (43, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/43.png');
+INSERT INTO pokemon_sprites VALUES (44, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/44.png');
+INSERT INTO pokemon_sprites VALUES (45, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/45.png');
+INSERT INTO pokemon_sprites VALUES (46, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/46.png');
+INSERT INTO pokemon_sprites VALUES (47, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/47.png');
+INSERT INTO pokemon_sprites VALUES (48, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/48.png');
+INSERT INTO pokemon_sprites VALUES (49, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/49.png');
+INSERT INTO pokemon_sprites VALUES (50, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/50.png');
+INSERT INTO pokemon_sprites VALUES (51, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/51.png');
+INSERT INTO pokemon_sprites VALUES (52, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/52.png');
+INSERT INTO pokemon_sprites VALUES (53, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/53.png');
+INSERT INTO pokemon_sprites VALUES (54, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/54.png');
+INSERT INTO pokemon_sprites VALUES (55, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/55.png');
+INSERT INTO pokemon_sprites VALUES (56, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/56.png');
+INSERT INTO pokemon_sprites VALUES (57, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/57.png');
+INSERT INTO pokemon_sprites VALUES (58, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/58.png');
+INSERT INTO pokemon_sprites VALUES (59, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/59.png');
+INSERT INTO pokemon_sprites VALUES (60, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/60.png');
+INSERT INTO pokemon_sprites VALUES (61, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/61.png');
+INSERT INTO pokemon_sprites VALUES (62, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/62.png');
+INSERT INTO pokemon_sprites VALUES (63, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/63.png');
+INSERT INTO pokemon_sprites VALUES (64, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/64.png');
+INSERT INTO pokemon_sprites VALUES (65, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/65.png');
+INSERT INTO pokemon_sprites VALUES (66, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/66.png');
+INSERT INTO pokemon_sprites VALUES (67, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/67.png');
+INSERT INTO pokemon_sprites VALUES (68, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/68.png');
+INSERT INTO pokemon_sprites VALUES (69, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/69.png');
+INSERT INTO pokemon_sprites VALUES (70, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/70.png');
+INSERT INTO pokemon_sprites VALUES (71, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/71.png');
+INSERT INTO pokemon_sprites VALUES (72, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/72.png');
+INSERT INTO pokemon_sprites VALUES (73, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/73.png');
+INSERT INTO pokemon_sprites VALUES (74, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/74.png');
+INSERT INTO pokemon_sprites VALUES (75, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/75.png');
+INSERT INTO pokemon_sprites VALUES (76, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/76.png');
+INSERT INTO pokemon_sprites VALUES (77, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/77.png');
+INSERT INTO pokemon_sprites VALUES (78, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/78.png');
+INSERT INTO pokemon_sprites VALUES (79, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/79.png');
+INSERT INTO pokemon_sprites VALUES (80, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/80.png');
+INSERT INTO pokemon_sprites VALUES (81, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/81.png');
+INSERT INTO pokemon_sprites VALUES (82, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/82.png');
+INSERT INTO pokemon_sprites VALUES (83, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/83.png');
+INSERT INTO pokemon_sprites VALUES (84, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/84.png');
+INSERT INTO pokemon_sprites VALUES (85, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/85.png');
+INSERT INTO pokemon_sprites VALUES (86, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/86.png');
+INSERT INTO pokemon_sprites VALUES (87, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/87.png');
+INSERT INTO pokemon_sprites VALUES (88, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/88.png');
+INSERT INTO pokemon_sprites VALUES (89, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/89.png');
+INSERT INTO pokemon_sprites VALUES (90, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/90.png');
+INSERT INTO pokemon_sprites VALUES (91, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/91.png');
+INSERT INTO pokemon_sprites VALUES (92, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/92.png');
+INSERT INTO pokemon_sprites VALUES (93, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/93.png');
+INSERT INTO pokemon_sprites VALUES (94, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/94.png');
+INSERT INTO pokemon_sprites VALUES (95, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/95.png');
+INSERT INTO pokemon_sprites VALUES (96, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/96.png');
+INSERT INTO pokemon_sprites VALUES (97, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/97.png');
+INSERT INTO pokemon_sprites VALUES (98, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/98.png');
+INSERT INTO pokemon_sprites VALUES (99, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/99.png');
+INSERT INTO pokemon_sprites VALUES (100, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/100.png');
+INSERT INTO pokemon_sprites VALUES (101, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/101.png');
+INSERT INTO pokemon_sprites VALUES (102, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/102.png');
+INSERT INTO pokemon_sprites VALUES (103, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/103.png');
+INSERT INTO pokemon_sprites VALUES (104, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/104.png');
+INSERT INTO pokemon_sprites VALUES (105, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/105.png');
+INSERT INTO pokemon_sprites VALUES (106, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/106.png');
+INSERT INTO pokemon_sprites VALUES (107, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/107.png');
+INSERT INTO pokemon_sprites VALUES (108, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/108.png');
+INSERT INTO pokemon_sprites VALUES (109, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/109.png');
+INSERT INTO pokemon_sprites VALUES (110, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/110.png');
+INSERT INTO pokemon_sprites VALUES (111, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/111.png');
+INSERT INTO pokemon_sprites VALUES (112, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/112.png');
+INSERT INTO pokemon_sprites VALUES (113, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/113.png');
+INSERT INTO pokemon_sprites VALUES (114, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/114.png');
+INSERT INTO pokemon_sprites VALUES (115, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/115.png');
+INSERT INTO pokemon_sprites VALUES (116, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/116.png');
+INSERT INTO pokemon_sprites VALUES (117, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/117.png');
+INSERT INTO pokemon_sprites VALUES (118, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/118.png');
+INSERT INTO pokemon_sprites VALUES (119, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/119.png');
+INSERT INTO pokemon_sprites VALUES (120, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/120.png');
+INSERT INTO pokemon_sprites VALUES (121, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/121.png');
+INSERT INTO pokemon_sprites VALUES (122, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/122.png');
+INSERT INTO pokemon_sprites VALUES (123, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/123.png');
+INSERT INTO pokemon_sprites VALUES (124, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/124.png');
+INSERT INTO pokemon_sprites VALUES (125, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/125.png');
+INSERT INTO pokemon_sprites VALUES (126, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/126.png');
+INSERT INTO pokemon_sprites VALUES (127, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/127.png');
+INSERT INTO pokemon_sprites VALUES (128, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/128.png');
+INSERT INTO pokemon_sprites VALUES (129, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/129.png');
+INSERT INTO pokemon_sprites VALUES (130, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/130.png');
+INSERT INTO pokemon_sprites VALUES (131, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/131.png');
+INSERT INTO pokemon_sprites VALUES (132, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/132.png');
+INSERT INTO pokemon_sprites VALUES (133, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/133.png');
+INSERT INTO pokemon_sprites VALUES (134, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/134.png');
+INSERT INTO pokemon_sprites VALUES (135, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/135.png');
+INSERT INTO pokemon_sprites VALUES (136, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/136.png');
+INSERT INTO pokemon_sprites VALUES (137, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/137.png');
+INSERT INTO pokemon_sprites VALUES (138, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/138.png');
+INSERT INTO pokemon_sprites VALUES (139, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/139.png');
+INSERT INTO pokemon_sprites VALUES (140, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/140.png');
+INSERT INTO pokemon_sprites VALUES (141, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/141.png');
+INSERT INTO pokemon_sprites VALUES (142, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/142.png');
+INSERT INTO pokemon_sprites VALUES (143, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/143.png');
+INSERT INTO pokemon_sprites VALUES (144, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/144.png');
+INSERT INTO pokemon_sprites VALUES (145, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/145.png');
+INSERT INTO pokemon_sprites VALUES (146, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/146.png');
+INSERT INTO pokemon_sprites VALUES (147, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/147.png');
+INSERT INTO pokemon_sprites VALUES (148, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/148.png');
+INSERT INTO pokemon_sprites VALUES (149, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/149.png');
+INSERT INTO pokemon_sprites VALUES (150, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/150.png');
+INSERT INTO pokemon_sprites VALUES (151, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/151.png');
+INSERT INTO pokemon_sprites VALUES (152, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/152.png');
+INSERT INTO pokemon_sprites VALUES (153, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/153.png');
+INSERT INTO pokemon_sprites VALUES (154, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/154.png');
+INSERT INTO pokemon_sprites VALUES (155, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/155.png');
+INSERT INTO pokemon_sprites VALUES (156, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/156.png');
+INSERT INTO pokemon_sprites VALUES (157, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/157.png');
+INSERT INTO pokemon_sprites VALUES (158, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/158.png');
+INSERT INTO pokemon_sprites VALUES (159, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/159.png');
+INSERT INTO pokemon_sprites VALUES (160, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/160.png');
+INSERT INTO pokemon_sprites VALUES (161, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/161.png');
+INSERT INTO pokemon_sprites VALUES (162, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/162.png');
+INSERT INTO pokemon_sprites VALUES (163, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/163.png');
+INSERT INTO pokemon_sprites VALUES (164, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/164.png');
+INSERT INTO pokemon_sprites VALUES (165, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/165.png');
+INSERT INTO pokemon_sprites VALUES (166, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/166.png');
+INSERT INTO pokemon_sprites VALUES (167, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/167.png');
+INSERT INTO pokemon_sprites VALUES (168, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/168.png');
+INSERT INTO pokemon_sprites VALUES (169, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/169.png');
+INSERT INTO pokemon_sprites VALUES (170, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/170.png');
+INSERT INTO pokemon_sprites VALUES (171, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/171.png');
+INSERT INTO pokemon_sprites VALUES (172, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/172.png');
+INSERT INTO pokemon_sprites VALUES (173, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/173.png');
+INSERT INTO pokemon_sprites VALUES (174, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/174.png');
+INSERT INTO pokemon_sprites VALUES (175, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/175.png');
+INSERT INTO pokemon_sprites VALUES (176, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/176.png');
+INSERT INTO pokemon_sprites VALUES (177, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/177.png');
+INSERT INTO pokemon_sprites VALUES (178, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/178.png');
+INSERT INTO pokemon_sprites VALUES (179, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/179.png');
+INSERT INTO pokemon_sprites VALUES (180, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/180.png');
+INSERT INTO pokemon_sprites VALUES (181, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/181.png');
+INSERT INTO pokemon_sprites VALUES (182, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/182.png');
+INSERT INTO pokemon_sprites VALUES (183, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/183.png');
+INSERT INTO pokemon_sprites VALUES (184, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/184.png');
+INSERT INTO pokemon_sprites VALUES (185, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/185.png');
+INSERT INTO pokemon_sprites VALUES (186, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/186.png');
+INSERT INTO pokemon_sprites VALUES (187, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/187.png');
+INSERT INTO pokemon_sprites VALUES (188, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/188.png');
+INSERT INTO pokemon_sprites VALUES (189, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/189.png');
+INSERT INTO pokemon_sprites VALUES (190, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/190.png');
+INSERT INTO pokemon_sprites VALUES (191, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/191.png');
+INSERT INTO pokemon_sprites VALUES (192, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/192.png');
+INSERT INTO pokemon_sprites VALUES (193, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/193.png');
+INSERT INTO pokemon_sprites VALUES (194, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/194.png');
+INSERT INTO pokemon_sprites VALUES (195, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/195.png');
+INSERT INTO pokemon_sprites VALUES (196, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/196.png');
+INSERT INTO pokemon_sprites VALUES (197, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/197.png');
+INSERT INTO pokemon_sprites VALUES (198, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/198.png');
+INSERT INTO pokemon_sprites VALUES (199, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/199.png');
+INSERT INTO pokemon_sprites VALUES (200, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/200.png');
+INSERT INTO pokemon_sprites VALUES (201, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/201.png');
+INSERT INTO pokemon_sprites VALUES (202, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/202.png');
+INSERT INTO pokemon_sprites VALUES (203, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/203.png');
+INSERT INTO pokemon_sprites VALUES (204, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/204.png');
+INSERT INTO pokemon_sprites VALUES (205, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/205.png');
+INSERT INTO pokemon_sprites VALUES (206, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/206.png');
+INSERT INTO pokemon_sprites VALUES (207, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/207.png');
+INSERT INTO pokemon_sprites VALUES (208, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/208.png');
+INSERT INTO pokemon_sprites VALUES (209, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/209.png');
+INSERT INTO pokemon_sprites VALUES (210, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/210.png');
+INSERT INTO pokemon_sprites VALUES (211, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/211.png');
+INSERT INTO pokemon_sprites VALUES (212, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/212.png');
+INSERT INTO pokemon_sprites VALUES (213, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/213.png');
+INSERT INTO pokemon_sprites VALUES (214, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/214.png');
+INSERT INTO pokemon_sprites VALUES (215, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/215.png');
+INSERT INTO pokemon_sprites VALUES (216, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/216.png');
+INSERT INTO pokemon_sprites VALUES (217, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/217.png');
+INSERT INTO pokemon_sprites VALUES (218, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/218.png');
+INSERT INTO pokemon_sprites VALUES (219, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/219.png');
+INSERT INTO pokemon_sprites VALUES (220, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/220.png');
+INSERT INTO pokemon_sprites VALUES (221, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/221.png');
+INSERT INTO pokemon_sprites VALUES (222, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/222.png');
+INSERT INTO pokemon_sprites VALUES (223, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/223.png');
+INSERT INTO pokemon_sprites VALUES (224, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/224.png');
+INSERT INTO pokemon_sprites VALUES (225, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/225.png');
+INSERT INTO pokemon_sprites VALUES (226, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/226.png');
+INSERT INTO pokemon_sprites VALUES (227, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/227.png');
+INSERT INTO pokemon_sprites VALUES (228, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/228.png');
+INSERT INTO pokemon_sprites VALUES (229, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/229.png');
+INSERT INTO pokemon_sprites VALUES (230, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/230.png');
+INSERT INTO pokemon_sprites VALUES (231, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/231.png');
+INSERT INTO pokemon_sprites VALUES (232, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/232.png');
+INSERT INTO pokemon_sprites VALUES (233, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/233.png');
+INSERT INTO pokemon_sprites VALUES (234, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/234.png');
+INSERT INTO pokemon_sprites VALUES (235, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/235.png');
+INSERT INTO pokemon_sprites VALUES (236, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/236.png');
+INSERT INTO pokemon_sprites VALUES (237, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/237.png');
+INSERT INTO pokemon_sprites VALUES (238, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/238.png');
+INSERT INTO pokemon_sprites VALUES (239, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/239.png');
+INSERT INTO pokemon_sprites VALUES (240, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/240.png');
+INSERT INTO pokemon_sprites VALUES (241, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/241.png');
+INSERT INTO pokemon_sprites VALUES (242, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/242.png');
+INSERT INTO pokemon_sprites VALUES (243, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/243.png');
+INSERT INTO pokemon_sprites VALUES (244, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/244.png');
+INSERT INTO pokemon_sprites VALUES (245, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/245.png');
+INSERT INTO pokemon_sprites VALUES (246, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/246.png');
+INSERT INTO pokemon_sprites VALUES (247, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/247.png');
+INSERT INTO pokemon_sprites VALUES (248, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/248.png');
+INSERT INTO pokemon_sprites VALUES (249, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/249.png');
+INSERT INTO pokemon_sprites VALUES (250, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/250.png');
+INSERT INTO pokemon_sprites VALUES (251, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/251.png');
+INSERT INTO pokemon_sprites VALUES (252, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/252.png');
+INSERT INTO pokemon_sprites VALUES (253, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/253.png');
+INSERT INTO pokemon_sprites VALUES (254, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/254.png');
+INSERT INTO pokemon_sprites VALUES (255, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/255.png');
+INSERT INTO pokemon_sprites VALUES (256, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/256.png');
+INSERT INTO pokemon_sprites VALUES (257, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/257.png');
+INSERT INTO pokemon_sprites VALUES (258, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/258.png');
+INSERT INTO pokemon_sprites VALUES (259, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/259.png');
+INSERT INTO pokemon_sprites VALUES (260, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/260.png');
+INSERT INTO pokemon_sprites VALUES (261, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/261.png');
+INSERT INTO pokemon_sprites VALUES (262, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/262.png');
+INSERT INTO pokemon_sprites VALUES (263, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/263.png');
+INSERT INTO pokemon_sprites VALUES (264, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/264.png');
+INSERT INTO pokemon_sprites VALUES (265, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/265.png');
+INSERT INTO pokemon_sprites VALUES (266, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/266.png');
+INSERT INTO pokemon_sprites VALUES (267, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/267.png');
+INSERT INTO pokemon_sprites VALUES (268, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/268.png');
+INSERT INTO pokemon_sprites VALUES (269, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/269.png');
+INSERT INTO pokemon_sprites VALUES (270, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/270.png');
+INSERT INTO pokemon_sprites VALUES (271, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/271.png');
+INSERT INTO pokemon_sprites VALUES (272, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/272.png');
+INSERT INTO pokemon_sprites VALUES (273, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/273.png');
+INSERT INTO pokemon_sprites VALUES (274, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/274.png');
+INSERT INTO pokemon_sprites VALUES (275, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/275.png');
+INSERT INTO pokemon_sprites VALUES (276, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/276.png');
+INSERT INTO pokemon_sprites VALUES (277, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/277.png');
+INSERT INTO pokemon_sprites VALUES (278, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/278.png');
+INSERT INTO pokemon_sprites VALUES (279, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/279.png');
+INSERT INTO pokemon_sprites VALUES (280, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/280.png');
+INSERT INTO pokemon_sprites VALUES (281, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/281.png');
+INSERT INTO pokemon_sprites VALUES (282, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/282.png');
+INSERT INTO pokemon_sprites VALUES (283, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/283.png');
+INSERT INTO pokemon_sprites VALUES (284, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/284.png');
+INSERT INTO pokemon_sprites VALUES (285, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/285.png');
+INSERT INTO pokemon_sprites VALUES (286, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/286.png');
+INSERT INTO pokemon_sprites VALUES (287, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/287.png');
+INSERT INTO pokemon_sprites VALUES (288, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/288.png');
+INSERT INTO pokemon_sprites VALUES (289, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/289.png');
+INSERT INTO pokemon_sprites VALUES (290, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/290.png');
+INSERT INTO pokemon_sprites VALUES (291, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/291.png');
+INSERT INTO pokemon_sprites VALUES (292, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/292.png');
+INSERT INTO pokemon_sprites VALUES (293, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/293.png');
+INSERT INTO pokemon_sprites VALUES (294, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/294.png');
+INSERT INTO pokemon_sprites VALUES (295, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/295.png');
+INSERT INTO pokemon_sprites VALUES (296, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/296.png');
+INSERT INTO pokemon_sprites VALUES (297, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/297.png');
+INSERT INTO pokemon_sprites VALUES (298, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/298.png');
+INSERT INTO pokemon_sprites VALUES (299, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/299.png');
+INSERT INTO pokemon_sprites VALUES (300, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/300.png');
+INSERT INTO pokemon_sprites VALUES (301, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/301.png');
+INSERT INTO pokemon_sprites VALUES (302, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/302.png');
+INSERT INTO pokemon_sprites VALUES (303, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/303.png');
+INSERT INTO pokemon_sprites VALUES (304, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/304.png');
+INSERT INTO pokemon_sprites VALUES (305, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/305.png');
+INSERT INTO pokemon_sprites VALUES (306, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/306.png');
+INSERT INTO pokemon_sprites VALUES (307, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/307.png');
+INSERT INTO pokemon_sprites VALUES (308, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/308.png');
+INSERT INTO pokemon_sprites VALUES (309, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/309.png');
+INSERT INTO pokemon_sprites VALUES (310, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/310.png');
+INSERT INTO pokemon_sprites VALUES (311, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/311.png');
+INSERT INTO pokemon_sprites VALUES (312, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/312.png');
+INSERT INTO pokemon_sprites VALUES (313, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/313.png');
+INSERT INTO pokemon_sprites VALUES (314, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/314.png');
+INSERT INTO pokemon_sprites VALUES (315, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/315.png');
+INSERT INTO pokemon_sprites VALUES (316, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/316.png');
+INSERT INTO pokemon_sprites VALUES (317, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/317.png');
+INSERT INTO pokemon_sprites VALUES (318, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/318.png');
+INSERT INTO pokemon_sprites VALUES (319, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/319.png');
+INSERT INTO pokemon_sprites VALUES (320, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/320.png');
+INSERT INTO pokemon_sprites VALUES (321, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/321.png');
+INSERT INTO pokemon_sprites VALUES (322, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/322.png');
+INSERT INTO pokemon_sprites VALUES (323, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/323.png');
+INSERT INTO pokemon_sprites VALUES (324, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/324.png');
+INSERT INTO pokemon_sprites VALUES (325, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/325.png');
+INSERT INTO pokemon_sprites VALUES (326, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/326.png');
+INSERT INTO pokemon_sprites VALUES (327, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/327.png');
+INSERT INTO pokemon_sprites VALUES (328, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/328.png');
+INSERT INTO pokemon_sprites VALUES (329, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/329.png');
+INSERT INTO pokemon_sprites VALUES (330, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/330.png');
+INSERT INTO pokemon_sprites VALUES (331, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/331.png');
+INSERT INTO pokemon_sprites VALUES (332, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/332.png');
+INSERT INTO pokemon_sprites VALUES (333, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/333.png');
+INSERT INTO pokemon_sprites VALUES (334, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/334.png');
+INSERT INTO pokemon_sprites VALUES (335, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/335.png');
+INSERT INTO pokemon_sprites VALUES (336, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/336.png');
+INSERT INTO pokemon_sprites VALUES (337, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/337.png');
+INSERT INTO pokemon_sprites VALUES (338, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/338.png');
+INSERT INTO pokemon_sprites VALUES (339, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/339.png');
+INSERT INTO pokemon_sprites VALUES (340, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/340.png');
+INSERT INTO pokemon_sprites VALUES (341, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/341.png');
+INSERT INTO pokemon_sprites VALUES (342, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/342.png');
+INSERT INTO pokemon_sprites VALUES (343, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/343.png');
+INSERT INTO pokemon_sprites VALUES (344, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/344.png');
+INSERT INTO pokemon_sprites VALUES (345, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/345.png');
+INSERT INTO pokemon_sprites VALUES (346, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/346.png');
+INSERT INTO pokemon_sprites VALUES (347, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/347.png');
+INSERT INTO pokemon_sprites VALUES (348, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/348.png');
+INSERT INTO pokemon_sprites VALUES (349, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/349.png');
+INSERT INTO pokemon_sprites VALUES (350, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/350.png');
+INSERT INTO pokemon_sprites VALUES (351, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/351.png');
+INSERT INTO pokemon_sprites VALUES (352, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/352.png');
+INSERT INTO pokemon_sprites VALUES (353, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/353.png');
+INSERT INTO pokemon_sprites VALUES (354, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/354.png');
+INSERT INTO pokemon_sprites VALUES (355, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/355.png');
+INSERT INTO pokemon_sprites VALUES (356, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/356.png');
+INSERT INTO pokemon_sprites VALUES (357, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/357.png');
+INSERT INTO pokemon_sprites VALUES (358, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/358.png');
+INSERT INTO pokemon_sprites VALUES (359, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/359.png');
+INSERT INTO pokemon_sprites VALUES (360, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/360.png');
+INSERT INTO pokemon_sprites VALUES (361, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/361.png');
+INSERT INTO pokemon_sprites VALUES (362, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/362.png');
+INSERT INTO pokemon_sprites VALUES (363, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/363.png');
+INSERT INTO pokemon_sprites VALUES (364, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/364.png');
+INSERT INTO pokemon_sprites VALUES (365, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/365.png');
+INSERT INTO pokemon_sprites VALUES (366, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/366.png');
+INSERT INTO pokemon_sprites VALUES (367, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/367.png');
+INSERT INTO pokemon_sprites VALUES (368, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/368.png');
+INSERT INTO pokemon_sprites VALUES (369, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/369.png');
+INSERT INTO pokemon_sprites VALUES (370, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/370.png');
+INSERT INTO pokemon_sprites VALUES (371, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/371.png');
+INSERT INTO pokemon_sprites VALUES (372, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/372.png');
+INSERT INTO pokemon_sprites VALUES (373, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/373.png');
+INSERT INTO pokemon_sprites VALUES (374, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/374.png');
+INSERT INTO pokemon_sprites VALUES (375, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/375.png');
+INSERT INTO pokemon_sprites VALUES (376, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/376.png');
+INSERT INTO pokemon_sprites VALUES (377, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/377.png');
+INSERT INTO pokemon_sprites VALUES (378, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/378.png');
+INSERT INTO pokemon_sprites VALUES (379, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/379.png');
+INSERT INTO pokemon_sprites VALUES (380, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/380.png');
+INSERT INTO pokemon_sprites VALUES (381, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/381.png');
+INSERT INTO pokemon_sprites VALUES (382, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/382.png');
+INSERT INTO pokemon_sprites VALUES (383, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/383.png');
+INSERT INTO pokemon_sprites VALUES (384, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/384.png');
+INSERT INTO pokemon_sprites VALUES (385, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/385.png');
+INSERT INTO pokemon_sprites VALUES (386, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/386.png');
+INSERT INTO pokemon_sprites VALUES (387, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/387.png');
+INSERT INTO pokemon_sprites VALUES (388, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/388.png');
+INSERT INTO pokemon_sprites VALUES (389, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/389.png');
+INSERT INTO pokemon_sprites VALUES (390, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/390.png');
+INSERT INTO pokemon_sprites VALUES (391, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/391.png');
+INSERT INTO pokemon_sprites VALUES (392, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/392.png');
+INSERT INTO pokemon_sprites VALUES (393, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/393.png');
+INSERT INTO pokemon_sprites VALUES (394, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/394.png');
+INSERT INTO pokemon_sprites VALUES (395, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/395.png');
+INSERT INTO pokemon_sprites VALUES (396, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/396.png');
+INSERT INTO pokemon_sprites VALUES (397, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/397.png');
+INSERT INTO pokemon_sprites VALUES (398, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/398.png');
+INSERT INTO pokemon_sprites VALUES (399, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/399.png');
+INSERT INTO pokemon_sprites VALUES (400, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/400.png');
+INSERT INTO pokemon_sprites VALUES (401, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/401.png');
+INSERT INTO pokemon_sprites VALUES (402, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/402.png');
+INSERT INTO pokemon_sprites VALUES (403, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/403.png');
+INSERT INTO pokemon_sprites VALUES (404, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/404.png');
+INSERT INTO pokemon_sprites VALUES (405, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/405.png');
+INSERT INTO pokemon_sprites VALUES (406, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/406.png');
+INSERT INTO pokemon_sprites VALUES (407, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/407.png');
+INSERT INTO pokemon_sprites VALUES (408, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/408.png');
+INSERT INTO pokemon_sprites VALUES (409, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/409.png');
+INSERT INTO pokemon_sprites VALUES (410, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/410.png');
+INSERT INTO pokemon_sprites VALUES (411, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/411.png');
+INSERT INTO pokemon_sprites VALUES (412, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/412.png');
+INSERT INTO pokemon_sprites VALUES (413, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/413.png');
+INSERT INTO pokemon_sprites VALUES (414, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/414.png');
+INSERT INTO pokemon_sprites VALUES (415, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/415.png');
+INSERT INTO pokemon_sprites VALUES (416, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/416.png');
+INSERT INTO pokemon_sprites VALUES (417, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/417.png');
+INSERT INTO pokemon_sprites VALUES (418, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/418.png');
+INSERT INTO pokemon_sprites VALUES (419, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/419.png');
+INSERT INTO pokemon_sprites VALUES (420, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/420.png');
+INSERT INTO pokemon_sprites VALUES (421, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/421.png');
+INSERT INTO pokemon_sprites VALUES (422, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/422.png');
+INSERT INTO pokemon_sprites VALUES (423, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/423.png');
+INSERT INTO pokemon_sprites VALUES (424, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/424.png');
+INSERT INTO pokemon_sprites VALUES (425, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/425.png');
+INSERT INTO pokemon_sprites VALUES (426, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/426.png');
+INSERT INTO pokemon_sprites VALUES (427, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/427.png');
+INSERT INTO pokemon_sprites VALUES (428, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/428.png');
+INSERT INTO pokemon_sprites VALUES (429, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/429.png');
+INSERT INTO pokemon_sprites VALUES (430, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/430.png');
+INSERT INTO pokemon_sprites VALUES (431, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/431.png');
+INSERT INTO pokemon_sprites VALUES (432, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/432.png');
+INSERT INTO pokemon_sprites VALUES (433, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/433.png');
+INSERT INTO pokemon_sprites VALUES (434, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/434.png');
+INSERT INTO pokemon_sprites VALUES (435, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/435.png');
+INSERT INTO pokemon_sprites VALUES (436, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/436.png');
+INSERT INTO pokemon_sprites VALUES (437, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/437.png');
+INSERT INTO pokemon_sprites VALUES (438, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/438.png');
+INSERT INTO pokemon_sprites VALUES (439, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/439.png');
+INSERT INTO pokemon_sprites VALUES (440, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/440.png');
+INSERT INTO pokemon_sprites VALUES (441, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/441.png');
+INSERT INTO pokemon_sprites VALUES (442, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/442.png');
+INSERT INTO pokemon_sprites VALUES (443, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/443.png');
+INSERT INTO pokemon_sprites VALUES (444, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/444.png');
+INSERT INTO pokemon_sprites VALUES (445, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/445.png');
+INSERT INTO pokemon_sprites VALUES (446, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/446.png');
+INSERT INTO pokemon_sprites VALUES (447, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/447.png');
+INSERT INTO pokemon_sprites VALUES (448, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/448.png');
+INSERT INTO pokemon_sprites VALUES (449, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/449.png');
+INSERT INTO pokemon_sprites VALUES (450, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/450.png');
+INSERT INTO pokemon_sprites VALUES (451, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/451.png');
+INSERT INTO pokemon_sprites VALUES (452, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/452.png');
+INSERT INTO pokemon_sprites VALUES (453, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/453.png');
+INSERT INTO pokemon_sprites VALUES (454, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/454.png');
+INSERT INTO pokemon_sprites VALUES (455, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/455.png');
+INSERT INTO pokemon_sprites VALUES (456, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/456.png');
+INSERT INTO pokemon_sprites VALUES (457, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/457.png');
+INSERT INTO pokemon_sprites VALUES (458, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/458.png');
+INSERT INTO pokemon_sprites VALUES (459, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/459.png');
+INSERT INTO pokemon_sprites VALUES (460, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/460.png');
+INSERT INTO pokemon_sprites VALUES (461, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/461.png');
+INSERT INTO pokemon_sprites VALUES (462, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/462.png');
+INSERT INTO pokemon_sprites VALUES (463, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/463.png');
+INSERT INTO pokemon_sprites VALUES (464, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/464.png');
+INSERT INTO pokemon_sprites VALUES (465, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/465.png');
+INSERT INTO pokemon_sprites VALUES (466, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/466.png');
+INSERT INTO pokemon_sprites VALUES (467, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/467.png');
+INSERT INTO pokemon_sprites VALUES (468, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/468.png');
+INSERT INTO pokemon_sprites VALUES (469, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/469.png');
+INSERT INTO pokemon_sprites VALUES (470, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/470.png');
+INSERT INTO pokemon_sprites VALUES (471, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/471.png');
+INSERT INTO pokemon_sprites VALUES (472, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/472.png');
+INSERT INTO pokemon_sprites VALUES (473, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/473.png');
+INSERT INTO pokemon_sprites VALUES (474, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/474.png');
+INSERT INTO pokemon_sprites VALUES (475, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/475.png');
+INSERT INTO pokemon_sprites VALUES (476, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/476.png');
+INSERT INTO pokemon_sprites VALUES (477, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/477.png');
+INSERT INTO pokemon_sprites VALUES (478, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/478.png');
+INSERT INTO pokemon_sprites VALUES (479, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/479.png');
+INSERT INTO pokemon_sprites VALUES (480, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/480.png');
+INSERT INTO pokemon_sprites VALUES (481, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/481.png');
+INSERT INTO pokemon_sprites VALUES (482, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/482.png');
+INSERT INTO pokemon_sprites VALUES (483, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/483.png');
+INSERT INTO pokemon_sprites VALUES (484, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/484.png');
+INSERT INTO pokemon_sprites VALUES (485, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/485.png');
+INSERT INTO pokemon_sprites VALUES (486, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/486.png');
+INSERT INTO pokemon_sprites VALUES (487, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/487.png');
+INSERT INTO pokemon_sprites VALUES (488, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/488.png');
+INSERT INTO pokemon_sprites VALUES (489, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/489.png');
+INSERT INTO pokemon_sprites VALUES (490, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/490.png');
+INSERT INTO pokemon_sprites VALUES (491, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/491.png');
+INSERT INTO pokemon_sprites VALUES (492, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/492.png');
+INSERT INTO pokemon_sprites VALUES (493, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/493.png');
+INSERT INTO pokemon_sprites VALUES (494, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/494.png');
+INSERT INTO pokemon_sprites VALUES (495, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/495.png');
+INSERT INTO pokemon_sprites VALUES (496, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/496.png');
+INSERT INTO pokemon_sprites VALUES (497, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/497.png');
+INSERT INTO pokemon_sprites VALUES (498, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/498.png');
+INSERT INTO pokemon_sprites VALUES (499, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/499.png');
+INSERT INTO pokemon_sprites VALUES (500, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/500.png');
+INSERT INTO pokemon_sprites VALUES (501, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/501.png');
+INSERT INTO pokemon_sprites VALUES (502, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/502.png');
+INSERT INTO pokemon_sprites VALUES (503, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/503.png');
+INSERT INTO pokemon_sprites VALUES (504, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/504.png');
+INSERT INTO pokemon_sprites VALUES (505, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/505.png');
+INSERT INTO pokemon_sprites VALUES (506, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/506.png');
+INSERT INTO pokemon_sprites VALUES (507, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/507.png');
+INSERT INTO pokemon_sprites VALUES (508, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/508.png');
+INSERT INTO pokemon_sprites VALUES (509, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/509.png');
+INSERT INTO pokemon_sprites VALUES (510, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/510.png');
+INSERT INTO pokemon_sprites VALUES (511, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/511.png');
+INSERT INTO pokemon_sprites VALUES (512, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/512.png');
+INSERT INTO pokemon_sprites VALUES (513, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/513.png');
+INSERT INTO pokemon_sprites VALUES (514, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/514.png');
+INSERT INTO pokemon_sprites VALUES (515, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/515.png');
+INSERT INTO pokemon_sprites VALUES (516, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/516.png');
+INSERT INTO pokemon_sprites VALUES (517, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/517.png');
+INSERT INTO pokemon_sprites VALUES (518, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/518.png');
+INSERT INTO pokemon_sprites VALUES (519, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/519.png');
+INSERT INTO pokemon_sprites VALUES (520, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/520.png');
+INSERT INTO pokemon_sprites VALUES (521, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/521.png');
+INSERT INTO pokemon_sprites VALUES (522, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/522.png');
+INSERT INTO pokemon_sprites VALUES (523, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/523.png');
+INSERT INTO pokemon_sprites VALUES (524, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/524.png');
+INSERT INTO pokemon_sprites VALUES (525, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/525.png');
+INSERT INTO pokemon_sprites VALUES (526, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/526.png');
+INSERT INTO pokemon_sprites VALUES (527, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/527.png');
+INSERT INTO pokemon_sprites VALUES (528, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/528.png');
+INSERT INTO pokemon_sprites VALUES (529, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/529.png');
+INSERT INTO pokemon_sprites VALUES (530, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/530.png');
+INSERT INTO pokemon_sprites VALUES (531, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/531.png');
+INSERT INTO pokemon_sprites VALUES (532, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/532.png');
+INSERT INTO pokemon_sprites VALUES (533, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/533.png');
+INSERT INTO pokemon_sprites VALUES (534, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/534.png');
+INSERT INTO pokemon_sprites VALUES (535, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/535.png');
+INSERT INTO pokemon_sprites VALUES (536, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/536.png');
+INSERT INTO pokemon_sprites VALUES (537, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/537.png');
+INSERT INTO pokemon_sprites VALUES (538, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/538.png');
+INSERT INTO pokemon_sprites VALUES (539, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/539.png');
+INSERT INTO pokemon_sprites VALUES (540, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/540.png');
+INSERT INTO pokemon_sprites VALUES (541, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/541.png');
+INSERT INTO pokemon_sprites VALUES (542, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/542.png');
+INSERT INTO pokemon_sprites VALUES (543, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/543.png');
+INSERT INTO pokemon_sprites VALUES (544, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/544.png');
+INSERT INTO pokemon_sprites VALUES (545, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/545.png');
+INSERT INTO pokemon_sprites VALUES (546, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/546.png');
+INSERT INTO pokemon_sprites VALUES (547, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/547.png');
+INSERT INTO pokemon_sprites VALUES (548, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/548.png');
+INSERT INTO pokemon_sprites VALUES (549, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/549.png');
+INSERT INTO pokemon_sprites VALUES (550, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/550.png');
+INSERT INTO pokemon_sprites VALUES (551, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/551.png');
+INSERT INTO pokemon_sprites VALUES (552, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/552.png');
+INSERT INTO pokemon_sprites VALUES (553, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/553.png');
+INSERT INTO pokemon_sprites VALUES (554, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/554.png');
+INSERT INTO pokemon_sprites VALUES (555, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/555.png');
+INSERT INTO pokemon_sprites VALUES (556, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/556.png');
+INSERT INTO pokemon_sprites VALUES (557, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/557.png');
+INSERT INTO pokemon_sprites VALUES (558, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/558.png');
+INSERT INTO pokemon_sprites VALUES (559, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/559.png');
+INSERT INTO pokemon_sprites VALUES (560, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/560.png');
+INSERT INTO pokemon_sprites VALUES (561, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/561.png');
+INSERT INTO pokemon_sprites VALUES (562, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/562.png');
+INSERT INTO pokemon_sprites VALUES (563, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/563.png');
+INSERT INTO pokemon_sprites VALUES (564, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/564.png');
+INSERT INTO pokemon_sprites VALUES (565, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/565.png');
+INSERT INTO pokemon_sprites VALUES (566, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/566.png');
+INSERT INTO pokemon_sprites VALUES (567, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/567.png');
+INSERT INTO pokemon_sprites VALUES (568, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/568.png');
+INSERT INTO pokemon_sprites VALUES (569, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/569.png');
+INSERT INTO pokemon_sprites VALUES (570, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/570.png');
+INSERT INTO pokemon_sprites VALUES (571, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/571.png');
+INSERT INTO pokemon_sprites VALUES (572, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/572.png');
+INSERT INTO pokemon_sprites VALUES (573, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/573.png');
+INSERT INTO pokemon_sprites VALUES (574, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/574.png');
+INSERT INTO pokemon_sprites VALUES (575, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/575.png');
+INSERT INTO pokemon_sprites VALUES (576, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/576.png');
+INSERT INTO pokemon_sprites VALUES (577, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/577.png');
+INSERT INTO pokemon_sprites VALUES (578, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/578.png');
+INSERT INTO pokemon_sprites VALUES (579, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/579.png');
+INSERT INTO pokemon_sprites VALUES (580, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/580.png');
+INSERT INTO pokemon_sprites VALUES (581, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/581.png');
+INSERT INTO pokemon_sprites VALUES (582, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/582.png');
+INSERT INTO pokemon_sprites VALUES (583, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/583.png');
+INSERT INTO pokemon_sprites VALUES (584, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/584.png');
+INSERT INTO pokemon_sprites VALUES (585, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/585.png');
+INSERT INTO pokemon_sprites VALUES (586, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/586.png');
+INSERT INTO pokemon_sprites VALUES (587, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/587.png');
+INSERT INTO pokemon_sprites VALUES (588, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/588.png');
+INSERT INTO pokemon_sprites VALUES (589, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/589.png');
+INSERT INTO pokemon_sprites VALUES (590, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/590.png');
+INSERT INTO pokemon_sprites VALUES (591, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/591.png');
+INSERT INTO pokemon_sprites VALUES (592, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/592.png');
+INSERT INTO pokemon_sprites VALUES (593, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/593.png');
+INSERT INTO pokemon_sprites VALUES (594, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/594.png');
+INSERT INTO pokemon_sprites VALUES (595, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/595.png');
+INSERT INTO pokemon_sprites VALUES (596, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/596.png');
+INSERT INTO pokemon_sprites VALUES (597, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/597.png');
+INSERT INTO pokemon_sprites VALUES (598, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/598.png');
+INSERT INTO pokemon_sprites VALUES (599, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/599.png');
+INSERT INTO pokemon_sprites VALUES (600, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/600.png');
+INSERT INTO pokemon_sprites VALUES (601, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/601.png');
+INSERT INTO pokemon_sprites VALUES (602, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/602.png');
+INSERT INTO pokemon_sprites VALUES (603, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/603.png');
+INSERT INTO pokemon_sprites VALUES (604, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/604.png');
+INSERT INTO pokemon_sprites VALUES (605, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/605.png');
+INSERT INTO pokemon_sprites VALUES (606, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/606.png');
+INSERT INTO pokemon_sprites VALUES (607, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/607.png');
+INSERT INTO pokemon_sprites VALUES (608, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/608.png');
+INSERT INTO pokemon_sprites VALUES (609, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/609.png');
+INSERT INTO pokemon_sprites VALUES (610, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/610.png');
+INSERT INTO pokemon_sprites VALUES (611, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/611.png');
+INSERT INTO pokemon_sprites VALUES (612, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/612.png');
+INSERT INTO pokemon_sprites VALUES (613, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/613.png');
+INSERT INTO pokemon_sprites VALUES (614, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/614.png');
+INSERT INTO pokemon_sprites VALUES (615, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/615.png');
+INSERT INTO pokemon_sprites VALUES (616, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/616.png');
+INSERT INTO pokemon_sprites VALUES (617, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/617.png');
+INSERT INTO pokemon_sprites VALUES (618, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/618.png');
+INSERT INTO pokemon_sprites VALUES (619, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/619.png');
+INSERT INTO pokemon_sprites VALUES (620, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/620.png');
+INSERT INTO pokemon_sprites VALUES (621, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/621.png');
+INSERT INTO pokemon_sprites VALUES (622, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/622.png');
+INSERT INTO pokemon_sprites VALUES (623, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/623.png');
+INSERT INTO pokemon_sprites VALUES (624, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/624.png');
+INSERT INTO pokemon_sprites VALUES (625, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/625.png');
+INSERT INTO pokemon_sprites VALUES (626, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/626.png');
+INSERT INTO pokemon_sprites VALUES (627, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/627.png');
+INSERT INTO pokemon_sprites VALUES (628, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/628.png');
+INSERT INTO pokemon_sprites VALUES (629, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/629.png');
+INSERT INTO pokemon_sprites VALUES (630, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/630.png');
+INSERT INTO pokemon_sprites VALUES (631, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/631.png');
+INSERT INTO pokemon_sprites VALUES (632, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/632.png');
+INSERT INTO pokemon_sprites VALUES (633, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/633.png');
+INSERT INTO pokemon_sprites VALUES (634, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/634.png');
+INSERT INTO pokemon_sprites VALUES (635, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/635.png');
+INSERT INTO pokemon_sprites VALUES (636, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/636.png');
+INSERT INTO pokemon_sprites VALUES (637, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/637.png');
+INSERT INTO pokemon_sprites VALUES (638, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/638.png');
+INSERT INTO pokemon_sprites VALUES (639, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/639.png');
+INSERT INTO pokemon_sprites VALUES (640, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/640.png');
+INSERT INTO pokemon_sprites VALUES (641, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/641.png');
+INSERT INTO pokemon_sprites VALUES (642, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/642.png');
+INSERT INTO pokemon_sprites VALUES (643, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/643.png');
+INSERT INTO pokemon_sprites VALUES (644, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/644.png');
+INSERT INTO pokemon_sprites VALUES (645, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/645.png');
+INSERT INTO pokemon_sprites VALUES (646, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/646.png');
+INSERT INTO pokemon_sprites VALUES (647, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/647.png');
+INSERT INTO pokemon_sprites VALUES (648, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/648.png');
+INSERT INTO pokemon_sprites VALUES (649, 'front', 'http://www.pokelab.xyz/images/sprites/normal/front/649.png');
+INSERT INTO pokemon_sprites VALUES (1, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/1.png');
+INSERT INTO pokemon_sprites VALUES (2, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/2.png');
+INSERT INTO pokemon_sprites VALUES (3, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/3.png');
+INSERT INTO pokemon_sprites VALUES (4, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/4.png');
+INSERT INTO pokemon_sprites VALUES (5, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/5.png');
+INSERT INTO pokemon_sprites VALUES (6, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/6.png');
+INSERT INTO pokemon_sprites VALUES (7, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/7.png');
+INSERT INTO pokemon_sprites VALUES (8, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/8.png');
+INSERT INTO pokemon_sprites VALUES (9, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/9.png');
+INSERT INTO pokemon_sprites VALUES (10, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/10.png');
+INSERT INTO pokemon_sprites VALUES (11, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/11.png');
+INSERT INTO pokemon_sprites VALUES (12, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/12.png');
+INSERT INTO pokemon_sprites VALUES (13, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/13.png');
+INSERT INTO pokemon_sprites VALUES (14, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/14.png');
+INSERT INTO pokemon_sprites VALUES (15, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/15.png');
+INSERT INTO pokemon_sprites VALUES (16, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/16.png');
+INSERT INTO pokemon_sprites VALUES (17, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/17.png');
+INSERT INTO pokemon_sprites VALUES (18, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/18.png');
+INSERT INTO pokemon_sprites VALUES (19, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/19.png');
+INSERT INTO pokemon_sprites VALUES (20, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/20.png');
+INSERT INTO pokemon_sprites VALUES (21, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/21.png');
+INSERT INTO pokemon_sprites VALUES (22, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/22.png');
+INSERT INTO pokemon_sprites VALUES (23, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/23.png');
+INSERT INTO pokemon_sprites VALUES (24, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/24.png');
+INSERT INTO pokemon_sprites VALUES (25, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/25.png');
+INSERT INTO pokemon_sprites VALUES (26, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/26.png');
+INSERT INTO pokemon_sprites VALUES (27, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/27.png');
+INSERT INTO pokemon_sprites VALUES (28, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/28.png');
+INSERT INTO pokemon_sprites VALUES (29, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/29.png');
+INSERT INTO pokemon_sprites VALUES (30, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/30.png');
+INSERT INTO pokemon_sprites VALUES (31, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/31.png');
+INSERT INTO pokemon_sprites VALUES (32, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/32.png');
+INSERT INTO pokemon_sprites VALUES (33, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/33.png');
+INSERT INTO pokemon_sprites VALUES (34, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/34.png');
+INSERT INTO pokemon_sprites VALUES (35, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/35.png');
+INSERT INTO pokemon_sprites VALUES (36, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/36.png');
+INSERT INTO pokemon_sprites VALUES (37, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/37.png');
+INSERT INTO pokemon_sprites VALUES (38, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/38.png');
+INSERT INTO pokemon_sprites VALUES (39, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/39.png');
+INSERT INTO pokemon_sprites VALUES (40, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/40.png');
+INSERT INTO pokemon_sprites VALUES (41, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/41.png');
+INSERT INTO pokemon_sprites VALUES (42, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/42.png');
+INSERT INTO pokemon_sprites VALUES (43, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/43.png');
+INSERT INTO pokemon_sprites VALUES (44, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/44.png');
+INSERT INTO pokemon_sprites VALUES (45, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/45.png');
+INSERT INTO pokemon_sprites VALUES (46, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/46.png');
+INSERT INTO pokemon_sprites VALUES (47, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/47.png');
+INSERT INTO pokemon_sprites VALUES (48, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/48.png');
+INSERT INTO pokemon_sprites VALUES (49, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/49.png');
+INSERT INTO pokemon_sprites VALUES (50, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/50.png');
+INSERT INTO pokemon_sprites VALUES (51, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/51.png');
+INSERT INTO pokemon_sprites VALUES (52, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/52.png');
+INSERT INTO pokemon_sprites VALUES (53, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/53.png');
+INSERT INTO pokemon_sprites VALUES (54, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/54.png');
+INSERT INTO pokemon_sprites VALUES (55, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/55.png');
+INSERT INTO pokemon_sprites VALUES (56, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/56.png');
+INSERT INTO pokemon_sprites VALUES (57, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/57.png');
+INSERT INTO pokemon_sprites VALUES (58, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/58.png');
+INSERT INTO pokemon_sprites VALUES (59, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/59.png');
+INSERT INTO pokemon_sprites VALUES (60, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/60.png');
+INSERT INTO pokemon_sprites VALUES (61, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/61.png');
+INSERT INTO pokemon_sprites VALUES (62, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/62.png');
+INSERT INTO pokemon_sprites VALUES (63, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/63.png');
+INSERT INTO pokemon_sprites VALUES (64, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/64.png');
+INSERT INTO pokemon_sprites VALUES (65, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/65.png');
+INSERT INTO pokemon_sprites VALUES (66, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/66.png');
+INSERT INTO pokemon_sprites VALUES (67, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/67.png');
+INSERT INTO pokemon_sprites VALUES (68, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/68.png');
+INSERT INTO pokemon_sprites VALUES (69, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/69.png');
+INSERT INTO pokemon_sprites VALUES (70, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/70.png');
+INSERT INTO pokemon_sprites VALUES (71, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/71.png');
+INSERT INTO pokemon_sprites VALUES (72, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/72.png');
+INSERT INTO pokemon_sprites VALUES (73, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/73.png');
+INSERT INTO pokemon_sprites VALUES (74, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/74.png');
+INSERT INTO pokemon_sprites VALUES (75, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/75.png');
+INSERT INTO pokemon_sprites VALUES (76, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/76.png');
+INSERT INTO pokemon_sprites VALUES (77, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/77.png');
+INSERT INTO pokemon_sprites VALUES (78, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/78.png');
+INSERT INTO pokemon_sprites VALUES (79, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/79.png');
+INSERT INTO pokemon_sprites VALUES (80, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/80.png');
+INSERT INTO pokemon_sprites VALUES (81, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/81.png');
+INSERT INTO pokemon_sprites VALUES (82, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/82.png');
+INSERT INTO pokemon_sprites VALUES (83, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/83.png');
+INSERT INTO pokemon_sprites VALUES (84, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/84.png');
+INSERT INTO pokemon_sprites VALUES (85, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/85.png');
+INSERT INTO pokemon_sprites VALUES (86, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/86.png');
+INSERT INTO pokemon_sprites VALUES (87, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/87.png');
+INSERT INTO pokemon_sprites VALUES (88, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/88.png');
+INSERT INTO pokemon_sprites VALUES (89, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/89.png');
+INSERT INTO pokemon_sprites VALUES (90, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/90.png');
+INSERT INTO pokemon_sprites VALUES (91, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/91.png');
+INSERT INTO pokemon_sprites VALUES (92, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/92.png');
+INSERT INTO pokemon_sprites VALUES (93, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/93.png');
+INSERT INTO pokemon_sprites VALUES (94, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/94.png');
+INSERT INTO pokemon_sprites VALUES (95, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/95.png');
+INSERT INTO pokemon_sprites VALUES (96, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/96.png');
+INSERT INTO pokemon_sprites VALUES (97, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/97.png');
+INSERT INTO pokemon_sprites VALUES (98, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/98.png');
+INSERT INTO pokemon_sprites VALUES (99, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/99.png');
+INSERT INTO pokemon_sprites VALUES (100, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/100.png');
+INSERT INTO pokemon_sprites VALUES (101, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/101.png');
+INSERT INTO pokemon_sprites VALUES (102, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/102.png');
+INSERT INTO pokemon_sprites VALUES (103, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/103.png');
+INSERT INTO pokemon_sprites VALUES (104, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/104.png');
+INSERT INTO pokemon_sprites VALUES (105, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/105.png');
+INSERT INTO pokemon_sprites VALUES (106, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/106.png');
+INSERT INTO pokemon_sprites VALUES (107, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/107.png');
+INSERT INTO pokemon_sprites VALUES (108, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/108.png');
+INSERT INTO pokemon_sprites VALUES (109, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/109.png');
+INSERT INTO pokemon_sprites VALUES (110, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/110.png');
+INSERT INTO pokemon_sprites VALUES (111, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/111.png');
+INSERT INTO pokemon_sprites VALUES (112, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/112.png');
+INSERT INTO pokemon_sprites VALUES (113, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/113.png');
+INSERT INTO pokemon_sprites VALUES (114, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/114.png');
+INSERT INTO pokemon_sprites VALUES (115, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/115.png');
+INSERT INTO pokemon_sprites VALUES (116, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/116.png');
+INSERT INTO pokemon_sprites VALUES (117, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/117.png');
+INSERT INTO pokemon_sprites VALUES (118, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/118.png');
+INSERT INTO pokemon_sprites VALUES (119, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/119.png');
+INSERT INTO pokemon_sprites VALUES (120, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/120.png');
+INSERT INTO pokemon_sprites VALUES (121, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/121.png');
+INSERT INTO pokemon_sprites VALUES (122, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/122.png');
+INSERT INTO pokemon_sprites VALUES (123, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/123.png');
+INSERT INTO pokemon_sprites VALUES (124, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/124.png');
+INSERT INTO pokemon_sprites VALUES (125, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/125.png');
+INSERT INTO pokemon_sprites VALUES (126, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/126.png');
+INSERT INTO pokemon_sprites VALUES (127, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/127.png');
+INSERT INTO pokemon_sprites VALUES (128, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/128.png');
+INSERT INTO pokemon_sprites VALUES (129, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/129.png');
+INSERT INTO pokemon_sprites VALUES (130, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/130.png');
+INSERT INTO pokemon_sprites VALUES (131, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/131.png');
+INSERT INTO pokemon_sprites VALUES (132, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/132.png');
+INSERT INTO pokemon_sprites VALUES (133, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/133.png');
+INSERT INTO pokemon_sprites VALUES (134, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/134.png');
+INSERT INTO pokemon_sprites VALUES (135, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/135.png');
+INSERT INTO pokemon_sprites VALUES (136, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/136.png');
+INSERT INTO pokemon_sprites VALUES (137, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/137.png');
+INSERT INTO pokemon_sprites VALUES (138, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/138.png');
+INSERT INTO pokemon_sprites VALUES (139, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/139.png');
+INSERT INTO pokemon_sprites VALUES (140, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/140.png');
+INSERT INTO pokemon_sprites VALUES (141, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/141.png');
+INSERT INTO pokemon_sprites VALUES (142, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/142.png');
+INSERT INTO pokemon_sprites VALUES (143, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/143.png');
+INSERT INTO pokemon_sprites VALUES (144, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/144.png');
+INSERT INTO pokemon_sprites VALUES (145, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/145.png');
+INSERT INTO pokemon_sprites VALUES (146, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/146.png');
+INSERT INTO pokemon_sprites VALUES (147, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/147.png');
+INSERT INTO pokemon_sprites VALUES (148, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/148.png');
+INSERT INTO pokemon_sprites VALUES (149, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/149.png');
+INSERT INTO pokemon_sprites VALUES (150, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/150.png');
+INSERT INTO pokemon_sprites VALUES (151, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/151.png');
+INSERT INTO pokemon_sprites VALUES (152, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/152.png');
+INSERT INTO pokemon_sprites VALUES (153, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/153.png');
+INSERT INTO pokemon_sprites VALUES (154, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/154.png');
+INSERT INTO pokemon_sprites VALUES (155, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/155.png');
+INSERT INTO pokemon_sprites VALUES (156, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/156.png');
+INSERT INTO pokemon_sprites VALUES (157, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/157.png');
+INSERT INTO pokemon_sprites VALUES (158, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/158.png');
+INSERT INTO pokemon_sprites VALUES (159, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/159.png');
+INSERT INTO pokemon_sprites VALUES (160, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/160.png');
+INSERT INTO pokemon_sprites VALUES (161, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/161.png');
+INSERT INTO pokemon_sprites VALUES (162, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/162.png');
+INSERT INTO pokemon_sprites VALUES (163, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/163.png');
+INSERT INTO pokemon_sprites VALUES (164, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/164.png');
+INSERT INTO pokemon_sprites VALUES (165, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/165.png');
+INSERT INTO pokemon_sprites VALUES (166, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/166.png');
+INSERT INTO pokemon_sprites VALUES (167, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/167.png');
+INSERT INTO pokemon_sprites VALUES (168, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/168.png');
+INSERT INTO pokemon_sprites VALUES (169, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/169.png');
+INSERT INTO pokemon_sprites VALUES (170, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/170.png');
+INSERT INTO pokemon_sprites VALUES (171, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/171.png');
+INSERT INTO pokemon_sprites VALUES (172, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/172.png');
+INSERT INTO pokemon_sprites VALUES (173, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/173.png');
+INSERT INTO pokemon_sprites VALUES (174, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/174.png');
+INSERT INTO pokemon_sprites VALUES (175, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/175.png');
+INSERT INTO pokemon_sprites VALUES (176, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/176.png');
+INSERT INTO pokemon_sprites VALUES (177, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/177.png');
+INSERT INTO pokemon_sprites VALUES (178, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/178.png');
+INSERT INTO pokemon_sprites VALUES (179, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/179.png');
+INSERT INTO pokemon_sprites VALUES (180, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/180.png');
+INSERT INTO pokemon_sprites VALUES (181, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/181.png');
+INSERT INTO pokemon_sprites VALUES (182, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/182.png');
+INSERT INTO pokemon_sprites VALUES (183, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/183.png');
+INSERT INTO pokemon_sprites VALUES (184, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/184.png');
+INSERT INTO pokemon_sprites VALUES (185, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/185.png');
+INSERT INTO pokemon_sprites VALUES (186, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/186.png');
+INSERT INTO pokemon_sprites VALUES (187, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/187.png');
+INSERT INTO pokemon_sprites VALUES (188, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/188.png');
+INSERT INTO pokemon_sprites VALUES (189, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/189.png');
+INSERT INTO pokemon_sprites VALUES (190, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/190.png');
+INSERT INTO pokemon_sprites VALUES (191, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/191.png');
+INSERT INTO pokemon_sprites VALUES (192, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/192.png');
+INSERT INTO pokemon_sprites VALUES (193, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/193.png');
+INSERT INTO pokemon_sprites VALUES (194, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/194.png');
+INSERT INTO pokemon_sprites VALUES (195, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/195.png');
+INSERT INTO pokemon_sprites VALUES (196, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/196.png');
+INSERT INTO pokemon_sprites VALUES (197, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/197.png');
+INSERT INTO pokemon_sprites VALUES (198, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/198.png');
+INSERT INTO pokemon_sprites VALUES (199, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/199.png');
+INSERT INTO pokemon_sprites VALUES (200, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/200.png');
+INSERT INTO pokemon_sprites VALUES (201, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/201.png');
+INSERT INTO pokemon_sprites VALUES (202, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/202.png');
+INSERT INTO pokemon_sprites VALUES (203, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/203.png');
+INSERT INTO pokemon_sprites VALUES (204, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/204.png');
+INSERT INTO pokemon_sprites VALUES (205, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/205.png');
+INSERT INTO pokemon_sprites VALUES (206, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/206.png');
+INSERT INTO pokemon_sprites VALUES (207, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/207.png');
+INSERT INTO pokemon_sprites VALUES (208, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/208.png');
+INSERT INTO pokemon_sprites VALUES (209, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/209.png');
+INSERT INTO pokemon_sprites VALUES (210, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/210.png');
+INSERT INTO pokemon_sprites VALUES (211, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/211.png');
+INSERT INTO pokemon_sprites VALUES (212, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/212.png');
+INSERT INTO pokemon_sprites VALUES (213, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/213.png');
+INSERT INTO pokemon_sprites VALUES (214, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/214.png');
+INSERT INTO pokemon_sprites VALUES (215, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/215.png');
+INSERT INTO pokemon_sprites VALUES (216, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/216.png');
+INSERT INTO pokemon_sprites VALUES (217, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/217.png');
+INSERT INTO pokemon_sprites VALUES (218, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/218.png');
+INSERT INTO pokemon_sprites VALUES (219, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/219.png');
+INSERT INTO pokemon_sprites VALUES (220, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/220.png');
+INSERT INTO pokemon_sprites VALUES (221, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/221.png');
+INSERT INTO pokemon_sprites VALUES (222, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/222.png');
+INSERT INTO pokemon_sprites VALUES (223, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/223.png');
+INSERT INTO pokemon_sprites VALUES (224, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/224.png');
+INSERT INTO pokemon_sprites VALUES (225, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/225.png');
+INSERT INTO pokemon_sprites VALUES (226, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/226.png');
+INSERT INTO pokemon_sprites VALUES (227, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/227.png');
+INSERT INTO pokemon_sprites VALUES (228, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/228.png');
+INSERT INTO pokemon_sprites VALUES (229, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/229.png');
+INSERT INTO pokemon_sprites VALUES (230, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/230.png');
+INSERT INTO pokemon_sprites VALUES (231, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/231.png');
+INSERT INTO pokemon_sprites VALUES (232, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/232.png');
+INSERT INTO pokemon_sprites VALUES (233, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/233.png');
+INSERT INTO pokemon_sprites VALUES (234, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/234.png');
+INSERT INTO pokemon_sprites VALUES (235, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/235.png');
+INSERT INTO pokemon_sprites VALUES (236, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/236.png');
+INSERT INTO pokemon_sprites VALUES (237, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/237.png');
+INSERT INTO pokemon_sprites VALUES (238, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/238.png');
+INSERT INTO pokemon_sprites VALUES (239, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/239.png');
+INSERT INTO pokemon_sprites VALUES (240, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/240.png');
+INSERT INTO pokemon_sprites VALUES (241, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/241.png');
+INSERT INTO pokemon_sprites VALUES (242, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/242.png');
+INSERT INTO pokemon_sprites VALUES (243, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/243.png');
+INSERT INTO pokemon_sprites VALUES (244, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/244.png');
+INSERT INTO pokemon_sprites VALUES (245, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/245.png');
+INSERT INTO pokemon_sprites VALUES (246, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/246.png');
+INSERT INTO pokemon_sprites VALUES (247, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/247.png');
+INSERT INTO pokemon_sprites VALUES (248, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/248.png');
+INSERT INTO pokemon_sprites VALUES (249, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/249.png');
+INSERT INTO pokemon_sprites VALUES (250, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/250.png');
+INSERT INTO pokemon_sprites VALUES (251, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/251.png');
+INSERT INTO pokemon_sprites VALUES (252, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/252.png');
+INSERT INTO pokemon_sprites VALUES (253, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/253.png');
+INSERT INTO pokemon_sprites VALUES (254, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/254.png');
+INSERT INTO pokemon_sprites VALUES (255, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/255.png');
+INSERT INTO pokemon_sprites VALUES (256, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/256.png');
+INSERT INTO pokemon_sprites VALUES (257, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/257.png');
+INSERT INTO pokemon_sprites VALUES (258, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/258.png');
+INSERT INTO pokemon_sprites VALUES (259, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/259.png');
+INSERT INTO pokemon_sprites VALUES (260, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/260.png');
+INSERT INTO pokemon_sprites VALUES (261, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/261.png');
+INSERT INTO pokemon_sprites VALUES (262, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/262.png');
+INSERT INTO pokemon_sprites VALUES (263, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/263.png');
+INSERT INTO pokemon_sprites VALUES (264, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/264.png');
+INSERT INTO pokemon_sprites VALUES (265, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/265.png');
+INSERT INTO pokemon_sprites VALUES (266, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/266.png');
+INSERT INTO pokemon_sprites VALUES (267, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/267.png');
+INSERT INTO pokemon_sprites VALUES (268, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/268.png');
+INSERT INTO pokemon_sprites VALUES (269, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/269.png');
+INSERT INTO pokemon_sprites VALUES (270, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/270.png');
+INSERT INTO pokemon_sprites VALUES (271, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/271.png');
+INSERT INTO pokemon_sprites VALUES (272, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/272.png');
+INSERT INTO pokemon_sprites VALUES (273, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/273.png');
+INSERT INTO pokemon_sprites VALUES (274, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/274.png');
+INSERT INTO pokemon_sprites VALUES (275, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/275.png');
+INSERT INTO pokemon_sprites VALUES (276, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/276.png');
+INSERT INTO pokemon_sprites VALUES (277, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/277.png');
+INSERT INTO pokemon_sprites VALUES (278, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/278.png');
+INSERT INTO pokemon_sprites VALUES (279, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/279.png');
+INSERT INTO pokemon_sprites VALUES (280, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/280.png');
+INSERT INTO pokemon_sprites VALUES (281, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/281.png');
+INSERT INTO pokemon_sprites VALUES (282, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/282.png');
+INSERT INTO pokemon_sprites VALUES (283, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/283.png');
+INSERT INTO pokemon_sprites VALUES (284, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/284.png');
+INSERT INTO pokemon_sprites VALUES (285, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/285.png');
+INSERT INTO pokemon_sprites VALUES (286, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/286.png');
+INSERT INTO pokemon_sprites VALUES (287, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/287.png');
+INSERT INTO pokemon_sprites VALUES (288, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/288.png');
+INSERT INTO pokemon_sprites VALUES (289, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/289.png');
+INSERT INTO pokemon_sprites VALUES (290, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/290.png');
+INSERT INTO pokemon_sprites VALUES (291, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/291.png');
+INSERT INTO pokemon_sprites VALUES (292, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/292.png');
+INSERT INTO pokemon_sprites VALUES (293, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/293.png');
+INSERT INTO pokemon_sprites VALUES (294, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/294.png');
+INSERT INTO pokemon_sprites VALUES (295, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/295.png');
+INSERT INTO pokemon_sprites VALUES (296, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/296.png');
+INSERT INTO pokemon_sprites VALUES (297, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/297.png');
+INSERT INTO pokemon_sprites VALUES (298, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/298.png');
+INSERT INTO pokemon_sprites VALUES (299, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/299.png');
+INSERT INTO pokemon_sprites VALUES (300, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/300.png');
+INSERT INTO pokemon_sprites VALUES (301, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/301.png');
+INSERT INTO pokemon_sprites VALUES (302, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/302.png');
+INSERT INTO pokemon_sprites VALUES (303, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/303.png');
+INSERT INTO pokemon_sprites VALUES (304, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/304.png');
+INSERT INTO pokemon_sprites VALUES (305, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/305.png');
+INSERT INTO pokemon_sprites VALUES (306, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/306.png');
+INSERT INTO pokemon_sprites VALUES (307, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/307.png');
+INSERT INTO pokemon_sprites VALUES (308, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/308.png');
+INSERT INTO pokemon_sprites VALUES (309, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/309.png');
+INSERT INTO pokemon_sprites VALUES (310, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/310.png');
+INSERT INTO pokemon_sprites VALUES (311, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/311.png');
+INSERT INTO pokemon_sprites VALUES (312, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/312.png');
+INSERT INTO pokemon_sprites VALUES (313, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/313.png');
+INSERT INTO pokemon_sprites VALUES (314, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/314.png');
+INSERT INTO pokemon_sprites VALUES (315, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/315.png');
+INSERT INTO pokemon_sprites VALUES (316, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/316.png');
+INSERT INTO pokemon_sprites VALUES (317, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/317.png');
+INSERT INTO pokemon_sprites VALUES (318, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/318.png');
+INSERT INTO pokemon_sprites VALUES (319, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/319.png');
+INSERT INTO pokemon_sprites VALUES (320, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/320.png');
+INSERT INTO pokemon_sprites VALUES (321, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/321.png');
+INSERT INTO pokemon_sprites VALUES (322, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/322.png');
+INSERT INTO pokemon_sprites VALUES (323, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/323.png');
+INSERT INTO pokemon_sprites VALUES (324, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/324.png');
+INSERT INTO pokemon_sprites VALUES (325, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/325.png');
+INSERT INTO pokemon_sprites VALUES (326, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/326.png');
+INSERT INTO pokemon_sprites VALUES (327, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/327.png');
+INSERT INTO pokemon_sprites VALUES (328, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/328.png');
+INSERT INTO pokemon_sprites VALUES (329, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/329.png');
+INSERT INTO pokemon_sprites VALUES (330, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/330.png');
+INSERT INTO pokemon_sprites VALUES (331, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/331.png');
+INSERT INTO pokemon_sprites VALUES (332, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/332.png');
+INSERT INTO pokemon_sprites VALUES (333, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/333.png');
+INSERT INTO pokemon_sprites VALUES (334, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/334.png');
+INSERT INTO pokemon_sprites VALUES (335, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/335.png');
+INSERT INTO pokemon_sprites VALUES (336, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/336.png');
+INSERT INTO pokemon_sprites VALUES (337, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/337.png');
+INSERT INTO pokemon_sprites VALUES (338, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/338.png');
+INSERT INTO pokemon_sprites VALUES (339, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/339.png');
+INSERT INTO pokemon_sprites VALUES (340, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/340.png');
+INSERT INTO pokemon_sprites VALUES (341, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/341.png');
+INSERT INTO pokemon_sprites VALUES (342, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/342.png');
+INSERT INTO pokemon_sprites VALUES (343, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/343.png');
+INSERT INTO pokemon_sprites VALUES (344, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/344.png');
+INSERT INTO pokemon_sprites VALUES (345, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/345.png');
+INSERT INTO pokemon_sprites VALUES (346, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/346.png');
+INSERT INTO pokemon_sprites VALUES (347, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/347.png');
+INSERT INTO pokemon_sprites VALUES (348, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/348.png');
+INSERT INTO pokemon_sprites VALUES (349, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/349.png');
+INSERT INTO pokemon_sprites VALUES (350, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/350.png');
+INSERT INTO pokemon_sprites VALUES (351, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/351.png');
+INSERT INTO pokemon_sprites VALUES (352, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/352.png');
+INSERT INTO pokemon_sprites VALUES (353, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/353.png');
+INSERT INTO pokemon_sprites VALUES (354, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/354.png');
+INSERT INTO pokemon_sprites VALUES (355, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/355.png');
+INSERT INTO pokemon_sprites VALUES (356, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/356.png');
+INSERT INTO pokemon_sprites VALUES (357, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/357.png');
+INSERT INTO pokemon_sprites VALUES (358, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/358.png');
+INSERT INTO pokemon_sprites VALUES (359, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/359.png');
+INSERT INTO pokemon_sprites VALUES (360, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/360.png');
+INSERT INTO pokemon_sprites VALUES (361, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/361.png');
+INSERT INTO pokemon_sprites VALUES (362, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/362.png');
+INSERT INTO pokemon_sprites VALUES (363, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/363.png');
+INSERT INTO pokemon_sprites VALUES (364, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/364.png');
+INSERT INTO pokemon_sprites VALUES (365, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/365.png');
+INSERT INTO pokemon_sprites VALUES (366, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/366.png');
+INSERT INTO pokemon_sprites VALUES (367, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/367.png');
+INSERT INTO pokemon_sprites VALUES (368, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/368.png');
+INSERT INTO pokemon_sprites VALUES (369, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/369.png');
+INSERT INTO pokemon_sprites VALUES (370, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/370.png');
+INSERT INTO pokemon_sprites VALUES (371, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/371.png');
+INSERT INTO pokemon_sprites VALUES (372, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/372.png');
+INSERT INTO pokemon_sprites VALUES (373, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/373.png');
+INSERT INTO pokemon_sprites VALUES (374, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/374.png');
+INSERT INTO pokemon_sprites VALUES (375, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/375.png');
+INSERT INTO pokemon_sprites VALUES (376, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/376.png');
+INSERT INTO pokemon_sprites VALUES (377, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/377.png');
+INSERT INTO pokemon_sprites VALUES (378, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/378.png');
+INSERT INTO pokemon_sprites VALUES (379, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/379.png');
+INSERT INTO pokemon_sprites VALUES (380, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/380.png');
+INSERT INTO pokemon_sprites VALUES (381, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/381.png');
+INSERT INTO pokemon_sprites VALUES (382, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/382.png');
+INSERT INTO pokemon_sprites VALUES (383, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/383.png');
+INSERT INTO pokemon_sprites VALUES (384, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/384.png');
+INSERT INTO pokemon_sprites VALUES (385, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/385.png');
+INSERT INTO pokemon_sprites VALUES (386, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/386.png');
+INSERT INTO pokemon_sprites VALUES (387, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/387.png');
+INSERT INTO pokemon_sprites VALUES (388, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/388.png');
+INSERT INTO pokemon_sprites VALUES (389, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/389.png');
+INSERT INTO pokemon_sprites VALUES (390, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/390.png');
+INSERT INTO pokemon_sprites VALUES (391, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/391.png');
+INSERT INTO pokemon_sprites VALUES (392, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/392.png');
+INSERT INTO pokemon_sprites VALUES (393, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/393.png');
+INSERT INTO pokemon_sprites VALUES (394, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/394.png');
+INSERT INTO pokemon_sprites VALUES (395, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/395.png');
+INSERT INTO pokemon_sprites VALUES (396, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/396.png');
+INSERT INTO pokemon_sprites VALUES (397, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/397.png');
+INSERT INTO pokemon_sprites VALUES (398, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/398.png');
+INSERT INTO pokemon_sprites VALUES (399, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/399.png');
+INSERT INTO pokemon_sprites VALUES (400, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/400.png');
+INSERT INTO pokemon_sprites VALUES (401, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/401.png');
+INSERT INTO pokemon_sprites VALUES (402, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/402.png');
+INSERT INTO pokemon_sprites VALUES (403, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/403.png');
+INSERT INTO pokemon_sprites VALUES (404, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/404.png');
+INSERT INTO pokemon_sprites VALUES (405, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/405.png');
+INSERT INTO pokemon_sprites VALUES (406, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/406.png');
+INSERT INTO pokemon_sprites VALUES (407, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/407.png');
+INSERT INTO pokemon_sprites VALUES (408, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/408.png');
+INSERT INTO pokemon_sprites VALUES (409, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/409.png');
+INSERT INTO pokemon_sprites VALUES (410, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/410.png');
+INSERT INTO pokemon_sprites VALUES (411, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/411.png');
+INSERT INTO pokemon_sprites VALUES (412, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/412.png');
+INSERT INTO pokemon_sprites VALUES (413, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/413.png');
+INSERT INTO pokemon_sprites VALUES (414, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/414.png');
+INSERT INTO pokemon_sprites VALUES (415, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/415.png');
+INSERT INTO pokemon_sprites VALUES (416, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/416.png');
+INSERT INTO pokemon_sprites VALUES (417, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/417.png');
+INSERT INTO pokemon_sprites VALUES (418, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/418.png');
+INSERT INTO pokemon_sprites VALUES (419, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/419.png');
+INSERT INTO pokemon_sprites VALUES (420, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/420.png');
+INSERT INTO pokemon_sprites VALUES (421, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/421.png');
+INSERT INTO pokemon_sprites VALUES (422, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/422.png');
+INSERT INTO pokemon_sprites VALUES (423, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/423.png');
+INSERT INTO pokemon_sprites VALUES (424, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/424.png');
+INSERT INTO pokemon_sprites VALUES (425, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/425.png');
+INSERT INTO pokemon_sprites VALUES (426, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/426.png');
+INSERT INTO pokemon_sprites VALUES (427, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/427.png');
+INSERT INTO pokemon_sprites VALUES (428, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/428.png');
+INSERT INTO pokemon_sprites VALUES (429, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/429.png');
+INSERT INTO pokemon_sprites VALUES (430, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/430.png');
+INSERT INTO pokemon_sprites VALUES (431, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/431.png');
+INSERT INTO pokemon_sprites VALUES (432, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/432.png');
+INSERT INTO pokemon_sprites VALUES (433, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/433.png');
+INSERT INTO pokemon_sprites VALUES (434, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/434.png');
+INSERT INTO pokemon_sprites VALUES (435, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/435.png');
+INSERT INTO pokemon_sprites VALUES (436, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/436.png');
+INSERT INTO pokemon_sprites VALUES (437, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/437.png');
+INSERT INTO pokemon_sprites VALUES (438, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/438.png');
+INSERT INTO pokemon_sprites VALUES (439, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/439.png');
+INSERT INTO pokemon_sprites VALUES (440, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/440.png');
+INSERT INTO pokemon_sprites VALUES (441, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/441.png');
+INSERT INTO pokemon_sprites VALUES (442, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/442.png');
+INSERT INTO pokemon_sprites VALUES (443, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/443.png');
+INSERT INTO pokemon_sprites VALUES (444, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/444.png');
+INSERT INTO pokemon_sprites VALUES (445, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/445.png');
+INSERT INTO pokemon_sprites VALUES (446, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/446.png');
+INSERT INTO pokemon_sprites VALUES (447, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/447.png');
+INSERT INTO pokemon_sprites VALUES (448, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/448.png');
+INSERT INTO pokemon_sprites VALUES (449, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/449.png');
+INSERT INTO pokemon_sprites VALUES (450, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/450.png');
+INSERT INTO pokemon_sprites VALUES (451, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/451.png');
+INSERT INTO pokemon_sprites VALUES (452, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/452.png');
+INSERT INTO pokemon_sprites VALUES (453, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/453.png');
+INSERT INTO pokemon_sprites VALUES (454, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/454.png');
+INSERT INTO pokemon_sprites VALUES (455, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/455.png');
+INSERT INTO pokemon_sprites VALUES (456, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/456.png');
+INSERT INTO pokemon_sprites VALUES (457, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/457.png');
+INSERT INTO pokemon_sprites VALUES (458, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/458.png');
+INSERT INTO pokemon_sprites VALUES (459, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/459.png');
+INSERT INTO pokemon_sprites VALUES (460, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/460.png');
+INSERT INTO pokemon_sprites VALUES (461, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/461.png');
+INSERT INTO pokemon_sprites VALUES (462, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/462.png');
+INSERT INTO pokemon_sprites VALUES (463, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/463.png');
+INSERT INTO pokemon_sprites VALUES (464, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/464.png');
+INSERT INTO pokemon_sprites VALUES (465, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/465.png');
+INSERT INTO pokemon_sprites VALUES (466, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/466.png');
+INSERT INTO pokemon_sprites VALUES (467, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/467.png');
+INSERT INTO pokemon_sprites VALUES (468, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/468.png');
+INSERT INTO pokemon_sprites VALUES (469, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/469.png');
+INSERT INTO pokemon_sprites VALUES (470, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/470.png');
+INSERT INTO pokemon_sprites VALUES (471, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/471.png');
+INSERT INTO pokemon_sprites VALUES (472, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/472.png');
+INSERT INTO pokemon_sprites VALUES (473, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/473.png');
+INSERT INTO pokemon_sprites VALUES (474, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/474.png');
+INSERT INTO pokemon_sprites VALUES (475, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/475.png');
+INSERT INTO pokemon_sprites VALUES (476, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/476.png');
+INSERT INTO pokemon_sprites VALUES (477, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/477.png');
+INSERT INTO pokemon_sprites VALUES (478, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/478.png');
+INSERT INTO pokemon_sprites VALUES (479, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/479.png');
+INSERT INTO pokemon_sprites VALUES (480, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/480.png');
+INSERT INTO pokemon_sprites VALUES (481, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/481.png');
+INSERT INTO pokemon_sprites VALUES (482, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/482.png');
+INSERT INTO pokemon_sprites VALUES (483, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/483.png');
+INSERT INTO pokemon_sprites VALUES (484, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/484.png');
+INSERT INTO pokemon_sprites VALUES (485, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/485.png');
+INSERT INTO pokemon_sprites VALUES (486, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/486.png');
+INSERT INTO pokemon_sprites VALUES (487, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/487.png');
+INSERT INTO pokemon_sprites VALUES (488, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/488.png');
+INSERT INTO pokemon_sprites VALUES (489, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/489.png');
+INSERT INTO pokemon_sprites VALUES (490, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/490.png');
+INSERT INTO pokemon_sprites VALUES (491, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/491.png');
+INSERT INTO pokemon_sprites VALUES (492, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/492.png');
+INSERT INTO pokemon_sprites VALUES (493, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/493.png');
+INSERT INTO pokemon_sprites VALUES (494, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/494.png');
+INSERT INTO pokemon_sprites VALUES (495, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/495.png');
+INSERT INTO pokemon_sprites VALUES (496, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/496.png');
+INSERT INTO pokemon_sprites VALUES (497, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/497.png');
+INSERT INTO pokemon_sprites VALUES (498, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/498.png');
+INSERT INTO pokemon_sprites VALUES (499, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/499.png');
+INSERT INTO pokemon_sprites VALUES (500, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/500.png');
+INSERT INTO pokemon_sprites VALUES (501, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/501.png');
+INSERT INTO pokemon_sprites VALUES (502, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/502.png');
+INSERT INTO pokemon_sprites VALUES (503, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/503.png');
+INSERT INTO pokemon_sprites VALUES (504, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/504.png');
+INSERT INTO pokemon_sprites VALUES (505, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/505.png');
+INSERT INTO pokemon_sprites VALUES (506, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/506.png');
+INSERT INTO pokemon_sprites VALUES (507, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/507.png');
+INSERT INTO pokemon_sprites VALUES (508, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/508.png');
+INSERT INTO pokemon_sprites VALUES (509, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/509.png');
+INSERT INTO pokemon_sprites VALUES (510, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/510.png');
+INSERT INTO pokemon_sprites VALUES (511, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/511.png');
+INSERT INTO pokemon_sprites VALUES (512, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/512.png');
+INSERT INTO pokemon_sprites VALUES (513, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/513.png');
+INSERT INTO pokemon_sprites VALUES (514, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/514.png');
+INSERT INTO pokemon_sprites VALUES (515, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/515.png');
+INSERT INTO pokemon_sprites VALUES (516, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/516.png');
+INSERT INTO pokemon_sprites VALUES (517, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/517.png');
+INSERT INTO pokemon_sprites VALUES (518, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/518.png');
+INSERT INTO pokemon_sprites VALUES (519, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/519.png');
+INSERT INTO pokemon_sprites VALUES (520, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/520.png');
+INSERT INTO pokemon_sprites VALUES (521, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/521.png');
+INSERT INTO pokemon_sprites VALUES (522, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/522.png');
+INSERT INTO pokemon_sprites VALUES (523, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/523.png');
+INSERT INTO pokemon_sprites VALUES (524, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/524.png');
+INSERT INTO pokemon_sprites VALUES (525, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/525.png');
+INSERT INTO pokemon_sprites VALUES (526, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/526.png');
+INSERT INTO pokemon_sprites VALUES (527, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/527.png');
+INSERT INTO pokemon_sprites VALUES (528, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/528.png');
+INSERT INTO pokemon_sprites VALUES (529, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/529.png');
+INSERT INTO pokemon_sprites VALUES (530, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/530.png');
+INSERT INTO pokemon_sprites VALUES (531, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/531.png');
+INSERT INTO pokemon_sprites VALUES (532, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/532.png');
+INSERT INTO pokemon_sprites VALUES (533, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/533.png');
+INSERT INTO pokemon_sprites VALUES (534, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/534.png');
+INSERT INTO pokemon_sprites VALUES (535, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/535.png');
+INSERT INTO pokemon_sprites VALUES (536, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/536.png');
+INSERT INTO pokemon_sprites VALUES (537, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/537.png');
+INSERT INTO pokemon_sprites VALUES (538, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/538.png');
+INSERT INTO pokemon_sprites VALUES (539, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/539.png');
+INSERT INTO pokemon_sprites VALUES (540, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/540.png');
+INSERT INTO pokemon_sprites VALUES (541, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/541.png');
+INSERT INTO pokemon_sprites VALUES (542, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/542.png');
+INSERT INTO pokemon_sprites VALUES (543, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/543.png');
+INSERT INTO pokemon_sprites VALUES (544, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/544.png');
+INSERT INTO pokemon_sprites VALUES (545, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/545.png');
+INSERT INTO pokemon_sprites VALUES (546, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/546.png');
+INSERT INTO pokemon_sprites VALUES (547, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/547.png');
+INSERT INTO pokemon_sprites VALUES (548, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/548.png');
+INSERT INTO pokemon_sprites VALUES (549, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/549.png');
+INSERT INTO pokemon_sprites VALUES (550, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/550.png');
+INSERT INTO pokemon_sprites VALUES (551, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/551.png');
+INSERT INTO pokemon_sprites VALUES (552, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/552.png');
+INSERT INTO pokemon_sprites VALUES (553, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/553.png');
+INSERT INTO pokemon_sprites VALUES (554, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/554.png');
+INSERT INTO pokemon_sprites VALUES (555, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/555.png');
+INSERT INTO pokemon_sprites VALUES (556, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/556.png');
+INSERT INTO pokemon_sprites VALUES (557, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/557.png');
+INSERT INTO pokemon_sprites VALUES (558, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/558.png');
+INSERT INTO pokemon_sprites VALUES (559, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/559.png');
+INSERT INTO pokemon_sprites VALUES (560, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/560.png');
+INSERT INTO pokemon_sprites VALUES (561, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/561.png');
+INSERT INTO pokemon_sprites VALUES (562, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/562.png');
+INSERT INTO pokemon_sprites VALUES (563, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/563.png');
+INSERT INTO pokemon_sprites VALUES (564, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/564.png');
+INSERT INTO pokemon_sprites VALUES (565, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/565.png');
+INSERT INTO pokemon_sprites VALUES (566, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/566.png');
+INSERT INTO pokemon_sprites VALUES (567, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/567.png');
+INSERT INTO pokemon_sprites VALUES (568, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/568.png');
+INSERT INTO pokemon_sprites VALUES (569, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/569.png');
+INSERT INTO pokemon_sprites VALUES (570, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/570.png');
+INSERT INTO pokemon_sprites VALUES (571, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/571.png');
+INSERT INTO pokemon_sprites VALUES (572, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/572.png');
+INSERT INTO pokemon_sprites VALUES (573, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/573.png');
+INSERT INTO pokemon_sprites VALUES (574, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/574.png');
+INSERT INTO pokemon_sprites VALUES (575, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/575.png');
+INSERT INTO pokemon_sprites VALUES (576, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/576.png');
+INSERT INTO pokemon_sprites VALUES (577, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/577.png');
+INSERT INTO pokemon_sprites VALUES (578, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/578.png');
+INSERT INTO pokemon_sprites VALUES (579, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/579.png');
+INSERT INTO pokemon_sprites VALUES (580, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/580.png');
+INSERT INTO pokemon_sprites VALUES (581, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/581.png');
+INSERT INTO pokemon_sprites VALUES (582, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/582.png');
+INSERT INTO pokemon_sprites VALUES (583, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/583.png');
+INSERT INTO pokemon_sprites VALUES (584, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/584.png');
+INSERT INTO pokemon_sprites VALUES (585, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/585.png');
+INSERT INTO pokemon_sprites VALUES (586, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/586.png');
+INSERT INTO pokemon_sprites VALUES (587, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/587.png');
+INSERT INTO pokemon_sprites VALUES (588, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/588.png');
+INSERT INTO pokemon_sprites VALUES (589, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/589.png');
+INSERT INTO pokemon_sprites VALUES (590, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/590.png');
+INSERT INTO pokemon_sprites VALUES (591, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/591.png');
+INSERT INTO pokemon_sprites VALUES (592, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/592.png');
+INSERT INTO pokemon_sprites VALUES (593, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/593.png');
+INSERT INTO pokemon_sprites VALUES (594, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/594.png');
+INSERT INTO pokemon_sprites VALUES (595, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/595.png');
+INSERT INTO pokemon_sprites VALUES (596, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/596.png');
+INSERT INTO pokemon_sprites VALUES (597, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/597.png');
+INSERT INTO pokemon_sprites VALUES (598, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/598.png');
+INSERT INTO pokemon_sprites VALUES (599, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/599.png');
+INSERT INTO pokemon_sprites VALUES (600, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/600.png');
+INSERT INTO pokemon_sprites VALUES (601, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/601.png');
+INSERT INTO pokemon_sprites VALUES (602, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/602.png');
+INSERT INTO pokemon_sprites VALUES (603, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/603.png');
+INSERT INTO pokemon_sprites VALUES (604, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/604.png');
+INSERT INTO pokemon_sprites VALUES (605, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/605.png');
+INSERT INTO pokemon_sprites VALUES (606, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/606.png');
+INSERT INTO pokemon_sprites VALUES (607, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/607.png');
+INSERT INTO pokemon_sprites VALUES (608, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/608.png');
+INSERT INTO pokemon_sprites VALUES (609, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/609.png');
+INSERT INTO pokemon_sprites VALUES (610, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/610.png');
+INSERT INTO pokemon_sprites VALUES (611, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/611.png');
+INSERT INTO pokemon_sprites VALUES (612, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/612.png');
+INSERT INTO pokemon_sprites VALUES (613, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/613.png');
+INSERT INTO pokemon_sprites VALUES (614, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/614.png');
+INSERT INTO pokemon_sprites VALUES (615, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/615.png');
+INSERT INTO pokemon_sprites VALUES (616, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/616.png');
+INSERT INTO pokemon_sprites VALUES (617, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/617.png');
+INSERT INTO pokemon_sprites VALUES (618, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/618.png');
+INSERT INTO pokemon_sprites VALUES (619, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/619.png');
+INSERT INTO pokemon_sprites VALUES (620, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/620.png');
+INSERT INTO pokemon_sprites VALUES (621, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/621.png');
+INSERT INTO pokemon_sprites VALUES (622, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/622.png');
+INSERT INTO pokemon_sprites VALUES (623, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/623.png');
+INSERT INTO pokemon_sprites VALUES (624, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/624.png');
+INSERT INTO pokemon_sprites VALUES (625, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/625.png');
+INSERT INTO pokemon_sprites VALUES (626, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/626.png');
+INSERT INTO pokemon_sprites VALUES (627, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/627.png');
+INSERT INTO pokemon_sprites VALUES (628, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/628.png');
+INSERT INTO pokemon_sprites VALUES (629, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/629.png');
+INSERT INTO pokemon_sprites VALUES (630, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/630.png');
+INSERT INTO pokemon_sprites VALUES (631, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/631.png');
+INSERT INTO pokemon_sprites VALUES (632, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/632.png');
+INSERT INTO pokemon_sprites VALUES (633, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/633.png');
+INSERT INTO pokemon_sprites VALUES (634, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/634.png');
+INSERT INTO pokemon_sprites VALUES (635, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/635.png');
+INSERT INTO pokemon_sprites VALUES (636, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/636.png');
+INSERT INTO pokemon_sprites VALUES (637, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/637.png');
+INSERT INTO pokemon_sprites VALUES (638, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/638.png');
+INSERT INTO pokemon_sprites VALUES (639, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/639.png');
+INSERT INTO pokemon_sprites VALUES (640, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/640.png');
+INSERT INTO pokemon_sprites VALUES (641, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/641.png');
+INSERT INTO pokemon_sprites VALUES (642, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/642.png');
+INSERT INTO pokemon_sprites VALUES (643, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/643.png');
+INSERT INTO pokemon_sprites VALUES (644, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/644.png');
+INSERT INTO pokemon_sprites VALUES (645, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/645.png');
+INSERT INTO pokemon_sprites VALUES (646, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/646.png');
+INSERT INTO pokemon_sprites VALUES (647, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/647.png');
+INSERT INTO pokemon_sprites VALUES (648, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/648.png');
+INSERT INTO pokemon_sprites VALUES (649, 'back', 'http://www.pokelab.xyz/images/sprites/normal/back/649.png');
+INSERT INTO pokemon_sprites VALUES (1, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/1.png');
+INSERT INTO pokemon_sprites VALUES (2, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/2.png');
+INSERT INTO pokemon_sprites VALUES (3, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/3.png');
+INSERT INTO pokemon_sprites VALUES (4, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/4.png');
+INSERT INTO pokemon_sprites VALUES (5, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/5.png');
+INSERT INTO pokemon_sprites VALUES (6, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/6.png');
+INSERT INTO pokemon_sprites VALUES (7, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/7.png');
+INSERT INTO pokemon_sprites VALUES (8, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/8.png');
+INSERT INTO pokemon_sprites VALUES (9, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/9.png');
+INSERT INTO pokemon_sprites VALUES (10, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/10.png');
+INSERT INTO pokemon_sprites VALUES (11, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/11.png');
+INSERT INTO pokemon_sprites VALUES (12, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/12.png');
+INSERT INTO pokemon_sprites VALUES (13, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/13.png');
+INSERT INTO pokemon_sprites VALUES (14, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/14.png');
+INSERT INTO pokemon_sprites VALUES (15, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/15.png');
+INSERT INTO pokemon_sprites VALUES (16, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/16.png');
+INSERT INTO pokemon_sprites VALUES (17, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/17.png');
+INSERT INTO pokemon_sprites VALUES (18, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/18.png');
+INSERT INTO pokemon_sprites VALUES (19, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/19.png');
+INSERT INTO pokemon_sprites VALUES (20, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/20.png');
+INSERT INTO pokemon_sprites VALUES (21, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/21.png');
+INSERT INTO pokemon_sprites VALUES (22, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/22.png');
+INSERT INTO pokemon_sprites VALUES (23, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/23.png');
+INSERT INTO pokemon_sprites VALUES (24, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/24.png');
+INSERT INTO pokemon_sprites VALUES (25, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/25.png');
+INSERT INTO pokemon_sprites VALUES (26, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/26.png');
+INSERT INTO pokemon_sprites VALUES (27, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/27.png');
+INSERT INTO pokemon_sprites VALUES (28, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/28.png');
+INSERT INTO pokemon_sprites VALUES (29, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/29.png');
+INSERT INTO pokemon_sprites VALUES (30, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/30.png');
+INSERT INTO pokemon_sprites VALUES (31, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/31.png');
+INSERT INTO pokemon_sprites VALUES (32, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/32.png');
+INSERT INTO pokemon_sprites VALUES (33, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/33.png');
+INSERT INTO pokemon_sprites VALUES (34, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/34.png');
+INSERT INTO pokemon_sprites VALUES (35, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/35.png');
+INSERT INTO pokemon_sprites VALUES (36, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/36.png');
+INSERT INTO pokemon_sprites VALUES (37, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/37.png');
+INSERT INTO pokemon_sprites VALUES (38, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/38.png');
+INSERT INTO pokemon_sprites VALUES (39, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/39.png');
+INSERT INTO pokemon_sprites VALUES (40, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/40.png');
+INSERT INTO pokemon_sprites VALUES (41, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/41.png');
+INSERT INTO pokemon_sprites VALUES (42, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/42.png');
+INSERT INTO pokemon_sprites VALUES (43, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/43.png');
+INSERT INTO pokemon_sprites VALUES (44, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/44.png');
+INSERT INTO pokemon_sprites VALUES (45, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/45.png');
+INSERT INTO pokemon_sprites VALUES (46, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/46.png');
+INSERT INTO pokemon_sprites VALUES (47, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/47.png');
+INSERT INTO pokemon_sprites VALUES (48, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/48.png');
+INSERT INTO pokemon_sprites VALUES (49, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/49.png');
+INSERT INTO pokemon_sprites VALUES (50, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/50.png');
+INSERT INTO pokemon_sprites VALUES (51, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/51.png');
+INSERT INTO pokemon_sprites VALUES (52, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/52.png');
+INSERT INTO pokemon_sprites VALUES (53, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/53.png');
+INSERT INTO pokemon_sprites VALUES (54, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/54.png');
+INSERT INTO pokemon_sprites VALUES (55, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/55.png');
+INSERT INTO pokemon_sprites VALUES (56, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/56.png');
+INSERT INTO pokemon_sprites VALUES (57, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/57.png');
+INSERT INTO pokemon_sprites VALUES (58, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/58.png');
+INSERT INTO pokemon_sprites VALUES (59, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/59.png');
+INSERT INTO pokemon_sprites VALUES (60, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/60.png');
+INSERT INTO pokemon_sprites VALUES (61, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/61.png');
+INSERT INTO pokemon_sprites VALUES (62, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/62.png');
+INSERT INTO pokemon_sprites VALUES (63, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/63.png');
+INSERT INTO pokemon_sprites VALUES (64, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/64.png');
+INSERT INTO pokemon_sprites VALUES (65, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/65.png');
+INSERT INTO pokemon_sprites VALUES (66, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/66.png');
+INSERT INTO pokemon_sprites VALUES (67, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/67.png');
+INSERT INTO pokemon_sprites VALUES (68, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/68.png');
+INSERT INTO pokemon_sprites VALUES (69, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/69.png');
+INSERT INTO pokemon_sprites VALUES (70, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/70.png');
+INSERT INTO pokemon_sprites VALUES (71, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/71.png');
+INSERT INTO pokemon_sprites VALUES (72, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/72.png');
+INSERT INTO pokemon_sprites VALUES (73, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/73.png');
+INSERT INTO pokemon_sprites VALUES (74, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/74.png');
+INSERT INTO pokemon_sprites VALUES (75, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/75.png');
+INSERT INTO pokemon_sprites VALUES (76, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/76.png');
+INSERT INTO pokemon_sprites VALUES (77, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/77.png');
+INSERT INTO pokemon_sprites VALUES (78, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/78.png');
+INSERT INTO pokemon_sprites VALUES (79, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/79.png');
+INSERT INTO pokemon_sprites VALUES (80, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/80.png');
+INSERT INTO pokemon_sprites VALUES (81, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/81.png');
+INSERT INTO pokemon_sprites VALUES (82, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/82.png');
+INSERT INTO pokemon_sprites VALUES (83, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/83.png');
+INSERT INTO pokemon_sprites VALUES (84, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/84.png');
+INSERT INTO pokemon_sprites VALUES (85, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/85.png');
+INSERT INTO pokemon_sprites VALUES (86, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/86.png');
+INSERT INTO pokemon_sprites VALUES (87, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/87.png');
+INSERT INTO pokemon_sprites VALUES (88, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/88.png');
+INSERT INTO pokemon_sprites VALUES (89, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/89.png');
+INSERT INTO pokemon_sprites VALUES (90, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/90.png');
+INSERT INTO pokemon_sprites VALUES (91, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/91.png');
+INSERT INTO pokemon_sprites VALUES (92, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/92.png');
+INSERT INTO pokemon_sprites VALUES (93, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/93.png');
+INSERT INTO pokemon_sprites VALUES (94, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/94.png');
+INSERT INTO pokemon_sprites VALUES (95, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/95.png');
+INSERT INTO pokemon_sprites VALUES (96, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/96.png');
+INSERT INTO pokemon_sprites VALUES (97, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/97.png');
+INSERT INTO pokemon_sprites VALUES (98, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/98.png');
+INSERT INTO pokemon_sprites VALUES (99, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/99.png');
+INSERT INTO pokemon_sprites VALUES (100, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/100.png');
+INSERT INTO pokemon_sprites VALUES (101, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/101.png');
+INSERT INTO pokemon_sprites VALUES (102, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/102.png');
+INSERT INTO pokemon_sprites VALUES (103, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/103.png');
+INSERT INTO pokemon_sprites VALUES (104, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/104.png');
+INSERT INTO pokemon_sprites VALUES (105, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/105.png');
+INSERT INTO pokemon_sprites VALUES (106, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/106.png');
+INSERT INTO pokemon_sprites VALUES (107, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/107.png');
+INSERT INTO pokemon_sprites VALUES (108, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/108.png');
+INSERT INTO pokemon_sprites VALUES (109, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/109.png');
+INSERT INTO pokemon_sprites VALUES (110, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/110.png');
+INSERT INTO pokemon_sprites VALUES (111, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/111.png');
+INSERT INTO pokemon_sprites VALUES (112, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/112.png');
+INSERT INTO pokemon_sprites VALUES (113, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/113.png');
+INSERT INTO pokemon_sprites VALUES (114, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/114.png');
+INSERT INTO pokemon_sprites VALUES (115, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/115.png');
+INSERT INTO pokemon_sprites VALUES (116, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/116.png');
+INSERT INTO pokemon_sprites VALUES (117, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/117.png');
+INSERT INTO pokemon_sprites VALUES (118, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/118.png');
+INSERT INTO pokemon_sprites VALUES (119, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/119.png');
+INSERT INTO pokemon_sprites VALUES (120, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/120.png');
+INSERT INTO pokemon_sprites VALUES (121, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/121.png');
+INSERT INTO pokemon_sprites VALUES (122, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/122.png');
+INSERT INTO pokemon_sprites VALUES (123, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/123.png');
+INSERT INTO pokemon_sprites VALUES (124, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/124.png');
+INSERT INTO pokemon_sprites VALUES (125, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/125.png');
+INSERT INTO pokemon_sprites VALUES (126, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/126.png');
+INSERT INTO pokemon_sprites VALUES (127, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/127.png');
+INSERT INTO pokemon_sprites VALUES (128, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/128.png');
+INSERT INTO pokemon_sprites VALUES (129, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/129.png');
+INSERT INTO pokemon_sprites VALUES (130, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/130.png');
+INSERT INTO pokemon_sprites VALUES (131, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/131.png');
+INSERT INTO pokemon_sprites VALUES (132, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/132.png');
+INSERT INTO pokemon_sprites VALUES (133, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/133.png');
+INSERT INTO pokemon_sprites VALUES (134, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/134.png');
+INSERT INTO pokemon_sprites VALUES (135, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/135.png');
+INSERT INTO pokemon_sprites VALUES (136, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/136.png');
+INSERT INTO pokemon_sprites VALUES (137, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/137.png');
+INSERT INTO pokemon_sprites VALUES (138, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/138.png');
+INSERT INTO pokemon_sprites VALUES (139, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/139.png');
+INSERT INTO pokemon_sprites VALUES (140, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/140.png');
+INSERT INTO pokemon_sprites VALUES (141, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/141.png');
+INSERT INTO pokemon_sprites VALUES (142, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/142.png');
+INSERT INTO pokemon_sprites VALUES (143, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/143.png');
+INSERT INTO pokemon_sprites VALUES (144, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/144.png');
+INSERT INTO pokemon_sprites VALUES (145, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/145.png');
+INSERT INTO pokemon_sprites VALUES (146, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/146.png');
+INSERT INTO pokemon_sprites VALUES (147, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/147.png');
+INSERT INTO pokemon_sprites VALUES (148, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/148.png');
+INSERT INTO pokemon_sprites VALUES (149, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/149.png');
+INSERT INTO pokemon_sprites VALUES (150, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/150.png');
+INSERT INTO pokemon_sprites VALUES (151, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/151.png');
+INSERT INTO pokemon_sprites VALUES (152, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/152.png');
+INSERT INTO pokemon_sprites VALUES (153, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/153.png');
+INSERT INTO pokemon_sprites VALUES (154, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/154.png');
+INSERT INTO pokemon_sprites VALUES (155, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/155.png');
+INSERT INTO pokemon_sprites VALUES (156, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/156.png');
+INSERT INTO pokemon_sprites VALUES (157, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/157.png');
+INSERT INTO pokemon_sprites VALUES (158, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/158.png');
+INSERT INTO pokemon_sprites VALUES (159, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/159.png');
+INSERT INTO pokemon_sprites VALUES (160, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/160.png');
+INSERT INTO pokemon_sprites VALUES (161, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/161.png');
+INSERT INTO pokemon_sprites VALUES (162, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/162.png');
+INSERT INTO pokemon_sprites VALUES (163, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/163.png');
+INSERT INTO pokemon_sprites VALUES (164, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/164.png');
+INSERT INTO pokemon_sprites VALUES (165, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/165.png');
+INSERT INTO pokemon_sprites VALUES (166, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/166.png');
+INSERT INTO pokemon_sprites VALUES (167, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/167.png');
+INSERT INTO pokemon_sprites VALUES (168, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/168.png');
+INSERT INTO pokemon_sprites VALUES (169, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/169.png');
+INSERT INTO pokemon_sprites VALUES (170, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/170.png');
+INSERT INTO pokemon_sprites VALUES (171, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/171.png');
+INSERT INTO pokemon_sprites VALUES (172, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/172.png');
+INSERT INTO pokemon_sprites VALUES (173, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/173.png');
+INSERT INTO pokemon_sprites VALUES (174, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/174.png');
+INSERT INTO pokemon_sprites VALUES (175, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/175.png');
+INSERT INTO pokemon_sprites VALUES (176, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/176.png');
+INSERT INTO pokemon_sprites VALUES (177, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/177.png');
+INSERT INTO pokemon_sprites VALUES (178, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/178.png');
+INSERT INTO pokemon_sprites VALUES (179, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/179.png');
+INSERT INTO pokemon_sprites VALUES (180, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/180.png');
+INSERT INTO pokemon_sprites VALUES (181, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/181.png');
+INSERT INTO pokemon_sprites VALUES (182, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/182.png');
+INSERT INTO pokemon_sprites VALUES (183, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/183.png');
+INSERT INTO pokemon_sprites VALUES (184, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/184.png');
+INSERT INTO pokemon_sprites VALUES (185, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/185.png');
+INSERT INTO pokemon_sprites VALUES (186, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/186.png');
+INSERT INTO pokemon_sprites VALUES (187, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/187.png');
+INSERT INTO pokemon_sprites VALUES (188, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/188.png');
+INSERT INTO pokemon_sprites VALUES (189, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/189.png');
+INSERT INTO pokemon_sprites VALUES (190, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/190.png');
+INSERT INTO pokemon_sprites VALUES (191, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/191.png');
+INSERT INTO pokemon_sprites VALUES (192, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/192.png');
+INSERT INTO pokemon_sprites VALUES (193, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/193.png');
+INSERT INTO pokemon_sprites VALUES (194, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/194.png');
+INSERT INTO pokemon_sprites VALUES (195, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/195.png');
+INSERT INTO pokemon_sprites VALUES (196, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/196.png');
+INSERT INTO pokemon_sprites VALUES (197, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/197.png');
+INSERT INTO pokemon_sprites VALUES (198, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/198.png');
+INSERT INTO pokemon_sprites VALUES (199, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/199.png');
+INSERT INTO pokemon_sprites VALUES (200, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/200.png');
+INSERT INTO pokemon_sprites VALUES (201, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/201.png');
+INSERT INTO pokemon_sprites VALUES (202, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/202.png');
+INSERT INTO pokemon_sprites VALUES (203, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/203.png');
+INSERT INTO pokemon_sprites VALUES (204, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/204.png');
+INSERT INTO pokemon_sprites VALUES (205, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/205.png');
+INSERT INTO pokemon_sprites VALUES (206, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/206.png');
+INSERT INTO pokemon_sprites VALUES (207, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/207.png');
+INSERT INTO pokemon_sprites VALUES (208, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/208.png');
+INSERT INTO pokemon_sprites VALUES (209, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/209.png');
+INSERT INTO pokemon_sprites VALUES (210, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/210.png');
+INSERT INTO pokemon_sprites VALUES (211, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/211.png');
+INSERT INTO pokemon_sprites VALUES (212, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/212.png');
+INSERT INTO pokemon_sprites VALUES (213, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/213.png');
+INSERT INTO pokemon_sprites VALUES (214, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/214.png');
+INSERT INTO pokemon_sprites VALUES (215, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/215.png');
+INSERT INTO pokemon_sprites VALUES (216, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/216.png');
+INSERT INTO pokemon_sprites VALUES (217, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/217.png');
+INSERT INTO pokemon_sprites VALUES (218, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/218.png');
+INSERT INTO pokemon_sprites VALUES (219, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/219.png');
+INSERT INTO pokemon_sprites VALUES (220, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/220.png');
+INSERT INTO pokemon_sprites VALUES (221, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/221.png');
+INSERT INTO pokemon_sprites VALUES (222, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/222.png');
+INSERT INTO pokemon_sprites VALUES (223, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/223.png');
+INSERT INTO pokemon_sprites VALUES (224, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/224.png');
+INSERT INTO pokemon_sprites VALUES (225, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/225.png');
+INSERT INTO pokemon_sprites VALUES (226, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/226.png');
+INSERT INTO pokemon_sprites VALUES (227, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/227.png');
+INSERT INTO pokemon_sprites VALUES (228, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/228.png');
+INSERT INTO pokemon_sprites VALUES (229, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/229.png');
+INSERT INTO pokemon_sprites VALUES (230, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/230.png');
+INSERT INTO pokemon_sprites VALUES (231, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/231.png');
+INSERT INTO pokemon_sprites VALUES (232, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/232.png');
+INSERT INTO pokemon_sprites VALUES (233, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/233.png');
+INSERT INTO pokemon_sprites VALUES (234, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/234.png');
+INSERT INTO pokemon_sprites VALUES (235, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/235.png');
+INSERT INTO pokemon_sprites VALUES (236, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/236.png');
+INSERT INTO pokemon_sprites VALUES (237, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/237.png');
+INSERT INTO pokemon_sprites VALUES (238, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/238.png');
+INSERT INTO pokemon_sprites VALUES (239, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/239.png');
+INSERT INTO pokemon_sprites VALUES (240, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/240.png');
+INSERT INTO pokemon_sprites VALUES (241, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/241.png');
+INSERT INTO pokemon_sprites VALUES (242, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/242.png');
+INSERT INTO pokemon_sprites VALUES (243, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/243.png');
+INSERT INTO pokemon_sprites VALUES (244, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/244.png');
+INSERT INTO pokemon_sprites VALUES (245, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/245.png');
+INSERT INTO pokemon_sprites VALUES (246, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/246.png');
+INSERT INTO pokemon_sprites VALUES (247, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/247.png');
+INSERT INTO pokemon_sprites VALUES (248, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/248.png');
+INSERT INTO pokemon_sprites VALUES (249, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/249.png');
+INSERT INTO pokemon_sprites VALUES (250, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/250.png');
+INSERT INTO pokemon_sprites VALUES (251, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/251.png');
+INSERT INTO pokemon_sprites VALUES (252, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/252.png');
+INSERT INTO pokemon_sprites VALUES (253, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/253.png');
+INSERT INTO pokemon_sprites VALUES (254, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/254.png');
+INSERT INTO pokemon_sprites VALUES (255, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/255.png');
+INSERT INTO pokemon_sprites VALUES (256, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/256.png');
+INSERT INTO pokemon_sprites VALUES (257, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/257.png');
+INSERT INTO pokemon_sprites VALUES (258, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/258.png');
+INSERT INTO pokemon_sprites VALUES (259, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/259.png');
+INSERT INTO pokemon_sprites VALUES (260, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/260.png');
+INSERT INTO pokemon_sprites VALUES (261, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/261.png');
+INSERT INTO pokemon_sprites VALUES (262, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/262.png');
+INSERT INTO pokemon_sprites VALUES (263, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/263.png');
+INSERT INTO pokemon_sprites VALUES (264, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/264.png');
+INSERT INTO pokemon_sprites VALUES (265, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/265.png');
+INSERT INTO pokemon_sprites VALUES (266, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/266.png');
+INSERT INTO pokemon_sprites VALUES (267, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/267.png');
+INSERT INTO pokemon_sprites VALUES (268, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/268.png');
+INSERT INTO pokemon_sprites VALUES (269, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/269.png');
+INSERT INTO pokemon_sprites VALUES (270, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/270.png');
+INSERT INTO pokemon_sprites VALUES (271, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/271.png');
+INSERT INTO pokemon_sprites VALUES (272, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/272.png');
+INSERT INTO pokemon_sprites VALUES (273, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/273.png');
+INSERT INTO pokemon_sprites VALUES (274, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/274.png');
+INSERT INTO pokemon_sprites VALUES (275, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/275.png');
+INSERT INTO pokemon_sprites VALUES (276, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/276.png');
+INSERT INTO pokemon_sprites VALUES (277, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/277.png');
+INSERT INTO pokemon_sprites VALUES (278, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/278.png');
+INSERT INTO pokemon_sprites VALUES (279, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/279.png');
+INSERT INTO pokemon_sprites VALUES (280, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/280.png');
+INSERT INTO pokemon_sprites VALUES (281, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/281.png');
+INSERT INTO pokemon_sprites VALUES (282, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/282.png');
+INSERT INTO pokemon_sprites VALUES (283, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/283.png');
+INSERT INTO pokemon_sprites VALUES (284, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/284.png');
+INSERT INTO pokemon_sprites VALUES (285, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/285.png');
+INSERT INTO pokemon_sprites VALUES (286, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/286.png');
+INSERT INTO pokemon_sprites VALUES (287, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/287.png');
+INSERT INTO pokemon_sprites VALUES (288, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/288.png');
+INSERT INTO pokemon_sprites VALUES (289, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/289.png');
+INSERT INTO pokemon_sprites VALUES (290, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/290.png');
+INSERT INTO pokemon_sprites VALUES (291, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/291.png');
+INSERT INTO pokemon_sprites VALUES (292, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/292.png');
+INSERT INTO pokemon_sprites VALUES (293, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/293.png');
+INSERT INTO pokemon_sprites VALUES (294, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/294.png');
+INSERT INTO pokemon_sprites VALUES (295, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/295.png');
+INSERT INTO pokemon_sprites VALUES (296, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/296.png');
+INSERT INTO pokemon_sprites VALUES (297, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/297.png');
+INSERT INTO pokemon_sprites VALUES (298, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/298.png');
+INSERT INTO pokemon_sprites VALUES (299, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/299.png');
+INSERT INTO pokemon_sprites VALUES (300, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/300.png');
+INSERT INTO pokemon_sprites VALUES (301, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/301.png');
+INSERT INTO pokemon_sprites VALUES (302, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/302.png');
+INSERT INTO pokemon_sprites VALUES (303, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/303.png');
+INSERT INTO pokemon_sprites VALUES (304, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/304.png');
+INSERT INTO pokemon_sprites VALUES (305, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/305.png');
+INSERT INTO pokemon_sprites VALUES (306, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/306.png');
+INSERT INTO pokemon_sprites VALUES (307, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/307.png');
+INSERT INTO pokemon_sprites VALUES (308, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/308.png');
+INSERT INTO pokemon_sprites VALUES (309, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/309.png');
+INSERT INTO pokemon_sprites VALUES (310, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/310.png');
+INSERT INTO pokemon_sprites VALUES (311, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/311.png');
+INSERT INTO pokemon_sprites VALUES (312, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/312.png');
+INSERT INTO pokemon_sprites VALUES (313, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/313.png');
+INSERT INTO pokemon_sprites VALUES (314, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/314.png');
+INSERT INTO pokemon_sprites VALUES (315, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/315.png');
+INSERT INTO pokemon_sprites VALUES (316, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/316.png');
+INSERT INTO pokemon_sprites VALUES (317, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/317.png');
+INSERT INTO pokemon_sprites VALUES (318, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/318.png');
+INSERT INTO pokemon_sprites VALUES (319, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/319.png');
+INSERT INTO pokemon_sprites VALUES (320, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/320.png');
+INSERT INTO pokemon_sprites VALUES (321, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/321.png');
+INSERT INTO pokemon_sprites VALUES (322, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/322.png');
+INSERT INTO pokemon_sprites VALUES (323, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/323.png');
+INSERT INTO pokemon_sprites VALUES (324, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/324.png');
+INSERT INTO pokemon_sprites VALUES (325, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/325.png');
+INSERT INTO pokemon_sprites VALUES (326, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/326.png');
+INSERT INTO pokemon_sprites VALUES (327, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/327.png');
+INSERT INTO pokemon_sprites VALUES (328, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/328.png');
+INSERT INTO pokemon_sprites VALUES (329, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/329.png');
+INSERT INTO pokemon_sprites VALUES (330, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/330.png');
+INSERT INTO pokemon_sprites VALUES (331, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/331.png');
+INSERT INTO pokemon_sprites VALUES (332, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/332.png');
+INSERT INTO pokemon_sprites VALUES (333, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/333.png');
+INSERT INTO pokemon_sprites VALUES (334, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/334.png');
+INSERT INTO pokemon_sprites VALUES (335, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/335.png');
+INSERT INTO pokemon_sprites VALUES (336, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/336.png');
+INSERT INTO pokemon_sprites VALUES (337, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/337.png');
+INSERT INTO pokemon_sprites VALUES (338, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/338.png');
+INSERT INTO pokemon_sprites VALUES (339, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/339.png');
+INSERT INTO pokemon_sprites VALUES (340, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/340.png');
+INSERT INTO pokemon_sprites VALUES (341, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/341.png');
+INSERT INTO pokemon_sprites VALUES (342, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/342.png');
+INSERT INTO pokemon_sprites VALUES (343, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/343.png');
+INSERT INTO pokemon_sprites VALUES (344, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/344.png');
+INSERT INTO pokemon_sprites VALUES (345, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/345.png');
+INSERT INTO pokemon_sprites VALUES (346, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/346.png');
+INSERT INTO pokemon_sprites VALUES (347, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/347.png');
+INSERT INTO pokemon_sprites VALUES (348, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/348.png');
+INSERT INTO pokemon_sprites VALUES (349, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/349.png');
+INSERT INTO pokemon_sprites VALUES (350, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/350.png');
+INSERT INTO pokemon_sprites VALUES (351, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/351.png');
+INSERT INTO pokemon_sprites VALUES (352, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/352.png');
+INSERT INTO pokemon_sprites VALUES (353, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/353.png');
+INSERT INTO pokemon_sprites VALUES (354, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/354.png');
+INSERT INTO pokemon_sprites VALUES (355, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/355.png');
+INSERT INTO pokemon_sprites VALUES (356, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/356.png');
+INSERT INTO pokemon_sprites VALUES (357, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/357.png');
+INSERT INTO pokemon_sprites VALUES (358, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/358.png');
+INSERT INTO pokemon_sprites VALUES (359, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/359.png');
+INSERT INTO pokemon_sprites VALUES (360, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/360.png');
+INSERT INTO pokemon_sprites VALUES (361, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/361.png');
+INSERT INTO pokemon_sprites VALUES (362, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/362.png');
+INSERT INTO pokemon_sprites VALUES (363, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/363.png');
+INSERT INTO pokemon_sprites VALUES (364, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/364.png');
+INSERT INTO pokemon_sprites VALUES (365, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/365.png');
+INSERT INTO pokemon_sprites VALUES (366, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/366.png');
+INSERT INTO pokemon_sprites VALUES (367, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/367.png');
+INSERT INTO pokemon_sprites VALUES (368, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/368.png');
+INSERT INTO pokemon_sprites VALUES (369, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/369.png');
+INSERT INTO pokemon_sprites VALUES (370, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/370.png');
+INSERT INTO pokemon_sprites VALUES (371, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/371.png');
+INSERT INTO pokemon_sprites VALUES (372, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/372.png');
+INSERT INTO pokemon_sprites VALUES (373, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/373.png');
+INSERT INTO pokemon_sprites VALUES (374, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/374.png');
+INSERT INTO pokemon_sprites VALUES (375, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/375.png');
+INSERT INTO pokemon_sprites VALUES (376, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/376.png');
+INSERT INTO pokemon_sprites VALUES (377, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/377.png');
+INSERT INTO pokemon_sprites VALUES (378, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/378.png');
+INSERT INTO pokemon_sprites VALUES (379, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/379.png');
+INSERT INTO pokemon_sprites VALUES (380, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/380.png');
+INSERT INTO pokemon_sprites VALUES (381, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/381.png');
+INSERT INTO pokemon_sprites VALUES (382, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/382.png');
+INSERT INTO pokemon_sprites VALUES (383, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/383.png');
+INSERT INTO pokemon_sprites VALUES (384, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/384.png');
+INSERT INTO pokemon_sprites VALUES (385, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/385.png');
+INSERT INTO pokemon_sprites VALUES (386, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/386.png');
+INSERT INTO pokemon_sprites VALUES (387, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/387.png');
+INSERT INTO pokemon_sprites VALUES (388, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/388.png');
+INSERT INTO pokemon_sprites VALUES (389, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/389.png');
+INSERT INTO pokemon_sprites VALUES (390, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/390.png');
+INSERT INTO pokemon_sprites VALUES (391, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/391.png');
+INSERT INTO pokemon_sprites VALUES (392, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/392.png');
+INSERT INTO pokemon_sprites VALUES (393, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/393.png');
+INSERT INTO pokemon_sprites VALUES (394, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/394.png');
+INSERT INTO pokemon_sprites VALUES (395, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/395.png');
+INSERT INTO pokemon_sprites VALUES (396, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/396.png');
+INSERT INTO pokemon_sprites VALUES (397, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/397.png');
+INSERT INTO pokemon_sprites VALUES (398, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/398.png');
+INSERT INTO pokemon_sprites VALUES (399, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/399.png');
+INSERT INTO pokemon_sprites VALUES (400, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/400.png');
+INSERT INTO pokemon_sprites VALUES (401, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/401.png');
+INSERT INTO pokemon_sprites VALUES (402, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/402.png');
+INSERT INTO pokemon_sprites VALUES (403, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/403.png');
+INSERT INTO pokemon_sprites VALUES (404, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/404.png');
+INSERT INTO pokemon_sprites VALUES (405, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/405.png');
+INSERT INTO pokemon_sprites VALUES (406, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/406.png');
+INSERT INTO pokemon_sprites VALUES (407, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/407.png');
+INSERT INTO pokemon_sprites VALUES (408, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/408.png');
+INSERT INTO pokemon_sprites VALUES (409, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/409.png');
+INSERT INTO pokemon_sprites VALUES (410, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/410.png');
+INSERT INTO pokemon_sprites VALUES (411, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/411.png');
+INSERT INTO pokemon_sprites VALUES (412, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/412.png');
+INSERT INTO pokemon_sprites VALUES (413, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/413.png');
+INSERT INTO pokemon_sprites VALUES (414, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/414.png');
+INSERT INTO pokemon_sprites VALUES (415, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/415.png');
+INSERT INTO pokemon_sprites VALUES (416, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/416.png');
+INSERT INTO pokemon_sprites VALUES (417, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/417.png');
+INSERT INTO pokemon_sprites VALUES (418, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/418.png');
+INSERT INTO pokemon_sprites VALUES (419, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/419.png');
+INSERT INTO pokemon_sprites VALUES (420, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/420.png');
+INSERT INTO pokemon_sprites VALUES (421, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/421.png');
+INSERT INTO pokemon_sprites VALUES (422, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/422.png');
+INSERT INTO pokemon_sprites VALUES (423, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/423.png');
+INSERT INTO pokemon_sprites VALUES (424, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/424.png');
+INSERT INTO pokemon_sprites VALUES (425, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/425.png');
+INSERT INTO pokemon_sprites VALUES (426, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/426.png');
+INSERT INTO pokemon_sprites VALUES (427, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/427.png');
+INSERT INTO pokemon_sprites VALUES (428, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/428.png');
+INSERT INTO pokemon_sprites VALUES (429, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/429.png');
+INSERT INTO pokemon_sprites VALUES (430, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/430.png');
+INSERT INTO pokemon_sprites VALUES (431, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/431.png');
+INSERT INTO pokemon_sprites VALUES (432, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/432.png');
+INSERT INTO pokemon_sprites VALUES (433, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/433.png');
+INSERT INTO pokemon_sprites VALUES (434, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/434.png');
+INSERT INTO pokemon_sprites VALUES (435, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/435.png');
+INSERT INTO pokemon_sprites VALUES (436, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/436.png');
+INSERT INTO pokemon_sprites VALUES (437, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/437.png');
+INSERT INTO pokemon_sprites VALUES (438, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/438.png');
+INSERT INTO pokemon_sprites VALUES (439, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/439.png');
+INSERT INTO pokemon_sprites VALUES (440, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/440.png');
+INSERT INTO pokemon_sprites VALUES (441, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/441.png');
+INSERT INTO pokemon_sprites VALUES (442, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/442.png');
+INSERT INTO pokemon_sprites VALUES (443, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/443.png');
+INSERT INTO pokemon_sprites VALUES (444, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/444.png');
+INSERT INTO pokemon_sprites VALUES (445, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/445.png');
+INSERT INTO pokemon_sprites VALUES (446, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/446.png');
+INSERT INTO pokemon_sprites VALUES (447, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/447.png');
+INSERT INTO pokemon_sprites VALUES (448, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/448.png');
+INSERT INTO pokemon_sprites VALUES (449, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/449.png');
+INSERT INTO pokemon_sprites VALUES (450, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/450.png');
+INSERT INTO pokemon_sprites VALUES (451, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/451.png');
+INSERT INTO pokemon_sprites VALUES (452, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/452.png');
+INSERT INTO pokemon_sprites VALUES (453, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/453.png');
+INSERT INTO pokemon_sprites VALUES (454, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/454.png');
+INSERT INTO pokemon_sprites VALUES (455, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/455.png');
+INSERT INTO pokemon_sprites VALUES (456, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/456.png');
+INSERT INTO pokemon_sprites VALUES (457, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/457.png');
+INSERT INTO pokemon_sprites VALUES (458, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/458.png');
+INSERT INTO pokemon_sprites VALUES (459, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/459.png');
+INSERT INTO pokemon_sprites VALUES (460, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/460.png');
+INSERT INTO pokemon_sprites VALUES (461, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/461.png');
+INSERT INTO pokemon_sprites VALUES (462, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/462.png');
+INSERT INTO pokemon_sprites VALUES (463, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/463.png');
+INSERT INTO pokemon_sprites VALUES (464, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/464.png');
+INSERT INTO pokemon_sprites VALUES (465, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/465.png');
+INSERT INTO pokemon_sprites VALUES (466, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/466.png');
+INSERT INTO pokemon_sprites VALUES (467, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/467.png');
+INSERT INTO pokemon_sprites VALUES (468, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/468.png');
+INSERT INTO pokemon_sprites VALUES (469, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/469.png');
+INSERT INTO pokemon_sprites VALUES (470, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/470.png');
+INSERT INTO pokemon_sprites VALUES (471, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/471.png');
+INSERT INTO pokemon_sprites VALUES (472, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/472.png');
+INSERT INTO pokemon_sprites VALUES (473, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/473.png');
+INSERT INTO pokemon_sprites VALUES (474, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/474.png');
+INSERT INTO pokemon_sprites VALUES (475, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/475.png');
+INSERT INTO pokemon_sprites VALUES (476, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/476.png');
+INSERT INTO pokemon_sprites VALUES (477, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/477.png');
+INSERT INTO pokemon_sprites VALUES (478, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/478.png');
+INSERT INTO pokemon_sprites VALUES (479, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/479.png');
+INSERT INTO pokemon_sprites VALUES (480, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/480.png');
+INSERT INTO pokemon_sprites VALUES (481, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/481.png');
+INSERT INTO pokemon_sprites VALUES (482, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/482.png');
+INSERT INTO pokemon_sprites VALUES (483, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/483.png');
+INSERT INTO pokemon_sprites VALUES (484, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/484.png');
+INSERT INTO pokemon_sprites VALUES (485, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/485.png');
+INSERT INTO pokemon_sprites VALUES (486, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/486.png');
+INSERT INTO pokemon_sprites VALUES (487, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/487.png');
+INSERT INTO pokemon_sprites VALUES (488, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/488.png');
+INSERT INTO pokemon_sprites VALUES (489, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/489.png');
+INSERT INTO pokemon_sprites VALUES (490, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/490.png');
+INSERT INTO pokemon_sprites VALUES (491, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/491.png');
+INSERT INTO pokemon_sprites VALUES (492, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/492.png');
+INSERT INTO pokemon_sprites VALUES (493, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/493.png');
+INSERT INTO pokemon_sprites VALUES (494, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/494.png');
+INSERT INTO pokemon_sprites VALUES (495, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/495.png');
+INSERT INTO pokemon_sprites VALUES (496, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/496.png');
+INSERT INTO pokemon_sprites VALUES (497, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/497.png');
+INSERT INTO pokemon_sprites VALUES (498, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/498.png');
+INSERT INTO pokemon_sprites VALUES (499, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/499.png');
+INSERT INTO pokemon_sprites VALUES (500, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/500.png');
+INSERT INTO pokemon_sprites VALUES (501, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/501.png');
+INSERT INTO pokemon_sprites VALUES (502, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/502.png');
+INSERT INTO pokemon_sprites VALUES (503, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/503.png');
+INSERT INTO pokemon_sprites VALUES (504, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/504.png');
+INSERT INTO pokemon_sprites VALUES (505, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/505.png');
+INSERT INTO pokemon_sprites VALUES (506, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/506.png');
+INSERT INTO pokemon_sprites VALUES (507, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/507.png');
+INSERT INTO pokemon_sprites VALUES (508, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/508.png');
+INSERT INTO pokemon_sprites VALUES (509, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/509.png');
+INSERT INTO pokemon_sprites VALUES (510, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/510.png');
+INSERT INTO pokemon_sprites VALUES (511, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/511.png');
+INSERT INTO pokemon_sprites VALUES (512, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/512.png');
+INSERT INTO pokemon_sprites VALUES (513, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/513.png');
+INSERT INTO pokemon_sprites VALUES (514, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/514.png');
+INSERT INTO pokemon_sprites VALUES (515, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/515.png');
+INSERT INTO pokemon_sprites VALUES (516, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/516.png');
+INSERT INTO pokemon_sprites VALUES (517, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/517.png');
+INSERT INTO pokemon_sprites VALUES (518, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/518.png');
+INSERT INTO pokemon_sprites VALUES (519, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/519.png');
+INSERT INTO pokemon_sprites VALUES (520, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/520.png');
+INSERT INTO pokemon_sprites VALUES (521, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/521.png');
+INSERT INTO pokemon_sprites VALUES (522, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/522.png');
+INSERT INTO pokemon_sprites VALUES (523, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/523.png');
+INSERT INTO pokemon_sprites VALUES (524, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/524.png');
+INSERT INTO pokemon_sprites VALUES (525, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/525.png');
+INSERT INTO pokemon_sprites VALUES (526, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/526.png');
+INSERT INTO pokemon_sprites VALUES (527, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/527.png');
+INSERT INTO pokemon_sprites VALUES (528, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/528.png');
+INSERT INTO pokemon_sprites VALUES (529, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/529.png');
+INSERT INTO pokemon_sprites VALUES (530, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/530.png');
+INSERT INTO pokemon_sprites VALUES (531, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/531.png');
+INSERT INTO pokemon_sprites VALUES (532, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/532.png');
+INSERT INTO pokemon_sprites VALUES (533, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/533.png');
+INSERT INTO pokemon_sprites VALUES (534, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/534.png');
+INSERT INTO pokemon_sprites VALUES (535, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/535.png');
+INSERT INTO pokemon_sprites VALUES (536, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/536.png');
+INSERT INTO pokemon_sprites VALUES (537, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/537.png');
+INSERT INTO pokemon_sprites VALUES (538, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/538.png');
+INSERT INTO pokemon_sprites VALUES (539, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/539.png');
+INSERT INTO pokemon_sprites VALUES (540, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/540.png');
+INSERT INTO pokemon_sprites VALUES (541, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/541.png');
+INSERT INTO pokemon_sprites VALUES (542, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/542.png');
+INSERT INTO pokemon_sprites VALUES (543, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/543.png');
+INSERT INTO pokemon_sprites VALUES (544, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/544.png');
+INSERT INTO pokemon_sprites VALUES (545, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/545.png');
+INSERT INTO pokemon_sprites VALUES (546, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/546.png');
+INSERT INTO pokemon_sprites VALUES (547, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/547.png');
+INSERT INTO pokemon_sprites VALUES (548, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/548.png');
+INSERT INTO pokemon_sprites VALUES (549, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/549.png');
+INSERT INTO pokemon_sprites VALUES (550, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/550.png');
+INSERT INTO pokemon_sprites VALUES (551, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/551.png');
+INSERT INTO pokemon_sprites VALUES (552, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/552.png');
+INSERT INTO pokemon_sprites VALUES (553, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/553.png');
+INSERT INTO pokemon_sprites VALUES (554, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/554.png');
+INSERT INTO pokemon_sprites VALUES (555, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/555.png');
+INSERT INTO pokemon_sprites VALUES (556, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/556.png');
+INSERT INTO pokemon_sprites VALUES (557, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/557.png');
+INSERT INTO pokemon_sprites VALUES (558, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/558.png');
+INSERT INTO pokemon_sprites VALUES (559, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/559.png');
+INSERT INTO pokemon_sprites VALUES (560, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/560.png');
+INSERT INTO pokemon_sprites VALUES (561, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/561.png');
+INSERT INTO pokemon_sprites VALUES (562, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/562.png');
+INSERT INTO pokemon_sprites VALUES (563, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/563.png');
+INSERT INTO pokemon_sprites VALUES (564, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/564.png');
+INSERT INTO pokemon_sprites VALUES (565, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/565.png');
+INSERT INTO pokemon_sprites VALUES (566, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/566.png');
+INSERT INTO pokemon_sprites VALUES (567, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/567.png');
+INSERT INTO pokemon_sprites VALUES (568, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/568.png');
+INSERT INTO pokemon_sprites VALUES (569, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/569.png');
+INSERT INTO pokemon_sprites VALUES (570, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/570.png');
+INSERT INTO pokemon_sprites VALUES (571, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/571.png');
+INSERT INTO pokemon_sprites VALUES (572, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/572.png');
+INSERT INTO pokemon_sprites VALUES (573, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/573.png');
+INSERT INTO pokemon_sprites VALUES (574, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/574.png');
+INSERT INTO pokemon_sprites VALUES (575, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/575.png');
+INSERT INTO pokemon_sprites VALUES (576, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/576.png');
+INSERT INTO pokemon_sprites VALUES (577, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/577.png');
+INSERT INTO pokemon_sprites VALUES (578, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/578.png');
+INSERT INTO pokemon_sprites VALUES (579, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/579.png');
+INSERT INTO pokemon_sprites VALUES (580, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/580.png');
+INSERT INTO pokemon_sprites VALUES (581, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/581.png');
+INSERT INTO pokemon_sprites VALUES (582, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/582.png');
+INSERT INTO pokemon_sprites VALUES (583, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/583.png');
+INSERT INTO pokemon_sprites VALUES (584, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/584.png');
+INSERT INTO pokemon_sprites VALUES (585, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/585.png');
+INSERT INTO pokemon_sprites VALUES (586, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/586.png');
+INSERT INTO pokemon_sprites VALUES (587, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/587.png');
+INSERT INTO pokemon_sprites VALUES (588, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/588.png');
+INSERT INTO pokemon_sprites VALUES (589, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/589.png');
+INSERT INTO pokemon_sprites VALUES (590, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/590.png');
+INSERT INTO pokemon_sprites VALUES (591, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/591.png');
+INSERT INTO pokemon_sprites VALUES (592, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/592.png');
+INSERT INTO pokemon_sprites VALUES (593, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/593.png');
+INSERT INTO pokemon_sprites VALUES (594, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/594.png');
+INSERT INTO pokemon_sprites VALUES (595, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/595.png');
+INSERT INTO pokemon_sprites VALUES (596, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/596.png');
+INSERT INTO pokemon_sprites VALUES (597, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/597.png');
+INSERT INTO pokemon_sprites VALUES (598, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/598.png');
+INSERT INTO pokemon_sprites VALUES (599, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/599.png');
+INSERT INTO pokemon_sprites VALUES (600, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/600.png');
+INSERT INTO pokemon_sprites VALUES (601, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/601.png');
+INSERT INTO pokemon_sprites VALUES (602, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/602.png');
+INSERT INTO pokemon_sprites VALUES (603, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/603.png');
+INSERT INTO pokemon_sprites VALUES (604, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/604.png');
+INSERT INTO pokemon_sprites VALUES (605, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/605.png');
+INSERT INTO pokemon_sprites VALUES (606, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/606.png');
+INSERT INTO pokemon_sprites VALUES (607, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/607.png');
+INSERT INTO pokemon_sprites VALUES (608, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/608.png');
+INSERT INTO pokemon_sprites VALUES (609, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/609.png');
+INSERT INTO pokemon_sprites VALUES (610, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/610.png');
+INSERT INTO pokemon_sprites VALUES (611, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/611.png');
+INSERT INTO pokemon_sprites VALUES (612, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/612.png');
+INSERT INTO pokemon_sprites VALUES (613, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/613.png');
+INSERT INTO pokemon_sprites VALUES (614, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/614.png');
+INSERT INTO pokemon_sprites VALUES (615, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/615.png');
+INSERT INTO pokemon_sprites VALUES (616, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/616.png');
+INSERT INTO pokemon_sprites VALUES (617, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/617.png');
+INSERT INTO pokemon_sprites VALUES (618, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/618.png');
+INSERT INTO pokemon_sprites VALUES (619, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/619.png');
+INSERT INTO pokemon_sprites VALUES (620, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/620.png');
+INSERT INTO pokemon_sprites VALUES (621, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/621.png');
+INSERT INTO pokemon_sprites VALUES (622, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/622.png');
+INSERT INTO pokemon_sprites VALUES (623, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/623.png');
+INSERT INTO pokemon_sprites VALUES (624, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/624.png');
+INSERT INTO pokemon_sprites VALUES (625, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/625.png');
+INSERT INTO pokemon_sprites VALUES (626, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/626.png');
+INSERT INTO pokemon_sprites VALUES (627, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/627.png');
+INSERT INTO pokemon_sprites VALUES (628, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/628.png');
+INSERT INTO pokemon_sprites VALUES (629, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/629.png');
+INSERT INTO pokemon_sprites VALUES (630, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/630.png');
+INSERT INTO pokemon_sprites VALUES (631, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/631.png');
+INSERT INTO pokemon_sprites VALUES (632, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/632.png');
+INSERT INTO pokemon_sprites VALUES (633, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/633.png');
+INSERT INTO pokemon_sprites VALUES (634, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/634.png');
+INSERT INTO pokemon_sprites VALUES (635, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/635.png');
+INSERT INTO pokemon_sprites VALUES (636, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/636.png');
+INSERT INTO pokemon_sprites VALUES (637, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/637.png');
+INSERT INTO pokemon_sprites VALUES (638, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/638.png');
+INSERT INTO pokemon_sprites VALUES (639, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/639.png');
+INSERT INTO pokemon_sprites VALUES (640, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/640.png');
+INSERT INTO pokemon_sprites VALUES (641, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/641.png');
+INSERT INTO pokemon_sprites VALUES (642, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/642.png');
+INSERT INTO pokemon_sprites VALUES (643, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/643.png');
+INSERT INTO pokemon_sprites VALUES (644, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/644.png');
+INSERT INTO pokemon_sprites VALUES (645, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/645.png');
+INSERT INTO pokemon_sprites VALUES (646, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/646.png');
+INSERT INTO pokemon_sprites VALUES (647, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/647.png');
+INSERT INTO pokemon_sprites VALUES (648, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/648.png');
+INSERT INTO pokemon_sprites VALUES (649, 'front shiny', 'http://www.pokelab.xyz/images/sprites/shiny/front/649.png');
+INSERT INTO pokemon_sprites VALUES (1, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/1.png');
+INSERT INTO pokemon_sprites VALUES (2, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/2.png');
+INSERT INTO pokemon_sprites VALUES (3, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/3.png');
+INSERT INTO pokemon_sprites VALUES (4, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/4.png');
+INSERT INTO pokemon_sprites VALUES (5, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/5.png');
+INSERT INTO pokemon_sprites VALUES (6, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/6.png');
+INSERT INTO pokemon_sprites VALUES (7, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/7.png');
+INSERT INTO pokemon_sprites VALUES (8, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/8.png');
+INSERT INTO pokemon_sprites VALUES (9, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/9.png');
+INSERT INTO pokemon_sprites VALUES (10, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/10.png');
+INSERT INTO pokemon_sprites VALUES (11, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/11.png');
+INSERT INTO pokemon_sprites VALUES (12, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/12.png');
+INSERT INTO pokemon_sprites VALUES (13, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/13.png');
+INSERT INTO pokemon_sprites VALUES (14, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/14.png');
+INSERT INTO pokemon_sprites VALUES (15, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/15.png');
+INSERT INTO pokemon_sprites VALUES (16, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/16.png');
+INSERT INTO pokemon_sprites VALUES (17, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/17.png');
+INSERT INTO pokemon_sprites VALUES (18, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/18.png');
+INSERT INTO pokemon_sprites VALUES (19, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/19.png');
+INSERT INTO pokemon_sprites VALUES (20, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/20.png');
+INSERT INTO pokemon_sprites VALUES (21, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/21.png');
+INSERT INTO pokemon_sprites VALUES (22, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/22.png');
+INSERT INTO pokemon_sprites VALUES (23, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/23.png');
+INSERT INTO pokemon_sprites VALUES (24, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/24.png');
+INSERT INTO pokemon_sprites VALUES (25, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/25.png');
+INSERT INTO pokemon_sprites VALUES (26, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/26.png');
+INSERT INTO pokemon_sprites VALUES (27, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/27.png');
+INSERT INTO pokemon_sprites VALUES (28, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/28.png');
+INSERT INTO pokemon_sprites VALUES (29, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/29.png');
+INSERT INTO pokemon_sprites VALUES (30, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/30.png');
+INSERT INTO pokemon_sprites VALUES (31, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/31.png');
+INSERT INTO pokemon_sprites VALUES (32, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/32.png');
+INSERT INTO pokemon_sprites VALUES (33, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/33.png');
+INSERT INTO pokemon_sprites VALUES (34, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/34.png');
+INSERT INTO pokemon_sprites VALUES (35, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/35.png');
+INSERT INTO pokemon_sprites VALUES (36, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/36.png');
+INSERT INTO pokemon_sprites VALUES (37, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/37.png');
+INSERT INTO pokemon_sprites VALUES (38, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/38.png');
+INSERT INTO pokemon_sprites VALUES (39, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/39.png');
+INSERT INTO pokemon_sprites VALUES (40, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/40.png');
+INSERT INTO pokemon_sprites VALUES (41, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/41.png');
+INSERT INTO pokemon_sprites VALUES (42, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/42.png');
+INSERT INTO pokemon_sprites VALUES (43, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/43.png');
+INSERT INTO pokemon_sprites VALUES (44, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/44.png');
+INSERT INTO pokemon_sprites VALUES (45, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/45.png');
+INSERT INTO pokemon_sprites VALUES (46, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/46.png');
+INSERT INTO pokemon_sprites VALUES (47, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/47.png');
+INSERT INTO pokemon_sprites VALUES (48, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/48.png');
+INSERT INTO pokemon_sprites VALUES (49, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/49.png');
+INSERT INTO pokemon_sprites VALUES (50, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/50.png');
+INSERT INTO pokemon_sprites VALUES (51, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/51.png');
+INSERT INTO pokemon_sprites VALUES (52, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/52.png');
+INSERT INTO pokemon_sprites VALUES (53, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/53.png');
+INSERT INTO pokemon_sprites VALUES (54, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/54.png');
+INSERT INTO pokemon_sprites VALUES (55, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/55.png');
+INSERT INTO pokemon_sprites VALUES (56, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/56.png');
+INSERT INTO pokemon_sprites VALUES (57, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/57.png');
+INSERT INTO pokemon_sprites VALUES (58, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/58.png');
+INSERT INTO pokemon_sprites VALUES (59, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/59.png');
+INSERT INTO pokemon_sprites VALUES (60, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/60.png');
+INSERT INTO pokemon_sprites VALUES (61, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/61.png');
+INSERT INTO pokemon_sprites VALUES (62, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/62.png');
+INSERT INTO pokemon_sprites VALUES (63, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/63.png');
+INSERT INTO pokemon_sprites VALUES (64, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/64.png');
+INSERT INTO pokemon_sprites VALUES (65, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/65.png');
+INSERT INTO pokemon_sprites VALUES (66, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/66.png');
+INSERT INTO pokemon_sprites VALUES (67, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/67.png');
+INSERT INTO pokemon_sprites VALUES (68, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/68.png');
+INSERT INTO pokemon_sprites VALUES (69, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/69.png');
+INSERT INTO pokemon_sprites VALUES (70, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/70.png');
+INSERT INTO pokemon_sprites VALUES (71, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/71.png');
+INSERT INTO pokemon_sprites VALUES (72, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/72.png');
+INSERT INTO pokemon_sprites VALUES (73, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/73.png');
+INSERT INTO pokemon_sprites VALUES (74, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/74.png');
+INSERT INTO pokemon_sprites VALUES (75, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/75.png');
+INSERT INTO pokemon_sprites VALUES (76, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/76.png');
+INSERT INTO pokemon_sprites VALUES (77, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/77.png');
+INSERT INTO pokemon_sprites VALUES (78, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/78.png');
+INSERT INTO pokemon_sprites VALUES (79, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/79.png');
+INSERT INTO pokemon_sprites VALUES (80, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/80.png');
+INSERT INTO pokemon_sprites VALUES (81, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/81.png');
+INSERT INTO pokemon_sprites VALUES (82, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/82.png');
+INSERT INTO pokemon_sprites VALUES (83, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/83.png');
+INSERT INTO pokemon_sprites VALUES (84, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/84.png');
+INSERT INTO pokemon_sprites VALUES (85, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/85.png');
+INSERT INTO pokemon_sprites VALUES (86, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/86.png');
+INSERT INTO pokemon_sprites VALUES (87, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/87.png');
+INSERT INTO pokemon_sprites VALUES (88, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/88.png');
+INSERT INTO pokemon_sprites VALUES (89, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/89.png');
+INSERT INTO pokemon_sprites VALUES (90, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/90.png');
+INSERT INTO pokemon_sprites VALUES (91, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/91.png');
+INSERT INTO pokemon_sprites VALUES (92, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/92.png');
+INSERT INTO pokemon_sprites VALUES (93, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/93.png');
+INSERT INTO pokemon_sprites VALUES (94, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/94.png');
+INSERT INTO pokemon_sprites VALUES (95, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/95.png');
+INSERT INTO pokemon_sprites VALUES (96, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/96.png');
+INSERT INTO pokemon_sprites VALUES (97, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/97.png');
+INSERT INTO pokemon_sprites VALUES (98, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/98.png');
+INSERT INTO pokemon_sprites VALUES (99, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/99.png');
+INSERT INTO pokemon_sprites VALUES (100, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/100.png');
+INSERT INTO pokemon_sprites VALUES (101, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/101.png');
+INSERT INTO pokemon_sprites VALUES (102, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/102.png');
+INSERT INTO pokemon_sprites VALUES (103, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/103.png');
+INSERT INTO pokemon_sprites VALUES (104, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/104.png');
+INSERT INTO pokemon_sprites VALUES (105, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/105.png');
+INSERT INTO pokemon_sprites VALUES (106, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/106.png');
+INSERT INTO pokemon_sprites VALUES (107, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/107.png');
+INSERT INTO pokemon_sprites VALUES (108, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/108.png');
+INSERT INTO pokemon_sprites VALUES (109, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/109.png');
+INSERT INTO pokemon_sprites VALUES (110, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/110.png');
+INSERT INTO pokemon_sprites VALUES (111, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/111.png');
+INSERT INTO pokemon_sprites VALUES (112, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/112.png');
+INSERT INTO pokemon_sprites VALUES (113, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/113.png');
+INSERT INTO pokemon_sprites VALUES (114, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/114.png');
+INSERT INTO pokemon_sprites VALUES (115, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/115.png');
+INSERT INTO pokemon_sprites VALUES (116, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/116.png');
+INSERT INTO pokemon_sprites VALUES (117, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/117.png');
+INSERT INTO pokemon_sprites VALUES (118, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/118.png');
+INSERT INTO pokemon_sprites VALUES (119, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/119.png');
+INSERT INTO pokemon_sprites VALUES (120, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/120.png');
+INSERT INTO pokemon_sprites VALUES (121, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/121.png');
+INSERT INTO pokemon_sprites VALUES (122, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/122.png');
+INSERT INTO pokemon_sprites VALUES (123, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/123.png');
+INSERT INTO pokemon_sprites VALUES (124, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/124.png');
+INSERT INTO pokemon_sprites VALUES (125, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/125.png');
+INSERT INTO pokemon_sprites VALUES (126, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/126.png');
+INSERT INTO pokemon_sprites VALUES (127, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/127.png');
+INSERT INTO pokemon_sprites VALUES (128, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/128.png');
+INSERT INTO pokemon_sprites VALUES (129, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/129.png');
+INSERT INTO pokemon_sprites VALUES (130, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/130.png');
+INSERT INTO pokemon_sprites VALUES (131, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/131.png');
+INSERT INTO pokemon_sprites VALUES (132, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/132.png');
+INSERT INTO pokemon_sprites VALUES (133, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/133.png');
+INSERT INTO pokemon_sprites VALUES (134, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/134.png');
+INSERT INTO pokemon_sprites VALUES (135, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/135.png');
+INSERT INTO pokemon_sprites VALUES (136, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/136.png');
+INSERT INTO pokemon_sprites VALUES (137, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/137.png');
+INSERT INTO pokemon_sprites VALUES (138, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/138.png');
+INSERT INTO pokemon_sprites VALUES (139, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/139.png');
+INSERT INTO pokemon_sprites VALUES (140, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/140.png');
+INSERT INTO pokemon_sprites VALUES (141, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/141.png');
+INSERT INTO pokemon_sprites VALUES (142, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/142.png');
+INSERT INTO pokemon_sprites VALUES (143, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/143.png');
+INSERT INTO pokemon_sprites VALUES (144, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/144.png');
+INSERT INTO pokemon_sprites VALUES (145, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/145.png');
+INSERT INTO pokemon_sprites VALUES (146, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/146.png');
+INSERT INTO pokemon_sprites VALUES (147, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/147.png');
+INSERT INTO pokemon_sprites VALUES (148, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/148.png');
+INSERT INTO pokemon_sprites VALUES (149, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/149.png');
+INSERT INTO pokemon_sprites VALUES (150, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/150.png');
+INSERT INTO pokemon_sprites VALUES (151, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/151.png');
+INSERT INTO pokemon_sprites VALUES (152, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/152.png');
+INSERT INTO pokemon_sprites VALUES (153, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/153.png');
+INSERT INTO pokemon_sprites VALUES (154, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/154.png');
+INSERT INTO pokemon_sprites VALUES (155, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/155.png');
+INSERT INTO pokemon_sprites VALUES (156, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/156.png');
+INSERT INTO pokemon_sprites VALUES (157, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/157.png');
+INSERT INTO pokemon_sprites VALUES (158, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/158.png');
+INSERT INTO pokemon_sprites VALUES (159, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/159.png');
+INSERT INTO pokemon_sprites VALUES (160, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/160.png');
+INSERT INTO pokemon_sprites VALUES (161, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/161.png');
+INSERT INTO pokemon_sprites VALUES (162, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/162.png');
+INSERT INTO pokemon_sprites VALUES (163, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/163.png');
+INSERT INTO pokemon_sprites VALUES (164, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/164.png');
+INSERT INTO pokemon_sprites VALUES (165, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/165.png');
+INSERT INTO pokemon_sprites VALUES (166, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/166.png');
+INSERT INTO pokemon_sprites VALUES (167, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/167.png');
+INSERT INTO pokemon_sprites VALUES (168, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/168.png');
+INSERT INTO pokemon_sprites VALUES (169, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/169.png');
+INSERT INTO pokemon_sprites VALUES (170, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/170.png');
+INSERT INTO pokemon_sprites VALUES (171, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/171.png');
+INSERT INTO pokemon_sprites VALUES (172, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/172.png');
+INSERT INTO pokemon_sprites VALUES (173, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/173.png');
+INSERT INTO pokemon_sprites VALUES (174, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/174.png');
+INSERT INTO pokemon_sprites VALUES (175, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/175.png');
+INSERT INTO pokemon_sprites VALUES (176, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/176.png');
+INSERT INTO pokemon_sprites VALUES (177, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/177.png');
+INSERT INTO pokemon_sprites VALUES (178, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/178.png');
+INSERT INTO pokemon_sprites VALUES (179, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/179.png');
+INSERT INTO pokemon_sprites VALUES (180, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/180.png');
+INSERT INTO pokemon_sprites VALUES (181, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/181.png');
+INSERT INTO pokemon_sprites VALUES (182, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/182.png');
+INSERT INTO pokemon_sprites VALUES (183, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/183.png');
+INSERT INTO pokemon_sprites VALUES (184, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/184.png');
+INSERT INTO pokemon_sprites VALUES (185, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/185.png');
+INSERT INTO pokemon_sprites VALUES (186, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/186.png');
+INSERT INTO pokemon_sprites VALUES (187, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/187.png');
+INSERT INTO pokemon_sprites VALUES (188, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/188.png');
+INSERT INTO pokemon_sprites VALUES (189, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/189.png');
+INSERT INTO pokemon_sprites VALUES (190, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/190.png');
+INSERT INTO pokemon_sprites VALUES (191, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/191.png');
+INSERT INTO pokemon_sprites VALUES (192, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/192.png');
+INSERT INTO pokemon_sprites VALUES (193, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/193.png');
+INSERT INTO pokemon_sprites VALUES (194, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/194.png');
+INSERT INTO pokemon_sprites VALUES (195, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/195.png');
+INSERT INTO pokemon_sprites VALUES (196, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/196.png');
+INSERT INTO pokemon_sprites VALUES (197, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/197.png');
+INSERT INTO pokemon_sprites VALUES (198, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/198.png');
+INSERT INTO pokemon_sprites VALUES (199, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/199.png');
+INSERT INTO pokemon_sprites VALUES (200, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/200.png');
+INSERT INTO pokemon_sprites VALUES (201, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/201.png');
+INSERT INTO pokemon_sprites VALUES (202, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/202.png');
+INSERT INTO pokemon_sprites VALUES (203, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/203.png');
+INSERT INTO pokemon_sprites VALUES (204, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/204.png');
+INSERT INTO pokemon_sprites VALUES (205, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/205.png');
+INSERT INTO pokemon_sprites VALUES (206, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/206.png');
+INSERT INTO pokemon_sprites VALUES (207, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/207.png');
+INSERT INTO pokemon_sprites VALUES (208, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/208.png');
+INSERT INTO pokemon_sprites VALUES (209, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/209.png');
+INSERT INTO pokemon_sprites VALUES (210, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/210.png');
+INSERT INTO pokemon_sprites VALUES (211, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/211.png');
+INSERT INTO pokemon_sprites VALUES (212, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/212.png');
+INSERT INTO pokemon_sprites VALUES (213, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/213.png');
+INSERT INTO pokemon_sprites VALUES (214, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/214.png');
+INSERT INTO pokemon_sprites VALUES (215, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/215.png');
+INSERT INTO pokemon_sprites VALUES (216, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/216.png');
+INSERT INTO pokemon_sprites VALUES (217, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/217.png');
+INSERT INTO pokemon_sprites VALUES (218, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/218.png');
+INSERT INTO pokemon_sprites VALUES (219, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/219.png');
+INSERT INTO pokemon_sprites VALUES (220, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/220.png');
+INSERT INTO pokemon_sprites VALUES (221, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/221.png');
+INSERT INTO pokemon_sprites VALUES (222, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/222.png');
+INSERT INTO pokemon_sprites VALUES (223, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/223.png');
+INSERT INTO pokemon_sprites VALUES (224, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/224.png');
+INSERT INTO pokemon_sprites VALUES (225, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/225.png');
+INSERT INTO pokemon_sprites VALUES (226, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/226.png');
+INSERT INTO pokemon_sprites VALUES (227, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/227.png');
+INSERT INTO pokemon_sprites VALUES (228, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/228.png');
+INSERT INTO pokemon_sprites VALUES (229, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/229.png');
+INSERT INTO pokemon_sprites VALUES (230, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/230.png');
+INSERT INTO pokemon_sprites VALUES (231, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/231.png');
+INSERT INTO pokemon_sprites VALUES (232, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/232.png');
+INSERT INTO pokemon_sprites VALUES (233, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/233.png');
+INSERT INTO pokemon_sprites VALUES (234, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/234.png');
+INSERT INTO pokemon_sprites VALUES (235, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/235.png');
+INSERT INTO pokemon_sprites VALUES (236, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/236.png');
+INSERT INTO pokemon_sprites VALUES (237, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/237.png');
+INSERT INTO pokemon_sprites VALUES (238, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/238.png');
+INSERT INTO pokemon_sprites VALUES (239, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/239.png');
+INSERT INTO pokemon_sprites VALUES (240, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/240.png');
+INSERT INTO pokemon_sprites VALUES (241, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/241.png');
+INSERT INTO pokemon_sprites VALUES (242, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/242.png');
+INSERT INTO pokemon_sprites VALUES (243, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/243.png');
+INSERT INTO pokemon_sprites VALUES (244, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/244.png');
+INSERT INTO pokemon_sprites VALUES (245, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/245.png');
+INSERT INTO pokemon_sprites VALUES (246, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/246.png');
+INSERT INTO pokemon_sprites VALUES (247, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/247.png');
+INSERT INTO pokemon_sprites VALUES (248, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/248.png');
+INSERT INTO pokemon_sprites VALUES (249, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/249.png');
+INSERT INTO pokemon_sprites VALUES (250, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/250.png');
+INSERT INTO pokemon_sprites VALUES (251, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/251.png');
+INSERT INTO pokemon_sprites VALUES (252, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/252.png');
+INSERT INTO pokemon_sprites VALUES (253, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/253.png');
+INSERT INTO pokemon_sprites VALUES (254, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/254.png');
+INSERT INTO pokemon_sprites VALUES (255, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/255.png');
+INSERT INTO pokemon_sprites VALUES (256, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/256.png');
+INSERT INTO pokemon_sprites VALUES (257, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/257.png');
+INSERT INTO pokemon_sprites VALUES (258, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/258.png');
+INSERT INTO pokemon_sprites VALUES (259, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/259.png');
+INSERT INTO pokemon_sprites VALUES (260, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/260.png');
+INSERT INTO pokemon_sprites VALUES (261, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/261.png');
+INSERT INTO pokemon_sprites VALUES (262, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/262.png');
+INSERT INTO pokemon_sprites VALUES (263, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/263.png');
+INSERT INTO pokemon_sprites VALUES (264, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/264.png');
+INSERT INTO pokemon_sprites VALUES (265, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/265.png');
+INSERT INTO pokemon_sprites VALUES (266, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/266.png');
+INSERT INTO pokemon_sprites VALUES (267, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/267.png');
+INSERT INTO pokemon_sprites VALUES (268, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/268.png');
+INSERT INTO pokemon_sprites VALUES (269, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/269.png');
+INSERT INTO pokemon_sprites VALUES (270, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/270.png');
+INSERT INTO pokemon_sprites VALUES (271, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/271.png');
+INSERT INTO pokemon_sprites VALUES (272, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/272.png');
+INSERT INTO pokemon_sprites VALUES (273, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/273.png');
+INSERT INTO pokemon_sprites VALUES (274, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/274.png');
+INSERT INTO pokemon_sprites VALUES (275, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/275.png');
+INSERT INTO pokemon_sprites VALUES (276, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/276.png');
+INSERT INTO pokemon_sprites VALUES (277, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/277.png');
+INSERT INTO pokemon_sprites VALUES (278, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/278.png');
+INSERT INTO pokemon_sprites VALUES (279, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/279.png');
+INSERT INTO pokemon_sprites VALUES (280, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/280.png');
+INSERT INTO pokemon_sprites VALUES (281, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/281.png');
+INSERT INTO pokemon_sprites VALUES (282, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/282.png');
+INSERT INTO pokemon_sprites VALUES (283, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/283.png');
+INSERT INTO pokemon_sprites VALUES (284, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/284.png');
+INSERT INTO pokemon_sprites VALUES (285, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/285.png');
+INSERT INTO pokemon_sprites VALUES (286, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/286.png');
+INSERT INTO pokemon_sprites VALUES (287, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/287.png');
+INSERT INTO pokemon_sprites VALUES (288, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/288.png');
+INSERT INTO pokemon_sprites VALUES (289, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/289.png');
+INSERT INTO pokemon_sprites VALUES (290, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/290.png');
+INSERT INTO pokemon_sprites VALUES (291, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/291.png');
+INSERT INTO pokemon_sprites VALUES (292, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/292.png');
+INSERT INTO pokemon_sprites VALUES (293, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/293.png');
+INSERT INTO pokemon_sprites VALUES (294, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/294.png');
+INSERT INTO pokemon_sprites VALUES (295, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/295.png');
+INSERT INTO pokemon_sprites VALUES (296, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/296.png');
+INSERT INTO pokemon_sprites VALUES (297, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/297.png');
+INSERT INTO pokemon_sprites VALUES (298, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/298.png');
+INSERT INTO pokemon_sprites VALUES (299, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/299.png');
+INSERT INTO pokemon_sprites VALUES (300, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/300.png');
+INSERT INTO pokemon_sprites VALUES (301, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/301.png');
+INSERT INTO pokemon_sprites VALUES (302, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/302.png');
+INSERT INTO pokemon_sprites VALUES (303, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/303.png');
+INSERT INTO pokemon_sprites VALUES (304, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/304.png');
+INSERT INTO pokemon_sprites VALUES (305, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/305.png');
+INSERT INTO pokemon_sprites VALUES (306, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/306.png');
+INSERT INTO pokemon_sprites VALUES (307, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/307.png');
+INSERT INTO pokemon_sprites VALUES (308, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/308.png');
+INSERT INTO pokemon_sprites VALUES (309, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/309.png');
+INSERT INTO pokemon_sprites VALUES (310, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/310.png');
+INSERT INTO pokemon_sprites VALUES (311, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/311.png');
+INSERT INTO pokemon_sprites VALUES (312, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/312.png');
+INSERT INTO pokemon_sprites VALUES (313, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/313.png');
+INSERT INTO pokemon_sprites VALUES (314, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/314.png');
+INSERT INTO pokemon_sprites VALUES (315, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/315.png');
+INSERT INTO pokemon_sprites VALUES (316, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/316.png');
+INSERT INTO pokemon_sprites VALUES (317, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/317.png');
+INSERT INTO pokemon_sprites VALUES (318, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/318.png');
+INSERT INTO pokemon_sprites VALUES (319, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/319.png');
+INSERT INTO pokemon_sprites VALUES (320, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/320.png');
+INSERT INTO pokemon_sprites VALUES (321, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/321.png');
+INSERT INTO pokemon_sprites VALUES (322, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/322.png');
+INSERT INTO pokemon_sprites VALUES (323, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/323.png');
+INSERT INTO pokemon_sprites VALUES (324, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/324.png');
+INSERT INTO pokemon_sprites VALUES (325, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/325.png');
+INSERT INTO pokemon_sprites VALUES (326, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/326.png');
+INSERT INTO pokemon_sprites VALUES (327, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/327.png');
+INSERT INTO pokemon_sprites VALUES (328, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/328.png');
+INSERT INTO pokemon_sprites VALUES (329, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/329.png');
+INSERT INTO pokemon_sprites VALUES (330, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/330.png');
+INSERT INTO pokemon_sprites VALUES (331, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/331.png');
+INSERT INTO pokemon_sprites VALUES (332, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/332.png');
+INSERT INTO pokemon_sprites VALUES (333, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/333.png');
+INSERT INTO pokemon_sprites VALUES (334, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/334.png');
+INSERT INTO pokemon_sprites VALUES (335, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/335.png');
+INSERT INTO pokemon_sprites VALUES (336, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/336.png');
+INSERT INTO pokemon_sprites VALUES (337, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/337.png');
+INSERT INTO pokemon_sprites VALUES (338, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/338.png');
+INSERT INTO pokemon_sprites VALUES (339, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/339.png');
+INSERT INTO pokemon_sprites VALUES (340, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/340.png');
+INSERT INTO pokemon_sprites VALUES (341, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/341.png');
+INSERT INTO pokemon_sprites VALUES (342, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/342.png');
+INSERT INTO pokemon_sprites VALUES (343, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/343.png');
+INSERT INTO pokemon_sprites VALUES (344, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/344.png');
+INSERT INTO pokemon_sprites VALUES (345, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/345.png');
+INSERT INTO pokemon_sprites VALUES (346, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/346.png');
+INSERT INTO pokemon_sprites VALUES (347, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/347.png');
+INSERT INTO pokemon_sprites VALUES (348, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/348.png');
+INSERT INTO pokemon_sprites VALUES (349, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/349.png');
+INSERT INTO pokemon_sprites VALUES (350, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/350.png');
+INSERT INTO pokemon_sprites VALUES (351, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/351.png');
+INSERT INTO pokemon_sprites VALUES (352, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/352.png');
+INSERT INTO pokemon_sprites VALUES (353, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/353.png');
+INSERT INTO pokemon_sprites VALUES (354, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/354.png');
+INSERT INTO pokemon_sprites VALUES (355, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/355.png');
+INSERT INTO pokemon_sprites VALUES (356, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/356.png');
+INSERT INTO pokemon_sprites VALUES (357, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/357.png');
+INSERT INTO pokemon_sprites VALUES (358, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/358.png');
+INSERT INTO pokemon_sprites VALUES (359, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/359.png');
+INSERT INTO pokemon_sprites VALUES (360, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/360.png');
+INSERT INTO pokemon_sprites VALUES (361, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/361.png');
+INSERT INTO pokemon_sprites VALUES (362, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/362.png');
+INSERT INTO pokemon_sprites VALUES (363, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/363.png');
+INSERT INTO pokemon_sprites VALUES (364, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/364.png');
+INSERT INTO pokemon_sprites VALUES (365, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/365.png');
+INSERT INTO pokemon_sprites VALUES (366, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/366.png');
+INSERT INTO pokemon_sprites VALUES (367, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/367.png');
+INSERT INTO pokemon_sprites VALUES (368, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/368.png');
+INSERT INTO pokemon_sprites VALUES (369, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/369.png');
+INSERT INTO pokemon_sprites VALUES (370, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/370.png');
+INSERT INTO pokemon_sprites VALUES (371, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/371.png');
+INSERT INTO pokemon_sprites VALUES (372, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/372.png');
+INSERT INTO pokemon_sprites VALUES (373, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/373.png');
+INSERT INTO pokemon_sprites VALUES (374, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/374.png');
+INSERT INTO pokemon_sprites VALUES (375, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/375.png');
+INSERT INTO pokemon_sprites VALUES (376, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/376.png');
+INSERT INTO pokemon_sprites VALUES (377, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/377.png');
+INSERT INTO pokemon_sprites VALUES (378, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/378.png');
+INSERT INTO pokemon_sprites VALUES (379, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/379.png');
+INSERT INTO pokemon_sprites VALUES (380, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/380.png');
+INSERT INTO pokemon_sprites VALUES (381, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/381.png');
+INSERT INTO pokemon_sprites VALUES (382, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/382.png');
+INSERT INTO pokemon_sprites VALUES (383, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/383.png');
+INSERT INTO pokemon_sprites VALUES (384, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/384.png');
+INSERT INTO pokemon_sprites VALUES (385, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/385.png');
+INSERT INTO pokemon_sprites VALUES (386, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/386.png');
+INSERT INTO pokemon_sprites VALUES (387, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/387.png');
+INSERT INTO pokemon_sprites VALUES (388, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/388.png');
+INSERT INTO pokemon_sprites VALUES (389, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/389.png');
+INSERT INTO pokemon_sprites VALUES (390, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/390.png');
+INSERT INTO pokemon_sprites VALUES (391, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/391.png');
+INSERT INTO pokemon_sprites VALUES (392, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/392.png');
+INSERT INTO pokemon_sprites VALUES (393, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/393.png');
+INSERT INTO pokemon_sprites VALUES (394, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/394.png');
+INSERT INTO pokemon_sprites VALUES (395, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/395.png');
+INSERT INTO pokemon_sprites VALUES (396, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/396.png');
+INSERT INTO pokemon_sprites VALUES (397, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/397.png');
+INSERT INTO pokemon_sprites VALUES (398, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/398.png');
+INSERT INTO pokemon_sprites VALUES (399, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/399.png');
+INSERT INTO pokemon_sprites VALUES (400, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/400.png');
+INSERT INTO pokemon_sprites VALUES (401, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/401.png');
+INSERT INTO pokemon_sprites VALUES (402, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/402.png');
+INSERT INTO pokemon_sprites VALUES (403, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/403.png');
+INSERT INTO pokemon_sprites VALUES (404, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/404.png');
+INSERT INTO pokemon_sprites VALUES (405, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/405.png');
+INSERT INTO pokemon_sprites VALUES (406, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/406.png');
+INSERT INTO pokemon_sprites VALUES (407, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/407.png');
+INSERT INTO pokemon_sprites VALUES (408, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/408.png');
+INSERT INTO pokemon_sprites VALUES (409, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/409.png');
+INSERT INTO pokemon_sprites VALUES (410, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/410.png');
+INSERT INTO pokemon_sprites VALUES (411, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/411.png');
+INSERT INTO pokemon_sprites VALUES (412, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/412.png');
+INSERT INTO pokemon_sprites VALUES (413, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/413.png');
+INSERT INTO pokemon_sprites VALUES (414, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/414.png');
+INSERT INTO pokemon_sprites VALUES (415, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/415.png');
+INSERT INTO pokemon_sprites VALUES (416, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/416.png');
+INSERT INTO pokemon_sprites VALUES (417, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/417.png');
+INSERT INTO pokemon_sprites VALUES (418, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/418.png');
+INSERT INTO pokemon_sprites VALUES (419, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/419.png');
+INSERT INTO pokemon_sprites VALUES (420, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/420.png');
+INSERT INTO pokemon_sprites VALUES (421, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/421.png');
+INSERT INTO pokemon_sprites VALUES (422, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/422.png');
+INSERT INTO pokemon_sprites VALUES (423, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/423.png');
+INSERT INTO pokemon_sprites VALUES (424, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/424.png');
+INSERT INTO pokemon_sprites VALUES (425, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/425.png');
+INSERT INTO pokemon_sprites VALUES (426, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/426.png');
+INSERT INTO pokemon_sprites VALUES (427, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/427.png');
+INSERT INTO pokemon_sprites VALUES (428, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/428.png');
+INSERT INTO pokemon_sprites VALUES (429, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/429.png');
+INSERT INTO pokemon_sprites VALUES (430, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/430.png');
+INSERT INTO pokemon_sprites VALUES (431, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/431.png');
+INSERT INTO pokemon_sprites VALUES (432, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/432.png');
+INSERT INTO pokemon_sprites VALUES (433, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/433.png');
+INSERT INTO pokemon_sprites VALUES (434, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/434.png');
+INSERT INTO pokemon_sprites VALUES (435, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/435.png');
+INSERT INTO pokemon_sprites VALUES (436, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/436.png');
+INSERT INTO pokemon_sprites VALUES (437, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/437.png');
+INSERT INTO pokemon_sprites VALUES (438, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/438.png');
+INSERT INTO pokemon_sprites VALUES (439, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/439.png');
+INSERT INTO pokemon_sprites VALUES (440, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/440.png');
+INSERT INTO pokemon_sprites VALUES (441, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/441.png');
+INSERT INTO pokemon_sprites VALUES (442, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/442.png');
+INSERT INTO pokemon_sprites VALUES (443, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/443.png');
+INSERT INTO pokemon_sprites VALUES (444, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/444.png');
+INSERT INTO pokemon_sprites VALUES (445, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/445.png');
+INSERT INTO pokemon_sprites VALUES (446, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/446.png');
+INSERT INTO pokemon_sprites VALUES (447, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/447.png');
+INSERT INTO pokemon_sprites VALUES (448, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/448.png');
+INSERT INTO pokemon_sprites VALUES (449, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/449.png');
+INSERT INTO pokemon_sprites VALUES (450, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/450.png');
+INSERT INTO pokemon_sprites VALUES (451, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/451.png');
+INSERT INTO pokemon_sprites VALUES (452, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/452.png');
+INSERT INTO pokemon_sprites VALUES (453, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/453.png');
+INSERT INTO pokemon_sprites VALUES (454, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/454.png');
+INSERT INTO pokemon_sprites VALUES (455, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/455.png');
+INSERT INTO pokemon_sprites VALUES (456, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/456.png');
+INSERT INTO pokemon_sprites VALUES (457, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/457.png');
+INSERT INTO pokemon_sprites VALUES (458, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/458.png');
+INSERT INTO pokemon_sprites VALUES (459, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/459.png');
+INSERT INTO pokemon_sprites VALUES (460, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/460.png');
+INSERT INTO pokemon_sprites VALUES (461, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/461.png');
+INSERT INTO pokemon_sprites VALUES (462, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/462.png');
+INSERT INTO pokemon_sprites VALUES (463, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/463.png');
+INSERT INTO pokemon_sprites VALUES (464, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/464.png');
+INSERT INTO pokemon_sprites VALUES (465, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/465.png');
+INSERT INTO pokemon_sprites VALUES (466, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/466.png');
+INSERT INTO pokemon_sprites VALUES (467, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/467.png');
+INSERT INTO pokemon_sprites VALUES (468, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/468.png');
+INSERT INTO pokemon_sprites VALUES (469, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/469.png');
+INSERT INTO pokemon_sprites VALUES (470, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/470.png');
+INSERT INTO pokemon_sprites VALUES (471, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/471.png');
+INSERT INTO pokemon_sprites VALUES (472, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/472.png');
+INSERT INTO pokemon_sprites VALUES (473, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/473.png');
+INSERT INTO pokemon_sprites VALUES (474, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/474.png');
+INSERT INTO pokemon_sprites VALUES (475, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/475.png');
+INSERT INTO pokemon_sprites VALUES (476, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/476.png');
+INSERT INTO pokemon_sprites VALUES (477, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/477.png');
+INSERT INTO pokemon_sprites VALUES (478, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/478.png');
+INSERT INTO pokemon_sprites VALUES (479, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/479.png');
+INSERT INTO pokemon_sprites VALUES (480, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/480.png');
+INSERT INTO pokemon_sprites VALUES (481, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/481.png');
+INSERT INTO pokemon_sprites VALUES (482, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/482.png');
+INSERT INTO pokemon_sprites VALUES (483, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/483.png');
+INSERT INTO pokemon_sprites VALUES (484, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/484.png');
+INSERT INTO pokemon_sprites VALUES (485, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/485.png');
+INSERT INTO pokemon_sprites VALUES (486, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/486.png');
+INSERT INTO pokemon_sprites VALUES (487, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/487.png');
+INSERT INTO pokemon_sprites VALUES (488, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/488.png');
+INSERT INTO pokemon_sprites VALUES (489, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/489.png');
+INSERT INTO pokemon_sprites VALUES (490, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/490.png');
+INSERT INTO pokemon_sprites VALUES (491, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/491.png');
+INSERT INTO pokemon_sprites VALUES (492, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/492.png');
+INSERT INTO pokemon_sprites VALUES (493, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/493.png');
+INSERT INTO pokemon_sprites VALUES (494, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/494.png');
+INSERT INTO pokemon_sprites VALUES (495, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/495.png');
+INSERT INTO pokemon_sprites VALUES (496, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/496.png');
+INSERT INTO pokemon_sprites VALUES (497, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/497.png');
+INSERT INTO pokemon_sprites VALUES (498, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/498.png');
+INSERT INTO pokemon_sprites VALUES (499, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/499.png');
+INSERT INTO pokemon_sprites VALUES (500, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/500.png');
+INSERT INTO pokemon_sprites VALUES (501, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/501.png');
+INSERT INTO pokemon_sprites VALUES (502, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/502.png');
+INSERT INTO pokemon_sprites VALUES (503, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/503.png');
+INSERT INTO pokemon_sprites VALUES (504, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/504.png');
+INSERT INTO pokemon_sprites VALUES (505, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/505.png');
+INSERT INTO pokemon_sprites VALUES (506, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/506.png');
+INSERT INTO pokemon_sprites VALUES (507, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/507.png');
+INSERT INTO pokemon_sprites VALUES (508, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/508.png');
+INSERT INTO pokemon_sprites VALUES (509, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/509.png');
+INSERT INTO pokemon_sprites VALUES (510, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/510.png');
+INSERT INTO pokemon_sprites VALUES (511, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/511.png');
+INSERT INTO pokemon_sprites VALUES (512, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/512.png');
+INSERT INTO pokemon_sprites VALUES (513, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/513.png');
+INSERT INTO pokemon_sprites VALUES (514, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/514.png');
+INSERT INTO pokemon_sprites VALUES (515, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/515.png');
+INSERT INTO pokemon_sprites VALUES (516, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/516.png');
+INSERT INTO pokemon_sprites VALUES (517, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/517.png');
+INSERT INTO pokemon_sprites VALUES (518, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/518.png');
+INSERT INTO pokemon_sprites VALUES (519, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/519.png');
+INSERT INTO pokemon_sprites VALUES (520, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/520.png');
+INSERT INTO pokemon_sprites VALUES (521, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/521.png');
+INSERT INTO pokemon_sprites VALUES (522, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/522.png');
+INSERT INTO pokemon_sprites VALUES (523, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/523.png');
+INSERT INTO pokemon_sprites VALUES (524, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/524.png');
+INSERT INTO pokemon_sprites VALUES (525, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/525.png');
+INSERT INTO pokemon_sprites VALUES (526, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/526.png');
+INSERT INTO pokemon_sprites VALUES (527, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/527.png');
+INSERT INTO pokemon_sprites VALUES (528, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/528.png');
+INSERT INTO pokemon_sprites VALUES (529, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/529.png');
+INSERT INTO pokemon_sprites VALUES (530, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/530.png');
+INSERT INTO pokemon_sprites VALUES (531, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/531.png');
+INSERT INTO pokemon_sprites VALUES (532, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/532.png');
+INSERT INTO pokemon_sprites VALUES (533, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/533.png');
+INSERT INTO pokemon_sprites VALUES (534, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/534.png');
+INSERT INTO pokemon_sprites VALUES (535, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/535.png');
+INSERT INTO pokemon_sprites VALUES (536, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/536.png');
+INSERT INTO pokemon_sprites VALUES (537, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/537.png');
+INSERT INTO pokemon_sprites VALUES (538, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/538.png');
+INSERT INTO pokemon_sprites VALUES (539, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/539.png');
+INSERT INTO pokemon_sprites VALUES (540, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/540.png');
+INSERT INTO pokemon_sprites VALUES (541, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/541.png');
+INSERT INTO pokemon_sprites VALUES (542, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/542.png');
+INSERT INTO pokemon_sprites VALUES (543, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/543.png');
+INSERT INTO pokemon_sprites VALUES (544, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/544.png');
+INSERT INTO pokemon_sprites VALUES (545, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/545.png');
+INSERT INTO pokemon_sprites VALUES (546, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/546.png');
+INSERT INTO pokemon_sprites VALUES (547, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/547.png');
+INSERT INTO pokemon_sprites VALUES (548, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/548.png');
+INSERT INTO pokemon_sprites VALUES (549, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/549.png');
+INSERT INTO pokemon_sprites VALUES (550, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/550.png');
+INSERT INTO pokemon_sprites VALUES (551, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/551.png');
+INSERT INTO pokemon_sprites VALUES (552, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/552.png');
+INSERT INTO pokemon_sprites VALUES (553, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/553.png');
+INSERT INTO pokemon_sprites VALUES (554, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/554.png');
+INSERT INTO pokemon_sprites VALUES (555, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/555.png');
+INSERT INTO pokemon_sprites VALUES (556, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/556.png');
+INSERT INTO pokemon_sprites VALUES (557, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/557.png');
+INSERT INTO pokemon_sprites VALUES (558, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/558.png');
+INSERT INTO pokemon_sprites VALUES (559, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/559.png');
+INSERT INTO pokemon_sprites VALUES (560, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/560.png');
+INSERT INTO pokemon_sprites VALUES (561, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/561.png');
+INSERT INTO pokemon_sprites VALUES (562, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/562.png');
+INSERT INTO pokemon_sprites VALUES (563, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/563.png');
+INSERT INTO pokemon_sprites VALUES (564, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/564.png');
+INSERT INTO pokemon_sprites VALUES (565, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/565.png');
+INSERT INTO pokemon_sprites VALUES (566, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/566.png');
+INSERT INTO pokemon_sprites VALUES (567, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/567.png');
+INSERT INTO pokemon_sprites VALUES (568, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/568.png');
+INSERT INTO pokemon_sprites VALUES (569, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/569.png');
+INSERT INTO pokemon_sprites VALUES (570, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/570.png');
+INSERT INTO pokemon_sprites VALUES (571, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/571.png');
+INSERT INTO pokemon_sprites VALUES (572, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/572.png');
+INSERT INTO pokemon_sprites VALUES (573, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/573.png');
+INSERT INTO pokemon_sprites VALUES (574, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/574.png');
+INSERT INTO pokemon_sprites VALUES (575, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/575.png');
+INSERT INTO pokemon_sprites VALUES (576, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/576.png');
+INSERT INTO pokemon_sprites VALUES (577, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/577.png');
+INSERT INTO pokemon_sprites VALUES (578, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/578.png');
+INSERT INTO pokemon_sprites VALUES (579, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/579.png');
+INSERT INTO pokemon_sprites VALUES (580, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/580.png');
+INSERT INTO pokemon_sprites VALUES (581, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/581.png');
+INSERT INTO pokemon_sprites VALUES (582, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/582.png');
+INSERT INTO pokemon_sprites VALUES (583, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/583.png');
+INSERT INTO pokemon_sprites VALUES (584, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/584.png');
+INSERT INTO pokemon_sprites VALUES (585, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/585.png');
+INSERT INTO pokemon_sprites VALUES (586, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/586.png');
+INSERT INTO pokemon_sprites VALUES (587, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/587.png');
+INSERT INTO pokemon_sprites VALUES (588, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/588.png');
+INSERT INTO pokemon_sprites VALUES (589, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/589.png');
+INSERT INTO pokemon_sprites VALUES (590, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/590.png');
+INSERT INTO pokemon_sprites VALUES (591, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/591.png');
+INSERT INTO pokemon_sprites VALUES (592, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/592.png');
+INSERT INTO pokemon_sprites VALUES (593, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/593.png');
+INSERT INTO pokemon_sprites VALUES (594, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/594.png');
+INSERT INTO pokemon_sprites VALUES (595, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/595.png');
+INSERT INTO pokemon_sprites VALUES (596, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/596.png');
+INSERT INTO pokemon_sprites VALUES (597, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/597.png');
+INSERT INTO pokemon_sprites VALUES (598, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/598.png');
+INSERT INTO pokemon_sprites VALUES (599, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/599.png');
+INSERT INTO pokemon_sprites VALUES (600, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/600.png');
+INSERT INTO pokemon_sprites VALUES (601, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/601.png');
+INSERT INTO pokemon_sprites VALUES (602, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/602.png');
+INSERT INTO pokemon_sprites VALUES (603, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/603.png');
+INSERT INTO pokemon_sprites VALUES (604, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/604.png');
+INSERT INTO pokemon_sprites VALUES (605, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/605.png');
+INSERT INTO pokemon_sprites VALUES (606, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/606.png');
+INSERT INTO pokemon_sprites VALUES (607, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/607.png');
+INSERT INTO pokemon_sprites VALUES (608, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/608.png');
+INSERT INTO pokemon_sprites VALUES (609, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/609.png');
+INSERT INTO pokemon_sprites VALUES (610, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/610.png');
+INSERT INTO pokemon_sprites VALUES (611, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/611.png');
+INSERT INTO pokemon_sprites VALUES (612, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/612.png');
+INSERT INTO pokemon_sprites VALUES (613, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/613.png');
+INSERT INTO pokemon_sprites VALUES (614, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/614.png');
+INSERT INTO pokemon_sprites VALUES (615, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/615.png');
+INSERT INTO pokemon_sprites VALUES (616, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/616.png');
+INSERT INTO pokemon_sprites VALUES (617, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/617.png');
+INSERT INTO pokemon_sprites VALUES (618, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/618.png');
+INSERT INTO pokemon_sprites VALUES (619, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/619.png');
+INSERT INTO pokemon_sprites VALUES (620, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/620.png');
+INSERT INTO pokemon_sprites VALUES (621, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/621.png');
+INSERT INTO pokemon_sprites VALUES (622, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/622.png');
+INSERT INTO pokemon_sprites VALUES (623, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/623.png');
+INSERT INTO pokemon_sprites VALUES (624, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/624.png');
+INSERT INTO pokemon_sprites VALUES (625, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/625.png');
+INSERT INTO pokemon_sprites VALUES (626, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/626.png');
+INSERT INTO pokemon_sprites VALUES (627, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/627.png');
+INSERT INTO pokemon_sprites VALUES (628, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/628.png');
+INSERT INTO pokemon_sprites VALUES (629, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/629.png');
+INSERT INTO pokemon_sprites VALUES (630, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/630.png');
+INSERT INTO pokemon_sprites VALUES (631, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/631.png');
+INSERT INTO pokemon_sprites VALUES (632, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/632.png');
+INSERT INTO pokemon_sprites VALUES (633, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/633.png');
+INSERT INTO pokemon_sprites VALUES (634, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/634.png');
+INSERT INTO pokemon_sprites VALUES (635, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/635.png');
+INSERT INTO pokemon_sprites VALUES (636, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/636.png');
+INSERT INTO pokemon_sprites VALUES (637, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/637.png');
+INSERT INTO pokemon_sprites VALUES (638, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/638.png');
+INSERT INTO pokemon_sprites VALUES (639, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/639.png');
+INSERT INTO pokemon_sprites VALUES (640, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/640.png');
+INSERT INTO pokemon_sprites VALUES (641, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/641.png');
+INSERT INTO pokemon_sprites VALUES (642, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/642.png');
+INSERT INTO pokemon_sprites VALUES (643, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/643.png');
+INSERT INTO pokemon_sprites VALUES (644, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/644.png');
+INSERT INTO pokemon_sprites VALUES (645, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/645.png');
+INSERT INTO pokemon_sprites VALUES (646, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/646.png');
+INSERT INTO pokemon_sprites VALUES (647, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/647.png');
+INSERT INTO pokemon_sprites VALUES (648, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/648.png');
+INSERT INTO pokemon_sprites VALUES (649, 'back shiny', 'http://www.pokelab.xyz/images/sprites/shiny/back/649.png');
 
 
 DROP TABLE IF EXISTS pokemon_abilities CASCADE;
@@ -3369,7 +3527,7 @@ CREATE TABLE pokemon_abilities (
 	ability_id INTEGER NOT NULL, 
 	is_hidden INTEGER NOT NULL, 
 	slot INTEGER NOT NULL, 
-	PRIMARY KEY (pokemon_id), 
+	PRIMARY KEY (pokemon_id,slot), 
 	FOREIGN KEY(pokemon_id) REFERENCES pokemon (id), 
 	FOREIGN KEY(ability_id) REFERENCES abilities (id), 
 	CHECK (is_hidden IN (0, 1))
@@ -5312,12 +5470,12 @@ CREATE TABLE abilities
 	id INTEGER NOT NULL,
 	identifier VARCHAR(79) NOT NULL,
 	generation_id INTEGER NOT NULL,
-	effect VARCHAR(500) NOT NULL,
-	flavor_text_1 VARCHAR(200) NOT NULL,
+	effect VARCHAR(1600) NOT NULL,
+	flavor_text_1 VARCHAR(200),
 	flavor_text_2 VARCHAR(200),
 	flavor_text_3 VARCHAR(200),
 	flavor_text_4 VARCHAR(200),
-	text_changed_in_version VARCHAR(10) NOT NULL,
+	text_changed_in_version VARCHAR(10),
 	PRIMARY KEY(id)
 );
 
