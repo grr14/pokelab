@@ -27,7 +27,6 @@ import FavoriteIcon from "./FavoriteIcon"
 
 type StyledCardProps = {
   loading?: boolean
-  error?: boolean
 }
 
 const StyledCard = styled(Card)<StyledCardProps>`
@@ -59,7 +58,7 @@ const PokemonCard: React.FC<CardProps> = ({ id }) => {
     variables: { id: id },
   })
 
-  if (loading)
+  if (loading || error)
     return (
       <StyledCard
         loading={loading}
@@ -70,7 +69,7 @@ const PokemonCard: React.FC<CardProps> = ({ id }) => {
         <Loading />
       </StyledCard>
     )
-  if (error) return <p>error</p>
+
   if (!data) return <p>Not found</p>
 
   return (

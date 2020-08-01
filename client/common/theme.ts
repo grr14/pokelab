@@ -29,9 +29,14 @@ const lightTheme: Theme = {
     rock: "#b8a038",
     steel: "#b8b8d0",
     water: "#6890f0",
-    immune: "#d6d6d6",
-    notEffective: "#fdd0d0",
-    veryEffective: "#ccfbcc",
+  },
+  damage: {
+    immune: "#565656",
+    notTooEffective: "#ce6868",
+    notEffectiveAtAll: "#c71515",
+    normal: "#939393",
+    veryEffective: "#84ea84",
+    superEffective: "#00d600",
   },
 }
 

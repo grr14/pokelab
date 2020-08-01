@@ -30,8 +30,13 @@ export type Theme = {
     rock: string
     steel: string
     water: string
+  }
+  damage?: {
     immune: string
-    notEffective: string
+    notTooEffective: string
+    notEffectiveAtAll: string
+    normal: string
     veryEffective: string
+    superEffective: string
   }
 }

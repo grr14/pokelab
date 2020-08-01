@@ -8,6 +8,7 @@ import DetailedPokemonGrid from "./DetailedPokemonGrid"
 import MovesContainer from "./MovesContainer"
 import PokemonImagesCarousel from "./PokemonImagesCarousel"
 import PokemonDetailedInfos from "./PokemonDetailedInfos"
+import PokemonTypeInfos from "./PokemonTypeInfos"
 
 import {
   getPokemonById,
@@ -80,6 +81,10 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
             backgroundColor: "red",
             display: "flex",
             flexDirection: "column",
+            alignContent: "center",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+
             [mq[1]]: {
               gridColumnStart: "2",
               gridRowStart: "1",
@@ -89,6 +94,10 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
           }}
         >
           <PokemonDetailedInfos pokemon={data.pokemon} />
+          <PokemonTypeInfos
+            type_1={data.pokemon.type_1}
+            type_2={data.pokemon.type_2}
+          />
         </div>
         <MovesContainer></MovesContainer>
       </DetailedPokemonGrid>

@@ -27,6 +27,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
   return (
     <div
       css={{
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -39,7 +40,6 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
         className="infosList"
         css={{
           flex: 1,
-          width: "50%",
           backgroundColor: "yellow !important",
         }}
       >

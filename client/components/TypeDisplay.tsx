@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
+import { Theme } from "../common/types"
 import { TYPES } from "../common/constants"
 import { getTypeFromId } from "../common/utils"
 
 type TypeProps = {
   type: TYPES
+  theme?: Theme
 }
 
 const TypeContainer = styled.div<TypeProps>`
