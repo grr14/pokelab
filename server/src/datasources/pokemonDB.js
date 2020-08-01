@@ -7,7 +7,20 @@ class pokemonDB extends DataSource {
     this.store = store
   }
 
+  async findPokemonPartial({ id }) {
+    if (id > 807) return null
+
+    let pokemon = await this.store.pokemon.findOne({
+      attributes: ["id", "identifier", "picture"],
+      where: { id: id },
+    })
+
+    return pokemon
+  }
+
   async findPokemon({ id }) {
+    if (id > 807) return null
+
     let pokemon = await this.store.pokemon.findOne({ where: { id: id } })
 
     const abilities_id = parse(pokemon.dataValues.abilities, ",")
@@ -47,20 +60,20 @@ class pokemonDB extends DataSource {
       effect: ability.effect,
       flavor_textes: [
         {
-          text: ability.flavor_text_1,
-          appear_in: text_changes[0] != null ? text_changes[0] : null,
+          text: ability.flavor_text_1 != null ? ability.flavor_text_1 : null,
+          appear_in: text_changes.length < 1 ? null : text_changes[0],
         },
         {
-          text: ability.flavor_text_2,
-          appear_in: text_changes[1] != null ? text_changes[1] : null,
+          text: ability.flavor_text_2 != null ? ability.flavor_text_2 : null,
+          appear_in: text_changes.length < 2 ? null : text_changes[1],
         },
         {
-          text: ability.flavor_text_3,
-          appear_in: text_changes[2] != null ? text_changes[2] : null,
+          text: ability.flavor_text_3 != null ? ability.flavor_text_3 : null,
+          appear_in: text_changes.length < 3 ? null : text_changes[2],
         },
         {
-          text: ability.flavor_text_4,
-          appear_in: text_changes[3] != null ? text_changes[3] : null,
+          text: ability.flavor_text_4 != null ? ability.flavor_text_4 : null,
+          appear_in: text_changes.length < 4 ? null : text_changes[3],
         },
       ],
     }

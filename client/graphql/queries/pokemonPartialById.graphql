@@ -1,0 +1,7 @@
+query getPokemonPartialById($id: Int!) {
+  pokemonPartial(id: $id) {
+    id
+    identifier
+    picture
+  }
+}

@@ -15,7 +15,7 @@ const MainPageContent: React.FC = () => {
     for (let i = min; i <= max; i++) {
       pokemon.push(
         <CardContainer key={i}>
-          <PokemonCard id={i} />
+          <PokemonCard pokemon_id={i} />
         </CardContainer>
       )
     }
@@ -24,7 +24,7 @@ const MainPageContent: React.FC = () => {
 
   return (
     <StyledMainContent>
-      <StyledMainGrid>{displayPokemons(1, 152)}</StyledMainGrid>
+      <StyledMainGrid>{displayPokemons(1, 151)}</StyledMainGrid>
     </StyledMainContent>
   )
 }

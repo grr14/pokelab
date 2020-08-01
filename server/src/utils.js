@@ -12,6 +12,9 @@ function isEmptyArray(array) {
 }
 
 function parse(str, separator) {
+  if (str == null) {
+    return []
+  }
   return str.split(separator)
 }
 

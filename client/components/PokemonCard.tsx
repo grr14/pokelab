@@ -1,20 +1,23 @@
-import Card from "@material-ui/core/Card"
-
-import Typography from "@material-ui/core/Typography"
-import Link from "next/link"
-import Loading from "./Loading"
-
-import {
-  getPokemonById,
-  getPokemonByIdVariables,
-} from "../graphql/queries/__generated__/getPokemonById"
-
+import styled from "@emotion/styled"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 
+import Link from "next/link"
+
+import Loading from "./Loading"
+
+import Card from "@material-ui/core/Card"
+import Typography from "@material-ui/core/Typography"
+import FavoriteIcon from "./FavoriteIcon"
+
+import {
+  getPokemonPartialById,
+  getPokemonPartialByIdVariables,
+} from "../graphql/queries/__generated__/getPokemonPartialById"
+
 const GET_POKEMON = gql`
-  query getPokemonById($id: Int!) {
-    pokemon(id: $id) {
+  query getPokemonPartialById($id: Int!) {
+    pokemonPartial(id: $id) {
       id
       identifier
       picture
@@ -22,11 +25,8 @@ const GET_POKEMON = gql`
   }
 `
 
-import styled from "@emotion/styled"
-import FavoriteIcon from "./FavoriteIcon"
-
 type StyledCardProps = {
-  loading?: boolean
+  loading?: number
 }
 
 const StyledCard = styled(Card)<StyledCardProps>`
@@ -47,21 +47,21 @@ const StyledCard = styled(Card)<StyledCardProps>`
 `
 
 interface CardProps {
-  id: number
+  pokemon_id: number
 }
 
-const PokemonCard: React.FC<CardProps> = ({ id }) => {
+const PokemonCard: React.FC<CardProps> = ({ pokemon_id }) => {
   const { data, loading, error } = useQuery<
-    getPokemonById,
-    getPokemonByIdVariables
+    getPokemonPartialById,
+    getPokemonPartialByIdVariables
   >(GET_POKEMON, {
-    variables: { id: id },
+    variables: { id: pokemon_id },
   })
 
   if (loading || error)
     return (
       <StyledCard
-        loading={loading}
+        loading={loading ? 1 : 0}
         style={{
           height: "260px",
         }}
@@ -72,17 +72,19 @@ const PokemonCard: React.FC<CardProps> = ({ id }) => {
 
   if (!data) return <p>Not found</p>
 
+  const { id, identifier, picture } = data.pokemonPartial
+
   return (
     <StyledCard raised={true}>
       <FavoriteIcon />
       <img
-        src={data.pokemon.picture}
+        src={picture}
         style={{ paddingTop: "5px", height: "200px", width: "200px" }}
       />
-      <Link href="/pokemon/[pid]" as={`/pokemon/${data.pokemon.id}`}>
+      <Link href="/pokemon/[pid]" as={`/pokemon/${id}`}>
         <a>
           <Typography gutterBottom variant="h5" component="h2">
-            {data.pokemon.id} - {data.pokemon.identifier}
+            {id} - {identifier}
           </Typography>
         </a>
       </Link>
