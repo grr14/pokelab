@@ -44,8 +44,6 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
     descriptions.unshift("")
   }
 
-  console.log(urls)
-
   const buildCarousel = () => {
     const divArray = []
     for (let i = 0; i < urls.length; i++) {

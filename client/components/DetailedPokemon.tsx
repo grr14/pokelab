@@ -82,7 +82,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
             display: "flex",
             flexDirection: "column",
             alignContent: "center",
-            justifyContent: "space-evenly",
+            justifyContent: "space-between",
             alignItems: "center",
 
             [mq[1]]: {
@@ -94,10 +94,6 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
           }}
         >
           <PokemonDetailedInfos pokemon={data.pokemon} />
-          <PokemonTypeInfos
-            type_1={data.pokemon.type_1}
-            type_2={data.pokemon.type_2}
-          />
         </div>
         <MovesContainer></MovesContainer>
       </DetailedPokemonGrid>

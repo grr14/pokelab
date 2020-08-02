@@ -4,7 +4,7 @@ const lightTheme: Theme = {
   name: "lightTheme",
   body: {
     background: "lightPink",
-    text: "blue",
+    text: "black",
   },
   header: {
     background: "green",
