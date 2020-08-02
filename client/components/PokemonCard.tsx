@@ -81,7 +81,7 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon_id }) => {
         src={picture}
         style={{ paddingTop: "5px", height: "200px", width: "200px" }}
       />
-      <Link href="/pokemon/[pid]" as={`/pokemon/${id}`}>
+      <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
         <a>
           <Typography gutterBottom variant="h5" component="h2">
             {id} - {identifier}

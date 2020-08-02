@@ -1,12 +1,11 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import styled from "@emotion/styled"
-import { Theme } from "../common/types"
 
 import { TYPES_RELATIONS, TYPES, NB_TYPES } from "../common/constants"
 import { getTypeFromId } from "../common/utils"
 
 import TypeDisplay from "./TypeDisplay"
+import CustomCell from "./CustomCell"
 
 import Accordion from "@material-ui/core/Accordion"
 import AccordionSummary from "@material-ui/core/AccordionSummary"
@@ -14,78 +13,6 @@ import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
-
-interface CustomCellProps {
-  type?: number
-  multiplier?: number
-  theme?: Theme
-}
-
-const CustomCell = styled.div<CustomCellProps>`
-  color: white;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 1px black;
-
-  background-color: ${(props) => {
-    switch (props.type) {
-      case TYPES.NORMAL:
-        return props.theme.type.normal
-      case TYPES.FIGHTING:
-        return props.theme.type.fighting
-      case TYPES.FLYING:
-        return props.theme.type.flying
-      case TYPES.POISON:
-        return props.theme.type.poison
-      case TYPES.GROUND:
-        return props.theme.type.ground
-      case TYPES.ROCK:
-        return props.theme.type.rock
-      case TYPES.BUG:
-        return props.theme.type.bug
-      case TYPES.GHOST:
-        return props.theme.type.ghost
-      case TYPES.STEEL:
-        return props.theme.type.steel
-      case TYPES.FIRE:
-        return props.theme.type.fire
-      case TYPES.WATER:
-        return props.theme.type.water
-      case TYPES.GRASS:
-        return props.theme.type.grass
-      case TYPES.ELECTRIC:
-        return props.theme.type.electric
-      case TYPES.PSYCHIC:
-        return props.theme.type.psychic
-      case TYPES.ICE:
-        return props.theme.type.ice
-      case TYPES.DRAGON:
-        return props.theme.type.dragon
-      case TYPES.DARK:
-        return props.theme.type.dark
-      case TYPES.FAIRY:
-        return props.theme.type.fairy
-    }
-  }};
-  background-color: ${(props) => {
-    switch (props.multiplier) {
-      case 0:
-        return props.theme.damage.immune
-      case 0.25:
-        return props.theme.damage.notEffectiveAtAll
-      case 0.5:
-        return props.theme.damage.notTooEffective
-      case 1:
-        return props.theme.damage.normal
-      case 2:
-        return props.theme.damage.veryEffective
-      case 4:
-        return props.theme.damage.superEffective
-    }
-  }};
-`
 
 interface TypesRelationTableProps {
   typeRelation: Array<number>
@@ -114,11 +41,12 @@ const TypesRelationTable: React.FC<TypesRelationTableProps> = ({
             flexDirection: "column",
           }}
         >
-          <CustomCell type={el} css={{}}>
+          <CustomCell type={el} height={"50%"}>
             {getTypeFromId(el).slice(0, 3).toUpperCase()}
           </CustomCell>
           <CustomCell
             multiplier={typeRelation[idx + 1]}
+            height={"50%"}
             css={{
               marginTop: "1px",
               textShadow:

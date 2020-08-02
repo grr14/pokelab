@@ -1,6 +1,11 @@
 import styled from "@emotion/styled"
+import { Theme } from "../common/types"
 
-const MainContainer = styled.div`
+type MainContainerProps = {
+  theme: Theme
+}
+
+const MainContainer = styled.div<MainContainerProps>`
   min-height: 100vh;
   max-width: 100%;
   margin: 0;

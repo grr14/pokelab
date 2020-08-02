@@ -2,35 +2,39 @@
 import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import { Theme } from "../common/types"
+
+import Link from "next/link"
+
 import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generated__/getPokemonById"
-import Paper from "@material-ui/core/Paper"
-import List from "@material-ui/core/List"
-import ListItem, { ListItemProps } from "@material-ui/core/ListItem"
-import Typography from "@material-ui/core/Typography"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import Divider from "@material-ui/core/Divider"
-import TypeDisplay from "./TypeDisplay"
-import { ListItemAvatar, Avatar, Box } from "@material-ui/core"
 import { LAST_POKEMON_ID } from "../common/constants"
 import PokemonTypeInfos from "./PokemonTypeInfos"
+import TypeDisplay from "./TypeDisplay"
+
+import Typography from "@material-ui/core/Typography"
+import Box from "@material-ui/core/Box"
+import Paper from "@material-ui/core/Paper"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemText from "@material-ui/core/ListItemText"
+import ListItemAvatar from "@material-ui/core/ListItemAvatar"
+import Avatar from "@material-ui/core/Avatar"
+import Divider from "@material-ui/core/Divider"
+
 import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Link from "next/link"
-
 type ArrowProps = {
   pokemonId: number
   direction: string
-  theme: Theme
+  theme?: Theme
 }
 
 const LinkArrow = styled.div<ArrowProps>`
   font-size: 3em;
-  color: ${(props: ArrowProps) => props.theme.body.text};
+  color: ${(props: ArrowProps) => props.theme?.body?.text};
   padding: ${(props: ArrowProps) =>
     props.direction === "left" ? "0 0 0 10px" : "0 10px 0 0"};
   visibility: ${(props: ArrowProps) =>

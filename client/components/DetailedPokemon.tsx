@@ -8,7 +8,6 @@ import DetailedPokemonGrid from "./DetailedPokemonGrid"
 import MovesContainer from "./MovesContainer"
 import PokemonImagesCarousel from "./PokemonImagesCarousel"
 import PokemonDetailedInfos from "./PokemonDetailedInfos"
-import PokemonTypeInfos from "./PokemonTypeInfos"
 
 import {
   getPokemonById,
