@@ -373,6 +373,7 @@ tmp_types_relations[TYPES.FAIRY][TYPES.POISON] = 0.5
 tmp_types_relations[TYPES.FAIRY][TYPES.GROUND] = 1
 tmp_types_relations[TYPES.FAIRY][TYPES.ROCK] = 1
 tmp_types_relations[TYPES.FAIRY][TYPES.BUG] = 1
+tmp_types_relations[TYPES.FAIRY][TYPES.GHOST] = 1
 tmp_types_relations[TYPES.FAIRY][TYPES.STEEL] = 0.5
 tmp_types_relations[TYPES.FAIRY][TYPES.FIRE] = 0.5
 tmp_types_relations[TYPES.FAIRY][TYPES.WATER] = 1

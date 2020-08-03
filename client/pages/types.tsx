@@ -1,21 +1,77 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
+import React, { useEffect, useState, useRef } from "react"
 import Header from "../components/Header"
 import MainContainer from "../components/Container"
 import CustomCell from "../components/CustomCell"
 import { getTypeFromId, capitalizeFirstLetter } from "../common/utils"
 import { NB_TYPES, TYPES_RELATIONS } from "../common/constants"
 import Link from "next/link"
+import TypeDisplay from "../components/TypeDisplay"
+import { TableBody } from "@material-ui/core"
+
+type THook<T extends HTMLElement> = [React.RefObject<T>, boolean]
+
+export const useMouseHover = <T extends HTMLElement>(): THook<T> => {
+  const [hovered, setHovered] = useState(false)
+  const ref = useRef<T>(null)
+
+  useEffect(() => {
+    const handleMouseOver = (): void => setHovered(true)
+    const handleMouseOut = (): void => setHovered(false)
+    const node = ref && ref.current
+
+    if (node) {
+      node.addEventListener("mouseover", handleMouseOver)
+      node.addEventListener("mouseout", handleMouseOut)
+      return () => {
+        node.removeEventListener("mouseover", handleMouseOver)
+        node.removeEventListener("mouseout", handleMouseOut)
+      }
+    }
+  }, [ref])
+
+  return [ref, hovered]
+}
+
+interface Coordinates {
+  attacker: number
+  defender: number
+}
 
 const Types = () => {
+  const [divRef, divIsHovered] = useMouseHover<HTMLDivElement>()
+
+  const [coordinates, setCoordinates] = React.useState<Coordinates>({
+    attacker: 0,
+    defender: 0,
+  })
+
+  const handleMouseEnter = (x: number, y: number) => {
+    setCoordinates({ attacker: x, defender: y })
+  }
+
+  const getEfficiency = (x: number, y: number) => {
+    switch (TYPES_RELATIONS[x][y]) {
+      case 0:
+        return "Ineffective"
+      case 0.5:
+        return "Not efficient"
+      case 1:
+        return "Regular damage"
+      case 2:
+        return "Super efficient"
+    }
+  }
+
   const typeIconsLine = () => {
     return [...Array(NB_TYPES + 1).keys()].map((el) => {
       if (el === 0) {
-        return <div className="emptyFillerForGrid"></div>
+        return <div key={el} className="emptyFillerForGrid"></div>
       }
 
       return (
-        <div>
+        <div key={el}>
           <img
             css={{ height: "100%", width: "100%" }}
             src={`/images/types/${el}.png`}
@@ -25,22 +81,30 @@ const Types = () => {
     })
   }
 
-  const lineNormal = (lineIdx: number) => {
+  const singleTypeLine = (lineIdx: number) => {
     const line = TYPES_RELATIONS[lineIdx].map((el, idx) => {
       if (idx === 0)
         return (
-          <div>
+          <div key={idx}>
             <img
-              css={{ height: "100%", width: "100%" }}
+              css={{
+                height: "100%",
+                width: "100%",
+              }}
               src={`/images/types/${lineIdx}.png`}
             />
           </div>
         )
       return (
         <CustomCell
+          key={idx}
+          onMouseEnter={() => handleMouseEnter(lineIdx, idx)}
           css={{
             boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.75)",
             borderRadius: "50px 50px 50px 50px",
+            "&:hover": {
+              boxShadow: "inset 0px 0px 3px 2px yellow",
+            },
           }}
           height={"100%"}
           multiplier={el}
@@ -55,7 +119,7 @@ const Types = () => {
   const typeRelationsTable = () => {
     const table = TYPES_RELATIONS.map((_, lineIdx) => {
       if (lineIdx === 0) return
-      return lineNormal(lineIdx)
+      return singleTypeLine(lineIdx)
     })
     return table
   }
@@ -64,41 +128,43 @@ const Types = () => {
     <MainContainer>
       <Header />
       <div
-        css={{
+        css={(theme) => ({
           flex: 1,
-          backgroundColor: "pink",
+          backgroundColor: theme.body.color,
+          color: theme.body.text,
+          fontFamily: theme.body.font,
           padding: "2%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "flex-start",
+          justifyContent: "center",
           alignItems: "center",
-          alignContent: "center",
-        }}
+        })}
       >
         <div
-          css={(theme) => ({
-            backgroundColor: "lightblue",
+          css={{
+            width: "80%",
             textAlign: "justify",
-            color: theme.body.text,
-          })}
+          }}
         >
           <h2>Explaination</h2>
-          Types are properties for Pokémon and their moves. Each Pokemon can
-          have either one or two types, whereas a Pokemon move can only be of
-          exactly one type.
-          <br />
-          Since the Generation VI, there are 18 different types (see the table
-          below). This makes a total of 171-unique types combinations (e.g.
-          Normal/Flying equals Flying/Normal).
-          <br />
-          To this day, 154 combinations have been used for the Pokémon, giving
-          us 17 remaining
-          <br />A Pokémon attacking with a move of the same type as him will get
-          a damage bonus of +50%, which stacks multiplicatively with the
-          weakness(es) of the opposing Pokémon.
+          <p>
+            Types are properties for Pokémon and their moves. Each Pokemon can
+            have either one or two types, whereas a Pokemon move can only be of
+            exactly one type. Since the Generation VI, there are 18 different
+            types (see the table below). This makes a total of 171-unique types
+            combinations (e.g. Normal/Flying equals Flying/Normal). To this day,
+            154 combinations have been used for the Pokémon, giving us 17
+            remaining.A Pokémon attacking with a move of the same type as him
+            will get a damage bonus of +50%, which stacks multiplicatively with
+            the weakness(es) of the opposing Pokémon.
+          </p>
         </div>
 
-        <div>
+        <div
+          css={{
+            width: "80%",
+          }}
+        >
           <h2>Type List</h2>
           <div
             css={{
@@ -130,13 +196,12 @@ const Types = () => {
                   <img src={`/images/types/${el}.png`} />
                 </div>
                 <div
-                  css={(theme) => ({
-                    color: theme.body.text,
+                  css={{
                     height: "20%",
                     display: "flex",
                     alignItems: "top",
                     justifyContent: "center",
-                  })}
+                  }}
                 >
                   {capitalizeFirstLetter(getTypeFromId(el))}
                 </div>
@@ -144,7 +209,11 @@ const Types = () => {
             ))}
           </div>
         </div>
-        <div>
+        <div
+          css={{
+            width: "80%",
+          }}
+        >
           <h2>Type Matrix</h2>
           <p>
             Each type has its own weaknesses and strengths against the others.
@@ -153,15 +222,38 @@ const Types = () => {
           </p>
           <div
             css={{
-              display: "grid",
-              gridTemplateColumns: "repeat(19,2.5em)",
-              gridTemplateRows: "repeat(19,2.5em)",
-              gridColumnGap: "2px",
-              gridRowGap: "2px",
+              display: "flex",
+              justifyContent: "space-around",
+              alignContent: "center",
+              alignItems: "center",
             }}
           >
-            {typeIconsLine()}
-            {typeRelationsTable()}
+            <div
+              css={{
+                display: "grid",
+                gridTemplateColumns: "repeat(19,2.5em)",
+                gridTemplateRows: "repeat(19,2.5em)",
+                gridColumnGap: "2px",
+                gridRowGap: "2px",
+                padding: "5px",
+                boxSizing: "border-box",
+              }}
+              ref={divRef}
+            >
+              {typeIconsLine()}
+              {typeRelationsTable()}
+            </div>
+            {divIsHovered && coordinates.attacker > 0 ? (
+              <div css={{ flex: 1, textAlign: "center" }}>
+                <p>
+                  <TypeDisplay type={coordinates.attacker} /> VS{" "}
+                  <TypeDisplay type={coordinates.defender} /> :{" "}
+                  {getEfficiency(coordinates.attacker, coordinates.defender)}
+                </p>
+              </div>
+            ) : (
+              <div css={{ flex: 1 }}></div>
+            )}
           </div>
           <p>
             The row axis represents the type of the <b>attacking move</b>.
@@ -172,18 +264,16 @@ const Types = () => {
             Pokemon (multiplier = 2). However, they are weak against Plant-type
             Pokemon (multiplier = 0.5) and don't affect Ground-type Pokemon
             (multiplier = 0).
-            <br />
-            <p>
-              A lot of Pokemon have 2 types. You can find a Type Matrix
-              generator for dual type Pokémon
-              <Link href={`types/generator`}>
-                <a>here</a>
-              </Link>
-              .
-            </p>
+            <br />A lot of Pokemon have 2 types. You can find a Type Matrix
+            generator for dual type Pokémon{" "}
+            <Link href={`types/generator`}>
+              <a>here</a>
+            </Link>
+            .
           </p>
         </div>
       </div>
+      <footer>grr 2020</footer>
     </MainContainer>
   )
 }

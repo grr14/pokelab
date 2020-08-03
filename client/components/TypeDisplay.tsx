@@ -10,7 +10,7 @@ type TypeProps = {
   theme?: Theme
 }
 
-const TypeContainer = styled.div<TypeProps>`
+const TypeContainer = styled.span<TypeProps>`
   font-size: 15px;
 
   font-family: "Trebuchet MS";
