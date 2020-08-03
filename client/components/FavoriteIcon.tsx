@@ -1,21 +1,22 @@
-import styled from "@emotion/styled"
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined"
-
-const StyledFavoriteIcon = styled.div`
-  position: absolute;
-  top: 5px;
-  right: 10px;
-
-  &:hover {
-    color: red;
-  }
-`
 
 const FavoriteIcon = () => {
   return (
-    <StyledFavoriteIcon>
-      <StarBorderOutlinedIcon style={{ fontSize: 30 }} />
-    </StyledFavoriteIcon>
+    <div
+      css={{
+        position: "absolute",
+        top: "5px",
+        right: "10px",
+
+        "&:hover": {
+          color: "yellow",
+        },
+      }}
+    >
+      <StarBorderOutlinedIcon css={{ fontSize: 30 }} />
+    </div>
   )
 }
 

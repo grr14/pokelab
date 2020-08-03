@@ -12,10 +12,14 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <Link href="/">Pokemons</Link>
+            <Link href="/">
+              <a>Pokemons</a>
+            </Link>
           </IconButton>
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <Link href="/types">Types</Link>
+            <Link href="/types">
+              <a>Types</a>
+            </Link>
           </IconButton>
 
           <Typography variant="h6">News</Typography>

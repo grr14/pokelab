@@ -4,7 +4,9 @@ import { mq } from "../common/constants"
 const DetailedPokemonGrid = styled.div`
   flex: 1;
   background-color: lightcyan;
-  border: solid 2px black;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden;
   display: grid;
 
   ${mq[0]} {

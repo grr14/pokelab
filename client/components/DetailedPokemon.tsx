@@ -1,7 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import styled from "@emotion/styled"
-
 import { mq } from "../common/constants"
 
 import DetailedPokemonGrid from "./DetailedPokemonGrid"
@@ -39,13 +37,6 @@ const GET_POKEMON = gql`
   }
 `
 
-const StyledContainer = styled.main`
-  flex: 1;
-  display: flex;
-  background-color: lightcoral;
-  padding: 2%;
-`
-
 interface Props {
   id: number
 }
@@ -62,7 +53,13 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
   if (error) return <p>error</p>
 
   return (
-    <StyledContainer>
+    <div
+      css={{
+        flex: 1,
+        display: "flex",
+        padding: "2%",
+      }}
+    >
       <DetailedPokemonGrid>
         <div
           css={{
@@ -96,7 +93,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
         </div>
         <MovesContainer></MovesContainer>
       </DetailedPokemonGrid>
-    </StyledContainer>
+    </div>
   )
 }
 

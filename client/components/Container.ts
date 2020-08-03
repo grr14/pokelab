@@ -11,6 +11,8 @@ const MainContainer = styled.div<MainContainerProps>`
   margin: 0;
   padding: 0;
   background-color: ${(props) => props.theme?.body?.background};
+  color: ${(props) => props.theme?.body?.text};
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
 `

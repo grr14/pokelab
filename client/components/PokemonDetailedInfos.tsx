@@ -9,13 +9,12 @@ import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generate
 import { LAST_POKEMON_ID } from "../common/constants"
 import PokemonTypeInfos from "./PokemonTypeInfos"
 import TypeDisplay from "./TypeDisplay"
+import { capitalizeFirstLetter } from "../common/utils"
 
-import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 import Paper from "@material-ui/core/Paper"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
-import ListItemText from "@material-ui/core/ListItemText"
 import ListItemAvatar from "@material-ui/core/ListItemAvatar"
 import Avatar from "@material-ui/core/Avatar"
 import Divider from "@material-ui/core/Divider"
@@ -60,7 +59,9 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
   const ability_list = (
     <List>
       {pokemon?.abilities?.map((ability, idx) => (
-        <ListItem key={idx}>{ability.identifier}</ListItem>
+        <ListItem key={idx}>
+          {capitalizeFirstLetter(ability.identifier)}
+        </ListItem>
       ))}
     </List>
   )
@@ -83,7 +84,15 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
           </LinkArrow>
         </Link>
 
-        <Typography variant="h2">{pokemon.identifier}</Typography>
+        <h2
+          css={{
+            fontSize: "3.75rem",
+            lineHeight: 1.2,
+            margin: "0.4em 0",
+          }}
+        >
+          {capitalizeFirstLetter(pokemon.identifier)}
+        </h2>
 
         <Link href="/pokemon/[pid]" as={`/pokemon/${pokemon.id + 1}`}>
           <LinkArrow direction="right" pokemonId={pokemon.id}>
@@ -109,12 +118,9 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
               </Avatar>
             </ListItemAvatar>
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Pokedex ID :</Typography>
+              <p css={{}}>Pokedex ID :</p>
             </Box>
-            <ListItemText
-              secondaryTypographyProps={{ align: "left" }}
-              secondary={pokemon.id}
-            />
+            <p>{pokemon.id}</p>
           </ListItem>
           <Divider />
           <ListItem>
@@ -128,7 +134,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
             </ListItemAvatar>
 
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Type :</Typography>
+              <p>Type :</p>
             </Box>
             <List>
               <ListItem>
@@ -154,7 +160,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
             </ListItemAvatar>
 
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Abilities :</Typography>
+              <p>Abilities :</p>
             </Box>
 
             {ability_list}
@@ -171,12 +177,9 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
               </Avatar>
             </ListItemAvatar>
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Height :</Typography>
+              <p>Height :</p>
             </Box>
-            <ListItemText
-              secondaryTypographyProps={{ align: "left" }}
-              secondary={pokemon.height}
-            />
+            <p> {pokemon.height}</p>
           </ListItem>
           <Divider />
 
@@ -190,12 +193,9 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
               </Avatar>
             </ListItemAvatar>
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Weight :</Typography>
+              <p>Weight :</p>
             </Box>
-            <ListItemText
-              secondaryTypographyProps={{ align: "left" }}
-              secondary={pokemon.weight}
-            />
+            <p> {pokemon.weight}</p>
           </ListItem>
           <Divider />
           <ListItem>
@@ -208,12 +208,9 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
               </Avatar>
             </ListItemAvatar>
             <Box textAlign="right" css={{ paddingRight: 5 }}>
-              <Typography variant="body1">Base Experience :</Typography>
+              <p>Base Experience :</p>
             </Box>
-            <ListItemText
-              secondaryTypographyProps={{ align: "left" }}
-              secondary={pokemon.base_experience}
-            />
+            <p>{pokemon.base_experience}</p>
           </ListItem>
         </List>
       </Paper>

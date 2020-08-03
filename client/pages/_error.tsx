@@ -10,15 +10,17 @@ interface Props {
 const Error: NextPage<Props> = ({ statusCode }) => {
   return (
     <div
-      css={{
-        backgroundColor: "lightgreen",
+      css={(theme) => ({
+        backgroundColor: theme.body.background,
+        color: theme.body.text,
+        fontFamily: "Impact",
         display: "flex",
         flexDirection: "column",
         height: "100vh",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-      }}
+      })}
     >
       <img
         css={{
@@ -31,7 +33,6 @@ const Error: NextPage<Props> = ({ statusCode }) => {
       <p
         css={{
           fontSize: 40,
-          fontFamily: "Impact",
         }}
       >
         {statusCode
@@ -42,15 +43,14 @@ const Error: NextPage<Props> = ({ statusCode }) => {
         <p
           css={{
             fontSize: 30,
-            fontFamily: "Impact",
           }}
         >
           Back to{" "}
           <a
-            css={{
-              color: "green",
+            css={(theme) => ({
+              color: theme.header.background,
               textDecoration: "underline",
-            }}
+            })}
           >
             Home
           </a>

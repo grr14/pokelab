@@ -3,6 +3,7 @@ import { withTheme } from "emotion-theming"
 import { mq } from "./constants"
 
 const makeGlobalStyles = (theme) => css`
+  @import url("https://fonts.googleapis.com/css?family=Montserrat");
   html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -16,6 +17,9 @@ const makeGlobalStyles = (theme) => css`
     padding: 0;
     height: 80%;
     width: 100%;
+  }
+  a {
+    text-decoration: none;
   }
   .slider {
     position: relative;
@@ -44,7 +48,7 @@ const makeGlobalStyles = (theme) => css`
   }
 
   polygon {
-    fill: ${theme.body.background} !important;
+    fill: ${theme.body.text} !important;
   }
 
   .slider a.previousButton:not(.disabled):hover,

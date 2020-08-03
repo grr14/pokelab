@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
@@ -5,9 +7,9 @@ import { useQuery } from "@apollo/react-hooks"
 import Link from "next/link"
 
 import Loading from "./Loading"
+import { capitalizeFirstLetter } from "../common/utils"
 
 import Card from "@material-ui/core/Card"
-import Typography from "@material-ui/core/Typography"
 import FavoriteIcon from "./FavoriteIcon"
 
 import {
@@ -36,11 +38,10 @@ const StyledCard = styled(Card)<StyledCardProps>`
   flex-direction: column;
   align-items: center;
 
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.3s ease-in;
 
   &:hover {
-    background-color: ${(props) => (props.loading ? "white" : "yellow")};
-    cursor: ${(props) => (props.loading ? "default" : "pointer")};
+    background-color: ${(props) => (props.loading ? "white" : "#FA8072")};
     box-shadow: ${(props) =>
       props.loading ? "none" : "0px 0px 15px 11px rgba(0, 0, 0, 0.75)"};
   }
@@ -77,15 +78,30 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon_id }) => {
   return (
     <StyledCard raised={true}>
       <FavoriteIcon />
-      <img
-        src={picture}
-        style={{ paddingTop: "5px", height: "200px", width: "200px" }}
-      />
       <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
-        <a>
-          <Typography gutterBottom variant="h5" component="h2">
-            {id} - {identifier}
-          </Typography>
+        <a
+          css={{
+            "&:hover": {
+              textDecoration: "underline",
+              cursor: "pointer",
+            },
+          }}
+        >
+          <img
+            src={picture}
+            css={{ paddingTop: "5px", height: "200px", width: "200px" }}
+          />
+
+          <h2
+            css={{
+              textAlign: "center",
+              marginBottom: "0.35em",
+              fontWeight: 400,
+              lineHeight: 1.334,
+            }}
+          >
+            #{id} - {capitalizeFirstLetter(identifier)}
+          </h2>
         </a>
       </Link>
     </StyledCard>

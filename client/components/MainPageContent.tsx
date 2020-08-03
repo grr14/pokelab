@@ -1,13 +1,8 @@
-import styled from "@emotion/styled"
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import StyledMainGrid from "./MainGrid"
 import CardContainer from "./CardContainer"
 import PokemonCard from "./PokemonCard"
-
-export const StyledMainContent = styled.div`
-  background-color: red;
-  padding: 0 1%;
-  flex: 1;
-`
 
 const MainPageContent: React.FC = () => {
   const displayPokemons = (min: number, max: number) => {
@@ -23,9 +18,14 @@ const MainPageContent: React.FC = () => {
   }
 
   return (
-    <StyledMainContent>
+    <div
+      css={{
+        padding: "0 1%",
+        flex: 1,
+      }}
+    >
       <StyledMainGrid>{displayPokemons(1, 151)}</StyledMainGrid>
-    </StyledMainContent>
+    </div>
   )
 }
 

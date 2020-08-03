@@ -25,7 +25,7 @@ const TypesRelationTable: React.FC<TypesRelationTableProps> = ({
     <div
       css={{
         width: "100%",
-        backgroundColor: "inherit",
+        fontFamily: "Trebuchet MS",
         display: "flex",
         flexFlow: "row wrap",
       }}
@@ -41,16 +41,21 @@ const TypesRelationTable: React.FC<TypesRelationTableProps> = ({
             flexDirection: "column",
           }}
         >
-          <CustomCell type={el} height={"50%"}>
+          <CustomCell
+            css={{
+              boxShadow: " 1px 1px 1px 0px rgba(0,0,0,0.75)",
+            }}
+            type={el}
+            height={"50%"}
+          >
             {getTypeFromId(el).slice(0, 3).toUpperCase()}
           </CustomCell>
           <CustomCell
             multiplier={typeRelation[idx + 1]}
             height={"50%"}
             css={{
-              marginTop: "1px",
-              textShadow:
-                "#000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px",
+              marginTop: "4px",
+              boxShadow: " 1px 1px 1px 0px rgba(0,0,0,0.75)",
             }}
           >
             {typeRelation[idx + 1]}

@@ -3,6 +3,7 @@ export type Theme = {
   body?: {
     background?: string
     text?: string
+    font?: string
   }
   header?: {
     background?: string

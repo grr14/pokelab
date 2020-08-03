@@ -3,12 +3,13 @@ import { Theme } from "./types"
 const lightTheme: Theme = {
   name: "lightTheme",
   body: {
-    background: "lightPink",
+    background: "ivory",
     text: "black",
+    font: "Montserrat",
   },
   header: {
-    background: "green",
-    text: "red",
+    background: "red",
+    text: "blue",
   },
   type: {
     bug: "#a8b820",

@@ -3,7 +3,6 @@ import { mq } from "../common/constants"
 
 const StyledMainGrid = styled.div`
   display: grid;
-  background-color: lightslategray;
   width: 100%;
   max-width: 100%;
   row-gap: 10px;
