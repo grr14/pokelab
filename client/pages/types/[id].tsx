@@ -2,29 +2,30 @@ import { useRouter } from "next/router"
 
 import Header from "../../components/Header"
 import MainContainer from "../../components/Container"
-import DetailedPokemon from "../../components/DetailedPokemon"
+import DetailedType from "../../components/DetailedType"
+
 import Error from "../_error"
 
 import { validateQuery } from "../../common/utils"
 
-const DetailedPokemonPage = () => {
+const DetailedTypePage = () => {
   const {
     query: { id },
   } = useRouter()
 
-  if (!validateQuery(id, "pokemon")) {
+  if (!validateQuery(id, "type")) {
     return <Error statusCode={404} />
   }
 
-  const pokemonId = Number(id)
-
+  const typeId = Number(id)
+  console.log(`typeid =${typeId}`)
   return (
     <MainContainer>
       <Header />
-      <DetailedPokemon id={pokemonId} />
+      <DetailedType id={typeId} />
       <footer>2020 grr</footer>
     </MainContainer>
   )
 }
 
-export default DetailedPokemonPage
+export default DetailedTypePage

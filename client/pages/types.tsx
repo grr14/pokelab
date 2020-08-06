@@ -5,10 +5,13 @@ import Header from "../components/Header"
 import MainContainer from "../components/Container"
 import CustomCell from "../components/CustomCell"
 import { getTypeFromId, capitalizeFirstLetter } from "../common/utils"
-import { NB_TYPES, TYPES_RELATIONS } from "../common/constants"
+import {
+  NB_TYPES,
+  TYPES_RELATIONS,
+  ATTACKS_MULTIPLIERS,
+} from "../common/constants"
 import Link from "next/link"
 import TypeDisplay from "../components/TypeDisplay"
-import { TableBody } from "@material-ui/core"
 
 type THook<T extends HTMLElement> = [React.RefObject<T>, boolean]
 
@@ -53,13 +56,13 @@ const Types = () => {
 
   const getEfficiency = (x: number, y: number) => {
     switch (TYPES_RELATIONS[x][y]) {
-      case 0:
+      case ATTACKS_MULTIPLIERS.IMMUNE:
         return "Ineffective"
-      case 0.5:
+      case ATTACKS_MULTIPLIERS.NOT_TOO_EFFECTIVE:
         return "Not efficient"
-      case 1:
+      case ATTACKS_MULTIPLIERS.NORMAL:
         return "Regular damage"
-      case 2:
+      case ATTACKS_MULTIPLIERS.VERY_EFFEECTIVE:
         return "Super efficient"
     }
   }
@@ -185,26 +188,30 @@ const Types = () => {
                   flexDirection: "column",
                 }}
               >
-                <div
-                  css={{
-                    height: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <img src={`/images/types/${el}.png`} />
-                </div>
-                <div
-                  css={{
-                    height: "20%",
-                    display: "flex",
-                    alignItems: "top",
-                    justifyContent: "center",
-                  }}
-                >
-                  {capitalizeFirstLetter(getTypeFromId(el))}
-                </div>
+                <Link href={`types/[pid]`} as={`types/${el}`}>
+                  <a css={{ height: "80%", width: "100%", cursor: "pointer" }}>
+                    <div
+                      css={{
+                        height: "50%",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img src={`/images/types/${el}.png`} />
+                    </div>
+                    <div
+                      css={{
+                        height: "30%",
+                        display: "flex",
+                        alignItems: "flex-end",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {capitalizeFirstLetter(getTypeFromId(el))}
+                    </div>
+                  </a>
+                </Link>
               </div>
             ))}
           </div>

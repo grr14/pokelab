@@ -41,3 +41,22 @@ export type Theme = {
     superEffective: string
   }
 }
+
+type AttackMultipliersIndex =
+  | "NOT_EFFECTIVE_AT_ALL"
+  | "NOT_TOO_EFFECTIVE"
+  | "IMMUNE"
+  | "NORMAL"
+  | "VERY_EFFECTIVE"
+  | "SUPER_EFFECTIVE"
+
+export type TypeEfficiency = {
+  [key in AttackMultipliersIndex]?: number
+}
+
+export type PokemonTypeEfficiency = {
+  [key in AttackMultipliersIndex]?: {
+    types: Array<number> | null
+    keyword: string
+  }
+}

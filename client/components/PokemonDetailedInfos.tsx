@@ -138,11 +138,20 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
             </Box>
             <List>
               <ListItem>
-                <TypeDisplay type={pokemon.type_1} />
+                <Link href={`/types/[pid]`} as={`/types/${pokemon.type_1}`}>
+                  <a>
+                    {" "}
+                    <TypeDisplay type={pokemon.type_1} />
+                  </a>
+                </Link>
               </ListItem>
               {pokemon.type_2 != null && (
                 <ListItem>
-                  <TypeDisplay type={pokemon.type_2} />
+                  <Link href={`/types/[pid]`} as={`/types/${pokemon.type_2}`}>
+                    <a>
+                      <TypeDisplay type={pokemon.type_2} />
+                    </a>
+                  </Link>
                 </ListItem>
               )}
             </List>

@@ -3,7 +3,6 @@ import { mq } from "../common/constants"
 
 const DetailedPokemonGrid = styled.div`
   flex: 1;
-  background-color: lightcyan;
   border: 1px solid black;
   border-radius: 30px;
   overflow: hidden;

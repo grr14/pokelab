@@ -1,11 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 
-import { TYPES_RELATIONS, TYPES, NB_TYPES } from "../common/constants"
+import {
+  TYPES_RELATIONS,
+  TYPES,
+  NB_TYPES,
+  ATTACKS_MULTIPLIERS,
+} from "../common/constants"
 import { getTypeFromId } from "../common/utils"
 
 import TypeDisplay from "./TypeDisplay"
 import CustomCell from "./CustomCell"
+
+import Link from "next/link"
 
 import Accordion from "@material-ui/core/Accordion"
 import AccordionSummary from "@material-ui/core/AccordionSummary"
@@ -13,6 +20,8 @@ import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
+import { TypeEfficiency, PokemonTypeEfficiency } from "../common/types"
+import { type } from "os"
 
 interface TypesRelationTableProps {
   typeRelation: Array<number>
@@ -43,7 +52,7 @@ const TypesRelationTable: React.FC<TypesRelationTableProps> = ({
         >
           <CustomCell
             css={{
-              boxShadow: " 1px 1px 1px 0px rgba(0,0,0,0.75)",
+              boxShadow: "1px 1px 1px 0px rgba(0,0,0,0.75)",
             }}
             type={el}
             height={"50%"}
@@ -55,7 +64,7 @@ const TypesRelationTable: React.FC<TypesRelationTableProps> = ({
             height={"50%"}
             css={{
               marginTop: "4px",
-              boxShadow: " 1px 1px 1px 0px rgba(0,0,0,0.75)",
+              boxShadow: "1px 1px 1px 0px rgba(0,0,0,0.75)",
             }}
           >
             {typeRelation[idx + 1]}
@@ -84,104 +93,50 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
     }
   }
 
-  const getImmuneAgainst = (relations: Array<number>) => {
-    const immuneAgainst = relations.reduce(
-      (acc, el, i) => (el === 0 && i != 0 ? [...acc, i] : acc),
-      []
-    )
-
-    return !immuneAgainst ? [] : immuneAgainst
+  const getEfficiency = (
+    relations: Array<number>,
+    multiplier: number
+  ): Array<number> | null => {
+    return relations
+      .reduce((acc, el, idx) => (el === multiplier ? [...acc, idx] : acc), [])
+      .filter((el) => el !== 0)
   }
 
-  const getSuperWeakAgainst = (relations: Array<number>) => {
-    const superWeakAgainst = relations.reduce(
-      (acc, el, i) => (el === 4 ? [...acc, i] : acc),
-      []
-    )
-
-    return superWeakAgainst
+  let pte: PokemonTypeEfficiency = {
+    NOT_EFFECTIVE_AT_ALL: { types: [], keyword: "super resistant" },
+    NOT_TOO_EFFECTIVE: { types: [], keyword: "resistant" },
+    IMMUNE: { types: [], keyword: "immune" },
+    NORMAL: { types: [], keyword: "" },
+    VERY_EFFECTIVE: { types: [], keyword: "weak" },
+    SUPER_EFFECTIVE: { types: [], keyword: "super weak" },
   }
 
-  const getWeakAgainst = (relations: Array<number>) => {
-    const weakAgainst = relations.reduce(
-      (acc, el, i) => (el === 2 ? [...acc, i] : acc),
-      []
-    )
-
-    return weakAgainst
+  for (let entry of Object.entries(ATTACKS_MULTIPLIERS)) {
+    const arr = getEfficiency(typesRelations, entry[1])
+    pte[entry[0]].types = arr
   }
 
-  const getResistantAgainst = (relations: Array<number>) => {
-    const resistantAgainst = relations.reduce(
-      (acc, el, i) => (el === 0.5 ? [...acc, i] : acc),
-      []
-    )
-
-    return resistantAgainst
+  let descriptions = Array<JSX.Element>(5)
+  for (const key in pte) {
+    if (key === "NORMAL") {
+      continue
+    }
+    pte[key].types.length > 0
+      ? descriptions.push(
+          <span>
+            This pokemon is {pte[key].keyword} to{" "}
+            {pte[key].types.map((type) => (
+              <Link href={`/types/[pid]`} as={`/types/${type}`}>
+                <a>
+                  <TypeDisplay key={type} type={type as TYPES} />
+                </a>
+              </Link>
+            ))}{" "}
+            types-attacks.
+          </span>
+        )
+      : descriptions.push(null)
   }
-
-  const getSuperResistantAgainst = (relations: Array<number>) => {
-    const superResistantAgainst = relations.reduce(
-      (acc, el, i) => (el === 0.25 ? [...acc, i] : acc),
-      []
-    )
-
-    return superResistantAgainst
-  }
-
-  const superWeakAgainst =
-    type_2 != null && getSuperWeakAgainst(typesRelations).length > 0 ? (
-      <span>
-        This pokémon is super weak against{" "}
-        {getSuperWeakAgainst(typesRelations).map((type) => (
-          <TypeDisplay key={type} type={type as TYPES} />
-        ))}{" "}
-        type-attacks.
-      </span>
-    ) : null
-
-  const weakAgainst = getWeakAgainst(typesRelations) ? (
-    <span>
-      This pokémon is weak against{" "}
-      {getWeakAgainst(typesRelations).map((type) => (
-        <TypeDisplay key={type} type={type as TYPES} />
-      ))}{" "}
-      type-attacks.
-    </span>
-  ) : null
-
-  const resistantAgainst =
-    getResistantAgainst(typesRelations).length > 0 ? (
-      <span>
-        This pokémon is resistant against{" "}
-        {getResistantAgainst(typesRelations).map((type) => (
-          <TypeDisplay key={type} type={type as TYPES} />
-        ))}{" "}
-        type-attacks.
-      </span>
-    ) : null
-
-  const superResistantAgainst =
-    type_2 != null && getSuperResistantAgainst(typesRelations).length > 0 ? (
-      <span>
-        This pokémon is super resistant against{" "}
-        {getSuperResistantAgainst(typesRelations).map((type) => (
-          <TypeDisplay key={type} type={type as TYPES} />
-        ))}{" "}
-        type-attacks.
-      </span>
-    ) : null
-
-  const immuneAgainst =
-    getImmuneAgainst(typesRelations).length > 0 ? (
-      <span>
-        This pokémon is immune against{" "}
-        {getImmuneAgainst(typesRelations).map((type) => (
-          <TypeDisplay key={type} type={type as TYPES} />
-        ))}{" "}
-        type-attacks.
-      </span>
-    ) : null
 
   return (
     <div css={{ width: "80%", paddingTop: "10px" }}>
@@ -195,11 +150,9 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
         </AccordionSummary>
         <AccordionDetails>
           <List>
-            <ListItem>{superWeakAgainst}</ListItem>
-            <ListItem>{weakAgainst}</ListItem>
-            <ListItem>{resistantAgainst}</ListItem>
-            <ListItem>{superResistantAgainst}</ListItem>
-            <ListItem>{immuneAgainst}</ListItem>
+            {descriptions.map((item) => (
+              <ListItem>{item}</ListItem>
+            ))}
           </List>
         </AccordionDetails>
       </Accordion>

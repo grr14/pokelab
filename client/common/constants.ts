@@ -1,3 +1,5 @@
+import { TypeEfficiency } from "./types"
+
 export const BREAKPOINTS = [300, 600, 900, 1060, 1280, 1440, 1680, 1920, 2180]
 
 export const mq = BREAKPOINTS.map((bp) => `@media (min-width: ${bp}px)`)
@@ -386,3 +388,12 @@ tmp_types_relations[TYPES.FAIRY][TYPES.DARK] = 2
 tmp_types_relations[TYPES.FAIRY][TYPES.FAIRY] = 1
 
 export const TYPES_RELATIONS = [...tmp_types_relations]
+
+export const ATTACKS_MULTIPLIERS: TypeEfficiency = {
+  NOT_EFFECTIVE_AT_ALL: 0.25,
+  NOT_TOO_EFFECTIVE: 0.5,
+  IMMUNE: 0,
+  NORMAL: 1,
+  VERY_EFFECTIVE: 2,
+  SUPER_EFFECTIVE: 4,
+}

@@ -1,10 +1,16 @@
-import { LAST_POKEMON_ID, TYPES } from "./constants"
+import { LAST_POKEMON_ID, TYPES, NB_TYPES } from "./constants"
 
-/*  check the router query for detailed pokemon is correct */
-export const validateQuery = (query: string | string[]) => {
+/*  check the router query for detailed pokemon/type pages */
+export const validateQuery = (query: string | string[], page: string) => {
   const numb = Number(query)
-  if (isNaN(numb) || numb > LAST_POKEMON_ID || numb < 1) {
-    return false
+  if (page === "pokemon") {
+    if (isNaN(numb) || numb > LAST_POKEMON_ID || numb < 1) {
+      return false
+    }
+  } else if (page === "type") {
+    if (isNaN(numb) || numb > NB_TYPES || numb < 1) {
+      return false
+    }
   }
   return true
 }
