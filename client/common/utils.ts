@@ -1,4 +1,10 @@
-import { LAST_POKEMON_ID, TYPES, NB_TYPES } from "./constants"
+import {
+  LAST_POKEMON_ID,
+  TYPES,
+  NB_TYPES,
+  ATTACKS_MULTIPLIERS,
+} from "./constants"
+import { PokemonTypeEfficiency } from "./types"
 
 /*  check the router query for detailed pokemon/type pages */
 export const validateQuery = (query: string | string[], page: string) => {
@@ -60,4 +66,16 @@ export const getTypeFromId = (id: number) => {
 
 export const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
+/* return an array of type affecting a pokemon (superweak, resistant...)*/
+export const getEfficiency = (
+  relations: Array<
+    number
+  > /* relations between the pokemon type(s) and other types */,
+  multiplier: number
+): Array<number> | null => {
+  return relations
+    .reduce((acc, el, idx) => (el === multiplier ? [...acc, idx] : acc), [])
+    .filter((el) => el !== 0)
 }

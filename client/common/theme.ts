@@ -7,6 +7,9 @@ const lightTheme: Theme = {
     text: "black",
     font: "Montserrat",
   },
+  main: {
+    background: "white",
+  },
   header: {
     background: "red",
     text: "blue",

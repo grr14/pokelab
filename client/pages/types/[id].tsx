@@ -18,7 +18,6 @@ const DetailedTypePage = () => {
   }
 
   const typeId = Number(id)
-  console.log(`typeid =${typeId}`)
   return (
     <MainContainer>
       <Header />

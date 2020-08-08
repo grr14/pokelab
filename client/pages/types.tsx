@@ -62,7 +62,7 @@ const Types = () => {
         return "Not efficient"
       case ATTACKS_MULTIPLIERS.NORMAL:
         return "Regular damage"
-      case ATTACKS_MULTIPLIERS.VERY_EFFEECTIVE:
+      case ATTACKS_MULTIPLIERS.VERY_EFFECTIVE:
         return "Super efficient"
     }
   }

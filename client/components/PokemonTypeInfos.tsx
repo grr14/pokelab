@@ -7,7 +7,7 @@ import {
   NB_TYPES,
   ATTACKS_MULTIPLIERS,
 } from "../common/constants"
-import { getTypeFromId } from "../common/utils"
+import { getTypeFromId, getEfficiency } from "../common/utils"
 
 import TypeDisplay from "./TypeDisplay"
 import CustomCell from "./CustomCell"
@@ -20,8 +20,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
-import { TypeEfficiency, PokemonTypeEfficiency } from "../common/types"
-import { type } from "os"
+import { PokemonTypeEfficiency } from "../common/types"
 
 interface TypesRelationTableProps {
   typeRelation: Array<number>
@@ -93,22 +92,13 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
     }
   }
 
-  const getEfficiency = (
-    relations: Array<number>,
-    multiplier: number
-  ): Array<number> | null => {
-    return relations
-      .reduce((acc, el, idx) => (el === multiplier ? [...acc, idx] : acc), [])
-      .filter((el) => el !== 0)
-  }
-
   let pte: PokemonTypeEfficiency = {
-    NOT_EFFECTIVE_AT_ALL: { types: [], keyword: "super resistant" },
-    NOT_TOO_EFFECTIVE: { types: [], keyword: "resistant" },
-    IMMUNE: { types: [], keyword: "immune" },
-    NORMAL: { types: [], keyword: "" },
-    VERY_EFFECTIVE: { types: [], keyword: "weak" },
-    SUPER_EFFECTIVE: { types: [], keyword: "super weak" },
+    NOT_EFFECTIVE_AT_ALL: { types: [], details: "super resistant" },
+    NOT_TOO_EFFECTIVE: { types: [], details: "resistant" },
+    IMMUNE: { types: [], details: "immune" },
+    NORMAL: { types: [], details: "" },
+    VERY_EFFECTIVE: { types: [], details: "weak" },
+    SUPER_EFFECTIVE: { types: [], details: "super weak" },
   }
 
   for (let entry of Object.entries(ATTACKS_MULTIPLIERS)) {
@@ -121,21 +111,21 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
     if (key === "NORMAL") {
       continue
     }
-    pte[key].types.length > 0
-      ? descriptions.push(
-          <span>
-            This pokemon is {pte[key].keyword} to{" "}
-            {pte[key].types.map((type) => (
-              <Link href={`/types/[pid]`} as={`/types/${type}`}>
-                <a>
-                  <TypeDisplay key={type} type={type as TYPES} />
-                </a>
-              </Link>
-            ))}{" "}
-            types-attacks.
-          </span>
-        )
-      : descriptions.push(null)
+    descriptions.push(
+      pte[key].types.length > 0 ? (
+        <span>
+          This pokemon is {pte[key].details} to{" "}
+          {pte[key].types.map((type) => (
+            <Link href={`/types/[pid]`} as={`/types/${type}`}>
+              <a>
+                <TypeDisplay key={type} type={type as TYPES} />
+              </a>
+            </Link>
+          ))}{" "}
+          types-attacks.
+        </span>
+      ) : null
+    )
   }
 
   return (

@@ -5,6 +5,9 @@ export type Theme = {
     text?: string
     font?: string
   }
+  main?: {
+    background: string
+  }
   header?: {
     background?: string
     text?: string
@@ -45,10 +48,10 @@ export type Theme = {
 type AttackMultipliersIndex =
   | "NOT_EFFECTIVE_AT_ALL"
   | "NOT_TOO_EFFECTIVE"
-  | "IMMUNE"
   | "NORMAL"
   | "VERY_EFFECTIVE"
   | "SUPER_EFFECTIVE"
+  | "IMMUNE"
 
 export type TypeEfficiency = {
   [key in AttackMultipliersIndex]?: number
@@ -57,6 +60,6 @@ export type TypeEfficiency = {
 export type PokemonTypeEfficiency = {
   [key in AttackMultipliersIndex]?: {
     types: Array<number> | null
-    keyword: string
+    details: string
   }
 }
