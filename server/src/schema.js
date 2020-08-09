@@ -4,6 +4,7 @@ typeDefs = gql`
   type Query {
     pokemon(id: Int): Pokemon
     pokemonPartial(id: Int): Pokemon
+    pokemonByTypeId(id: Int): [Pokemon]
     pokemonSprites(id: Int): [Sprite]
     abilityById(id: Int): Ability
     abilitiesByPokemonId(id: Int): [Ability]

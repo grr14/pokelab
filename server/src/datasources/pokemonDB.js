@@ -1,5 +1,9 @@
 const { DataSource } = require("apollo-datasource")
 const { parse } = require("../utils")
+const { Op } = require("sequelize")
+
+const NB_POKEMON = 807
+const NB_TYPES = 18
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -8,7 +12,7 @@ class pokemonDB extends DataSource {
   }
 
   async findPokemonPartial({ id }) {
-    if (id > 807) return null
+    if (id < 0 || id > NB_POKEMON) return null
 
     let pokemon = await this.store.pokemon.findOne({
       attributes: ["id", "identifier", "picture"],
@@ -19,7 +23,7 @@ class pokemonDB extends DataSource {
   }
 
   async findPokemon({ id }) {
-    if (id > 807) return null
+    if (id < 0 || id > NB_POKEMON) return null
 
     let pokemon = await this.store.pokemon.findOne({ where: { id: id } })
 
@@ -42,6 +46,23 @@ class pokemonDB extends DataSource {
     }))
 
     return { ...pokemon.dataValues, abilities: ability_array }
+  }
+
+  async findPokemonsByTypeId({ id }) {
+    if (id < 0 || id > NB_TYPES) {
+      return null
+    }
+
+    const pokemons = await this.store.pokemon.findAll({
+      attributes: ["id", "identifier", "type_1", "type_2", "picture"],
+      where: {
+        [Op.or]: [{ type_1: id }, { type_2: id }],
+      },
+    })
+
+    //console.log(pokemons)
+
+    return pokemons
   }
 
   async getPokemonSprites({ id }) {
