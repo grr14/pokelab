@@ -101,7 +101,7 @@ const Types = () => {
       return (
         <CustomCell
           key={idx}
-          onMouseEnter={() => handleMouseEnter(lineIdx, idx)}
+          onMouseOver={() => handleMouseEnter(lineIdx, idx)}
           css={{
             boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.75)",
             borderRadius: "50px 50px 50px 50px",
@@ -130,6 +130,7 @@ const Types = () => {
   return (
     <MainContainer>
       <Header />
+
       <div
         css={(theme) => ({
           flex: 1,
@@ -144,143 +145,178 @@ const Types = () => {
         })}
       >
         <div
-          css={{
-            width: "80%",
-            textAlign: "justify",
-          }}
+          className="innerContainer"
+          css={(theme) => ({
+            backgroundColor: theme.main.background,
+            boxSizing: "border-box",
+            padding: "1% 2%",
+            flex: 1,
+            border: "1px solid black",
+            borderRadius: "30px",
+            overflow: "hidden",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          })}
         >
-          <h2>Explaination</h2>
-          <p>
-            Types are properties for Pokémon and their moves. Each Pokemon can
-            have either one or two types, whereas a Pokemon move can only be of
-            exactly one type. Since the Generation VI, there are 18 different
-            types (see the table below). This makes a total of 171-unique types
-            combinations (e.g. Normal/Flying equals Flying/Normal). To this day,
-            154 combinations have been used for the Pokémon, giving us 17
-            remaining.A Pokémon attacking with a move of the same type as him
-            will get a damage bonus of +50%, which stacks multiplicatively with
-            the weakness(es) of the opposing Pokémon.
-          </p>
-        </div>
-
-        <div
-          css={{
-            width: "80%",
-          }}
-        >
-          <h2>Type List</h2>
           <div
             css={{
-              width: "100%",
-              backgroundColor: "inherit",
-              display: "flex",
-              flexFlow: "row wrap",
+              width: "90%",
+              textAlign: "justify",
             }}
           >
-            {[...Array(NB_TYPES + 1).keys()].slice(1).map((el) => (
-              <div
-                key={el}
-                css={{
-                  width: "5em",
-                  height: "10em",
-                  padding: "2px",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <Link href={`types/[pid]`} as={`types/${el}`}>
-                  <a css={{ height: "80%", width: "100%", cursor: "pointer" }}>
-                    <div
-                      css={{
-                        height: "50%",
-                        display: "flex",
-                        alignItems: "flex-end",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <img src={`/images/types/${el}.png`} />
-                    </div>
-                    <div
-                      css={{
-                        height: "30%",
-                        display: "flex",
-                        alignItems: "flex-end",
-                        justifyContent: "center",
-                        "&:hover": {
-                          textDecoration: "underline",
-                        },
-                      }}
-                    >
-                      {capitalizeFirstLetter(getTypeFromId(el))}
-                    </div>
-                  </a>
-                </Link>
-              </div>
-            ))}
+            <h2>Explaination</h2>
+            <p>
+              Types are properties for Pokémon and their moves. Each Pokemon can
+              have either one or two types, whereas a Pokemon move can only be
+              of exactly one type. Since the Generation VI, there are 18
+              different types (see the table below). This makes a total of
+              171-unique types combinations (e.g. Normal/Flying equals
+              Flying/Normal). To this day, 154 combinations have been used for
+              the Pokémon, giving us 17 remaining.A Pokémon attacking with a
+              move of the same type as him will get a damage bonus of +50%,
+              which stacks multiplicatively with the weakness(es) of the
+              opposing Pokémon.
+            </p>
           </div>
-        </div>
-        <div
-          css={{
-            width: "80%",
-          }}
-        >
-          <h2>Type Matrix</h2>
-          <p>
-            Each type has its own weaknesses and strengths against the others.
-            The damage of attacking moves is multiplied by the coefficients
-            displayed in the table below :
-          </p>
+
           <div
             css={{
-              display: "flex",
-              justifyContent: "space-around",
-              alignContent: "center",
-              alignItems: "center",
+              width: "90%",
             }}
           >
+            <h2>Type List</h2>
             <div
               css={{
-                display: "grid",
-                gridTemplateColumns: "repeat(19,2.5em)",
-                gridTemplateRows: "repeat(19,2.5em)",
-                gridColumnGap: "2px",
-                gridRowGap: "2px",
-                padding: "5px",
-                boxSizing: "border-box",
+                width: "100%",
+                backgroundColor: "inherit",
+                display: "flex",
+                flexFlow: "row wrap",
               }}
-              ref={divRef}
             >
-              {typeIconsLine()}
-              {typeRelationsTable()}
+              {[...Array(NB_TYPES + 1).keys()].slice(1).map((el) => (
+                <div
+                  key={el}
+                  css={{
+                    width: "5em",
+                    height: "10em",
+                    padding: "2px",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  <Link href={`types/[pid]`} as={`types/${el}`}>
+                    <a
+                      css={{ height: "80%", width: "100%", cursor: "pointer" }}
+                    >
+                      <div
+                        css={{
+                          height: "50%",
+                          display: "flex",
+                          alignItems: "flex-end",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <img src={`/images/types/${el}.png`} />
+                      </div>
+                      <div
+                        css={{
+                          height: "30%",
+                          display: "flex",
+                          alignItems: "flex-end",
+                          justifyContent: "center",
+                          "&:hover": {
+                            textDecoration: "underline",
+                          },
+                        }}
+                      >
+                        {capitalizeFirstLetter(getTypeFromId(el))}
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              ))}
             </div>
-            {divIsHovered && coordinates.attacker > 0 ? (
-              <div css={{ flex: 1, textAlign: "center" }}>
-                <p>
-                  <TypeDisplay size="medium" type={coordinates.attacker} /> VS{" "}
-                  <TypeDisplay size="medium" type={coordinates.defender} /> :{" "}
-                  {getEfficiency(coordinates.attacker, coordinates.defender)}
-                </p>
-              </div>
-            ) : (
-              <div css={{ flex: 1 }}></div>
-            )}
           </div>
-          <p>
-            The row axis represents the type of the <b>attacking move</b>.
-            <br />
-            The columns represent the type of the <b>defender</b>.
-            <br />
-            For example : Electric-type moves are strong against Water-type
-            Pokemon (multiplier = 2). However, they are weak against Plant-type
-            Pokemon (multiplier = 0.5) and don't affect Ground-type Pokemon
-            (multiplier = 0).
-            <br />A lot of Pokemon have 2 types. You can find a Type Matrix
-            generator for dual type Pokémon{" "}
-            <Link href={`types/generator`}>
-              <a>here</a>
-            </Link>
-            .
-          </p>
+          <div
+            css={{
+              width: "80%",
+            }}
+          >
+            <h2>Type Matrix</h2>
+            <p>
+              Each type has its own weaknesses and strengths against the others.
+              The damage of attacking moves is multiplied by the coefficients
+              displayed in the table below :
+            </p>
+            <div
+              css={{
+                display: "flex",
+                justifyContent: "space-around",
+                alignContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div
+                css={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(19,2.5em)",
+                  gridTemplateRows: "repeat(19,2.5em)",
+                  gridColumnGap: "2px",
+                  gridRowGap: "2px",
+                  padding: "5px",
+                  boxSizing: "border-box",
+                }}
+                ref={divRef}
+              >
+                {typeIconsLine()}
+                {typeRelationsTable()}
+              </div>
+              {divIsHovered && coordinates.attacker > 0 ? (
+                <div
+                  css={{
+                    flex: 1,
+                    textAlign: "center",
+                    display: "grid",
+                    gridTemplate: "1fr 1fr 1fr 1fr/ 1fr",
+                    justifyItems: "center",
+                  }}
+                >
+                  <TypeDisplay size="medium" type={coordinates.attacker} />
+                  <span>VS </span>
+                  <TypeDisplay size="medium" type={coordinates.defender} />
+                  <span>
+                    <b>
+                      →{" "}
+                      {getEfficiency(
+                        coordinates.attacker,
+                        coordinates.defender
+                      )}
+                    </b>
+                  </span>
+                </div>
+              ) : (
+                <div css={{ flex: 1 }}></div>
+              )}
+            </div>
+            <p>
+              The row axis represents the type of the <b>attacking move</b>.
+              <br />
+              The columns represent the type of the <b>defender</b>.
+              <br />
+              For example : Electric-type moves are strong against Water-type
+              Pokemon (multiplier = 2). However, they are weak against
+              Plant-type Pokemon (multiplier = 0.5) and don't affect Ground-type
+              Pokemon (multiplier = 0).
+              <br />A lot of Pokemon have 2 types. You can find a Type Matrix
+              generator for dual type Pokémon{" "}
+              <Link href={`types/generator`}>
+                <a>here</a>
+              </Link>
+              .
+            </p>
+          </div>
         </div>
       </div>
       <footer>grr 2020</footer>

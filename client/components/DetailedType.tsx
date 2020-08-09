@@ -38,6 +38,8 @@ const DetailedType: React.FC<Props> = ({ id }) => {
       >
         <h1>Type : {getTypeFromId(id)}</h1>
 
+        <Divider variant="middle" />
+
         <div className="upperSection" css={{ marginBottom: "15px" }}>
           <TypeRelationsSection id={id} />
         </div>

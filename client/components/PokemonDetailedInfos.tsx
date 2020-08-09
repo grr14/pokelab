@@ -140,7 +140,6 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
               <ListItem>
                 <Link href={`/types/[pid]`} as={`/types/${pokemon.type_1}`}>
                   <a>
-                    {" "}
                     <TypeDisplay size="medium" type={pokemon.type_1} />
                   </a>
                 </Link>
