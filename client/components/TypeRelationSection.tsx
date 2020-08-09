@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core"
+import { jsx, css } from "@emotion/core"
+
 import { PokemonTypeEfficiency } from "../common/types"
 import {
   getTypeFromId,
@@ -10,16 +11,29 @@ import {
   TYPES_RELATIONS,
   ATTACKS_MULTIPLIERS,
   TYPES,
+  mq,
 } from "../common/constants"
+import TypeDisplay from "../components/TypeDisplay"
 
 import React from "react"
 import Link from "next/link"
 
-import TypeDisplay from "../components/TypeDisplay"
-
 interface Props {
   id: number
 }
+
+const sectionCss = css`
+  display: flex;
+  flex-wrap: wrap;
+  ${mq[0]} {
+    flex-direction: column;
+    align-items: center;
+  }
+  ${mq[3]} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+`
 
 const TypeRelationsSection: React.FC<Props> = ({ id }) => {
   let typesRelationsAttack = TYPES_RELATIONS[id]
@@ -89,21 +103,61 @@ const TypeRelationsSection: React.FC<Props> = ({ id }) => {
     let section = Array<JSX.Element>(3)
     for (const key in pte) {
       if (
+        /* These keys ony matter for double-types */
         key === "NOT_EFFECTIVE_AT_ALL" ||
         key === "NORMAL" ||
         key === "SUPER_EFFECTIVE"
       ) {
         continue
       }
+      const length = pte[key].types.length
       section.push(
-        pte[key].types.length > 0 ? (
-          <div key={key} css={{ width: "50%" }}>
-            <h1>{pte[key].details}</h1>
-            <div>
+        length > 0 ? (
+          <div
+            key={key}
+            css={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              [mq[0]]: {
+                width: "100%",
+              },
+              [mq[3]]: {
+                width: "50%",
+              },
+            }}
+          >
+            <h3>{pte[key].details}</h3>
+            <div
+              css={{
+                display: "grid",
+                gridColumnGap: "3px",
+                gridRowGap: "3px",
+                [mq[0]]: {
+                  gridTemplate:
+                    length < 3
+                      ? `1fr/ repeat(${length},1fr)`
+                      : `1fr 1fr 1fr/ repeat(3,1fr)`,
+                },
+                [mq[3]]: {
+                  gridTemplate:
+                    length < 4
+                      ? `1fr/ repeat(${length},1fr)`
+                      : `1fr 1fr/ repeat(4,1fr)`,
+                },
+                [mq[5]]: {
+                  gridTemplate:
+                    length < 5
+                      ? `1fr/ repeat(${length},1fr)`
+                      : `1fr 1fr/ repeat(5,1fr)`,
+                },
+              }}
+            >
               {pte[key].types.map((type) => (
                 <Link key={type} href={`/types/[pid]`} as={`/types/${type}`}>
                   <a>
-                    <TypeDisplay size="medium" type={type as TYPES} />
+                    <TypeDisplay size="medium" type={type as TYPES} />{" "}
                   </a>
                 </Link>
               ))}
@@ -118,23 +172,11 @@ const TypeRelationsSection: React.FC<Props> = ({ id }) => {
   return (
     <React.Fragment>
       <h2 css={{ textAlign: "center" }}>ATTACK</h2>
-      <div
-        className="typeRelationGrid"
-        css={{
-          display: "flex",
-          flexWrap: "wrap" /* the children element have a width of 50% */,
-        }}
-      >
+      <div className="typeRelationGrid" css={sectionCss}>
         {typeRelationSection(pteAttack)}
       </div>
       <h2 css={{ textAlign: "center" }}>DEFENSE</h2>
-      <div
-        className="typeRelationGrid"
-        css={{
-          display: "flex",
-          flexWrap: "wrap" /* the children element have a width of 50% */,
-        }}
-      >
+      <div className="typeRelationGrid" css={sectionCss}>
         {typeRelationSection(pteDefense)}
       </div>
     </React.Fragment>

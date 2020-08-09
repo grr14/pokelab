@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { getTypeFromId } from "../common/utils"
+import { getTypeFromId, capitalizeFirstLetter } from "../common/utils"
 
 import React from "react"
 import TypeRelationsSection from "./TypeRelationSection"
@@ -36,7 +36,19 @@ const DetailedType: React.FC<Props> = ({ id }) => {
           flexDirection: "column",
         })}
       >
-        <h1>Type : {getTypeFromId(id)}</h1>
+        <div
+          css={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h1>Type : {capitalizeFirstLetter(getTypeFromId(id))}</h1>
+          <img
+            css={{ width: "64px", height: "64px" }}
+            src={`/images/types/${id}.png`}
+          />
+        </div>
 
         <Divider variant="middle" />
 

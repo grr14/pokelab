@@ -4,7 +4,7 @@ import { type, damage } from "./constants"
 const lightTheme: Theme = {
   name: "lightTheme",
   body: {
-    background: "ivory",
+    background: "#B8B8B8",
     text: "black",
     font: "Montserrat",
   },
@@ -12,12 +12,12 @@ const lightTheme: Theme = {
     background: "white",
   },
   card: {
-    background: "linen",
-    backgroundHover: "NavajoWhite",
+    background: "#F0F0F0",
+    backgroundHover: "#D4D4D4",
   },
   header: {
-    background: "red",
-    text: "blue",
+    background: "#7F7F7F",
+    text: "white",
   },
   boxShadow: {
     small: "0px 0px 5px 5px",

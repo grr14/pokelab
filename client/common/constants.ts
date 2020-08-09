@@ -1,6 +1,24 @@
 import { TypeEfficiency } from "./types"
 
-export const BREAKPOINTS = [300, 600, 900, 1060, 1280, 1440, 1680, 1920, 2180]
+/* 
+mq[0]: phones
+mq[2]: ipad
+mq[2]: phone landscape
+mq[4]: ipad landscape / small computer
+mq[6]: computer
+*/
+export const BREAKPOINTS = [
+  300,
+  600,
+  750,
+  900,
+  1020,
+  1280,
+  1440,
+  1680,
+  1920,
+  2180,
+]
 
 export const mq = BREAKPOINTS.map((bp) => `@media (min-width: ${bp}px)`)
 

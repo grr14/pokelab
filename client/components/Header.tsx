@@ -1,3 +1,6 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
+
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
@@ -9,7 +12,12 @@ import Link from "next/link"
 export default function Header() {
   return (
     <div>
-      <AppBar position="static">
+      <AppBar
+        css={(theme) => ({
+          backgroundColor: `${theme.header.background} !important`,
+        })}
+        position="static"
+      >
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu">
             <Link href="/">

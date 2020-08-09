@@ -14,7 +14,7 @@ import React from "react"
 
 import Card from "@material-ui/core/Card"
 import TypeDisplay from "./TypeDisplay"
-import { TYPES } from "../common/constants"
+import { TYPES, mq } from "../common/constants"
 import { capitalizeFirstLetter } from "../common/utils"
 
 interface Props {
@@ -54,7 +54,16 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
     <React.Fragment>
       <div css={{ paddingBottom: "15px" }}>
         <h2>Some statistics : </h2>
-        <div css={{ display: "flex", justifyContent: "space-evenly" }}>
+        <div
+          css={{
+            [mq[0]]: {
+              display: "grid",
+              gridTemplate: "1fr 1fr / 1fr 1fr",
+              justifyItems: "start",
+            },
+            [mq[2]]: { display: "flex", justifyContent: "space-evenly" },
+          }}
+        >
           <span>
             Total number: <b>{pokemons.length}</b>
           </span>
@@ -72,9 +81,31 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
       <div
         css={{
           display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr",
-          gridTemplateRows: "1fr 1fr 1fr 1fr 1fr 1fr",
-          gap: "5px 5px",
+          gridAutoFlow: "row",
+          [mq[0]]: {
+            gridTemplateColumns: "1fr",
+            gap: "5px 5px",
+          },
+          [mq[1]]: {
+            gridTemplateColumns: "repeat(2,1fr)",
+            gap: "5px 5px",
+          },
+          [mq[2]]: {
+            gridTemplateColumns: "repeat(3,1fr)",
+            gap: "5px 5px",
+          },
+          [mq[4]]: {
+            gridTemplateColumns: "repeat(4,1fr)",
+            gap: "5px 5px",
+          },
+          [mq[6]]: {
+            gridTemplateColumns: "repeat(5,1fr)",
+            gap: "7px 7px",
+          },
+          [mq[7]]: {
+            gridTemplateColumns: "repeat(6,1fr)",
+            gap: "10px 10px",
+          },
         }}
       >
         {pokemons.map((pokemon) => (
@@ -92,6 +123,12 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
                 boxShadow: `${theme.boxShadow.small} ${theme.boxShadow.color}`,
                 backgroundColor: `${theme.card.backgroundHover} !important`,
               },
+              [mq[0]]: {
+                "&:last-of-type": { marginBottom: "7px" },
+              },
+              [mq[1]]: {
+                "&:last-of-type": { marginBottom: 0 },
+              },
             })}
           >
             <Link href={`/pokemon/[pid]`} as={`/pokemon/${pokemon.id}`}>
@@ -104,9 +141,9 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
                 <div
                   css={{
                     gridColumnStart: 1,
-                    gridColumnEnd: "span 2",
+                    gridColumnEnd: 1,
                     gridRowStart: 1,
-                    gridRowEnd: 1,
+                    gridRowEnd: "span 2",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
@@ -115,8 +152,11 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
                 >
                   <img
                     css={{
-                      width: "3.5em",
-                      height: "3.5em",
+                      [mq[0]]: {
+                        width: "6em",
+                        height: "6em",
+                      },
+                      [mq[1]]: { width: "5em", height: "5em" },
                     }}
                     src={pokemon.picture}
                   />
@@ -129,7 +169,7 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
                     alignItems: "center",
                     justifyContent: "space-evenly",
                     boxSizing: "border-box",
-                    padding: "0 5px",
+                    padding: "5px",
                   }}
                 >
                   <span>#{pokemon.id}</span>
@@ -151,6 +191,7 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "space-evenly",
+                paddingBottom: "5px",
               }}
             >
               <Link href={`/types/[pid]`} as={`/types/${pokemon.type_1}`}>
