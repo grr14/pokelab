@@ -1,26 +1,27 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
-import { Theme } from "../common/types"
+import { Theme, Size } from "../common/types"
 import { TYPES } from "../common/constants"
 import { getTypeFromId } from "../common/utils"
 
 type TypeProps = {
   type: TYPES
+  size: Size
   theme?: Theme
 }
 
 const TypeContainer = styled.span<TypeProps>`
   font-size: 15px;
-
   font-family: "Trebuchet MS";
   font-weight: bold;
   width: 6em;
   text-align: center;
   display: inline-block;
-  border: 0.1em solid transparent;
-  padding: 0.1em 0.2em 0.2em;
-  margin: 0.1em 0.015em;
+  border: ${(props) =>
+    props.size === "small" ? "none" : "0.1em solid transparent"};
+  padding: ${(props) => (props.size === "small" ? 0 : "0.1em 0.2em 0.2em")};
+  margin: ${(props) => (props.size === "small" ? 0 : "0.1em 0.015em")};
   border-radius: 0.4em;
 
   background-color: ${(props) => {
@@ -65,9 +66,9 @@ const TypeContainer = styled.span<TypeProps>`
   }};
 `
 
-const TypeDisplay: React.FC<TypeProps> = ({ type }) => {
+const TypeDisplay: React.FC<TypeProps> = ({ type, size }) => {
   return (
-    <TypeContainer type={type}>
+    <TypeContainer size={size} type={type}>
       <span
         css={{
           textTransform: "uppercase",

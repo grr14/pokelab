@@ -1,0 +1,9 @@
+query getPokemonsByTypeId($id: Int!) {
+  pokemonByTypeId(id: $id) {
+    id
+    identifier
+    type_1
+    type_2
+    picture
+  }
+}

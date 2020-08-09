@@ -7,6 +7,7 @@ import { useQuery } from "@apollo/react-hooks"
 import Link from "next/link"
 
 import Loading from "./Loading"
+import { Theme } from "../common/types"
 import { capitalizeFirstLetter } from "../common/utils"
 
 import Card from "@material-ui/core/Card"
@@ -29,6 +30,7 @@ const GET_POKEMON = gql`
 
 type StyledCardProps = {
   loading?: number
+  theme?: Theme
 }
 
 const StyledCard = styled(Card)<StyledCardProps>`
@@ -38,12 +40,17 @@ const StyledCard = styled(Card)<StyledCardProps>`
   flex-direction: column;
   align-items: center;
 
-  transition: background-color 0.3s ease-in;
+  transition: background-color 0.2s ease-in;
 
   &:hover {
-    background-color: ${(props) => (props.loading ? "white" : "#FA8072")};
+    background-color: ${(props) =>
+      props.loading
+        ? props.theme.card.background
+        : props.theme.card.backgroundHover};
     box-shadow: ${(props) =>
-      props.loading ? "none" : "0px 0px 15px 11px rgba(0, 0, 0, 0.75)"};
+      props.loading
+        ? "none"
+        : `${props.theme.boxShadow.medium} ${props.theme.boxShadow.color}`};
   }
 `
 

@@ -141,7 +141,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
                 <Link href={`/types/[pid]`} as={`/types/${pokemon.type_1}`}>
                   <a>
                     {" "}
-                    <TypeDisplay type={pokemon.type_1} />
+                    <TypeDisplay size="medium" type={pokemon.type_1} />
                   </a>
                 </Link>
               </ListItem>
@@ -149,7 +149,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
                 <ListItem>
                   <Link href={`/types/[pid]`} as={`/types/${pokemon.type_2}`}>
                     <a>
-                      <TypeDisplay type={pokemon.type_2} />
+                      <TypeDisplay size="medium" type={pokemon.type_2} />
                     </a>
                   </Link>
                 </ListItem>

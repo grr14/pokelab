@@ -97,13 +97,17 @@ const TypeRelationsSection: React.FC<Props> = ({ id }) => {
       }
       section.push(
         pte[key].types.length > 0 ? (
-          <div css={{ width: "50%" }}>
+          <div key={key} css={{ width: "50%" }}>
             <h1>{pte[key].details}</h1>
             <div>
               {pte[key].types.map((type) => (
                 <Link href={`/types/[pid]`} as={`/types/${type}`}>
                   <a>
-                    <TypeDisplay key={type} type={type as TYPES} />
+                    <TypeDisplay
+                      key={type}
+                      size="medium"
+                      type={type as TYPES}
+                    />
                   </a>
                 </Link>
               ))}

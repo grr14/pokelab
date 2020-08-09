@@ -118,7 +118,7 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
           {pte[key].types.map((type) => (
             <Link href={`/types/[pid]`} as={`/types/${type}`}>
               <a>
-                <TypeDisplay key={type} type={type as TYPES} />
+                <TypeDisplay key={type} size="medium" type={type as TYPES} />
               </a>
             </Link>
           ))}{" "}

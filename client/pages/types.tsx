@@ -206,6 +206,9 @@ const Types = () => {
                         display: "flex",
                         alignItems: "flex-end",
                         justifyContent: "center",
+                        "&:hover": {
+                          textDecoration: "underline",
+                        },
                       }}
                     >
                       {capitalizeFirstLetter(getTypeFromId(el))}
@@ -253,8 +256,8 @@ const Types = () => {
             {divIsHovered && coordinates.attacker > 0 ? (
               <div css={{ flex: 1, textAlign: "center" }}>
                 <p>
-                  <TypeDisplay type={coordinates.attacker} /> VS{" "}
-                  <TypeDisplay type={coordinates.defender} /> :{" "}
+                  <TypeDisplay size="medium" type={coordinates.attacker} /> VS{" "}
+                  <TypeDisplay size="medium" type={coordinates.defender} /> :{" "}
                   {getEfficiency(coordinates.attacker, coordinates.defender)}
                 </p>
               </div>
