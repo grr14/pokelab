@@ -1,15 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import styled from "@emotion/styled"
-import { Theme } from "../common/types"
 
 import Link from "next/link"
 
-import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generated__/getPokemonById"
-import { LAST_POKEMON_ID } from "../common/constants"
 import PokemonTypeInfos from "./PokemonTypeInfos"
 import TypeDisplay from "./TypeDisplay"
+import LinkArrow from "./LinkArrow"
 import { capitalizeFirstLetter } from "../common/utils"
+
+import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generated__/getPokemonById"
 
 import Box from "@material-ui/core/Box"
 import Paper from "@material-ui/core/Paper"
@@ -24,32 +23,6 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-type ArrowProps = {
-  pokemonId: number
-  direction: string
-  theme?: Theme
-}
-
-const LinkArrow = styled.div<ArrowProps>`
-  font-size: 3em;
-  color: ${(props: ArrowProps) => props.theme?.body?.text};
-  padding: ${(props: ArrowProps) =>
-    props.direction === "left" ? "0 0 0 10px" : "0 10px 0 0"};
-  visibility: ${(props: ArrowProps) =>
-    (props.pokemonId === 1 && props.direction === "left") ||
-    (props.pokemonId === LAST_POKEMON_ID && props.direction === "right")
-      ? "hidden"
-      : "visible"};
-
-  &:hover {
-    cursor: ${(props: ArrowProps) =>
-      (props.pokemonId === 1 && props.direction === "left") ||
-      (props.pokemonId === LAST_POKEMON_ID && props.direction === "right")
-        ? "default"
-        : "pointer"};
-  }
-`
 
 interface Props {
   pokemon: Pokemon
@@ -79,7 +52,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
         }}
       >
         <Link href="/pokemon/[pid]" as={`/pokemon/${pokemon.id - 1}`}>
-          <LinkArrow direction="left" pokemonId={pokemon.id}>
+          <LinkArrow direction="left" size="medium" pokemonId={pokemon.id}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </LinkArrow>
         </Link>
@@ -95,7 +68,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
         </h2>
 
         <Link href="/pokemon/[pid]" as={`/pokemon/${pokemon.id + 1}`}>
-          <LinkArrow direction="right" pokemonId={pokemon.id}>
+          <LinkArrow direction="right" size="medium" pokemonId={pokemon.id}>
             <FontAwesomeIcon icon={faChevronRight} />
           </LinkArrow>
         </Link>

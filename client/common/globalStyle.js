@@ -60,7 +60,7 @@ const makeGlobalStyles = (theme) => css`
 
   .slider a.previousButton {
     ${mq[0]} {
-      left: 20px;
+      left: 10px;
     }
     ${mq[3]} {
       left: 75px;
@@ -72,7 +72,7 @@ const makeGlobalStyles = (theme) => css`
 
   .slider a.nextButton {
     ${mq[0]} {
-      right: 20px;
+      right: 10px;
     }
     ${mq[3]} {
       right: 75px;
