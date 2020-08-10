@@ -1,5 +1,5 @@
 const { DataSource } = require("apollo-datasource")
-const { parse } = require("../utils")
+const { parse, isEmptyArray } = require("../utils")
 const { Op } = require("sequelize")
 
 const NB_POKEMON = 807
@@ -69,6 +69,10 @@ class pokemonDB extends DataSource {
     const sprites = await this.store.sprites.findAll({
       where: { pokemon_id: id },
     })
+    if (isEmptyArray(sprites)) {
+      return null
+    }
+
     return sprites
   }
 
