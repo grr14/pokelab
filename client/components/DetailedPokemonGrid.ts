@@ -9,17 +9,32 @@ interface Props {
 const DetailedPokemonGrid = styled.div<Props>`
   background-color: ${(props) => props.theme.main.background};
   box-sizing: border-box;
-
+  flex: 1;
+  height: 100%;
   overflow: hidden;
   display: grid;
+  justify-content: center;
+
+  /* ------------------- mobile view --------------------- */
 
   ${mq[0]} {
     grid-template-columns: 1fr;
     grid-template-rows: 250px 1fr 1fr;
   }
-  ${mq[1]} {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 66.6% 33.3%;
+
+  /* ------------------- desktop view --------------------- */
+
+  ${mq[3]} {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 300px 1fr;
+  }
+  ${mq[4]} {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 300px 1fr;
+  }
+  ${mq[5]} {
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 300px auto;
   }
 `
 

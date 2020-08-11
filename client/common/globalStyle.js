@@ -62,11 +62,12 @@ const makeGlobalStyles = (theme) => css`
     ${mq[0]} {
       left: 10px;
     }
+
     ${mq[3]} {
-      left: 75px;
+      left: 0px;
     }
-    ${mq[6]} {
-      left: 250px;
+    ${mq[5]} {
+      left: 15px;
     }
   }
 
@@ -74,11 +75,12 @@ const makeGlobalStyles = (theme) => css`
     ${mq[0]} {
       right: 10px;
     }
+
     ${mq[3]} {
-      right: 75px;
+      right: 0px;
     }
-    ${mq[6]} {
-      right: 250px;
+    ${mq[5]} {
+      right: 15px;
     }
   }
 

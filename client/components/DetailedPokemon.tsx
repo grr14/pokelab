@@ -23,6 +23,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 import { capitalizeFirstLetter } from "../common/utils"
+import PokemonSummary from "./PokemonSummary"
 
 const GET_POKEMON = gql`
   query getPokemonById($id: Int!) {
@@ -61,6 +62,10 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
   if (loading) return <p>loading</p>
   if (error) return <p>error</p>
 
+  const { identifier, picture, ...rest } = data.pokemon
+
+  console.log(identifier, picture)
+
   return (
     <div
       className="outerContainer"
@@ -95,27 +100,19 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               alignItems: "center",
               alignContent: "center",
             },
-            [mq[1]]: {
+            [mq[3]]: {
               display: "none",
             },
           }}
         >
-          <Link href="/pokemon/[pid]" as={`/pokemon/${data.pokemon.id - 1}`}>
-            <LinkArrow
-              direction="left"
-              size="small"
-              pokemonId={data.pokemon.id}
-            >
+          <Link href="/pokemon/[pid]" as={`/pokemon/${id - 1}`}>
+            <LinkArrow direction="left" size="small" pokemonId={id}>
               <FontAwesomeIcon icon={faChevronLeft} />
             </LinkArrow>
           </Link>
-          <h1>{capitalizeFirstLetter(data.pokemon.identifier)}</h1>
-          <Link href="/pokemon/[pid]" as={`/pokemon/${data.pokemon.id + 1}`}>
-            <LinkArrow
-              direction="right"
-              size="small"
-              pokemonId={data.pokemon.id}
-            >
+          <h1>{capitalizeFirstLetter(identifier)}</h1>
+          <Link href="/pokemon/[pid]" as={`/pokemon/${id + 1}`}>
+            <LinkArrow direction="right" size="small" pokemonId={id}>
               <FontAwesomeIcon icon={faChevronRight} />
             </LinkArrow>
           </Link>
@@ -128,11 +125,20 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               display: "flex",
               flexDirection: "column",
               alignContent: "center",
-              justifyContent: "space-evenly",
+              justifyContent: "center",
+              boxSizing: "border-box",
+              flex: 1,
+              [mq[0]]: { width: "100%" },
+              [mq[1]]: {
+                width: "60%",
+                justifySelf: "center",
+              },
+              [mq[3]]: { width: "100%", margin: 0 },
             })}
           >
-            {<PokemonImagesCarousel id={id} picture={data.pokemon.picture} />}
+            {<PokemonImagesCarousel id={id} picture={picture} />}
           </div>
+
           <div
             css={{
               backgroundColor: "red",
@@ -141,8 +147,11 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               alignContent: "center",
               justifyContent: "space-between",
               alignItems: "center",
-
-              [mq[1]]: {
+              [mq[0]]: {
+                gridColumnStart: "1",
+                gridRowStart: "3",
+              },
+              [mq[3]]: {
                 gridColumnStart: "2",
                 gridRowStart: "1",
                 gridRowEnd: "span 2",
@@ -150,9 +159,14 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               },
             }}
           >
-            {/*<PokemonDetailedInfos pokemon={data.pokemon} />*/}
+            {
+              <PokemonDetailedInfos
+                pokemon={{ identifier, picture, ...rest }}
+              />
+            }
           </div>
-          <MovesContainer></MovesContainer>
+
+          <PokemonSummary pokemon={{ identifier, picture, ...rest }} />
         </DetailedPokemonGrid>
       </div>
     </div>

@@ -60,12 +60,22 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
     const divArray = []
     for (let i = 0; i < urls?.length; i++) {
       divArray.push(
-        <div key={i} css={{ height: "100%", width: "100%" }}>
+        <div
+          key={i}
+          css={{
+            height: "100%",
+            width: "100%",
+          }}
+        >
           <img
             css={{
               [mq[0]]: {
-                height: "60%",
-                width: "60%",
+                height: "175px",
+                width: "175px",
+              },
+              [mq[3]]: {
+                height: "200px",
+                width: "200px",
               },
             }}
             src={urls[i]}
@@ -75,10 +85,10 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
               position: "absolute",
               fontSize: "1em",
               [mq[0]]: {
-                bottom: " 10px",
+                bottom: "0px",
               },
-              [mq[1]]: {
-                bottom: "15%",
+              [mq[3]]: {
+                bottom: "10px",
               },
             }}
           >

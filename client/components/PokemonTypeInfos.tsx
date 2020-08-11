@@ -116,9 +116,9 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
         <span>
           This pokemon is {pte[key].details} to{" "}
           {pte[key].types.map((type) => (
-            <Link href={`/types/[pid]`} as={`/types/${type}`}>
+            <Link key={type} href={`/types/[pid]`} as={`/types/${type}`}>
               <a>
-                <TypeDisplay key={type} size="medium" type={type as TYPES} />
+                <TypeDisplay size="medium" type={type as TYPES} />
               </a>
             </Link>
           ))}{" "}
@@ -140,8 +140,8 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
         </AccordionSummary>
         <AccordionDetails>
           <List>
-            {descriptions.map((item) => (
-              <ListItem>{item}</ListItem>
+            {descriptions.map((item, idx) => (
+              <ListItem key={idx}>{item}</ListItem>
             ))}
           </List>
         </AccordionDetails>
