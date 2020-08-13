@@ -9,7 +9,7 @@ const StyledLoading = styled.div`
   align-items: center;
 `
 
-const Loading: React.FC = () => {
+const CardLoading: React.FC = () => {
   return (
     <StyledLoading>
       <CircularProgress />
@@ -17,4 +17,4 @@ const Loading: React.FC = () => {
   )
 }
 
-export default Loading
+export default CardLoading

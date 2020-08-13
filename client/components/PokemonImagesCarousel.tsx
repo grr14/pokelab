@@ -2,9 +2,9 @@
 import { jsx } from "@emotion/core"
 import React from "react"
 import Slider from "react-animated-slider"
+import { capitalizeFirstLetter } from "../common/utils"
 import { mq } from "../common/constants"
-import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+
 import {
   getPokemonSpritesById,
   getPokemonSpritesByIdVariables,
@@ -15,6 +15,9 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import gql from "graphql-tag"
+import { useQuery } from "@apollo/react-hooks"
 
 const GET_SPRITES = gql`
   query getPokemonSpritesById($id: Int!) {
@@ -92,7 +95,7 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
               },
             }}
           >
-            <i>{descriptions[i]}</i>
+            <i>{capitalizeFirstLetter(descriptions[i])}</i>
           </p>
         </div>
       )

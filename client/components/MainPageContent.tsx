@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import StyledMainGrid from "./MainGrid"
-import CardContainer from "./CardContainer"
+import PokedexGrid from "./PokedexGrid"
+import { CardContainer } from "./Containers"
 import PokemonCard from "./PokemonCard"
 
 const MainPageContent: React.FC = () => {
@@ -24,7 +24,7 @@ const MainPageContent: React.FC = () => {
         flex: 1,
       }}
     >
-      <StyledMainGrid>{displayPokemons(1, 151)}</StyledMainGrid>
+      <PokedexGrid>{displayPokemons(1, 151)}</PokedexGrid>
     </div>
   )
 }

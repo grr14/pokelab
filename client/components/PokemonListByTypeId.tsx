@@ -41,8 +41,18 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
     variables: { id: id },
   })
 
-  if (loading) return <p>loading</p>
-  if (error) return <p>error</p>
+  if (loading)
+    return (
+      <div>
+        <p>Loading...</p>
+      </div>
+    )
+  if (error)
+    return (
+      <div>
+        <p>error</p>
+      </div>
+    )
 
   const pokemons = data.pokemonByTypeId
   const monotype = pokemons.filter(

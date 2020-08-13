@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import { mq } from "../common/constants"
 
-const StyledMainGrid = styled.div`
+const PokedexPGrid = styled.div`
   display: grid;
   width: 100%;
   max-width: 100%;
@@ -13,14 +13,17 @@ const StyledMainGrid = styled.div`
     grid-template-columns: 1fr;
   }
   ${mq[1]} {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   ${mq[2]} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   ${mq[3]} {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  ${mq[4]} {
+    grid-template-columns: repeat(5, 1fr);
   }
 `
 
-export default StyledMainGrid
+export default PokedexPGrid

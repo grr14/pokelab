@@ -6,12 +6,13 @@ import { useQuery } from "@apollo/react-hooks"
 
 import Link from "next/link"
 
-import Loading from "./Loading"
 import { Theme } from "../common/types"
 import { capitalizeFirstLetter } from "../common/utils"
 
-import Card from "@material-ui/core/Card"
 import FavoriteIcon from "./FavoriteIcon"
+import CardLoading from "./CardLoading"
+
+import Card from "@material-ui/core/Card"
 
 import {
   getPokemonPartialById,
@@ -74,7 +75,7 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon_id }) => {
           height: "260px",
         }}
       >
-        <Loading />
+        <CardLoading />
       </StyledCard>
     )
 

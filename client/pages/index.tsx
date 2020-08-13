@@ -1,5 +1,5 @@
 import Header from "../components/Header"
-import MainContainer from "../components/Container"
+import { MainContainer } from "../components/Containers"
 import MainPageContent from "../components/MainPageContent"
 
 export default function Home() {

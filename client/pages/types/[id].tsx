@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
 
 import Header from "../../components/Header"
-import MainContainer from "../../components/Container"
+import { MainContainer } from "../../components/Containers"
 import DetailedType from "../../components/DetailedType"
 
 import Error from "../_error"

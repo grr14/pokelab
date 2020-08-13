@@ -1,8 +1,9 @@
 import { Global, css } from "@emotion/core"
 import { withTheme } from "emotion-theming"
+import { Theme } from "./types"
 import { mq } from "./constants"
 
-const makeGlobalStyles = (theme) => css`
+const makeGlobalStyles = (theme: Theme) => css`
   @import url("https://fonts.googleapis.com/css?family=Montserrat");
   html {
     font-family: sans-serif;
@@ -134,7 +135,7 @@ const makeGlobalStyles = (theme) => css`
 `
 
 const GlobalStyle = withTheme(({ theme }) => (
-  <Global styles={makeGlobalStyles(theme)} />
+  <Global styles={makeGlobalStyles(theme as Theme)} />
 ))
 
 export default GlobalStyle

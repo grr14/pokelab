@@ -4,7 +4,11 @@ import { jsx } from "@emotion/core"
 import React from "react"
 
 import Header from "../components/Header"
-import MainContainer from "../components/Container"
+import {
+  MainContainer,
+  OuterContainer,
+  InnerContainer,
+} from "../components/Containers"
 
 import CustomCell from "../components/CustomCell"
 import TypeDisplay from "../components/TypeDisplay"
@@ -110,35 +114,8 @@ const Types = () => {
     <MainContainer>
       <Header />
 
-      <div
-        className="outerContainer"
-        css={(theme) => ({
-          flex: 1,
-          backgroundColor: theme.body.color,
-          color: theme.body.text,
-          fontFamily: theme.body.font,
-          padding: "2%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        })}
-      >
-        <div
-          className="innerContainer"
-          css={(theme) => ({
-            backgroundColor: theme.main.background,
-            boxSizing: "border-box",
-            padding: "1% 2%",
-            flex: 1,
-            border: "1px solid black",
-            borderRadius: "30px",
-            overflow: "hidden",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          })}
-        >
+      <OuterContainer>
+        <InnerContainer>
           <div
             css={{
               [mq[0]]: {
@@ -330,8 +307,8 @@ const Types = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </InnerContainer>
+      </OuterContainer>
       <footer>grr 2020</footer>
     </MainContainer>
   )

@@ -25,6 +25,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
     <>
       <div
         css={{
+          /* Hide on mobile */
           [mq[0]]: {
             display: "none",
           },

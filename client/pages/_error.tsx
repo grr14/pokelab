@@ -2,6 +2,7 @@
 import { jsx } from "@emotion/core"
 import { NextPage } from "next"
 import Link from "next/link"
+import { MainContainer } from "../components/Containers"
 
 interface Props {
   statusCode: number
@@ -9,18 +10,13 @@ interface Props {
 
 const Error: NextPage<Props> = ({ statusCode }) => {
   return (
-    <div
-      css={(theme) => ({
-        backgroundColor: theme.body.background,
-        color: theme.body.text,
+    <MainContainer
+      css={{
         fontFamily: "Impact",
-        display: "flex",
-        flexDirection: "column",
-        height: "100vh",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-      })}
+      }}
     >
       <img
         css={{
@@ -56,7 +52,7 @@ const Error: NextPage<Props> = ({ statusCode }) => {
           </a>
         </p>
       </Link>
-    </div>
+    </MainContainer>
   )
 }
 
