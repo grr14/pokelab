@@ -64,8 +64,6 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
 
   const { identifier, picture, ...rest } = data.pokemon
 
-  console.log(identifier, picture)
-
   return (
     <div
       className="outerContainer"

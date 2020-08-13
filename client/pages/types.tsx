@@ -1,41 +1,22 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import React, { useEffect, useState, useRef } from "react"
+
+import React from "react"
+
 import Header from "../components/Header"
 import MainContainer from "../components/Container"
+
 import CustomCell from "../components/CustomCell"
+import TypeDisplay from "../components/TypeDisplay"
 import { getTypeFromId, capitalizeFirstLetter } from "../common/utils"
 import {
+  mq,
   NB_TYPES,
   TYPES_RELATIONS,
   ATTACKS_MULTIPLIERS,
 } from "../common/constants"
+
 import Link from "next/link"
-import TypeDisplay from "../components/TypeDisplay"
-
-type THook<T extends HTMLElement> = [React.RefObject<T>, boolean]
-
-export const useMouseHover = <T extends HTMLElement>(): THook<T> => {
-  const [hovered, setHovered] = useState(false)
-  const ref = useRef<T>(null)
-
-  useEffect(() => {
-    const handleMouseOver = (): void => setHovered(true)
-    const handleMouseOut = (): void => setHovered(false)
-    const node = ref && ref.current
-
-    if (node) {
-      node.addEventListener("mouseover", handleMouseOver)
-      node.addEventListener("mouseout", handleMouseOut)
-      return () => {
-        node.removeEventListener("mouseover", handleMouseOver)
-        node.removeEventListener("mouseout", handleMouseOut)
-      }
-    }
-  }, [ref])
-
-  return [ref, hovered]
-}
 
 interface Coordinates {
   attacker: number
@@ -43,8 +24,6 @@ interface Coordinates {
 }
 
 const Types = () => {
-  const [divRef, divIsHovered] = useMouseHover<HTMLDivElement>()
-
   const [coordinates, setCoordinates] = React.useState<Coordinates>({
     attacker: 0,
     defender: 0,
@@ -132,6 +111,7 @@ const Types = () => {
       <Header />
 
       <div
+        className="outerContainer"
         css={(theme) => ({
           flex: 1,
           backgroundColor: theme.body.color,
@@ -141,7 +121,6 @@ const Types = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          alignItems: "center",
         })}
       >
         <div
@@ -162,8 +141,14 @@ const Types = () => {
         >
           <div
             css={{
-              width: "90%",
-              textAlign: "justify",
+              [mq[0]]: {
+                width: "100%",
+                textAlign: "start",
+              },
+              [mq[4]]: {
+                width: "90%",
+                textAlign: "justify",
+              },
             }}
           >
             <h2>Explaination</h2>
@@ -183,14 +168,14 @@ const Types = () => {
 
           <div
             css={{
-              width: "90%",
+              [mq[0]]: { width: "100%" },
+              [mq[4]]: { width: "90%" },
             }}
           >
             <h2>Type List</h2>
             <div
               css={{
                 width: "100%",
-                backgroundColor: "inherit",
                 display: "flex",
                 flexFlow: "row wrap",
               }}
@@ -238,84 +223,112 @@ const Types = () => {
                 </div>
               ))}
             </div>
-          </div>
-          <div
-            css={{
-              width: "80%",
-            }}
-          >
-            <h2>Type Matrix</h2>
-            <p>
-              Each type has its own weaknesses and strengths against the others.
-              The damage of attacking moves is multiplied by the coefficients
-              displayed in the table below :
-            </p>
+
             <div
+              className="typeMatrix"
               css={{
-                display: "flex",
-                justifyContent: "space-around",
-                alignContent: "center",
-                alignItems: "center",
+                width: "100%",
               }}
             >
+              <h2>Type Matrix</h2>
+              <p>
+                Each type has its own weaknesses and strengths against the
+                others. The damage of attacking moves is multiplied by the
+                coefficients displayed in the table below :
+              </p>
               <div
                 css={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(19,2.5em)",
-                  gridTemplateRows: "repeat(19,2.5em)",
-                  gridColumnGap: "2px",
-                  gridRowGap: "2px",
-                  padding: "5px",
-                  boxSizing: "border-box",
+                  display: "flex",
+                  justifyContent: "start",
+                  alignContent: "center",
+                  width: "100%",
+                  [mq[0]]: { flexDirection: "column" },
+                  [mq[5]]: { flexDirection: "row" },
                 }}
-                ref={divRef}
               >
-                {typeIconsLine()}
-                {typeRelationsTable()}
-              </div>
-              {divIsHovered && coordinates.attacker > 0 ? (
                 <div
                   css={{
-                    flex: 1,
-                    textAlign: "center",
                     display: "grid",
-                    gridTemplate: "1fr 1fr 1fr 1fr/ 1fr",
-                    justifyItems: "center",
+                    gridTemplateColumns: "repeat(19,2.5em)",
+                    gridTemplateRows: "repeat(19,2.5em)",
+                    gridColumnGap: "2px",
+                    gridRowGap: "2px",
+                    padding: "5px",
+                    boxSizing: "border-box",
+                    overflowX: "auto",
                   }}
                 >
-                  <TypeDisplay size="medium" type={coordinates.attacker} />
-                  <span>VS </span>
-                  <TypeDisplay size="medium" type={coordinates.defender} />
-                  <span>
-                    <b>
-                      →{" "}
-                      {getEfficiency(
-                        coordinates.attacker,
-                        coordinates.defender
-                      )}
-                    </b>
-                  </span>
+                  {typeIconsLine()}
+                  {typeRelationsTable()}
                 </div>
-              ) : (
-                <div css={{ flex: 1 }}></div>
-              )}
+                {coordinates.attacker > 0 ? (
+                  <div
+                    css={{
+                      flex: 1,
+                      display: "flex",
+                      [mq[0]]: {
+                        margin: "2em 0",
+                        flexDirection: "row",
+                        justifyItems: "center",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      },
+                      [mq[5]]: {
+                        marginLeft: "4em",
+                        flexDirection: "column",
+                        justifyItems: "flex-start",
+                        justifyContent: "center",
+                        alignItems: "flex-start",
+                      },
+                    }}
+                  >
+                    <div
+                      css={{
+                        [mq[5]]: {
+                          display: "flex",
+                          flexDirection: "column",
+                          alignItems: "center",
+                        },
+                      }}
+                    >
+                      <TypeDisplay size="medium" type={coordinates.attacker} />{" "}
+                      <span>VS </span>
+                      <TypeDisplay
+                        size="medium"
+                        type={coordinates.defender}
+                      />{" "}
+                      <span>
+                        <b>
+                          →{" "}
+                          {getEfficiency(
+                            coordinates.attacker,
+                            coordinates.defender
+                          )}
+                        </b>
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <div css={{ flex: 1 }}></div>
+                )}
+              </div>
+              <p>
+                The row axis represents the type of the <b>attacking move</b>.
+                <br />
+                The columns represent the type of the <b>defender</b>.
+                <br />
+                For example : Electric-type moves are strong against Water-type
+                Pokemon (multiplier = 2). However, they are weak against
+                Plant-type Pokemon (multiplier = 0.5) and don't affect
+                Ground-type Pokemon (multiplier = 0).
+                <br />A lot of Pokemon have 2 types. You can find a Type Matrix
+                generator for dual type Pokémon{" "}
+                <Link href={`types/generator`}>
+                  <a>here</a>
+                </Link>
+                .
+              </p>
             </div>
-            <p>
-              The row axis represents the type of the <b>attacking move</b>.
-              <br />
-              The columns represent the type of the <b>defender</b>.
-              <br />
-              For example : Electric-type moves are strong against Water-type
-              Pokemon (multiplier = 2). However, they are weak against
-              Plant-type Pokemon (multiplier = 0.5) and don't affect Ground-type
-              Pokemon (multiplier = 0).
-              <br />A lot of Pokemon have 2 types. You can find a Type Matrix
-              generator for dual type Pokémon{" "}
-              <Link href={`types/generator`}>
-                <a>here</a>
-              </Link>
-              .
-            </p>
           </div>
         </div>
       </div>
