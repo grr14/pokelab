@@ -43,6 +43,7 @@ const GET_POKEMON = gql`
         id
         identifier
       }
+      evolution_chain_id
       picture
     }
   }

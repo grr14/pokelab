@@ -4,6 +4,7 @@ import { jsx } from "@emotion/core"
 import Link from "next/link"
 
 import PokemonTypeInfos from "./PokemonTypeInfos"
+import PokemonEvolution from "./PokemonEvolution"
 import LinkArrow from "./LinkArrow"
 import { capitalizeFirstLetter } from "../common/utils"
 import { mq } from "../common/constants"
@@ -61,7 +62,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
           </LinkArrow>
         </Link>
       </div>
-
+      <PokemonEvolution id={pokemon.evolution_chain_id} />
       <PokemonTypeInfos type_1={pokemon.type_1} type_2={pokemon.type_2} />
     </>
   )

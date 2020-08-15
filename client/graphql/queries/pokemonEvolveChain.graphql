@@ -1,0 +1,32 @@
+query pokemonEvolveChain($id: Int) {
+    pokemonEvolveChain(id: $id) {
+      id
+      identifier
+      type_1
+      type_2
+      evolve_from_pokemon_id
+      evolution_chain_id
+      picture
+      evolution {
+        evolved_pokemon_id
+        evolution_trigger
+        trigger_item
+        minimum_level
+        gender
+        location
+        held_item
+        time_of_day
+        known_move
+        known_move_type
+        minimum_happiness
+        minimum_beauty
+        minimum_affection
+        physical_stats
+        pokemon_in_party
+        pokemon_type_in_party
+        trading_species
+        overworld_rain
+        device_upside_down
+      }
+    }
+  }

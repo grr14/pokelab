@@ -27,6 +27,7 @@ export interface getPokemonById_pokemon {
   type_2: number | null;
   abilities: (getPokemonById_pokemon_abilities | null)[] | null;
   picture: string | null;
+  evolution_chain_id: number | null;
 }
 
 export interface getPokemonById {

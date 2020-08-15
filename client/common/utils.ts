@@ -79,3 +79,7 @@ export const getEfficiency = (
     .reduce((acc, el, idx) => (el === multiplier ? [...acc, idx] : acc), [])
     .filter((el) => el !== 0)
 }
+
+/* count occurences of every value in array  */
+export const countOccurrences = (arr: Array<any>): { [key: string]: any } =>
+  arr.reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {})
