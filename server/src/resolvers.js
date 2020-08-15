@@ -8,6 +8,8 @@ module.exports = {
       dataSources.pokemonDB.findPokemonsByTypeId({ id }),
     pokemonSprites: async (_, { id }, { dataSources }, __) =>
       dataSources.pokemonDB.getPokemonSprites({ id }),
+    pokemonEvolveChain: async (_, { id }, { dataSources }, __) =>
+      dataSources.pokemonDB.getPokemonEvolveChain({ id }),
     abilityById: async (_, { id }, { dataSources }, __) =>
       dataSources.pokemonDB.getAbilityById({ id }),
   },

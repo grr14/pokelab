@@ -4,6 +4,7 @@ const { Op } = require("sequelize")
 
 const NB_POKEMON = 807
 const NB_TYPES = 18
+const NB_EVOLVE_CHAIN = 427
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -45,7 +46,15 @@ class pokemonDB extends DataSource {
       identifier: ability.dataValues.identifier,
     }))
 
-    return { ...pokemon.dataValues, abilities: ability_array }
+    const evolution = await this.store.evolutions.findOne({
+      where: { evolved_pokemon_id: id },
+    })
+
+    return {
+      ...pokemon.dataValues,
+      abilities: ability_array,
+      evolution: !!evolution ? evolution.dataValues : null,
+    }
   }
 
   async findPokemonsByTypeId({ id }) {
@@ -60,8 +69,6 @@ class pokemonDB extends DataSource {
       },
     })
 
-    //console.log(pokemons)
-
     return pokemons
   }
 
@@ -74,6 +81,41 @@ class pokemonDB extends DataSource {
     }
 
     return sprites
+  }
+
+  async getPokemonEvolveChain({ id }) {
+    if (id > NB_EVOLVE_CHAIN) {
+      return null
+    }
+    const allEvolutionChain = await this.store.pokemon.findAll({
+      attributes: [
+        "id",
+        "identifier",
+        "type_1",
+        "type_2",
+        "evolve_from_pokemon_id",
+        "evolution_chain_id",
+        "picture",
+      ],
+      where: { evolution_chain_id: id },
+      order: [["ordre", "ASC"]],
+    })
+
+    let allEvolutionsDatas
+    await Promise.all(
+      (allEvolutionsDatas = allEvolutionChain.map(async (pokemon) => {
+        let evolution = await this.store.evolutions.findOne({
+          where: { evolved_pokemon_id: pokemon.id },
+        })
+        let p = {
+          ...pokemon.dataValues,
+          evolution: !!evolution ? evolution.dataValues : null,
+        }
+        return p
+      }))
+    )
+
+    return allEvolutionsDatas
   }
 
   reduceAbility(ability) {

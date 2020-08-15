@@ -102,10 +102,15 @@ module.exports.createStore = () => {
     },
     type_2: {
       type: DataTypes.INTEGER,
-      allowNull: false,
     },
     abilities: {
       type: DataTypes.STRING,
+    },
+    evolve_from_pokemon_id: {
+      type: DataTypes.INTEGER,
+    },
+    evolution_chain_id: {
+      type: DataTypes.INTEGER,
     },
     picture: {
       type: DataTypes.STRING,
@@ -184,5 +189,78 @@ module.exports.createStore = () => {
     },
   })
 
-  return { db, pokemon, sprites, abilities, pokemon_abilities /*region,*/ }
+  const evolutions = db.define("pokemon_evolution", {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    evolved_pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    evolution_trigger: {
+      type: DataTypes.INTEGER,
+    },
+    trigger_item: {
+      type: DataTypes.INTEGER,
+    },
+    minimum_level: {
+      type: DataTypes.INTEGER,
+    },
+    gender: {
+      type: DataTypes.INTEGER,
+    },
+    location: {
+      type: DataTypes.INTEGER,
+    },
+    held_item: {
+      type: DataTypes.INTEGER,
+    },
+    time_of_day: {
+      type: DataTypes.STRING,
+    },
+    known_move: {
+      type: DataTypes.INTEGER,
+    },
+    known_move_type: {
+      type: DataTypes.INTEGER,
+    },
+    minimum_happiness: {
+      type: DataTypes.INTEGER,
+    },
+    minimum_beauty: {
+      type: DataTypes.INTEGER,
+    },
+    minimum_affection: {
+      type: DataTypes.INTEGER,
+    },
+    physical_stats: {
+      type: DataTypes.INTEGER,
+    },
+    pokemon_in_party: {
+      type: DataTypes.INTEGER,
+    },
+    pokemon_type_in_party: {
+      type: DataTypes.INTEGER,
+    },
+    trading_species: {
+      type: DataTypes.INTEGER,
+    },
+    overworld_rain: {
+      type: DataTypes.INTEGER,
+    },
+    device_upside_down: {
+      type: DataTypes.INTEGER,
+    },
+  })
+
+  return {
+    db,
+    pokemon,
+    sprites,
+    abilities,
+    pokemon_abilities,
+    evolutions /*region,*/,
+  }
 }
