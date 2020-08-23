@@ -112,6 +112,9 @@ module.exports.createStore = () => {
     evolution_chain_id: {
       type: DataTypes.INTEGER,
     },
+    category: {
+      type: DataTypes.STRING,
+    },
     picture: {
       type: DataTypes.STRING,
     },

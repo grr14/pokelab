@@ -26,6 +26,7 @@ typeDefs = gql`
     evolve_from_pokemon_id: Int
     evolution_chain_id: Int
     evolution: EvolutionSummary
+    category: String
     picture: String
   }
 
