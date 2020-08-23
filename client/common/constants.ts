@@ -448,3 +448,13 @@ export const ATTACKS_MULTIPLIERS: TypeEfficiency = {
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
 export const EEVEE_GENERATION_ID = 67
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export const FIRST_GENERATION_INDEX = 151
+export const SECOND_GENERATION_INDEX = 251
+export const THIRD_GENERATION_INDEX = 386
+export const FOURTH_GENERATION_INDEX = 493
+export const FIFTH_GENERATION_INDEX = 649
+export const SIXTH_GENERATION_INDEX = 721
+export const SEVENTH_GENERATION_INDEX = LAST_POKEMON_ID

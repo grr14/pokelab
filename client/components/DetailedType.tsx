@@ -26,7 +26,7 @@ const DetailedType: React.FC<Props> = ({ id }) => {
         >
           <h1>Type : {capitalizeFirstLetter(getTypeFromId(id))}</h1>
           <img
-            css={{ width: "64px", height: "64px" }}
+            css={{ marginLeft: "15px", width: "64px", height: "64px" }}
             src={`/images/types/${id}.png`}
           />
         </div>

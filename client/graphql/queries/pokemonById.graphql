@@ -14,7 +14,9 @@ query getPokemonById($id: Int!) {
       id
       identifier
     }
-    picture
+    evolve_from_pokemon_id
     evolution_chain_id
+    category
+    picture
   }
 }

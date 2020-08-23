@@ -43,7 +43,9 @@ const GET_POKEMON = gql`
         id
         identifier
       }
+      evolve_from_pokemon_id
       evolution_chain_id
+      category
       picture
     }
   }
