@@ -444,3 +444,7 @@ export const ATTACKS_MULTIPLIERS: TypeEfficiency = {
   VERY_EFFECTIVE: 2,
   SUPER_EFFECTIVE: 4,
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export const EEVEE_GENERATION_ID = 67

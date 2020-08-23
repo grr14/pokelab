@@ -19,7 +19,7 @@ const DetailedPokemonGrid = styled.div<Props>`
 
   ${mq[0]} {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 1fr 1fr;
+    grid-template-rows: 250px auto 1fr;
   }
 
   /* ------------------- desktop view --------------------- */

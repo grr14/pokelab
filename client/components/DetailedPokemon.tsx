@@ -77,6 +77,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
         <div /* on Mobile, we display the Name before the picture*/
           className="mobileOnly"
           css={{
+            width: "100%",
             [mq[0]]: {
               display: "flex",
               flexDirection: "row",

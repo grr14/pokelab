@@ -45,6 +45,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
         flex: 1,
         display: "flex",
         justifyContent: "center",
+        overflow: "hidden",
       })}
     >
       <List>

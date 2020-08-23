@@ -12,6 +12,7 @@ const makeGlobalStyles = (theme: Theme) => css`
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-y: scroll;
+    box-sizing: border-box;
   }
   body {
     margin: 0;
@@ -21,6 +22,11 @@ const makeGlobalStyles = (theme: Theme) => css`
   }
   a {
     text-decoration: none;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
   }
   .slider {
     position: relative;

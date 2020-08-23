@@ -3,9 +3,11 @@ import { jsx, css } from "@emotion/core"
 import React from "react"
 
 import { capitalizeFirstLetter, countOccurrences } from "../common/utils"
-import { mq } from "../common/constants"
+import { mq, BREAKPOINTS, EEVEE_GENERATION_ID } from "../common/constants"
 
 import Arrow from "@elsdoerfer/react-arrow"
+
+import Link from "next/link"
 
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
@@ -15,7 +17,7 @@ import {
   pokemonEvolveChain,
   pokemonEvolveChainVariables,
 } from "../graphql/queries/__generated__/pokemonEvolveChain"
-import { getDataFromTree } from "@apollo/react-ssr"
+import { useWindowSize } from "../common/hooks"
 
 const GET_EVOLUTION_CHAIN = gql`
   query pokemonEvolveChain($id: Int) {
@@ -52,14 +54,34 @@ const GET_EVOLUTION_CHAIN = gql`
   }
 `
 
-interface EvoCardProps {
-  pokemon: Pokemon
+const commonCss = {
+  boxSizing: "border-box" as "border-box",
+  padding: "5px",
+  textAlign: "center" as "center",
+  display: "flex",
+  flexDirection: "column" as "column",
+  justifyContent: "center" as "center",
+  alignItems: "center" as "center",
 }
 
-const InfoArrowEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
+interface EvoArrowProps {
+  pokemon: Pokemon
+  angle: number
+  position?: string
+  id?: number
+  isMultiple?: boolean
+}
+
+const InfoArrowEvoCard: React.FC<EvoArrowProps> = ({
+  pokemon,
+  angle,
+  position,
+  id,
+  isMultiple,
+}) => {
   const getEvolutionAfterLevel = () => {
     if (pokemon.evolution.minimum_happiness === 220) {
-      return "Level with high Friendship"
+      return "High Friendship"
     } else if (pokemon.evolution.minimum_level !== null) {
       return `Level ${pokemon.evolution.minimum_level}`
     }
@@ -173,7 +195,7 @@ const InfoArrowEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
     }
 
     const timeOfDay = pokemon.evolution.time_of_day === "day" ? "Day" : "Night"
-    return ` during ${timeOfDay}time`
+    return ` in ${timeOfDay}time`
   }
 
   const getLocation = () => {
@@ -182,8 +204,10 @@ const InfoArrowEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
     }
     switch (pokemon.evolution.location) {
       case 8:
-      case 10:
+        return " near a Mossy Rock"
       case 48:
+        return " near an Icy Rock"
+      case 10:
       case 375:
       case 379:
       case 380:
@@ -316,45 +340,83 @@ const InfoArrowEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
     }
   }
 
-  const trigger = getEvolutionTrigger()
+  const getAdditionalInfos = (evolutionTrigger: string): string =>
+    `${evolutionTrigger}${getHeldItem()}${getSex()}${getLocation()}${getKnownMove()}${getKnownMoveType()}${getBeauty()}${getPokemonInParty()}${getPokemonTypeInParty()}${getSpeciesId()}${getOverworldRain()}${getDeviceUpsideDown()}${getPhysicalStats()}${getTime()}`
 
-  const getAdditionalInfos = (evolutionTrigger: string): string => {
-    // item to hold // get sex // get time//get location <= not finished // known move
-    return `${evolutionTrigger}${getTime()}${getHeldItem()}${getSex()}${getLocation()}${getKnownMove()}${getKnownMoveType()}${getBeauty()}${getPokemonInParty()}${getPokemonTypeInParty()}${getSpeciesId()}${getOverworldRain()}${getDeviceUpsideDown()}${getPhysicalStats()}`
+  const arrowCss = css`
+    ${mq[0]} {
+      width: ${isMultiple ? "60px" : "15px"};
+    }
+    ${mq[1]} {
+      width: 75px;
+      order: ${position === "first" ? 1 : 0};
+    }
+  `
+
+  const notEeveeMaxWidth = {
+    [mq[0]]: {
+      maxWidth: id !== EEVEE_GENERATION_ID && "125px",
+    },
+    [mq[1]]: {
+      maxWidth: id !== EEVEE_GENERATION_ID && "150px",
+    },
   }
 
   return (
     <div
       css={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        ...commonCss,
+        ...notEeveeMaxWidth,
       }}
     >
-      <p>{getAdditionalInfos(trigger)}</p>
-      <Arrow
-        angle={90}
-        length={100}
-        style={{
-          width: "100px",
-        }}
-      />
+      {id !== EEVEE_GENERATION_ID /* no arrow display for Eevee*/ && (
+        <Arrow angle={angle} length={80} css={arrowCss} />
+      )}
+      <p
+        css={
+          id === EEVEE_GENERATION_ID && {
+            flex: 1,
+            minHeight: "40px",
+            marginBottom: 0,
+          }
+        }
+      >
+        <i>{getAdditionalInfos(getEvolutionTrigger())}</i>
+      </p>
     </div>
   )
+}
+
+interface EvoCardProps {
+  pokemon: Pokemon
 }
 
 const PokemonEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
   return (
     <div
+      className="evoCard"
       css={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        ...commonCss,
       }}
     >
-      <img css={{ width: "125px", height: "125px" }} src={pokemon.picture} />
-      <p>{pokemon.identifier}</p>
+      <Link href={`/pokemon/[pid]`} as={`/pokemon/${pokemon.id}`}>
+        <a
+          css={{
+            cursor: "pointer",
+            display: "contents",
+            "&:hover": { textDecoration: "underline" },
+          }}
+        >
+          <img
+            css={{ width: "125px", height: "125px" }}
+            src={pokemon.picture}
+          />
+
+          <p css={{ marginBottom: 0 }}>
+            {capitalizeFirstLetter(pokemon.identifier)}
+          </p>
+        </a>
+      </Link>
     </div>
   )
 }
@@ -370,30 +432,42 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
   >(GET_EVOLUTION_CHAIN, {
     variables: { id: id },
   })
-  if (loading) return <p>Loading </p>
+
+  if (loading) return <p>Evolution Chart loading...</p>
   if (error) {
-    return <p>Error </p>
+    return <p>Error: Cannot retrieve the Evolution Chart</p>
   }
 
   // Number of pokemon in the chain
   const evolutionChainLength = data.pokemonEvolveChain.length
-  //console.log("length=" + evolutionChainLength)
 
   if (evolutionChainLength === 1) {
     return (
-      <div>
-        No evolution chart for{" "}
-        {capitalizeFirstLetter(data.pokemonEvolveChain[0].identifier)}
+      <div
+        css={{
+          boxSizing: "border-box",
+          margin: "2%",
+          padding: "2%",
+          border: "solid 1px black",
+          borderRadius: "15px",
+        }}
+      >
+        <div>
+          No evolution chart for{" "}
+          {capitalizeFirstLetter(data.pokemonEvolveChain[0].identifier)}
+        </div>
       </div>
     )
   }
 
+  const size = useWindowSize()
+
   let multipleEvolutionsFromSamePokemon = 0
   let indexOfFirstMultipleEvolution = 0
-
   let evolveChainPokemonIdArray: Array<number> = []
   let evolveFromSamePokemon: Array<Pokemon> = []
   let pokemonArrayJSX: Array<JSX.Element> = []
+  let angles: Array<number> = []
 
   // If the pokemon has an evolution, we check if he might have several (ex:eevee)
   if (evolutionChainLength > 1) {
@@ -404,10 +478,6 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
       }
       return pokemon.evolve_from_pokemon_id
     })
-
-    //console.log(`evolveChainPokemonIdArray=${evolveChainPokemonIdArray}`)
-
-    // console.log(JSON.stringify(countOccurrences(evolveChainPokemonIdArray)))
 
     // We get the ID of the pokemon which has several evolutions, and its index
     for (const key in countOccurrences(evolveChainPokemonIdArray)) {
@@ -432,25 +502,64 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
       }
     }
 
-    pokemonArrayJSX = evolveFromSamePokemon.map((pokemon) => (
-      <div>
-        <InfoArrowEvoCard pokemon={pokemon} />
+    if (id === EEVEE_GENERATION_ID) {
+      /* Eevee */
+      angles = [...Array(9).fill(90)]
+    } else if (evolveFromSamePokemon.length === 2) {
+      // only 2 or 3 evolutions (Tyrogue) max
+      angles = [75, 105]
+    } else {
+      angles = [70, 90, 110]
+    }
+
+    const cssEevee = css`
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-self: center;
+    `
+
+    pokemonArrayJSX = evolveFromSamePokemon.map((pokemon, idx) => (
+      <div
+        css={
+          id === EEVEE_GENERATION_ID
+            ? cssEevee
+            : { display: "flex", flexDirection: "row" }
+        }
+      >
+        <InfoArrowEvoCard
+          pokemon={pokemon}
+          angle={size.width < BREAKPOINTS[1] ? 90 : angles[idx]}
+          position={
+            idx === 0
+              ? "first"
+              : idx === evolveFromSamePokemon.length - 1
+              ? "last"
+              : "middle"
+          }
+          id={id}
+          isMultiple={true}
+        />
         <PokemonEvoCard pokemon={pokemon} />
       </div>
     ))
-
-    //console.log(`multipleEvolutionsFromSamePokemon=${multipleEvolutionsFromSamePokemon}`)
   }
-  //console.log(`indexOfFirstMultipleEvolution=${indexOfFirstMultipleEvolution}`)
-  // recup les methodes
 
   const multipleEvolutionsCSS = (id: number) => {
-    if (id === 67) {
+    if (id === EEVEE_GENERATION_ID) {
       /* Need a special display for Eevee evolutions (too many) */
       return css`
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        ${mq[0]} {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+        }
+        ${mq[2]} {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+        }
       `
     }
     return css`
@@ -460,38 +569,66 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
   }
 
   return (
-    <div
+    <fieldset
       css={{
         boxSizing: "border-box",
-        padding: "3%",
+        margin: "2%",
+        padding: "2%",
         border: "solid 1px black",
         borderRadius: "15px",
-        display: "flex",
-        flexDirection: "row",
       }}
     >
-      {data.pokemonEvolveChain.map((pokemon, idx) => {
-        if (
-          indexOfFirstMultipleEvolution === 0 ||
-          idx < indexOfFirstMultipleEvolution
-          /*No multiple evolutions: everything on the same line || on the same line until after pokemon with multiple evolution ID */
-        ) {
-          return (
-            <React.Fragment>
-              {idx !== 0 && <InfoArrowEvoCard pokemon={pokemon} />}
-              <PokemonEvoCard pokemon={pokemon} />
-            </React.Fragment>
-          )
-        } else if (
-          idx ===
-          indexOfFirstMultipleEvolution /* if multiple evolutions and same idx : we display the column with all evolutions */
-        ) {
-          return <div css={multipleEvolutionsCSS(id)}>{pokemonArrayJSX}</div>
-        }
-        /* we display nothing after */
-        return null
-      })}
-    </div>
+      <legend>Evolution Chart</legend>
+      <div
+        css={{
+          display: "flex",
+
+          [mq[0]]: { marginTop: "15px", flexDirection: "column" },
+          [mq[1]]: { flexDirection: "row" },
+          [mq[3]]: { marginTop: 0 },
+        }}
+      >
+        {data.pokemonEvolveChain.map((pokemon, idx) => {
+          if (
+            indexOfFirstMultipleEvolution === 0 ||
+            idx < indexOfFirstMultipleEvolution
+            /*No multiple evolutions: everything on the same line || on the same line until after pokemon with multiple evolution ID */
+          ) {
+            return (
+              <div
+                css={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  [mq[0]]: {
+                    flexDirection: "column",
+                  },
+                  [mq[1]]: {
+                    flexDirection: "row",
+                  },
+                }}
+              >
+                {idx !== 0 && (
+                  <InfoArrowEvoCard
+                    pokemon={pokemon}
+                    angle={size.width < BREAKPOINTS[1] ? 180 : 90}
+                    id={id}
+                  />
+                )}
+                <PokemonEvoCard pokemon={pokemon} />
+              </div>
+            )
+          } else if (
+            idx ===
+            indexOfFirstMultipleEvolution /* if multiple evolutions and same idx : we display the column with all evolutions */
+          ) {
+            return <div css={multipleEvolutionsCSS(id)}>{pokemonArrayJSX}</div>
+          }
+          /* we display nothing after */
+          return null
+        })}
+      </div>
+    </fieldset>
   )
 }
 
