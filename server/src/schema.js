@@ -29,6 +29,10 @@ typeDefs = gql`
     evolution: EvolutionSummary
     category: String
     picture: String
+    gender_distribution: Int
+    capture_rate: Int
+    base_happiness: Int
+    growth_rate: Int
   }
 
   type Sprite {

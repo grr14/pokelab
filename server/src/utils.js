@@ -118,6 +118,18 @@ module.exports.createStore = () => {
     picture: {
       type: DataTypes.STRING,
     },
+    gender_distribution: {
+      type: DataTypes.INTEGER,
+    },
+    capture_rate: {
+      type: DataTypes.INTEGER,
+    },
+    base_happiness: {
+      type: DataTypes.INTEGER,
+    },
+    growth_rate: {
+      type: DataTypes.INTEGER,
+    },
   })
 
   const sprites = db.define("pokemon_sprites", {
