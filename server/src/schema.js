@@ -9,6 +9,7 @@ typeDefs = gql`
     pokemonEvolveChain(id: Int): [Pokemon]
     abilityById(id: Int): Ability
     abilitiesByPokemonId(id: Int): [Ability]
+    getStatsByPokemonId(id: Int): Stats
   }
 
   type Pokemon {
@@ -69,6 +70,20 @@ typeDefs = gql`
     trading_species: Int
     overworld_rain: Int
     device_upside_down: Int
+  }
+
+  type Stats {
+    hp: Stat
+    attack: Stat
+    defense: Stat
+    special_attack: Stat
+    special_defense: Stat
+    speed: Stat
+  }
+
+  type Stat {
+    base_stat: Int
+    effort: Int
   }
 `
 module.exports = typeDefs

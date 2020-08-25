@@ -1,0 +1,4 @@
+fragment stat on Stat {
+    base_stat
+    effort
+}

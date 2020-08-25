@@ -128,7 +128,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
 
           <div
             css={{
-              backgroundColor: "red",
+              backgroundColor: "white",
               display: "flex",
               flexDirection: "column",
               alignContent: "center",

@@ -83,3 +83,14 @@ export const getEfficiency = (
 /* count occurences of every value in array  */
 export const countOccurrences = (arr: Array<any>): { [key: string]: any } =>
   arr.reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {})
+
+/* return max value in array of number */
+export const arrayMax = (arr: Array<number>) => Math.max(...arr)
+
+/* return the nearest next multiple of x, or the next one if its already a multiple */
+export const getNextMultipleOf = (x: number, nb: number) => {
+  if (nb % x === 0) {
+    return x + nb
+  }
+  return Math.ceil(nb / x) * x
+}

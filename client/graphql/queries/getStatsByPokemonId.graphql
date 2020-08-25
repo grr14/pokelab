@@ -1,0 +1,24 @@
+#import stat from "../fragments/stat.graphql"
+
+query getStatsById($id: Int!) {
+  getStatsByPokemonId(id: $id) {
+    hp {
+      ...stat
+    }
+    attack {
+      ...stat
+    }
+    defense {
+      ...stat
+    }
+    special_attack {
+      ...stat
+    }
+    special_defense {
+      ...stat
+    }
+    speed {
+      ...stat
+    }
+  }
+}

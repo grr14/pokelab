@@ -17,6 +17,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import PokemonDescription from "./PokemonDescription"
+import PokemonStats from "./PokemonStats"
 
 interface Props {
   pokemon: Pokemon
@@ -66,6 +67,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
 
       <PokemonDescription pokemon={pokemon} />
       <PokemonEvolution id={pokemon.evolution_chain_id} />
+      <PokemonStats id={pokemon.id} />
       <PokemonTypeInfos type_1={pokemon.type_1} type_2={pokemon.type_2} />
     </>
   )

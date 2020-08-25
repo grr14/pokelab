@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 import { mq } from "../common/constants"
 
-const PokedexPGrid = styled.div`
+const PokedexGrid = styled.div`
   display: grid;
   width: 100%;
   max-width: 100%;
@@ -26,4 +26,4 @@ const PokedexPGrid = styled.div`
   }
 `
 
-export default PokedexPGrid
+export default PokedexGrid

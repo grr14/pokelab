@@ -41,10 +41,11 @@ const PokemonDescription: React.FC<Props> = ({ pokemon }) => {
       <p>
         {capitalizeFirstLetter(pokemon.identifier)} is{" "}
         {pokemon.type_1 === 13 || pokemon.type_1 === 15 ? "an" : "a"}{" "}
-        {getTypeFromId(pokemon.type_1)}
-        {pokemon.type_2 != null && ` / ${getTypeFromId(pokemon.type_2)}`}-type
-        Pokémon who appeared in the {getGeneration()}-Generation. It belongs to
-        the category of the {pokemon.category} Pokémons.
+        {capitalizeFirstLetter(getTypeFromId(pokemon.type_1))}
+        {pokemon.type_2 != null &&
+          ` / ${capitalizeFirstLetter(getTypeFromId(pokemon.type_2))}`}
+        -type Pokémon who appeared in the {getGeneration()}-Generation. It
+        belongs to the category of the {pokemon.category} Pokémons.
       </p>
     </div>
   )

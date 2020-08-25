@@ -24,6 +24,11 @@ const lightTheme: Theme = {
     medium: "0px 0px 15px 10px",
     color: "rgba(0, 0, 0, 0.75)",
   },
+  chart: {
+    radar: {
+      background: "rgba(120,120,120,0.4)",
+    },
+  },
   type: type,
   damage: damage,
 }
