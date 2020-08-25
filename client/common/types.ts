@@ -1,3 +1,5 @@
+import { ChartType, ChartData, ChartOptions } from "chart.js"
+
 export type Theme = {
   name: string
   body?: {
@@ -20,6 +22,11 @@ export type Theme = {
     small?: string
     medium?: string
     color?: string
+  }
+  chart?: {
+    radar?: {
+      background?: string
+    }
   }
   type?: {
     bug?: string

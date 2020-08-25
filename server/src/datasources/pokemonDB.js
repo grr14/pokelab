@@ -151,6 +151,34 @@ class pokemonDB extends DataSource {
 
     return this.reduceAbility(ability.dataValues)
   }
+
+  async getStatsById({ id }) {
+    if (id < 0 || id > NB_POKEMON) return null
+
+    const statsName = [
+      "hp",
+      "attack",
+      "defense",
+      "special_attack",
+      "special_defense",
+      "speed",
+    ]
+    const pokemonStats = await this.store.stats.findAll({
+      where: { pokemon_id: id },
+    })
+
+    const reducedStats = pokemonStats.map((stat) => ({
+      base_stat: stat.dataValues.base_stat,
+      effort: stat.dataValues.effort,
+    }))
+
+    let stats = {}
+    for (let i = 0; i < 6; i++) {
+      stats[statsName[i]] = reducedStats[i]
+    }
+
+    return stats
+  }
 }
 
 module.exports = pokemonDB

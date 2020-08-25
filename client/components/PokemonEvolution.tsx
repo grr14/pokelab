@@ -521,6 +521,7 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
 
     pokemonArrayJSX = evolveFromSamePokemon.map((pokemon, idx) => (
       <div
+        key={idx}
         css={
           id === EEVEE_GENERATION_ID
             ? cssEevee

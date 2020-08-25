@@ -258,12 +258,33 @@ module.exports.createStore = () => {
     },
   })
 
+  const stats = db.define("pokemon_stats", {
+    pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    stat_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    base_stat: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    effort: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  })
+  stats.removeAttribute("id")
+
   return {
     db,
     pokemon,
     sprites,
     abilities,
     pokemon_abilities,
-    evolutions /*region,*/,
+    evolutions,
+    stats,
   }
 }

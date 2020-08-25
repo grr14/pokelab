@@ -11,6 +11,7 @@ const DetailedPokemonGrid = styled.div<Props>`
   box-sizing: border-box;
   flex: 1;
   height: 100%;
+  width: 100%;
   overflow: hidden;
   display: grid;
   justify-content: center;
