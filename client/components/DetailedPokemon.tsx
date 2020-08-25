@@ -47,6 +47,10 @@ const GET_POKEMON = gql`
       evolution_chain_id
       category
       picture
+      gender_distribution
+      capture_rate
+      base_happiness
+      growth_rate
     }
   }
 `

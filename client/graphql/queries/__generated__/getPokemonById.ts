@@ -30,6 +30,10 @@ export interface getPokemonById_pokemon {
   evolution_chain_id: number | null;
   category: string | null;
   picture: string | null;
+  gender_distribution: number | null;
+  capture_rate: number | null;
+  base_happiness: number | null;
+  growth_rate: number | null;
 }
 
 export interface getPokemonById {

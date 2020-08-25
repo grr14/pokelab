@@ -597,6 +597,7 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
           ) {
             return (
               <div
+                key={idx}
                 css={{
                   display: "flex",
                   justifyContent: "center",

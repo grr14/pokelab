@@ -64,6 +64,46 @@ export const getTypeFromId = (id: number) => {
   }
 }
 
+export const getGrowthRateFromId = (id: number) => {
+  switch (id) {
+    case 1:
+      return "Slow"
+    case 2:
+      return "Medium"
+    case 3:
+      return "Fast"
+    case 4:
+      return "Medium Slow"
+    case 5:
+      return "Erratic"
+    case 6:
+      return "Fluctuating"
+    default:
+      return "Cannot retrieve Growth Rate"
+  }
+}
+
+export const getMalePercentage = (id: number) => {
+  switch (id) {
+    case -1:
+      return undefined
+    case 0:
+      return 100
+    case 1:
+      return 87.5
+    case 2:
+      return 75
+    case 4:
+      return 50
+    case 6:
+      return 25
+    case 7:
+      return 12.5
+    case 8:
+      return 0
+  }
+}
+
 export const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }

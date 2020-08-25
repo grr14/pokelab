@@ -4,17 +4,21 @@ import { jsx, css } from "@emotion/core"
 import Link from "next/link"
 
 import TypeDisplay from "./TypeDisplay"
-import { capitalizeFirstLetter } from "../common/utils"
+import {
+  capitalizeFirstLetter,
+  getGrowthRateFromId,
+  getMalePercentage,
+} from "../common/utils"
 
 import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generated__/getPokemonById"
 
 import Box from "@material-ui/core/Box"
-import Paper from "@material-ui/core/Paper"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemAvatar from "@material-ui/core/ListItemAvatar"
 import Avatar from "@material-ui/core/Avatar"
 import Divider from "@material-ui/core/Divider"
+import React from "react"
 
 interface Props {
   pokemon: Pokemon
@@ -23,6 +27,66 @@ interface Props {
 const noWrapLeft = css`
   white-space: nowrap;
 `
+
+interface GenderDistributionProps {
+  value: number
+}
+
+const GenderDistribution: React.FC<GenderDistributionProps> = ({ value }) => {
+  if (value === -1) return <p>No gender</p>
+
+  const maleProportion = getMalePercentage(value)
+  const femaleProportion = 100 - maleProportion
+  return (
+    <React.Fragment>
+      <div
+        css={{
+          marginTop: "2%",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <div
+          css={{
+            marginTop: "2%",
+            width: "100%",
+            height: "10px",
+            borderRadius: "15px",
+            overflow: "hidden",
+            boxShadow: "0 0 0 1px gray",
+          }}
+        >
+          <div
+            css={{
+              width: `${maleProportion}%`,
+              height: "inherit",
+              float: "left",
+              backgroundColor: "blue",
+              color: "white",
+              textAlign: "center",
+            }}
+          ></div>
+          <div
+            css={{
+              width: `${femaleProportion}%`,
+              height: "inherit",
+              float: "left",
+              backgroundColor: "pink",
+              color: "white",
+              textAlign: "center",
+            }}
+          ></div>
+        </div>
+        <div css={{ width: "100%", textAlign: "center" }}>
+          <p>
+            Male: {maleProportion}% - Female: {femaleProportion}%
+          </p>
+        </div>
+      </div>
+    </React.Fragment>
+  )
+}
 
 const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
   const ability_list = (
@@ -59,7 +123,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Pokedex ID :</p>
+            <p css={noWrapLeft}>National Pokedex ID :</p>
           </Box>
           <p>{pokemon.id}</p>
         </ListItem>
@@ -128,7 +192,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           <Box textAlign="right" css={{ paddingRight: 5 }}>
             <p css={noWrapLeft}>Height :</p>
           </Box>
-          <p> {pokemon.height}</p>
+          <p> {pokemon.height / 10}m</p>
         </ListItem>
         <Divider />
 
@@ -144,7 +208,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           <Box textAlign="right" css={{ paddingRight: 5 }}>
             <p css={noWrapLeft}>Weight :</p>
           </Box>
-          <p> {pokemon.weight}</p>
+          <p> {pokemon.weight / 10}kg</p>
         </ListItem>
         <Divider />
         <ListItem>
@@ -160,6 +224,66 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             <p css={noWrapLeft}>Base Experience :</p>
           </Box>
           <p>{pokemon.base_experience}</p>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <img
+                css={{ maxHeight: "100%", maxWidth: "100%" }}
+                src="/images/pokeball.svg"
+              />
+            </Avatar>
+          </ListItemAvatar>
+          <Box textAlign="right" css={{ paddingRight: 5 }}>
+            <p css={noWrapLeft}>Growth Rate :</p>
+          </Box>
+          <p>{getGrowthRateFromId(pokemon.growth_rate)}</p>
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <img
+                css={{ maxHeight: "100%", maxWidth: "100%" }}
+                src="/images/pokeball.svg"
+              />
+            </Avatar>
+          </ListItemAvatar>
+          <Box textAlign="right" css={{ paddingRight: 5 }}>
+            <p css={noWrapLeft}>Base Happiness :</p>
+          </Box>
+          <p>{pokemon.base_happiness}</p>
+        </ListItem>
+        <Divider />
+        <ListItem css={{ flexWrap: "wrap" }}>
+          <ListItemAvatar>
+            <Avatar>
+              <img
+                css={{ maxHeight: "100%", maxWidth: "100%" }}
+                src="/images/pokeball.svg"
+              />
+            </Avatar>
+          </ListItemAvatar>
+          <Box textAlign="right" css={{ paddingRight: 5 }}>
+            <p css={noWrapLeft}>Gender Distribution :</p>
+          </Box>
+          <GenderDistribution value={pokemon.gender_distribution} />
+        </ListItem>
+        <Divider />
+        <ListItem>
+          <ListItemAvatar>
+            <Avatar>
+              <img
+                css={{ maxHeight: "100%", maxWidth: "100%" }}
+                src="/images/pokeball.svg"
+              />
+            </Avatar>
+          </ListItemAvatar>
+          <Box textAlign="right" css={{ paddingRight: 5 }}>
+            <p css={noWrapLeft}>Capture Rate :</p>
+          </Box>
+          <p> {pokemon.capture_rate}</p>
         </ListItem>
       </List>
     </div>
