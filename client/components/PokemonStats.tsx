@@ -50,6 +50,13 @@ interface Props {
 }
 
 const PokemonStats: React.FC<Props> = ({ id }) => {
+  const theme = useTheme<Theme>()
+
+  const [isRadarDisplay, setChartDisplay] = useState<boolean>(false)
+  const toggleChart = () => {
+    setChartDisplay((prev) => !prev)
+  }
+
   const { data, loading, error } = useQuery<
     getStatsById,
     getStatsByIdVariables
@@ -61,13 +68,6 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
   if (error) {
     return <p>Error </p>
   }
-
-  const [isRadarDisplay, setChartDisplay] = useState<boolean>(false)
-  const toggleChart = () => {
-    setChartDisplay((prev) => !prev)
-  }
-
-  const theme = useTheme<Theme>()
 
   let stats = Array<number>()
   for (const [key, value] of Object.entries(data.getStatsByPokemonId)) {

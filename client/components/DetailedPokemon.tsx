@@ -150,11 +150,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               },
             }}
           >
-            {
-              <PokemonDetailedInfos
-                pokemon={{ identifier, picture, ...rest }}
-              />
-            }
+            {<PokemonDetailedInfos pokemon={data.pokemon} />}
           </div>
 
           <PokemonSummary pokemon={{ identifier, picture, ...rest }} />

@@ -20,14 +20,6 @@ import Avatar from "@material-ui/core/Avatar"
 import Divider from "@material-ui/core/Divider"
 import React from "react"
 
-interface Props {
-  pokemon: Pokemon
-}
-
-const noWrapLeft = css`
-  white-space: nowrap;
-`
-
 interface GenderDistributionProps {
   value: number
 }
@@ -87,6 +79,14 @@ const GenderDistribution: React.FC<GenderDistributionProps> = ({ value }) => {
     </React.Fragment>
   )
 }
+
+interface Props {
+  pokemon: Pokemon
+}
+
+const noWrapLeft = css`
+  white-space: nowrap;
+`
 
 const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
   const ability_list = (

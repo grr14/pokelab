@@ -16,7 +16,7 @@ const lightTheme: Theme = {
     backgroundHover: "#D4D4D4",
   },
   header: {
-    background: "#7F7F7F",
+    background: "rgba(50,50,50,1)",
     text: "white",
   },
   boxShadow: {
@@ -33,4 +33,36 @@ const lightTheme: Theme = {
   damage: damage,
 }
 
-export default lightTheme
+const darkTheme: Theme = {
+  name: "lightTheme",
+  body: {
+    background: "black",
+    text: "white",
+    font: "Montserrat",
+  },
+  main: {
+    background: "white",
+  },
+  card: {
+    background: "#F0F0F0",
+    backgroundHover: "#D4D4D4",
+  },
+  header: {
+    background: "rgba(50,50,50,1)",
+    text: "white",
+  },
+  boxShadow: {
+    small: "0px 0px 5px 5px",
+    medium: "0px 0px 15px 10px",
+    color: "rgba(0, 0, 0, 0.75)",
+  },
+  chart: {
+    radar: {
+      background: "rgba(120,120,120,0.4)",
+    },
+  },
+  type: type,
+  damage: damage,
+}
+
+export { lightTheme, darkTheme }

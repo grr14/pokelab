@@ -5,7 +5,7 @@ import { ApolloProvider } from "@apollo/react-hooks"
 import withApollo from "../common/apollo"
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 import GlobalStyle from "../common/globalStyle"
-import lightTheme from "../common/theme"
+import { lightTheme, darkTheme } from "../common/theme"
 
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>

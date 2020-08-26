@@ -120,6 +120,7 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
       >
         {pokemons.map((pokemon) => (
           <Card
+            key={pokemon.id}
             css={(theme) => ({
               width: "100%",
               backgroundColor: `${theme.card.background} !important`,

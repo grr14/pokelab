@@ -433,6 +433,8 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
     variables: { id: id },
   })
 
+  const size = useWindowSize()
+
   if (loading) return <p>Evolution Chart loading...</p>
   if (error) {
     return <p>Error: Cannot retrieve the Evolution Chart</p>
@@ -459,8 +461,6 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
       </div>
     )
   }
-
-  const size = useWindowSize()
 
   let multipleEvolutionsFromSamePokemon = 0
   let indexOfFirstMultipleEvolution = 0
@@ -624,7 +624,11 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
             idx ===
             indexOfFirstMultipleEvolution /* if multiple evolutions and same idx : we display the column with all evolutions */
           ) {
-            return <div css={multipleEvolutionsCSS(id)}>{pokemonArrayJSX}</div>
+            return (
+              <div key={id} css={multipleEvolutionsCSS(id)}>
+                {pokemonArrayJSX}
+              </div>
+            )
           }
           /* we display nothing after */
           return null

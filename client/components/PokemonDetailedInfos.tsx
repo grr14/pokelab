@@ -24,6 +24,7 @@ interface Props {
 }
 
 const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
+  console.log(`evo_id=${pokemon.evolution_chain_id}`)
   return (
     <>
       <div
