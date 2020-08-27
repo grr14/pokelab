@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core"
+import { jsx, css, ThemeContext } from "@emotion/core"
 import React from "react"
 
 import { capitalizeFirstLetter, countOccurrences } from "../common/utils"
@@ -446,13 +446,13 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
   if (evolutionChainLength === 1) {
     return (
       <div
-        css={{
+        css={(theme) => ({
           boxSizing: "border-box",
           margin: "2%",
           padding: "2%",
-          border: "solid 1px black",
+          border: theme.main.border,
           borderRadius: "15px",
-        }}
+        })}
       >
         <div>
           No evolution chart for{" "}
@@ -571,13 +571,13 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
 
   return (
     <fieldset
-      css={{
+      css={(theme) => ({
         boxSizing: "border-box",
         margin: "2%",
         padding: "2%",
-        border: "solid 1px black",
+        border: theme.main.border,
         borderRadius: "15px",
-      }}
+      })}
     >
       <legend>Evolution Chart</legend>
       <div

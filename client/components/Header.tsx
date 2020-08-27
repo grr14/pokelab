@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "@emotion/core"
+import { jsx, ThemeContext } from "@emotion/core"
 import styled from "@emotion/styled"
 
 import AppBar from "@material-ui/core/AppBar"
@@ -37,6 +37,7 @@ const StyledMenu = styled(Menu)<Props>`
 const StyledAppBar = styled(AppBar)<Props>`
   background-color: ${(props) => props.theme.header.background} !important;
   font-family: ${(props) => props.theme.body.font} !important;
+  color: ${(props) => props.theme.body.text} !important;
 `
 
 interface HeaderProps {
@@ -75,8 +76,10 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               css={(theme) => ({
                 backgroundColor: `${theme.body.background} !important`,
                 fontFamily: `${theme.body.font} !important`,
+                color: `${theme.body.text} !important`,
                 marginRight: "5%",
                 borderRadius: "2px",
+                boxShadow: `0 0 0 1px ${theme.body.text}`,
                 "&:hover": {
                   boxShadow: "0 0 0 1px red",
                 },
@@ -107,6 +110,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               <MenuItem
                 css={(theme) => ({
                   fontFamily: `${theme.body.font} !important`,
+                  color: `${theme.body.text} !important`,
                 })}
               >
                 <Link href="/">
@@ -117,6 +121,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               <MenuItem
                 css={(theme) => ({
                   fontFamily: `${theme.body.font} !important`,
+                  color: `${theme.body.text} !important`,
                 })}
               >
                 <Link href="/types">
@@ -142,14 +147,13 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
             >
               <SearchIcon
                 css={{
-                  color: "black",
                   margin: "0 5px",
                   "&:hover": { cursor: "pointer" },
                 }}
               />
               <InputBase
                 placeholder="Search…"
-                css={{}}
+                css={(theme) => ({ color: theme.header.text })}
                 inputProps={{ "aria-label": "search" }}
               />
             </div>
@@ -164,6 +168,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               <div>
                 <FormGroup>
                   <FormControlLabel
+                    css={(theme) => ({ color: theme.header.text })}
                     labelPlacement="start"
                     control={
                       <Switch
@@ -172,7 +177,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                         onChange={() => toggle()}
                       />
                     }
-                    label="Night"
+                    label={checked ? "Light" : "Night"}
                   />
                 </FormGroup>
               </div>
@@ -182,6 +187,11 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               css={(theme) => ({
                 backgroundColor: `${theme.body.background} !important`,
                 fontFamily: `${theme.body.font} !important`,
+                color: `${theme.body.text} !important`,
+                boxShadow: `0 0 0 1px ${theme.body.text}`,
+                "&:hover": {
+                  boxShadow: "0 0 0 1px red",
+                },
               })}
             >
               <b>Login</b>

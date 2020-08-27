@@ -42,12 +42,14 @@ const StyledCard = styled(Card)<StyledCardProps>`
   align-items: center;
 
   transition: background-color 0.2s ease-in;
+  background-color: ${(props) => props.theme.card.background} !important;
+  color: ${(props) => props.theme.card.text} !important;
 
   &:hover {
     background-color: ${(props) =>
       props.loading
         ? props.theme.card.background
-        : props.theme.card.backgroundHover};
+        : props.theme.card.backgroundHover} !important;
     box-shadow: ${(props) =>
       props.loading
         ? "none"
@@ -88,12 +90,13 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon_id }) => {
       <FavoriteIcon />
       <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
         <a
-          css={{
+          css={(theme) => ({
             "&:hover": {
               textDecoration: "underline",
               cursor: "pointer",
+              color: theme.card.textHover,
             },
-          }}
+          })}
         >
           <img
             src={picture}

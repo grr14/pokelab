@@ -9,12 +9,15 @@ export type Theme = {
   }
   main?: {
     background?: string
+    border?: string
   }
   header?: {
     background?: string
     text?: string
   }
   card?: {
+    text?: string
+    textHover?: string
     background?: string
     backgroundHover?: string
   }
@@ -24,8 +27,11 @@ export type Theme = {
     color?: string
   }
   chart?: {
+    background?: string
+    text?: string
     radar?: {
       background?: string
+      lines?: string
     }
   }
   type?: {

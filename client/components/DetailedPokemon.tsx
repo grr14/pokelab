@@ -131,8 +131,8 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
           </div>
 
           <div
-            css={{
-              backgroundColor: "white",
+            css={(theme) => ({
+              backgroundColor: theme.main.background,
               display: "flex",
               flexDirection: "column",
               alignContent: "center",
@@ -148,7 +148,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
                 gridRowEnd: "span 2",
                 paddingBottom: "2%",
               },
-            }}
+            })}
           >
             {<PokemonDetailedInfos pokemon={data.pokemon} />}
           </div>

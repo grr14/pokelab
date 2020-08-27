@@ -131,6 +131,15 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
         max: maxRadarGraphScale > 100 ? maxRadarGraphScale : 100,
         stepSize: 20,
       },
+      pointLabels: {
+        fontColor: theme.chart.text,
+      },
+      gridLines: {
+        color: theme.chart.radar.lines,
+      },
+      angleLines: {
+        color: theme.chart.radar.lines,
+      },
     },
     tooltips: {
       enabled: true,
@@ -163,9 +172,17 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
             offsetGridLines: true,
           },
           ticks: {
+            fontColor: theme.chart.text,
             beginAtZero: true,
             max: maxRadarGraphScale,
             stepSize: 20,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          ticks: {
+            fontColor: theme.chart.text,
           },
         },
       ],
@@ -174,13 +191,14 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
 
   return (
     <div
-      css={{
+      css={(theme) => ({
+        backgroundColor: theme.main.background,
         padding: "2%",
         [mq[0]]: { width: "100%", height: "100%" },
         [mq[1]]: { width: "80%", height: "80%" },
         [mq[2]]: { width: "60%", height: "60%" },
         [mq[5]]: { width: "40%", height: "40%" },
-      }}
+      })}
     >
       <div
         css={{

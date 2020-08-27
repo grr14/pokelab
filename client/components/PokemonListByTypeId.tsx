@@ -124,6 +124,7 @@ const PokemonListByTypeId: React.FC<Props> = ({ id }) => {
             css={(theme) => ({
               width: "100%",
               backgroundColor: `${theme.card.background} !important`,
+              color: `${theme.card.text} !important`,
               height: "auto",
               boxSizing: "border-box",
               display: "grid",
