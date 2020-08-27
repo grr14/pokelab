@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 
-import Header from "../../components/Header"
 import { MainContainer } from "../../components/Containers"
 import DetailedType from "../../components/DetailedType"
 
@@ -20,7 +19,6 @@ const DetailedTypePage = () => {
   const typeId = Number(id)
   return (
     <MainContainer>
-      <Header />
       <DetailedType id={typeId} />
       <footer>2020 grr</footer>
     </MainContainer>

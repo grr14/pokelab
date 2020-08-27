@@ -21,6 +21,8 @@ import MenuItem from "@material-ui/core/MenuItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
 import ListItemText from "@material-ui/core/ListItemText"
 import Divider from "@material-ui/core/Divider"
+import FormGroup from "@material-ui/core/FormGroup"
+import FormControlLabel from "@material-ui/core/FormControlLabel"
 
 interface Props {
   theme: Theme
@@ -37,16 +39,12 @@ const StyledAppBar = styled(AppBar)<Props>`
   font-family: ${(props) => props.theme.body.font} !important;
 `
 
-export default function Header() {
-  const [state, setState] = useState({
-    checkedA: true,
-    checkedB: true,
-  })
+interface HeaderProps {
+  checked: boolean
+  toggle: () => void
+}
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [event.target.name]: event.target.checked })
-  }
-
+const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -163,15 +161,20 @@ export default function Header() {
                 marginRight: "5%",
               }}
             >
-              <p>Night</p>
               <div>
-                <Switch
-                  checked={state.checkedB}
-                  onChange={handleChange}
-                  color="secondary"
-                  name="checkedB"
-                  inputProps={{ "aria-label": "primary checkbox" }}
-                />
+                <FormGroup>
+                  <FormControlLabel
+                    labelPlacement="start"
+                    control={
+                      <Switch
+                        size="medium"
+                        checked={checked}
+                        onChange={() => toggle()}
+                      />
+                    }
+                    label="Night"
+                  />
+                </FormGroup>
               </div>
             </div>
 
@@ -189,3 +192,5 @@ export default function Header() {
     </div>
   )
 }
+
+export default Header

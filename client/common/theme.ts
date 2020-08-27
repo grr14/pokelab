@@ -41,7 +41,7 @@ const darkTheme: Theme = {
     font: "Montserrat",
   },
   main: {
-    background: "white",
+    background: "black",
   },
   card: {
     background: "#F0F0F0",

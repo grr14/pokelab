@@ -3,7 +3,6 @@ import { jsx } from "@emotion/core"
 
 import React from "react"
 
-import Header from "../components/Header"
 import {
   MainContainer,
   OuterContainer,
@@ -112,8 +111,6 @@ const Types = () => {
 
   return (
     <MainContainer>
-      <Header />
-
       <OuterContainer>
         <InnerContainer>
           <div
