@@ -1,12 +1,11 @@
 /** @jsx jsx */
-import { jsx, ThemeContext } from "@emotion/core"
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Switch from "@material-ui/core/Switch"
 import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton"
 import SearchIcon from "@material-ui/icons/Search"
 
 import Link from "next/link"
@@ -14,15 +13,40 @@ import { Theme } from "../common/types"
 import InputBase from "@material-ui/core/InputBase"
 import { useState } from "react"
 
-import { withStyles } from "@material-ui/core/styles"
-
-import Menu, { MenuProps } from "@material-ui/core/Menu"
+import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
+
 import Divider from "@material-ui/core/Divider"
 import FormGroup from "@material-ui/core/FormGroup"
 import FormControlLabel from "@material-ui/core/FormControlLabel"
+import { mq, BREAKPOINTS } from "../common/constants"
+
+import { useWindowSize } from "../common/hooks"
+
+import React from "react"
+import clsx from "clsx"
+import { makeStyles } from "@material-ui/core/styles"
+import Drawer from "@material-ui/core/Drawer"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import InboxIcon from "@material-ui/icons/MoveToInbox"
+import MailIcon from "@material-ui/icons/Mail"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faBars,
+  faSignInAlt,
+  faUserPlus,
+  faMoon,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons"
+import MobileAppDrawer from "./MobileAppDrawer"
+
+interface HeaderProps {
+  checked: boolean
+  toggle: () => void
+}
 
 interface Props {
   theme: Theme
@@ -40,11 +64,6 @@ const StyledAppBar = styled(AppBar)<Props>`
   color: ${(props) => props.theme.body.text} !important;
 `
 
-interface HeaderProps {
-  checked: boolean
-  toggle: () => void
-}
-
 const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null)
 
@@ -56,147 +75,67 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
     setAnchorEl(null)
   }
 
+  const size = useWindowSize()
+
   return (
     <div>
       <StyledAppBar elevation={10} position="static">
-        <Toolbar css={{ justifyContent: "space-between" }}>
-          <div css={{ display: "flex", alignItems: "center" }}>
-            <div css={{ marginRight: "10%" }}>
-              <Link href="/">
-                <a>
-                  <img
-                    css={{ width: "100%", height: "100%" }}
-                    src={"/images/logo.png"}
-                  />
-                </a>
-              </Link>
-            </div>
-
-            <Button
-              css={(theme) => ({
-                backgroundColor: `${theme.body.background} !important`,
-                fontFamily: `${theme.body.font} !important`,
-                color: `${theme.body.text} !important`,
-                marginRight: "5%",
-                borderRadius: "2px",
-                boxShadow: `0 0 0 1px ${theme.body.text}`,
-                "&:hover": {
-                  boxShadow: "0 0 0 1px red",
-                },
-              })}
-              aria-controls="customized-menu"
-              aria-haspopup="true"
-              variant="contained"
-              onClick={handleClick}
-            >
-              <b>Menu</b>
-            </Button>
-            <StyledMenu
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-              elevation={24}
-              getContentAnchorEl={null}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "center",
-              }}
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "center",
-              }}
-            >
-              <MenuItem
-                css={(theme) => ({
-                  fontFamily: `${theme.body.font} !important`,
-                  color: `${theme.body.text} !important`,
-                })}
+        <Toolbar
+          css={{
+            [mq[0]]: { display: "flex", flexDirection: "column" },
+            [mq[1]]: { flexDirection: "row", justifyContent: "space-between" },
+          }}
+        >
+          {size.width < BREAKPOINTS[2] ? (
+            <React.Fragment>
+              <div
+                css={{
+                  width: "100%",
+                  [mq[0]]: {
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                  },
+                  [mq[1]]: { display: "contents" },
+                }}
               >
                 <Link href="/">
-                  <a css={{ textDecoration: "none" }}>Pokemons</a>
+                  <a>
+                    <img src={"/images/logo.png"} />
+                  </a>
                 </Link>
-              </MenuItem>
-              <Divider />
-              <MenuItem
+                <MobileAppDrawer checked={checked} toggle={toggle} />
+              </div>
+              <div
                 css={(theme) => ({
-                  fontFamily: `${theme.body.font} !important`,
-                  color: `${theme.body.text} !important`,
+                  [mq[0]]: { width: "100%", marginBottom: "10px" },
+                  [mq[1]]: { width: "auto", marginBottom: 0, order: 0 },
+                  [mq[2]]: { order: "unset" },
+                  backgroundColor: theme.body.background,
+                  border: "solid 1px rgba(200,200,200,1)",
+                  borderRadius: "5px",
+                  display: "flex",
+                  alignItems: "center",
+                  "&:hover": {
+                    boxShadow: "0 0 0 1px red",
+                  },
                 })}
               >
-                <Link href="/types">
-                  <a css={{ textDecoration: "none" }}>Types</a>
-                </Link>
-              </MenuItem>
-            </StyledMenu>
-          </div>
-
-          <div css={{ display: "flex", alignItems: "center" }}>
-            <div
-              css={(theme) => ({
-                backgroundColor: theme.body.background,
-                border: "solid 1px rgba(200,200,200,1)",
-                borderRadius: "5px",
-                display: "flex",
-                alignItems: "center",
-                marginRight: "5%",
-                "&:hover": {
-                  boxShadow: "0 0 0 1px red",
-                },
-              })}
-            >
-              <SearchIcon
-                css={{
-                  margin: "0 5px",
-                  "&:hover": { cursor: "pointer" },
-                }}
-              />
-              <InputBase
-                placeholder="Search…"
-                css={(theme) => ({ color: theme.header.text })}
-                inputProps={{ "aria-label": "search" }}
-              />
-            </div>
-            <div
-              css={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-                marginRight: "5%",
-              }}
-            >
-              <div>
-                <FormGroup>
-                  <FormControlLabel
-                    css={(theme) => ({ color: theme.header.text })}
-                    labelPlacement="start"
-                    control={
-                      <Switch
-                        size="medium"
-                        checked={checked}
-                        onChange={() => toggle()}
-                      />
-                    }
-                    label={checked ? "Light" : "Night"}
-                  />
-                </FormGroup>
+                <SearchIcon
+                  css={{
+                    margin: "0 5px",
+                    "&:hover": { cursor: "pointer" },
+                  }}
+                />
+                <InputBase
+                  placeholder="Search…"
+                  css={(theme) => ({ color: theme.header.text })}
+                  inputProps={{ "aria-label": "search" }}
+                />
               </div>
-            </div>
-
-            <Button
-              css={(theme) => ({
-                backgroundColor: `${theme.body.background} !important`,
-                fontFamily: `${theme.body.font} !important`,
-                color: `${theme.body.text} !important`,
-                boxShadow: `0 0 0 1px ${theme.body.text}`,
-                "&:hover": {
-                  boxShadow: "0 0 0 1px red",
-                },
-              })}
-            >
-              <b>Login</b>
-            </Button>
-          </div>
+            </React.Fragment>
+          ) : null}
         </Toolbar>
       </StyledAppBar>
     </div>

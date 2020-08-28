@@ -8,6 +8,7 @@ import GlobalStyle from "../common/globalStyle"
 import { lightTheme, darkTheme } from "../common/theme"
 import Header from "../components/Header"
 import { useState } from "react"
+
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
 }
@@ -17,7 +18,7 @@ const PokelabApp: React.FC<Props> = ({
   apolloClient,
   pageProps,
 }) => {
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(true)
   const toggleChecked = () => {
     setChecked((prev) => !prev)
   }

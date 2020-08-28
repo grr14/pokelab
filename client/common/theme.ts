@@ -15,13 +15,21 @@ const lightTheme: Theme = {
   card: {
     text: "black",
     textHover: "black",
-
     background: "#F0F0F0",
     backgroundHover: "#D4D4D4",
   },
   header: {
     background: "rgba(50,50,50,1)",
     text: "white",
+  },
+  drawer: {
+    background: "#B8B8B8",
+    text: { regular: "black", hover: "white" },
+    cellHover: "#E31010",
+    divider: {
+      section: "#E31010",
+      listItem: "black",
+    },
   },
   boxShadow: {
     small: "0px 0px 5px 5px",
@@ -60,6 +68,15 @@ const darkTheme: Theme = {
   header: {
     background: "black",
     text: "rgba(255,255,255,0.8)",
+  },
+  drawer: {
+    background: "#060606",
+    text: { regular: "rgba(255,255,255,0.8)", hover: "rgba(255,255,255,0.8)" },
+    cellHover: "#505050",
+    divider: {
+      section: "#E31010",
+      listItem: "#303030",
+    },
   },
   boxShadow: {
     small: "0px 0px 5px 5px",

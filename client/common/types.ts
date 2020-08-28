@@ -15,6 +15,19 @@ export type Theme = {
     background?: string
     text?: string
   }
+  drawer: {
+    background?: string
+    cellHover?: string
+    text?: {
+      regular?: string
+      hover?: string
+    }
+    divider?: {
+      section: string
+      listItem: string
+    }
+  }
+
   card?: {
     text?: string
     textHover?: string
