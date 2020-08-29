@@ -14,10 +14,13 @@ import {
   getStatsById,
   getStatsByIdVariables,
 } from "../graphql/queries/__generated__/getStatsById"
+
+import { mq } from "../common/constants"
 import { Theme } from "../common/types"
 import { arrayMax, getNextMultipleOf } from "../common/utils"
+
 import CustomChart from "./CustomChart"
-import { mq } from "../common/constants"
+import { CustomButton as Button } from "./Button"
 
 const GET_STATS = gql`
   query getStatsById($id: Int!) {
@@ -209,7 +212,7 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
         }}
       >
         <h2>Stats :</h2>
-        <button onClick={toggleChart}>Toggle Chart</button>
+        <Button onClick={toggleChart}>Toggle</Button>
       </div>
       {isRadarDisplay ? (
         <CustomChart

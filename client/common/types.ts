@@ -1,5 +1,3 @@
-import { ChartType, ChartData, ChartOptions } from "chart.js"
-
 export type Theme = {
   name: string
   body?: {
@@ -14,6 +12,11 @@ export type Theme = {
   header?: {
     background?: string
     text?: string
+    button: {
+      background?: string
+      text?: string
+      border?: string
+    }
   }
   drawer: {
     background?: string
@@ -27,7 +30,6 @@ export type Theme = {
       listItem: string
     }
   }
-
   card?: {
     text?: string
     textHover?: string

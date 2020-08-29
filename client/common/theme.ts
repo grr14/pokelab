@@ -20,7 +20,12 @@ const lightTheme: Theme = {
   },
   header: {
     background: "rgba(50,50,50,1)",
-    text: "white",
+    text: "black",
+    button: {
+      background: "#B8B8B8",
+      text: "black",
+      border: "#505050",
+    },
   },
   drawer: {
     background: "#B8B8B8",
@@ -66,8 +71,13 @@ const darkTheme: Theme = {
     backgroundHover: "#505050",
   },
   header: {
-    background: "black",
+    background: "#030303",
     text: "rgba(255,255,255,0.8)",
+    button: {
+      background: "#303030",
+      text: "rgba(255,255,255,0.8)",
+      border: "#505050",
+    },
   },
   drawer: {
     background: "#060606",

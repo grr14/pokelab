@@ -43,10 +43,10 @@ const Error: NextPage<Props> = ({ statusCode }) => {
         >
           Back to{" "}
           <a
-            css={(theme) => ({
-              color: theme.header.background,
+            css={{
+              color: "#E31010",
               textDecoration: "underline",
-            })}
+            }}
           >
             Home
           </a>
