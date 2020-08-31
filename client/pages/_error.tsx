@@ -46,6 +46,7 @@ const Error: NextPage<Props> = ({ statusCode }) => {
             css={{
               color: "#E31010",
               textDecoration: "underline",
+              cursor: "pointer",
             }}
           >
             Home

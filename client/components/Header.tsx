@@ -125,8 +125,8 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                   [mq[1]]: { width: "auto", marginBottom: 0, order: 0 },
                   [mq[2]]: { order: "unset" },
                   backgroundColor: theme.body.background,
-                  border: "solid 1px rgba(200,200,200,1)",
-                  borderRadius: "5px",
+                  border: `solid 1px ${theme.header.button.border}`,
+                  borderRadius: "5px 5px 0 0",
                   ...center,
                   "&:hover": {
                     boxShadow: "0 0 0 1px red",
@@ -148,7 +148,8 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                 {logo}
                 <Button
                   css={{
-                    marginLeft: "10% !important",
+                    [mq[2]]: { margin: "0 2% 0 5%" },
+                    [mq[4]]: { margin: "0 2% 0 10%" },
                   }}
                   aria-controls="customized-menu"
                   aria-haspopup="true"
@@ -160,11 +161,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                       ...centerAndSpace,
                     }}
                   >
-                    Menu{" "}
-                    <FontAwesomeIcon
-                      css={{ marginLeft: "10%" }}
-                      icon={faChevronDown}
-                    />
+                    Menu <FontAwesomeIcon icon={faChevronDown} />
                   </span>
                 </Button>
                 <StyledMenu
@@ -193,8 +190,8 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                       text: "Types",
                     },
                   ].map((el, idx) => (
-                    <React.Fragment>
-                      <MenuItem key={idx} css={{}}>
+                    <div key={idx}>
+                      <MenuItem>
                         <Link href={el.link}>
                           <a
                             css={(theme) => ({
@@ -208,7 +205,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                         </Link>
                       </MenuItem>
                       {idx !== 1 && <Divider />}
-                    </React.Fragment>
+                    </div>
                   ))}
                 </StyledMenu>
               </div>
@@ -226,14 +223,11 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
               >
                 <div
                   css={(theme) => ({
-                    margin: "0 2%",
                     backgroundColor: theme.body.background,
                     border: `solid 1px ${theme.header.button.border}`,
-                    borderRadius: "5px",
                     ...center,
-
                     "&:hover": {
-                      boxShadow: "0.6px 0.6px 0.6px 0.6px #E31010 !important",
+                      border: `solid 1px #E31010`,
                     },
                   })}
                 >
@@ -246,7 +240,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                   }}
                 >
                   <FontAwesomeIcon
-                    css={{ color: "white" }}
+                    css={{ color: "white", order: checked ? 0 : 1 }}
                     icon={checked ? faMoon : faSun}
                   />
                   <div
@@ -268,8 +262,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                     <Switch
                       checked={checked}
                       onChange={toggle}
-                      color="secondary"
-                      name="checkedB"
+                      name="toggleTheme"
                       inputProps={{
                         "aria-label": "primary checkbox",
                       }}

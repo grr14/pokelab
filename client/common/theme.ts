@@ -36,6 +36,10 @@ const lightTheme: Theme = {
       listItem: "black",
     },
   },
+  input: {
+    background: "#B8B8B8",
+    text: "black",
+  },
   boxShadow: {
     small: "0px 0px 5px 5px",
     medium: "0px 0px 15px 10px",
@@ -87,6 +91,10 @@ const darkTheme: Theme = {
       section: "#E31010",
       listItem: "#303030",
     },
+  },
+  input: {
+    background: "#030303",
+    text: "rgba(255,255,255,0.8)",
   },
   boxShadow: {
     small: "0px 0px 5px 5px",

@@ -5,6 +5,9 @@ import { mq } from "./constants"
 
 const makeGlobalStyles = (theme: Theme) => css`
   @import url("https://fonts.googleapis.com/css?family=Montserrat");
+  div > ::-webkit-scrollbar {
+    display: none;
+  }
   html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -22,6 +25,15 @@ const makeGlobalStyles = (theme: Theme) => css`
   }
   a {
     text-decoration: none;
+    color: ${theme.body.text};
+  }
+  input {
+    border: none;
+    color: ${theme.body.text};
+    font-family: ${theme.body.font};
+    &:focus {
+      outline: none;
+    }
   }
   *,
   *:before,

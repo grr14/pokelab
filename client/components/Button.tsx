@@ -13,11 +13,6 @@ const CustomButton = styled(Button)<Props>`
     `${props.theme.header.button.background} !important`};
   font-family: ${(props) => `${props.theme.body.font} !important`};
   color: ${(props) => `${props.theme.header.button.text} !important`};
-  &:hover {
-    border: solid 1px #e31010;
-  }
 `
 
 export { CustomButton }
-
-//                    ,

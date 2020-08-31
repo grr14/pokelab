@@ -41,6 +41,10 @@ export type Theme = {
     medium?: string
     color?: string
   }
+  input?: {
+    background?: string
+    text?: string
+  }
   chart?: {
     background?: string
     text?: string
@@ -102,3 +106,9 @@ export type PokemonTypeEfficiency = {
 
 const sizes = ["small", "medium", "big"] as const
 export type Size = typeof sizes[number]
+
+export type SearchInputOption = {
+  id: number
+  type: string
+  identifier: string
+}
