@@ -13,6 +13,12 @@ export interface getPokemonById_pokemon_abilities {
   identifier: string;
 }
 
+export interface getPokemonById_pokemon_pokedex_numbers {
+  __typename: "PokedexNumber";
+  id: number | null;
+  pokemon_number: number | null;
+}
+
 export interface getPokemonById_pokemon {
   __typename: "Pokemon";
   id: number;
@@ -34,6 +40,7 @@ export interface getPokemonById_pokemon {
   capture_rate: number | null;
   base_happiness: number | null;
   growth_rate: number | null;
+  pokedex_numbers: (getPokemonById_pokemon_pokedex_numbers | null)[] | null;
 }
 
 export interface getPokemonById {

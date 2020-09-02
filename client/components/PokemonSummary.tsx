@@ -8,6 +8,7 @@ import {
   capitalizeFirstLetter,
   getGrowthRateFromId,
   getMalePercentage,
+  getPokedexEntryFromId,
 } from "../common/utils"
 
 import { getPokemonById_pokemon as Pokemon } from "../graphql/queries/__generated__/getPokemonById"
@@ -28,7 +29,16 @@ const GenderDistribution: React.FC<GenderDistributionProps> = ({ value }) => {
   if (value === -1) return <p>No gender</p>
 
   const maleProportion = getMalePercentage(value)
-  const femaleProportion = 100 - maleProportion
+
+  const genderCSS = (proportion: number, gender: "male" | "female") => css`
+    width: ${`${proportion}%`};
+    height: inherit;
+    float: left;
+    background-color: ${gender === "male" ? "blue" : "pink"};
+    color: white;
+    text-align: center;
+  `
+
   return (
     <React.Fragment>
       <div
@@ -49,30 +59,12 @@ const GenderDistribution: React.FC<GenderDistributionProps> = ({ value }) => {
             boxShadow: "0 0 0 1px gray",
           }}
         >
-          <div
-            css={{
-              width: `${maleProportion}%`,
-              height: "inherit",
-              float: "left",
-              backgroundColor: "blue",
-              color: "white",
-              textAlign: "center",
-            }}
-          ></div>
-          <div
-            css={{
-              width: `${femaleProportion}%`,
-              height: "inherit",
-              float: "left",
-              backgroundColor: "pink",
-              color: "white",
-              textAlign: "center",
-            }}
-          ></div>
+          <div css={genderCSS(maleProportion, "male")}></div>
+          <div css={genderCSS(100 - maleProportion, "female")}></div>
         </div>
         <div css={{ width: "100%", textAlign: "center" }}>
           <p>
-            Male: {maleProportion}% - Female: {femaleProportion}%
+            Male: {maleProportion}% - Female: {100 - maleProportion}%
           </p>
         </div>
       </div>
@@ -95,6 +87,19 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
         <ListItem key={idx}>
           <p css={{ margin: 0 }}>
             {idx + 1} - {capitalizeFirstLetter(ability.identifier)}
+          </p>
+        </ListItem>
+      ))}
+    </List>
+  )
+
+  const pokedexEntries = (
+    <List>
+      {pokemon.pokedex_numbers.map((pokedex_entry, idx) => (
+        <ListItem key={idx}>
+          <p css={{ margin: 0 }}>
+            {getPokedexEntryFromId(pokedex_entry.id)}: #
+            {pokedex_entry.pokemon_number}
           </p>
         </ListItem>
       ))}
@@ -125,7 +130,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           <Box textAlign="right" css={{ paddingRight: 5 }}>
             <p css={noWrapLeft}>National Pokedex ID :</p>
           </Box>
-          <p>{pokemon.id}</p>
+          <p>#{pokemon.id}</p>
         </ListItem>
         <Divider />
         <ListItem>
@@ -284,6 +289,24 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             <p css={noWrapLeft}>Capture Rate :</p>
           </Box>
           <p> {pokemon.capture_rate}</p>
+        </ListItem>
+        <Divider />
+
+        <ListItem css={{ flexWrap: "wrap" }}>
+          <ListItemAvatar>
+            <Avatar>
+              <img
+                css={{ maxHeight: "100%", maxWidth: "100%" }}
+                src="/images/pokeball.svg"
+              />
+            </Avatar>
+          </ListItemAvatar>
+
+          <Box textAlign="right" css={{ paddingRight: 5 }}>
+            <p css={noWrapLeft}>Pokedex Number:</p>
+          </Box>
+
+          {pokedexEntries}
         </ListItem>
       </List>
     </div>

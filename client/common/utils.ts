@@ -134,3 +134,57 @@ export const getNextMultipleOf = (x: number, nb: number) => {
   }
   return Math.ceil(nb / x) * x
 }
+
+/* get pokedex entry from the pokedex ID*/
+export const getPokedexEntryFromId = (id: number) => {
+  switch (id) {
+    case 1:
+      return "National Pokedex"
+    case 2:
+      return "Red - Blue - Yellow / FireRed - LeafGreen"
+    case 3:
+      return "Gold - Silver - Crystal"
+    case 4:
+      return "Ruby - Sapphire - Emerald"
+    case 5:
+      return "Diamond - Pearl"
+    case 6:
+      return "Platinum"
+    case 7:
+      return "HeartGold - SoulSilver"
+    case 8:
+      return "Black - White"
+    case 9:
+      return "Black 2 - White 2"
+    case 12:
+      return "X - Y / Central Kalos"
+    case 13:
+      return "X - Y Coastal Kalos"
+    case 14:
+      return "X - Y Mountain Kalos"
+    case 15:
+      return "Omega Ruby - Alpha Sapphire"
+    case 16:
+      return "Sun - Moon / Alola"
+    case 17:
+      return "Sun - Moon / Melemele"
+    case 18:
+      return "Sun - Moon / Akala"
+    case 19:
+      return "Sun - Moon / Ulaula"
+    case 20:
+      return "Sun - Moon / Poni"
+    case 21:
+      return "Ultra Sun - Ultra Moon / Alola"
+    case 22:
+      return "Ultra Sun - Ultra Moon / Melemele"
+    case 23:
+      return "Ultra Sun - Ultra Moon / Akala"
+    case 24:
+      return "Ultra Sun - Ultra Moon / Ulaula"
+    case 25:
+      return "Ultra Sun - Ultra Moon / Poni"
+    default:
+      return "Error"
+  }
+}

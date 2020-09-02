@@ -51,6 +51,10 @@ const GET_POKEMON = gql`
       capture_rate
       base_happiness
       growth_rate
+      pokedex_numbers {
+        id
+        pokemon_number
+      }
     }
   }
 `
