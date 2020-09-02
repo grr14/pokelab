@@ -33,6 +33,7 @@ typeDefs = gql`
     capture_rate: Int
     base_happiness: Int
     growth_rate: Int
+    pokedex_numbers: [PokedexNumber]
   }
 
   type Sprite {
@@ -88,6 +89,11 @@ typeDefs = gql`
   type Stat {
     base_stat: Int
     effort: Int
+  }
+
+  type PokedexNumber {
+    id: Int
+    pokemon_number: Int
   }
 `
 module.exports = typeDefs

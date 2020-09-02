@@ -50,10 +50,21 @@ class pokemonDB extends DataSource {
       where: { evolved_pokemon_id: id },
     })
 
+    const pokedexNumbers = await this.store.pokedex_numbers.findAll({
+      attributes: ["pokedex_id", "pokedex_number"],
+      where: { species_id: id },
+    })
+    const reducedPokedexNumbersNames = pokedexNumbers.map((el) => ({
+      id: el.pokedex_id,
+      pokemon_number: el.pokedex_number,
+    }))
+    console.log(`numbers=${JSON.stringify(reducedPokedexNumbersNames)}`)
+
     return {
       ...pokemon.dataValues,
       abilities: ability_array,
       evolution: !!evolution ? evolution.dataValues : null,
+      pokedex_numbers: reducedPokedexNumbersNames,
     }
   }
 
