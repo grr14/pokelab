@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { ThemeProvider } from "emotion-theming"
 import GlobalStyle from "../common/globalStyle"
@@ -11,6 +11,7 @@ import withApollo from "../common/apollo"
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 
 import Layout from "../components/Layout"
+import { useLocalStorage } from "../common/hooks"
 
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
@@ -22,13 +23,27 @@ const PokelabApp: React.FC<Props> = ({
   pageProps,
 }) => {
   const [checked, setChecked] = useState(true)
+  const [theme, setTheme] = useLocalStorage("theme", "light")
+
+  useEffect(() => {
+    if (window.localStorage.getItem("theme") === null) {
+      window.localStorage.setItem("theme", "light")
+      setChecked(true)
+    } else if (window.localStorage.getItem("theme") === "dark") {
+      setChecked(false)
+    } else {
+      setChecked(true)
+    }
+  }, []) /* run at the initial render to set up local storage if user never visited the site before */
+
   const toggleChecked = () => {
     setChecked((prev) => !prev)
+    setTheme((theme) => (theme === "light" ? "dark" : "light"))
   }
 
   return (
     <ApolloProvider client={apolloClient}>
-      <ThemeProvider theme={checked ? lightTheme : darkTheme}>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
         <Layout checked={checked} toggle={toggleChecked}>
           <Component {...pageProps} />
           <GlobalStyle />
