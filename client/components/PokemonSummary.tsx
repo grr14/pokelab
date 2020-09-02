@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core"
+import React from "react"
 
 import Link from "next/link"
 
@@ -19,7 +20,6 @@ import ListItem from "@material-ui/core/ListItem"
 import ListItemAvatar from "@material-ui/core/ListItemAvatar"
 import Avatar from "@material-ui/core/Avatar"
 import Divider from "@material-ui/core/Divider"
-import React from "react"
 
 interface GenderDistributionProps {
   value: number
@@ -35,8 +35,6 @@ const GenderDistribution: React.FC<GenderDistributionProps> = ({ value }) => {
     height: inherit;
     float: left;
     background-color: ${gender === "male" ? "blue" : "pink"};
-    color: white;
-    text-align: center;
   `
 
   return (
@@ -76,10 +74,6 @@ interface Props {
   pokemon: Pokemon
 }
 
-const noWrapLeft = css`
-  white-space: nowrap;
-`
-
 const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
   const ability_list = (
     <List>
@@ -106,6 +100,14 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
     </List>
   )
 
+  const boxNoWrapCSS = css`
+    white-space: nowrap;
+  `
+
+  const listItemWrap = css`
+    flex-wrap: wrap;
+  `
+
   return (
     <div
       className="infosList"
@@ -118,7 +120,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
       })}
     >
       <List>
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -128,12 +130,12 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>National Pokedex ID :</p>
+            <p css={boxNoWrapCSS}>National Pokedex ID :</p>
           </Box>
           <p>#{pokemon.id}</p>
         </ListItem>
         <Divider />
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -144,7 +146,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           </ListItemAvatar>
 
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Type :</p>
+            <p css={boxNoWrapCSS}>Type :</p>
           </Box>
           <List>
             <ListItem>
@@ -167,7 +169,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
         </ListItem>
         <Divider />
 
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -178,14 +180,14 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           </ListItemAvatar>
 
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Abilities :</p>
+            <p css={boxNoWrapCSS}>Abilities :</p>
           </Box>
 
           {ability_list}
         </ListItem>
         <Divider />
 
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -195,13 +197,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Height :</p>
+            <p css={boxNoWrapCSS}>Height :</p>
           </Box>
           <p> {pokemon.height / 10}m</p>
         </ListItem>
         <Divider />
 
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -211,12 +213,12 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Weight :</p>
+            <p css={boxNoWrapCSS}>Weight :</p>
           </Box>
           <p> {pokemon.weight / 10}kg</p>
         </ListItem>
         <Divider />
-        <ListItem>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -226,12 +228,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Base Experience :</p>
+            <p css={boxNoWrapCSS}>Base Experience :</p>
           </Box>
           <p>{pokemon.base_experience}</p>
         </ListItem>
         <Divider />
-        <ListItem>
+
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -241,12 +244,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Growth Rate :</p>
+            <p css={boxNoWrapCSS}>Growth Rate :</p>
           </Box>
           <p>{getGrowthRateFromId(pokemon.growth_rate)}</p>
         </ListItem>
         <Divider />
-        <ListItem>
+
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -256,12 +260,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Base Happiness :</p>
+            <p css={boxNoWrapCSS}>Base Happiness :</p>
           </Box>
           <p>{pokemon.base_happiness}</p>
         </ListItem>
         <Divider />
-        <ListItem css={{ flexWrap: "wrap" }}>
+
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -271,12 +276,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Gender Distribution :</p>
+            <p css={boxNoWrapCSS}>Gender Distribution :</p>
           </Box>
           <GenderDistribution value={pokemon.gender_distribution} />
         </ListItem>
         <Divider />
-        <ListItem>
+
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -286,13 +292,13 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </Avatar>
           </ListItemAvatar>
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Capture Rate :</p>
+            <p css={boxNoWrapCSS}>Capture Rate :</p>
           </Box>
           <p> {pokemon.capture_rate}</p>
         </ListItem>
         <Divider />
 
-        <ListItem css={{ flexWrap: "wrap" }}>
+        <ListItem css={listItemWrap}>
           <ListItemAvatar>
             <Avatar>
               <img
@@ -303,7 +309,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           </ListItemAvatar>
 
           <Box textAlign="right" css={{ paddingRight: 5 }}>
-            <p css={noWrapLeft}>Pokedex Number:</p>
+            <p css={boxNoWrapCSS}>Pokedex Number:</p>
           </Box>
 
           {pokedexEntries}
