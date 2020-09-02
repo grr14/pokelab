@@ -1,10 +1,4 @@
-import {
-  LAST_POKEMON_ID,
-  TYPES,
-  NB_TYPES,
-  ATTACKS_MULTIPLIERS,
-} from "./constants"
-import { PokemonTypeEfficiency } from "./types"
+import { LAST_POKEMON_ID, TYPES, NB_TYPES } from "./constants"
 
 /*  check the router query for detailed pokemon/type pages */
 export const validateQuery = (query: string | string[], page: string) => {

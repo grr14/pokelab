@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 
-import { MainContainer } from "../../components/Containers"
 import DetailedType from "../../components/DetailedType"
 
 import Error from "../_error"
@@ -17,12 +16,7 @@ const DetailedTypePage = () => {
   }
 
   const typeId = Number(id)
-  return (
-    <MainContainer>
-      <DetailedType id={typeId} />
-      <footer>2020 grr</footer>
-    </MainContainer>
-  )
+  return <DetailedType id={typeId} />
 }
 
 export default DetailedTypePage

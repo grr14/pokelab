@@ -20,7 +20,7 @@ const makeGlobalStyles = (theme: Theme) => css`
   body {
     margin: 0;
     padding: 0;
-    height: 80%;
+    height: 100vh;
     width: 100%;
   }
   a {

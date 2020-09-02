@@ -1,47 +1,27 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
+import React from "react"
 
 import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Switch from "@material-ui/core/Switch"
-import SearchIcon from "@material-ui/icons/Search"
 
 import Link from "next/link"
 import { Theme } from "../common/types"
-import InputBase from "@material-ui/core/InputBase"
 import { useState } from "react"
 
 import Menu from "@material-ui/core/Menu"
 import MenuItem from "@material-ui/core/MenuItem"
 
 import Divider from "@material-ui/core/Divider"
-import FormGroup from "@material-ui/core/FormGroup"
-import FormControlLabel from "@material-ui/core/FormControlLabel"
+
 import { mq, BREAKPOINTS } from "../common/constants"
 
 import { useWindowSize } from "../common/hooks"
 
-import React from "react"
-import clsx from "clsx"
-import { makeStyles } from "@material-ui/core/styles"
-import Drawer from "@material-ui/core/Drawer"
-import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import InboxIcon from "@material-ui/icons/MoveToInbox"
-import MailIcon from "@material-ui/icons/Mail"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faBars,
-  faSignInAlt,
-  faUserPlus,
-  faMoon,
-  faSun,
-  faChevronDown,
-  faChevronUp,
-} from "@fortawesome/free-solid-svg-icons"
+import { faMoon, faSun, faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import MobileAppDrawer from "./MobileAppDrawer"
 import { CustomButton as Button } from "./Button"
 import HeaderInputBase from "./HeaderInputBase"

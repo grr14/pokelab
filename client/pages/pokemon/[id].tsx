@@ -1,6 +1,5 @@
 import { useRouter } from "next/router"
 
-import { MainContainer } from "../../components/Containers"
 import DetailedPokemon from "../../components/DetailedPokemon"
 import Error from "../_error"
 
@@ -17,12 +16,7 @@ const DetailedPokemonPage = () => {
 
   const pokemonId = Number(id)
 
-  return (
-    <MainContainer>
-      <DetailedPokemon id={pokemonId} />
-      <footer>2020 grr</footer>
-    </MainContainer>
-  )
+  return <DetailedPokemon id={pokemonId} />
 }
 
 export default DetailedPokemonPage

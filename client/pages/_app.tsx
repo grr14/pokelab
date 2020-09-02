@@ -1,13 +1,16 @@
+import React, { useState } from "react"
+
 import { ThemeProvider } from "emotion-theming"
-import React from "react"
+import GlobalStyle from "../common/globalStyle"
+import { lightTheme, darkTheme } from "../common/theme"
+
 import { AppProps } from "next/app"
+
 import { ApolloProvider } from "@apollo/react-hooks"
 import withApollo from "../common/apollo"
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
-import GlobalStyle from "../common/globalStyle"
-import { lightTheme, darkTheme } from "../common/theme"
-import Header from "../components/Header"
-import { useState } from "react"
+
+import Layout from "../components/Layout"
 
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
@@ -26,9 +29,10 @@ const PokelabApp: React.FC<Props> = ({
   return (
     <ApolloProvider client={apolloClient}>
       <ThemeProvider theme={checked ? lightTheme : darkTheme}>
-        <Header checked={checked} toggle={toggleChecked} />
-        <Component {...pageProps} />
-        <GlobalStyle />
+        <Layout checked={checked} toggle={toggleChecked}>
+          <Component {...pageProps} />
+          <GlobalStyle />
+        </Layout>
       </ThemeProvider>
     </ApolloProvider>
   )

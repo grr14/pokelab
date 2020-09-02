@@ -1,5 +1,7 @@
 import { TypeEfficiency } from "./types"
 
+export const github = "https://github.com/grr14/pokelab"
+
 /* 
 mq[0]: phones
 mq[2]: ipad
