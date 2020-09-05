@@ -190,6 +190,24 @@ class pokemonDB extends DataSource {
 
     return stats
   }
+
+  /* select id, identifier,... from pokemon where
+  abilities LIKE 'id%' OR abilities LIKE '%,id,%' OR
+  abilities LIKE '%,id' ;*/
+  async getPokemonByAbilityId({ id }) {
+    const pokemons = await this.store.pokemon.findAll({
+      attributes: ["id", "identifier", "type_1", "type_2", "picture"],
+      where: {
+        [Op.or]: [
+          { abilities: { [Op.like]: `${id}%` } },
+          { abilities: { [Op.like]: `%,${id},%` } },
+          { abilities: { [Op.like]: `%,${id}` } },
+        ],
+      },
+    })
+
+    return pokemons
+  }
 }
 
 module.exports = pokemonDB

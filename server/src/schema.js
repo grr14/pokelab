@@ -10,6 +10,7 @@ typeDefs = gql`
     abilityById(id: Int): Ability
     abilitiesByPokemonId(id: Int): [Ability]
     getStatsByPokemonId(id: Int): Stats
+    pokemonsByAbilityId(id: Int): [Pokemon]
   }
 
   type Pokemon {
