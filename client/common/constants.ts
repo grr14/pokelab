@@ -69,6 +69,8 @@ export const LAST_POKEMON_ID = 807
 
 export const NB_TYPES: number = 18
 
+export const NB_ABILITIES = 233
+
 export enum TYPES {
   NORMAL = 1,
   FIGHTING,

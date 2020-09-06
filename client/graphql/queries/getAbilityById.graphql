@@ -1,0 +1,11 @@
+query abilityById($id: Int) {
+  abilityById(id: $id) {
+    id
+    identifier
+    effect
+    flavor_textes {
+      text
+      version_group
+    }
+  }
+}

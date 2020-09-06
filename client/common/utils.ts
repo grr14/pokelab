@@ -1,17 +1,25 @@
-import { LAST_POKEMON_ID, TYPES, NB_TYPES } from "./constants"
+import { LAST_POKEMON_ID, TYPES, NB_TYPES, NB_ABILITIES } from "./constants"
 
-/*  check the router query for detailed pokemon/type pages */
+/*  check the router query for detailed pokemon/type/ability pages */
 export const validateQuery = (query: string | string[], page: string) => {
-  const numb = Number(query)
-  if (page === "pokemon") {
-    if (isNaN(numb) || numb > LAST_POKEMON_ID || numb < 1) {
+  const numb = typeof query === "string" ? Number(query) : Number(query[0])
+
+  if (isNaN(numb)) {
+    return false
+  } else if (page === "pokemon") {
+    if (numb > LAST_POKEMON_ID || numb < 1) {
       return false
     }
   } else if (page === "type") {
-    if (isNaN(numb) || numb > NB_TYPES || numb < 1) {
+    if (numb > NB_TYPES || numb < 1) {
+      return false
+    }
+  } else if (page === "ability") {
+    if (numb > NB_ABILITIES || numb < 1) {
       return false
     }
   }
+
   return true
 }
 
@@ -98,8 +106,25 @@ export const getMalePercentage = (id: number) => {
   }
 }
 
-export const capitalizeFirstLetter = (string: string) => {
-  return string.charAt(0).toUpperCase() + string.slice(1)
+/*  capitalize first letter of a word*/
+export const capitalizeFirstLetter = (word: string) => {
+  return word.charAt(0).toUpperCase() + word.slice(1)
+}
+
+/* capitalze every word in a sentence except those in [exclusionList] */
+export const capitalizeSentence = (
+  sentence: string,
+  exclusionList: Array<string>
+) => {
+  return sentence
+    .split(" ")
+    .map((word) => {
+      if (exclusionList.includes(word)) {
+        return word
+      }
+      return capitalizeFirstLetter(word)
+    })
+    .join(" ")
 }
 
 /* return an array of type affecting a pokemon (superweak, resistant...)*/

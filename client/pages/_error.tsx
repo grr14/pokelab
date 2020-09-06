@@ -15,6 +15,7 @@ const Error: NextPage<Props> = ({ statusCode }) => {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
+        flex: 1,
       }}
     >
       <img

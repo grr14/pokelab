@@ -79,9 +79,15 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
     <List>
       {pokemon?.abilities?.map((ability, idx) => (
         <ListItem key={idx}>
-          <p css={{ margin: 0 }}>
-            {idx + 1} - {capitalizeFirstLetter(ability.identifier)}
-          </p>
+          <Link href={`/ability/[pid]`} as={`/ability/${ability.id}`}>
+            <a>
+              <p
+                css={{ margin: 0, "&:hover": { textDecoration: "underline" } }}
+              >
+                {idx + 1} - {capitalizeFirstLetter(ability.identifier)}
+              </p>
+            </a>
+          </Link>
         </ListItem>
       ))}
     </List>
@@ -150,7 +156,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
           </Box>
           <List>
             <ListItem>
-              <Link href={`/types/[pid]`} as={`/types/${pokemon.type_1}`}>
+              <Link href={`/type/[pid]`} as={`/type/${pokemon.type_1}`}>
                 <a>
                   <TypeDisplay size="medium" type={pokemon.type_1} />
                 </a>
@@ -158,7 +164,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
             </ListItem>
             {pokemon.type_2 != null && (
               <ListItem>
-                <Link href={`/types/[pid]`} as={`/types/${pokemon.type_2}`}>
+                <Link href={`/type/[pid]`} as={`/type/${pokemon.type_2}`}>
                   <a>
                     <TypeDisplay size="medium" type={pokemon.type_2} />
                   </a>

@@ -116,7 +116,7 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
         <span>
           This pokemon is {pte[key].details} to{" "}
           {pte[key].types.map((type) => (
-            <Link key={type} href={`/types/[pid]`} as={`/types/${type}`}>
+            <Link key={type} href={`/type/[pid]`} as={`/type/${type}`}>
               <a>
                 <TypeDisplay size="medium" type={type as TYPES} />
               </a>

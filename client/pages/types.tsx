@@ -159,7 +159,7 @@ const Types = () => {
                   flexDirection: "column",
                 }}
               >
-                <Link href={`types/[pid]`} as={`types/${el}`}>
+                <Link href={`type/[pid]`} as={`type/${el}`}>
                   <a css={{ height: "80%", width: "100%", cursor: "pointer" }}>
                     <div
                       css={{
