@@ -165,22 +165,6 @@ module.exports.createStore = () => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    flavor_text_1: {
-      type: DataTypes.STRING,
-    },
-    flavor_text_2: {
-      type: DataTypes.STRING,
-    },
-    flavor_text_3: {
-      type: DataTypes.STRING,
-    },
-    flavor_text_4: {
-      type: DataTypes.STRING,
-    },
-    text_changed_in_version: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
   })
 
   const pokemon_abilities = db.define("pokemon_abilities", {
@@ -203,6 +187,22 @@ module.exports.createStore = () => {
       allowNull: false,
     },
   })
+
+  const ability_flavor_text = db.define("ability_flavor_text", {
+    ability_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    version_group_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    flavor_text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  })
+  ability_flavor_text.removeAttribute("id")
 
   const evolutions = db.define("pokemon_evolution", {
     id: {
@@ -312,6 +312,7 @@ module.exports.createStore = () => {
     sprites,
     abilities,
     pokemon_abilities,
+    ability_flavor_text,
     evolutions,
     stats,
     pokedex_numbers,

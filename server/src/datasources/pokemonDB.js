@@ -58,7 +58,6 @@ class pokemonDB extends DataSource {
       id: el.pokedex_id,
       pokemon_number: el.pokedex_number,
     }))
-    console.log(`numbers=${JSON.stringify(reducedPokedexNumbersNames)}`)
 
     return {
       ...pokemon.dataValues,
@@ -129,38 +128,31 @@ class pokemonDB extends DataSource {
     return allEvolutionsDatas
   }
 
-  reduceAbility(ability) {
-    const text_changes = parse(ability.text_changed_in_version, ",")
+  reduceAbility(ability, texts) {
+    const flavor_textes = texts.map((el) => ({
+      version_group: el.version_group_id,
+      text: el.flavor_text,
+    }))
 
     return {
       id: ability.id,
       identifier: ability.identifier,
+      generation: ability.generation_id,
       effect: ability.effect,
-      flavor_textes: [
-        {
-          text: ability.flavor_text_1 != null ? ability.flavor_text_1 : null,
-          appear_in: text_changes.length < 1 ? null : text_changes[0],
-        },
-        {
-          text: ability.flavor_text_2 != null ? ability.flavor_text_2 : null,
-          appear_in: text_changes.length < 2 ? null : text_changes[1],
-        },
-        {
-          text: ability.flavor_text_3 != null ? ability.flavor_text_3 : null,
-          appear_in: text_changes.length < 3 ? null : text_changes[2],
-        },
-        {
-          text: ability.flavor_text_4 != null ? ability.flavor_text_4 : null,
-          appear_in: text_changes.length < 4 ? null : text_changes[3],
-        },
-      ],
+      flavor_textes: flavor_textes,
     }
   }
 
   async getAbilityById({ id }) {
     const ability = await this.store.abilities.findOne({ where: { id: id } })
+    const texts = await this.store.ability_flavor_text.findAll({
+      where: { ability_id: id },
+    })
 
-    return this.reduceAbility(ability.dataValues)
+    console.log(`ability=${JSON.stringify(ability)}`)
+    console.log(`texts=${JSON.stringify(texts)}`)
+
+    return this.reduceAbility(ability, texts)
   }
 
   async getStatsById({ id }) {

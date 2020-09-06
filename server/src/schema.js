@@ -46,13 +46,14 @@ typeDefs = gql`
   type Ability {
     id: Int!
     identifier: String!
+    generation: [Int]
     effect: String
     flavor_textes: [FlavorText]
   }
 
   type FlavorText {
     text: String
-    appear_in: Int
+    version_group: Int
   }
 
   type EvolutionSummary {
