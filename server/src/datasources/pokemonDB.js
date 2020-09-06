@@ -5,6 +5,7 @@ const { Op } = require("sequelize")
 const NB_POKEMON = 807
 const NB_TYPES = 18
 const NB_EVOLVE_CHAIN = 427
+const NB_ABILITIES = 233
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -144,6 +145,9 @@ class pokemonDB extends DataSource {
   }
 
   async getAbilityById({ id }) {
+    if (id > NB_ABILITIES) {
+      return null
+    }
     const ability = await this.store.abilities.findOne({ where: { id: id } })
     const texts = await this.store.ability_flavor_text.findAll({
       where: { ability_id: id },
@@ -187,11 +191,14 @@ class pokemonDB extends DataSource {
   abilities LIKE 'id%' OR abilities LIKE '%,id,%' OR
   abilities LIKE '%,id' ;*/
   async getPokemonByAbilityId({ id }) {
+    if (id > NB_ABILITIES) {
+      return null
+    }
     const pokemons = await this.store.pokemon.findAll({
       attributes: ["id", "identifier", "type_1", "type_2", "picture"],
       where: {
         [Op.or]: [
-          { abilities: { [Op.like]: `${id}%` } },
+          { abilities: { [Op.like]: `${id},%` } },
           { abilities: { [Op.like]: `%,${id},%` } },
           { abilities: { [Op.like]: `%,${id}` } },
         ],
