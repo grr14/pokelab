@@ -112,3 +112,10 @@ export type SearchInputOption = {
   type: string
   identifier: string
 }
+
+type CustomMenuItem = {
+  link: string
+  text: string
+}
+
+export type CustomMenu = Array<CustomMenuItem>

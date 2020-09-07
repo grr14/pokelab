@@ -10,7 +10,8 @@
 export interface getPokemonById_pokemon_abilities {
   __typename: "Ability";
   id: number;
-  identifier: string;
+  identifier: string | null;
+  is_hidden: number | null;
 }
 
 export interface getPokemonById_pokemon_pokedex_numbers {

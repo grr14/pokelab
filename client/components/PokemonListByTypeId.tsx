@@ -11,7 +11,7 @@ import { useQuery } from "@apollo/react-hooks"
 
 import React from "react"
 
-import { TYPES, mq } from "../common/constants"
+import { mq } from "../common/constants"
 
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 

@@ -5,5 +5,8 @@ query pokemonsByAbilityId($id: Int) {
     type_1
     type_2
     picture
+    abilities{
+      is_hidden
+    }
   }
 }

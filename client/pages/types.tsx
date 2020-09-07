@@ -22,7 +22,7 @@ interface Coordinates {
   defender: number
 }
 
-const Types = () => {
+const Types: React.FC = () => {
   const [coordinates, setCoordinates] = React.useState<Coordinates>({
     attacker: 0,
     defender: 0,

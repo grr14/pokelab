@@ -42,6 +42,7 @@ const GET_POKEMON = gql`
       abilities {
         id
         identifier
+        is_hidden
       }
       evolve_from_pokemon_id
       evolution_chain_id

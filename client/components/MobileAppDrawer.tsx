@@ -22,13 +22,15 @@ import {
   faMoon,
   faSun,
 } from "@fortawesome/free-solid-svg-icons"
+import { CustomMenu } from "../common/types"
 
 interface HeaderProps {
+  menu: CustomMenu
   checked: boolean
   toggle: () => void
 }
 
-const MobileAppDrawer: React.FC<HeaderProps> = ({ checked, toggle }) => {
+const MobileAppDrawer: React.FC<HeaderProps> = ({ menu, checked, toggle }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
   const toggleDrawer = (open: boolean) => (
@@ -92,16 +94,7 @@ const MobileAppDrawer: React.FC<HeaderProps> = ({ checked, toggle }) => {
 
       <h2 css={{ margin: "0.83em 0 0 5%" }}>Menu:</h2>
       <List>
-        {[
-          {
-            link: "/",
-            text: "Pokemons",
-          },
-          {
-            link: "/types",
-            text: "Types",
-          },
-        ].map((el, idx) => (
+        {menu.map((el, idx) => (
           <ListItem
             key={idx}
             css={(theme) => ({

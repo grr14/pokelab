@@ -16,7 +16,7 @@ export interface abilityById_abilityById_flavor_textes {
 export interface abilityById_abilityById {
   __typename: "Ability";
   id: number;
-  identifier: string;
+  identifier: string | null;
   effect: string | null;
   flavor_textes: (abilityById_abilityById_flavor_textes | null)[] | null;
 }

@@ -8,7 +8,7 @@ import Toolbar from "@material-ui/core/Toolbar"
 import Switch from "@material-ui/core/Switch"
 
 import Link from "next/link"
-import { Theme } from "../common/types"
+import { Theme, CustomMenu } from "../common/types"
 import { useState } from "react"
 
 import Menu from "@material-ui/core/Menu"
@@ -67,6 +67,18 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
     justifyContent: "space-between",
   }
 
+  const menu: CustomMenu = [
+    {
+      link: "/",
+      text: "Pokemons",
+    },
+    {
+      link: "/types",
+      text: "Types",
+    },
+    { link: "/abilities", text: "Abilities" },
+  ]
+
   const logo = (
     <Link href="/">
       <a>
@@ -97,7 +109,11 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                 }}
               >
                 {logo}
-                <MobileAppDrawer checked={checked} toggle={toggle} />
+                <MobileAppDrawer
+                  menu={menu}
+                  checked={checked}
+                  toggle={toggle}
+                />
               </div>
               <div
                 css={(theme) => ({
@@ -160,16 +176,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                     horizontal: "center",
                   }}
                 >
-                  {[
-                    {
-                      link: "/",
-                      text: "Pokemons",
-                    },
-                    {
-                      link: "/types",
-                      text: "Types",
-                    },
-                  ].map((el, idx) => (
+                  {menu.map((el, idx) => (
                     <div key={idx}>
                       <MenuItem>
                         <Link href={el.link}>
@@ -184,7 +191,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
                           </a>
                         </Link>
                       </MenuItem>
-                      {idx !== 1 && <Divider />}
+                      {idx !== menu.length && <Divider />}
                     </div>
                   ))}
                 </StyledMenu>

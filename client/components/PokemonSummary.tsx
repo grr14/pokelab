@@ -85,6 +85,11 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
                 css={{ margin: 0, "&:hover": { textDecoration: "underline" } }}
               >
                 {idx + 1} - {capitalizeFirstLetter(ability.identifier)}
+                {ability.is_hidden === 1 && (
+                  <span>
+                    <i> (hidden)</i>
+                  </span>
+                )}
               </p>
             </a>
           </Link>

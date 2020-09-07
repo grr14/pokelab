@@ -114,7 +114,7 @@ export const capitalizeFirstLetter = (word: string) => {
 /* capitalze every word in a sentence except those in [exclusionList] */
 export const capitalizeSentence = (
   sentence: string,
-  exclusionList: Array<string>
+  exclusionList: Array<string> = [""]
 ) => {
   return sentence
     .split(" ")
@@ -205,5 +205,34 @@ export const getPokedexEntryFromId = (id: number) => {
       return "Ultra Sun - Ultra Moon / Poni"
     default:
       return "Error"
+  }
+}
+
+export const getVersionsFromId = (id: number) => {
+  switch (id) {
+    case 5:
+      return "Ruby - Sapphire"
+    case 6:
+      return "Emerald"
+    case 7:
+      return "FireRed - LeafGreen"
+    case 8:
+      return "Diamond - Pearl"
+    case 9:
+      return " Platinum"
+    case 10:
+      return "HeartGold - SoulSilver"
+    case 11:
+      return "Black - White"
+    case 14:
+      return "Black2 - White2"
+    case 15:
+      return "X - Y"
+    case 16:
+      return "OmegaRuby - AlphaSapphire"
+    case 17:
+      return "Sun - Moon"
+    case 18:
+      return "UltraSun - UltraMoon"
   }
 }

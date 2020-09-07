@@ -1,0 +1,7 @@
+query getAllAbilities {
+  getAllAbilities{
+    id
+    identifier
+    generation
+  }
+}

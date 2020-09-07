@@ -343,16 +343,6 @@ const InfoArrowEvoCard: React.FC<EvoArrowProps> = ({
   const getAdditionalInfos = (evolutionTrigger: string): string =>
     `${evolutionTrigger}${getHeldItem()}${getSex()}${getLocation()}${getKnownMove()}${getKnownMoveType()}${getBeauty()}${getPokemonInParty()}${getPokemonTypeInParty()}${getSpeciesId()}${getOverworldRain()}${getDeviceUpsideDown()}${getPhysicalStats()}${getTime()}`
 
-  const arrowCss = css`
-    ${mq[0]} {
-      width: ${isMultiple ? "60px" : "15px"};
-    }
-    ${mq[1]} {
-      width: 75px;
-      order: ${position === "first" ? 1 : 0};
-    }
-  `
-
   const notEeveeMaxWidth = {
     [mq[0]]: {
       maxWidth: id !== EEVEE_GENERATION_ID && "125px",
@@ -370,7 +360,25 @@ const InfoArrowEvoCard: React.FC<EvoArrowProps> = ({
       }}
     >
       {id !== EEVEE_GENERATION_ID /* no arrow display for Eevee*/ && (
-        <Arrow angle={angle} length={80} css={arrowCss} />
+        <Arrow
+          angle={angle}
+          length={80}
+          css={(theme) => ({
+            "& > defs > marker > polyline": {
+              fill: `${theme.body.text} !important`,
+            },
+            "& > path": {
+              stroke: `${theme.body.text} !important`,
+            },
+            [mq[0]]: {
+              width: `${isMultiple ? "60px" : "15px"}`,
+            },
+            [mq[1]]: {
+              width: "75px",
+              order: `${position === "first" ? 1 : 0}`,
+            },
+          })}
+        />
       )}
       <p
         css={

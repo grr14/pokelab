@@ -16,12 +16,9 @@ import {
   pokemonsByAbilityIdVariables,
 } from "../graphql/queries/__generated__/pokemonsByAbilityId"
 
-import Link from "next/link"
-
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
-import { capitalizeFirstLetter } from "../common/utils"
-import { ListItem, List } from "@material-ui/core"
+import { capitalizeFirstLetter, getVersionsFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 
 const GET_ABILITY = gql`
@@ -46,6 +43,9 @@ const GET_POKEMONS_BY_ABILITY = gql`
       type_1
       type_2
       picture
+      abilities {
+        is_hidden
+      }
     }
   }
 `
@@ -87,39 +87,11 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     )
   }
 
-  const getVersionsFromId = (id: number) => {
-    switch (id) {
-      case 5:
-        return "Ruby - Sapphire"
-      case 6:
-        return "Emerald"
-      case 7:
-        return "FireRed - LeafGreen"
-      case 8:
-        return "Diamond - Pearl"
-      case 9:
-        return " Platinum"
-      case 10:
-        return "HeartGold - SoulSilver"
-      case 11:
-        return "Black - White"
-      case 14:
-        return "Black2 - White2"
-      case 15:
-        return "X - Y"
-      case 16:
-        return "OmegaRuby - AlphaSapphire"
-      case 17:
-        return "Sun - Moon"
-      case 18:
-        return "UltraSun - UltraMoon"
-    }
-  }
-
   const flavorTextesByVersion = abilityData.abilityById.flavor_textes.map(
-    (el) => {
+    (el, idx) => {
       return (
         <tr
+          key={idx}
           css={{
             "&:not(:last-of-type)": { borderBottom: "solid 1px #E31010" },
           }}
@@ -139,9 +111,8 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     }
   )
 
-  // creer un tableau pour associer appearIn <=> version
-  // determine the version with the appearIn de data[0]
-  // tableau avec toutes les versions depuis appearIn de data[0]
+  const abilities = pokemonsData.pokemonsByAbilityId.map((p) => p.abilities)
+  const numberOfHidden = abilities.filter((el) => el[0].is_hidden === 1).length
 
   return (
     <OuterContainer>
@@ -198,6 +169,30 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
 
         <div css={{ width: "100%" }}>
           <h2>Pokemon with this ability :</h2>
+          <div
+            css={{
+              width: "100%",
+              marginBottom: "15px",
+              display: "flex",
+
+              [mq[0]]: {
+                flexDirection: "column",
+                alignItems: "flex-start",
+              },
+              [mq[2]]: {
+                justifyContent: "space-evenly",
+                flexDirection: "row",
+                alignItems: "center",
+              },
+            }}
+          >
+            <span>
+              Total number: <b>{pokemonsData.pokemonsByAbilityId.length}</b>
+            </span>
+            <span>
+              As a hidden Ability: <b>{numberOfHidden}</b>
+            </span>
+          </div>
           <ReducedPokemonGrid pokemons={pokemonsData.pokemonsByAbilityId} />
         </div>
       </InnerContainer>
