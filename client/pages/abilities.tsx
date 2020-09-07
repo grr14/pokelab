@@ -13,6 +13,7 @@ import { getAllAbilities as AllAbilities } from "../graphql/queries/__generated_
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 import { capitalizeSentence } from "../common/utils"
+import { mq } from "../common/constants"
 
 const GET_ALL_ABILITIES = gql`
   query getAllAbilities {
@@ -39,10 +40,28 @@ const Abilities: React.FC = () => {
     return <Error statusCode={404} />
   }
 
+  const tdCSS = {
+    textAlign: "center" as "center",
+    padding: "5px",
+    "&:not(:last-of-type)": {
+      borderRight: "solid 1px #E31010",
+    },
+  }
+
+  const thCSS = {
+    fontSize: "1.2em",
+    padding: "15px",
+  }
+
   const abilityTable = data.getAllAbilities.map((ability, idx) => (
-    <tr key={idx}>
-      <td>#{ability.id}</td>
-      <td>
+    <tr
+      key={idx}
+      css={(theme) => ({
+        "&:hover": { backgroundColor: theme.card.backgroundHover },
+      })}
+    >
+      <td css={{ ...tdCSS, width: "10%" }}>{ability.id}</td>
+      <td css={{ ...tdCSS, width: "80%" }}>
         <Link href={`/ability/[pid]`} as={`/ability/${ability.id}`}>
           <a
             css={{
@@ -56,7 +75,7 @@ const Abilities: React.FC = () => {
           </a>
         </Link>
       </td>
-      <td>{ability.generation}</td>
+      <td css={{ ...tdCSS, width: "10%" }}>{ability.generation}</td>
     </tr>
   ))
 
@@ -92,16 +111,30 @@ const Abilities: React.FC = () => {
           </div>
           <div>
             <h2>List of Abilities</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>Ability name</th>
-                  <th>Generation</th>
-                </tr>
-              </thead>
-              <tbody>{abilityTable}</tbody>
-            </table>
+            <div
+              css={{
+                width: "100%",
+                [mq[5]]: {
+                  columnCount: 2,
+                },
+              }}
+            >
+              <table
+                css={{
+                  maxWidth: "600px",
+                  borderCollapse: "collapse",
+                }}
+              >
+                <thead css={{ borderBottom: "solid 1px #E31010" }}>
+                  <tr>
+                    <th css={{ ...tdCSS, ...thCSS }}>ID</th>
+                    <th css={{ ...tdCSS, ...thCSS }}>Ability name</th>
+                    <th css={{ ...tdCSS, ...thCSS }}>Generation</th>
+                  </tr>
+                </thead>
+                <tbody>{abilityTable}</tbody>
+              </table>
+            </div>
           </div>
         </div>
       </InnerContainer>
