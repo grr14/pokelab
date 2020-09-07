@@ -11,6 +11,7 @@ typeDefs = gql`
     abilitiesByPokemonId(id: Int): [Ability]
     getStatsByPokemonId(id: Int): Stats
     pokemonsByAbilityId(id: Int): [Pokemon]
+    getAllAbilities: [Ability]
   }
 
   type Pokemon {
@@ -45,8 +46,9 @@ typeDefs = gql`
 
   type Ability {
     id: Int!
-    identifier: String!
-    generation: [Int]
+    identifier: String
+    is_hidden: Int
+    generation: Int
     effect: String
     flavor_textes: [FlavorText]
   }

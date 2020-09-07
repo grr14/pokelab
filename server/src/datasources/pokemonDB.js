@@ -30,6 +30,7 @@ class pokemonDB extends DataSource {
     let pokemon = await this.store.pokemon.findOne({ where: { id: id } })
 
     const abilities_id = parse(pokemon.dataValues.abilities, ",")
+
     const abilities = new Array()
 
     await Promise.all(
@@ -38,14 +39,28 @@ class pokemonDB extends DataSource {
           attributes: ["id", "identifier"],
           where: { id: ability_id },
         })
-        return abilities.push(ability)
+        let hidden = await this.store.pokemon_abilities.findOne({
+          attributes: ["is_hidden"],
+          where: {
+            [Op.and]: [
+              {
+                pokemon_id: id,
+              },
+              {
+                ability_id: ability_id,
+              },
+            ],
+          },
+        })
+
+        const final_ab = {
+          id: ability.id,
+          identifier: ability.identifier,
+          is_hidden: hidden.is_hidden,
+        }
+        return abilities.push(final_ab)
       })
     )
-
-    const ability_array = abilities.map((ability) => ({
-      id: ability.dataValues.id,
-      identifier: ability.dataValues.identifier,
-    }))
 
     const evolution = await this.store.evolutions.findOne({
       where: { evolved_pokemon_id: id },
@@ -62,7 +77,7 @@ class pokemonDB extends DataSource {
 
     return {
       ...pokemon.dataValues,
-      abilities: ability_array,
+      abilities: abilities,
       evolution: !!evolution ? evolution.dataValues : null,
       pokedex_numbers: reducedPokedexNumbersNames,
     }
@@ -153,9 +168,6 @@ class pokemonDB extends DataSource {
       where: { ability_id: id },
     })
 
-    console.log(`ability=${JSON.stringify(ability)}`)
-    console.log(`texts=${JSON.stringify(texts)}`)
-
     return this.reduceAbility(ability, texts)
   }
 
@@ -194,6 +206,7 @@ class pokemonDB extends DataSource {
     if (id > NB_ABILITIES) {
       return null
     }
+
     const pokemons = await this.store.pokemon.findAll({
       attributes: ["id", "identifier", "type_1", "type_2", "picture"],
       where: {
@@ -205,7 +218,47 @@ class pokemonDB extends DataSource {
       },
     })
 
-    return pokemons
+    let hidden = []
+    await Promise.all(
+      pokemons.map(async (pokemon) => {
+        let tmp = await this.store.pokemon_abilities.findOne({
+          attributes: ["is_hidden"],
+          where: {
+            [Op.and]: [{ pokemon_id: pokemon.id }, { ability_id: id }],
+          },
+        })
+
+        return hidden.push(tmp)
+      })
+    )
+
+    return pokemons.map((pokemon, idx) => ({
+      id: pokemon.id,
+      identifier: pokemon.identifier,
+      type_1: pokemon.type_1,
+      type_2: pokemon.type_2,
+      picture: pokemon.picture,
+      abilities: [
+        {
+          is_hidden: hidden[idx].is_hidden,
+        } /* we dont care about the pokemon's other abilities in this query */,
+      ],
+    }))
+  }
+
+  async getAllAbilities() {
+    const abilities = await this.store.abilities.findAll({
+      attributes: ["id", "identifier", "generation_id"],
+      order: [["id", "ASC"]],
+    })
+
+    const reduceAbility = abilities.map((el) => ({
+      id: el.id,
+      identifier: el.identifier,
+      generation: el.generation_id,
+    }))
+
+    return reduceAbility
   }
 }
 
