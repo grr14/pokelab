@@ -306,6 +306,22 @@ module.exports.createStore = () => {
   })
   pokedex_numbers.removeAttribute("id")
 
+  const pokedex_entries = db.define("pokemon_species_flavor_text", {
+    species_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    version_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    flavor_text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  })
+  pokedex_entries.removeAttribute("id")
+
   return {
     db,
     pokemon,
@@ -316,5 +332,6 @@ module.exports.createStore = () => {
     evolutions,
     stats,
     pokedex_numbers,
+    pokedex_entries,
   }
 }

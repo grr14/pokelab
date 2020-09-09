@@ -18,5 +18,7 @@ module.exports = {
       dataSources.pokemonDB.getPokemonByAbilityId({ id }),
     getAllAbilities: async (_, __, { dataSources }, ___) =>
       dataSources.pokemonDB.getAllAbilities(),
+    getPokemonPokedexEntries: async (_, { id }, { dataSources }, __) =>
+      dataSources.pokemonDB.pokemonPokedexEntries({ id }),
   },
 }

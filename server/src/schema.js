@@ -12,6 +12,7 @@ typeDefs = gql`
     getStatsByPokemonId(id: Int): Stats
     pokemonsByAbilityId(id: Int): [Pokemon]
     getAllAbilities: [Ability]
+    getPokemonPokedexEntries(id: Int): [FlavorText]
   }
 
   type Pokemon {

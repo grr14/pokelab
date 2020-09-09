@@ -260,6 +260,17 @@ class pokemonDB extends DataSource {
 
     return reduceAbility
   }
+
+  async pokemonPokedexEntries({ id }) {
+    const entries = await this.store.pokedex_entries.findAll({
+      where: { species_id: id },
+    })
+
+    return entries.map((entry) => ({
+      version_group: entry.version_id,
+      text: entry.flavor_text,
+    }))
+  }
 }
 
 module.exports = pokemonDB
