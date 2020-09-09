@@ -18,7 +18,7 @@ import {
 
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
-import { capitalizeFirstLetter, getVersionsFromId } from "../common/utils"
+import { capitalizeFirstLetter, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 
 const GET_ABILITY = gql`
@@ -88,27 +88,25 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
   }
 
   const flavorTextesByVersion = abilityData.abilityById.flavor_textes.map(
-    (el, idx) => {
-      return (
-        <tr
-          key={idx}
+    (el, idx) => (
+      <tr
+        key={idx}
+        css={{
+          "&:not(:last-of-type)": { borderBottom: "solid 1px #E31010" },
+        }}
+      >
+        <th
+          scope="row"
           css={{
-            "&:not(:last-of-type)": { borderBottom: "solid 1px #E31010" },
+            borderRight: "solid 1px #E31010",
+            padding: "5px 15px 5px 5px",
           }}
         >
-          <th
-            scope="row"
-            css={{
-              borderRight: "solid 1px #E31010",
-              padding: "5px 15px 5px 5px",
-            }}
-          >
-            {getVersionsFromId(el.version_group)}
-          </th>
-          <td css={{ padding: "10px" }}>{el.text}</td>
-        </tr>
-      )
-    }
+          {getVersionGroupFromId(el.version_group)}
+        </th>
+        <td css={{ padding: "10px" }}>{el.text}</td>
+      </tr>
+    )
   )
 
   const abilities = pokemonsData.pokemonsByAbilityId.map((p) => p.abilities)

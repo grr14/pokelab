@@ -81,6 +81,38 @@ export type Theme = {
     veryEffective?: string
     superEffective?: string
   }
+  version?: {
+    red?: string
+    blue?: string
+    yellow?: string
+    gold?: string
+    silver?: string
+    crystal?: string
+    ruby?: string
+    sapphire?: string
+    emerald?: string
+    firered?: string
+    leafgreen?: string
+    diamond?: string
+    pearl?: string
+    platinum?: string
+    heartgold?: string
+    soulsilver?: string
+    black?: string
+    white?: string
+    colosseum?: string
+    xd?: string
+    black2?: string
+    white2?: string
+    x?: string
+    y?: string
+    omegaruby?: string
+    alphasapphire?: string
+    sun?: string
+    moon?: string
+    ultrasun?: string
+    ultramoon?: string
+  }
 }
 
 const attackMultipliersArray = [

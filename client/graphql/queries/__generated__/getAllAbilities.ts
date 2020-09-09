@@ -11,7 +11,7 @@ export interface getAllAbilities_getAllAbilities {
   __typename: "Ability";
   id: number;
   identifier: string | null;
-  generation: (number | null)[] | null;
+  generation: number | null;
 }
 
 export interface getAllAbilities {

@@ -5,7 +5,11 @@ import Link from "next/link"
 
 import PokemonTypeInfos from "./PokemonTypeInfos"
 import PokemonEvolution from "./PokemonEvolution"
+import PokemonDescription from "./PokemonDescription"
+import PokemonStats from "./PokemonStats"
+import PokemonDexEntries from "./PokemonDexEntries"
 import LinkArrow from "./LinkArrow"
+
 import { capitalizeFirstLetter } from "../common/utils"
 import { mq } from "../common/constants"
 
@@ -16,8 +20,6 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import PokemonDescription from "./PokemonDescription"
-import PokemonStats from "./PokemonStats"
 
 interface Props {
   pokemon: Pokemon
@@ -68,6 +70,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
       <PokemonDescription pokemon={pokemon} />
       <PokemonEvolution id={pokemon.evolution_chain_id} />
       <PokemonStats id={pokemon.id} />
+      <PokemonDexEntries id={pokemon.id} />
       <PokemonTypeInfos type_1={pokemon.type_1} type_2={pokemon.type_2} />
     </>
   )

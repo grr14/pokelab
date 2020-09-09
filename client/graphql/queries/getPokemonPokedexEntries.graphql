@@ -1,0 +1,6 @@
+query getPokemonPokedexEntries($id: Int) {
+  getPokemonPokedexEntries(id:$id) {
+    text
+    version_group
+  }
+}

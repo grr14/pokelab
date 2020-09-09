@@ -33,7 +33,7 @@ export const only_notebooks = `@media (min-width: ${BREAKPOINTS[2]}px) and (max-
 export const only_big_screens = `@media (min-width: ${BREAKPOINTS[3]}px) and (max-width: ${BREAKPOINTS[8]}px)`
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
-export const type = {
+export const typesColors = {
   bug: "#a8b820",
   dark: "#705848",
   dragon: "#7038f8",
@@ -54,7 +54,7 @@ export const type = {
   water: "#6890f0",
 }
 
-export const damage = {
+export const damagesColors = {
   immune: "#565656",
   notTooEffective: "#ce6868",
   notEffectiveAtAll: "#c71515",
@@ -462,3 +462,71 @@ export const FOURTH_GENERATION_INDEX = 493
 export const FIFTH_GENERATION_INDEX = 649
 export const SIXTH_GENERATION_INDEX = 721
 export const SEVENTH_GENERATION_INDEX = LAST_POKEMON_ID
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export enum VERSIONS {
+  RED = 1,
+  BLUE,
+  YELLOW,
+  GOLD,
+  SILVER = 5,
+  CRYSTAL,
+  RUBY,
+  SAPPHIRE,
+  EMERALD,
+  FIRERED = 10,
+  LEAFGREEN,
+  DIAMOND,
+  PEARL,
+  PLATINUM,
+  HEARTGOLD = 15,
+  SOULSILVER,
+  BLACK,
+  WHITE,
+  COLOSSEUM,
+  XD = 20,
+  BLACK2,
+  WHITE2,
+  X,
+  Y,
+  OMEGARUBY = 25,
+  ALPHASAPPHIRE,
+  SUN,
+  MOON,
+  ULTRASUN,
+  ULTRAMOON = 30,
+}
+
+export const versionsColors = {
+  red: "red",
+  blue: "blue",
+  yellow: "#ffdf13",
+  gold: "#978858",
+  silver: "#a7a9b8",
+  crystal: "#8696cc",
+  ruby: "#e52125",
+  sapphire: "#015ead",
+  emerald: "#51a48b",
+  firered: "#ba6d32",
+  leafgreen: "green",
+  diamond: "#706783",
+  pearl: "#af7cad",
+  platinum: "#bdb6b3",
+  heartgold: "#c29e38",
+  soulsilver: "#99bccc",
+  black: "#777",
+  white: "#eee",
+  colosseum: "#ec2e20",
+  xd: "#4e497d",
+  black2: "#777",
+  white2: "#eee",
+  x: "#7c93c4",
+  y: "#e23521",
+  omegaruby: "#e52125",
+  alphasapphire: "#015ead",
+  sun: "#e68a26",
+  moon: "#5a7aba",
+  ultrasun: "#e68a26",
+  ultramoon: "#5a7aba",
+}

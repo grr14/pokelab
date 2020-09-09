@@ -1,5 +1,5 @@
 import { Theme } from "./types"
-import { type, damage } from "./constants"
+import { typesColors, damagesColors, versionsColors } from "./constants"
 
 const lightTheme: Theme = {
   name: "lightTheme",
@@ -53,8 +53,15 @@ const lightTheme: Theme = {
       lines: "gray",
     },
   },
-  type: type,
-  damage: damage,
+  type: typesColors,
+  damage: damagesColors,
+  version: {
+    ...versionsColors,
+    black: "black",
+    black2: "black",
+    white: "#aaa",
+    white2: "#aaa",
+  },
 }
 
 const darkTheme: Theme = {
@@ -109,8 +116,15 @@ const darkTheme: Theme = {
       lines: "white",
     },
   },
-  type: type,
-  damage: damage,
+  type: typesColors,
+  damage: damagesColors,
+  version: {
+    ...versionsColors,
+    black: "#777",
+    black2: "#777",
+    white: "white",
+    white2: "white",
+  },
 }
 
 export { lightTheme, darkTheme }

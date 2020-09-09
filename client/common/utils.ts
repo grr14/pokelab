@@ -1,4 +1,10 @@
-import { LAST_POKEMON_ID, TYPES, NB_TYPES, NB_ABILITIES } from "./constants"
+import {
+  LAST_POKEMON_ID,
+  TYPES,
+  NB_TYPES,
+  NB_ABILITIES,
+  VERSIONS,
+} from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
 export const validateQuery = (query: string | string[], page: string) => {
@@ -208,7 +214,7 @@ export const getPokedexEntryFromId = (id: number) => {
   }
 }
 
-export const getVersionsFromId = (id: number) => {
+export const getVersionGroupFromId = (id: number) => {
   switch (id) {
     case 5:
       return "Ruby - Sapphire"
@@ -225,14 +231,81 @@ export const getVersionsFromId = (id: number) => {
     case 11:
       return "Black - White"
     case 14:
-      return "Black2 - White2"
+      return "Black 2 - White 2"
     case 15:
       return "X - Y"
     case 16:
-      return "OmegaRuby - AlphaSapphire"
+      return "Omega Ruby - Alpha Sapphire"
     case 17:
       return "Sun - Moon"
     case 18:
-      return "UltraSun - UltraMoon"
+      return "Ultra Sun - Ultra Moon"
+  }
+}
+
+export const getGameVersionFromId = (id: number) => {
+  switch (id) {
+    case VERSIONS.RED:
+      return "Red"
+    case VERSIONS.BLUE:
+      return "Blue"
+    case VERSIONS.YELLOW:
+      return "Yellow"
+    case VERSIONS.GOLD:
+      return "Gold"
+    case VERSIONS.SILVER:
+      return "Silver"
+    case VERSIONS.CRYSTAL:
+      return "Crystal"
+    case VERSIONS.RUBY:
+      return "Ruby"
+    case VERSIONS.SAPPHIRE:
+      return "Sapphire"
+    case VERSIONS.EMERALD:
+      return "Emerald"
+    case VERSIONS.FIRERED:
+      return "FireRed"
+    case VERSIONS.LEAFGREEN:
+      return "LeafGreen"
+    case VERSIONS.DIAMOND:
+      return "Diamond"
+    case VERSIONS.PEARL:
+      return "Pearl"
+    case VERSIONS.PLATINUM:
+      return "Platinum"
+    case VERSIONS.HEARTGOLD:
+      return "HeartGold"
+    case VERSIONS.SOULSILVER:
+      return "SoulSilver"
+    case VERSIONS.BLACK:
+      return "Black"
+    case VERSIONS.WHITE:
+      return "White"
+    case VERSIONS.COLOSSEUM:
+      return "Colosseum"
+    case VERSIONS.XD:
+      return "XD"
+    case VERSIONS.BLACK2:
+      return "Black 2"
+    case VERSIONS.WHITE2:
+      return "White 2"
+    case VERSIONS.X:
+      return "X"
+    case VERSIONS.Y:
+      return "Y"
+    case VERSIONS.OMEGARUBY:
+      return "Omega Ruby"
+    case VERSIONS.ALPHASAPPHIRE:
+      return "Alpha Sapphire"
+    case VERSIONS.SUN:
+      return "Sun"
+    case VERSIONS.MOON:
+      return "Moon"
+    case VERSIONS.ULTRASUN:
+      return "Ultra Sun"
+    case VERSIONS.ULTRAMOON:
+      return "Ultra Moon"
+    default:
+      return "Cannot retrieve version"
   }
 }
