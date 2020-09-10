@@ -4,6 +4,10 @@ import {
   NB_TYPES,
   NB_ABILITIES,
   VERSIONS,
+  DAMAGE_CLASS,
+  MOVE_LEARNING_METHOD,
+  VERSIONS_GROUPS,
+  POKEDEX,
 } from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
@@ -68,7 +72,7 @@ export const getTypeFromId = (id: number) => {
     case TYPES.FAIRY:
       return "fairy"
     default:
-      return "type error"
+      return "-"
   }
 }
 
@@ -163,83 +167,93 @@ export const getNextMultipleOf = (x: number, nb: number) => {
 /* get pokedex entry from the pokedex ID*/
 export const getPokedexEntryFromId = (id: number) => {
   switch (id) {
-    case 1:
+    case POKEDEX.NATIONAL:
       return "National Pokedex"
-    case 2:
+    case POKEDEX["RED-BLUE-YELLOW-FIRERED-LEAFGREEN"]:
       return "Red - Blue - Yellow / FireRed - LeafGreen"
-    case 3:
+    case POKEDEX["GOLD-SILVER-CRYSTAL"]:
       return "Gold - Silver - Crystal"
-    case 4:
+    case POKEDEX["RUBY-SAPPHIRE-EMERALD"]:
       return "Ruby - Sapphire - Emerald"
-    case 5:
+    case POKEDEX["DIAMOND-PEARL"]:
       return "Diamond - Pearl"
-    case 6:
+    case POKEDEX.PLATINUM:
       return "Platinum"
-    case 7:
+    case POKEDEX["HEARTGOLD-SOULSILVER"]:
       return "HeartGold - SoulSilver"
-    case 8:
+    case POKEDEX["BLACK-WHITE"]:
       return "Black - White"
-    case 9:
+    case POKEDEX["BLACK2-WHITE2"]:
       return "Black 2 - White 2"
-    case 12:
+    case POKEDEX["CENTRAL-KALOS"]:
       return "X - Y / Central Kalos"
-    case 13:
-      return "X - Y Coastal Kalos"
-    case 14:
-      return "X - Y Mountain Kalos"
-    case 15:
+    case POKEDEX["COASTAL-KALOS"]:
+      return "X - Y / Coastal Kalos"
+    case POKEDEX["MOUNTAIN-KALOS"]:
+      return "X - Y / Mountain Kalos"
+    case POKEDEX["OMEGARUBY-ALPHASAPPHIRE"]:
       return "Omega Ruby - Alpha Sapphire"
-    case 16:
+    case POKEDEX["SUN-MOON-ALOLA"]:
       return "Sun - Moon / Alola"
-    case 17:
+    case POKEDEX["SUN-MOON-MELEMELE"]:
       return "Sun - Moon / Melemele"
-    case 18:
+    case POKEDEX["SUN-MOON-AKALA"]:
       return "Sun - Moon / Akala"
-    case 19:
+    case POKEDEX["SUN-MOON-ULAULA"]:
       return "Sun - Moon / Ulaula"
-    case 20:
+    case POKEDEX["SUN-MOON-PONI"]:
       return "Sun - Moon / Poni"
-    case 21:
+    case POKEDEX["ULTRASUN-ULTRAMOON-ALOLA"]:
       return "Ultra Sun - Ultra Moon / Alola"
-    case 22:
+    case POKEDEX["ULTRASUN-ULTRAMOON-MELEMELE"]:
       return "Ultra Sun - Ultra Moon / Melemele"
-    case 23:
+    case POKEDEX["ULTRASUN-ULTRAMOON-AKALA"]:
       return "Ultra Sun - Ultra Moon / Akala"
-    case 24:
+    case POKEDEX["ULTRASUN-ULTRAMOON-ULAULA"]:
       return "Ultra Sun - Ultra Moon / Ulaula"
-    case 25:
+    case POKEDEX["ULTRASUN-ULTRAMOON-PONI"]:
       return "Ultra Sun - Ultra Moon / Poni"
     default:
-      return "Error"
+      return "Cannot retrieve Pokedex"
   }
 }
 
 export const getVersionGroupFromId = (id: number) => {
   switch (id) {
-    case 5:
+    case VERSIONS_GROUPS["RED-BLUE"]:
+      return "Red - Blue"
+    case VERSIONS_GROUPS.YELLOW:
+      return "Yellow"
+    case VERSIONS_GROUPS["GOLD-SILVER"]:
+      return "Gold - Silver"
+    case VERSIONS_GROUPS.CRYSTAL:
+      return "Crystal"
+    case VERSIONS_GROUPS["RUBY-SAPPHIRE"]:
       return "Ruby - Sapphire"
-    case 6:
+    case VERSIONS_GROUPS.EMERALD:
       return "Emerald"
-    case 7:
+    case VERSIONS_GROUPS["FIRERED-LEAFGREEN"]:
       return "FireRed - LeafGreen"
-    case 8:
+    case VERSIONS_GROUPS["DIAMOND-PEARL"]:
       return "Diamond - Pearl"
-    case 9:
+    case VERSIONS_GROUPS.PLATINUM:
       return " Platinum"
-    case 10:
+    case VERSIONS_GROUPS["HEARTGOLD-SOULSILVER"]:
       return "HeartGold - SoulSilver"
-    case 11:
+    case VERSIONS_GROUPS["BLACK-WHITE"]:
       return "Black - White"
-    case 14:
+    case VERSIONS_GROUPS["BLACK2-WHITE2"]:
       return "Black 2 - White 2"
-    case 15:
+    case VERSIONS_GROUPS["X-Y"]:
       return "X - Y"
-    case 16:
+    case VERSIONS_GROUPS["OMEGARUBY-ALPHASAPPHIRE"]:
       return "Omega Ruby - Alpha Sapphire"
-    case 17:
+    case VERSIONS_GROUPS["SUN-MOON"]:
       return "Sun - Moon"
-    case 18:
+    case VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]:
       return "Ultra Sun - Ultra Moon"
+    default:
+      return "Cannot retrieve version group"
   }
 }
 
@@ -307,5 +321,35 @@ export const getGameVersionFromId = (id: number) => {
       return "Ultra Moon"
     default:
       return "Cannot retrieve version"
+  }
+}
+
+export const getDamageClassFromId = (id: number) => {
+  switch (id) {
+    case DAMAGE_CLASS.STATUS:
+      return "Status"
+    case DAMAGE_CLASS.PHYSICAL:
+      return "Physical"
+    case DAMAGE_CLASS.SPECIAL:
+      return "Special"
+    default:
+      return ""
+  }
+}
+
+export const getLearningMethodFromId = (id: number) => {
+  switch (id) {
+    case MOVE_LEARNING_METHOD.LEVEL:
+      return "Level"
+    case MOVE_LEARNING_METHOD.EGG:
+      return "Egg"
+    case MOVE_LEARNING_METHOD.MACHINE:
+      return "TM/TR"
+    case MOVE_LEARNING_METHOD.TUTOR:
+      return "Move tutor"
+    case MOVE_LEARNING_METHOD.LIGHT_BALL_EGG:
+      return "Light Ball Egg"
+    case MOVE_LEARNING_METHOD.FORM_CHANGE:
+      return "Form Change"
   }
 }

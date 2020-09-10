@@ -8,6 +8,7 @@ import PokemonEvolution from "./PokemonEvolution"
 import PokemonDescription from "./PokemonDescription"
 import PokemonStats from "./PokemonStats"
 import PokemonDexEntries from "./PokemonDexEntries"
+import PokemonMoves from "./PokemonMoves"
 import LinkArrow from "./LinkArrow"
 
 import { capitalizeFirstLetter } from "../common/utils"
@@ -70,6 +71,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
       <PokemonDescription pokemon={pokemon} />
       <PokemonEvolution id={pokemon.evolution_chain_id} />
       <PokemonStats id={pokemon.id} />
+      <PokemonMoves pokemonId={pokemon.id} />
       <PokemonDexEntries id={pokemon.id} />
       <PokemonTypeInfos type_1={pokemon.type_1} type_2={pokemon.type_2} />
     </>

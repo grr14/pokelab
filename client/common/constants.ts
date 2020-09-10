@@ -465,6 +465,34 @@ export const SEVENTH_GENERATION_INDEX = LAST_POKEMON_ID
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
+export enum POKEDEX {
+  NATIONAL = 1,
+  "RED-BLUE-YELLOW-FIRERED-LEAFGREEN",
+  "GOLD-SILVER-CRYSTAL",
+  "RUBY-SAPPHIRE-EMERALD",
+  "DIAMOND-PEARL" = 5,
+  PLATINUM,
+  "HEARTGOLD-SOULSILVER",
+  "BLACK-WHITE",
+  "BLACK2-WHITE2" = 9,
+  "CENTRAL-KALOS" = 12,
+  "COASTAL-KALOS",
+  "MOUNTAIN-KALOS",
+  "OMEGARUBY-ALPHASAPPHIRE",
+  "SUN-MOON-ALOLA",
+  "SUN-MOON-MELEMELE" = 17,
+  "SUN-MOON-AKALA",
+  "SUN-MOON-ULAULA",
+  "SUN-MOON-PONI",
+  "ULTRASUN-ULTRAMOON-ALOLA",
+  "ULTRASUN-ULTRAMOON-MELEMELE" = 22,
+  "ULTRASUN-ULTRAMOON-AKALA",
+  "ULTRASUN-ULTRAMOON-ULAULA",
+  "ULTRASUN-ULTRAMOON-PONI" = 25,
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
 export enum VERSIONS {
   RED = 1,
   BLUE,
@@ -529,4 +557,42 @@ export const versionsColors = {
   moon: "#5a7aba",
   ultrasun: "#e68a26",
   ultramoon: "#5a7aba",
+}
+
+export enum VERSIONS_GROUPS {
+  "RED-BLUE" = 1,
+  YELLOW = 2,
+  "GOLD-SILVER" = 3,
+  CRYSTAL = 4,
+  "RUBY-SAPPHIRE" = 5,
+  EMERALD = 6,
+  "FIRERED-LEAFGREEN" = 7,
+  "DIAMOND-PEARL" = 8,
+  PLATINUM = 9,
+  "HEARTGOLD-SOULSILVER" = 10,
+  "BLACK-WHITE" = 11,
+  COLOSSEUM = 12,
+  XD = 13,
+  "BLACK2-WHITE2" = 14,
+  "X-Y" = 15,
+  "OMEGARUBY-ALPHASAPPHIRE" = 16,
+  "SUN-MOON" = 17,
+  "ULTRASUN-ULTRAMOON" = 18,
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+export enum DAMAGE_CLASS {
+  STATUS = 1,
+  PHYSICAL = 2,
+  SPECIAL = 3,
+}
+
+export enum MOVE_LEARNING_METHOD {
+  LEVEL = 1,
+  EGG = 2,
+  TUTOR = 3,
+  MACHINE = 4,
+  LIGHT_BALL_EGG = 6,
+  FORM_CHANGE = 10,
 }

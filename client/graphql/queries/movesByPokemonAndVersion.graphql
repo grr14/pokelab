@@ -1,0 +1,21 @@
+query movesByPokemonAndVersion($pokemonId: Int, $versionId: Int) {
+  movesByPokemonAndVersion(pokemonId: $pokemonId, versionId: $versionId) {
+    learning_method
+    level_learned
+    order
+    move {
+      id
+      identifier
+      generation_id
+      type_id
+      power
+      pp
+      accuracy
+      priority
+      target_id
+      damage_class_id
+      effect_id
+      effect_chance
+    }
+  }
+}
