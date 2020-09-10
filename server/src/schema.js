@@ -13,6 +13,8 @@ typeDefs = gql`
     pokemonsByAbilityId(id: Int): [Pokemon]
     getAllAbilities: [Ability]
     getPokemonPokedexEntries(id: Int): [FlavorText]
+    moveById(id: Int): Move
+    movesByPokemonAndVersion(pokemonId: Int, versionId: Int): [MoveDetail]
   }
 
   type Pokemon {
@@ -99,6 +101,28 @@ typeDefs = gql`
   type PokedexNumber {
     id: Int
     pokemon_number: Int
+  }
+
+  type Move {
+    id: Int!
+    identifier: String!
+    generation_id: Int
+    type_id: Int
+    power: Int
+    pp: Int
+    accuracy: Int
+    priority: Int
+    target_id: Int
+    damage_class_id: Int
+    effect_id: Int
+    effect_chance: Int
+  }
+
+  type MoveDetail {
+    move: Move
+    learning_method: Int
+    level_learned: Int
+    order: Int
   }
 `
 module.exports = typeDefs

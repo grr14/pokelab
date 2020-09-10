@@ -322,6 +322,86 @@ module.exports.createStore = () => {
   })
   pokedex_entries.removeAttribute("id")
 
+  const moves = db.define("moves", {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+    },
+    identifier: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    generation_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    type_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    power: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    pp: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    accuracy: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    priority: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    target_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    damage_class_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    effect_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    effect_chance: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  })
+
+  const pokemon_moves = db.define("pokemon_moves", {
+    pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    version_group_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    move_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    pokemon_move_method_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    level: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    order: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+  })
+  pokemon_moves.removeAttribute("id")
+
   return {
     db,
     pokemon,
@@ -333,5 +413,7 @@ module.exports.createStore = () => {
     stats,
     pokedex_numbers,
     pokedex_entries,
+    moves,
+    pokemon_moves,
   }
 }

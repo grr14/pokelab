@@ -271,6 +271,62 @@ class pokemonDB extends DataSource {
       text: entry.flavor_text,
     }))
   }
+
+  async getMoveById({ id }) {
+    const move = await this.store.moves.findOne({
+      where: { id: id },
+    })
+
+    return move
+  }
+
+  async getMovesByPokemonAndVersion({ pokemonId, versionId }) {
+    const movesDetails = await this.store.pokemon_moves.findAll({
+      attributes: ["move_id", "pokemon_move_method_id", "level", "order"],
+      where: {
+        [Op.and]: [{ pokemon_id: pokemonId }, { version_group_id: versionId }],
+      },
+      order: [
+        ["pokemon_move_method_id", "ASC"],
+        ["level", "ASC"],
+      ],
+    })
+
+    const moves = []
+
+    await Promise.all(
+      movesDetails.map(async (moveD) => {
+        let tmp = await this.store.moves.findOne({
+          where: { id: moveD.move_id },
+        })
+        return moves.push({
+          id: tmp.id,
+          identifier: tmp.identifier,
+          generation_id: tmp.generation_id,
+          type_id: tmp.type_id,
+          power: tmp.power,
+          pp: tmp.pp,
+          accuracy: tmp.accuracy,
+          priority: tmp.priority,
+          target_id: tmp.target_id,
+          damage_class_id: tmp.damage_class_id,
+          effect_id: tmp.effect_id,
+          effect_chance: tmp.effect_chance,
+        })
+      })
+    )
+
+    const allMoves = movesDetails.map((move, idx) => {
+      return {
+        learning_method: move.pokemon_move_method_id,
+        level_learned: move.level,
+        order: move.order,
+        move: moves[idx],
+      }
+    })
+
+    return allMoves
+  }
 }
 
 module.exports = pokemonDB
