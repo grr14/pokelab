@@ -1,3 +1,4 @@
+import { GolfCourseRounded } from "@material-ui/icons"
 import { TypeEfficiency } from "./types"
 
 export const github = "https://github.com/grr14/pokelab"
@@ -493,6 +494,18 @@ export enum POKEDEX {
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 
+export const NB_GENERATIONS = 7
+
+export enum GENERATIONS {
+  I = 1,
+  II,
+  III,
+  IV,
+  V,
+  VI,
+  VII,
+}
+
 export enum VERSIONS {
   RED = 1,
   BLUE,
@@ -579,6 +592,46 @@ export enum VERSIONS_GROUPS {
   "SUN-MOON" = 17,
   "ULTRASUN-ULTRAMOON" = 18,
 }
+
+export const VERSIONS_IN_GENERATIONS: VERSIONS[][] = [
+  [VERSIONS.RED, VERSIONS.BLUE, VERSIONS.YELLOW],
+  [VERSIONS.GOLD, VERSIONS.SILVER, VERSIONS.CRYSTAL],
+  [
+    VERSIONS.RUBY,
+    VERSIONS.SAPPHIRE,
+    VERSIONS.EMERALD,
+    VERSIONS.FIRERED,
+    VERSIONS.LEAFGREEN,
+  ],
+  [
+    VERSIONS.DIAMOND,
+    VERSIONS.PEARL,
+    VERSIONS.PLATINUM,
+    VERSIONS.HEARTGOLD,
+    VERSIONS.SOULSILVER,
+  ],
+  [VERSIONS.BLACK, VERSIONS.WHITE, VERSIONS.BLACK2, VERSIONS.WHITE2],
+  [VERSIONS.X, VERSIONS.Y, VERSIONS.OMEGARUBY, VERSIONS.ALPHASAPPHIRE],
+  [VERSIONS.SUN, VERSIONS.MOON, VERSIONS.ULTRASUN, VERSIONS.ULTRAMOON],
+]
+
+export const VERSIONS_GROUPS_IN_GENERATIONS: VERSIONS_GROUPS[][] = [
+  [VERSIONS_GROUPS["RED-BLUE"], VERSIONS_GROUPS.YELLOW],
+  [VERSIONS_GROUPS["GOLD-SILVER"], VERSIONS_GROUPS.CRYSTAL],
+  [
+    VERSIONS_GROUPS["RUBY-SAPPHIRE"],
+    VERSIONS_GROUPS.EMERALD,
+    VERSIONS_GROUPS["FIRERED-LEAFGREEN"],
+  ],
+  [
+    VERSIONS_GROUPS["DIAMOND-PEARL"],
+    VERSIONS_GROUPS.PLATINUM,
+    VERSIONS_GROUPS["HEARTGOLD-SOULSILVER"],
+  ],
+  [VERSIONS_GROUPS["BLACK-WHITE"], VERSIONS_GROUPS["BLACK2-WHITE2"]],
+  [VERSIONS_GROUPS["X-Y"], VERSIONS_GROUPS["OMEGARUBY-ALPHASAPPHIRE"]],
+  [VERSIONS_GROUPS["SUN-MOON"], VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]],
+]
 
 /* ---------------------------------------------------------------------------------------------------------------------------- */
 

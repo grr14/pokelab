@@ -1,6 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { mq, VERSIONS_GROUPS, MOVE_LEARNING_METHOD } from "../common/constants"
+import {
+  mq,
+  VERSIONS_GROUPS,
+  MOVE_LEARNING_METHOD,
+  GENERATIONS,
+  VERSIONS,
+  VERSIONS_GROUPS_IN_GENERATIONS,
+  NB_GENERATIONS,
+} from "../common/constants"
 
 import Error from "../pages/_error"
 
@@ -19,6 +27,7 @@ import {
   getDamageClassFromId,
   getLearningMethodFromId,
   capitalizeSentence,
+  getGenerationFromId,
 } from "../common/utils"
 import {
   ListItem,
@@ -79,7 +88,7 @@ function TabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box p={3}>
-          <p>{children}</p>
+          <div>{children}</div>
         </Box>
       )}
     </div>
@@ -92,12 +101,18 @@ interface Props {
 
 const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
   const [versionGroup, setVersionGroup] = useState<VERSIONS_GROUPS>(
-    VERSIONS_GROUPS["RED-BLUE"]
+    VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]
   )
-  console.log(versionGroup)
 
-  const [value, setValue] = React.useState(0)
-  const [version, setVersion] = React.useState("")
+  const pokemonGeneration = getGenerationFromId(pokemonId)
+  const allGenerations = [...Array(NB_GENERATIONS).keys()]
+  const rest = allGenerations.splice(0, pokemonGeneration - 1)
+  const restLength = rest.length
+  /* we always display the most recent version tab first */
+  const [tabNumber, setTabNumber] = React.useState(allGenerations.length - 1)
+  const handleTabChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    setTabNumber(newValue)
+  }
 
   const { data, loading, error, refetch: _refetch } = useQuery<
     movesByPokemonAndVersion,
@@ -117,10 +132,21 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
   }
 
   if (loading) {
-    return <p>Loading...</p>
+    return (
+      <div
+        css={{
+          minHeight: "300px",
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "center",
+        }}
+      >
+        <p>Loading...</p>
+      </div>
+    )
   }
 
-  const getTable = (array: Moves[]) =>
+  const getTable = (array: Moves[], byLevel = false) =>
     array.map((move, idx) => (
       <tr css={{ textAlign: "center", border: "solid 1px #E31010" }} key={idx}>
         <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
@@ -149,19 +175,23 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
         <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
           {getDamageClassFromId(move.move.damage_class_id)}
         </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {getLearningMethodFromId(move.learning_method)}
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {move.level_learned}
-        </td>
+        {byLevel && (
+          <React.Fragment>
+            <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
+              {getLearningMethodFromId(move.learning_method)}
+            </td>
+            <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
+              {move.level_learned}
+            </td>
+          </React.Fragment>
+        )}
       </tr>
     ))
 
   const learntByLevel = data.movesByPokemonAndVersion.filter(
     (move) => move.learning_method === MOVE_LEARNING_METHOD.LEVEL
   )
-  const learntByLevelTable = getTable(learntByLevel)
+  const learntByLevelTable = getTable(learntByLevel, true)
 
   const learntByMachine = data.movesByPokemonAndVersion.filter(
     (move) => move.learning_method === MOVE_LEARNING_METHOD.MACHINE
@@ -188,13 +218,6 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
   )
   const learntByFormChangeTable = getTable(learntByFormChange)
 
-  const handleClick = () => {
-    setVersionGroup(VERSIONS_GROUPS["RED-BLUE"])
-    refetch()
-  }
-
-  const table = getTable(data.movesByPokemonAndVersion)
-
   function a11yProps(index: any) {
     return {
       id: `scrollable-auto-tab-${index}`,
@@ -202,30 +225,26 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
     }
   }
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue)
-  }
-
-  const changeGeneration = (el: number) => {
-    let generationId: VERSIONS_GROUPS
+  const changeGeneration = (el: number, tabNumber: number) => {
+    let generationId: number
     switch (el) {
       case 1:
         generationId = VERSIONS_GROUPS["RED-BLUE"]
         break
       case 2:
-        generationId = VERSIONS_GROUPS["GOLD-SILVER"]
+        generationId = VERSIONS_GROUPS["CRYSTAL"]
         break
       case 3:
-        generationId = VERSIONS_GROUPS["RUBY-SAPPHIRE"]
+        generationId = VERSIONS_GROUPS["FIRERED-LEAFGREEN"]
         break
       case 4:
-        generationId = VERSIONS_GROUPS["DIAMOND-PEARL"]
+        generationId = VERSIONS_GROUPS["HEARTGOLD-SOULSILVER"]
         break
       case 5:
-        generationId = VERSIONS_GROUPS["BLACK-WHITE"]
+        generationId = VERSIONS_GROUPS["BLACK2-WHITE2"]
         break
       case 6:
-        generationId = VERSIONS_GROUPS["X-Y"]
+        generationId = VERSIONS_GROUPS["OMEGARUBY-ALPHASAPPHIRE"]
         break
       case 7:
         generationId = VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]
@@ -238,7 +257,7 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
     refetch()
   }
 
-  const arrayHeader = (
+  const arrayHeader = (byLevel) => (
     <tr css={{ textAlign: "center" }}>
       <th css={{ border: "solid 1px #E31010" }}>Identifier</th>
       <th css={{ border: "solid 1px #E31010" }}>Type</th>
@@ -246,122 +265,106 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
       <th css={{ border: "solid 1px #E31010" }}>PP</th>
       <th css={{ border: "solid 1px #E31010" }}>Accuracy</th>
       <th css={{ border: "solid 1px #E31010" }}>Damage Class</th>
-      <th css={{ border: "solid 1px #E31010" }}>Method</th>
-      <th css={{ border: "solid 1px #E31010" }}>Level</th>
+      {byLevel && (
+        <React.Fragment>
+          <th css={{ border: "solid 1px #E31010" }}>Method</th>
+          <th css={{ border: "solid 1px #E31010" }}>Level</th>
+        </React.Fragment>
+      )}
     </tr>
   )
 
   const handleChangeSelect = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setVersion(event.target.value as string)
     setVersionGroup(event.target.value as VERSIONS_GROUPS)
     refetch()
   }
 
-  const versionsInGeneration: VERSIONS_GROUPS[][] = [
-    [
-      VERSIONS_GROUPS["RED-BLUE"],
-      VERSIONS_GROUPS.YELLOW,
-      VERSIONS_GROUPS["FIRERED-LEAFGREEN"],
-    ],
-    [VERSIONS_GROUPS["GOLD-SILVER"], VERSIONS_GROUPS.CRYSTAL],
-    [VERSIONS_GROUPS["RUBY-SAPPHIRE"], VERSIONS_GROUPS.EMERALD],
-    [
-      VERSIONS_GROUPS["DIAMOND-PEARL"],
-      VERSIONS_GROUPS.PLATINUM,
-      VERSIONS_GROUPS["HEARTGOLD-SOULSILVER"],
-    ],
-    [VERSIONS_GROUPS["BLACK-WHITE"], VERSIONS_GROUPS["BLACK2-WHITE2"]],
-    [VERSIONS_GROUPS["X-Y"], VERSIONS_GROUPS["OMEGARUBY-ALPHASAPPHIRE"]],
-    [VERSIONS_GROUPS["SUN-MOON"], VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]],
+  const buildTables = [
+    {
+      method: "Leveling",
+      tableHasLevelCol: true,
+      table: learntByLevelTable,
+    },
+    {
+      method: "Machine",
+      tableHasLevelCol: false,
+      table: learntByMachineTable,
+    },
+    {
+      method: "Egg Moves",
+      tableHasLevelCol: false,
+      table: learntByEggTable,
+    },
+    {
+      method: "Tutor",
+      tableHasLevelCol: false,
+      table: learntByTutorTable,
+    },
+    {
+      method: "Light Ball Egg",
+      tableHasLevelCol: false,
+      table: learntByLightBallTable,
+    },
+    {
+      method: "Form Change",
+      tableHasLevelCol: false,
+      table: learntByFormChangeTable,
+    },
   ]
 
   return (
     <div css={{ width: "100%", padding: "0 5%" }}>
-      <h2>Moves Learnt in version {getVersionGroupFromId(versionGroup)}</h2>
-
       <Tabs
-        value={value}
-        onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
+        value={tabNumber}
+        onChange={handleTabChange}
         variant="scrollable"
         scrollButtons="auto"
-        aria-label="scrollable auto tabs example"
+        aria-label="scrollable auto tabs"
       >
-        {[...Array(8).keys()].slice(1).map((el) => (
+        {allGenerations.map((el) => (
           <Tab
             key={el}
-            label={`Generation ${el}`}
-            onClick={() => changeGeneration(el)}
+            label={`Generation ${el + 1}`}
+            onClick={() => changeGeneration(el + 1, tabNumber)}
             {...a11yProps(el)}
           />
         ))}
       </Tabs>
 
-      {[...Array(8).keys()].slice(1).map((el) => (
-        <TabPanel value={value} index={el - 1}>
-          Item {el}
-          Index
+      {[...Array(allGenerations.length).keys()].map((el) => (
+        <TabPanel value={tabNumber} index={el}>
+          <h2>Moves Learnt in version {getVersionGroupFromId(versionGroup)}</h2>
           <FormControl css={{ minWidth: 120 }}>
-            <InputLabel id="demo-simple-select-label">Version</InputLabel>
+            <InputLabel id="select-version">Versions</InputLabel>
             <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={"Select game version..."}
+              labelId="select-version"
+              id="select-version"
+              value={versionGroup}
               onChange={handleChangeSelect}
             >
-              {versionsInGeneration[el - 1].map((el) => (
-                <MenuItem value={el}>{getVersionGroupFromId(el)}</MenuItem>
-              ))}
+              {VERSIONS_GROUPS_IN_GENERATIONS[el + restLength].map(
+                (versGroup, idx) => (
+                  <MenuItem key={idx} value={versGroup}>
+                    {getVersionGroupFromId(versGroup)}
+                  </MenuItem>
+                )
+              )}
             </Select>
           </FormControl>
-          <p>{version}</p>
-          <h3>Learnt by leveling</h3>
-          <table css={{ borderCollapse: "collapse" }}>
-            <thead>{arrayHeader}</thead>
-            <tbody>{learntByLevelTable}</tbody>
-          </table>
-          <h3>Learnt by Machine</h3>
-          <table css={{ borderCollapse: "collapse" }}>
-            <thead>{arrayHeader}</thead>
-            <tbody>{learntByMachineTable}</tbody>
-          </table>
-          {learntByEggTable.length > 0 && (
-            <React.Fragment>
-              <h3>Egg Moves</h3>
-              <table css={{ borderCollapse: "collapse" }}>
-                <thead>{arrayHeader}</thead>
-                <tbody>{learntByEggTable}</tbody>
-              </table>
-            </React.Fragment>
-          )}
-          {learntByTutorTable.length > 0 && (
-            <React.Fragment>
-              <h3>Learnt from Tutor</h3>
-              <table css={{ borderCollapse: "collapse" }}>
-                <thead>{arrayHeader}</thead>
-                <tbody>{learntByTutorTable}</tbody>
-              </table>
-            </React.Fragment>
-          )}
-          {learntByLightBallTable.length > 0 && (
-            <React.Fragment>
-              <h3>Learnt from Light Ball Egg</h3>
-              <table css={{ borderCollapse: "collapse" }}>
-                <thead>{arrayHeader}</thead>
-                <tbody>{learntByLightBallTable}</tbody>
-              </table>
-            </React.Fragment>
-          )}
-          {learntByFormChangeTable.length > 0 && (
-            <React.Fragment>
-              <h3>Learnt after changing form:</h3>
-              <table css={{ borderCollapse: "collapse" }}>
-                <thead>{arrayHeader}</thead>
-                <tbody>{learntByFormChangeTable}</tbody>
-              </table>
-            </React.Fragment>
-          )}
+
+          {buildTables.map((table, idx) => (
+            <div key={idx}>
+              {table.table.length > 0 && (
+                <React.Fragment>
+                  <h3>Learnt by {table.method}</h3>
+                  <table css={{ borderCollapse: "collapse" }}>
+                    <thead>{arrayHeader(table.tableHasLevelCol)}</thead>
+                    <tbody>{table.table}</tbody>
+                  </table>
+                </React.Fragment>
+              )}
+            </div>
+          ))}
         </TabPanel>
       ))}
     </div>

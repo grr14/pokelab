@@ -8,6 +8,13 @@ import {
   MOVE_LEARNING_METHOD,
   VERSIONS_GROUPS,
   POKEDEX,
+  GENERATIONS,
+  FIFTH_GENERATION_INDEX,
+  FIRST_GENERATION_INDEX,
+  FOURTH_GENERATION_INDEX,
+  SECOND_GENERATION_INDEX,
+  SIXTH_GENERATION_INDEX,
+  THIRD_GENERATION_INDEX,
 } from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
@@ -352,4 +359,38 @@ export const getLearningMethodFromId = (id: number) => {
     case MOVE_LEARNING_METHOD.FORM_CHANGE:
       return "Form Change"
   }
+}
+
+export const getGenerationFromId = (pokemonId: number) => {
+  if (pokemonId > LAST_POKEMON_ID || pokemonId < 0) {
+    return 0
+  } else if (pokemonId > 0 && pokemonId <= FIRST_GENERATION_INDEX) {
+    return GENERATIONS.I
+  } else if (
+    pokemonId > FIRST_GENERATION_INDEX &&
+    pokemonId <= SECOND_GENERATION_INDEX
+  ) {
+    return GENERATIONS.II
+  } else if (
+    pokemonId > SECOND_GENERATION_INDEX &&
+    pokemonId <= THIRD_GENERATION_INDEX
+  ) {
+    return GENERATIONS.III
+  } else if (
+    pokemonId > THIRD_GENERATION_INDEX &&
+    pokemonId <= FOURTH_GENERATION_INDEX
+  ) {
+    return GENERATIONS.IV
+  } else if (
+    pokemonId > FOURTH_GENERATION_INDEX &&
+    pokemonId <= FIFTH_GENERATION_INDEX
+  ) {
+    return GENERATIONS.V
+  } else if (
+    pokemonId > FIFTH_GENERATION_INDEX &&
+    pokemonId <= SIXTH_GENERATION_INDEX
+  ) {
+    return GENERATIONS.VI
+  }
+  return GENERATIONS.VII
 }
