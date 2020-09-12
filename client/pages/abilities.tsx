@@ -14,6 +14,7 @@ import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 import { capitalizeSentence } from "../common/utils"
 import { mq } from "../common/constants"
+import { Table, Td, Th, Tr } from "../components/Table"
 
 const GET_ALL_ABILITIES = gql`
   query getAllAbilities {
@@ -40,33 +41,15 @@ const Abilities: React.FC = () => {
     return <Error statusCode={404} />
   }
 
-  const tdCSS = {
-    textAlign: "center" as "center",
-    padding: "5px",
-    "&:not(:last-of-type)": {
-      borderRight: "solid 1px #E31010",
-    },
-  }
-
-  const thCSS = {
-    fontSize: "1.2em",
-    padding: "15px",
-  }
-
   const abilityTable = data.getAllAbilities.map((ability, idx) => (
-    <tr
-      key={idx}
-      css={(theme) => ({
-        "&:hover": { backgroundColor: theme.card.backgroundHover },
-      })}
-    >
-      <td css={{ ...tdCSS, width: "10%" }}>{ability.id}</td>
-      <td css={{ ...tdCSS, width: "80%" }}>
+    <Tr key={idx}>
+      <Td css={{ width: "10%" }}>{ability.id}</Td>
+      <Td css={{ width: "80%" }}>
         <Link href={`/ability/[pid]`} as={`/ability/${ability.id}`}>
           <a
             css={{
               "&:hover": {
-                textDecoration: "underline",
+                textDdecoration: "underline",
                 cursor: "pointer",
               },
             }}
@@ -74,9 +57,9 @@ const Abilities: React.FC = () => {
             {capitalizeSentence(ability.identifier, ["of"])}
           </a>
         </Link>
-      </td>
-      <td css={{ ...tdCSS, width: "10%" }}>{ability.generation}</td>
-    </tr>
+      </Td>
+      <Td css={{ width: "10%" }}>{ability.generation}</Td>
+    </Tr>
   ))
 
   return (
@@ -119,21 +102,20 @@ const Abilities: React.FC = () => {
                 },
               }}
             >
-              <table
+              <Table
                 css={{
                   maxWidth: "600px",
-                  borderCollapse: "collapse",
                 }}
               >
-                <thead css={{ borderBottom: "solid 1px #E31010" }}>
-                  <tr>
-                    <th css={{ ...tdCSS, ...thCSS }}>ID</th>
-                    <th css={{ ...tdCSS, ...thCSS }}>Ability name</th>
-                    <th css={{ ...tdCSS, ...thCSS }}>Generation</th>
-                  </tr>
+                <thead>
+                  <Tr>
+                    <Th>ID</Th>
+                    <Th>Ability name</Th>
+                    <Th>Generation</Th>
+                  </Tr>
                 </thead>
                 <tbody>{abilityTable}</tbody>
-              </table>
+              </Table>
             </div>
           </div>
         </div>

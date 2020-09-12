@@ -20,6 +20,7 @@ import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 import { capitalizeFirstLetter, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
+import { Table, Td, Th, Tr } from "./Table"
 
 const GET_ABILITY = gql`
   query abilityById($id: Int) {
@@ -89,23 +90,10 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
 
   const flavorTextesByVersion = abilityData.abilityById.flavor_textes.map(
     (el, idx) => (
-      <tr
-        key={idx}
-        css={{
-          "&:not(:last-of-type)": { borderBottom: "solid 1px #E31010" },
-        }}
-      >
-        <th
-          scope="row"
-          css={{
-            borderRight: "solid 1px #E31010",
-            padding: "5px 15px 5px 5px",
-          }}
-        >
-          {getVersionGroupFromId(el.version_group)}
-        </th>
-        <td css={{ padding: "10px" }}>{el.text}</td>
-      </tr>
+      <Tr key={idx}>
+        <Th scope="row">{getVersionGroupFromId(el.version_group)}</Th>
+        <Td align="left">{el.text}</Td>
+      </Tr>
     )
   )
 
@@ -143,11 +131,9 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
             }}
           >
             <h2>Flavor text by Version</h2>
-            <table
-              css={{ borderCollapse: "collapse", borderSpacing: "10px 0" }}
-            >
+            <Table>
               <tbody>{flavorTextesByVersion}</tbody>
-            </table>
+            </Table>
           </div>
           <div
             css={{

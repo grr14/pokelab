@@ -15,6 +15,7 @@ import React from "react"
 import { VERSIONS } from "../common/constants"
 import { getGameVersionFromId } from "../common/utils"
 import { Theme } from "../common/types"
+import { Table, Td, Th, Tr } from "./Table"
 
 interface VersionProps {
   version: number
@@ -118,35 +119,24 @@ const PokemonDexEntries: React.FC<Props> = ({ id }) => {
   }
 
   const dexEntryByVersion = data.getPokemonPokedexEntries.map((entry, idx) => (
-    <tr
-      key={idx}
-      css={{
-        "&:not(:last-of-type)": { borderBottom: "solid 1px #E31010" },
-      }}
-    >
-      <th
-        scope="row"
-        css={{
-          borderRight: "solid 1px #E31010",
-          padding: "5px 15px 5px 5px",
-        }}
-      >
+    <Tr key={idx}>
+      <Th scope="row">
         <VersionNameDisplay version={entry.version_group}>
           {" "}
           {getGameVersionFromId(entry.version_group)}
         </VersionNameDisplay>
-      </th>
-      <td css={{ padding: "10px" }}>{entry.text}</td>
-    </tr>
+      </Th>
+      <Td align="left">{entry.text}</Td>
+    </Tr>
   ))
 
   return (
     <div css={{ width: "100%" }}>
       <h2 css={{ paddingLeft: "5%" }}>Pokedex Entries</h2>
       <div css={{ width: "100%", padding: "0 3% 0 5%" }}>
-        <table css={{ borderCollapse: "collapse" }}>
+        <Table>
           <tbody>{dexEntryByVersion}</tbody>
-        </table>
+        </Table>
       </div>
     </div>
   )
