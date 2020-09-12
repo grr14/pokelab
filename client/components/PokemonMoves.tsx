@@ -1,16 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
+
+import Link from "next/link"
+import React, { useState, useCallback } from "react"
+
 import {
-  mq,
   VERSIONS_GROUPS,
   MOVE_LEARNING_METHOD,
-  GENERATIONS,
-  VERSIONS,
   VERSIONS_GROUPS_IN_GENERATIONS,
   NB_GENERATIONS,
 } from "../common/constants"
 
-import Error from "../pages/_error"
+import TypeDisplay from "./TypeDisplay"
+import { Table, Tr, Th, Td } from "./Table"
 
 import {
   movesByPokemonAndVersion,
@@ -21,7 +23,6 @@ import {
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
 import {
-  capitalizeFirstLetter,
   getVersionGroupFromId,
   getTypeFromId,
   getDamageClassFromId,
@@ -29,9 +30,8 @@ import {
   capitalizeSentence,
   getGenerationFromId,
 } from "../common/utils"
+
 import {
-  ListItem,
-  List,
   Tabs,
   Tab,
   Box,
@@ -40,10 +40,6 @@ import {
   Select,
   MenuItem,
 } from "@material-ui/core"
-import TypeDisplay from "./TypeDisplay"
-import Link from "next/link"
-import { useState, useCallback } from "react"
-import React from "react"
 
 const GET_MOVES = gql`
   query movesByPokemonAndVersion($pokemonId: Int, $versionId: Int) {
@@ -70,36 +66,31 @@ const GET_MOVES = gql`
 `
 
 interface TabPanelProps {
-  children?: React.ReactNode
-  index: any
-  value: any
+  children: React.ReactNode
+  index: number
+  value: number
 }
 
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props
+const TabPanel: React.FC<TabPanelProps> = ({ children, index, value }) => (
+  <div
+    role="tabpanel"
+    hidden={value !== index}
+    id={`simple-tabpanel-${index}`}
+    aria-labelledby={`simple-tab-${index}`}
+  >
+    {value === index && (
+      <Box>
+        <div>{children}</div>
+      </Box>
+    )}
+  </div>
+)
 
-  return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box p={3}>
-          <div>{children}</div>
-        </Box>
-      )}
-    </div>
-  )
-}
-
-interface Props {
+interface PokemonMovesProps {
   pokemonId: number
 }
 
-const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
+const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
   const [versionGroup, setVersionGroup] = useState<VERSIONS_GROUPS>(
     VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]
   )
@@ -146,15 +137,32 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
     )
   }
 
+  const arrayHeader = (byLevel: boolean) => (
+    <Tr>
+      <Th>Name</Th>
+      <Th>Type</Th>
+      <Th>Power</Th>
+      <Th>PP</Th>
+      <Th>Accuracy</Th>
+      <Th>Damage Class</Th>
+      {byLevel && (
+        <React.Fragment>
+          <Th>Method</Th>
+          <Th>Level</Th>
+        </React.Fragment>
+      )}
+    </Tr>
+  )
+
   const getTable = (array: Moves[], byLevel = false) =>
     array.map((move, idx) => (
-      <tr css={{ textAlign: "center", border: "solid 1px #E31010" }} key={idx}>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
+      <Tr key={idx}>
+        <Td>
           <Link href={`/move/[pid]`} as={`/move/${move.move.id}`}>
             <a>{capitalizeSentence(move.move.identifier)}</a>
           </Link>
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
+        </Td>
+        <Td>
           <Link href={`/type/[pid]`} as={`/type/${move.move.type_id}`}>
             <a>
               <TypeDisplay size="small" type={move.move.type_id}>
@@ -162,30 +170,18 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
               </TypeDisplay>
             </a>
           </Link>
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {move.move.power !== null ? move.move.power : "-"}
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {move.move.pp}
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {move.move.accuracy != null ? move.move.accuracy : "-"}
-        </td>
-        <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-          {getDamageClassFromId(move.move.damage_class_id)}
-        </td>
+        </Td>
+        <Td>{move.move.power !== null ? move.move.power : "-"}</Td>
+        <Td>{move.move.pp}</Td>
+        <Td>{move.move.accuracy != null ? move.move.accuracy : "-"}</Td>
+        <Td>{getDamageClassFromId(move.move.damage_class_id)}</Td>
         {byLevel && (
           <React.Fragment>
-            <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-              {getLearningMethodFromId(move.learning_method)}
-            </td>
-            <td css={{ textAlign: "center", border: "solid 1px #E31010" }}>
-              {move.level_learned}
-            </td>
+            <Td>{getLearningMethodFromId(move.learning_method)}</Td>
+            <Td>{move.level_learned}</Td>
           </React.Fragment>
         )}
-      </tr>
+      </Tr>
     ))
 
   const learntByLevel = data.movesByPokemonAndVersion.filter(
@@ -218,14 +214,7 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
   )
   const learntByFormChangeTable = getTable(learntByFormChange)
 
-  function a11yProps(index: any) {
-    return {
-      id: `scrollable-auto-tab-${index}`,
-      "aria-controls": `scrollable-auto-tabpanel-${index}`,
-    }
-  }
-
-  const changeGeneration = (el: number, tabNumber: number) => {
+  const changeGeneration = (el: number) => {
     let generationId: number
     switch (el) {
       case 1:
@@ -257,29 +246,12 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
     refetch()
   }
 
-  const arrayHeader = (byLevel) => (
-    <tr css={{ textAlign: "center" }}>
-      <th css={{ border: "solid 1px #E31010" }}>Identifier</th>
-      <th css={{ border: "solid 1px #E31010" }}>Type</th>
-      <th css={{ border: "solid 1px #E31010" }}>Power</th>
-      <th css={{ border: "solid 1px #E31010" }}>PP</th>
-      <th css={{ border: "solid 1px #E31010" }}>Accuracy</th>
-      <th css={{ border: "solid 1px #E31010" }}>Damage Class</th>
-      {byLevel && (
-        <React.Fragment>
-          <th css={{ border: "solid 1px #E31010" }}>Method</th>
-          <th css={{ border: "solid 1px #E31010" }}>Level</th>
-        </React.Fragment>
-      )}
-    </tr>
-  )
-
   const handleChangeSelect = (event: React.ChangeEvent<{ value: unknown }>) => {
     setVersionGroup(event.target.value as VERSIONS_GROUPS)
     refetch()
   }
 
-  const buildTables = [
+  const buildTablesSection = [
     {
       method: "Leveling",
       tableHasLevelCol: true,
@@ -318,29 +290,57 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
         value={tabNumber}
         onChange={handleTabChange}
         variant="scrollable"
-        scrollButtons="auto"
-        aria-label="scrollable auto tabs"
+        scrollButtons="on"
+        aria-label="scrollable on tabs"
+        css={{
+          "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
+            backgroundColor: "#E31010 !important",
+          },
+        }}
       >
         {allGenerations.map((el) => (
           <Tab
             key={el}
             label={`Generation ${el + 1}`}
-            onClick={() => changeGeneration(el + 1, tabNumber)}
-            {...a11yProps(el)}
+            onClick={() => changeGeneration(el + 1)}
           />
         ))}
       </Tabs>
 
-      {[...Array(allGenerations.length).keys()].map((el) => (
-        <TabPanel value={tabNumber} index={el}>
+      {[...Array(allGenerations.length).keys()].map((el, idx) => (
+        <TabPanel key={idx} value={tabNumber} index={el}>
           <h2>Moves Learnt in version {getVersionGroupFromId(versionGroup)}</h2>
-          <FormControl css={{ minWidth: 120 }}>
-            <InputLabel id="select-version">Versions</InputLabel>
+          <FormControl css={{ minWidth: "120px" }}>
+            <InputLabel
+              id="select-version"
+              css={(theme) => ({
+                color: `${theme.body.text} !important`,
+                opacity: "0.5",
+              })}
+            >
+              Versions
+            </InputLabel>
             <Select
               labelId="select-version"
               id="select-version"
               value={versionGroup}
               onChange={handleChangeSelect}
+              css={(theme) => ({
+                color: theme.body.text,
+                fontFamily: theme.body.font,
+                "&>svg.MuiSvgIcon-root.MuiSelect-icon": {
+                  color: `${theme.body.text} !important`,
+                },
+                "&.MuiInput-underline:before": {
+                  borderBottom: `solid 1px #E31010 !important`,
+                },
+                "&.MuiInput-underline:hover:not(.Mui-disabled):before": {
+                  borderBottom: `solid 2px #E31010 !important`,
+                },
+                "&.MuiInput-underline:after": {
+                  borderBottom: `solid 2px #E31010 !important`,
+                },
+              })}
             >
               {VERSIONS_GROUPS_IN_GENERATIONS[el + restLength].map(
                 (versGroup, idx) => (
@@ -352,16 +352,16 @@ const PokemonMoves: React.FC<Props> = ({ pokemonId }) => {
             </Select>
           </FormControl>
 
-          {buildTables.map((table, idx) => (
-            <div key={idx}>
-              {table.table.length > 0 && (
-                <React.Fragment>
-                  <h3>Learnt by {table.method}</h3>
-                  <table css={{ borderCollapse: "collapse" }}>
-                    <thead>{arrayHeader(table.tableHasLevelCol)}</thead>
-                    <tbody>{table.table}</tbody>
-                  </table>
-                </React.Fragment>
+          {buildTablesSection.map((tableSection, idx) => (
+            <div key={idx} css={{ overflowX: "auto" }}>
+              {tableSection.table.length > 0 && (
+                <div css={{ margin: "10px 0" }}>
+                  <h3>Learnt by {tableSection.method}</h3>
+                  <Table>
+                    <thead>{arrayHeader(tableSection.tableHasLevelCol)}</thead>
+                    <tbody>{tableSection.table}</tbody>
+                  </Table>
+                </div>
               )}
             </div>
           ))}

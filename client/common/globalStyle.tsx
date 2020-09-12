@@ -23,6 +23,13 @@ const makeGlobalStyles = (theme: Theme) => css`
     height: 100vh;
     width: 100%;
   }
+  .MuiPaper-root.MuiPaper-elevation8 {
+    background-color: ${theme.card.background} !important;
+    color: ${theme.body.text} !important;
+  }
+  .MuiMenuItem-root {
+    font-family: ${theme.body.font} !important;
+  }
   a {
     text-decoration: none;
     color: ${theme.body.text};

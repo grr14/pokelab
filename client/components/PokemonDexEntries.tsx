@@ -12,7 +12,7 @@ import { useQuery } from "@apollo/react-hooks"
 
 import React from "react"
 
-import { mq, VERSIONS } from "../common/constants"
+import { VERSIONS } from "../common/constants"
 import { getGameVersionFromId } from "../common/utils"
 import { Theme } from "../common/types"
 
@@ -144,7 +144,7 @@ const PokemonDexEntries: React.FC<Props> = ({ id }) => {
     <div css={{ width: "100%" }}>
       <h2 css={{ paddingLeft: "5%" }}>Pokedex Entries</h2>
       <div css={{ width: "100%", padding: "0 3% 0 5%" }}>
-        <table css={{ borderCollapse: "collapse", borderSpacing: "10px 0" }}>
+        <table css={{ borderCollapse: "collapse" }}>
           <tbody>{dexEntryByVersion}</tbody>
         </table>
       </div>

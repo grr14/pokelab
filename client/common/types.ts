@@ -36,6 +36,15 @@ export type Theme = {
     background?: string
     backgroundHover?: string
   }
+  table?: {
+    th?: {
+      border?: string
+      background?: string
+    }
+    tr?: {
+      backgroundHover?: string
+    }
+  }
   boxShadow?: {
     small?: string
     medium?: string

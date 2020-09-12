@@ -143,6 +143,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               alignContent: "center",
               justifyContent: "space-between",
               alignItems: "center",
+              overflow: "auto" /* looks like this is really important */,
               [mq[0]]: {
                 gridColumnStart: "1",
                 gridRowStart: "3",

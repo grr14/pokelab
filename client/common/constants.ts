@@ -1,4 +1,3 @@
-import { GolfCourseRounded } from "@material-ui/icons"
 import { TypeEfficiency } from "./types"
 
 export const github = "https://github.com/grr14/pokelab"

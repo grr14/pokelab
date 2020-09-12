@@ -27,6 +27,15 @@ const lightTheme: Theme = {
       border: "#505050",
     },
   },
+  table: {
+    th: {
+      background: "#F0F0F0",
+      border: "solid 1px #B8B8B8",
+    },
+    tr: {
+      backgroundHover: "#F0F0F0",
+    },
+  },
   drawer: {
     background: "#B8B8B8",
     text: { regular: "black", hover: "white" },
@@ -80,6 +89,15 @@ const darkTheme: Theme = {
     textHover: "#E31010",
     background: "#303030",
     backgroundHover: "#505050",
+  },
+  table: {
+    th: {
+      background: "#303030",
+      border: "solid 1px #E31010",
+    },
+    tr: {
+      backgroundHover: "#303030",
+    },
   },
   header: {
     background: "#030303",
