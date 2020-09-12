@@ -40,6 +40,7 @@ import {
   Select,
   MenuItem,
 } from "@material-ui/core"
+import Skeleton from "@material-ui/lab/Skeleton/Skeleton"
 
 const GET_MOVES = gql`
   query movesByPokemonAndVersion($pokemonId: Int, $versionId: Int) {
@@ -118,25 +119,6 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
     setTimeout(() => _refetch(), 0)
   }, [_refetch])
 
-  if (error) {
-    return <p>Cannot retrieve Moves</p>
-  }
-
-  if (loading) {
-    return (
-      <div
-        css={{
-          minHeight: "300px",
-          display: "flex",
-          alignContent: "center",
-          justifyContent: "center",
-        }}
-      >
-        <p>Loading...</p>
-      </div>
-    )
-  }
-
   const arrayHeader = (byLevel: boolean) => (
     <Tr>
       <Th>Name</Th>
@@ -153,6 +135,48 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
       )}
     </Tr>
   )
+
+  if (error) {
+    return <p>Cannot retrieve Moves</p>
+  }
+
+  if (loading) {
+    return (
+      <div css={{ width: "100%", padding: "0 5%" }}>
+        <Tabs
+          variant="scrollable"
+          scrollButtons="on"
+          css={{
+            "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
+              backgroundColor: "#E31010 !important",
+            },
+          }}
+        >
+          {allGenerations.map((el) => (
+            <Tab key={el} label={`Generation ${el + 1}`} />
+          ))}
+        </Tabs>
+        <h2>Loading...</h2>
+        <Table>
+          <thead>{arrayHeader(true)}</thead>
+          <tbody>
+            {[...Array(10).fill(0)].map((el, idx) => (
+              <Tr key={idx}>
+                <Td css={{ height: "24px" }} colSpan={8}>
+                  <Skeleton
+                    variant="text"
+                    css={(theme) => ({
+                      backgroundColor: theme.card.background,
+                    })}
+                  />
+                </Td>
+              </Tr>
+            ))}
+          </tbody>
+        </Table>
+      </div>
+    )
+  }
 
   const getTable = (array: Moves[], byLevel = false) =>
     array.map((move, idx) => (
