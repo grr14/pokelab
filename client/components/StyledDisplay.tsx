@@ -177,7 +177,7 @@ const VersionGroupNameDisplay: React.FC<VGProps> = ({ version_group }) => {
     <React.Fragment>
       {reduceToEnum.map((word, idx) => {
         return (
-          <React.Fragment>
+          <React.Fragment key={idx}>
             <VersionNameDisplay
               version={
                 VERSIONS[word as keyof typeof VERSIONS]

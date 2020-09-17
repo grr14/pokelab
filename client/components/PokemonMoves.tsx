@@ -34,13 +34,13 @@ import {
 import {
   Tabs,
   Tab,
-  Box,
   FormControl,
   InputLabel,
   Select,
   MenuItem,
 } from "@material-ui/core"
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton"
+import TabPanel from "./TabPanel"
 
 const GET_MOVES = gql`
   query movesByPokemonAndVersion($pokemonId: Int, $versionId: Int) {
@@ -65,27 +65,6 @@ const GET_MOVES = gql`
     }
   }
 `
-
-interface TabPanelProps {
-  children: React.ReactNode
-  index: number
-  value: number
-}
-
-const TabPanel: React.FC<TabPanelProps> = ({ children, index, value }) => (
-  <div
-    role="tabpanel"
-    hidden={value !== index}
-    id={`simple-tabpanel-${index}`}
-    aria-labelledby={`simple-tab-${index}`}
-  >
-    {value === index && (
-      <Box>
-        <div>{children}</div>
-      </Box>
-    )}
-  </div>
-)
 
 interface PokemonMovesProps {
   pokemonId: number

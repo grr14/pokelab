@@ -1,25 +1,46 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { MOVE_LEARNING_METHOD, VERSIONS_GROUPS } from "../common/constants"
-
-import { OuterContainer, InnerContainer } from "./Containers"
+import React, { useState, useCallback } from "react"
 
 import {
-  moveById as Move,
-  moveByIdVariables as MoveVariable,
-} from "../graphql/queries/__generated__/moveById"
+  MOVE_LEARNING_METHOD,
+  NB_GENERATIONS,
+  VERSIONS_GROUPS,
+} from "../common/constants"
 
-import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import TabPanel from "./TabPanel"
+import { PartialPokemonGrid } from "./Grid"
+import CardLoading from "./CardLoading"
+import ReducedPokemonGrid from "./ReducedPokemonGrid"
+import { Table, Td, Th, Tr } from "./Table"
+import { TypeDisplay, VersionGroupNameDisplay } from "./StyledDisplay"
+import { OuterContainer, InnerContainer } from "./Containers"
+import Error from "../pages/_error"
+
 import {
   capitalizeSentence,
   getDamageClassFromId,
   getTypeFromId,
   getVersionGroupFromId,
 } from "../common/utils"
-import ReducedPokemonGrid from "./ReducedPokemonGrid"
-import { Table, Td, Th, Tr } from "./Table"
-import { TypeDisplay, VersionGroupNameDisplay } from "./StyledDisplay"
+
+import Card from "@material-ui/core/Card"
+import Tabs from "@material-ui/core/Tabs"
+import Tab from "@material-ui/core/Tab"
+import Skeleton from "@material-ui/lab/Skeleton"
+
+import gql from "graphql-tag"
+import { useQuery } from "@apollo/react-hooks"
+
+import {
+  moveById as Move,
+  moveByIdVariables as MoveVariable,
+} from "../graphql/queries/__generated__/moveById"
+
+import {
+  pokemonsByMoveAndVersionGroup,
+  pokemonsByMoveAndVersionGroupVariables,
+} from "../graphql/queries/__generated__/pokemonsByMoveAndVersionGroup"
 
 const GET_MOVE = gql`
   query moveById($id: Int) {
@@ -44,14 +65,6 @@ const GET_MOVE = gql`
   }
 `
 
-import {
-  pokemonsByMoveAndVersionGroup,
-  pokemonsByMoveAndVersionGroupVariables,
-} from "../graphql/queries/__generated__/pokemonsByMoveAndVersionGroup"
-import CardLoading from "./CardLoading"
-import Card from "@material-ui/core/Card"
-import { PartialPokemonGrid } from "./Grid"
-
 const GET_POKEMONS = gql`
   query pokemonsByMoveAndVersionGroup($moveId: Int, $versionGroupId: Int) {
     pokemonsByMoveAndVersionGroup(
@@ -73,18 +86,69 @@ const GET_POKEMONS = gql`
 
 interface PokemonByMovesProps {
   id: number
+  generation: number
 }
 
-const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
-  const { data, loading, error } = useQuery<
+const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
+  id,
+  generation,
+}) => {
+  const [versionGroup, setVersionGroup] = useState<VERSIONS_GROUPS>(
+    VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]
+  )
+  const { data, loading, error, refetch: _refetch } = useQuery<
     pokemonsByMoveAndVersionGroup,
     pokemonsByMoveAndVersionGroupVariables
   >(GET_POKEMONS, {
     variables: {
       moveId: id,
-      versionGroupId: VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"],
+      versionGroupId: versionGroup,
     },
   })
+  const refetch = useCallback(() => {
+    setTimeout(() => _refetch(), 0)
+  }, [_refetch])
+
+  const allGenerations = [...Array(NB_GENERATIONS).keys()]
+  allGenerations.splice(0, generation - 1)
+
+  /* we always display the most recent version tab first */
+  const [tabNumber, setTabNumber] = React.useState(allGenerations.length - 1)
+  const handleTabChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    setTabNumber(newValue)
+    console.log(`tabNumber = ${tabNumber}`)
+  }
+  const changeGeneration = (el: number) => {
+    let generationId: number
+    switch (el) {
+      case 1:
+        generationId = VERSIONS_GROUPS["RED-BLUE"]
+        break
+      case 2:
+        generationId = VERSIONS_GROUPS["CRYSTAL"]
+        break
+      case 3:
+        generationId = VERSIONS_GROUPS["FIRERED-LEAFGREEN"]
+        break
+      case 4:
+        generationId = VERSIONS_GROUPS["HEARTGOLD-SOULSILVER"]
+        break
+      case 5:
+        generationId = VERSIONS_GROUPS["BLACK2-WHITE2"]
+        break
+      case 6:
+        generationId = VERSIONS_GROUPS["OMEGARUBY-ALPHASAPPHIRE"]
+        break
+      case 7:
+        generationId = VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"]
+        break
+      default:
+        generationId = 0
+    }
+
+    setVersionGroup(generationId)
+    refetch()
+  }
 
   if (error) {
     return <p>Cannot retrieve Pokemon</p>
@@ -132,32 +196,65 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
   const byMachine = getPokemonsByLearningMethod(MOVE_LEARNING_METHOD.MACHINE)
   const byTutor = getPokemonsByLearningMethod(MOVE_LEARNING_METHOD.TUTOR)
 
+  /* The moveset never change between different games of the same version group */
+  /* Thus there is no need for a Select like in pokemon detailed Moveset */
+
   return (
-    <div>
-      {byLevel?.length > 0 && (
-        <div>
-          <h3>By level</h3>
-          <ReducedPokemonGrid pokemons={byLevel} additionalInfos={"level"} />
-        </div>
-      )}
-      {byEgg?.length > 0 && (
-        <div>
-          <h3>By Egg</h3>
-          <ReducedPokemonGrid pokemons={byEgg} />
-        </div>
-      )}
-      {byMachine?.length > 0 && (
-        <div>
-          <h3>By Machine</h3>
-          <ReducedPokemonGrid pokemons={byMachine} />
-        </div>
-      )}
-      {byTutor?.length > 0 && (
-        <div>
-          <h3>By Tutor</h3>
-          <ReducedPokemonGrid pokemons={byTutor} />
-        </div>
-      )}
+    <div css={{ marginTop: "20px", width: "100%", padding: "0 5%" }}>
+      <Tabs
+        value={tabNumber}
+        onChange={handleTabChange}
+        variant="scrollable"
+        scrollButtons="on"
+        aria-label="scrollable on tabs"
+        css={{
+          "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
+            backgroundColor: "#E31010 !important",
+          },
+        }}
+      >
+        {allGenerations.map((el) => (
+          <Tab
+            key={el}
+            label={`Generation ${el + 1}`}
+            onClick={() => changeGeneration(el + 1)}
+          />
+        ))}
+      </Tabs>
+
+      {[...Array(allGenerations.length).keys()].map((el, idx) => (
+        <TabPanel key={idx} value={tabNumber} index={el}>
+          <div>
+            {byLevel?.length > 0 && (
+              <div>
+                <h3>By level</h3>
+                <ReducedPokemonGrid
+                  pokemons={byLevel}
+                  additionalInfos={"level"}
+                />
+              </div>
+            )}
+            {byEgg?.length > 0 && (
+              <div>
+                <h3>By Egg</h3>
+                <ReducedPokemonGrid pokemons={byEgg} />
+              </div>
+            )}
+            {byMachine?.length > 0 && (
+              <div>
+                <h3>By Machine</h3>
+                <ReducedPokemonGrid pokemons={byMachine} />
+              </div>
+            )}
+            {byTutor?.length > 0 && (
+              <div>
+                <h3>By Tutor</h3>
+                <ReducedPokemonGrid pokemons={byTutor} />
+              </div>
+            )}
+          </div>
+        </TabPanel>
+      ))}
     </div>
   )
 }
@@ -174,81 +271,165 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
   })
 
   if (error) {
-    return null
+    return <Error statusCode={404} />
   }
   if (loading) {
-    return null
+    const skeleton = (
+      <Skeleton
+        variant="text"
+        css={(theme) => ({
+          backgroundColor: theme.card.background,
+        })}
+      />
+    )
+
+    const moveSummary = (
+      <Table>
+        <tbody>
+          <Tr>
+            <Th>Name</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>Type</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>PP</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>Power</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>Accuracy</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>Category</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+          <Tr>
+            <Th>Generation</Th>
+            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+          </Tr>
+        </tbody>
+      </Table>
+    )
+
+    const flavorTextTable = (
+      <Table>
+        <tbody>
+          {[...Array(18).keys()].map((el, idx) => {
+            if (el === 11 || el === 12) {
+              return
+            }
+            return (
+              <Tr key={idx}>
+                <Th>
+                  <VersionGroupNameDisplay version_group={el + 1}>
+                    {getVersionGroupFromId(el + 1)}
+                  </VersionGroupNameDisplay>
+                </Th>
+                <Td css={{ height: "35px", width: "300px" }}>{skeleton}</Td>
+              </Tr>
+            )
+          })}
+        </tbody>
+      </Table>
+    )
+
+    return (
+      <OuterContainer>
+        <InnerContainer>
+          <div css={{ width: "100%" }}>
+            <h2>Move Summary</h2>
+            {moveSummary}
+          </div>
+          <div css={{ width: "100%" }}>
+            <h2>Flavor Textes</h2>
+            {flavorTextTable}
+          </div>
+        </InnerContainer>
+      </OuterContainer>
+    )
   }
 
-  const move = data.moveById
+  const move = data?.moveById
 
   const moveSummary = (
     <Table>
-      <Tr>
-        <Th>Name</Th>
-        <Td>{capitalizeSentence(move.identifier)}</Td>
-      </Tr>
-      <Tr>
-        <Th>Type</Th>
-        <Td>
-          <TypeDisplay size="medium" type={move.type_id}>
-            {getTypeFromId(move.type_id)}
-          </TypeDisplay>
-        </Td>
-      </Tr>
-      <Tr>
-        <Th>PP</Th>
-        <Td>{move.pp}</Td>
-      </Tr>
-      <Tr>
-        <Th>Power</Th>
-        <Td>{move.power !== null ? move.power : "-"}</Td>
-      </Tr>
-      <Tr>
-        <Th>Accuracy</Th>
-        <Td>{move.accuracy !== null ? move.accuracy : "-"}</Td>
-      </Tr>
-      <Tr>
-        <Th>Category</Th>
-        <Td>{getDamageClassFromId(move.damage_class_id)}</Td>
-      </Tr>
-      <Tr>
-        <Th>Generation</Th>
-        <Td>{move.generation_id}</Td>
-      </Tr>
+      <tbody>
+        <Tr>
+          <Th>Name</Th>
+          <Td>{capitalizeSentence(move?.identifier)}</Td>
+        </Tr>
+        <Tr>
+          <Th>Type</Th>
+          <Td>
+            <TypeDisplay size="medium" type={move?.type_id}>
+              {getTypeFromId(move?.type_id)}
+            </TypeDisplay>
+          </Td>
+        </Tr>
+        <Tr>
+          <Th>PP</Th>
+          <Td>{move?.pp}</Td>
+        </Tr>
+        <Tr>
+          <Th>Power</Th>
+          <Td>{move?.power !== null ? move?.power : "-"}</Td>
+        </Tr>
+        <Tr>
+          <Th>Accuracy</Th>
+          <Td>{move?.accuracy !== null ? move?.accuracy : "-"}</Td>
+        </Tr>
+        <Tr>
+          <Th>Category</Th>
+          <Td>{getDamageClassFromId(move?.damage_class_id)}</Td>
+        </Tr>
+        <Tr>
+          <Th>Generation</Th>
+          <Td>{move?.generation_id}</Td>
+        </Tr>
+      </tbody>
     </Table>
   )
 
   const flavorTextTable = (
     <Table>
-      {move.flavor_textes.map((el, idx) => {
-        return (
-          <Tr key={idx}>
-            <Th>
-              <VersionGroupNameDisplay version_group={el.version_group}>
-                {getVersionGroupFromId(el.version_group)}
-              </VersionGroupNameDisplay>
-            </Th>
-            <Td align="left">{el.text}</Td>
-          </Tr>
-        )
-      })}
+      <tbody>
+        {move?.flavor_textes.map((el, idx) => {
+          return (
+            <Tr key={idx}>
+              <Th>
+                <VersionGroupNameDisplay version_group={el.version_group}>
+                  {getVersionGroupFromId(el.version_group)}
+                </VersionGroupNameDisplay>
+              </Th>
+              <Td align="left">{el.text}</Td>
+            </Tr>
+          )
+        })}
+      </tbody>
     </Table>
   )
 
   return (
     <OuterContainer>
       <InnerContainer>
-        <div>
+        <div css={{ width: "100%" }}>
           <h2>Move Summary</h2>
           {moveSummary}
         </div>
-        <div>
+        <div css={{ width: "100%" }}>
           <h2>Flavor Text</h2>
           {flavorTextTable}
         </div>
-        <div>
-          <PokemonByMoveSection id={moveId} />
+        <div css={{ marginTop: "10px", width: "100%" }}>
+          <h2>Pokemons that learn {capitalizeSentence(move?.identifier)}:</h2>
+          <PokemonByMoveSection id={moveId} generation={move?.generation_id} />
         </div>
       </InnerContainer>
     </OuterContainer>

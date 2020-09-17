@@ -138,15 +138,18 @@ export const capitalizeSentence = (
   sentence: string,
   exclusionList: Array<string> = [""]
 ) => {
-  return sentence
-    .split(" ")
-    .map((word) => {
-      if (exclusionList.includes(word)) {
-        return word
-      }
-      return capitalizeFirstLetter(word)
-    })
-    .join(" ")
+  return (
+    !!sentence &&
+    sentence
+      .split(" ")
+      .map((word) => {
+        if (exclusionList.includes(word)) {
+          return word
+        }
+        return capitalizeFirstLetter(word)
+      })
+      .join(" ")
+  )
 }
 
 /* return an array of type affecting a pokemon (superweak, resistant...)*/
