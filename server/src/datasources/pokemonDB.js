@@ -1,11 +1,14 @@
 const { DataSource } = require("apollo-datasource")
 const { parse, isEmptyArray } = require("../utils")
 const { Op } = require("sequelize")
+const _ = require("lodash")
 
 const NB_POKEMON = 807
 const NB_TYPES = 18
 const NB_EVOLVE_CHAIN = 427
 const NB_ABILITIES = 233
+const NB_MOVES = 728
+NB_VERSION_GROUP = 18
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -80,6 +83,7 @@ class pokemonDB extends DataSource {
       abilities: abilities,
       evolution: !!evolution ? evolution.dataValues : null,
       pokedex_numbers: reducedPokedexNumbersNames,
+      moves: null,
     }
   }
 
@@ -273,11 +277,27 @@ class pokemonDB extends DataSource {
   }
 
   async getMoveById({ id }) {
+    if (id > NB_MOVES) {
+      return null
+    }
+
     const move = await this.store.moves.findOne({
       where: { id: id },
     })
 
-    return move
+    const flavor_textes = await this.store.move_flavor_text.findAll({
+      attributes: ["version_group_id", "flavor_text"],
+      where: { move_id: id },
+      order: [["version_group_id", "ASC"]],
+    })
+
+    return {
+      ...move.dataValues,
+      flavor_textes: flavor_textes.map((ft) => ({
+        version_group: ft.version_group_id,
+        text: ft.flavor_text,
+      })),
+    }
   }
 
   async getMovesByPokemonAndVersion({ pokemonId, versionId }) {
@@ -326,6 +346,66 @@ class pokemonDB extends DataSource {
     })
 
     return allMoves
+  }
+
+  async getAllMoves() {
+    const moves = await this.store.moves.findAll({
+      where: { id: { [Op.lte]: NB_MOVES } },
+    })
+
+    return moves.map((move) => ({ ...move.dataValues, flavor_textes: null }))
+  }
+
+  async getPokemonsByMoveAndVersionGroup({ moveId, versionGroupId }) {
+    if (moveId > NB_MOVES || versionGroupId > NB_VERSION_GROUP) {
+      return null
+    }
+    const allMovesInfos = await this.store.pokemon_moves.findAll({
+      attributes: ["pokemon_id", "pokemon_move_method_id", "level"],
+      where: {
+        [Op.and]: [{ move_id: moveId }, { version_group_id: versionGroupId }],
+      },
+      order: [["pokemon_id", "ASC"]],
+    })
+
+    const reduced = _(allMovesInfos).groupBy("pokemon_id").value()
+    const evenMoreReduced = _.map(reduced, (el) => el).map((array) => ({
+      id: array.map((el) => el.pokemon_id)[0],
+      moves: array.map((el) => ({
+        learning_method: el.pokemon_move_method_id,
+        level_learned: el.level,
+      })),
+    }))
+
+    const pokemons = []
+    await Promise.all(
+      evenMoreReduced.map(async (moveDetail) => {
+        let pokemon = await this.store.pokemon.findOne({
+          attributes: ["id", "identifier", "type_1", "type_2", "picture"],
+          where: {
+            id: moveDetail.id,
+          },
+          order: [["id", "ASC"]],
+        })
+        return pokemons.push(pokemon)
+      })
+    )
+
+    return pokemons
+      .map((pokemon) => {
+        return {
+          id: pokemon.id,
+          identifier: pokemon.identifier,
+          type_1: pokemon.type_1,
+          type_2: pokemon.type_2,
+          picture: pokemon.picture,
+          moves:
+            evenMoreReduced[
+              evenMoreReduced.findIndex((el) => el.id === pokemon.id)
+            ].moves,
+        }
+      })
+      .sort((a, b) => a.id - b.id)
   }
 }
 

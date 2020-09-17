@@ -402,6 +402,22 @@ module.exports.createStore = () => {
   })
   pokemon_moves.removeAttribute("id")
 
+  const move_flavor_text = db.define("move_flavor_text", {
+    move_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    version_group_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    flavor_text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  })
+  move_flavor_text.removeAttribute("id")
+
   return {
     db,
     pokemon,
@@ -415,5 +431,6 @@ module.exports.createStore = () => {
     pokedex_entries,
     moves,
     pokemon_moves,
+    move_flavor_text,
   }
 }

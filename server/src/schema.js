@@ -15,6 +15,8 @@ typeDefs = gql`
     getPokemonPokedexEntries(id: Int): [FlavorText]
     moveById(id: Int): Move
     movesByPokemonAndVersion(pokemonId: Int, versionId: Int): [MoveDetail]
+    getAllMoves: [Move]
+    pokemonsByMoveAndVersionGroup(moveId: Int, versionGroupId: Int): [Pokemon]
   }
 
   type Pokemon {
@@ -39,6 +41,7 @@ typeDefs = gql`
     base_happiness: Int
     growth_rate: Int
     pokedex_numbers: [PokedexNumber]
+    moves: [MoveDetail]
   }
 
   type Sprite {
@@ -116,6 +119,7 @@ typeDefs = gql`
     damage_class_id: Int
     effect_id: Int
     effect_chance: Int
+    flavor_textes: [FlavorText]
   }
 
   type MoveDetail {

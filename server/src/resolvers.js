@@ -32,5 +32,17 @@ module.exports = {
         pokemonId,
         versionId,
       }),
+    getAllMoves: async (_, __, { dataSources }, ___) =>
+      dataSources.pokemonDB.getAllMoves(),
+    pokemonsByMoveAndVersionGroup: async (
+      _,
+      { moveId, versionGroupId },
+      { dataSources },
+      __
+    ) =>
+      dataSources.pokemonDB.getPokemonsByMoveAndVersionGroup({
+        moveId,
+        versionGroupId,
+      }),
   },
 }
