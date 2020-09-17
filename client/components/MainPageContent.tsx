@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import PokedexGrid from "./PokedexGrid"
+import { PokedexGrid } from "./Grid"
 import { CardContainer } from "./Containers"
 import PokemonCard from "./PokemonCard"
 

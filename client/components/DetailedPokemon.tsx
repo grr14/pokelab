@@ -3,7 +3,7 @@ import { jsx } from "@emotion/core"
 import { mq } from "../common/constants"
 
 import { OuterContainer, InnerContainer } from "./Containers"
-import DetailedPokemonGrid from "./DetailedPokemonGrid"
+import { DetailedPokemonGrid } from "./Grid"
 import PokemonImagesCarousel from "./PokemonImagesCarousel"
 import PokemonDetailedInfos from "./PokemonDetailedInfos"
 import LinkArrow from "./LinkArrow"

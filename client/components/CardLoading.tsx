@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
@@ -12,7 +14,11 @@ const StyledLoading = styled.div`
 const CardLoading: React.FC = () => {
   return (
     <StyledLoading>
-      <CircularProgress />
+      <CircularProgress
+        css={{
+          color: "#E31010",
+        }}
+      />
     </StyledLoading>
   )
 }

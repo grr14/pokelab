@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { MOVE_LEARNING_METHOD, mq, VERSIONS_GROUPS } from "../common/constants"
+import { MOVE_LEARNING_METHOD, VERSIONS_GROUPS } from "../common/constants"
 
 import { OuterContainer, InnerContainer } from "./Containers"
 
@@ -50,6 +50,7 @@ import {
 } from "../graphql/queries/__generated__/pokemonsByMoveAndVersionGroup"
 import CardLoading from "./CardLoading"
 import Card from "@material-ui/core/Card"
+import { PartialPokemonGrid } from "./Grid"
 
 const GET_POKEMONS = gql`
   query pokemonsByMoveAndVersionGroup($moveId: Int, $versionGroupId: Int) {
@@ -83,7 +84,6 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
       moveId: id,
       versionGroupId: VERSIONS_GROUPS["ULTRASUN-ULTRAMOON"],
     },
-    fetchPolicy: "no-cache",
   })
 
   if (error) {
@@ -93,35 +93,9 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
     return (
       <div>
         <h3>Loading...</h3>
-        <div
+        <PartialPokemonGrid
           css={{
             marginTop: "15px",
-            display: "grid",
-            gridAutoFlow: "row",
-            [mq[0]]: {
-              gridTemplateColumns: "1fr",
-              gap: "5px 5px",
-            },
-            [mq[1]]: {
-              gridTemplateColumns: "repeat(2,1fr)",
-              gap: "5px 5px",
-            },
-            [mq[2]]: {
-              gridTemplateColumns: "repeat(3,1fr)",
-              gap: "5px 5px",
-            },
-            [mq[4]]: {
-              gridTemplateColumns: "repeat(4,1fr)",
-              gap: "5px 5px",
-            },
-            [mq[6]]: {
-              gridTemplateColumns: "repeat(5,1fr)",
-              gap: "7px 7px",
-            },
-            [mq[7]]: {
-              gridTemplateColumns: "repeat(6,1fr)",
-              gap: "10px 10px",
-            },
           }}
         >
           {[...Array(10).fill(0)].map((el, idx) => (
@@ -131,21 +105,19 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
                 height: "100px",
                 width: "200px",
                 display: "flex",
-                flexDirection: "column",
-                alignIitems: "center",
                 backgroundColor: `${theme.card.background} !important`,
               })}
             >
               <CardLoading />
             </Card>
           ))}
-        </div>
+        </PartialPokemonGrid>
       </div>
     )
   }
 
   const getPokemonsByLearningMethod = (method: MOVE_LEARNING_METHOD) =>
-    data.pokemonsByMoveAndVersionGroup
+    data?.pokemonsByMoveAndVersionGroup
       .map((pokemon) => {
         let moves = pokemon.moves.map((move) => move.learning_method)
         if (moves.includes(method)) {
@@ -162,25 +134,25 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({ id }) => {
 
   return (
     <div>
-      {byLevel.length > 1 && (
+      {byLevel?.length > 0 && (
         <div>
           <h3>By level</h3>
           <ReducedPokemonGrid pokemons={byLevel} additionalInfos={"level"} />
         </div>
       )}
-      {byEgg.length > 1 && (
+      {byEgg?.length > 0 && (
         <div>
           <h3>By Egg</h3>
           <ReducedPokemonGrid pokemons={byEgg} />
         </div>
       )}
-      {byMachine.length > 1 && (
+      {byMachine?.length > 0 && (
         <div>
           <h3>By Machine</h3>
           <ReducedPokemonGrid pokemons={byMachine} />
         </div>
       )}
-      {byTutor.length > 1 && (
+      {byTutor?.length > 0 && (
         <div>
           <h3>By Tutor</h3>
           <ReducedPokemonGrid pokemons={byTutor} />

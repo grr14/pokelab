@@ -194,4 +194,3 @@ const VersionGroupNameDisplay: React.FC<VGProps> = ({ version_group }) => {
 }
 
 export { TypeDisplay, VersionNameDisplay, VersionGroupNameDisplay }
-/* parsed[0].replace(/\s+/g, '')*/
