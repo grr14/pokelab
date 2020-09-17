@@ -6,7 +6,7 @@ import React from "react"
 import { OuterContainer, InnerContainer } from "../components/Containers"
 
 import CustomCell from "../components/CustomCell"
-import TypeDisplay from "../components/TypeDisplay"
+import { TypeDisplay } from "../components/StyledDisplay"
 import { getTypeFromId, capitalizeFirstLetter } from "../common/utils"
 import {
   mq,

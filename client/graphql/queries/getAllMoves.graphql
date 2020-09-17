@@ -1,0 +1,12 @@
+query getAllMoves {
+  getAllMoves {
+    id
+    identifier
+    generation_id
+    type_id
+    power
+    pp
+    accuracy
+    damage_class_id
+  }
+}

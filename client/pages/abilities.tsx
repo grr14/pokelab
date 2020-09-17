@@ -49,7 +49,7 @@ const Abilities: React.FC = () => {
           <a
             css={{
               "&:hover": {
-                textDdecoration: "underline",
+                textDecoration: "underline",
                 cursor: "pointer",
               },
             }}
@@ -75,7 +75,7 @@ const Abilities: React.FC = () => {
               the sixth Generation, an Ability could not be changed after a
               Pokémon was obtained except by Evolution (where the new Ability is
               determined by the former Ability) and form change. Not every
-              Ability is entirely beneficia, some of them are hindering.
+              Ability is entirely beneficial, some of them are hindering.
             </p>
           </div>
 

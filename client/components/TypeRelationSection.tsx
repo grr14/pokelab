@@ -13,7 +13,7 @@ import {
   TYPES,
   mq,
 } from "../common/constants"
-import TypeDisplay from "../components/TypeDisplay"
+import { TypeDisplay } from "./StyledDisplay"
 
 import React from "react"
 import Link from "next/link"

@@ -15,6 +15,7 @@ import {
   SECOND_GENERATION_INDEX,
   SIXTH_GENERATION_INDEX,
   THIRD_GENERATION_INDEX,
+  NB_MOVES,
 } from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
@@ -33,6 +34,10 @@ export const validateQuery = (query: string | string[], page: string) => {
     }
   } else if (page === "ability") {
     if (numb > NB_ABILITIES || numb < 1) {
+      return false
+    }
+  } else if (page === "move") {
+    if (numb > NB_MOVES || numb < 1) {
       return false
     }
   }

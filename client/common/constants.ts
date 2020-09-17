@@ -71,6 +71,8 @@ export const NB_TYPES: number = 18
 
 export const NB_ABILITIES = 233
 
+export const NB_MOVES = 728
+
 export enum TYPES {
   NORMAL = 1,
   FIGHTING,

@@ -9,7 +9,7 @@ import {
 } from "../common/constants"
 import { getTypeFromId, getEfficiency } from "../common/utils"
 
-import TypeDisplay from "./TypeDisplay"
+import { TypeDisplay } from "./StyledDisplay"
 import CustomCell from "./CustomCell"
 
 import Link from "next/link"

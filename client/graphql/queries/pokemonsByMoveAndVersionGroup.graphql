@@ -1,0 +1,16 @@
+query pokemonsByMoveAndVersionGroup($moveId: Int, $versionGroupId: Int) {
+  pokemonsByMoveAndVersionGroup(
+    moveId: $moveId
+    versionGroupId: $versionGroupId
+  ) {
+    id
+    identifier
+    type_1
+    type_2
+    picture
+    moves {
+      learning_method
+      level_learned
+    }
+  }
+}

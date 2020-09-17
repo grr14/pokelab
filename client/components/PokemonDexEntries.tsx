@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import styled from "@emotion/styled"
 
 import {
   getPokemonPokedexEntries,
@@ -12,82 +11,9 @@ import { useQuery } from "@apollo/react-hooks"
 
 import React from "react"
 
-import { VERSIONS } from "../common/constants"
 import { getGameVersionFromId } from "../common/utils"
-import { Theme } from "../common/types"
 import { Table, Td, Th, Tr } from "./Table"
-
-interface VersionProps {
-  version: number
-  theme?: Theme
-}
-
-const VersionNameDisplay = styled.span<VersionProps>`
-  color: ${(props) => {
-    switch (props.version) {
-      case VERSIONS.RED:
-        return props.theme.version.red
-      case VERSIONS.BLUE:
-        return props.theme.version.blue
-      case VERSIONS.YELLOW:
-        return props.theme.version.yellow
-      case VERSIONS.GOLD:
-        return props.theme.version.gold
-      case VERSIONS.SILVER:
-        return props.theme.version.silver
-      case VERSIONS.CRYSTAL:
-        return props.theme.version.crystal
-      case VERSIONS.RUBY:
-        return props.theme.version.ruby
-      case VERSIONS.SAPPHIRE:
-        return props.theme.version.sapphire
-      case VERSIONS.EMERALD:
-        return props.theme.version.emerald
-      case VERSIONS.FIRERED:
-        return props.theme.version.firered
-      case VERSIONS.LEAFGREEN:
-        return props.theme.version.leafgreen
-      case VERSIONS.DIAMOND:
-        return props.theme.version.diamond
-      case VERSIONS.PEARL:
-        return props.theme.version.pearl
-      case VERSIONS.PLATINUM:
-        return props.theme.version.platinum
-      case VERSIONS.HEARTGOLD:
-        return props.theme.version.heartgold
-      case VERSIONS.SOULSILVER:
-        return props.theme.version.soulsilver
-      case VERSIONS.BLACK:
-        return props.theme.version.black
-      case VERSIONS.WHITE:
-        return props.theme.version.white
-      case VERSIONS.COLOSSEUM:
-        return props.theme.version.colosseum
-      case VERSIONS.XD:
-        return props.theme.version.xd
-      case VERSIONS.BLACK2:
-        return props.theme.version.black2
-      case VERSIONS.WHITE2:
-        return props.theme.version.white2
-      case VERSIONS.X:
-        return props.theme.version.x
-      case VERSIONS.Y:
-        return props.theme.version.y
-      case VERSIONS.OMEGARUBY:
-        return props.theme.version.omegaruby
-      case VERSIONS.ALPHASAPPHIRE:
-        return props.theme.version.alphasapphire
-      case VERSIONS.SUN:
-        return props.theme.version.sun
-      case VERSIONS.MOON:
-        return props.theme.version.moon
-      case VERSIONS.ULTRASUN:
-        return props.theme.version.ultrasun
-      case VERSIONS.ULTRAMOON:
-        return props.theme.version.ultramoon
-    }
-  }};
-`
+import { VersionNameDisplay } from "./StyledDisplay"
 
 const GET_ENTRIES = gql`
   query getPokemonPokedexEntries($id: Int) {
@@ -122,7 +48,6 @@ const PokemonDexEntries: React.FC<Props> = ({ id }) => {
     <Tr key={idx}>
       <Th scope="row">
         <VersionNameDisplay version={entry.version_group}>
-          {" "}
           {getGameVersionFromId(entry.version_group)}
         </VersionNameDisplay>
       </Th>

@@ -11,7 +11,7 @@ import {
   NB_GENERATIONS,
 } from "../common/constants"
 
-import TypeDisplay from "./TypeDisplay"
+import { TypeDisplay } from "./StyledDisplay"
 import { Table, Tr, Th, Td } from "./Table"
 
 import {
@@ -161,7 +161,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
           <thead>{arrayHeader(true)}</thead>
           <tbody>
             {[...Array(10).fill(0)].map((el, idx) => (
-              <Tr key={idx}>
+              <Tr loading={true} key={idx}>
                 <Td css={{ height: "24px" }} colSpan={8}>
                   <Skeleton
                     variant="text"

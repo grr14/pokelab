@@ -4,6 +4,7 @@ import { Theme } from "../common/types"
 interface Props {
   theme: Theme
   align?: "center" | "left"
+  loading?: boolean
 }
 
 const Table = styled.table`
@@ -24,13 +25,14 @@ const Tr = styled.tr<Props>`
     border: none;
   }
   &:hover {
-    background-color: ${(props) => props.theme.table.tr.backgroundHover};
+    background-color: ${(props) =>
+      !props.loading && props.theme.table.tr.backgroundHover};
   }
 `
 
 const Td = styled.td<Props>`
   border-right: solid 1px #e31010;
-  text-align: ${(props) => props.align};
+  text-align: ${(props) => props?.align};
   padding: 2px 5px;
   &:last-of-type {
     border: none;

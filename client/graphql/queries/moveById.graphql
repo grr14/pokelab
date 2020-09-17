@@ -1,0 +1,20 @@
+query moveById($id: Int) {
+  moveById(id: $id) {
+    id
+    identifier
+    generation_id
+    type_id
+    power
+    pp
+    accuracy
+    priority
+    target_id
+    damage_class_id
+    effect_id
+    effect_chance
+    flavor_textes {
+      text
+      version_group
+    }
+  }
+}
