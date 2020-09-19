@@ -16,5 +16,8 @@ query moveById($id: Int) {
       text
       version_group
     }
+    detailed_effect {
+      text
+    }
   }
 }

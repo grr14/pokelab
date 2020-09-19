@@ -13,6 +13,11 @@ export interface moveById_moveById_flavor_textes {
   version_group: number | null;
 }
 
+export interface moveById_moveById_detailed_effect {
+  __typename: "FlavorText";
+  text: string | null;
+}
+
 export interface moveById_moveById {
   __typename: "Move";
   id: number;
@@ -28,6 +33,7 @@ export interface moveById_moveById {
   effect_id: number | null;
   effect_chance: number | null;
   flavor_textes: (moveById_moveById_flavor_textes | null)[] | null;
+  detailed_effect: moveById_moveById_detailed_effect | null;
 }
 
 export interface moveById {

@@ -4,6 +4,7 @@ import React, { useState, useCallback } from "react"
 
 import {
   MOVE_LEARNING_METHOD,
+  mq,
   NB_GENERATIONS,
   VERSIONS_GROUPS,
 } from "../common/constants"
@@ -60,6 +61,9 @@ const GET_MOVE = gql`
       flavor_textes {
         text
         version_group
+      }
+      detailed_effect {
+        text
       }
     }
   }
@@ -419,10 +423,81 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
   return (
     <OuterContainer>
       <InnerContainer>
-        <div css={{ width: "100%" }}>
-          <h2>Move Summary</h2>
-          {moveSummary}
+        <div
+          css={{
+            width: "100%",
+            display: "flex",
+            [mq[0]]: {
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            },
+            [mq[2]]: {
+              flexDirection: "row",
+              justifyContent: "left",
+              alignItems: "flex-start",
+            },
+          }}
+        >
+          <div css={{ marginRight: "5%" }}>
+            <h2>Move Summary</h2>
+            {moveSummary}
+          </div>
+          <div
+            css={{
+              [mq[0]]: {
+                width: "100%",
+              },
+              [mq[2]]: {
+                flex: 1,
+              },
+            }}
+          >
+            <h2>Detailed Infos</h2>
+            <div
+              css={(theme) => ({
+                "& a": {
+                  color: "#E31010",
+                  fontWeight: "bold",
+                  "&:hover": {
+                    textDecoration: "underline",
+                  },
+                },
+                "& table": {
+                  borderCollapse: "collapse",
+                },
+                "& th": {
+                  backgroundColor: theme.table.th.background,
+                  padding: "7px",
+                },
+                "& tr": {
+                  textAlign: "center",
+                  borderBottom: "solid 1px #e31010",
+                  "&:last-of-type": {
+                    border: "none",
+                  },
+                  "&:hover": {
+                    backgroundColor: theme.table.tr.backgroundHover,
+                  },
+                },
+                "& td": {
+                  borderRight: "solid 1px #e31010",
+                  textAlign: "center",
+                  padding: "2px 5px",
+                  "&:last-of-type": {
+                    border: "none",
+                  },
+                },
+              })}
+              dangerouslySetInnerHTML={{
+                __html: move?.detailed_effect?.text
+                  ?.replace("${effect_chance}", String(move?.effect_chance))
+                  .replace("${(100 - accuracy)}", String(100 - move?.accuracy)),
+              }}
+            />
+          </div>
         </div>
+
         <div css={{ width: "100%" }}>
           <h2>Flavor Text</h2>
           {flavorTextTable}
