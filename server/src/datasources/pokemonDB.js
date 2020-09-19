@@ -8,7 +8,7 @@ const NB_TYPES = 18
 const NB_EVOLVE_CHAIN = 427
 const NB_ABILITIES = 233
 const NB_MOVES = 728
-NB_VERSION_GROUP = 18
+const NB_VERSION_GROUP = 18
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -285,10 +285,16 @@ class pokemonDB extends DataSource {
       where: { id: id },
     })
 
+    console.log(JSON.stringify(move))
+
     const flavor_textes = await this.store.move_flavor_text.findAll({
       attributes: ["version_group_id", "flavor_text"],
       where: { move_id: id },
       order: [["version_group_id", "ASC"]],
+    })
+
+    const detailed_text = await this.store.move_detailed_text.findOne({
+      where: { id: move.effect_id },
     })
 
     return {
@@ -297,6 +303,9 @@ class pokemonDB extends DataSource {
         version_group: ft.version_group_id,
         text: ft.flavor_text,
       })),
+      detailed_effect: {
+        text: detailed_text != null ? detailed_text.effect : null,
+      },
     }
   }
 

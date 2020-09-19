@@ -120,6 +120,7 @@ typeDefs = gql`
     effect_id: Int
     effect_chance: Int
     flavor_textes: [FlavorText]
+    detailed_effect: FlavorText
   }
 
   type MoveDetail {
