@@ -227,7 +227,7 @@ class pokemonDB extends DataSource {
     await Promise.all(
       pokemons.map(async (pokemon) => {
         let tmp = await this.store.pokemon_abilities.findOne({
-          attributes: ["is_hidden"],
+          attributes: ["pokemon_id", "is_hidden"],
           where: {
             [Op.and]: [{ pokemon_id: pokemon.id }, { ability_id: id }],
           },
@@ -245,7 +245,9 @@ class pokemonDB extends DataSource {
       picture: pokemon.picture,
       abilities: [
         {
-          is_hidden: hidden[idx].is_hidden,
+          is_hidden:
+            hidden[hidden.findIndex((el) => el.pokemon_id === pokemon.id)]
+              .is_hidden,
         } /* we dont care about the pokemon's other abilities in this query */,
       ],
     }))
