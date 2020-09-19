@@ -18,7 +18,7 @@ import {
 
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
-import { capitalizeFirstLetter, getVersionGroupFromId } from "../common/utils"
+import { capitalizeSentence, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 import { Table, Td, Th, Tr } from "./Table"
 
@@ -75,10 +75,10 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     }
   )
 
-  if (abilityError || pokemonsLoading) {
+  if (abilityError || pokemonsError) {
     return <Error statusCode={404} />
   }
-  if (abilityLoading || pokemonsError) {
+  if (abilityLoading || pokemonsLoading) {
     return (
       <OuterContainer>
         <InnerContainer>
@@ -88,7 +88,7 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     )
   }
 
-  const flavorTextesByVersion = abilityData.abilityById.flavor_textes.map(
+  const flavorTextesByVersion = abilityData?.abilityById?.flavor_textes?.map(
     (el, idx) => (
       <Tr key={idx}>
         <Th scope="row">{getVersionGroupFromId(el.version_group)}</Th>
@@ -97,14 +97,20 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     )
   )
 
-  const abilities = pokemonsData.pokemonsByAbilityId.map((p) => p.abilities)
-  const numberOfHidden = abilities.filter((el) => el[0].is_hidden === 1).length
+  const pokemonsWithHiddenAbility = pokemonsData?.pokemonsByAbilityId?.filter(
+    (pokemon) => pokemon.abilities[0].is_hidden === 1
+  )
+  const numberOfHidden = pokemonsWithHiddenAbility.length
+
+  const pokemonsNotHiddenAbility = pokemonsData?.pokemonsByAbilityId?.filter(
+    (pokemon) => !pokemonsWithHiddenAbility.includes(pokemon)
+  )
 
   return (
     <OuterContainer>
       <InnerContainer>
         <h1>
-          Ability: {capitalizeFirstLetter(abilityData.abilityById.identifier)}
+          Ability: {capitalizeSentence(abilityData?.abilityById?.identifier)}
         </h1>
         <div
           css={{
@@ -171,14 +177,20 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
             }}
           >
             <span>
-              Total number: <b>{pokemonsData.pokemonsByAbilityId.length}</b>
+              Total number: <b>{pokemonsData?.pokemonsByAbilityId?.length}</b>
             </span>
             <span>
-              As a hidden Ability: <b>{numberOfHidden}</b>
+              As a Hidden Ability: <b>{numberOfHidden}</b>
             </span>
           </div>
-          <ReducedPokemonGrid pokemons={pokemonsData.pokemonsByAbilityId} />
+          <ReducedPokemonGrid pokemons={pokemonsNotHiddenAbility} />
         </div>
+        {pokemonsWithHiddenAbility.length > 0 && (
+          <div css={{ width: "100%" }}>
+            <h3>As a Hidden Ability:</h3>
+            <ReducedPokemonGrid pokemons={pokemonsWithHiddenAbility} />
+          </div>
+        )}
       </InnerContainer>
     </OuterContainer>
   )

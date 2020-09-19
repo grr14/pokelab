@@ -77,6 +77,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
       text: "Types",
     },
     { link: "/abilities", text: "Abilities" },
+    { link: "/moves", text: "Moves" },
   ]
 
   const logo = (
