@@ -205,7 +205,7 @@ class pokemonDB extends DataSource {
 
   /* select id, identifier,... from pokemon where
   abilities LIKE 'id%' OR abilities LIKE '%,id,%' OR
-  abilities LIKE '%,id' ;*/
+  abilities LIKE '%,id' or abilites = 'id;*/
   async getPokemonByAbilityId({ id }) {
     if (id > NB_ABILITIES) {
       return null
@@ -218,6 +218,7 @@ class pokemonDB extends DataSource {
           { abilities: { [Op.like]: `${id},%` } },
           { abilities: { [Op.like]: `%,${id},%` } },
           { abilities: { [Op.like]: `%,${id}` } },
+          { abilities: { [Op.eq]: `${id}` } },
         ],
       },
     })
@@ -284,8 +285,6 @@ class pokemonDB extends DataSource {
     const move = await this.store.moves.findOne({
       where: { id: id },
     })
-
-    console.log(JSON.stringify(move))
 
     const flavor_textes = await this.store.move_flavor_text.findAll({
       attributes: ["version_group_id", "flavor_text"],
