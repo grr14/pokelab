@@ -295,11 +295,12 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
         variant="scrollable"
         scrollButtons="on"
         aria-label="scrollable on tabs"
-        css={{
+        css={(theme) => ({
+          backgroundColor: theme.card.background,
           "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
             backgroundColor: "#E31010 !important",
           },
-        }}
+        })}
       >
         {allGenerations.map((el) => (
           <Tab

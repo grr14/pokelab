@@ -42,6 +42,8 @@ import {
   pokemonsByMoveAndVersionGroup,
   pokemonsByMoveAndVersionGroupVariables,
 } from "../graphql/queries/__generated__/pokemonsByMoveAndVersionGroup"
+import { useTheme } from "emotion-theming"
+import { Theme } from "../common/types"
 
 const GET_MOVE = gql`
   query moveById($id: Int) {
@@ -88,6 +90,102 @@ const GET_POKEMONS = gql`
   }
 `
 
+interface MoveTargetProps {
+  id: number
+}
+
+const MoveTarget: React.FC<MoveTargetProps> = ({ id }) => {
+  const theme = useTheme<Theme>()
+
+  const basicCellCSS = (theme: Theme) => ({
+    border: "solid 1px black",
+    display: "flex",
+    alignItems: "center" as "center",
+    justifyContent: "center" as "center",
+    borderRadius: "5px",
+    backgroundColor: theme.card.background,
+    boxShadow: `2px 2px 2px 0px ${theme.boxShadow.color}`,
+  })
+
+  const affectedByTargetId = [
+    [false, false, false, true, false, false], // 1 counter
+    [true, true, false, false, false, false], //2 me-first
+    [false, false, false, false, true, false], //3 helping hand
+    [false, false, false, true, true, true], //4 light screen
+    [false, false, false, true, true, false], //5 acupressure
+    [true, true, true, false, false, false], //6 spikes
+    [false, false, false, true, false, false], //7 sword dance
+    [false, false, false, true, false, false], //8 outrage
+    [true, true, false, false, true, false], //9 surf
+    [true, true, false, false, true, false], //10 pound
+    [true, true, false, false, false, false], //11 rockslide
+    [true, true, true, true, true, true], //12 rain dance
+    [false, false, false, true, true, true], //13 aromatherapy
+    [true, true, true, true, true, true], //14 perish song
+  ]
+
+  const targetProse = (id: number) => {
+    switch (id) {
+      case 1:
+      case 7:
+      case 8:
+        return "Affects the user"
+      case 2:
+        return "May affect any adjacent foe, but not allies"
+      case 3:
+        return "Affects an adjacent ally"
+      case 4:
+        return "Affects the user and all allies"
+      case 5:
+        return "May affect the user or an adjacent ally"
+      case 6:
+        return "Affect all foes"
+      case 9:
+        return "Affects all Pokémon adjacent to the user"
+      case 10:
+        return "May affect anyone adjacent to the user"
+      case 11:
+        return "Affects all adjacent foes, but not allies"
+      case 12:
+      case 14:
+        return "Affects all Pokémon on the field"
+      case 13:
+        return "Affects the user and all allies"
+    }
+  }
+
+  return (
+    <React.Fragment>
+      <h2 css={{ width: "100%" }}>Move Targets</h2>
+      <p>{targetProse(id)}</p>
+      <div
+        css={{
+          display: "grid",
+          gridTemplateRows: "50px 50px",
+          gridTemplateColumns: "80px 80px 80px",
+          gridRowGap: "5px",
+          gridColumnGap: "5px",
+        }}
+      >
+        {["Foe", "Foe", "Foe", "User", "Ally", "Ally"].map((el, idx) => (
+          <div
+            key={idx}
+            css={{
+              ...basicCellCSS(theme),
+              ...(affectedByTargetId[id - 1][idx] && {
+                backgroundColor: "#E31010",
+                color: "white",
+              }),
+            }}
+          >
+            {el}
+          </div>
+        ))}
+      </div>
+    </React.Fragment>
+  )
+}
+
 interface PokemonByMovesProps {
   id: number
   generation: number
@@ -120,7 +218,6 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
   const [tabNumber, setTabNumber] = React.useState(allGenerations.length - 1)
   const handleTabChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setTabNumber(newValue)
-    console.log(`tabNumber = ${tabNumber}`)
   }
   const changeGeneration = (el: number) => {
     let generationId: number
@@ -166,7 +263,7 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
             marginTop: "15px",
           }}
         >
-          {[...Array(10).fill(0)].map((el, idx) => (
+          {[...Array(10).fill(0)].map((_, idx) => (
             <Card
               key={idx}
               css={(theme) => ({
@@ -204,61 +301,108 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
   /* Thus there is no need for a Select like in pokemon detailed Moveset */
 
   return (
-    <div css={{ marginTop: "20px", width: "100%", padding: "0 5%" }}>
-      <Tabs
-        value={tabNumber}
-        onChange={handleTabChange}
-        variant="scrollable"
-        scrollButtons="on"
-        aria-label="scrollable on tabs"
+    <div
+      css={{
+        marginTop: "20px",
+        width: "100%",
+        padding: "0 5%",
+      }}
+    >
+      <div
         css={{
-          "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-            backgroundColor: "#E31010 !important",
+          [mq[0]]: {
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr",
+            gridTemplateRows: "1fr 1fr",
+          },
+          [mq[1]]: {
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            alignItems: "center",
           },
         }}
       >
-        {allGenerations.map((el) => (
-          <Tab
-            key={el}
-            label={`Generation ${el + 1}`}
-            onClick={() => changeGeneration(el + 1)}
-          />
-        ))}
-      </Tabs>
+        <span>
+          By Leveling: <b>{byLevel?.length || 0}</b>
+        </span>
+        <span>
+          By Machine: <b>{byMachine?.length || 0}</b>
+        </span>
+        <span>
+          By Egg: <b>{byEgg?.length || 0}</b>
+        </span>
+        <span>
+          By Tutor: <b>{byTutor?.length || 0}</b>
+        </span>
+      </div>
 
-      {[...Array(allGenerations.length).keys()].map((el, idx) => (
-        <TabPanel key={idx} value={tabNumber} index={el}>
-          <div>
-            {byLevel?.length > 0 && (
+      <div css={{ marginTop: "15px" }}>
+        <Tabs
+          value={tabNumber}
+          onChange={handleTabChange}
+          variant="scrollable"
+          scrollButtons="on"
+          aria-label="scrollable on tabs"
+          css={(theme) => ({
+            backgroundColor: theme.card.background,
+            "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
+              backgroundColor: "#E31010 !important",
+            },
+          })}
+        >
+          {allGenerations.map((el) => (
+            <Tab
+              key={el}
+              label={`Generation ${el + 1}`}
+              onClick={() => changeGeneration(el + 1)}
+            />
+          ))}
+        </Tabs>
+
+        {[...Array(allGenerations.length).keys()].map((el, idx) => (
+          <TabPanel key={idx} value={tabNumber} index={el}>
+            {!byLevel?.length &&
+            !byEgg?.length &&
+            !byMachine?.length &&
+            !byTutor?.length ? (
               <div>
-                <h3>By level</h3>
-                <ReducedPokemonGrid
-                  pokemons={byLevel}
-                  additionalInfos={"level"}
-                />
+                <p>No Pokemons found.</p>
+              </div>
+            ) : (
+              <div>
+                {byLevel?.length > 0 && (
+                  <div>
+                    <h3 css={{ marginTop: 0 }}>By level</h3>
+                    <ReducedPokemonGrid
+                      pokemons={byLevel}
+                      additionalInfos={"level"}
+                    />
+                  </div>
+                )}
+                {byEgg?.length > 0 && (
+                  <div>
+                    <h3>By Egg</h3>
+                    <ReducedPokemonGrid pokemons={byEgg} />
+                  </div>
+                )}
+                {byMachine?.length > 0 && (
+                  <div>
+                    <h3>By Machine</h3>
+                    <ReducedPokemonGrid pokemons={byMachine} />
+                  </div>
+                )}
+                {byTutor?.length > 0 && (
+                  <div>
+                    <h3>By Tutor</h3>
+                    <ReducedPokemonGrid pokemons={byTutor} />
+                  </div>
+                )}
               </div>
             )}
-            {byEgg?.length > 0 && (
-              <div>
-                <h3>By Egg</h3>
-                <ReducedPokemonGrid pokemons={byEgg} />
-              </div>
-            )}
-            {byMachine?.length > 0 && (
-              <div>
-                <h3>By Machine</h3>
-                <ReducedPokemonGrid pokemons={byMachine} />
-              </div>
-            )}
-            {byTutor?.length > 0 && (
-              <div>
-                <h3>By Tutor</h3>
-                <ReducedPokemonGrid pokemons={byTutor} />
-              </div>
-            )}
-          </div>
-        </TabPanel>
-      ))}
+          </TabPanel>
+        ))}
+      </div>
     </div>
   )
 }
@@ -290,34 +434,20 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
     const moveSummary = (
       <Table>
         <tbody>
-          <Tr>
-            <Th>Name</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>Type</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>PP</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>Power</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>Accuracy</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>Category</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
-          <Tr>
-            <Th>Generation</Th>
-            <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
-          </Tr>
+          {[
+            "Name",
+            "Type",
+            "PP",
+            "Power",
+            "Accuracy",
+            "Category",
+            "Generation",
+          ].map((el) => (
+            <Tr key={el}>
+              <Th>{el}</Th>
+              <Td css={{ height: "35px", width: "100px" }}>{skeleton}</Td>
+            </Tr>
+          ))}
         </tbody>
       </Table>
     )
@@ -391,7 +521,21 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
         </Tr>
         <Tr>
           <Th>Category</Th>
-          <Td>{getDamageClassFromId(move?.damage_class_id)}</Td>
+          <Td>
+            <div
+              css={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+              }}
+            >
+              <img
+                css={{ marginRight: "10px" }}
+                src={`/images/category/${move?.damage_class_id}.png`}
+              />
+              <span>{getDamageClassFromId(move?.damage_class_id)}</span>
+            </div>
+          </Td>
         </Tr>
         <Tr>
           <Th>Generation</Th>
@@ -423,6 +567,7 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
   return (
     <OuterContainer>
       <InnerContainer>
+        <h1>Move: {capitalizeSentence(move?.identifier)}</h1>
         <div
           css={{
             width: "100%",
@@ -498,10 +643,49 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
           </div>
         </div>
 
-        <div css={{ width: "100%" }}>
-          <h2>Flavor Text</h2>
-          {flavorTextTable}
+        <div
+          css={{
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap",
+            [mq[0]]: { flexDirection: "column" },
+            [mq[6]]: {
+              flexDirection: "row",
+              alignItems: "flex-start",
+            },
+          }}
+        >
+          <div
+            css={{
+              [mq[6]]: {
+                marginRight: "30px",
+              },
+            }}
+          >
+            <h2 css={{ width: "100%" }}>Flavor Text</h2>
+            {flavorTextTable}
+          </div>
+
+          <div
+            css={{
+              flex: 1,
+              marginTop: "10px",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              [mq[0]]: {
+                justifyContent: "center",
+                alignItems: "center",
+              },
+              [mq[6]]: {
+                alignItems: "flex-start",
+              },
+            }}
+          >
+            <MoveTarget id={move?.target_id} />
+          </div>
         </div>
+
         <div css={{ marginTop: "10px", width: "100%" }}>
           <h2>Pokemons that learn {capitalizeSentence(move?.identifier)}:</h2>
           <PokemonByMoveSection id={moveId} generation={move?.generation_id} />

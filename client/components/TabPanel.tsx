@@ -1,5 +1,9 @@
+/** @jsx jsx */
+import { jsx } from "@emotion/core"
+
 import Box from "@material-ui/core/Box"
 import React from "react"
+import { mq } from "../common/constants"
 
 interface TabPanelProps {
   children: React.ReactNode
@@ -13,6 +17,13 @@ const TabPanel: React.FC<TabPanelProps> = ({ children, index, value }) => (
     hidden={value !== index}
     id={`simple-tabpanel-${index}`}
     aria-labelledby={`simple-tab-${index}`}
+    css={(theme) => ({
+      [mq[1]]: {
+        border: `solid 1px ${theme.card.background}`,
+        borderTop: "none",
+        padding: "1%",
+      },
+    })}
   >
     {value === index && (
       <Box>
