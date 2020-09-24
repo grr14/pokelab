@@ -52,7 +52,7 @@ const lightTheme: Theme = {
   boxShadow: {
     small: "0px 0px 5px 5px",
     medium: "0px 0px 15px 10px",
-    color: "rgba(0, 0, 0, 0.75)",
+    color: "rgba(30, 30, 30, 0.75)",
   },
   chart: {
     background: "white",
@@ -124,7 +124,7 @@ const darkTheme: Theme = {
   boxShadow: {
     small: "0px 0px 5px 5px",
     medium: "0px 0px 15px 10px",
-    color: "rgba(50, 50, 50, 0.75)",
+    color: "rgba(150, 150, 150, 0.75)",
   },
   chart: {
     background: "#303030",
