@@ -102,16 +102,15 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
     <Tr>
       <Th>Name</Th>
       <Th>Type</Th>
+      {byLevel && (
+        <React.Fragment>
+          <Th>Level</Th>
+        </React.Fragment>
+      )}
       <Th>Power</Th>
       <Th>PP</Th>
       <Th>Accuracy</Th>
       <Th>Damage Class</Th>
-      {byLevel && (
-        <React.Fragment>
-          <Th>Method</Th>
-          <Th>Level</Th>
-        </React.Fragment>
-      )}
     </Tr>
   )
 
@@ -121,25 +120,32 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
 
   if (loading) {
     return (
-      <div css={{ width: "100%", padding: "0 5%" }}>
+      <div
+        css={{
+          width: "100%",
+          padding: "0 5%",
+        }}
+      >
+        <h2>Moveset</h2>
         <Tabs
           variant="scrollable"
           scrollButtons="on"
-          css={{
+          css={(theme) => ({
+            backgroundColor: theme.card.background,
             "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
               backgroundColor: "#E31010 !important",
             },
-          }}
+          })}
         >
           {allGenerations.map((el) => (
             <Tab key={el} label={`Generation ${el + 1}`} />
           ))}
         </Tabs>
-        <h2>Loading...</h2>
+        <h3>Loading...</h3>
         <Table>
           <thead>{arrayHeader(true)}</thead>
           <tbody>
-            {[...Array(10).fill(0)].map((el, idx) => (
+            {[...Array(15).fill(0)].map((el, idx) => (
               <Tr loading={true} key={idx}>
                 <Td css={{ height: "24px" }} colSpan={8}>
                   <Skeleton
@@ -174,16 +180,29 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
             </a>
           </Link>
         </Td>
-        <Td>{move.move.power !== null ? move.move.power : "-"}</Td>
-        <Td>{move.move.pp}</Td>
-        <Td>{move.move.accuracy != null ? move.move.accuracy : "-"}</Td>
-        <Td>{getDamageClassFromId(move.move.damage_class_id)}</Td>
         {byLevel && (
           <React.Fragment>
-            <Td>{getLearningMethodFromId(move.learning_method)}</Td>
             <Td>{move.level_learned}</Td>
           </React.Fragment>
         )}
+        <Td>{move.move.power !== null ? move.move.power : "-"}</Td>
+        <Td>{move.move.pp}</Td>
+        <Td>{move.move.accuracy != null ? move.move.accuracy : "-"}</Td>
+        <Td>
+          <div
+            css={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+            }}
+          >
+            <img
+              css={{ margin: "0 5px" }}
+              src={`/images/category/${move.move.damage_class_id}.png`}
+            />
+            <span>{getDamageClassFromId(move.move.damage_class_id)}</span>
+          </div>
+        </Td>
       </Tr>
     ))
 
@@ -289,6 +308,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
 
   return (
     <div css={{ width: "100%", padding: "0 5%" }}>
+      <h2 css={{ width: "100%" }}>Moveset</h2>
       <Tabs
         value={tabNumber}
         onChange={handleTabChange}

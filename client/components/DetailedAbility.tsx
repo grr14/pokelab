@@ -21,6 +21,7 @@ import { useQuery } from "@apollo/react-hooks"
 import { capitalizeSentence, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 import { Table, Td, Th, Tr } from "./Table"
+import { VersionGroupNameDisplay, VersionNameDisplay } from "./StyledDisplay"
 
 const GET_ABILITY = gql`
   query abilityById($id: Int) {
@@ -91,7 +92,11 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
   const flavorTextesByVersion = abilityData?.abilityById?.flavor_textes?.map(
     (el, idx) => (
       <Tr key={idx}>
-        <Th scope="row">{getVersionGroupFromId(el.version_group)}</Th>
+        <Th scope="row">
+          <VersionGroupNameDisplay version_group={el.version_group}>
+            {getVersionGroupFromId(el.version_group)}
+          </VersionGroupNameDisplay>
+        </Th>
         <Td align="left">{el.text}</Td>
       </Tr>
     )

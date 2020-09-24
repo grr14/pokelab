@@ -62,13 +62,15 @@ const Abilities: React.FC = () => {
     </Tr>
   ))
 
+  const pCSS = { lineHeight: "2em" }
+
   return (
     <OuterContainer>
       <InnerContainer>
         <div>
           <div>
             <h2>Introduction</h2>
-            <p>
+            <p css={pCSS}>
               An Ability is a game mechanic introduced in the third Generation
               that provides a passive effect in battle or in the Overworld.
               Individual Pokémon may have only one Ability at a time. Prior to
@@ -81,7 +83,7 @@ const Abilities: React.FC = () => {
 
           <div>
             <h2>Mechanic</h2>
-            <p>
+            <p css={pCSS}>
               Some species of Pokémon have multiple possible Abilities. The most
               Abilities any species or form has is three: two normal Abilities
               and one Hidden Ability. In most wild Pokémon encounters, the

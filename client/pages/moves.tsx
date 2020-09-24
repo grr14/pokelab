@@ -89,13 +89,15 @@ const MovesList: React.FC = () => {
   )
 }
 
+const pCSS = { lineHeight: "2em" }
+
 const Moves: React.FC = () => {
   return (
     <OuterContainer>
       <InnerContainer>
         <div>
           <h2>Introduction</h2>
-          <p>
+          <p css={pCSS}>
             A move, also known as an attack or technique, is the skill Pokémon
             primarily use in battle. In battle, a Pokémon uses one move each
             turn. Prior to Generation VII, some moves (including those learned
@@ -106,7 +108,7 @@ const Moves: React.FC = () => {
 
         <div>
           <h2>Characteristics</h2>
-          <p>
+          <p css={pCSS}>
             A Pokémon can only know between one and four moves at a time, out of
             a pool of little more than 700 total moves as of Generation VII.
             However, no single Pokémon can learn every move; each and every
@@ -130,8 +132,17 @@ const Moves: React.FC = () => {
             such as PP Up. The only move that is not affected by Power Points is
             Struggle.
             <br /> Moves that do not directly inflict damage are known as status
-            moves. The damaging moves are divided into physical and special
-            moves depending on the individual move's characteristics; the
+            moves. The damaging moves are divided into physical (
+            <img
+              css={{ verticalAlign: "middle", margin: "0 5px" }}
+              src={`/images/category/2.png`}
+            />
+            ) and special (
+            <img
+              css={{ verticalAlign: "middle", margin: "0 5px" }}
+              src={`/images/category/3.png`}
+            />
+            ) moves depending on the individual move's characteristics; the
             category of the move determines whether the move's damage depends on
             the user's Attack or Special Attack stat and the target's Defense or
             Special Defense. Each move has a type that determines how effective
@@ -149,7 +160,7 @@ const Moves: React.FC = () => {
 
         <div>
           <h2>Learning and Unlearning</h2>
-          <div>
+          <p css={pCSS}>
             Since Pokémon Red and Green, there have been three main methods of
             acquiring moves on a Pokémon: by leveling up, by use of Technical
             Machines and by use of Hidden Machines. Generation II added two
@@ -174,12 +185,12 @@ const Moves: React.FC = () => {
             up. Since Generation III, they are learned while the Pokémon levels
             up.
             <br />
-          </div>
+          </p>
         </div>
 
         <div>
           <h2>Unique Moves</h2>
-          <p>
+          <p css={pCSS}>
             Some Pokémon have moves specific to themselves or their evolutionary
             line. These unique moves are known as signature moves. Some of these
             moves are powerful moves that only certain Legendary and Mythical

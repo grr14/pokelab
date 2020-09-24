@@ -29,7 +29,7 @@ const ComboBox = () => {
         border: `solid 0.5px ${theme.header.button.border}`,
         borderTop: "none",
         backgroundColor: theme.input.background,
-        width: 300,
+        width: "300px",
         "& > .MuiPaper-root": {
           backgroundColor: theme.input.background,
           fontFamily: theme.body.font,
