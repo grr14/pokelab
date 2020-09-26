@@ -507,7 +507,12 @@ class pokemonDB extends DataSource {
         }, [])
     )
 
-    return groupByVersionReduced.flat()
+    return groupByVersionReduced.flat().sort((a, b) => {
+      if (a.version === b.version) {
+        return a.location.identifier.localeCompare(b.location.identifier)
+      }
+      return a.version - b.version
+    })
   }
 }
 
