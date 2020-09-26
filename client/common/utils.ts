@@ -16,6 +16,7 @@ import {
   SIXTH_GENERATION_INDEX,
   THIRD_GENERATION_INDEX,
   NB_MOVES,
+  ENCOUNTER_METHOD,
 } from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
@@ -152,6 +153,30 @@ export const capitalizeSentence = (
   )
 }
 
+/* 
+Most of the location names are stored in the db with this form:
+[regionName]-route-XXX ...
+Remove the region name from the location identifier, 
+Replace "-" by space
+*/
+export const formatLocationName = (string: string) => {
+  const regionNames = [
+    "kanto",
+    "johto",
+    "hoenn",
+    "sinnoh",
+    "unova",
+    "kalos",
+    "alola",
+  ]
+
+  const str = string.split("-")
+  if (regionNames.includes(str[0])) {
+    str.shift()
+  }
+  return str.join(" ")
+}
+
 /* return an array of type affecting a pokemon (superweak, resistant...)*/
 export const getEfficiency = (
   relations: Array<
@@ -165,7 +190,7 @@ export const getEfficiency = (
 }
 
 /* count occurences of every value in array  */
-export const countOccurrences = (arr: Array<any>): { [key: string]: any } =>
+export const countOccurrences = (arr: Array<any>): { [key: string]: number } =>
   arr.reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {})
 
 /* return max value in array of number */
@@ -401,4 +426,49 @@ export const getGenerationFromId = (pokemonId: number) => {
     return GENERATIONS.VI
   }
   return GENERATIONS.VII
+}
+
+export const getEncounterMethod = (method: ENCOUNTER_METHOD) => {
+  switch (method) {
+    case ENCOUNTER_METHOD.WALK_GRASS_OR_CAVE:
+      return "Walking in tall grass or cave"
+    case ENCOUNTER_METHOD.FISH_OLD_ROD:
+      return "Fishing with Old Rod"
+    case ENCOUNTER_METHOD.FISH_GOOD_ROD:
+      return "Fishing with Good Rod"
+    case ENCOUNTER_METHOD.FISH_SUPER_ROD:
+      return "Fishing with Super Rod"
+    case ENCOUNTER_METHOD.SURFING:
+      return "Surfing"
+    case ENCOUNTER_METHOD.SMASH_ROCK:
+      return "Smashing Rocks"
+    case ENCOUNTER_METHOD.HEADBUTT_TREE:
+      return "Headbutting Trees"
+    case ENCOUNTER_METHOD.WALK_DARK_GRASS:
+      return "Walking in Dark Grass"
+    case ENCOUNTER_METHOD.WALK_RUSTLING_GRASS:
+      return "Walking in Rustling Grass"
+    case ENCOUNTER_METHOD.WALK_DUST_CLOUD:
+      return "Walking in Dust Clouds"
+    case ENCOUNTER_METHOD.WALK_BRIDGE_SHADOW:
+      return "Walking on Bridge Shadows"
+    case ENCOUNTER_METHOD.FISH_DARK_SPOT:
+      return "Fishing in Dark Spots"
+    case ENCOUNTER_METHOD.SURF_DARK_SPOT:
+      return "Surfing in Dark Spots"
+    case ENCOUNTER_METHOD.WALK_YELLOW_FLOWER:
+      return "Walking in Yellow Flowers"
+    case ENCOUNTER_METHOD.WALK_PURPLE_FLOWER:
+      return "Walking in Purple Flowers"
+    case ENCOUNTER_METHOD.WALK_RED_FLOWER:
+      return "Walking in Red Flowers"
+    case ENCOUNTER_METHOD.WALK_ROUGH_TERRAIN:
+      return "Walking on a Rough Terrain"
+    case ENCOUNTER_METHOD.GIFT:
+      return "Received as a Gift"
+    case ENCOUNTER_METHOD.GIFT_EGG:
+      return "Received an egg as a Gift"
+    default:
+      return "Unknown Method"
+  }
 }

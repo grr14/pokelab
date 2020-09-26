@@ -138,6 +138,7 @@ const darkTheme: Theme = {
   damage: damagesColors,
   version: {
     ...versionsColors,
+    blue: "#96CAFF",
     black: "#777",
     black2: "#777",
     white: "white",

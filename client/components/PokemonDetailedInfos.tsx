@@ -8,6 +8,7 @@ import PokemonEvolution from "./PokemonEvolution"
 import PokemonDescription from "./PokemonDescription"
 import PokemonStats from "./PokemonStats"
 import PokemonDexEntries from "./PokemonDexEntries"
+import PokemonEncounters from "./PokemonEncounters"
 import PokemonMoves from "./PokemonMoves"
 import LinkArrow from "./LinkArrow"
 
@@ -74,6 +75,7 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
       <PokemonTypeInfos type_1={pokemon.type_1} type_2={pokemon.type_2} />
       <PokemonMoves pokemonId={pokemon.id} />
       <PokemonDexEntries id={pokemon.id} />
+      <PokemonEncounters id={pokemon.id} />
     </>
   )
 }
