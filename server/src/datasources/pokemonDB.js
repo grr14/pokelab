@@ -237,7 +237,7 @@ class pokemonDB extends DataSource {
       })
     )
 
-    return pokemons.map((pokemon, idx) => ({
+    return pokemons.map((pokemon) => ({
       id: pokemon.id,
       identifier: pokemon.identifier,
       type_1: pokemon.type_1,
@@ -416,6 +416,98 @@ class pokemonDB extends DataSource {
         }
       })
       .sort((a, b) => a.id - b.id)
+  }
+
+  async getEncountersByPokemon({ pokemonId }) {
+    if (pokemonId > 712) {
+      /* dont have more datas in the db (no genVII) */
+      return null
+    }
+
+    const encounters = await this.store.encounters.findAll({
+      where: { pokemon_id: pokemonId },
+      order: [["version_id", "ASC"]],
+    })
+
+    let location_area = []
+    await Promise.all(
+      encounters.map(async (encounter) => {
+        let loc = await this.store.location_areas.findOne({
+          attributes: ["id", "location_id"],
+          where: { id: encounter.location_area_id },
+        })
+        return location_area.push({ ...loc.dataValues, tmpId: encounter.id })
+      })
+    )
+
+    let location = []
+    await Promise.all(
+      location_area.map(async (loc) => {
+        let l = await this.store.locations.findOne({
+          where: { id: loc.location_id },
+        })
+        return location.push({ ...l.dataValues, tmpId: loc.tmpId })
+      })
+    )
+
+    let encounter_slot = []
+    await Promise.all(
+      encounters.map(async (encounter) => {
+        let enc = await this.store.encounter_slots.findOne({
+          attributes: ["id", "encounter_method_id", "rarity"],
+          where: { id: encounter.encounter_slot_id },
+        })
+        return encounter_slot.push({ ...enc.dataValues, tmpId: encounter.id })
+      })
+    )
+
+    const finalEcounters = encounters.map((el) => {
+      const locIdx = location.findIndex((l) => l.tmpId === el.id)
+      const encIdx = encounter_slot.findIndex((l) => l.tmpId === el.id)
+      return {
+        id: el.id,
+        version: el.version_id,
+        location: {
+          id: location[locIdx].id,
+          region: location[locIdx].region_id,
+          identifier: location[locIdx].identifier,
+        },
+        method: encounter_slot[encIdx].encounter_method_id,
+        level_min: el.min_level,
+        level_max: el.max_level,
+        slot: encounter_slot[encIdx].slot,
+        rarity: encounter_slot[encIdx].rarity,
+      }
+    })
+
+    /* the db stores one line per level of Pokemon you can meet, with the %age by level.
+    We only want to get the level range but not the %age, and we especially only want one Encounter 
+    object per version and area */
+
+    const groupByVersion = _(finalEcounters).groupBy("version").value()
+
+    const groupByVersionReduced = _.map(groupByVersion, (el) => el).map(
+      (array) =>
+        array.reduce((acc, cur) => {
+          let locationId = cur.location.id
+          let found = acc.find((elem) => elem.location.id === locationId)
+          if (found) {
+            found.rarity += cur.rarity
+
+            if (cur.level_min < found.level_min) {
+              found.level_min = cur.level_min
+            }
+            if (cur.level_max > found.level_max) {
+              found.level_max = cur.level_max
+            }
+          } else {
+            acc.push(cur)
+          }
+          return acc
+        }, [])
+    )
+
+    return groupByVersionReduced.flat()
   }
 }
 

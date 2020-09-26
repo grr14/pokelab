@@ -430,6 +430,96 @@ module.exports.createStore = () => {
     },
   })
 
+  const encounters = db.define("encounters", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+    },
+    version_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    location_area_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    encounter_slot_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    pokemon_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    min_level: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    max_level: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  })
+
+  const encounter_slots = db.define("encounter_slots", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+    },
+    version_group_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    encounter_method_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    slot: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    rarity: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+  })
+
+  const location_areas = db.define("location_areas", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+    },
+    location_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    game_index: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    identifier: {
+      type: DataTypes.STRING,
+    },
+  })
+
+  const locations = db.define("locations", {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+    },
+    region_id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    identifier: {
+      type: DataTypes.STRING,
+    },
+  })
+
   return {
     db,
     pokemon,
@@ -445,5 +535,9 @@ module.exports.createStore = () => {
     pokemon_moves,
     move_flavor_text,
     move_detailed_text,
+    encounters,
+    encounter_slots,
+    location_areas,
+    locations,
   }
 }
