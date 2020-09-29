@@ -18,6 +18,7 @@ typeDefs = gql`
     getAllMoves: [Move]
     pokemonsByMoveAndVersionGroup(moveId: Int, versionGroupId: Int): [Pokemon]
     encountersByPokemon(pokemonId: Int): [Encounter]
+    encountersByLocationAndVersion(locationId: Int, versionId: Int): [Encounter]
   }
 
   type Pokemon {
@@ -139,12 +140,19 @@ typeDefs = gql`
     level_min: Int
     level_max: Int
     rarity: Int
+    pokemon: Pokemon
+  }
+
+  type LocationArea {
+    id: Int
+    identifier: String
   }
 
   type Location {
     id: Int
     region: Int
     identifier: String
+    location_area: LocationArea
   }
 `
 module.exports = typeDefs

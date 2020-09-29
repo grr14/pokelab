@@ -9,6 +9,8 @@ const NB_EVOLVE_CHAIN = 427
 const NB_ABILITIES = 233
 const NB_MOVES = 728
 const NB_VERSION_GROUP = 18
+const NB_LOCATIONS = 798
+const NB_VERSIONS = 30
 
 class pokemonDB extends DataSource {
   constructor({ store }) {
@@ -103,6 +105,9 @@ class pokemonDB extends DataSource {
   }
 
   async getPokemonSprites({ id }) {
+    if (id > NB_POKEMON) {
+      return null
+    }
     const sprites = await this.store.sprites.findAll({
       where: { pokemon_id: id },
     })
@@ -471,6 +476,7 @@ class pokemonDB extends DataSource {
           id: location[locIdx].id,
           region: location[locIdx].region_id,
           identifier: location[locIdx].identifier,
+          location_area: null,
         },
         method: encounter_slot[encIdx].encounter_method_id,
         level_min: el.min_level,
@@ -512,6 +518,141 @@ class pokemonDB extends DataSource {
         return a.location.identifier.localeCompare(b.location.identifier)
       }
       return a.version - b.version
+    })
+  }
+
+  async getEncountersByLocationAndVersion({ locationId, versionId }) {
+    if (locationId > NB_LOCATIONS || versionId > NB_VERSIONS) {
+      return null
+    }
+
+    const location_areas = await this.store.location_areas.findAll({
+      where: {
+        location_id: locationId,
+      },
+    })
+
+    const encounters = []
+    await Promise.all(
+      location_areas.map(async (el) => {
+        let tmp = await this.store.encounters.findAll({
+          where: {
+            [Op.and]: [{ location_area_id: el.id }, { version_id: versionId }],
+          },
+        })
+        return encounters.push(tmp)
+      })
+    )
+
+    const flatEncounters = encounters.flat()
+
+    const locationInfos = await this.store.locations.findOne({
+      where: {
+        id: locationId,
+      },
+    })
+
+    const encounter_slots = []
+    await Promise.all(
+      flatEncounters.map(async (enc) => {
+        let tmp = await this.store.encounter_slots.findOne({
+          where: {
+            id: enc.encounter_slot_id,
+          },
+        })
+        return encounter_slots.push(tmp)
+      })
+    )
+
+    const pokemons = []
+    await Promise.all(
+      flatEncounters.map(async (enc) => {
+        const tmp = await this.store.pokemon.findOne({
+          attributes: ["id", "identifier", "type_1", "type_2", "picture"],
+          where: {
+            id: enc.pokemon_id,
+          },
+        })
+        return pokemons.push(tmp)
+      })
+    )
+
+    const encountersFinal = flatEncounters.map((el) => {
+      const idx = encounter_slots.findIndex(
+        (encounter_slot) => encounter_slot.id === el.encounter_slot_id
+      )
+      const idxLocArea = location_areas.findIndex(
+        (loc) => loc.id === el.location_area_id
+      )
+
+      const idxPokemon = pokemons.findIndex((pok) => pok.id === el.pokemon_id)
+
+      return {
+        id: el.id,
+        version: el.version_id,
+        location: {
+          id: locationId,
+          region: locationInfos.region_id,
+          identifier: locationInfos.identifier,
+          location_area: {
+            id: location_areas[idxLocArea].id,
+            identifier: location_areas[idxLocArea].identifier,
+          },
+        },
+        method: encounter_slots[idx].encounter_method_id,
+        level_min: el.min_level,
+        level_max: el.max_level,
+        rarity: encounter_slots[idx].rarity,
+        pokemon: {
+          id: el.pokemon_id,
+          identifier: pokemons[idxPokemon].identifier,
+          type_1: pokemons[idxPokemon].type_1,
+          type_2: pokemons[idxPokemon].type_2,
+          picture: pokemons[idxPokemon].picture,
+        },
+      }
+    })
+
+    const encounterMegaFinal = encountersFinal.reduce((acc, cur) => {
+      let curPokemonId = cur.pokemon.id
+      let curPokemonEncMethod = cur.method
+      let curLocationArea = cur.location.location_area.id
+
+      let found = acc.find(
+        (el) =>
+          el.pokemon.id === curPokemonId &&
+          el.method === curPokemonEncMethod &&
+          el.location.location_area.id === curLocationArea
+      )
+
+      //console.log(JSON.stringify(cur))
+
+      if (found) {
+        //console.log(JSON.stringify(`found=${JSON.stringify(found)}`))
+        found.rarity += cur.rarity
+
+        if (cur.level_min < found.level_min) {
+          found.level_min = cur.level_min
+        }
+        if (cur.level_max > found.level_max) {
+          found.level_max = cur.level_max
+        }
+      } else {
+        acc.push(cur)
+      }
+      return acc
+    }, [])
+
+    //console.log(`l = ${encounterMegaFinal.length}`)
+
+    return encounterMegaFinal.sort((a, b) => {
+      if (a.location.location_area === b.location.location_area) {
+        if (a.method === b.method) {
+          return a.method - b.method
+        }
+        return a.pokemon.id - b.pokemon.id
+      }
+      return a.location.location_area - b.location.location_area
     })
   }
 }
