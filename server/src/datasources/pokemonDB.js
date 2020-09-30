@@ -577,7 +577,7 @@ class pokemonDB extends DataSource {
       })
     )
 
-    const encountersFinal = flatEncounters.map((el) => {
+    const reducedFlatEncounters = flatEncounters.map((el) => {
       const idx = encounter_slots.findIndex(
         (encounter_slot) => encounter_slot.id === el.encounter_slot_id
       )
@@ -585,7 +585,10 @@ class pokemonDB extends DataSource {
         (loc) => loc.id === el.location_area_id
       )
 
-      const idxPokemon = pokemons.findIndex((pok) => pok.id === el.pokemon_id)
+      const idxPokemon = pokemons.findIndex((pok) => pok?.id === el.pokemon_id)
+      if (idxPokemon === -1) {
+        return null
+      }
 
       return {
         id: el.id,
@@ -613,7 +616,10 @@ class pokemonDB extends DataSource {
       }
     })
 
-    const encounterMegaFinal = encountersFinal.reduce((acc, cur) => {
+    const encountersFinal = reducedFlatEncounters.reduce((acc, cur) => {
+      if (cur === null) {
+        return acc
+      }
       let curPokemonId = cur.pokemon.id
       let curPokemonEncMethod = cur.method
       let curLocationArea = cur.location.location_area.id
@@ -625,10 +631,7 @@ class pokemonDB extends DataSource {
           el.location.location_area.id === curLocationArea
       )
 
-      //console.log(JSON.stringify(cur))
-
       if (found) {
-        //console.log(JSON.stringify(`found=${JSON.stringify(found)}`))
         found.rarity += cur.rarity
 
         if (cur.level_min < found.level_min) {
@@ -643,9 +646,7 @@ class pokemonDB extends DataSource {
       return acc
     }, [])
 
-    //console.log(`l = ${encounterMegaFinal.length}`)
-
-    return encounterMegaFinal.sort((a, b) => {
+    return encountersFinal.sort((a, b) => {
       if (a.location.location_area === b.location.location_area) {
         if (a.method === b.method) {
           return a.method - b.method
