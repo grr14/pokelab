@@ -160,3 +160,23 @@ type CustomMenuItem = {
 }
 
 export type CustomMenu = Array<CustomMenuItem>
+
+export type Move = {
+  learning_method: number | null
+  level_learned: number | null
+}
+
+export type ReducedPokemon = {
+  id: number
+  identifier: string
+  type_1: number | null
+  type_2: number | null
+  picture: string | null
+  moves?: Array<Move | null> | null
+}
+
+export type ReducedEncounter = {
+  rarity: number
+  level_min: number
+  level_max: number
+}

@@ -26,7 +26,6 @@ import {
   getVersionGroupFromId,
   getTypeFromId,
   getDamageClassFromId,
-  getLearningMethodFromId,
   capitalizeSentence,
   getGenerationFromId,
 } from "../common/utils"
@@ -145,8 +144,9 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
         <Table>
           <thead>{arrayHeader(true)}</thead>
           <tbody>
-            {[...Array(15).fill(0)].map((el, idx) => (
-              <Tr loading={true} key={idx}>
+            {[...Array(15).fill(0)].map((_, idx) => (
+              /* https://github.com/styled-components/styled-components/issues/1198 */
+              <Tr loading={loading ? true : false} key={idx}>
                 <Td css={{ height: "24px" }} colSpan={8}>
                   <Skeleton
                     variant="text"

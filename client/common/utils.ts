@@ -1,3 +1,4 @@
+import { ParsedUrlQuery } from "querystring"
 import {
   LAST_POKEMON_ID,
   TYPES,
@@ -17,6 +18,7 @@ import {
   THIRD_GENERATION_INDEX,
   NB_MOVES,
   ENCOUNTER_METHOD,
+  NB_LOCATIONS,
 } from "./constants"
 
 /*  check the router query for detailed pokemon/type/ability pages */
@@ -41,6 +43,25 @@ export const validateQuery = (query: string | string[], page: string) => {
     if (numb > NB_MOVES || numb < 1) {
       return false
     }
+  } else if (page === "location") {
+    if (numb > NB_LOCATIONS || numb < 1) {
+      return false
+    }
+  }
+
+  return true
+}
+
+export const validateDetailedLocationQuery = (query: ParsedUrlQuery) => {
+  for (const str in query) {
+    if (str !== "id" && str !== "gameVersion") {
+      return false
+    }
+  }
+
+  const gameVersionNumb = Number(query.gameVersion)
+  if (query.hasOwnProperty("gameVersion") && isNaN(gameVersionNumb)) {
+    return false
   }
 
   return true
@@ -159,22 +180,36 @@ Most of the location names are stored in the db with this form:
 Remove the region name from the location identifier, 
 Replace "-" by space
 */
-export const formatLocationName = (string: string) => {
-  const regionNames = [
-    "kanto",
-    "johto",
-    "hoenn",
-    "sinnoh",
-    "unova",
-    "kalos",
-    "alola",
-  ]
+const regionNames = [
+  "kanto",
+  "johto",
+  "hoenn",
+  "sinnoh",
+  "unova",
+  "kalos",
+  "alola",
+]
 
+export const formatLocationName = (string: string) => {
   const str = string.split("-")
   if (regionNames.includes(str[0])) {
     str.shift()
   }
   return str.join(" ")
+}
+
+/* return location name with the following form:
+  Route XXX, [region]
+*/
+export const formatLocationNameWithRegion = (name: string) => {
+  const str = name.split("-")
+  let startsWithRegion = false
+  let region = ""
+  if (regionNames.includes(str[0])) {
+    startsWithRegion = true
+    region = str.shift()
+  }
+  return startsWithRegion ? str.join(" ").concat(`, ${region}`) : str.join(" ")
 }
 
 /* return an array of type affecting a pokemon (superweak, resistant...)*/
@@ -471,4 +506,86 @@ export const getEncounterMethod = (method: ENCOUNTER_METHOD) => {
     default:
       return "Unknown Method"
   }
+}
+
+const numberIsBetween = (number: number, min: number, max: number) => {
+  return number >= min && number <= max
+}
+
+/* i hate my db */
+export const getGenerationFromLocationId = (id: number) => {
+  if (
+    id === 67 ||
+    id === 68 ||
+    id === 71 ||
+    id === 73 ||
+    id === 76 ||
+    id === 80 ||
+    numberIsBetween(id, 86, 107) ||
+    id === 109 ||
+    id === 120 ||
+    numberIsBetween(id, 130, 134) ||
+    id === 136 ||
+    id === 147 ||
+    id === 151 ||
+    id === 152 ||
+    id === 154 ||
+    id === 155 ||
+    numberIsBetween(id, 157, 162) ||
+    numberIsBetween(id, 231, 234) ||
+    numberIsBetween(id, 491, 498) ||
+    numberIsBetween(id, 500, 521) ||
+    numberIsBetween(id, 526, 529)
+  ) {
+    return GENERATIONS.I
+  } else if (
+    id === 65 ||
+    id === 66 ||
+    id === 69 ||
+    id === 70 ||
+    id === 72 ||
+    id === 74 ||
+    id === 75 ||
+    id === 77 ||
+    id === 78 ||
+    id === 79 ||
+    numberIsBetween(id, 81, 85) ||
+    id === 108 ||
+    numberIsBetween(id, 110, 119) ||
+    numberIsBetween(id, 121, 129) ||
+    id === 135 ||
+    numberIsBetween(id, 137, 141) ||
+    numberIsBetween(id, 148, 150) ||
+    id === 153 ||
+    id === 156 ||
+    numberIsBetween(id, 228, 230) ||
+    numberIsBetween(id, 236, 239) ||
+    numberIsBetween(id, 241, 250) ||
+    id === 252
+  ) {
+    return GENERATIONS.II
+  } else if (
+    numberIsBetween(id, 429, 490) ||
+    numberIsBetween(id, 567, 586) ||
+    numberIsBetween(id, 691, 709)
+  ) {
+    return GENERATIONS.III
+  } else if (
+    numberIsBetween(id, 1, 20) ||
+    numberIsBetween(id, 22, 64) ||
+    numberIsBetween(id, 163, 165) ||
+    numberIsBetween(id, 167, 175) ||
+    numberIsBetween(id, 177, 227)
+  ) {
+    return GENERATIONS.IV
+  } else if (numberIsBetween(id, 344, 428) || numberIsBetween(id, 531, 566)) {
+    return GENERATIONS.V
+  } else if (numberIsBetween(id, 587, 690)) {
+    return GENERATIONS.VI
+  }
+  return GENERATIONS.VII
+}
+
+export const arrayIsEmpty = (array: Array<any>) => {
+  return !array?.length ? true : false
 }

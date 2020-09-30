@@ -6,33 +6,32 @@ import React from "react"
 
 import Card from "@material-ui/core/Card"
 import { TypeDisplay } from "./StyledDisplay"
-import { TYPES, mq, MOVE_LEARNING_METHOD } from "../common/constants"
+import {
+  TYPES,
+  mq,
+  MOVE_LEARNING_METHOD,
+  ENCOUNTER_METHOD,
+} from "../common/constants"
 import { capitalizeFirstLetter } from "../common/utils"
 import { PartialPokemonGrid } from "./Grid"
-
-interface Moves {
-  learning_method: number | null
-  level_learned: number | null
-}
-
-interface ReducedPokemon {
-  id: number
-  identifier: string
-  type_1: number | null
-  type_2: number | null
-  picture: string | null
-  moves?: Array<Moves | null> | null
-}
+import { ReducedPokemon, ReducedEncounter } from "../common/types"
 
 interface Props {
   pokemons: Array<ReducedPokemon | null> | null
-  additionalInfos?: "level"
+  additionalInfos?: "level" | "rarity"
+  encounterInfos?: Array<ReducedEncounter | null> | null
+  method?: ENCOUNTER_METHOD
 }
 
-const ReducedPokemonGrid: React.FC<Props> = ({ pokemons, additionalInfos }) => {
+const ReducedPokemonGrid: React.FC<Props> = ({
+  pokemons,
+  additionalInfos,
+  encounterInfos,
+  method,
+}) => {
   return (
     <PartialPokemonGrid additionalInfos={additionalInfos}>
-      {pokemons.map((pokemon) => (
+      {pokemons.map((pokemon, idx) => (
         <div key={pokemon.id}>
           {additionalInfos === "level" && (
             <div css={{ marginBottom: "5px", textAlign: "center" }}>
@@ -49,6 +48,44 @@ const ReducedPokemonGrid: React.FC<Props> = ({ pokemons, additionalInfos }) => {
                   }
                 </b>
               </span>
+            </div>
+          )}
+          {additionalInfos === "rarity" && (
+            <div
+              css={{
+                marginBottom: "5px",
+                textAlign: "center",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {method !== ENCOUNTER_METHOD.GIFT &&
+                method !== ENCOUNTER_METHOD.GIFT_EGG && (
+                  <span>
+                    Rarity:{" "}
+                    <b>
+                      {encounterInfos[idx].rarity > 100
+                        ? 100
+                        : encounterInfos[idx].rarity}
+                      %
+                    </b>
+                  </span>
+                )}
+              {encounterInfos[idx].level_min ===
+              encounterInfos[idx].level_max ? (
+                <span>
+                  Level: <b>{encounterInfos[idx].level_min}</b>
+                </span>
+              ) : (
+                <>
+                  <span>
+                    Level min: <b>{encounterInfos[idx].level_min}</b>
+                  </span>
+                  <span>
+                    Level max: <b>{encounterInfos[idx].level_max}</b>
+                  </span>
+                </>
+              )}
             </div>
           )}
           <Card

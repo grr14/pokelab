@@ -40,11 +40,12 @@ const DetailedPokemonGrid = styled.div<Props>`
 `
 
 interface PPGProps {
-  additionalInfos?: "level"
+  additionalInfos?: "level" | "rarity"
 }
 
 const PartialPokemonGrid = styled.div<PPGProps>`
   display: grid;
+  align-items: flex-end;
   grid-auto-flow: row;
   grid-row-gap: ${(props) => (!!props.additionalInfos ? `20px !important` : 0)};
   ${mq[0]} {

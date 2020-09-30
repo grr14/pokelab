@@ -110,11 +110,7 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
                 return (
                   <Tr key={idx}>
                     {addTh && (
-                      <Th
-                        css={{ borderRight: "none" }}
-                        scope="rowgroup"
-                        rowSpan={rowSpan}
-                      >
+                      <Th scope="rowgroup" rowSpan={rowSpan}>
                         <VersionNameDisplay version={enc.version as VERSIONS}>
                           {getGameVersionFromId(enc.version)}
                         </VersionNameDisplay>
@@ -122,8 +118,14 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
                     )}
                     <Td multiple={true}>
                       <Link
-                        href={`/location/[pid]`}
-                        as={`/location/${enc.location.id}`}
+                        href={{
+                          pathname: `/location/[pid]`,
+                          query: { gameVersion: enc.version },
+                        }}
+                        as={{
+                          pathname: `/location/${enc.location.id}`,
+                          query: { gameVersion: enc.version },
+                        }}
                       >
                         <a>
                           {capitalizeSentence(

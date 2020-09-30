@@ -1,0 +1,29 @@
+query getEncountersByLocationAndVersion($locationId: Int, $versionId: Int) {
+  encountersByLocationAndVersion(
+    locationId: $locationId
+    versionId: $versionId
+  ) {
+    id
+    version
+    location {
+      id
+      identifier
+      region
+      location_area {
+        id
+        identifier
+      }
+    }
+    method
+    level_min
+    level_max
+    rarity
+    pokemon {
+      id
+      identifier
+      type_1
+      type_2
+      picture
+    }
+  }
+}

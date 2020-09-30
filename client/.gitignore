@@ -2,6 +2,9 @@
 .next
 .next/*
 
+#vscode
+.vscode
+
 # Logs
 logs
 *.log
