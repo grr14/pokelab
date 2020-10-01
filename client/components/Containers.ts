@@ -20,7 +20,7 @@ const MainContainer = styled.div<Props>`
 
 const OuterContainer = styled.div`
   flex: 1;
-  padding: 2%;
+  padding: 1% 2% 10px;
   display: flex;
 `
 

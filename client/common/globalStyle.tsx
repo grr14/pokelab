@@ -34,6 +34,9 @@ const makeGlobalStyles = (theme: Theme) => css`
     text-decoration: none;
     color: ${theme.body.text};
   }
+  a:hover {
+    text-decoration: underline;
+  }
   input {
     border: none;
     color: ${theme.body.text};

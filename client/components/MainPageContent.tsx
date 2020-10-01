@@ -21,7 +21,7 @@ const MainPageContent: React.FC = () => {
     <div
       css={{
         padding: "0 1%",
-        flex: 1,
+        width: "100%",
       }}
     >
       <PokedexGrid>{displayPokemons(1, 151)}</PokedexGrid>

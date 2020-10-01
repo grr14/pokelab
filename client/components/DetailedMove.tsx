@@ -10,7 +10,7 @@ import {
   VERSIONS_GROUPS,
 } from "../common/constants"
 
-import { Tabs, TabPanel } from "./TabPanel"
+import { Tabs, TabPanel } from "./Tabs"
 import { PartialPokemonGrid } from "./Grid"
 import CardLoading from "./CardLoading"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"

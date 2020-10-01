@@ -13,7 +13,7 @@ import {
 } from "../graphql/queries/__generated__/getEncountersByLocationAndVersion"
 
 import { InnerContainer, OuterContainer } from "./Containers"
-import { Tabs, TabPanel } from "./TabPanel"
+import { Tabs, TabPanel } from "./Tabs"
 import SelectInput from "./SelectInput"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 

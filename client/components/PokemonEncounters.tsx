@@ -5,7 +5,7 @@ import Link from "next/link"
 
 import { VersionNameDisplay } from "./StyledDisplay"
 import { Tr, Th, Td, Table } from "./Table"
-import { Tabs, TabPanel } from "./TabPanel"
+import { Tabs, TabPanel } from "./Tabs"
 import SelectInput from "./SelectInput"
 
 import {

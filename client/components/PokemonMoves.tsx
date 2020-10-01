@@ -32,7 +32,7 @@ import {
 
 import { Tab } from "@material-ui/core"
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton"
-import { Tabs, TabPanel } from "./TabPanel"
+import { Tabs, TabPanel } from "./Tabs"
 import SelectInput from "./SelectInput"
 
 const GET_MOVES = gql`

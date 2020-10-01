@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
 
   const menu: CustomMenu = [
     {
-      link: "/",
+      link: "/pokemons",
       text: "Pokemons",
     },
     {
