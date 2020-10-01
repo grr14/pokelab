@@ -44,9 +44,15 @@ module.exports = {
         moveId,
         versionGroupId,
       }),
-    encountersByPokemon: async (_, { pokemonId }, { dataSources }, __) =>
-      dataSources.pokemonDB.getEncountersByPokemon({
+    encountersByPokemonAndVersion: async (
+      _,
+      { pokemonId, versionId },
+      { dataSources },
+      __
+    ) =>
+      dataSources.pokemonDB.getEncountersByPokemonAndVersion({
         pokemonId,
+        versionId,
       }),
     encountersByLocationAndVersion: async (
       _,

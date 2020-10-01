@@ -17,7 +17,7 @@ typeDefs = gql`
     movesByPokemonAndVersion(pokemonId: Int, versionId: Int): [MoveDetail]
     getAllMoves: [Move]
     pokemonsByMoveAndVersionGroup(moveId: Int, versionGroupId: Int): [Pokemon]
-    encountersByPokemon(pokemonId: Int): [Encounter]
+    encountersByPokemonAndVersion(pokemonId: Int, versionId: Int): [Encounter]
     encountersByLocationAndVersion(locationId: Int, versionId: Int): [Encounter]
   }
 

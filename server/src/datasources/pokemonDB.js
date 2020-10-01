@@ -423,14 +423,16 @@ class pokemonDB extends DataSource {
       .sort((a, b) => a.id - b.id)
   }
 
-  async getEncountersByPokemon({ pokemonId }) {
-    if (pokemonId > 712) {
+  async getEncountersByPokemonAndVersion({ pokemonId, versionId }) {
+    if (pokemonId > 712 || versionId > NB_VERSIONS) {
       /* dont have more datas in the db (no genVII) */
       return null
     }
 
     const encounters = await this.store.encounters.findAll({
-      where: { pokemon_id: pokemonId },
+      where: {
+        [Op.and]: [{ pokemon_id: pokemonId }, { version_id: versionId }],
+      },
       order: [["version_id", "ASC"]],
     })
 
