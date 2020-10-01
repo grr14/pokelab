@@ -1,6 +1,30 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
 import React, { useState, useCallback } from "react"
+import Link from "next/link"
+
+import { VersionNameDisplay } from "./StyledDisplay"
+import { Tr, Th, Td, Table } from "./Table"
+import { Tabs, TabPanel } from "./TabPanel"
+import SelectInput from "./SelectInput"
+
+import {
+  capitalizeSentence,
+  countOccurrences,
+  formatLocationName,
+  getEncounterMethod,
+  getGameVersionFromId,
+  getGenerationFromId,
+} from "../common/utils"
+
+import {
+  ENCOUNTER_METHOD,
+  NB_GENERATIONS,
+  VERSIONS,
+  VERSIONS_IN_GENERATIONS,
+} from "../common/constants"
+
+import { Tab } from "@material-ui/core"
 
 import gql from "graphql-tag"
 import { useQuery } from "@apollo/react-hooks"
@@ -9,36 +33,6 @@ import {
   EncountersByPokemonAndVersion as Encounters,
   EncountersByPokemonAndVersionVariables as EncountersVariables,
 } from "../graphql/queries/__generated__/EncountersByPokemonAndVersion"
-import { VersionNameDisplay } from "./StyledDisplay"
-import { Tr, Th, Td, Table } from "./Table"
-import {
-  capitalizeSentence,
-  countOccurrences,
-  formatLocationName,
-  getEncounterMethod,
-  getGameVersionFromId,
-  getGenerationFromId,
-  getVersionGroupFromId,
-} from "../common/utils"
-import {
-  ENCOUNTER_METHOD,
-  NB_GENERATIONS,
-  NB_VERSIONS,
-  VERSIONS,
-  VERSIONS_GROUPS,
-  VERSIONS_GROUPS_IN_GENERATIONS,
-  VERSIONS_IN_GENERATIONS,
-} from "../common/constants"
-import Link from "next/link"
-import {
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Tabs,
-  Tab,
-} from "@material-ui/core"
-import TabPanel from "./TabPanel"
 
 interface Props {
   id: number
@@ -104,19 +98,7 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
     return (
       <div css={{ width: "100%", padding: "0 5%" }}>
         <h2 css={{ width: "100%" }}>Encounters</h2>
-        <Tabs
-          value={tabNumber}
-          onChange={handleTabChange}
-          variant="scrollable"
-          scrollButtons="on"
-          aria-label="scrollable on tabs"
-          css={(theme) => ({
-            backgroundColor: theme.card.background,
-            "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-              backgroundColor: "#E31010 !important",
-            },
-          })}
-        >
+        <Tabs value={tabNumber} onChange={handleTabChange}>
           {allGenerations.map((el) => (
             <Tab key={el} label={`Generation ${el + 1}`} />
           ))}
@@ -190,19 +172,7 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
     <div css={{ width: "100%", padding: "0 5%" }}>
       <h2 css={{ width: "100%" }}>Encounters</h2>
 
-      <Tabs
-        value={tabNumber}
-        onChange={handleTabChange}
-        variant="scrollable"
-        scrollButtons="on"
-        aria-label="scrollable on tabs"
-        css={(theme) => ({
-          backgroundColor: theme.card.background,
-          "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-            backgroundColor: "#E31010 !important",
-          },
-        })}
-      >
+      <Tabs value={tabNumber} onChange={handleTabChange}>
         {allGenerations.map((el) => (
           <Tab
             key={el}
@@ -214,45 +184,13 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
 
       {[...Array(allGenerations.length).keys()].map((el, idx) => (
         <TabPanel key={idx} value={tabNumber} index={el}>
-          <FormControl css={{ minWidth: "120px" }}>
-            <InputLabel
-              id="select-version"
-              css={(theme) => ({
-                color: `${theme.body.text} !important`,
-                opacity: "0.5",
-              })}
-            >
-              Versions
-            </InputLabel>
-            <Select
-              labelId="select-version"
-              id="select-version"
-              value={version}
-              onChange={handleChangeSelect}
-              css={(theme) => ({
-                color: theme.body.text,
-                fontFamily: theme.body.font,
-                "&>svg.MuiSvgIcon-root.MuiSelect-icon": {
-                  color: `${theme.body.text} !important`,
-                },
-                "&.MuiInput-underline:before": {
-                  borderBottom: `solid 1px #E31010 !important`,
-                },
-                "&.MuiInput-underline:hover:not(.Mui-disabled):before": {
-                  borderBottom: `solid 2px #E31010 !important`,
-                },
-                "&.MuiInput-underline:after": {
-                  borderBottom: `solid 2px #E31010 !important`,
-                },
-              })}
-            >
-              {VERSIONS_IN_GENERATIONS[el + restLength].map((vers, idx) => (
-                <MenuItem key={idx} value={vers}>
-                  {getGameVersionFromId(vers)}
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
+          <SelectInput
+            value={version}
+            menuChoices={VERSIONS_IN_GENERATIONS[el + restLength]}
+            onChange={handleChangeSelect}
+            label="Versions"
+            menuChoicesDisplay={getGameVersionFromId}
+          />
 
           {encounters && encounters.length > 0 ? (
             <div css={{ overflowX: "auto", marginTop: "15px" }}>

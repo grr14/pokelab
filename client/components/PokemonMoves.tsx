@@ -30,16 +30,10 @@ import {
   getGenerationFromId,
 } from "../common/utils"
 
-import {
-  Tabs,
-  Tab,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-} from "@material-ui/core"
+import { Tab } from "@material-ui/core"
 import Skeleton from "@material-ui/lab/Skeleton/Skeleton"
-import TabPanel from "./TabPanel"
+import { Tabs, TabPanel } from "./TabPanel"
+import SelectInput from "./SelectInput"
 
 const GET_MOVES = gql`
   query movesByPokemonAndVersion($pokemonId: Int, $versionId: Int) {
@@ -126,20 +120,12 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
         }}
       >
         <h2>Moveset</h2>
-        <Tabs
-          variant="scrollable"
-          scrollButtons="on"
-          css={(theme) => ({
-            backgroundColor: theme.card.background,
-            "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-              backgroundColor: "#E31010 !important",
-            },
-          })}
-        >
+        <Tabs value={tabNumber} onChange={handleTabChange}>
           {allGenerations.map((el) => (
             <Tab key={el} label={`Generation ${el + 1}`} />
           ))}
         </Tabs>
+
         <h3>Loading...</h3>
         <Table>
           <thead>{arrayHeader(true)}</thead>
@@ -309,19 +295,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
   return (
     <div css={{ width: "100%", padding: "0 5%" }}>
       <h2 css={{ width: "100%" }}>Moveset</h2>
-      <Tabs
-        value={tabNumber}
-        onChange={handleTabChange}
-        variant="scrollable"
-        scrollButtons="on"
-        aria-label="scrollable on tabs"
-        css={(theme) => ({
-          backgroundColor: theme.card.background,
-          "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-            backgroundColor: "#E31010 !important",
-          },
-        })}
-      >
+      <Tabs value={tabNumber} onChange={handleTabChange}>
         {allGenerations.map((el) => (
           <Tab
             key={el}
@@ -334,47 +308,14 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
       {[...Array(allGenerations.length).keys()].map((el, idx) => (
         <TabPanel key={idx} value={tabNumber} index={el}>
           <h2>Moves Learnt in version {getVersionGroupFromId(versionGroup)}</h2>
-          <FormControl css={{ minWidth: "120px" }}>
-            <InputLabel
-              id="select-version"
-              css={(theme) => ({
-                color: `${theme.body.text} !important`,
-                opacity: "0.5",
-              })}
-            >
-              Versions
-            </InputLabel>
-            <Select
-              labelId="select-version"
-              id="select-version"
-              value={versionGroup}
-              onChange={handleChangeSelect}
-              css={(theme) => ({
-                color: theme.body.text,
-                fontFamily: theme.body.font,
-                "&>svg.MuiSvgIcon-root.MuiSelect-icon": {
-                  color: `${theme.body.text} !important`,
-                },
-                "&.MuiInput-underline:before": {
-                  borderBottom: `solid 1px #E31010 !important`,
-                },
-                "&.MuiInput-underline:hover:not(.Mui-disabled):before": {
-                  borderBottom: `solid 2px #E31010 !important`,
-                },
-                "&.MuiInput-underline:after": {
-                  borderBottom: `solid 2px #E31010 !important`,
-                },
-              })}
-            >
-              {VERSIONS_GROUPS_IN_GENERATIONS[el + restLength].map(
-                (versGroup, idx) => (
-                  <MenuItem key={idx} value={versGroup}>
-                    {getVersionGroupFromId(versGroup)}
-                  </MenuItem>
-                )
-              )}
-            </Select>
-          </FormControl>
+
+          <SelectInput
+            value={versionGroup}
+            menuChoices={VERSIONS_GROUPS_IN_GENERATIONS[el + restLength]}
+            onChange={handleChangeSelect}
+            label="Versions"
+            menuChoicesDisplay={getVersionGroupFromId}
+          />
 
           {buildTablesSection.map((tableSection, idx) => (
             <div key={idx} css={{ overflowX: "auto" }}>

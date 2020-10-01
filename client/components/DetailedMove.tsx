@@ -3,13 +3,14 @@ import { jsx } from "@emotion/core"
 import React, { useState, useCallback } from "react"
 
 import {
+  AFFECTED_BY_TARGET,
   MOVE_LEARNING_METHOD,
   mq,
   NB_GENERATIONS,
   VERSIONS_GROUPS,
 } from "../common/constants"
 
-import TabPanel from "./TabPanel"
+import { Tabs, TabPanel } from "./TabPanel"
 import { PartialPokemonGrid } from "./Grid"
 import CardLoading from "./CardLoading"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
@@ -23,10 +24,10 @@ import {
   getDamageClassFromId,
   getTypeFromId,
   getVersionGroupFromId,
+  targetProse,
 } from "../common/utils"
 
 import Card from "@material-ui/core/Card"
-import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
 import Skeleton from "@material-ui/lab/Skeleton"
 
@@ -107,53 +108,6 @@ const MoveTarget: React.FC<MoveTargetProps> = ({ id }) => {
     boxShadow: `2px 2px 2px 0px ${theme.boxShadow.color}`,
   })
 
-  const affectedByTargetId = [
-    [false, false, false, true, false, false], // 1 counter
-    [true, true, false, false, false, false], //2 me-first
-    [false, false, false, false, true, false], //3 helping hand
-    [false, false, false, true, true, true], //4 light screen
-    [false, false, false, true, true, false], //5 acupressure
-    [true, true, true, false, false, false], //6 spikes
-    [false, false, false, true, false, false], //7 sword dance
-    [false, false, false, true, false, false], //8 outrage
-    [true, true, false, false, true, false], //9 surf
-    [true, true, false, false, true, false], //10 pound
-    [true, true, false, false, false, false], //11 rockslide
-    [true, true, true, true, true, true], //12 rain dance
-    [false, false, false, true, true, true], //13 aromatherapy
-    [true, true, true, true, true, true], //14 perish song
-  ]
-
-  const targetProse = (id: number) => {
-    switch (id) {
-      case 1:
-      case 7:
-      case 8:
-        return "Affects the user"
-      case 2:
-        return "May affect any adjacent foe, but not allies"
-      case 3:
-        return "Affects an adjacent ally"
-      case 4:
-        return "Affects the user and all allies"
-      case 5:
-        return "May affect the user or an adjacent ally"
-      case 6:
-        return "Affect all foes"
-      case 9:
-        return "Affects all Pokémon adjacent to the user"
-      case 10:
-        return "May affect anyone adjacent to the user"
-      case 11:
-        return "Affects all adjacent foes, but not allies"
-      case 12:
-      case 14:
-        return "Affects all Pokémon on the field"
-      case 13:
-        return "Affects the user and all allies"
-    }
-  }
-
   return (
     <React.Fragment>
       <h2 css={{ width: "100%" }}>Move Targets</h2>
@@ -172,7 +126,7 @@ const MoveTarget: React.FC<MoveTargetProps> = ({ id }) => {
             key={idx}
             css={{
               ...basicCellCSS(theme),
-              ...(affectedByTargetId[id - 1][idx] && {
+              ...(AFFECTED_BY_TARGET[id - 1][idx] && {
                 backgroundColor: "#E31010",
                 color: "white",
               }),
@@ -256,27 +210,41 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
   }
   if (loading) {
     return (
-      <div>
-        <h3>Loading...</h3>
-        <PartialPokemonGrid
-          css={{
-            marginTop: "15px",
-          }}
-        >
-          {[...Array(10).fill(0)].map((_, idx) => (
-            <Card
-              key={idx}
-              css={(theme) => ({
-                height: "100px",
-                width: "200px",
-                display: "flex",
-                backgroundColor: `${theme.card.background} !important`,
-              })}
-            >
-              <CardLoading />
-            </Card>
+      <div
+        css={{
+          marginTop: "20px",
+          width: "100%",
+          padding: "0 5%",
+        }}
+      >
+        <Tabs value={tabNumber} onChange={handleTabChange}>
+          {allGenerations.map((el) => (
+            <Tab key={el} label={`Generation ${el + 1}`} />
           ))}
-        </PartialPokemonGrid>
+        </Tabs>
+
+        <TabPanel value={0} index={0}>
+          <h3>Loading...</h3>
+          <PartialPokemonGrid
+            css={{
+              marginTop: "15px",
+            }}
+          >
+            {[...Array(15).fill(0)].map((_, idx) => (
+              <Card
+                key={idx}
+                css={(theme) => ({
+                  height: "100px",
+                  width: "200px",
+                  display: "flex",
+                  backgroundColor: `${theme.card.background} !important`,
+                })}
+              >
+                <CardLoading />
+              </Card>
+            ))}
+          </PartialPokemonGrid>
+        </TabPanel>
       </div>
     )
   }
@@ -338,19 +306,7 @@ const PokemonByMoveSection: React.FC<PokemonByMovesProps> = ({
       </div>
 
       <div css={{ marginTop: "15px" }}>
-        <Tabs
-          value={tabNumber}
-          onChange={handleTabChange}
-          variant="scrollable"
-          scrollButtons="on"
-          aria-label="scrollable on tabs"
-          css={(theme) => ({
-            backgroundColor: theme.card.background,
-            "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
-              backgroundColor: "#E31010 !important",
-            },
-          })}
-        >
+        <Tabs value={tabNumber} onChange={handleTabChange}>
           {allGenerations.map((el) => (
             <Tab
               key={el}

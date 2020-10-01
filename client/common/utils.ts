@@ -589,3 +589,33 @@ export const getGenerationFromLocationId = (id: number) => {
 export const arrayIsEmpty = (array: Array<any>) => {
   return !array?.length ? true : false
 }
+
+export const targetProse = (id: number) => {
+  switch (id) {
+    case 1:
+    case 7:
+    case 8:
+      return "Affects the user"
+    case 2:
+      return "May affect any adjacent foe, but not allies"
+    case 3:
+      return "Affects an adjacent ally"
+    case 4:
+      return "Affects the user and all allies"
+    case 5:
+      return "May affect the user or an adjacent ally"
+    case 6:
+      return "Affect all foes"
+    case 9:
+      return "Affects all Pokémon adjacent to the user"
+    case 10:
+      return "May affect anyone adjacent to the user"
+    case 11:
+      return "Affects all adjacent foes, but not allies"
+    case 12:
+    case 14:
+      return "Affects all Pokémon on the field"
+    case 13:
+      return "Affects the user and all allies"
+  }
+}

@@ -1,9 +1,34 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
+import { Tabs as MuiTabs } from "@material-ui/core"
 
 import Box from "@material-ui/core/Box"
 import React from "react"
 import { mq } from "../common/constants"
+
+interface TabsProps {
+  value: unknown
+  onChange: (event: React.ChangeEvent<{}>, value: unknown) => void
+  children: React.ReactNode
+}
+
+const Tabs: React.FC<TabsProps> = ({ children, value, onChange }) => (
+  <MuiTabs
+    value={value}
+    onChange={onChange}
+    variant="scrollable"
+    scrollButtons="on"
+    aria-label="scrollable on tabs"
+    css={(theme) => ({
+      backgroundColor: theme.card.background,
+      "&>div.MuiTabs-scroller.MuiTabs-scrollable>span": {
+        backgroundColor: "#E31010 !important",
+      },
+    })}
+  >
+    {children}
+  </MuiTabs>
+)
 
 interface TabPanelProps {
   children: React.ReactNode
@@ -33,4 +58,4 @@ const TabPanel: React.FC<TabPanelProps> = ({ children, index, value }) => (
   </div>
 )
 
-export default TabPanel
+export { Tabs, TabPanel }

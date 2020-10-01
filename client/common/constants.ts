@@ -3270,3 +3270,20 @@ export const locations: Array<SearchInputOption> = [
   { id: 797, type: "Location", identifier: "ultra-space" },
   { id: 798, type: "Location", identifier: "malie-city--outer-cape" },
 ]
+
+export const AFFECTED_BY_TARGET = [
+  [false, false, false, true, false, false], // 1 counter
+  [true, true, false, false, false, false], //2 me-first
+  [false, false, false, false, true, false], //3 helping hand
+  [false, false, false, true, true, true], //4 light screen
+  [false, false, false, true, true, false], //5 acupressure
+  [true, true, true, false, false, false], //6 spikes
+  [false, false, false, true, false, false], //7 sword dance
+  [false, false, false, true, false, false], //8 outrage
+  [true, true, false, false, true, false], //9 surf
+  [true, true, false, false, true, false], //10 pound
+  [true, true, false, false, false, false], //11 rockslide
+  [true, true, true, true, true, true], //12 rain dance
+  [false, false, false, true, true, true], //13 aromatherapy
+  [true, true, true, true, true, true], //14 perish song
+]
