@@ -1,0 +1,15 @@
+query EncountersByPokemonAndVersion($pokemonId: Int,$versionId: Int) {
+  encountersByPokemonAndVersion(pokemonId: $pokemonId,versionId: $versionId) {
+    id
+    version
+    location {
+      id
+      region
+      identifier
+    }
+    method
+    level_min
+    level_max
+    rarity
+  }
+}

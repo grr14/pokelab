@@ -104,10 +104,7 @@ const DetailedLocation: React.FC<Props> = ({ locationId, versionId }) => {
   const restLength = rest.length
   const [tabNumber, setTabNumber] = React.useState(() => {
     if (!versionId) {
-      if (locationGeneration === GENERATIONS.I) {
-        return allGenerations[0]
-      }
-      return rest[0]
+      return 0
     }
     const idx = VERSIONS_IN_GENERATIONS.findIndex((el) =>
       el.includes(versionId)
