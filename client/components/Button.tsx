@@ -13,6 +13,7 @@ const CustomButton = styled(Button)<Props>`
     `${props.theme.header.button.background} !important`};
   font-family: ${(props) => `${props.theme.body.font} !important`};
   color: ${(props) => `${props.theme.header.button.text} !important`};
+  white-space: nowrap;
 `
 
 export { CustomButton }

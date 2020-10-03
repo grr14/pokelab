@@ -88,13 +88,10 @@ const PokedexGrid = styled.div`
   ${mq[1]} {
     grid-template-columns: repeat(2, 1fr);
   }
-  ${mq[2]} {
+  ${mq[3]} {
     grid-template-columns: repeat(3, 1fr);
   }
-  ${mq[3]} {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  ${mq[4]} {
+  ${mq[5]} {
     grid-template-columns: repeat(5, 1fr);
   }
 `

@@ -619,3 +619,43 @@ export const targetProse = (id: number) => {
       return "Affects the user and all allies"
   }
 }
+
+export const getRegionNameFromGenerationId = (id: GENERATIONS) => {
+  switch (id) {
+    case GENERATIONS.I:
+      return "Kanto"
+    case GENERATIONS.II:
+      return "Johto"
+    case GENERATIONS.III:
+      return "Hoenn"
+    case GENERATIONS.IV:
+      return "Sinnoh"
+    case GENERATIONS.V:
+      return "Unova"
+    case GENERATIONS.VI:
+      return "Kalos"
+    case GENERATIONS.VII:
+      return "Alola"
+  }
+}
+
+export const getGenerationLabelFromId = (id: GENERATIONS) => {
+  switch (id) {
+    case GENERATIONS.I:
+      return "Generation I - Kanto"
+    case GENERATIONS.II:
+      return "Generation II - Johto"
+    case GENERATIONS.III:
+      return "Generation III - Hoenn"
+    case GENERATIONS.IV:
+      return "Generation IV - Sinnoh"
+    case GENERATIONS.V:
+      return "Generation V - Unova"
+    case GENERATIONS.VI:
+      return "Generation VI - Kalos"
+    case GENERATIONS.VII:
+      return "Generation VII - Alola"
+    default:
+      return "Show All"
+  }
+}

@@ -1,4 +1,4 @@
-import { SearchInputOption, TypeEfficiency } from "./types"
+import { PokedexRange, SearchInputOption, TypeEfficiency } from "./types"
 
 export const github = "https://github.com/grr14/pokelab"
 
@@ -76,6 +76,27 @@ export const NB_MOVES = 728
 export const NB_LOCATIONS = 798
 
 export const NB_VERSIONS = 30
+
+export const TYPES_NAMES = [
+  "normal",
+  "fighting",
+  "flying",
+  "poison",
+  "ground",
+  "rock",
+  "bug",
+  "ghost",
+  "steel",
+  "fire",
+  "water",
+  "grass",
+  "electric",
+  "psychic",
+  "ice",
+  "dragon",
+  "dark",
+  "fairy",
+]
 
 export enum TYPES {
   NORMAL = 1,
@@ -502,7 +523,8 @@ export enum POKEDEX {
 export const NB_GENERATIONS = 7
 
 export enum GENERATIONS {
-  I = 1,
+  ALL = 0,
+  I,
   II,
   III,
   IV,
@@ -3286,4 +3308,35 @@ export const AFFECTED_BY_TARGET = [
   [true, true, true, true, true, true], //12 rain dance
   [false, false, false, true, true, true], //13 aromatherapy
   [true, true, true, true, true, true], //14 perish song
+]
+
+export const POKEDEX_RANGES: Array<PokedexRange> = [
+  {
+    firstPokemonId: 1,
+    lastPokemonId: FIRST_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: FIRST_GENERATION_INDEX + 1,
+    lastPokemonId: SECOND_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: SECOND_GENERATION_INDEX + 1,
+    lastPokemonId: THIRD_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: THIRD_GENERATION_INDEX + 1,
+    lastPokemonId: FOURTH_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: FOURTH_GENERATION_INDEX + 1,
+    lastPokemonId: FIFTH_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: FIFTH_GENERATION_INDEX + 1,
+    lastPokemonId: SIXTH_GENERATION_INDEX,
+  },
+  {
+    firstPokemonId: SIXTH_GENERATION_INDEX + 1,
+    lastPokemonId: LAST_POKEMON_ID,
+  },
 ]

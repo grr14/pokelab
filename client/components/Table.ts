@@ -19,7 +19,7 @@ const Th = styled.th<ThProps>`
 interface TrProps {
   theme: Theme
   align?: "center" | "left"
-  loading?: boolean
+  loading?: number
 }
 
 const Tr = styled.tr<TrProps>`

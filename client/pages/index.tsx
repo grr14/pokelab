@@ -59,8 +59,15 @@ export default function Home() {
               .
             </p>
             <p>
-              Back-end is a self-made <a>Apollo Graphql</a> server querying data
-              from a postgres database.
+              Back-end is a self-made{" "}
+              <a
+                href="https://www.apollographql.com/"
+                target="_blank"
+                css={aCss}
+              >
+                Apollo Graphql
+              </a>{" "}
+              server querying data from a postgres database.
             </p>
             <p>
               All the credit for retrieving the original pokemon datas goes to{" "}

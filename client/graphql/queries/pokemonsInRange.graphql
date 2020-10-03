@@ -1,0 +1,9 @@
+query pokemonsInRange($firstId: Int, $lastId: Int) {
+  pokemonsInRange(firstId: $firstId, lastId: $lastId) {
+    id
+    identifier
+    type_1
+    type_2
+    picture
+  }
+}

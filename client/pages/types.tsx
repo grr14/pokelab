@@ -84,7 +84,7 @@ const Types: React.FC = () => {
             boxShadow: "1px 1px 5px 1px rgba(0, 0, 0, 0.75)",
             borderRadius: "50px 50px 50px 50px",
             "&:hover": {
-              boxShadow: "inset 0px 0px 3px 2px yellow",
+              boxShadow: "inset 0px 0px 3px 2px #E31010cc",
             },
           }}
           height={"100%"}

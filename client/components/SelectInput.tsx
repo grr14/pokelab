@@ -60,6 +60,9 @@ const SelectInput: React.FC<Props> = ({
           "&.MuiInput-underline:after": {
             borderBottom: `solid 2px #E31010 !important`,
           },
+          "&.MuiInputBase-root": {
+            fontFamily: `${theme.body.font} !important`,
+          },
         })}
       >
         {menuChoices.map((vers, idx) => (

@@ -180,3 +180,8 @@ export type ReducedEncounter = {
   level_min: number
   level_max: number
 }
+
+export type PokedexRange = {
+  firstPokemonId: number
+  lastPokemonId: number
+}

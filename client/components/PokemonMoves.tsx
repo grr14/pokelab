@@ -132,7 +132,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
           <tbody>
             {[...Array(15).fill(0)].map((_, idx) => (
               /* https://github.com/styled-components/styled-components/issues/1198 */
-              <Tr loading={loading ? true : false} key={idx}>
+              <Tr loading={loading ? 1 : 0} key={idx}>
                 <Td css={{ height: "24px" }} colSpan={8}>
                   <Skeleton
                     variant="text"

@@ -5,6 +5,7 @@ import { mq } from "./constants"
 
 const makeGlobalStyles = (theme: Theme) => css`
   @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
   div > ::-webkit-scrollbar {
     display: none;
   }
@@ -30,6 +31,7 @@ const makeGlobalStyles = (theme: Theme) => css`
   .MuiMenuItem-root {
     font-family: ${theme.body.font} !important;
   }
+
   a {
     text-decoration: none;
     color: ${theme.body.text};
