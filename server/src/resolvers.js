@@ -4,6 +4,8 @@ module.exports = {
       dataSources.pokemonDB.findPokemon({ id }),
     pokemonPartial: async (_, { id }, { dataSources }, __) =>
       dataSources.pokemonDB.findPokemonPartial({ id }),
+    pokemonsInRange: async (_, { firstId, lastId }, { dataSources }, __) =>
+      dataSources.pokemonDB.pokemonsInRange({ firstId, lastId }),
     pokemonByTypeId: async (_, { id }, { dataSources }, __) =>
       dataSources.pokemonDB.findPokemonsByTypeId({ id }),
     pokemonSprites: async (_, { id }, { dataSources }, __) =>

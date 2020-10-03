@@ -89,6 +89,26 @@ class pokemonDB extends DataSource {
     }
   }
 
+  async pokemonsInRange({ firstId, lastId }) {
+    if (firstId > lastId) {
+      let [firstId, lastId] = [lastId, firstId]
+    }
+    if (lastId > NB_POKEMON) {
+      return null
+    }
+
+    const pokemons = await this.store.pokemon.findAll({
+      attributes: ["id", "identifier", "type_1", "type_2", "picture"],
+      where: {
+        id: { [Op.between]: [firstId, lastId] },
+      },
+    })
+
+    console.log(`${JSON.stringify(pokemons)}`)
+
+    return pokemons
+  }
+
   async findPokemonsByTypeId({ id }) {
     if (id < 0 || id > NB_TYPES) {
       return null
