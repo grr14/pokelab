@@ -169,7 +169,7 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
   let rowSpanCounter = 0
 
   return (
-    <div css={{ width: "100%", padding: "0 5%" }}>
+    <div id="encounters" css={{ width: "100%", padding: "0 5%" }}>
       <h2 css={{ width: "100%" }}>Encounters</h2>
 
       <Tabs value={tabNumber} onChange={handleTabChange}>

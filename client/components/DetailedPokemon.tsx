@@ -75,7 +75,18 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
   if (loading)
     return (
       <OuterContainer>
-        <InnerContainer>Loading...</InnerContainer>
+        <InnerContainer>
+          <div
+            css={{
+              flex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Loading...
+          </div>
+        </InnerContainer>
       </OuterContainer>
     )
   if (error) return <Error statusCode={404} />

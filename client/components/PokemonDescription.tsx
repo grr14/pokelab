@@ -37,7 +37,7 @@ const PokemonDescription: React.FC<Props> = ({ pokemon }) => {
   }
 
   return (
-    <div css={{ margin: "0 5%" }}>
+    <div css={{ margin: "15px 5% 0 5%" }}>
       <p>
         {capitalizeFirstLetter(pokemon.identifier)} is{" "}
         {pokemon.type_1 === 13 || pokemon.type_1 === 15 ? "an" : "a"}{" "}

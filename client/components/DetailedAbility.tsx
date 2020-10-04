@@ -22,6 +22,7 @@ import { capitalizeSentence, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 import { Table, Td, Th, Tr } from "./Table"
 import { VersionGroupNameDisplay, VersionNameDisplay } from "./StyledDisplay"
+import ScrollToTop from "./ScrollToTop"
 
 const GET_ABILITY = gql`
   query abilityById($id: Int) {
@@ -83,7 +84,16 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
     return (
       <OuterContainer>
         <InnerContainer>
-          <div>Loading...</div>
+          <div
+            css={{
+              flex: 1,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Loading...
+          </div>
         </InnerContainer>
       </OuterContainer>
     )
@@ -196,6 +206,7 @@ const DetailedAbility: React.FC<Props> = ({ id }) => {
             <ReducedPokemonGrid pokemons={pokemonsWithHiddenAbility} />
           </div>
         )}
+        <ScrollToTop visibleAtYOffset={400} />
       </InnerContainer>
     </OuterContainer>
   )

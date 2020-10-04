@@ -14,6 +14,8 @@ import { capitalizeSentence, getDamageClassFromId } from "../common/utils"
 import { mq } from "../common/constants"
 import { Table, Td, Th, Tr } from "../components/Table"
 import { TypeDisplay } from "../components/StyledDisplay"
+import ScrollToTop from "../components/ScrollToTop"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 const ALL_MOVES = gql`
   query getAllMoves {
@@ -36,7 +38,37 @@ const MovesList: React.FC = () => {
     return <p>Cannot retrieve Moves</p>
   }
   if (loading) {
-    return <p>Loading...</p>
+    const skeleton = (
+      <Skeleton
+        variant="text"
+        css={(theme) => ({
+          backgroundColor: theme.card.background,
+        })}
+      />
+    )
+    return (
+      <Table>
+        <thead>
+          <Tr>
+            <Th>ID</Th>
+            <Th>Name</Th>
+            <Th>Type</Th>
+            <Th>PP</Th>
+            <Th>Power</Th>
+            <Th>Accuracy</Th>
+            <Th>Category</Th>
+            <Th>Generation</Th>
+          </Tr>
+        </thead>
+        <tbody>
+          {[...Array(20)].fill(0).map((_, idx) => (
+            <Tr key={idx} loading={1}>
+              <Td colSpan={8}>{skeleton}</Td>
+            </Tr>
+          ))}
+        </tbody>
+      </Table>
+    )
   }
 
   return (
@@ -63,7 +95,7 @@ const MovesList: React.FC = () => {
           </Tr>
         </thead>
         <tbody>
-          {data.getAllMoves.map((move, idx) => (
+          {data?.getAllMoves?.map((move, idx) => (
             <Tr key={idx}>
               <Td>{move.id}</Td>
               <Td>
@@ -204,6 +236,8 @@ const Moves: React.FC = () => {
         <h2 css={{ width: "100%" }}>Move List</h2>
 
         <MovesList />
+
+        <ScrollToTop visibleAtYOffset={800} />
       </InnerContainer>
     </OuterContainer>
   )

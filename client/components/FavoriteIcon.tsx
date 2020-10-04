@@ -11,7 +11,7 @@ const FavoriteIcon = () => {
         right: "10px",
 
         "&:hover": {
-          color: "yellow",
+          color: "#E31010",
         },
       }}
     >

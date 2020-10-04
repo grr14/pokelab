@@ -18,14 +18,18 @@ interface CardProps {
 const PokemonCard: React.FC<CardProps> = ({ pokemon, index, checked }) => {
   const { id, identifier, picture } = pokemon
 
-  console.log(checked)
-
   return (
     <Card raised={true}>
       <FavoriteIcon />
       <Link href={`/pokemon/[id]`} as={`/pokemon/${id}`}>
         <a
           css={(theme) => ({
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
             "&:hover": {
               textDecoration: "underline",
               cursor: "pointer",

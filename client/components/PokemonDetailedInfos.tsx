@@ -69,6 +69,81 @@ const PokemonDetailedInfos: React.FC<Props> = ({ pokemon }) => {
         </Link>
       </div>
 
+      <div
+        css={(theme) => ({
+          marginTop: "15px",
+          width: "80%",
+          padding: "1.5em 12px",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+          alignItems: "center",
+          borderRadius: "5px",
+          backgroundColor: theme.card.background,
+        })}
+      >
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#evolutionchart">Evolution Chart</a>
+        </div>
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#stats">Stats</a>
+        </div>
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#typesinfos">Types Infos</a>
+        </div>
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#moveset">Moveset</a>
+        </div>
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#dexentries">Pokedex Entries</a>
+        </div>
+        <div
+          css={{
+            padding: "2px 1em",
+            "&:hover": {
+              textDecoration: "underline",
+            },
+          }}
+        >
+          <a href="#encounters">Encounters</a>
+        </div>
+      </div>
+
       <PokemonDescription pokemon={pokemon} />
       <PokemonEvolution id={pokemon.evolution_chain_id} />
       <PokemonStats id={pokemon.id} />

@@ -287,12 +287,12 @@ const Types: React.FC = () => {
               Pokemon (multiplier = 2). However, they are weak against
               Plant-type Pokemon (multiplier = 0.5) and don't affect Ground-type
               Pokemon (multiplier = 0).
-              <br />A lot of Pokemon have 2 types. You can find a Type Matrix
+              {/*<br />A lot of Pokemon have 2 types. You can find a Type Matrix
               generator for dual type Pokémon{" "}
               <Link href={`types/generator`}>
                 <a>here</a>
               </Link>
-              .
+              .*/}
             </p>
           </div>
         </div>

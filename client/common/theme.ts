@@ -14,7 +14,7 @@ const lightTheme: Theme = {
   },
   card: {
     text: "black",
-    textHover: "black",
+    textHover: "#E31010",
     background: "#F0F0F0",
     backgroundHover: "#D4D4D4",
   },

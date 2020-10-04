@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "@emotion/core"
-import { github } from "../common/constants"
+import { github, mq } from "../common/constants"
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -9,10 +9,15 @@ const Footer = () => {
       css={{
         padding: "10px 0 5px",
         width: "100%",
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
         fontSize: "0.75em",
+        [mq[0]]: {
+          display: "none",
+        },
+        [mq[5]]: {
+          display: "flex",
+        },
       }}
     >
       <div css={{ marginRight: "15px" }}>

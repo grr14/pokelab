@@ -24,6 +24,7 @@ import CheckBox from "../components/Checkbox"
 
 import { OuterContainer, InnerContainer } from "../components/Containers"
 import Pokedex from "../components/Pokedex"
+import ScrollToTop from "../components/ScrollToTop"
 import SelectInput from "../components/SelectInput"
 
 const Pokemons = () => {
@@ -306,6 +307,8 @@ const Pokemons = () => {
           textToFilter={searchText}
           typeToFilter={types}
         />
+
+        <ScrollToTop visibleAtYOffset={500} />
       </InnerContainer>
     </OuterContainer>
   )

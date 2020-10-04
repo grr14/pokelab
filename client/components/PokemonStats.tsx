@@ -194,6 +194,7 @@ const PokemonStats: React.FC<Props> = ({ id }) => {
 
   return (
     <div
+      id="stats"
       css={(theme) => ({
         backgroundColor: theme.main.background,
         padding: "2%",

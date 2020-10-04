@@ -8,7 +8,8 @@ interface Props {
 
 const CustomButton = styled(Button)<Props>`
   margin: 0 2% !important;
-  border: ${(props) => `solid 1px ${props.theme.header.button.border}`};
+  border: ${(props) =>
+    `solid 1px ${props.theme.header.button.border} !important`};
   background-color: ${(props) =>
     `${props.theme.header.button.background} !important`};
   font-family: ${(props) => `${props.theme.body.font} !important`};

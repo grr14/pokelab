@@ -56,7 +56,7 @@ const PokemonDexEntries: React.FC<Props> = ({ id }) => {
   ))
 
   return (
-    <div css={{ width: "100%" }}>
+    <div id="dexentries" css={{ width: "100%" }}>
       <h2 css={{ paddingLeft: "5%" }}>Pokedex Entries</h2>
       <div css={{ width: "100%", padding: "0 3% 0 5%" }}>
         <Table>

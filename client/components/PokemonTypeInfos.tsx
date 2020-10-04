@@ -139,6 +139,7 @@ const PokemonTypesInfos: React.FC<Props> = ({ type_1, type_2 }) => {
 
   return (
     <div
+      id="typesinfos"
       css={{
         width: "100%",
         padding: "0 5%",

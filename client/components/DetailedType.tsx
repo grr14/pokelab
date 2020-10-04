@@ -8,6 +8,7 @@ import TypeRelationsSection from "./TypeRelationSection"
 import PokemonsListByTypeId from "./PokemonListByTypeId"
 
 import Divider from "@material-ui/core/Divider"
+import ScrollToTop from "./ScrollToTop"
 
 interface Props {
   id: number
@@ -42,6 +43,7 @@ const DetailedType: React.FC<Props> = ({ id }) => {
         <div className="pokemonStatsAndList" css={{ marginTop: "15px" }}>
           <PokemonsListByTypeId id={id} />
         </div>
+        <ScrollToTop visibleAtYOffset={600} />
       </InnerContainer>
     </OuterContainer>
   )

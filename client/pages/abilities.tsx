@@ -15,6 +15,8 @@ import { useQuery } from "@apollo/react-hooks"
 import { capitalizeSentence } from "../common/utils"
 import { mq } from "../common/constants"
 import { Table, Td, Th, Tr } from "../components/Table"
+import ScrollToTop from "../components/ScrollToTop"
+import Skeleton from "@material-ui/lab/Skeleton"
 
 const GET_ALL_ABILITIES = gql`
   query getAllAbilities {
@@ -26,14 +28,36 @@ const GET_ALL_ABILITIES = gql`
   }
 `
 
-const Abilities: React.FC = () => {
+const AbilitiesList: React.FC = () => {
   const { data, loading, error } = useQuery<AllAbilities>(GET_ALL_ABILITIES)
 
   if (loading) {
+    const skeleton = (
+      <Skeleton
+        variant="text"
+        css={(theme) => ({
+          backgroundColor: theme.card.background,
+        })}
+      />
+    )
+
     return (
-      <OuterContainer>
-        <InnerContainer>Loading...</InnerContainer>
-      </OuterContainer>
+      <Table>
+        <thead>
+          <Tr>
+            <Th>ID</Th>
+            <Th>Ability name</Th>
+            <Th>Generation</Th>
+          </Tr>
+        </thead>
+        <tbody>
+          {[...Array(20)].fill(0).map((_, idx) => (
+            <Tr key={idx} loading={1}>
+              <Td colSpan={3}>{skeleton}</Td>
+            </Tr>
+          ))}
+        </tbody>
+      </Table>
     )
   }
 
@@ -62,6 +86,34 @@ const Abilities: React.FC = () => {
     </Tr>
   ))
 
+  return (
+    <div
+      css={{
+        width: "100%",
+        [mq[5]]: {
+          columnCount: 2,
+        },
+      }}
+    >
+      <Table
+        css={{
+          maxWidth: "600px",
+        }}
+      >
+        <thead>
+          <Tr>
+            <Th>ID</Th>
+            <Th>Ability name</Th>
+            <Th>Generation</Th>
+          </Tr>
+        </thead>
+        <tbody>{abilityTable}</tbody>
+      </Table>
+    </div>
+  )
+}
+
+const Abilities: React.FC = () => {
   const pCSS = { lineHeight: "2em" }
 
   return (
@@ -96,31 +148,10 @@ const Abilities: React.FC = () => {
           </div>
           <div>
             <h2>List of Abilities</h2>
-            <div
-              css={{
-                width: "100%",
-                [mq[5]]: {
-                  columnCount: 2,
-                },
-              }}
-            >
-              <Table
-                css={{
-                  maxWidth: "600px",
-                }}
-              >
-                <thead>
-                  <Tr>
-                    <Th>ID</Th>
-                    <Th>Ability name</Th>
-                    <Th>Generation</Th>
-                  </Tr>
-                </thead>
-                <tbody>{abilityTable}</tbody>
-              </Table>
-            </div>
+            <AbilitiesList />
           </div>
         </div>
+        <ScrollToTop visibleAtYOffset={600} />
       </InnerContainer>
     </OuterContainer>
   )

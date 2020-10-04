@@ -293,7 +293,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
   ]
 
   return (
-    <div css={{ width: "100%", padding: "0 5%" }}>
+    <div id="moveset" css={{ width: "100%", padding: "0 5%" }}>
       <h2 css={{ width: "100%" }}>Moveset</h2>
       <Tabs value={tabNumber} onChange={handleTabChange}>
         {allGenerations.map((el) => (

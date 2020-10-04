@@ -45,6 +45,7 @@ import {
 } from "../graphql/queries/__generated__/pokemonsByMoveAndVersionGroup"
 import { useTheme } from "emotion-theming"
 import { Theme } from "../common/types"
+import ScrollToTop from "./ScrollToTop"
 
 const GET_MOVE = gql`
   query moveById($id: Int) {
@@ -646,6 +647,7 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
           <h2>Pokemons that learn {capitalizeSentence(move?.identifier)}:</h2>
           <PokemonByMoveSection id={moveId} generation={move?.generation_id} />
         </div>
+        <ScrollToTop visibleAtYOffset={600} />
       </InnerContainer>
     </OuterContainer>
   )
