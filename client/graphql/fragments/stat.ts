@@ -1,4 +1,4 @@
-import { gql } from "apollo-boost"
+import gql from "graphql-tag"
 export const stat = gql`
   fragment stat on Stat {
     base_stat
