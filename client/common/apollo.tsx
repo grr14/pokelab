@@ -7,12 +7,18 @@ import { IncomingHttpHeaders } from "http"
 import { AppContext } from "next/app"
 import { Agent } from "https"
 
+/*
 import {
   ApolloClient,
   InMemoryCache,
   NormalizedCacheObject,
   HttpLink,
 } from "@apollo/client"
+*/
+
+import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
+import { HttpLink } from "apollo-link-http"
+import { InMemoryCache } from "apollo-cache-inmemory"
 
 interface ExtendedAppContext extends AppContext {
   ctx: NextPageContext & { apolloClient: ApolloClient<NormalizedCacheObject> }
@@ -32,7 +38,7 @@ const agent = new Agent({
 function create(initialState: any, headers: IncomingHttpHeaders) {
   return new ApolloClient<NormalizedCacheObject>({
     link: new HttpLink({
-      uri: "https://pokelab-graphql-server.herokuapp.com/",
+      uri: "https://pokelab-graphql-server.herokuapp.com/graphql",
       headers,
       fetchOptions: {
         agent: agent,

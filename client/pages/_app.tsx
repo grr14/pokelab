@@ -6,8 +6,9 @@ import { lightTheme, darkTheme } from "../common/theme"
 
 import { AppProps } from "next/app"
 
-import { ApolloProvider } from "@apollo/react-hooks"
 import withApollo from "../common/apollo"
+import { ApolloProvider } from "@apollo/react-hooks"
+
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 
 import Layout from "../components/Layout"
