@@ -159,12 +159,18 @@ const PokemonEncounters: React.FC<Props> = ({ id }) => {
 
   const methods = encounters?.map((el) => el.method)
   const methodsOccurences = countOccurrences(methods)
-  const onlyGifts =
-    Object.keys(methodsOccurences).length === 1 &&
-    (methodsOccurences.hasOwnProperty(ENCOUNTER_METHOD.GIFT) ||
-      methodsOccurences.hasOwnProperty(ENCOUNTER_METHOD.GIFT_EGG))
-      ? true
-      : false
+
+  let onlyGifts: boolean
+  if (!methodsOccurences) {
+    onlyGifts = false
+  } else {
+    onlyGifts =
+      Object.keys(methodsOccurences).length === 1 &&
+      (methodsOccurences.hasOwnProperty(ENCOUNTER_METHOD.GIFT) ||
+      methodsOccurences.hasOwnProperty(ENCOUNTER_METHOD.GIFT_EGG)
+        ? true
+        : false)
+  }
 
   let rowSpanCounter = 0
 

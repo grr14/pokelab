@@ -28,7 +28,6 @@ const GET_EVOLUTION_CHAIN = gql`
       type_2
       evolve_from_pokemon_id
       evolution_chain_id
-      picture
       evolution {
         evolved_pokemon_id
         evolution_trigger
@@ -417,7 +416,7 @@ const PokemonEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
         >
           <img
             css={{ width: "125px", height: "125px" }}
-            src={pokemon.picture}
+            src={`/images/pokemons/${pokemon.id}.jpg`}
           />
 
           <p css={{ marginBottom: 0 }}>

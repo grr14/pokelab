@@ -143,7 +143,12 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
               [mq[3]]: { width: "100%", margin: 0 },
             })}
           >
-            {<PokemonImagesCarousel id={id} picture={picture} />}
+            {
+              <PokemonImagesCarousel
+                id={id}
+                picture={`/images/pokemons/${id}.jpg`}
+              />
+            }
           </div>
 
           <div

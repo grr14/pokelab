@@ -225,8 +225,17 @@ export const getEfficiency = (
 }
 
 /* count occurences of every value in array  */
-export const countOccurrences = (arr: Array<any>): { [key: string]: number } =>
-  arr.reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {})
+export const countOccurrences = (
+  arr: Array<any>
+): { [key: string]: number | null } => {
+  if (!arr) {
+    return null
+  }
+  return arr.reduce(
+    (prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev),
+    {}
+  )
+}
 
 /* return max value in array of number */
 export const arrayMax = (arr: Array<number>) => Math.max(...arr)

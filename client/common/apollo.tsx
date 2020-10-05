@@ -7,15 +7,6 @@ import { IncomingHttpHeaders } from "http"
 import { AppContext } from "next/app"
 import { Agent } from "https"
 
-/*
-import {
-  ApolloClient,
-  InMemoryCache,
-  NormalizedCacheObject,
-  HttpLink,
-} from "@apollo/client"
-*/
-
 import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 import { HttpLink } from "apollo-link-http"
 import { InMemoryCache } from "apollo-cache-inmemory"

@@ -138,7 +138,7 @@ const ReducedPokemonGrid: React.FC<Props> = ({
                       },
                       [mq[1]]: { width: "5em", height: "5em" },
                     }}
-                    src={pokemon.picture}
+                    src={`/images/pokemons/${pokemon.id}.jpg`}
                   />
                 </div>
 

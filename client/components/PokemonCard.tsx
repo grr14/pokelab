@@ -16,7 +16,7 @@ interface CardProps {
 }
 
 const PokemonCard: React.FC<CardProps> = ({ pokemon, index, checked }) => {
-  const { id, identifier, picture } = pokemon
+  const { id, identifier } = pokemon
 
   return (
     <Card raised={true}>
@@ -38,7 +38,7 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon, index, checked }) => {
           })}
         >
           <img
-            src={picture}
+            src={`/images/pokemons/${id}.jpg`}
             css={{ paddingTop: "5px", height: "200px", width: "200px" }}
           />
 

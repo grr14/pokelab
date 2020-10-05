@@ -5,6 +5,3 @@ module.exports = {
     service: "pokelab-graph",
   },
 }
-
-// generate __generated__ files
-// apollo client:codegen --target typescript --key service:pokelab-graph:QC_fG3_pSPQcZsLE5y_PLA

@@ -2,7 +2,7 @@
 import { jsx } from "@emotion/core"
 import React from "react"
 import Slider from "react-animated-slider"
-import { capitalizeFirstLetter } from "../common/utils"
+import { capitalizeSentence } from "../common/utils"
 import { mq } from "../common/constants"
 
 import {
@@ -48,13 +48,23 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
   }
 
   /* if no sprites, urls and description == undefined */
-  let urls = data?.pokemonSprites?.map((sprite) => sprite.sprite_url) || []
-  const descriptions =
-    data?.pokemonSprites?.map((sprite) => sprite.description) || []
+
+  /* we display sprites in this order : front normal, front shiny, back normal, back shiny*/
+  const ordered =
+    data?.pokemonSprites?.sort((a, b) =>
+      b.description.localeCompare(a.description)
+    ) || []
+  if (ordered.length > 0) {
+    ordered.splice(0, 2, ordered[1], ordered[0])
+    ordered.splice(2, 2, ordered[3], ordered[2])
+  }
+
+  let urls = ordered?.map((sprite) => sprite.sprite_url)
+  const descriptions = ordered?.map((sprite) => sprite.description)
 
   const hasSprites = urls.length > 0 ? true : false
 
-  if (picture != null) {
+  if (picture !== null) {
     urls.unshift(picture)
     descriptions.unshift("Official Artwork")
   }
@@ -95,7 +105,7 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
               },
             }}
           >
-            <i>{capitalizeFirstLetter(descriptions[i])}</i>
+            <i>{capitalizeSentence(descriptions[i])}</i>
           </p>
         </div>
       )
