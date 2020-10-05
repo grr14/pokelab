@@ -17,8 +17,6 @@ import { useLocalStorage } from "../common/hooks"
 import * as gtag from "../gtag"
 import Router from "next/router"
 
-Router.events.on("routeChangeComplete", (url) => gtag.pageview(url))
-
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
 }
@@ -46,6 +44,16 @@ const PokelabApp: React.FC<Props> = ({
     setChecked((prev) => !prev)
     setTheme((theme) => (theme === "light" ? "dark" : "light"))
   }
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      gtag.pageview(url)
+    }
+    Router.events.on("routeChangeComplete", handleRouteChange)
+    return () => {
+      Router.events.off("routeChangeComplete", handleRouteChange)
+    }
+  }, [])
 
   return (
     <ApolloProvider client={apolloClient}>
