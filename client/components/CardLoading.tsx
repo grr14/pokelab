@@ -16,7 +16,7 @@ const CardLoading: React.FC = () => {
     <StyledLoading>
       <CircularProgress
         css={{
-          color: "#E31010",
+          color: "#E31010 !important",
         }}
       />
     </StyledLoading>

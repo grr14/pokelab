@@ -14,6 +14,11 @@ import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
 import Layout from "../components/Layout"
 import { useLocalStorage } from "../common/hooks"
 
+import * as gtag from "../gtag"
+import Router from "next/router"
+
+Router.events.on("routeChangeComplete", (url) => gtag.pageview(url))
+
 interface Props extends AppProps {
   apolloClient: ApolloClient<NormalizedCacheObject>
 }

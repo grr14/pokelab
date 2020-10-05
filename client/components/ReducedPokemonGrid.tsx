@@ -31,7 +31,7 @@ const ReducedPokemonGrid: React.FC<Props> = ({
 }) => {
   return (
     <PartialPokemonGrid additionalInfos={additionalInfos}>
-      {pokemons.map((pokemon, idx) => (
+      {pokemons?.map((pokemon, idx) => (
         <div key={pokemon.id}>
           {additionalInfos === "level" && (
             <div css={{ marginBottom: "5px", textAlign: "center" }}>

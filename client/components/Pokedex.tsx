@@ -128,7 +128,7 @@ const Pokedex: React.FC<Props> = ({
           <CardContainer key={idx}>
             <Card
               loading={1}
-              style={{
+              css={{
                 height: "260px",
               }}
             >
