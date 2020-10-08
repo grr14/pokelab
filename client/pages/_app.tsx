@@ -45,7 +45,7 @@ const PokelabApp: React.FC<Props> = ({
 
   const { init, trackPageViewed } = useAnalytics()
   useEffect(() => {
-    init("UA-161434162-1")
+    init(process.env.GOOGLE_ANALYTICS_ID)
     trackPageViewed()
     Router.events.on("routeChangeComplete", () => {
       trackPageViewed()
