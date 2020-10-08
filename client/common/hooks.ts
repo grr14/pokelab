@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import ReactGA from "react-ga"
 
 interface WindowSize {
   width: number
@@ -63,6 +64,29 @@ const useLocalStorage = (key: string, initialValue: string) => {
   }
 
   return [value, setItem] as const
+}
+
+interface Event {
+  action: string
+  category: string
+  label?: string
+}
+
+export const useAnalytics = () => {
+  return {
+    init: (trackingId: string) => {
+      ReactGA.initialize(trackingId)
+    },
+    trackPageViewed: (path?: string) => {
+      if (path) {
+        return ReactGA.pageview(path)
+      }
+      return ReactGA.pageview(window.location.pathname + window.location.search)
+    },
+    trackEvent: (params: Event) => {
+      ReactGA.event(params)
+    },
+  }
 }
 
 export { useWindowSize, useLocalStorage }
