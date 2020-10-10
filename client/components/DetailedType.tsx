@@ -29,6 +29,7 @@ const DetailedType: React.FC<Props> = ({ id }) => {
           <img
             css={{ marginLeft: "15px", width: "64px", height: "64px" }}
             src={`/images/types/${id}.png`}
+            alt="type icon"
           />
         </div>
 

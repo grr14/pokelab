@@ -38,8 +38,9 @@ const PokemonCard: React.FC<CardProps> = ({ pokemon, index, checked }) => {
           })}
         >
           <img
-            src={`/images/pokemons/${id}.jpg`}
             css={{ paddingTop: "5px", height: "200px", width: "200px" }}
+            src={`/images/pokemons/${id}.jpg`}
+            alt={`pokemon #${id} image`}
           />
 
           <h2

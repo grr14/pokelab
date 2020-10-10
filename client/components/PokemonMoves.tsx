@@ -185,6 +185,7 @@ const PokemonMoves: React.FC<PokemonMovesProps> = ({ pokemonId }) => {
             <img
               css={{ margin: "0 5px" }}
               src={`/images/category/${move.move.damage_class_id}.png`}
+              alt="move category"
             />
             <span>{getDamageClassFromId(move.move.damage_class_id)}</span>
           </div>

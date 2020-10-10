@@ -56,6 +56,7 @@ const Types: React.FC = () => {
           <img
             css={{ height: "100%", width: "100%" }}
             src={`/images/types/${el}.png`}
+            alt={`image type #${el}`}
           />
         </div>
       )
@@ -73,6 +74,7 @@ const Types: React.FC = () => {
                 width: "100%",
               }}
               src={`/images/types/${lineIdx}.png`}
+              alt={`image type #${lineIdx}`}
             />
           </div>
         )
@@ -169,7 +171,10 @@ const Types: React.FC = () => {
                         justifyContent: "center",
                       }}
                     >
-                      <img src={`/images/types/${el}.png`} />
+                      <img
+                        src={`/images/types/${el}.png`}
+                        alt={`image type #${el}`}
+                      />
                     </div>
                     <div
                       css={{

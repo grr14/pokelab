@@ -41,19 +41,30 @@ export default function Home() {
             <h2 css={{ color: "#E31010" }}>About the Website</h2>
             <p>
               The website is made with{" "}
-              <a href="https://reactjs.org/" target="_blank" css={aCss}>
+              <a
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener"
+                css={aCss}
+              >
                 React
               </a>{" "}
               /{" "}
               <a
                 href="https://www.typescriptlang.org/"
                 target="_blank"
+                rel="noopener"
                 css={aCss}
               >
                 Typescript
               </a>{" "}
               using the framework{" "}
-              <a href="https://nextjs.org/" target="_blank" css={aCss}>
+              <a
+                href="https://nextjs.org/"
+                target="_blank"
+                rel="noopener"
+                css={aCss}
+              >
                 nextjs
               </a>
               .
@@ -63,6 +74,7 @@ export default function Home() {
               <a
                 href="https://www.apollographql.com/"
                 target="_blank"
+                rel="noopener"
                 css={aCss}
               >
                 Apollo Graphql
@@ -74,6 +86,7 @@ export default function Home() {
               <a
                 href="https://github.com/veekun/pokedex"
                 target="_blank"
+                rel="noopener"
                 css={aCss}
               >
                 veekun
@@ -83,7 +96,7 @@ export default function Home() {
             <p>
               You can find the entirity of the code (back-end + front-end +
               database) on{" "}
-              <a href={github} target="_blank" css={aCss}>
+              <a href={github} target="_blank" rel="noopener" css={aCss}>
                 my github
               </a>
             </p>

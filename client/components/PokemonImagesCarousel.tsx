@@ -92,6 +92,7 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
               },
             }}
             src={urls[i]}
+            alt={`sprite #${i}`}
           />
           <p
             css={{

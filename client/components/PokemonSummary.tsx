@@ -137,6 +137,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -152,6 +153,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -186,6 +188,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -204,6 +207,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -220,6 +224,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -235,6 +240,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -251,6 +257,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -267,6 +274,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -283,6 +291,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -299,6 +308,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>
@@ -315,6 +325,7 @@ const PokemonSummary: React.FC<Props> = ({ pokemon }) => {
               <img
                 css={{ maxHeight: "100%", maxWidth: "100%" }}
                 src="/images/pokeball.svg"
+                alt="pokeball icon"
               />
             </Avatar>
           </ListItemAvatar>

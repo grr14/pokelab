@@ -417,6 +417,7 @@ const PokemonEvoCard: React.FC<EvoCardProps> = ({ pokemon }) => {
           <img
             css={{ width: "125px", height: "125px" }}
             src={`/images/pokemons/${pokemon.id}.jpg`}
+            alt={`pokemon #${pokemon.id} image`}
           />
 
           <p css={{ marginBottom: 0 }}>

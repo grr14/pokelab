@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ checked, toggle }) => {
   const logo = (
     <Link href="/">
       <a>
-        <img src={"/images/logo.png"} />
+        <img src={"/images/logo.png"} alt="pokelab logo" />
       </a>
     </Link>
   )

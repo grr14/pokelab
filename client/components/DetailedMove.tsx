@@ -489,6 +489,7 @@ const DetailedMove: React.FC<Props> = ({ moveId }) => {
               <img
                 css={{ marginRight: "10px" }}
                 src={`/images/category/${move?.damage_class_id}.png`}
+                alt="damage class"
               />
               <span>{getDamageClassFromId(move?.damage_class_id)}</span>
             </div>

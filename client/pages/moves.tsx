@@ -168,11 +168,13 @@ const Moves: React.FC = () => {
             <img
               css={{ verticalAlign: "middle", margin: "0 5px" }}
               src={`/images/category/2.png`}
+              alt="category physical"
             />
             ) and special (
             <img
               css={{ verticalAlign: "middle", margin: "0 5px" }}
               src={`/images/category/3.png`}
+              alt="category special"
             />
             ) moves depending on the individual move's characteristics; the
             category of the move determines whether the move's damage depends on
