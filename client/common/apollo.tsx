@@ -29,7 +29,7 @@ const agent = new Agent({
 function create(initialState: any, headers: IncomingHttpHeaders) {
   return new ApolloClient<NormalizedCacheObject>({
     link: new HttpLink({
-      uri: process.env.NODE_ENV === "production" ? "https://pokelab-graphql-server.herokuapp.com/" : "localhost:4000/",
+      uri: process.env.NODE_ENV === "production" ? process.env.GRAPHQL_ENDPOINT_URI : "localhost:4000/",
       headers,
       fetchOptions: {
         agent: agent,
