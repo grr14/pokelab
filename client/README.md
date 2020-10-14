@@ -1,30 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pokelab.xyz
 
-## Getting Started
+## Presentation
+Pokelab is a website gathering various datas about the Pokémon universe, hosted at [pokelab.xyz](https://www.pokelab.xyz/).
+The website is made with Typescript / React, and using the framework [Next.js](https://nextjs.org/) for server-side rendering.
+Pokelab is my first full-stack project. This repository is the front-end, you can find the back-end [here](https://github.com/grr14/PokelabServer).
 
-First, run the development server:
+## Todo
+Non-exhaustive list of features I will work on:
+- user authentification feature
+- improve advanced search on the /pokemons page
+- improve performance by adding infinite scroll feature on the Pokemon Cards
+- reduce loading time
+- adding informations for the most recent released Pokemon games (Generation VIII)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## How to Setup
+Start by cloning this repository, as well the [back-end repository](https://github.com/grr14/PokelabServer). Start the server with ```npm start```, and the client with ```yarn dev```. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Thanks for visiting !
