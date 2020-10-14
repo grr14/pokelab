@@ -86,7 +86,7 @@ const darkTheme: Theme = {
   },
   card: {
     text: "rgba(255,255,255,0.8)",
-    textHover: "#E31010",
+    textHover: "#E31010cc",
     background: "#303030",
     backgroundHover: "#505050",
   },
