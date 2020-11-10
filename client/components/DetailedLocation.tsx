@@ -6,7 +6,7 @@ import React, { useState, useCallback } from "react"
 import Error from "../pages/_error"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 import {
   getEncountersByLocationAndVersion as Encounters,
   getEncountersByLocationAndVersionVariables as EncountersVariables,

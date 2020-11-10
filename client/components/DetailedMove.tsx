@@ -32,7 +32,7 @@ import Tab from "@material-ui/core/Tab"
 import Skeleton from "@material-ui/lab/Skeleton"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 
 import {
   moveById as Move,

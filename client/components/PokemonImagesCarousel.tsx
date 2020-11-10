@@ -17,7 +17,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 
 const GET_SPRITES = gql`
   query getPokemonSpritesById($id: Int!) {
@@ -44,14 +44,15 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
 
   if (loading) return <p>Carousel loading </p>
   if (error) {
-    return <p>error </p>
+    return <p>Error</p>
   }
 
   /* if no sprites, urls and description == undefined */
 
   /* we display sprites in this order : front normal, front shiny, back normal, back shiny*/
+  const copy = [...data?.pokemonSprites] /* copy prevents this error from happening: TypeError: Cannot assign to read only property '0' of object '[object Array]' */
   const ordered =
-    data?.pokemonSprites?.sort((a, b) =>
+    copy.sort((a, b) =>
       b.description.localeCompare(a.description)
     ) || []
   if (ordered.length > 0) {

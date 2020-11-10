@@ -22,7 +22,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
+
 import { capitalizeFirstLetter } from "../common/utils"
 import PokemonSummary from "./PokemonSummary"
 

@@ -27,7 +27,7 @@ import {
 import { Tab } from "@material-ui/core"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 
 import {
   EncountersByPokemonAndVersion as Encounters,

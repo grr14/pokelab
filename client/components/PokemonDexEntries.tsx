@@ -7,8 +7,7 @@ import {
 } from "../graphql/queries/__generated__/getPokemonPokedexEntries"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
-
+import { useQuery } from "@apollo/client"
 import React from "react"
 
 import { getGameVersionFromId } from "../common/utils"

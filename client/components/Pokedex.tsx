@@ -9,7 +9,7 @@ import { PokedexRange, ReducedPokemon } from "../common/types"
 import Error from "../pages/_error"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 import CardLoading from "./CardLoading"
 import Card from "./Card"
 

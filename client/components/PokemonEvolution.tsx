@@ -10,7 +10,7 @@ import Arrow from "@elsdoerfer/react-arrow"
 import Link from "next/link"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 
 import {
   pokemonEvolveChain_pokemonEvolveChain as Pokemon,

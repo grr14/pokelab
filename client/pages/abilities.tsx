@@ -11,7 +11,7 @@ import Link from "next/link"
 import { getAllAbilities as AllAbilities } from "../graphql/queries/__generated__/getAllAbilities"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 import { capitalizeSentence } from "../common/utils"
 import { mq } from "../common/constants"
 import { Table, Td, Th, Tr } from "../components/Table"

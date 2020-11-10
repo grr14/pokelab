@@ -21,7 +21,8 @@ import {
 } from "../graphql/queries/__generated__/movesByPokemonAndVersion"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
+
 import {
   getVersionGroupFromId,
   getTypeFromId,

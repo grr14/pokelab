@@ -1,5 +1,4 @@
 import React from "react"
-import { getDataFromTree } from "@apollo/react-ssr"
 
 import { NextPage, NextPageContext } from "next"
 import Head from "next/head"
@@ -7,9 +6,13 @@ import { IncomingHttpHeaders } from "http"
 import { AppContext } from "next/app"
 import { Agent } from "https"
 
-import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
-import { HttpLink } from "apollo-link-http"
-import { InMemoryCache } from "apollo-cache-inmemory"
+import { getDataFromTree } from '@apollo/client/react/ssr';
+import {
+  InMemoryCache,
+  NormalizedCacheObject,
+  ApolloClient,
+  HttpLink,
+} from '@apollo/client';
 
 interface ExtendedAppContext extends AppContext {
   ctx: NextPageContext & { apolloClient: ApolloClient<NormalizedCacheObject> }
@@ -27,9 +30,10 @@ const agent = new Agent({
 })
 
 function create(initialState: any, headers: IncomingHttpHeaders) {
+  const isProd = process.env.NODE_ENV === "production"
   return new ApolloClient<NormalizedCacheObject>({
     link: new HttpLink({
-      uri: process.env.NODE_ENV === "production" ? "https://pokelab-graphql-server.herokuapp.com/" : "localhost:4000/",
+      uri: isProd ? "https://pokelab-graphql-server.herokuapp.com/" : "http://localhost:4000/",
       headers,
       fetchOptions: {
         agent: agent,

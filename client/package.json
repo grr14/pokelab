@@ -8,8 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@apollo/react-hooks": "^3.1.5",
-    "@apollo/react-ssr": "^3.1.5",
+    "@apollo/client": "^3.2.5",
     "@elsdoerfer/react-arrow": "^1.0.4",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
@@ -22,13 +21,6 @@
     "@types/chart.js": "^2.9.24",
     "@types/google.analytics": "^0.0.40",
     "@types/gtag.js": "^0.0.3",
-    "apollo-boost": "^0.4.9",
-    "apollo-cache-inmemory": "^1.6.6",
-    "apollo-client": "^2.6.10",
-    "apollo-link": "^1.2.14",
-    "apollo-link-error": "^1.1.13",
-    "apollo-link-http": "^1.5.17",
-    "apollo-link-ws": "^1.0.20",
     "chart.js": "^2.9.3",
     "emotion-theming": "^10.0.27",
     "graphql": "^15.3.0",

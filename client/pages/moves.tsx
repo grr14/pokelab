@@ -9,7 +9,7 @@ import { getAllMoves as AllMoves } from "../graphql/queries/__generated__/getAll
 import Link from "next/link"
 
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 import { capitalizeSentence, getDamageClassFromId } from "../common/utils"
 import { mq } from "../common/constants"
 import { Table, Td, Th, Tr } from "../components/Table"

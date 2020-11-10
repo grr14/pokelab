@@ -7,9 +7,12 @@ import { lightTheme, darkTheme } from "../common/theme"
 import { AppProps } from "next/app"
 
 import withApollo from "../common/apollo"
-import { ApolloProvider } from "@apollo/react-hooks"
 
-import { ApolloClient, NormalizedCacheObject } from "apollo-boost"
+import {
+  ApolloProvider,
+  ApolloClient,
+  NormalizedCacheObject,
+} from '@apollo/client';
 
 import Layout from "../components/Layout"
 import { useAnalytics, useLocalStorage } from "../common/hooks"

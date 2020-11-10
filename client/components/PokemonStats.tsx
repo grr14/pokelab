@@ -4,7 +4,7 @@ import { useTheme } from "emotion-theming"
 
 import React, { useState } from "react"
 import gql from "graphql-tag"
-import { useQuery } from "@apollo/react-hooks"
+import { useQuery } from "@apollo/client"
 
 import { stat } from "../graphql/fragments/stat"
 
