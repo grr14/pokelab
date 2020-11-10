@@ -8,6 +8,7 @@ import { mq } from "../common/constants"
 import {
   getPokemonSpritesById,
   getPokemonSpritesByIdVariables,
+  getPokemonSpritesById_pokemonSprites,
 } from "../graphql/queries/__generated__/getPokemonSpritesById"
 
 import {
@@ -48,22 +49,26 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
   }
 
   /* if no sprites, urls and description == undefined */
+  const hasSprites = data?.pokemonSprites?.length > 0
+
+  let urls: Array<string> = []
+  let descriptions: Array<string> = []
 
   /* we display sprites in this order : front normal, front shiny, back normal, back shiny*/
-  const copy = [...data?.pokemonSprites] /* copy prevents this error from happening: TypeError: Cannot assign to read only property '0' of object '[object Array]' */
-  const ordered =
-    copy.sort((a, b) =>
-      b.description.localeCompare(a.description)
-    ) || []
-  if (ordered.length > 0) {
-    ordered.splice(0, 2, ordered[1], ordered[0])
-    ordered.splice(2, 2, ordered[3], ordered[2])
-  }
+  if (hasSprites) {
+    const ordered =
+      [...data?.pokemonSprites].sort((a, b) =>
+        b.description.localeCompare(a.description)
+      ) || []
 
-  let urls = ordered?.map((sprite) => sprite.sprite_url)
-  const descriptions = ordered?.map((sprite) => sprite.description)
+    if (ordered.length > 0) {
+      ordered.splice(0, 2, ordered[1], ordered[0])
+      ordered.splice(2, 2, ordered[3], ordered[2])
+    }
 
-  const hasSprites = urls.length > 0 ? true : false
+    urls = ordered?.map((sprite) => sprite?.sprite_url)
+    descriptions = ordered?.map((sprite) => sprite?.description)
+  } /* copy prevents this error from happening: TypeError: Cannot assign to read only property '0' of object '[object Array]' */
 
   if (picture !== null) {
     urls.unshift(picture)
