@@ -26,6 +26,7 @@ import { useQuery } from "@apollo/client"
 
 import { capitalizeFirstLetter } from "../common/utils"
 import PokemonSummary from "./PokemonSummary"
+import ScrollToTop from "./ScrollToTop"
 
 const GET_POKEMON = gql`
   query getPokemonById($id: Int!) {
@@ -178,6 +179,7 @@ const DetailedPokemon: React.FC<Props> = ({ id }) => {
 
           <PokemonSummary pokemon={{ identifier, picture, ...rest }} />
         </DetailedPokemonGrid>
+        <ScrollToTop visibleAtYOffset={600} />
       </InnerContainer>
     </OuterContainer>
   )

@@ -583,7 +583,7 @@ const PokemonEvolution: React.FC<Props> = ({ id }) => {
       css={(theme) => ({
         boxSizing: "border-box",
         margin: "2%",
-        padding: "2%",
+        padding: "2% 20px", /* relative right / left padding caused images to overflow sometimes ?? */
         border: theme.main.border,
         borderRadius: "15px",
       })}

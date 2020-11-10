@@ -21,7 +21,7 @@ import { useQuery } from "@apollo/client"
 import { capitalizeSentence, getVersionGroupFromId } from "../common/utils"
 import ReducedPokemonGrid from "./ReducedPokemonGrid"
 import { Table, Td, Th, Tr } from "./Table"
-import { VersionGroupNameDisplay, VersionNameDisplay } from "./StyledDisplay"
+import { VersionGroupNameDisplay } from "./StyledDisplay"
 import ScrollToTop from "./ScrollToTop"
 
 const GET_ABILITY = gql`
