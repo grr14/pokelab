@@ -48,7 +48,6 @@ const PokemonImagesCarousel: React.FC<Props> = ({ id, picture }) => {
     return <p>Error</p>
   }
 
-  /* if no sprites, urls and description == undefined */
   const hasSprites = data?.pokemonSprites?.length > 0
 
   let urls: Array<string> = []

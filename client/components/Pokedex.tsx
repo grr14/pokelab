@@ -67,7 +67,7 @@ const Pokedex: React.FC<Props> = ({
   useEffect(() => {
     if (data) {
       const filteredPokemons = data.pokemonsInRange?.filter((pokemon) =>
-        pokemon.identifier.startsWith(textToFilter)
+        pokemon.identifier.startsWith(textToFilter.toLowerCase())
       )
       setPokemons(filteredPokemons)
     }
@@ -94,6 +94,25 @@ const Pokedex: React.FC<Props> = ({
     return <Error statusCode={404} />
   }
 
+  if (loading) {
+    return (
+      <PokedexGrid>
+        {[...Array(15)].fill(0).map((_, idx) => (
+          <CardContainer key={idx}>
+            <Card
+              loading={1}
+              css={{
+                height: "260px",
+              }}
+            >
+              <CardLoading />
+            </Card>
+          </CardContainer>
+        ))}
+      </PokedexGrid>
+    )
+  }
+
   if (data) {
     return (
       <div
@@ -118,25 +137,6 @@ const Pokedex: React.FC<Props> = ({
           <h2>No Pokemon found.</h2>
         )}
       </div>
-    )
-  }
-
-  if (loading) {
-    return (
-      <PokedexGrid>
-        {[...Array(15)].fill(0).map((_, idx) => (
-          <CardContainer key={idx}>
-            <Card
-              loading={1}
-              css={{
-                height: "260px",
-              }}
-            >
-              <CardLoading />
-            </Card>
-          </CardContainer>
-        ))}
-      </PokedexGrid>
     )
   }
 }
